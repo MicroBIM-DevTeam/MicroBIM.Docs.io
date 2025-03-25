@@ -31,9 +31,3 @@ Welcome to the official documentation for **MicroBIM Fire**.
     <img src="https://img.shields.io/badge/-Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
   </a>
 </div>
-
----
-
-<p style="text-align:center; font-size: 0.9em; color: gray;">
-Copyright © 2018 - Present <strong>MICROBIM</strong> | All Rights Reserved.
-</p>
