@@ -1,0 +1,1531 @@
+{
+  "source_base_path": "/home/runner/work/MicroBIM.Docs.io/MicroBIM.Docs.io",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Aspects.LogAspect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Aspects.LogAspect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Aspects.LogAspect",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Aspects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Aspects.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Aspects",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Attributes.ErrorInformationAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Attributes.ErrorInformationAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Attributes.ErrorInformationAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Attributes.GuidAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Attributes.GuidAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Attributes.GuidAttribute",
+      "Summary": "Represents a custom attribute that can be applied to fields to associate them with a specific GUID."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Attributes.RequiredSharedParametersAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Attributes.RequiredSharedParametersAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Attributes.RequiredSharedParametersAttribute",
+      "Summary": "Represents an attribute to specify required shared parameters for a given target."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Attributes.RevitCategoriesAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Attributes.RevitCategoriesAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Attributes.RevitCategoriesAttribute",
+      "Summary": "Represents an attribute to associate a target with a set of Revit built-in categories."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Attributes.SharedParameterTypeAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Attributes.SharedParameterTypeAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Attributes.SharedParameterTypeAttribute",
+      "Summary": "Represents an attribute to specify the type of a shared parameter."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Attributes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Attributes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Comparers.BoundingBoxComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Comparers.BoundingBoxComparer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Comparers.BoundingBoxComparer",
+      "Summary": "A utility class for comparing and resolving bounding box coordinates from multiple points."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Comparers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Comparers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Comparers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Constants.FilePaths.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Constants.FilePaths.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Constants.FilePaths",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Constants.MbErrorMessages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Constants.MbErrorMessages.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Constants.MbErrorMessages",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Constants.MbfFiles.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Constants.MbfFiles.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Constants.MbfFiles",
+      "Summary": "Provides constants and utility properties for MBF-related file paths."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Constants.MbfGroups.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Constants.MbfGroups.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Constants.MbfGroups",
+      "Summary": "Provides constant values for MBF parameter groups."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Constants.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Constants",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Errors.Exceptions.MbException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Errors.Exceptions.MbException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Errors.Exceptions.MbException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Errors.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Errors.Exceptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Errors.Exceptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Errors.MbError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Errors.MbError.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Errors.MbError",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Errors.MbErrorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Errors.MbErrorExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Errors.MbErrorExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Errors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Errors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Errors",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Parameters.RevitParameterManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Parameters.RevitParameterManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Parameters.RevitParameterManager",
+      "Summary": "Manages shared parameters in a Revit document, ensuring required parameters exist and are properly configured."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Parameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Parameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Parameters",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Services.MailService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Services.MailService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Services.MailService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Services.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Services",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.SharedParameters.ElementExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.SharedParameters.ElementExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.SharedParameters.ElementExtensions",
+      "Summary": "Provides extension methods for working with Revit <xref href=\"Element\" data-throw-if-not-resolved=\"false\"></xref> objects."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.SharedParameters.SharedParameterExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.SharedParameters.SharedParameterExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.SharedParameters.SharedParameterExtensions",
+      "Summary": "Provides extension methods for the <xref href=\"MB.Common.SharedParameters.ToolsSharedParameter\" data-throw-if-not-resolved=\"false\"></xref> class."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.SharedParameters.SharedParameterType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.SharedParameters.SharedParameterType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.SharedParameters.SharedParameterType",
+      "Summary": "Represents the types of shared parameters that can be used in Revit."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.SharedParameters.ToolsSharedParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.SharedParameters.ToolsSharedParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.SharedParameters.ToolsSharedParameter",
+      "Summary": "Defines shared parameters for use within Revit, including metadata such as GUIDs,\ndescriptions, parameter types, and applicable categories."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.SharedParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.SharedParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.SharedParameters",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Tools.MbfTool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Tools.MbfTool.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Tools.MbfTool",
+      "Summary": "Enum representing various tools in the MBF suite."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Tools.MbfToolExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Tools.MbfToolExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Tools.MbfToolExtensions",
+      "Summary": "Provides extension methods for the <xref href=\"MB.Common.Tools.MbfTool\" data-throw-if-not-resolved=\"false\"></xref> class."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Tools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Tools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Tools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Utils.Attributes.AttributeUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Utils.Attributes.AttributeUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Utils.Attributes.AttributeUtils",
+      "Summary": "Provides utility methods for working with custom attributes in .NET."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Utils.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Utils.Attributes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Utils.Attributes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Utils.Handlers.MbHandlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Utils.Handlers.MbHandlers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Utils.Handlers.MbHandlers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Utils.Handlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Utils.Handlers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Utils.Handlers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Utils.Image.ImageUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Utils.Image.ImageUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Utils.Image.ImageUtils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Utils.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Utils.Image.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Utils.Image",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Utils.Result.MbResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Utils.Result.MbResult-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Utils.Result.MbResult<T>",
+      "Summary": "Represents the result of an operation, encapsulating the success status, value, and error message."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Utils.Result.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Utils.Result.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Utils.Result",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.ViewLoader.IsolatedViewLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.ViewLoader.IsolatedViewLoader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.ViewLoader.IsolatedViewLoader",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.ViewLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.ViewLoader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.ViewLoader",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.SelectionFilters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.SelectionFilters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.SelectionFilters",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.MbFlexPipesUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.MbFlexPipesUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.MbFlexPipesUtils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.MbParameterUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.MbParameterUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.MbParameterUtils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.MbPipeAccessoriesUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.MbPipeAccessoriesUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.MbPipeAccessoriesUtils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.MbPipeFittingsUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.MbPipeFittingsUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.MbPipeFittingsUtils",
+      "Summary": "Provides utility methods for working with pipe fittings in Revit."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.MbPipesUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.MbPipesUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.MbPipesUtils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.MbSprinklersUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.MbSprinklersUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.MbSprinklersUtils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.MbUnitUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.MbUnitUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.MbUnitUtils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.MbViewUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.MbViewUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.MbViewUtils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.AttachedProperties.HelpAssistant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.AttachedProperties.HelpAssistant.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.AttachedProperties.HelpAssistant",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.AttachedProperties.LocalizationHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.AttachedProperties.LocalizationHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.AttachedProperties.LocalizationHelper",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.AttachedProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.AttachedProperties.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.AttachedProperties",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Constants.MbMessageIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Constants.MbMessageIcon.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Constants.MbMessageIcon",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Constants.SkinType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Constants.SkinType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Constants.SkinType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Constants.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Constants",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Controls.Help.HelpWizard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Controls.Help.HelpWizard.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Controls.Help.HelpWizard",
+      "Summary": "Interaction logic for HelpWizard.xaml"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Controls.Help.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Controls.Help.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Controls.Help",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Controls.MbMessageBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Controls.MbMessageBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Controls.MbMessageBox",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Controls.MicroBimSprite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Controls.MicroBimSprite.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Controls.MicroBimSprite",
+      "Summary": "Interaction logic for MicroBimSprite.xaml"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Controls.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Controls.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Controls",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Converters.Boolean2StringConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Converters.Boolean2StringConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Converters.Boolean2StringConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Converters.EnumDisplayNameConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Converters.EnumDisplayNameConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Converters.EnumDisplayNameConverter",
+      "Summary": "A value converter for converting between enum values and their display names specified by the <xref href=\"System.ComponentModel.DataAnnotations.DisplayAttribute\" data-throw-if-not-resolved=\"false\"></xref>."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Converters.ValidationMultiConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Converters.ValidationMultiConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Converters.ValidationMultiConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Converters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Converters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Converters",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Extensions.ListExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Extensions.ListExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Extensions.ListExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Helpers.MbNotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Helpers.MbNotification.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Helpers.MbNotification",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Helpers.MbResourceHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Helpers.MbResourceHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Helpers.MbResourceHelper",
+      "Summary": "资源帮助类"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Helpers.PasswordHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Helpers.PasswordHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Helpers.PasswordHelper",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Helpers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Helpers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.MbViewModel.MbBaseViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.MbViewModel.MbBaseViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.MbViewModel.MbBaseViewModel",
+      "Summary": "Base ViewModel class providing theme and language management functionality."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.MbViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.MbViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.MbViewModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.MbWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.MbWindow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.MbWindow",
+      "Summary": "Represents a custom window with additional properties and functionalities."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Models.HelpStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Models.HelpStep.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Models.HelpStep",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Properties.Langs.Lang.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Properties.Langs.Lang.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Properties.Langs.Lang",
+      "Summary": "A strongly-typed resource class, for looking up localized strings, etc."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Properties.Langs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Properties.Langs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Properties.Langs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Utils.WindowUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Utils.WindowUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Utils.WindowUtils",
+      "Summary": "Provides utility functions for managing windows and processes in a WPF application."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Utils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Utils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.ValidationRules.DecimalValidationRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.ValidationRules.DecimalValidationRule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.ValidationRules.DecimalValidationRule",
+      "Summary": "Validation rule for decimal input with localization support."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.ValidationRules.DoubleValidationRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.ValidationRules.DoubleValidationRule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.ValidationRules.DoubleValidationRule",
+      "Summary": "Validation rule for double input with localization support."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.ValidationRules.IntegerValidationRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.ValidationRules.IntegerValidationRule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.ValidationRules.IntegerValidationRule",
+      "Summary": "Validation rule for integer input with localization support."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.ValidationRules.StringValidationRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.ValidationRules.StringValidationRule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.ValidationRules.StringValidationRule",
+      "Summary": "Validation rule for string input with localization support."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.ValidationRules.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.ValidationRules.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.ValidationRules",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OnMethodBoundaryAspectCompile.MethodInfos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OnMethodBoundaryAspectCompile.MethodInfos.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OnMethodBoundaryAspectCompile.MethodInfos",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OnMethodBoundaryAspectCompile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OnMethodBoundaryAspectCompile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OnMethodBoundaryAspectCompile",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Revit.Extensions.Elements.PipeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Revit.Extensions.Elements.PipeExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Revit.Extensions.Elements.PipeExtensions",
+      "Summary": "Provides extension methods for Pipe elements in Revit."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Revit.Extensions.Elements.SpaceExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Revit.Extensions.Elements.SpaceExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Revit.Extensions.Elements.SpaceExtensions",
+      "Summary": "Provides extension methods for Space elements in Revit."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Revit.Extensions.Elements.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Revit.Extensions.Elements.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Revit.Extensions.Elements",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Revit.Extensions.Extensions.CollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Revit.Extensions.Extensions.CollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Revit.Extensions.Extensions.CollectionExtensions",
+      "Summary": "Provides extension methods for working with collections."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Revit.Extensions.Extensions.DocumentExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Revit.Extensions.Extensions.DocumentExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Revit.Extensions.Extensions.DocumentExtensions",
+      "Summary": "Provides extension methods for the Autodesk Revit API with the result pattern for better error handling."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Revit.Extensions.Extensions.ViewExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Revit.Extensions.Extensions.ViewExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Revit.Extensions.Extensions.ViewExtensions",
+      "Summary": "Provides extension methods for Revit views."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Revit.Extensions.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Revit.Extensions.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Revit.Extensions.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Revit.Extensions.Selections.SelectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Revit.Extensions.Selections.SelectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Revit.Extensions.Selections.SelectionExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Revit.Extensions.Selections.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Revit.Extensions.Selections.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Revit.Extensions.Selections",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Revit.Extensions.Unit.MbUnitExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Revit.Extensions.Unit.MbUnitExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Revit.Extensions.Unit.MbUnitExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Revit.Extensions.Unit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Revit.Extensions.Unit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Revit.Extensions.Unit",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Microbim32.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Microbim32.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
