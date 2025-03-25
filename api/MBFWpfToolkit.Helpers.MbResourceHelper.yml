@@ -23,7 +23,7 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
-  summary: 资源帮助类
+  summary: Provides helper methods for retrieving theme and skin resources in a WPF application.
   example: []
   syntax:
     content: public class MbResourceHelper
@@ -54,19 +54,20 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
-  summary: 获取资源
+  summary: Retrieves a resource from the application’s merged resource dictionaries by key.
   example: []
   syntax:
     content: public static T GetResource<T>(string key)
     parameters:
     - id: key
       type: System.String
-      description: ''
+      description: The key of the resource to retrieve.
     typeParameters:
     - id: T
+      description: The expected type of the resource.
     return:
       type: '{T}'
-      description: ''
+      description: The resource cast to type <code class="typeparamref">T</code> if found; otherwise, the default value of <code class="typeparamref">T</code>.
     content.vb: Public Shared Function GetResource(Of T)(key As String) As T
   overload: MBFWpfToolkit.Helpers.MbResourceHelper.GetResource*
   nameWithType.vb: MbResourceHelper.GetResource(Of T)(String)
@@ -88,19 +89,23 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
-  summary: 获取皮肤
+  summary: Loads a skin resource dictionary from a specified assembly and path.
   example: []
   syntax:
     content: public static ResourceDictionary GetSkin(Assembly assembly, string themePath, SkinType skin)
     parameters:
     - id: assembly
       type: System.Reflection.Assembly
+      description: The assembly containing the skin resources.
     - id: themePath
       type: System.String
+      description: The path to the skin directory inside the assembly.
     - id: skin
       type: MBFWpfToolkit.Constants.SkinType
+      description: The <xref href="MBFWpfToolkit.Constants.SkinType" data-throw-if-not-resolved="false"></xref> indicating which skin to load.
     return:
       type: System.Windows.ResourceDictionary
+      description: The loaded <xref href="System.Windows.ResourceDictionary" data-throw-if-not-resolved="false"></xref> for the specified skin.
     content.vb: Public Shared Function GetSkin(assembly As Assembly, themePath As String, skin As SkinType) As ResourceDictionary
   overload: MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin*
   nameWithType.vb: MbResourceHelper.GetSkin(Assembly, String, SkinType)
@@ -122,17 +127,17 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
-  summary: get HandyControl skin
+  summary: Loads a built-in HandyControl skin resource dictionary by skin type.
   example: []
   syntax:
     content: public static ResourceDictionary GetSkin(SkinType skin)
     parameters:
     - id: skin
       type: MBFWpfToolkit.Constants.SkinType
-      description: ''
+      description: The <xref href="MBFWpfToolkit.Constants.SkinType" data-throw-if-not-resolved="false"></xref> indicating which skin to load.
     return:
       type: System.Windows.ResourceDictionary
-      description: ''
+      description: The loaded <xref href="System.Windows.ResourceDictionary" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function GetSkin(skin As SkinType) As ResourceDictionary
   overload: MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin*
 - uid: MBFWpfToolkit.Helpers.MbResourceHelper.GetTheme
@@ -151,12 +156,13 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
-  summary: get HandyControl theme
+  summary: Retrieves the current theme resource dictionary. If not already loaded, it loads the standalone HandyControl theme.
   example: []
   syntax:
     content: public static ResourceDictionary GetTheme()
     return:
       type: System.Windows.ResourceDictionary
+      description: The <xref href="System.Windows.ResourceDictionary" data-throw-if-not-resolved="false"></xref> representing the current theme.
     content.vb: Public Shared Function GetTheme() As ResourceDictionary
   overload: MBFWpfToolkit.Helpers.MbResourceHelper.GetTheme*
 - uid: MBFWpfToolkit.Helpers.MbResourceHelper.GetStandaloneTheme
@@ -175,10 +181,13 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
+  summary: Loads the standalone HandyControl theme resource dictionary.
+  example: []
   syntax:
     content: public static ResourceDictionary GetStandaloneTheme()
     return:
       type: System.Windows.ResourceDictionary
+      description: The loaded <xref href="System.Windows.ResourceDictionary" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function GetStandaloneTheme() As ResourceDictionary
   overload: MBFWpfToolkit.Helpers.MbResourceHelper.GetStandaloneTheme*
 - uid: MBFWpfToolkit.Helpers.MbResourceHelper.#ctor
@@ -497,21 +506,6 @@ references:
   name: T
   nameWithType: T
   fullName: T
-- uid: MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin*
-  commentId: Overload:MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin
-  isExternal: true
-  href: MBFWpfToolkit.Helpers.MbResourceHelper.html#MBFWpfToolkit_Helpers_MbResourceHelper_GetSkin_System_Reflection_Assembly_System_String_MBFWpfToolkit_Constants_SkinType_
-  name: GetSkin
-  nameWithType: MbResourceHelper.GetSkin
-  fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin
-- uid: System.Reflection.Assembly
-  commentId: T:System.Reflection.Assembly
-  parent: System.Reflection
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
-  name: Assembly
-  nameWithType: Assembly
-  fullName: System.Reflection.Assembly
 - uid: MBFWpfToolkit.Constants.SkinType
   commentId: T:MBFWpfToolkit.Constants.SkinType
   parent: MBFWpfToolkit.Constants
@@ -528,33 +522,21 @@ references:
   name: ResourceDictionary
   nameWithType: ResourceDictionary
   fullName: System.Windows.ResourceDictionary
-- uid: System.Reflection
-  commentId: N:System.Reflection
+- uid: MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin*
+  commentId: Overload:MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Reflection
-  nameWithType: System.Reflection
-  fullName: System.Reflection
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Reflection
-    name: Reflection
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.reflection
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Reflection
-    name: Reflection
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  href: MBFWpfToolkit.Helpers.MbResourceHelper.html#MBFWpfToolkit_Helpers_MbResourceHelper_GetSkin_System_Reflection_Assembly_System_String_MBFWpfToolkit_Constants_SkinType_
+  name: GetSkin
+  nameWithType: MbResourceHelper.GetSkin
+  fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
 - uid: MBFWpfToolkit.Constants
   commentId: N:MBFWpfToolkit.Constants
   isExternal: true
@@ -609,6 +591,33 @@ references:
     name: Windows
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.windows
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
 - uid: MBFWpfToolkit.Helpers.MbResourceHelper.GetTheme*
   commentId: Overload:MBFWpfToolkit.Helpers.MbResourceHelper.GetTheme
   isExternal: true

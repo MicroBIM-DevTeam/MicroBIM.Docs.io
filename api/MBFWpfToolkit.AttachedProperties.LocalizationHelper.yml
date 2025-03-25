@@ -20,6 +20,11 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: >-
+    Provides localization support for WPF controls using attached properties.
+
+    When <xref href="MBFWpfToolkit.AttachedProperties.LocalizationHelper.LangKeyProperty" data-throw-if-not-resolved="false"></xref> is set on a control, the corresponding localized value will be applied automatically.
+  example: []
   syntax:
     content: public static class LocalizationHelper
     content.vb: Public Module LocalizationHelper
@@ -49,6 +54,11 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: >-
+    Identifies the <code>LangKey</code> attached property.
+
+    This property is used to bind a localization key to a control.
+  example: []
   syntax:
     content: public static readonly DependencyProperty LangKeyProperty
     return:
@@ -70,6 +80,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: Gets the value of the <code>LangKey</code> attached property.
+  example: []
   syntax:
     content: public static string GetLangKey(DependencyObject obj)
     parameters:
@@ -95,6 +107,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: Sets the value of the <code>LangKey</code> attached property.
+  example: []
   syntax:
     content: public static void SetLangKey(DependencyObject obj, string value)
     parameters:
@@ -108,6 +122,13 @@ items:
   fullName.vb: MBFWpfToolkit.AttachedProperties.LocalizationHelper.SetLangKey(System.Windows.DependencyObject, String)
   name.vb: SetLangKey(DependencyObject, String)
 references:
+- uid: MBFWpfToolkit.AttachedProperties.LocalizationHelper.LangKeyProperty
+  commentId: F:MBFWpfToolkit.AttachedProperties.LocalizationHelper.LangKeyProperty
+  isExternal: true
+  href: MBFWpfToolkit.AttachedProperties.LocalizationHelper.html#MBFWpfToolkit_AttachedProperties_LocalizationHelper_LangKeyProperty
+  name: LangKeyProperty
+  nameWithType: LocalizationHelper.LangKeyProperty
+  fullName: MBFWpfToolkit.AttachedProperties.LocalizationHelper.LangKeyProperty
 - uid: MBFWpfToolkit.AttachedProperties
   commentId: N:MBFWpfToolkit.AttachedProperties
   isExternal: true

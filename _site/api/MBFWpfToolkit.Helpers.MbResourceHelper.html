@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MbResourceHelper | MIcroBIM Docs ">
       
-      <meta name="description" content="资源帮助类">
+      <meta name="description" content="Provides helper methods for retrieving theme and skin resources in a WPF application.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,7 @@ Class MbResourceHelper  <a class="header-action link-secondary" title="View sour
   <dl><dt>Assembly</dt><dd>MBFWpfToolkit.dll</dd></dl>
   </div>
 
-  <div class="markdown summary">资源帮助类</div>
+  <div class="markdown summary">Provides helper methods for retrieving theme and skin resources in a WPF application.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -189,7 +189,7 @@ Class MbResourceHelper  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbResourceHelper.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">获取资源</div>
+  <div class="markdown level1 summary">Retrieves a resource from the application’s merged resource dictionaries by key.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -199,19 +199,19 @@ Class MbResourceHelper  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd>The key of the resource to retrieve.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">T</span></dt>
-    <dd></dd>
+    <dd>The resource cast to type <code class="typeparamref">T</code> if found; otherwise, the default value of <code class="typeparamref">T</code>.</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd>The expected type of the resource.</dd>
   </dl>
 
 
@@ -230,7 +230,7 @@ Class MbResourceHelper  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbResourceHelper.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">get HandyControl skin</div>
+  <div class="markdown level1 summary">Loads a built-in HandyControl skin resource dictionary by skin type.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -240,13 +240,13 @@ Class MbResourceHelper  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>skin</code> <a class="xref" href="MBFWpfToolkit.Constants.SkinType.html">SkinType</a></dt>
-    <dd></dd>
+    <dd>The <a class="xref" href="MBFWpfToolkit.Constants.SkinType.html">SkinType</a> indicating which skin to load.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.resourcedictionary">ResourceDictionary</a></dt>
-    <dd></dd>
+    <dd>The loaded <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.resourcedictionary">ResourceDictionary</a>.</dd>
   </dl>
 
 
@@ -266,7 +266,7 @@ Class MbResourceHelper  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbResourceHelper.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">获取皮肤</div>
+  <div class="markdown level1 summary">Loads a skin resource dictionary from a specified assembly and path.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -276,17 +276,17 @@ Class MbResourceHelper  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>assembly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></dt>
-    <dd></dd>
+    <dd>The assembly containing the skin resources.</dd>
     <dt><code>themePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd>The path to the skin directory inside the assembly.</dd>
     <dt><code>skin</code> <a class="xref" href="MBFWpfToolkit.Constants.SkinType.html">SkinType</a></dt>
-    <dd></dd>
+    <dd>The <a class="xref" href="MBFWpfToolkit.Constants.SkinType.html">SkinType</a> indicating which skin to load.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.resourcedictionary">ResourceDictionary</a></dt>
-    <dd></dd>
+    <dd>The loaded <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.resourcedictionary">ResourceDictionary</a> for the specified skin.</dd>
   </dl>
 
 
@@ -306,7 +306,7 @@ Class MbResourceHelper  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbResourceHelper.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Loads the standalone HandyControl theme resource dictionary.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -317,7 +317,7 @@ Class MbResourceHelper  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.resourcedictionary">ResourceDictionary</a></dt>
-    <dd></dd>
+    <dd>The loaded <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.resourcedictionary">ResourceDictionary</a>.</dd>
   </dl>
 
 
@@ -337,7 +337,7 @@ Class MbResourceHelper  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbResourceHelper.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">get HandyControl theme</div>
+  <div class="markdown level1 summary">Retrieves the current theme resource dictionary. If not already loaded, it loads the standalone HandyControl theme.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -348,7 +348,7 @@ Class MbResourceHelper  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.resourcedictionary">ResourceDictionary</a></dt>
-    <dd></dd>
+    <dd>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.resourcedictionary">ResourceDictionary</a> representing the current theme.</dd>
   </dl>
 
 

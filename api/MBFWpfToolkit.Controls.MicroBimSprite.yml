@@ -19,7 +19,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls
-  summary: Interaction logic for MicroBimSprite.xaml
+  summary: Represents the MicroBIM Sprite window used for displaying custom interactive UI elements.
+  remarks: This window is styled using HandyControl and can be used to provide compact, reusable, or themed dialogs/popups.
   example: []
   syntax:
     content: 'public class MicroBimSprite : Window, IComponentConnector'
@@ -44,6 +45,11 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls
+  summary: >-
+    Initializes a new instance of the <xref href="MBFWpfToolkit.Controls.MicroBimSprite" data-throw-if-not-resolved="false"></xref> window.
+
+    Loads the associated XAML and prepares the window for display.
+  example: []
   syntax:
     content: public MicroBimSprite()
     content.vb: Public Sub New()
@@ -166,6 +172,13 @@ references:
     name: Markup
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.windows.markup
+- uid: MBFWpfToolkit.Controls.MicroBimSprite
+  commentId: T:MBFWpfToolkit.Controls.MicroBimSprite
+  isExternal: true
+  href: MBFWpfToolkit.Controls.MicroBimSprite.html
+  name: MicroBimSprite
+  nameWithType: MicroBimSprite
+  fullName: MBFWpfToolkit.Controls.MicroBimSprite
 - uid: MBFWpfToolkit.Controls.MicroBimSprite.#ctor*
   commentId: Overload:MBFWpfToolkit.Controls.MicroBimSprite.#ctor
   isExternal: true

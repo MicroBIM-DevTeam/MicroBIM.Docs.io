@@ -66,6 +66,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
+  summary: Identifies the <xref href="MBFWpfToolkit.MbWindow.IsThemeToggleVisible" data-throw-if-not-resolved="false"></xref> dependency property.
+  example: []
   syntax:
     content: public static readonly DependencyProperty IsThemeToggleVisibleProperty
     return:
@@ -202,6 +204,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
+  summary: Identifies the <xref href="MBFWpfToolkit.MbWindow.ShowLogo" data-throw-if-not-resolved="false"></xref> dependency property.
+  example: []
   syntax:
     content: public static readonly DependencyProperty ShowLogoProperty
     return:
@@ -223,6 +227,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
+  summary: Identifies the <xref href="MBFWpfToolkit.MbWindow.ShowPluginName" data-throw-if-not-resolved="false"></xref> dependency property.
+  example: []
   syntax:
     content: public static readonly DependencyProperty ShowPluginNameProperty
     return:
@@ -244,6 +250,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
+  summary: Identifies the <xref href="MBFWpfToolkit.MbWindow.ShowPluginVersion" data-throw-if-not-resolved="false"></xref> dependency property.
+  example: []
   syntax:
     content: public static readonly DependencyProperty ShowPluginVersionProperty
     return:
@@ -265,7 +273,12 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
-  summary: Initializes a new instance of the <xref href="MBFWpfToolkit.MbWindow" data-throw-if-not-resolved="false"></xref> class.
+  summary: >-
+    Initializes a new instance of the <xref href="MBFWpfToolkit.MbWindow" data-throw-if-not-resolved="false"></xref> class.
+
+    Subscribes to <xref href="System.Windows.FrameworkElement.Loaded" data-throw-if-not-resolved="false"></xref> and Window.Closed events
+
+    to handle resource initialization and cleanup.
   example: []
   syntax:
     content: public MbWindow()
@@ -290,7 +303,12 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
-  summary: Static initialization for MbfWindow.
+  summary: >-
+    Performs static initialization for the <xref href="MBFWpfToolkit.MbWindow" data-throw-if-not-resolved="false"></xref>.
+
+    Applies the primary brush color, sets window properties, configures non-client UI content,
+
+    and ensures shared resources are loaded into <xref href="MBFWpfToolkit.MbWindow.MainResources" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: protected void InitializeWindow()
@@ -312,6 +330,11 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
+  summary: >-
+    Displays the <xref href="MBFWpfToolkit.Controls.MicroBimSprite" data-throw-if-not-resolved="false"></xref> overlay window (e.g., a floating mascot or animation).
+
+    Stores the instance internally and calls its <code>Show()</code> method to render it on screen.
+  example: []
   syntax:
     content: public void ShowSprite()
     content.vb: Public Sub ShowSprite()
@@ -357,6 +380,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
+  summary: Gets or sets a value indicating whether the theme toggle button (light/dark mode switch) is visible in the window's title bar.
+  example: []
   syntax:
     content: public bool IsThemeToggleVisible { get; set; }
     parameters: []
@@ -505,6 +530,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
+  summary: Gets or sets a value indicating whether the logo should be displayed in the window's header.
+  example: []
   syntax:
     content: public bool ShowLogo { get; set; }
     parameters: []
@@ -528,6 +555,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
+  summary: Gets or sets a value indicating whether the plugin name should be displayed in the window's header.
+  example: []
   syntax:
     content: public bool ShowPluginName { get; set; }
     parameters: []
@@ -551,6 +580,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
+  summary: Gets or sets a value indicating whether the plugin version should be displayed in the window's header.
+  example: []
   syntax:
     content: public bool ShowPluginVersion { get; set; }
     parameters: []
@@ -574,6 +605,11 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
+  summary: >-
+    Gets or sets the main shared resource dictionary used across all <xref href="MBFWpfToolkit.MbWindow" data-throw-if-not-resolved="false"></xref> instances.
+
+    This allows consistent styling and resource reuse throughout the application.
+  example: []
   syntax:
     content: public static ResourceDictionary? MainResources { get; set; }
     parameters: []
@@ -607,6 +643,14 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: MBFWpfToolkit.MbWindow.IsThemeToggleVisible
+  commentId: P:MBFWpfToolkit.MbWindow.IsThemeToggleVisible
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_IsThemeToggleVisible
+  name: IsThemeToggleVisible
+  nameWithType: MbWindow.IsThemeToggleVisible
+  fullName: MBFWpfToolkit.MbWindow.IsThemeToggleVisible
 - uid: System.Windows.DependencyProperty
   commentId: T:System.Windows.DependencyProperty
   parent: System.Windows
@@ -615,6 +659,14 @@ references:
   name: DependencyProperty
   nameWithType: DependencyProperty
   fullName: System.Windows.DependencyProperty
+- uid: MBFWpfToolkit.MbWindow
+  commentId: T:MBFWpfToolkit.MbWindow
+  parent: MBFWpfToolkit
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html
+  name: MbWindow
+  nameWithType: MbWindow
+  fullName: MBFWpfToolkit.MbWindow
 - uid: System.Windows
   commentId: N:System.Windows
   isExternal: true
@@ -642,14 +694,37 @@ references:
     name: Windows
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.windows
-- uid: MBFWpfToolkit.MbWindow
-  commentId: T:MBFWpfToolkit.MbWindow
-  parent: MBFWpfToolkit
+- uid: MBFWpfToolkit.MbWindow.ShowLogo
+  commentId: P:MBFWpfToolkit.MbWindow.ShowLogo
+  parent: MBFWpfToolkit.MbWindow
   isExternal: true
-  href: MBFWpfToolkit.MbWindow.html
-  name: MbWindow
-  nameWithType: MbWindow
-  fullName: MBFWpfToolkit.MbWindow
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowLogo
+  name: ShowLogo
+  nameWithType: MbWindow.ShowLogo
+  fullName: MBFWpfToolkit.MbWindow.ShowLogo
+- uid: MBFWpfToolkit.MbWindow.ShowPluginName
+  commentId: P:MBFWpfToolkit.MbWindow.ShowPluginName
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowPluginName
+  name: ShowPluginName
+  nameWithType: MbWindow.ShowPluginName
+  fullName: MBFWpfToolkit.MbWindow.ShowPluginName
+- uid: MBFWpfToolkit.MbWindow.ShowPluginVersion
+  commentId: P:MBFWpfToolkit.MbWindow.ShowPluginVersion
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowPluginVersion
+  name: ShowPluginVersion
+  nameWithType: MbWindow.ShowPluginVersion
+  fullName: MBFWpfToolkit.MbWindow.ShowPluginVersion
+- uid: System.Windows.FrameworkElement.Loaded
+  commentId: E:System.Windows.FrameworkElement.Loaded
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement.loaded
+  name: Loaded
+  nameWithType: FrameworkElement.Loaded
+  fullName: System.Windows.FrameworkElement.Loaded
 - uid: MBFWpfToolkit.MbWindow.#ctor*
   commentId: Overload:MBFWpfToolkit.MbWindow.#ctor
   isExternal: true
@@ -660,6 +735,14 @@ references:
   nameWithType.vb: MbWindow.New
   fullName.vb: MBFWpfToolkit.MbWindow.New
   name.vb: New
+- uid: MBFWpfToolkit.MbWindow.MainResources
+  commentId: P:MBFWpfToolkit.MbWindow.MainResources
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_MainResources
+  name: MainResources
+  nameWithType: MbWindow.MainResources
+  fullName: MBFWpfToolkit.MbWindow.MainResources
 - uid: MBFWpfToolkit.MbWindow.InitializeWindow*
   commentId: Overload:MBFWpfToolkit.MbWindow.InitializeWindow
   isExternal: true
@@ -667,6 +750,13 @@ references:
   name: InitializeWindow
   nameWithType: MbWindow.InitializeWindow
   fullName: MBFWpfToolkit.MbWindow.InitializeWindow
+- uid: MBFWpfToolkit.Controls.MicroBimSprite
+  commentId: T:MBFWpfToolkit.Controls.MicroBimSprite
+  isExternal: true
+  href: MBFWpfToolkit.Controls.MicroBimSprite.html
+  name: MicroBimSprite
+  nameWithType: MicroBimSprite
+  fullName: MBFWpfToolkit.Controls.MicroBimSprite
 - uid: MBFWpfToolkit.MbWindow.ShowSprite*
   commentId: Overload:MBFWpfToolkit.MbWindow.ShowSprite
   isExternal: true

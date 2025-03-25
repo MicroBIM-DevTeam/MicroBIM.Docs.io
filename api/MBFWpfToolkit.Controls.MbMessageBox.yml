@@ -18,6 +18,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls
+  summary: A custom message box window that supports HandyControl theming, icon display, and multiple button configurations.
+  example: []
   syntax:
     content: 'public class MbMessageBox : MbWindow'
     content.vb: Public Class MbMessageBox Inherits MbWindow

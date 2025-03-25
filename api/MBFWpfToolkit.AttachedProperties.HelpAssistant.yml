@@ -28,6 +28,11 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: >-
+    Provides attached properties to define step-based help or onboarding instructions for UI elements.
+
+    Elements can be dynamically registered and retrieved in a specific order based on their step number.
+  example: []
   syntax:
     content: public class HelpAssistant
     content.vb: Public Class HelpAssistant
@@ -57,6 +62,11 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: >-
+    Identifies the StepNumber attached property.
+
+    Represents the sequence order of the help step.
+  example: []
   syntax:
     content: public static readonly DependencyProperty StepNumberProperty
     return:
@@ -78,6 +88,11 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: >-
+    Identifies the StepText attached property.
+
+    Describes the instructional text for the help step.
+  example: []
   syntax:
     content: public static readonly DependencyProperty StepTextProperty
     return:
@@ -99,7 +114,10 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
-  summary: This property is only to register elements dynamically.
+  summary: >-
+    Identifies the AutoRegister attached property.
+
+    This property is used only to trigger element registration dynamically.
   example: []
   syntax:
     content: public static readonly DependencyProperty AutoRegisterProperty
@@ -122,6 +140,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: Gets the step number of the element.
+  example: []
   syntax:
     content: public static int GetStepNumber(DependencyObject obj)
     parameters:
@@ -147,6 +167,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: Sets the step number of the element.
+  example: []
   syntax:
     content: public static void SetStepNumber(DependencyObject obj, int value)
     parameters:
@@ -175,6 +197,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: Gets the step text of the element.
+  example: []
   syntax:
     content: public static string GetStepText(DependencyObject obj)
     parameters:
@@ -200,6 +224,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: Sets the step text of the element.
+  example: []
   syntax:
     content: public static void SetStepText(DependencyObject obj, string value)
     parameters:
@@ -228,6 +254,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: Gets the AutoRegister value of the element.
+  example: []
   syntax:
     content: public static bool GetAutoRegister(DependencyObject obj)
     parameters:
@@ -253,6 +281,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: Sets the AutoRegister value of the element.
+  example: []
   syntax:
     content: public static void SetAutoRegister(DependencyObject obj, bool value)
     parameters:
@@ -281,12 +311,13 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
-  summary: Retrieves all registered elements, ordered by StepNumber.
+  summary: Retrieves all registered UI elements with valid step numbers, sorted in ascending order.
   example: []
   syntax:
     content: public static List<FrameworkElement> GetOrderedSteps()
     return:
       type: System.Collections.Generic.List{System.Windows.FrameworkElement}
+      description: A sorted list of registered <xref href="System.Windows.FrameworkElement" data-throw-if-not-resolved="false"></xref>s for the help assistant.
     content.vb: Public Shared Function GetOrderedSteps() As List(Of FrameworkElement)
   overload: MBFWpfToolkit.AttachedProperties.HelpAssistant.GetOrderedSteps*
 - uid: MBFWpfToolkit.AttachedProperties.HelpAssistant.#ctor
@@ -695,6 +726,14 @@ references:
   name: SetAutoRegister
   nameWithType: HelpAssistant.SetAutoRegister
   fullName: MBFWpfToolkit.AttachedProperties.HelpAssistant.SetAutoRegister
+- uid: System.Windows.FrameworkElement
+  commentId: T:System.Windows.FrameworkElement
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement
+  name: FrameworkElement
+  nameWithType: FrameworkElement
+  fullName: System.Windows.FrameworkElement
 - uid: MBFWpfToolkit.AttachedProperties.HelpAssistant.GetOrderedSteps*
   commentId: Overload:MBFWpfToolkit.AttachedProperties.HelpAssistant.GetOrderedSteps
   isExternal: true

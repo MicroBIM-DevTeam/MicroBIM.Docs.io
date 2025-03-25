@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class HelpAssistant | MIcroBIM Docs ">
       
-      
+      <meta name="description" content="Provides attached properties to define step-based help or onboarding instructions for UI elements. Elements can be dynamically registered and retrieved in a specific order based on their step number.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,8 @@ Class HelpAssistant  <a class="header-action link-secondary" title="View source"
   <dl><dt>Assembly</dt><dd>MBFWpfToolkit.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary">Provides attached properties to define step-based help or onboarding instructions for UI elements.
+Elements can be dynamically registered and retrieved in a specific order based on their step number.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -188,7 +189,8 @@ Class HelpAssistant  <a class="header-action link-secondary" title="View source"
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/HelpAssistant.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">This property is only to register elements dynamically.</div>
+  <div class="markdown level1 summary">Identifies the AutoRegister attached property.
+This property is used only to trigger element registration dynamically.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -218,7 +220,8 @@ Class HelpAssistant  <a class="header-action link-secondary" title="View source"
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/HelpAssistant.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Identifies the StepNumber attached property.
+Represents the sequence order of the help step.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -248,7 +251,8 @@ Class HelpAssistant  <a class="header-action link-secondary" title="View source"
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/HelpAssistant.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Identifies the StepText attached property.
+Describes the instructional text for the help step.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -283,7 +287,7 @@ Class HelpAssistant  <a class="header-action link-secondary" title="View source"
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/HelpAssistant.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Gets the AutoRegister value of the element.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -319,7 +323,7 @@ Class HelpAssistant  <a class="header-action link-secondary" title="View source"
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/HelpAssistant.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Retrieves all registered elements, ordered by StepNumber.</div>
+  <div class="markdown level1 summary">Retrieves all registered UI elements with valid step numbers, sorted in ascending order.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -330,7 +334,7 @@ Class HelpAssistant  <a class="header-action link-secondary" title="View source"
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement">FrameworkElement</a>&gt;</dt>
-    <dd></dd>
+    <dd>A sorted list of registered <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement">FrameworkElement</a>s for the help assistant.</dd>
   </dl>
 
 
@@ -350,7 +354,7 @@ Class HelpAssistant  <a class="header-action link-secondary" title="View source"
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/HelpAssistant.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Gets the step number of the element.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -386,7 +390,7 @@ Class HelpAssistant  <a class="header-action link-secondary" title="View source"
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/HelpAssistant.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Gets the step text of the element.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -422,7 +426,7 @@ Class HelpAssistant  <a class="header-action link-secondary" title="View source"
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/HelpAssistant.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Sets the AutoRegister value of the element.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -455,7 +459,7 @@ Class HelpAssistant  <a class="header-action link-secondary" title="View source"
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/HelpAssistant.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Sets the step number of the element.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -488,7 +492,7 @@ Class HelpAssistant  <a class="header-action link-secondary" title="View source"
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/HelpAssistant.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Sets the step text of the element.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

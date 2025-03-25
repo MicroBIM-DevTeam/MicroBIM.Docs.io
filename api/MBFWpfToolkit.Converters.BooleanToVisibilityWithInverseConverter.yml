@@ -20,6 +20,15 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
+  summary: >-
+    Converts a <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref> value to a <xref href="System.Windows.Visibility" data-throw-if-not-resolved="false"></xref> value.
+
+    Supports optional inversion using a converter parameter.
+  remarks: >-
+    If the parameter is set to "Inverse" (case-insensitive), the visibility result will be inverted.
+
+    Useful for showing or hiding UI elements based on boolean flags with optional inversion.
+  example: []
   syntax:
     content: 'public class BooleanToVisibilityWithInverseConverter : IValueConverter'
     content.vb: Public Class BooleanToVisibilityWithInverseConverter Implements IValueConverter
@@ -51,20 +60,31 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
+  summary: Converts a <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref> to <xref href="System.Windows.Visibility" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     parameters:
     - id: value
       type: System.Object
+      description: The boolean value to convert.
     - id: targetType
       type: System.Type
+      description: The target type (expected to be <xref href="System.Windows.Visibility" data-throw-if-not-resolved="false"></xref>).
     - id: parameter
       type: System.Object
+      description: Optional parameter. If set to "Inverse", the result will be inverted.
     - id: culture
       type: System.Globalization.CultureInfo
+      description: Culture info (not used).
     return:
       type: System.Object
+      description: >-
+        Returns <xref href="System.Windows.Visibility.Visible" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is true,
+
+        or <xref href="System.Windows.Visibility.Collapsed" data-throw-if-not-resolved="false"></xref> if false.
+
+        If "Inverse" is passed as a parameter, the logic is flipped.
     content.vb: Public Function Convert(value As Object, targetType As Type, parameter As Object, culture As CultureInfo) As Object
   overload: MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter.Convert*
   implements:
@@ -88,20 +108,26 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
+  summary: Converts a <xref href="System.Windows.Visibility" data-throw-if-not-resolved="false"></xref> value back to <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
     parameters:
     - id: value
       type: System.Object
+      description: The visibility value to convert.
     - id: targetType
       type: System.Type
+      description: The target type (expected to be <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref>).
     - id: parameter
       type: System.Object
+      description: Optional parameter (not used in ConvertBack).
     - id: culture
       type: System.Globalization.CultureInfo
+      description: Culture info (not used).
     return:
       type: System.Object
+      description: Returns <code>true</code> if <code class="paramref">value</code> is <xref href="System.Windows.Visibility.Visible" data-throw-if-not-resolved="false"></xref>, otherwise <code>false</code>.
     content.vb: Public Function ConvertBack(value As Object, targetType As Type, parameter As Object, culture As CultureInfo) As Object
   overload: MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter.ConvertBack*
   implements:
@@ -133,6 +159,24 @@ items:
   fullName.vb: MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter.New()
   name.vb: New()
 references:
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Windows.Visibility
+  commentId: T:System.Windows.Visibility
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.visibility
+  name: Visibility
+  nameWithType: Visibility
+  fullName: System.Windows.Visibility
 - uid: MBFWpfToolkit.Converters
   commentId: N:MBFWpfToolkit.Converters
   isExternal: true
@@ -442,6 +486,20 @@ references:
     name: Data
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.windows.data
+- uid: System.Windows.Visibility.Visible
+  commentId: F:System.Windows.Visibility.Visible
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.visibility#system-windows-visibility-visible
+  name: Visible
+  nameWithType: Visibility.Visible
+  fullName: System.Windows.Visibility.Visible
+- uid: System.Windows.Visibility.Collapsed
+  commentId: F:System.Windows.Visibility.Collapsed
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.visibility#system-windows-visibility-collapsed
+  name: Collapsed
+  nameWithType: Visibility.Collapsed
+  fullName: System.Windows.Visibility.Collapsed
 - uid: MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter.Convert*
   commentId: Overload:MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter.Convert
   isExternal: true

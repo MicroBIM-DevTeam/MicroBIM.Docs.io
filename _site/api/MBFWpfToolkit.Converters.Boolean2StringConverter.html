@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Boolean2StringConverter | MIcroBIM Docs ">
       
-      
+      <meta name="description" content="Converts a  value to a  based on a semicolon-delimited parameter string.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,7 @@ Class Boolean2StringConverter  <a class="header-action link-secondary" title="Vi
   <dl><dt>Assembly</dt><dd>MBFWpfToolkit.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary">Converts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> value to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> based on a semicolon-delimited parameter string.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -152,6 +152,8 @@ Class Boolean2StringConverter  <a class="header-action link-secondary" title="Vi
 
 
 
+  <h2 id="MBFWpfToolkit_Converters_Boolean2StringConverter_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">Used to convert a boolean to two possible string values (e.g., "Off;On") for UI display.</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -195,7 +197,7 @@ Class Boolean2StringConverter  <a class="header-action link-secondary" title="Vi
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Converters/Boolean2StringConverter.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Converts a boolean value to a string.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -205,19 +207,20 @@ Class Boolean2StringConverter  <a class="header-action link-secondary" title="Vi
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd>The boolean value to convert.</dd>
     <dt><code>targetType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-    <dd></dd>
+    <dd>The target type (should be <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>).</dd>
     <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd>A semicolon-separated string representing the two output values (e.g., "FalseValue;TrueValue").</dd>
     <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
-    <dd></dd>
+    <dd>The current culture (not used).</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd>Returns the second string (after semicolon) if <code class="paramref">value</code> is <code>true</code>,
+or the first string if <code>false</code>. Returns an empty string if input is invalid.</dd>
   </dl>
 
 
@@ -237,7 +240,7 @@ Class Boolean2StringConverter  <a class="header-action link-secondary" title="Vi
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Converters/Boolean2StringConverter.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Not implemented. Conversion back is not supported.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -259,7 +262,7 @@ Class Boolean2StringConverter  <a class="header-action link-secondary" title="Vi
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.data.binding.donothing">DoNothing</a></dd>
   </dl>
 
 

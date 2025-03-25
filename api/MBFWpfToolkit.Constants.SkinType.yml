@@ -20,6 +20,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants
+  summary: Defines available theme skins for the application UI.
+  example: []
   syntax:
     content: public enum SkinType
     content.vb: Public Enum SkinType
@@ -39,6 +41,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants
+  summary: The default (light or system-defined) application theme.
+  example: []
   syntax:
     content: Default = 0
     return:
@@ -59,6 +63,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants
+  summary: A dark theme with a darker background and lighter foreground elements.
+  example: []
   syntax:
     content: Dark = 1
     return:
@@ -79,6 +85,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants
+  summary: A violet-colored theme for a more vibrant visual experience.
+  example: []
   syntax:
     content: Violet = 2
     return:

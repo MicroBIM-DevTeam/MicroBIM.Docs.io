@@ -21,7 +21,7 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls.Help
-  summary: Interaction logic for HelpWizard.xaml
+  summary: Represents an interactive in-app help wizard that guides users through UI elements step-by-step.
   example: []
   syntax:
     content: 'public class HelpWizard : MbWindow, IComponentConnector'
@@ -70,11 +70,14 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls.Help
+  summary: Initializes a new instance of the <xref href="MBFWpfToolkit.Controls.Help.HelpWizard" data-throw-if-not-resolved="false"></xref> class.
+  example: []
   syntax:
     content: public HelpWizard(MbWindow mainWindow)
     parameters:
     - id: mainWindow
       type: MBFWpfToolkit.MbWindow
+      description: The main application window hosting the UI elements to be highlighted in the help wizard.
     content.vb: Public Sub New(mainWindow As MbWindow)
   overload: MBFWpfToolkit.Controls.Help.HelpWizard.#ctor*
   nameWithType.vb: HelpWizard.New(MbWindow)
@@ -120,6 +123,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls.Help
+  summary: Gets or sets the list of all help steps.
+  example: []
   syntax:
     content: public List<HelpStep> Steps { get; set; }
     parameters: []
@@ -143,6 +148,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls.Help
+  summary: Gets or sets the index of the currently active help step.
+  example: []
   syntax:
     content: public int CurrentStep { get; set; }
     parameters: []
@@ -484,6 +491,13 @@ references:
     name: Markup
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.windows.markup
+- uid: MBFWpfToolkit.Controls.Help.HelpWizard
+  commentId: T:MBFWpfToolkit.Controls.Help.HelpWizard
+  isExternal: true
+  href: MBFWpfToolkit.Controls.Help.HelpWizard.html
+  name: HelpWizard
+  nameWithType: HelpWizard
+  fullName: MBFWpfToolkit.Controls.Help.HelpWizard
 - uid: MBFWpfToolkit.Controls.Help.HelpWizard.#ctor*
   commentId: Overload:MBFWpfToolkit.Controls.Help.HelpWizard.#ctor
   isExternal: true

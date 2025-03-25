@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ValidationMultiConverter | MIcroBIM Docs ">
       
-      
+      <meta name="description" content="A multi-value converter that validates a group of input values (typically bound from multiple  elements). It checks for empty input and validation errors to determine whether a button (or any control) should be enabled.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,8 @@ Class ValidationMultiConverter  <a class="header-action link-secondary" title="V
   <dl><dt>Assembly</dt><dd>MBFWpfToolkit.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary">A multi-value converter that validates a group of input values (typically bound from multiple <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.textbox">TextBox</a> elements).
+It checks for empty input and validation errors to determine whether a button (or any control) should be enabled.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -152,6 +153,9 @@ Class ValidationMultiConverter  <a class="header-action link-secondary" title="V
 
 
 
+  <h2 id="MBFWpfToolkit_Converters_ValidationMultiConverter_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">This converter expects alternating values: [Text, HasError, Text, HasError, ...].
+If any Text is null/empty or any HasError is true, the result is false.</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -195,7 +199,7 @@ Class ValidationMultiConverter  <a class="header-action link-secondary" title="V
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Converters/ValidationMultiConverter.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Validates a group of values to determine if a control (e.g., a button) should be enabled.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -205,19 +209,19 @@ Class ValidationMultiConverter  <a class="header-action link-secondary" title="V
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
-    <dd></dd>
+    <dd>An array of values from multiple bindings. Alternating pattern: Text, HasError, Text, HasError...</dd>
     <dt><code>targetType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-    <dd></dd>
+    <dd>The target type of the binding (usually <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>).</dd>
     <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd>Optional parameter (not used).</dd>
     <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
-    <dd></dd>
+    <dd>The culture info (not used).</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd>Returns <code>true</code> if all inputs are non-empty and have no validation errors; otherwise <code>false</code>.</dd>
   </dl>
 
 
@@ -237,7 +241,7 @@ Class ValidationMultiConverter  <a class="header-action link-secondary" title="V
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Converters/ValidationMultiConverter.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">ConvertBack is not implemented. Returns <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.data.binding.donothing">DoNothing</a>.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -259,7 +263,7 @@ Class ValidationMultiConverter  <a class="header-action link-secondary" title="V
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
-    <dd></dd>
+    <dd>An array of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.data.binding.donothing">DoNothing</a>.</dd>
   </dl>
 
 

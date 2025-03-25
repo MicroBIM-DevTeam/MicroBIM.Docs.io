@@ -26,6 +26,11 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants
+  summary: >-
+    Defines icons that can be displayed in a custom message box.
+
+    These icons represent different statuses or types of feedback for the user.
+  example: []
   syntax:
     content: public enum MbMessageIcon
     content.vb: Public Enum MbMessageIcon
@@ -199,7 +204,7 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants
-  summary: A trash bin or cross symbol, indicating the removal or deletion of an item.
+  summary: A trash bin or cross symbol, indicating the creation of a new item.
   example: []
   syntax:
     content: New = 512
@@ -221,6 +226,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants
+  summary: A trash bin or cross symbol, indicating the removal or deletion of an item.
+  example: []
   syntax:
     content: Remove = 1024
     return:

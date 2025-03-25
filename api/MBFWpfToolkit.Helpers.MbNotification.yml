@@ -20,6 +20,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
+  summary: Provides utility methods to display styled notifications using HandyControl's <xref href="HandyControl.Controls.Growl" data-throw-if-not-resolved="false"></xref> system.
+  example: []
   syntax:
     content: public static class MbNotification
     content.vb: Public Module MbNotification
@@ -49,13 +51,17 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
+  summary: Displays a success notification with a green check icon.
+  example: []
   syntax:
     content: public static void ShowSuccess(string message, int waitTime = 2)
     parameters:
     - id: message
       type: System.String
+      description: The message to be shown in the notification.
     - id: waitTime
       type: System.Int32
+      description: The duration (in seconds) the notification remains visible. Default is 2 seconds.
     content.vb: Public Shared Sub ShowSuccess(message As String, waitTime As Integer = 2)
   overload: MBFWpfToolkit.Helpers.MbNotification.ShowSuccess*
   nameWithType.vb: MbNotification.ShowSuccess(String, Integer)
@@ -77,13 +83,17 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
+  summary: Displays an informational notification with a blue info icon.
+  example: []
   syntax:
     content: public static void ShowInfo(string message, int waitTime = 2)
     parameters:
     - id: message
       type: System.String
+      description: The message to be shown in the notification.
     - id: waitTime
       type: System.Int32
+      description: The duration (in seconds) the notification remains visible. Default is 2 seconds.
     content.vb: Public Shared Sub ShowInfo(message As String, waitTime As Integer = 2)
   overload: MBFWpfToolkit.Helpers.MbNotification.ShowInfo*
   nameWithType.vb: MbNotification.ShowInfo(String, Integer)
@@ -105,19 +115,26 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
+  summary: Displays an error notification with a red cross icon.
+  example: []
   syntax:
     content: public static void ShowError(string message, int waitTime = 2)
     parameters:
     - id: message
       type: System.String
+      description: The message to be shown in the notification.
     - id: waitTime
       type: System.Int32
+      description: The duration (in seconds) the notification remains visible. Default is 2 seconds.
     content.vb: Public Shared Sub ShowError(message As String, waitTime As Integer = 2)
   overload: MBFWpfToolkit.Helpers.MbNotification.ShowError*
   nameWithType.vb: MbNotification.ShowError(String, Integer)
   fullName.vb: MBFWpfToolkit.Helpers.MbNotification.ShowError(String, Integer)
   name.vb: ShowError(String, Integer)
 references:
+- uid: HandyControl.Controls.Growl
+  commentId: T:HandyControl.Controls.Growl
+  isExternal: true
 - uid: MBFWpfToolkit.Helpers
   commentId: N:MBFWpfToolkit.Helpers
   isExternal: true

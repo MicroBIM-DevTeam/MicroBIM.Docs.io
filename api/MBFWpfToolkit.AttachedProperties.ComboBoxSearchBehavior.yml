@@ -21,6 +21,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: Provides an attached behavior to enable live search filtering on a <xref href="System.Windows.Controls.ComboBox" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public static class ComboBoxSearchBehavior
     content.vb: Public Module ComboBoxSearchBehavior
@@ -50,6 +52,11 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: >-
+    Identifies the IsSearchEnabled attached property.
+
+    When set to true, enables live search/filtering within the ComboBox.
+  example: []
   syntax:
     content: public static readonly DependencyProperty IsSearchEnabledProperty
     return:
@@ -71,6 +78,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: Gets the value of the IsSearchEnabled attached property.
+  example: []
   syntax:
     content: public static bool GetIsSearchEnabled(DependencyObject obj)
     parameters:
@@ -96,6 +105,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: Sets the value of the IsSearchEnabled attached property.
+  example: []
   syntax:
     content: public static void SetIsSearchEnabled(DependencyObject obj, bool value)
     parameters:
@@ -124,6 +135,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: Gets the original unfiltered <xref href="System.Collections.IEnumerable" data-throw-if-not-resolved="false"></xref> item source.
+  example: []
   syntax:
     content: public static IEnumerable GetOriginalItemsSource(DependencyObject obj)
     parameters:
@@ -134,6 +147,13 @@ items:
     content.vb: Public Shared Function GetOriginalItemsSource(obj As DependencyObject) As IEnumerable
   overload: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetOriginalItemsSource*
 references:
+- uid: System.Windows.Controls.ComboBox
+  commentId: T:System.Windows.Controls.ComboBox
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.controls.combobox
+  name: ComboBox
+  nameWithType: ComboBox
+  fullName: System.Windows.Controls.ComboBox
 - uid: MBFWpfToolkit.AttachedProperties
   commentId: N:MBFWpfToolkit.AttachedProperties
   isExternal: true
@@ -466,13 +486,6 @@ references:
   name: SetIsSearchEnabled
   nameWithType: ComboBoxSearchBehavior.SetIsSearchEnabled
   fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetIsSearchEnabled
-- uid: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetOriginalItemsSource*
-  commentId: Overload:MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetOriginalItemsSource
-  isExternal: true
-  href: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.html#MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior_GetOriginalItemsSource_System_Windows_DependencyObject_
-  name: GetOriginalItemsSource
-  nameWithType: ComboBoxSearchBehavior.GetOriginalItemsSource
-  fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetOriginalItemsSource
 - uid: System.Collections.IEnumerable
   commentId: T:System.Collections.IEnumerable
   parent: System.Collections
@@ -481,6 +494,13 @@ references:
   name: IEnumerable
   nameWithType: IEnumerable
   fullName: System.Collections.IEnumerable
+- uid: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetOriginalItemsSource*
+  commentId: Overload:MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetOriginalItemsSource
+  isExternal: true
+  href: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.html#MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior_GetOriginalItemsSource_System_Windows_DependencyObject_
+  name: GetOriginalItemsSource
+  nameWithType: ComboBoxSearchBehavior.GetOriginalItemsSource
+  fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetOriginalItemsSource
 - uid: System.Collections
   commentId: N:System.Collections
   isExternal: true

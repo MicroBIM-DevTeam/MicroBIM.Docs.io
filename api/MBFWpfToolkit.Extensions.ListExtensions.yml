@@ -18,6 +18,8 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Extensions
+  summary: Provides extension methods for <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref> to support additional operations.
+  example: []
   syntax:
     content: public static class ListExtensions
     content.vb: Public Module ListExtensions
@@ -48,23 +50,61 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Extensions
+  summary: Moves an item within a <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref> from one index to another.
+  remarks: >-
+    If <code class="paramref">oldIndex</code> and <code class="paramref">newIndex</code> are equal, or if either index is out of range,
+
+    the method does nothing.
+  example: []
   syntax:
     content: public static void Move<T>(this List<T> list, int oldIndex, int newIndex)
     parameters:
     - id: list
       type: System.Collections.Generic.List{{T}}
+      description: The list in which the item will be moved.
     - id: oldIndex
       type: System.Int32
+      description: The current index of the item.
     - id: newIndex
       type: System.Int32
+      description: The target index to move the item to.
     typeParameters:
     - id: T
+      description: The type of elements in the list.
     content.vb: Public Shared Sub Move(Of T)(list As List(Of T), oldIndex As Integer, newIndex As Integer)
   overload: MBFWpfToolkit.Extensions.ListExtensions.Move*
   nameWithType.vb: ListExtensions.Move(Of T)(List(Of T), Integer, Integer)
   fullName.vb: MBFWpfToolkit.Extensions.ListExtensions.Move(Of T)(System.Collections.Generic.List(Of T), Integer, Integer)
   name.vb: Move(Of T)(List(Of T), Integer, Integer)
 references:
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: MBFWpfToolkit.Extensions
   commentId: N:MBFWpfToolkit.Extensions
   isExternal: true
@@ -376,34 +416,6 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: System.Collections.Generic.List`1
-  commentId: T:System.Collections.Generic.List`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic
   isExternal: true

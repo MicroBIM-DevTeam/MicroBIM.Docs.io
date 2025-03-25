@@ -20,6 +20,15 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
+  summary: >-
+    A multi-value converter that validates a group of input values (typically bound from multiple <xref href="System.Windows.Controls.TextBox" data-throw-if-not-resolved="false"></xref> elements).
+
+    It checks for empty input and validation errors to determine whether a button (or any control) should be enabled.
+  remarks: >-
+    This converter expects alternating values: [Text, HasError, Text, HasError, ...].
+
+    If any Text is null/empty or any HasError is true, the result is false.
+  example: []
   syntax:
     content: 'public class ValidationMultiConverter : IMultiValueConverter'
     content.vb: Public Class ValidationMultiConverter Implements IMultiValueConverter
@@ -51,20 +60,26 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
+  summary: Validates a group of values to determine if a control (e.g., a button) should be enabled.
   example: []
   syntax:
     content: public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
     parameters:
     - id: values
       type: System.Object[]
+      description: 'An array of values from multiple bindings. Alternating pattern: Text, HasError, Text, HasError...'
     - id: targetType
       type: System.Type
+      description: The target type of the binding (usually <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref>).
     - id: parameter
       type: System.Object
+      description: Optional parameter (not used).
     - id: culture
       type: System.Globalization.CultureInfo
+      description: The culture info (not used).
     return:
       type: System.Object
+      description: Returns <code>true</code> if all inputs are non-empty and have no validation errors; otherwise <code>false</code>.
     content.vb: Public Function Convert(values As Object(), targetType As Type, parameter As Object, culture As CultureInfo) As Object
   overload: MBFWpfToolkit.Converters.ValidationMultiConverter.Convert*
   implements:
@@ -88,6 +103,7 @@ items:
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
+  summary: ConvertBack is not implemented. Returns <xref href="System.Windows.Data.Binding.DoNothing" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture)
@@ -102,6 +118,7 @@ items:
       type: System.Globalization.CultureInfo
     return:
       type: System.Object[]
+      description: An array of <xref href="System.Windows.Data.Binding.DoNothing" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Function ConvertBack(value As Object, targetTypes As Type(), parameter As Object, culture As CultureInfo) As Object()
   overload: MBFWpfToolkit.Converters.ValidationMultiConverter.ConvertBack*
   implements:
@@ -133,6 +150,13 @@ items:
   fullName.vb: MBFWpfToolkit.Converters.ValidationMultiConverter.New()
   name.vb: New()
 references:
+- uid: System.Windows.Controls.TextBox
+  commentId: T:System.Windows.Controls.TextBox
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.controls.textbox
+  name: TextBox
+  nameWithType: TextBox
+  fullName: System.Windows.Controls.TextBox
 - uid: MBFWpfToolkit.Converters
   commentId: N:MBFWpfToolkit.Converters
   isExternal: true
@@ -442,6 +466,17 @@ references:
     name: Data
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.windows.data
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: MBFWpfToolkit.Converters.ValidationMultiConverter.Convert*
   commentId: Overload:MBFWpfToolkit.Converters.ValidationMultiConverter.Convert
   isExternal: true
@@ -588,6 +623,13 @@ references:
     name: Globalization
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.globalization
+- uid: System.Windows.Data.Binding.DoNothing
+  commentId: F:System.Windows.Data.Binding.DoNothing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.data.binding.donothing
+  name: DoNothing
+  nameWithType: Binding.DoNothing
+  fullName: System.Windows.Data.Binding.DoNothing
 - uid: MBFWpfToolkit.Converters.ValidationMultiConverter.ConvertBack*
   commentId: Overload:MBFWpfToolkit.Converters.ValidationMultiConverter.ConvertBack
   isExternal: true
