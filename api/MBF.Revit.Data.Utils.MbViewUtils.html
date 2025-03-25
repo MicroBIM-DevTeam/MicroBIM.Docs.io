@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MbViewUtils | MIcroBIM Docs ">
       
-      
+      <meta name="description" content="Provides utility methods for interacting with Revit views, including view type checking and zooming to elements.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,7 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
   <dl><dt>Assembly</dt><dd>MBF.Revit.Data.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary">Provides utility methods for interacting with Revit views, including view type checking and zooming to elements.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -189,7 +189,7 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Determines if a given view is a graphical view (e.g., plan, section, 3D).</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -199,13 +199,13 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>view</code> <span class="xref">View</span></dt>
-    <dd></dd>
+    <dd>The <span class="xref">Autodesk.Revit.DB.View</span> to check.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><code>true</code> if the view is a graphical type (e.g., FloorPlan, 3D, Section); otherwise, <code>false</code>.</dd>
   </dl>
 
 
@@ -225,7 +225,8 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Zooms into a specified <span class="xref">Element</span> in the currently active view.
+Displays a message if the view is not graphical or the bounding box is invalid.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -235,7 +236,7 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>element</code> <span class="xref">Element</span></dt>
-    <dd></dd>
+    <dd>The Revit element to zoom to.</dd>
   </dl>
 
 
@@ -256,7 +257,8 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Zooms into a specified <span class="xref">FamilyInstance</span> element in the currently active view.
+Displays a message if the view is not graphical or the bounding box is invalid.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -266,7 +268,7 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>instnace</code> <span class="xref">FamilyInstance</span></dt>
-    <dd></dd>
+    <dd>The family instance to zoom to.</dd>
   </dl>
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MailService | MIcroBIM Docs ">
       
-      
+      <meta name="description" content="Provides methods for sending emails, including support for attachments and both synchronous and asynchronous operations.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,7 @@ Class MailService  <a class="header-action link-secondary" title="View source" h
   <dl><dt>Assembly</dt><dd>MB.Common.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary">Provides methods for sending emails, including support for attachments and both synchronous and asynchronous operations.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -159,7 +159,8 @@ Class MailService  <a class="header-action link-secondary" title="View source" h
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Services/MailService.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Sends an email synchronously with optional attachments.
+Uses a predefined sender and receiver email configuration.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -170,9 +171,9 @@ public static void Send(string msg, List&lt;string&gt; attachmentPaths = null)</
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>msg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd>The body of the email message.</dd>
     <dt><code>attachmentPaths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
+    <dd>Optional list of file paths to attach to the email.</dd>
   </dl>
 
 
@@ -193,7 +194,8 @@ public static void Send(string msg, List&lt;string&gt; attachmentPaths = null)</
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Services/MailService.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Sends an email asynchronously with optional attachments.
+Useful for avoiding UI blocking during email transmission.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -204,9 +206,9 @@ public static Task SendAsync(string msg, List&lt;string&gt; attachmentPaths = nu
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>msg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd>The body of the email message.</dd>
     <dt><code>attachmentPaths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
+    <dd>Optional list of file paths to attach to the email.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>

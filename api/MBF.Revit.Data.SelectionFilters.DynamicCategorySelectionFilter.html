@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class DynamicCategorySelectionFilter | MIcroBIM Docs ">
       
-      
+      <meta name="description" content="A dynamic selection filter that allows only elements belonging to specified  values. Useful for restricting user selection to a specific set of categories.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,8 @@ Class DynamicCategorySelectionFilter  <a class="header-action link-secondary" ti
   <dl><dt>Assembly</dt><dd>MBF.Revit.Data.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary">A dynamic selection filter that allows only elements belonging to specified <span class="xref">BuiltInCategory</span> values.
+Useful for restricting user selection to a specific set of categories.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -165,7 +166,8 @@ Class DynamicCategorySelectionFilter  <a class="header-action link-secondary" ti
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/SelectionFilters/DynamicCategorySelectionFilter.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Initializes a new instance of the <a class="xref" href="MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.html">DynamicCategorySelectionFilter</a> class
+with the specified categories that should be allowed during selection.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -175,7 +177,7 @@ Class DynamicCategorySelectionFilter  <a class="header-action link-secondary" ti
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>categories</code> <span class="xref">BuiltInCategory</span>[]</dt>
-    <dd></dd>
+    <dd>An array of <span class="xref">BuiltInCategory</span> values to allow.</dd>
   </dl>
 
 
@@ -200,7 +202,7 @@ Class DynamicCategorySelectionFilter  <a class="header-action link-secondary" ti
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/SelectionFilters/DynamicCategorySelectionFilter.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Determines whether a specific element is allowed for selection.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -210,13 +212,13 @@ Class DynamicCategorySelectionFilter  <a class="header-action link-secondary" ti
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>element</code> <span class="xref">Element</span></dt>
-    <dd></dd>
+    <dd>The element being evaluated.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><code>true</code> if the element belongs to one of the allowed categories; otherwise, <code>false</code>.</dd>
   </dl>
 
 
@@ -236,7 +238,8 @@ Class DynamicCategorySelectionFilter  <a class="header-action link-secondary" ti
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/SelectionFilters/DynamicCategorySelectionFilter.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Determines whether a reference (face, edge, etc.) is allowed for selection.
+This implementation disallows reference-based selection and only allows full element selection.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -246,15 +249,15 @@ Class DynamicCategorySelectionFilter  <a class="header-action link-secondary" ti
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>reference</code> <span class="xref">Reference</span></dt>
-    <dd></dd>
+    <dd>The reference being evaluated.</dd>
     <dt><code>position</code> <span class="xref">XYZ</span></dt>
-    <dd></dd>
+    <dd>The 3D position associated with the reference.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd>Always returns <code>false</code> to disable reference selection.</dd>
   </dl>
 
 

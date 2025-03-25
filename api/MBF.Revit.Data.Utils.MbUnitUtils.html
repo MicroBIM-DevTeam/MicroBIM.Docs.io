@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MbUnitUtils | MIcroBIM Docs ">
       
-      
+      <meta name="description" content="Provides utility methods for retrieving and converting Revit units to standard textual representations.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,7 @@ Class MbUnitUtils  <a class="header-action link-secondary" title="View source" h
   <dl><dt>Assembly</dt><dd>MBF.Revit.Data.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary">Provides utility methods for retrieving and converting Revit units to standard textual representations.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -159,7 +159,7 @@ Class MbUnitUtils  <a class="header-action link-secondary" title="View source" h
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbUnitUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Retrieves the unit symbol used for length in the active Revit document.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -170,7 +170,8 @@ Class MbUnitUtils  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd>A string representing the standardized symbol of the length unit (e.g., "mm", "ft", "in", etc.).
+If the unit type cannot be identified, returns <code>"Unknown"</code>.</dd>
   </dl>
 
 
@@ -190,7 +191,7 @@ Class MbUnitUtils  <a class="header-action link-secondary" title="View source" h
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbUnitUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Maps Revit unit types to standardized short symbols</div>
+  <div class="markdown level1 summary">Maps Revit unit types to standardized short symbols.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -200,13 +201,15 @@ Class MbUnitUtils  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>unitTypeId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd>The unit type identifier, either a <span class="xref">ForgeTypeId</span> or <span class="xref">DisplayUnitType</span>, depending on Revit version.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd>A short string symbol representing the unit (e.g., "mm", "cm", "ft-in").
+Returns a user-readable label from Revit's <span class="xref">Autodesk.Revit.DB.LabelUtils</span> as a fallback.
+Returns "Unknown" if mapping cannot be resolved.</dd>
   </dl>
 
 

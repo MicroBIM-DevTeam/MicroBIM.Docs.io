@@ -176,13 +176,7 @@ Class MbPipeFittingsUtils  <a class="header-action link-secondary" title="View s
   <dl class="parameters">
     <dt><a class="xref" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
     <dd>Returns an <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> where T is <code>bool</code>:
-<ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>
-            If <code>Value</code> is <code>true</code>, all connectors have equal sizes or there are fewer than two
-            connectors.
-        </li><li>If <code>Value</code> is <code>false</code>, connectors have different sizes.</li><li>
-            If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides
-            details.
-        </li></ul></dd>
+<ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>If <code>Value</code> is <code>true</code>, all connectors have equal sizes or there are fewer than two connectors.</li><li>If <code>Value</code> is <code>false</code>, connectors have different sizes.</li><li>If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides details.</li></ul></dd>
   </dl>
 
 
@@ -219,13 +213,7 @@ Class MbPipeFittingsUtils  <a class="header-action link-secondary" title="View s
   <dl class="parameters">
     <dt><a class="xref" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
     <dd>Returns an <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> where T is <code>double</code>:
-<ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>
-            If <code>Value</code> is a valid angle, it represents the computed angle between the two connectors
-            with the largest radius.
-        </li><li>
-            If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides
-            details.
-        </li></ul></dd>
+<ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>If <code>Value</code> is a valid angle, it represents the computed angle between the two connectors with the largest radius.</li><li>If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides details.</li></ul></dd>
   </dl>
 
 
@@ -262,13 +250,7 @@ Class MbPipeFittingsUtils  <a class="header-action link-secondary" title="View s
   <dl class="parameters">
     <dt><a class="xref" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
     <dd>Returns an <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> where T is <code>double</code>:
-<ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>
-            If <code>Value</code> is a valid angle, it represents the computed angle between the two connectors
-            with the largest radius.
-        </li><li>
-            If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides
-            details.
-        </li></ul></dd>
+<ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>If <code>Value</code> is a valid angle, it represents the computed angle between the two connectors with the largest radius.</li><li>If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides details.</li></ul></dd>
   </dl>
 
 
@@ -315,8 +297,7 @@ that are categorized as "Elbow" fittings.</div>
 
 
   <h4 class="section" id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetElbowsFamilyInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element___remarks">Remarks</h4>
-  <div class="markdown level1 remarks">This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting
-)
+  <div class="markdown level1 remarks">This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting)
 and specifically of type PartType.Elbow are returned.</div>
 
 
@@ -366,7 +347,7 @@ and specifically of type PartType.Elbow are returned.</div>
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Retrieves a sorted list of connector sizes (diameters) for a given fitting.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -376,13 +357,14 @@ and specifically of type PartType.Elbow are returned.</div>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>instance</code> <span class="xref">FamilyInstance</span></dt>
-    <dd></dd>
+    <dd>The <span class="xref">Autodesk.Revit.DB.FamilyInstance</span> representing the fitting.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;&gt;</dt>
-    <dd></dd>
+    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> where <code>T</code> is <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a>:
+<ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>The list contains the diameters of all connectors in ascending order.</li><li>If <code>IsSuccess</code> is <code>false</code>, an error occurred and <code>ErrorMessage</code> provides details.</li></ul></dd>
   </dl>
 
 
@@ -419,8 +401,7 @@ that are not categorized as "Tee", "Elbow", or "Outlets" fittings.</div>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">FamilyInstance</span>&gt;</dt>
-    <dd>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <span class="xref">FamilyInstance</span> objects representing fittings that are not tee,
-elbow, or outlet fittings.</dd>
+    <dd>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <span class="xref">FamilyInstance</span> objects representing fittings that are not tee, elbow, or outlet fittings.</dd>
   </dl>
 
 
@@ -430,8 +411,7 @@ elbow, or outlet fittings.</dd>
 
 
   <h4 class="section" id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetOtherFittingWhichIsNotElbowsOrTeesOrOutletsFamilyInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element___remarks">Remarks</h4>
-  <div class="markdown level1 remarks">This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting
-)
+  <div class="markdown level1 remarks">This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting)
 and excluding types PartType.Tee, PartType.Elbow, or
 PartType.SpudAdjustable are returned.</div>
 
@@ -472,8 +452,7 @@ that are categorized as "Outlets" (Spud Adjustable) fittings.</div>
 
 
   <h4 class="section" id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetOutletsFamilyInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element___remarks">Remarks</h4>
-  <div class="markdown level1 remarks">This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting
-)
+  <div class="markdown level1 remarks">This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting)
 and specifically of type PartType.SpudAdjustable (representing outlets) are returned.</div>
 
 
@@ -513,8 +492,7 @@ that are categorized as "Tee" fittings.</div>
 
 
   <h4 class="section" id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetTeeFamilyInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element___remarks">Remarks</h4>
-  <div class="markdown level1 remarks">This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting
-)
+  <div class="markdown level1 remarks">This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting)
 and specifically of type PartType.Tee are returned.</div>
 
 
