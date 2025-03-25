@@ -20,6 +20,11 @@ items:
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
+  summary: >-
+    A dynamic selection filter that allows only elements belonging to specified <xref href="BuiltInCategory" data-throw-if-not-resolved="false"></xref> values.
+
+    Useful for restricting user selection to a specific set of categories.
+  example: []
   syntax:
     content: 'public class DynamicCategorySelectionFilter : ISelectionFilter'
     content.vb: Public Class DynamicCategorySelectionFilter Implements ISelectionFilter
@@ -51,11 +56,17 @@ items:
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
+  summary: >-
+    Initializes a new instance of the <xref href="MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter" data-throw-if-not-resolved="false"></xref> class
+
+    with the specified categories that should be allowed during selection.
+  example: []
   syntax:
     content: public DynamicCategorySelectionFilter(params BuiltInCategory[] categories)
     parameters:
     - id: categories
       type: Autodesk.Revit.DB.BuiltInCategory[]
+      description: An array of <xref href="BuiltInCategory" data-throw-if-not-resolved="false"></xref> values to allow.
     content.vb: Public Sub New(ParamArray categories As BuiltInCategory())
   overload: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.#ctor*
   nameWithType.vb: DynamicCategorySelectionFilter.New(ParamArray BuiltInCategory())
@@ -77,13 +88,17 @@ items:
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
+  summary: Determines whether a specific element is allowed for selection.
+  example: []
   syntax:
     content: public bool AllowElement(Element element)
     parameters:
     - id: element
       type: Autodesk.Revit.DB.Element
+      description: The element being evaluated.
     return:
       type: System.Boolean
+      description: <code>true</code> if the element belongs to one of the allowed categories; otherwise, <code>false</code>.
     content.vb: Public Function AllowElement(element As Element) As Boolean
   overload: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.AllowElement*
 - uid: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)
@@ -102,18 +117,29 @@ items:
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
+  summary: >-
+    Determines whether a reference (face, edge, etc.) is allowed for selection.
+
+    This implementation disallows reference-based selection and only allows full element selection.
+  example: []
   syntax:
     content: public bool AllowReference(Reference reference, XYZ position)
     parameters:
     - id: reference
       type: Autodesk.Revit.DB.Reference
+      description: The reference being evaluated.
     - id: position
       type: Autodesk.Revit.DB.XYZ
+      description: The 3D position associated with the reference.
     return:
       type: System.Boolean
+      description: Always returns <code>false</code> to disable reference selection.
     content.vb: Public Function AllowReference(reference As Reference, position As XYZ) As Boolean
   overload: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.AllowReference*
 references:
+- uid: BuiltInCategory
+  commentId: T:BuiltInCategory
+  isExternal: true
 - uid: MBF.Revit.Data.SelectionFilters
   commentId: N:MBF.Revit.Data.SelectionFilters
   isExternal: true
@@ -404,6 +430,13 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter
+  commentId: T:MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter
+  isExternal: true
+  href: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.html
+  name: DynamicCategorySelectionFilter
+  nameWithType: DynamicCategorySelectionFilter
+  fullName: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter
 - uid: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.#ctor*
   commentId: Overload:MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.#ctor
   isExternal: true

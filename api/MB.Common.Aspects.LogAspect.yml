@@ -21,6 +21,11 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects
+  summary: >-
+    An aspect that logs method entry, exit, and exceptions using Serilog.
+
+    This aspect can be applied to methods to automatically log their execution lifecycle.
+  example: []
   syntax:
     content: 'public sealed class LogAspect : OnMethodBoundaryAspect, _Attribute'
     content.vb: Public NotInheritable Class LogAspect Inherits OnMethodBoundaryAspect Implements _Attribute
@@ -93,12 +98,17 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects
+  summary: >-
+    Called before the execution of the target method.
+
+    Logs the entry into the method with timestamp.
   example: []
   syntax:
     content: public override void OnEntry(MethodExecutionArgs args)
     parameters:
     - id: args
       type: MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs
+      description: Provides context about the method being executed.
     content.vb: Public Overrides Sub OnEntry(args As MethodExecutionArgs)
   overridden: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnEntry(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
   overload: MB.Common.Aspects.LogAspect.OnEntry*
@@ -118,12 +128,17 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects
+  summary: >-
+    Called after the successful execution of the target method.
+
+    Logs the exit of the method with timestamp.
   example: []
   syntax:
     content: public override void OnExit(MethodExecutionArgs args)
     parameters:
     - id: args
       type: MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs
+      description: Provides context about the method that was executed.
     content.vb: Public Overrides Sub OnExit(args As MethodExecutionArgs)
   overridden: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnExit(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
   overload: MB.Common.Aspects.LogAspect.OnExit*
@@ -143,12 +158,17 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects
+  summary: >-
+    Called when an exception is thrown during method execution.
+
+    Logs the exception details.
   example: []
   syntax:
     content: public override void OnException(MethodExecutionArgs args)
     parameters:
     - id: args
       type: MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs
+      description: Provides context about the method and the thrown exception.
     content.vb: Public Overrides Sub OnException(args As MethodExecutionArgs)
   overridden: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnException(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
   overload: MB.Common.Aspects.LogAspect.OnException*

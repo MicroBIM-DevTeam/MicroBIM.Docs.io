@@ -387,6 +387,7 @@ references:
   nameWithType: ViewExtensions.GetVisibleElements
   fullName: Revit.Extensions.Extensions.ViewExtensions.GetVisibleElements
 - uid: Autodesk.Revit.DB.View
+  commentId: T:Autodesk.Revit.DB.View
   isExternal: true
   name: View
   nameWithType: View

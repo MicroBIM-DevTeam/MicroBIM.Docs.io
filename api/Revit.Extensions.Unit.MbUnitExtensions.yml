@@ -22,6 +22,11 @@ items:
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Unit
+  summary: >-
+    Provides utility methods and properties for working with Revit units,
+
+    including conversion to and from internal units and determining document unit type.
+  example: []
   syntax:
     content: public static class MbUnitExtensions
     content.vb: Public Module MbUnitExtensions
@@ -51,6 +56,8 @@ items:
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Unit
+  summary: The accuracy used in the current document's unit formatting options.
+  example: []
   syntax:
     content: public static double Accuracy
     return:
@@ -72,6 +79,8 @@ items:
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Unit
+  summary: Indicates whether the current document uses imperial units.
+  example: []
   syntax:
     content: public static bool IsImperial
     return:
@@ -93,11 +102,17 @@ items:
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Unit
+  summary: >-
+    Identifies and sets the <xref href="Revit.Extensions.Unit.MbUnitExtensions.Accuracy" data-throw-if-not-resolved="false"></xref> and <xref href="Revit.Extensions.Unit.MbUnitExtensions.IsImperial" data-throw-if-not-resolved="false"></xref> properties
+
+    based on the unit settings of the given Revit <xref href="Autodesk.Revit.DB.Document" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public static void IdentifyDocument(Document document)
     parameters:
     - id: document
       type: Autodesk.Revit.DB.Document
+      description: The Revit document to analyze.
     content.vb: Public Shared Sub IdentifyDocument(document As Document)
   overload: Revit.Extensions.Unit.MbUnitExtensions.IdentifyDocument*
 - uid: Revit.Extensions.Unit.MbUnitExtensions.ConvertToInternalLength(System.Double)
@@ -117,13 +132,17 @@ items:
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Unit
+  summary: Converts a value from millimeters to Revit's internal length units.
+  example: []
   syntax:
     content: public static double ConvertToInternalLength(this double value)
     parameters:
     - id: value
       type: System.Double
+      description: The value in millimeters.
     return:
       type: System.Double
+      description: The converted value in internal units.
     content.vb: Public Shared Function ConvertToInternalLength(value As Double) As Double
   overload: Revit.Extensions.Unit.MbUnitExtensions.ConvertToInternalLength*
   nameWithType.vb: MbUnitExtensions.ConvertToInternalLength(Double)
@@ -146,13 +165,17 @@ items:
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Unit
+  summary: Converts a value from Revit's internal length units to millimeters.
+  example: []
   syntax:
     content: public static double ConvertFromInternalUnits(this double value)
     parameters:
     - id: value
       type: System.Double
+      description: The value in internal units.
     return:
       type: System.Double
+      description: The converted value in millimeters.
     content.vb: Public Shared Function ConvertFromInternalUnits(value As Double) As Double
   overload: Revit.Extensions.Unit.MbUnitExtensions.ConvertFromInternalUnits*
   nameWithType.vb: MbUnitExtensions.ConvertFromInternalUnits(Double)
@@ -455,6 +478,25 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: Revit.Extensions.Unit.MbUnitExtensions.Accuracy
+  commentId: F:Revit.Extensions.Unit.MbUnitExtensions.Accuracy
+  isExternal: true
+  href: Revit.Extensions.Unit.MbUnitExtensions.html#Revit_Extensions_Unit_MbUnitExtensions_Accuracy
+  name: Accuracy
+  nameWithType: MbUnitExtensions.Accuracy
+  fullName: Revit.Extensions.Unit.MbUnitExtensions.Accuracy
+- uid: Revit.Extensions.Unit.MbUnitExtensions.IsImperial
+  commentId: F:Revit.Extensions.Unit.MbUnitExtensions.IsImperial
+  isExternal: true
+  href: Revit.Extensions.Unit.MbUnitExtensions.html#Revit_Extensions_Unit_MbUnitExtensions_IsImperial
+  name: IsImperial
+  nameWithType: MbUnitExtensions.IsImperial
+  fullName: Revit.Extensions.Unit.MbUnitExtensions.IsImperial
+- uid: Autodesk.Revit.DB.Document
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
 - uid: Revit.Extensions.Unit.MbUnitExtensions.IdentifyDocument*
   commentId: Overload:Revit.Extensions.Unit.MbUnitExtensions.IdentifyDocument
   isExternal: true
@@ -462,11 +504,6 @@ references:
   name: IdentifyDocument
   nameWithType: MbUnitExtensions.IdentifyDocument
   fullName: Revit.Extensions.Unit.MbUnitExtensions.IdentifyDocument
-- uid: Autodesk.Revit.DB.Document
-  isExternal: true
-  name: Document
-  nameWithType: Document
-  fullName: Autodesk.Revit.DB.Document
 - uid: Revit.Extensions.Unit.MbUnitExtensions.ConvertToInternalLength*
   commentId: Overload:Revit.Extensions.Unit.MbUnitExtensions.ConvertToInternalLength
   isExternal: true

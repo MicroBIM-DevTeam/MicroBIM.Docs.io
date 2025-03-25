@@ -18,6 +18,8 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Image
+  summary: Provides utility functions for working with images, such as resizing with high-quality settings.
+  example: []
   syntax:
     content: public static class ImageUtils
     content.vb: Public Module ImageUtils
@@ -47,14 +49,14 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Image
-  summary: Resizes an image to the specified dimensions while maintaining quality.
+  summary: Resizes an image to the specified dimensions while preserving visual quality using advanced graphics settings.
   example: []
   syntax:
     content: public static Bitmap ResizeImage(Image image, int width, int height)
     parameters:
     - id: image
       type: System.Drawing.Image
-      description: The image to resize.
+      description: The source <xref href="System.Drawing.Image" data-throw-if-not-resolved="false"></xref> to be resized.
     - id: width
       type: System.Int32
       description: The target width of the resized image.
@@ -63,7 +65,7 @@ items:
       description: The target height of the resized image.
     return:
       type: System.Drawing.Bitmap
-      description: The resized <xref href="System.Drawing.Bitmap" data-throw-if-not-resolved="false"></xref>.
+      description: A new <xref href="System.Drawing.Bitmap" data-throw-if-not-resolved="false"></xref> instance containing the resized image.
     content.vb: Public Shared Function ResizeImage(image As Image, width As Integer, height As Integer) As Bitmap
   overload: MB.Common.Utils.Image.ImageUtils.ResizeImage*
   nameWithType.vb: ImageUtils.ResizeImage(Image, Integer, Integer)
@@ -354,6 +356,14 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.Drawing.Image
+  commentId: T:System.Drawing.Image
+  parent: System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.image
+  name: Image
+  nameWithType: Image
+  fullName: System.Drawing.Image
 - uid: System.Drawing.Bitmap
   commentId: T:System.Drawing.Bitmap
   parent: System.Drawing
@@ -369,14 +379,6 @@ references:
   name: ResizeImage
   nameWithType: ImageUtils.ResizeImage
   fullName: MB.Common.Utils.Image.ImageUtils.ResizeImage
-- uid: System.Drawing.Image
-  commentId: T:System.Drawing.Image
-  parent: System.Drawing
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.drawing.image
-  name: Image
-  nameWithType: Image
-  fullName: System.Drawing.Image
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System

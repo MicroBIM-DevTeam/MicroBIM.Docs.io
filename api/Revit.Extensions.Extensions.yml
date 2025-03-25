@@ -6,6 +6,8 @@ items:
   children:
   - Revit.Extensions.Extensions.CollectionExtensions
   - Revit.Extensions.Extensions.DocumentExtensions
+  - Revit.Extensions.Extensions.PipeExtensions
+  - Revit.Extensions.Extensions.SpaceExtensions
   - Revit.Extensions.Extensions.ViewExtensions
   langs:
   - csharp
@@ -31,6 +33,20 @@ references:
   name: DocumentExtensions
   nameWithType: DocumentExtensions
   fullName: Revit.Extensions.Extensions.DocumentExtensions
+- uid: Revit.Extensions.Extensions.PipeExtensions
+  commentId: T:Revit.Extensions.Extensions.PipeExtensions
+  isExternal: true
+  href: Revit.Extensions.Extensions.PipeExtensions.html
+  name: PipeExtensions
+  nameWithType: PipeExtensions
+  fullName: Revit.Extensions.Extensions.PipeExtensions
+- uid: Revit.Extensions.Extensions.SpaceExtensions
+  commentId: T:Revit.Extensions.Extensions.SpaceExtensions
+  isExternal: true
+  href: Revit.Extensions.Extensions.SpaceExtensions.html
+  name: SpaceExtensions
+  nameWithType: SpaceExtensions
+  fullName: Revit.Extensions.Extensions.SpaceExtensions
 - uid: Revit.Extensions.Extensions.ViewExtensions
   commentId: T:Revit.Extensions.Extensions.ViewExtensions
   isExternal: true

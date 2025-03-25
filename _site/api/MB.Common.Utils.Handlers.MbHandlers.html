@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MbHandlers | MIcroBIM Docs ">
       
-      
+      <meta name="description" content="Provides static access to Revit external event handlers used across the application.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,7 @@ Class MbHandlers  <a class="header-action link-secondary" title="View source" hr
   <dl><dt>Assembly</dt><dd>MB.Common.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary">Provides static access to Revit external event handlers used across the application.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -146,6 +146,9 @@ Class MbHandlers  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <h2 id="MB_Common_Utils_Handlers_MbHandlers_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">This utility class simplifies the management of Revit's <span class="xref">Nice3point.Revit.Toolkit.External.Handlers.ActionEventHandler</span> and 
+<span class="xref">Nice3point.Revit.Toolkit.External.Handlers.AsyncEventHandler</span> instances, allowing them to be globally registered and reused.</div>
 
 
   <h2 class="section" id="properties">Properties
@@ -159,7 +162,7 @@ Class MbHandlers  <a class="header-action link-secondary" title="View source" hr
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Handlers/MbHandlers.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Gets or sets the asynchronous external event handler for executing asynchronous Revit commands.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -190,7 +193,7 @@ Class MbHandlers  <a class="header-action link-secondary" title="View source" hr
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Handlers/MbHandlers.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Gets or sets the synchronous external event handler for executing Revit commands.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -225,7 +228,8 @@ Class MbHandlers  <a class="header-action link-secondary" title="View source" hr
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Handlers/MbHandlers.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Registers and initializes the external event handlers used by the application.
+Call this method during application startup or initialization.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

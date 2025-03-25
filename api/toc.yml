@@ -310,16 +310,6 @@ items:
   - uid: OnMethodBoundaryAspectCompile.MethodInfos
     name: MethodInfos
     type: Class
-- uid: Revit.Extensions.Elements
-  name: Revit.Extensions.Elements
-  type: Namespace
-  items:
-  - uid: Revit.Extensions.Elements.PipeExtensions
-    name: PipeExtensions
-    type: Class
-  - uid: Revit.Extensions.Elements.SpaceExtensions
-    name: SpaceExtensions
-    type: Class
 - uid: Revit.Extensions.Extensions
   name: Revit.Extensions.Extensions
   type: Namespace
@@ -329,6 +319,12 @@ items:
     type: Class
   - uid: Revit.Extensions.Extensions.DocumentExtensions
     name: DocumentExtensions
+    type: Class
+  - uid: Revit.Extensions.Extensions.PipeExtensions
+    name: PipeExtensions
+    type: Class
+  - uid: Revit.Extensions.Extensions.SpaceExtensions
+    name: SpaceExtensions
     type: Class
   - uid: Revit.Extensions.Extensions.ViewExtensions
     name: ViewExtensions

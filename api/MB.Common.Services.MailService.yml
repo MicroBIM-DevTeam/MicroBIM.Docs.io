@@ -19,6 +19,8 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Services
+  summary: Provides methods for sending emails, including support for attachments and both synchronous and asynchronous operations.
+  example: []
   syntax:
     content: public static class MailService
     content.vb: Public Module MailService
@@ -48,6 +50,11 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Services
+  summary: >-
+    Sends an email synchronously with optional attachments.
+
+    Uses a predefined sender and receiver email configuration.
+  example: []
   syntax:
     content: >-
       [LogAspect]
@@ -56,8 +63,10 @@ items:
     parameters:
     - id: msg
       type: System.String
+      description: The body of the email message.
     - id: attachmentPaths
       type: System.Collections.Generic.List{System.String}
+      description: Optional list of file paths to attach to the email.
     content.vb: >-
       <LogAspect>
 
@@ -86,6 +95,11 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Services
+  summary: >-
+    Sends an email asynchronously with optional attachments.
+
+    Useful for avoiding UI blocking during email transmission.
+  example: []
   syntax:
     content: >-
       [LogAspect]
@@ -94,8 +108,10 @@ items:
     parameters:
     - id: msg
       type: System.String
+      description: The body of the email message.
     - id: attachmentPaths
       type: System.Collections.Generic.List{System.String}
+      description: Optional list of file paths to attach to the email.
     return:
       type: System.Threading.Tasks.Task
     content.vb: >-

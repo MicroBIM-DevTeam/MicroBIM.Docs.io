@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum MbfTool | MIcroBIM Docs ">
       
-      <meta name="description" content="Enum representing various tools in the MBF suite.">
+      <meta name="description" content="Enum representing various tools in the MBF (MicroBIM Fire) suite. Each tool is decorated with descriptive metadata and optional shared parameter requirements.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -98,7 +98,8 @@ Enum MbfTool
   <dl><dt>Assembly</dt><dd>MB.Common.dll</dd></dl>
   </div>
 
-  <div class="markdown summary">Enum representing various tools in the MBF suite.</div>
+  <div class="markdown summary">Enum representing various tools in the MBF (MicroBIM Fire) suite.
+Each tool is decorated with descriptive metadata and optional shared parameter requirements.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -134,19 +135,23 @@ Enum MbfTool
   <dd>Represents the Cut Length Pipe Optimization tool.</dd>
     <dt id="MB_Common_Tools_MbfTool_Mapper"><code>[RequiredSharedParameters(new ToolsSharedParameter[] { ToolsSharedParameter.Color, ToolsSharedParameter.Finish, ToolsSharedParameter.PipeCode, ToolsSharedParameter.AddFitToId, ToolsSharedParameter.HandTight, ToolsSharedParameter.DescriptionAndAbbreviationListNo, ToolsSharedParameter.ExportedPackageName, ToolsSharedParameter.RealFittingSizes, ToolsSharedParameter.ExportedPdfName, ToolsSharedParameter.SubType, ToolsSharedParameter.FabricationGroupName, ToolsSharedParameter.Allowance, ToolsSharedParameter.ReaLGroupSize, ToolsSharedParameter.IsFitting, ToolsSharedParameter.CalculateSum })]
 Mapper = 5</code></dt>
+  <dd>Represents the Mapper tool, used to assign various metadata and fabrication-related properties.This tool requires several shared parameters including:
+<a class="xref" href="MB.Common.SharedParameters.ToolsSharedParameter.html#MB_Common_SharedParameters_ToolsSharedParameter_Color">Color</a>, 
+<a class="xref" href="MB.Common.SharedParameters.ToolsSharedParameter.html#MB_Common_SharedParameters_ToolsSharedParameter_Finish">Finish</a>,
+<a class="xref" href="MB.Common.SharedParameters.ToolsSharedParameter.html#MB_Common_SharedParameters_ToolsSharedParameter_PipeCode">PipeCode</a>, 
+and many others used for downstream fabrication and reporting.</dd>
   
-  <dd></dd>
     <dt id="MB_Common_Tools_MbfTool_SprinklerVoronoi"><code>[RequiredSharedParameters(new ToolsSharedParameter[] { ToolsSharedParameter.ActualCoverage, ToolsSharedParameter.ProtectionArea })]
 SprinklerVoronoi = 1</code></dt>
-  <dd>Represents the Sprinkler Voronoi tool.This tool requires the <a class="xref" href="MB.Common.SharedParameters.ToolsSharedParameter.html#MB_Common_SharedParameters_ToolsSharedParameter_ActualCoverage">ActualCoverage</a> shared parameter.</dd>
+  <dd>Represents the Sprinkler Voronoi tool.This tool requires the <a class="xref" href="MB.Common.SharedParameters.ToolsSharedParameter.html#MB_Common_SharedParameters_ToolsSharedParameter_ActualCoverage">ActualCoverage</a> and 
+<a class="xref" href="MB.Common.SharedParameters.ToolsSharedParameter.html#MB_Common_SharedParameters_ToolsSharedParameter_ProtectionArea">ProtectionArea</a> shared parameters.</dd>
   
   </dl>
 
 
   <h2 id="MB_Common_Tools_MbfTool_remarks">Remarks</h2>
-  <div class="markdown level0 remarks">Each tool is associated with a description and optionally required shared parameters. 
-Use attributes like <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.descriptionattribute">DescriptionAttribute</a> and <a class="xref" href="MB.Common.Attributes.RequiredSharedParametersAttribute.html">RequiredSharedParametersAttribute</a> 
-to provide metadata for each tool.</div>
+  <div class="markdown level0 remarks">Tools are annotated with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.descriptionattribute">DescriptionAttribute</a> for display purposes,
+and with <a class="xref" href="MB.Common.Attributes.RequiredSharedParametersAttribute.html">RequiredSharedParametersAttribute</a> to define necessary shared parameters.</div>
 
 </article>
 

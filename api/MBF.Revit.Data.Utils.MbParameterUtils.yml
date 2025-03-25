@@ -18,6 +18,8 @@ items:
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
+  summary: Provides utility methods for working with Revit parameters.
+  example: []
   syntax:
     content: public static class MbParameterUtils
     content.vb: Public Module MbParameterUtils
@@ -47,15 +49,20 @@ items:
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
+  summary: Retrieves the string representation of a parameter's value based on its <xref href="Autodesk.Revit.DB.StorageType" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public static string GetParameterValue(StorageType storageType, Parameter instanceParameter)
     parameters:
     - id: storageType
       type: Autodesk.Revit.DB.StorageType
+      description: The storage type of the parameter (e.g. Double, Integer, String, ElementId).
     - id: instanceParameter
       type: Autodesk.Revit.DB.Parameter
+      description: The parameter from which to extract the value.
     return:
       type: System.String
+      description: A string representation of the parameter's value. If the storage type is unsupported, returns "Unsupported Type".
     content.vb: Public Shared Function GetParameterValue(storageType As StorageType, instanceParameter As Parameter) As String
   overload: MBF.Revit.Data.Utils.MbParameterUtils.GetParameterValue*
 references:
@@ -343,6 +350,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Autodesk.Revit.DB.StorageType
+  commentId: T:Autodesk.Revit.DB.StorageType
+  isExternal: true
+  name: StorageType
+  nameWithType: StorageType
+  fullName: Autodesk.Revit.DB.StorageType
 - uid: MBF.Revit.Data.Utils.MbParameterUtils.GetParameterValue*
   commentId: Overload:MBF.Revit.Data.Utils.MbParameterUtils.GetParameterValue
   isExternal: true
@@ -350,12 +363,6 @@ references:
   name: GetParameterValue
   nameWithType: MbParameterUtils.GetParameterValue
   fullName: MBF.Revit.Data.Utils.MbParameterUtils.GetParameterValue
-- uid: Autodesk.Revit.DB.StorageType
-  commentId: '!:Autodesk.Revit.DB.StorageType'
-  isExternal: true
-  name: StorageType
-  nameWithType: StorageType
-  fullName: Autodesk.Revit.DB.StorageType
 - uid: Autodesk.Revit.DB.Parameter
   commentId: T:Autodesk.Revit.DB.Parameter
   isExternal: true

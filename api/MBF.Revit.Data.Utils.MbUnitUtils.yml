@@ -19,6 +19,8 @@ items:
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
+  summary: Provides utility methods for retrieving and converting Revit units to standard textual representations.
+  example: []
   syntax:
     content: public static class MbUnitUtils
     content.vb: Public Module MbUnitUtils
@@ -48,10 +50,16 @@ items:
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
+  summary: Retrieves the unit symbol used for length in the active Revit document.
+  example: []
   syntax:
     content: public static string GetLengthUnitSymbol()
     return:
       type: System.String
+      description: >-
+        A string representing the standardized symbol of the length unit (e.g., "mm", "ft", "in", etc.).
+
+        If the unit type cannot be identified, returns <code>"Unknown"</code>.
     content.vb: Public Shared Function GetLengthUnitSymbol() As String
   overload: MBF.Revit.Data.Utils.MbUnitUtils.GetLengthUnitSymbol*
 - uid: MBF.Revit.Data.Utils.MbUnitUtils.GetStandardUnitSymbol(System.Object)
@@ -70,15 +78,22 @@ items:
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
-  summary: Maps Revit unit types to standardized short symbols
+  summary: Maps Revit unit types to standardized short symbols.
   example: []
   syntax:
     content: public static string GetStandardUnitSymbol(object unitTypeId)
     parameters:
     - id: unitTypeId
       type: System.Object
+      description: The unit type identifier, either a <xref href="ForgeTypeId" data-throw-if-not-resolved="false"></xref> or <xref href="DisplayUnitType" data-throw-if-not-resolved="false"></xref>, depending on Revit version.
     return:
       type: System.String
+      description: >-
+        A short string symbol representing the unit (e.g., "mm", "cm", "ft-in").
+
+        Returns a user-readable label from Revit's <xref href="Autodesk.Revit.DB.LabelUtils" data-throw-if-not-resolved="false"></xref> as a fallback.
+
+        Returns "Unknown" if mapping cannot be resolved.
     content.vb: Public Shared Function GetStandardUnitSymbol(unitTypeId As Object) As String
   overload: MBF.Revit.Data.Utils.MbUnitUtils.GetStandardUnitSymbol*
   nameWithType.vb: MbUnitUtils.GetStandardUnitSymbol(Object)
@@ -387,6 +402,15 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: ForgeTypeId
+  commentId: T:ForgeTypeId
+  isExternal: true
+- uid: DisplayUnitType
+  commentId: T:DisplayUnitType
+  isExternal: true
+- uid: Autodesk.Revit.DB.LabelUtils
+  commentId: T:Autodesk.Revit.DB.LabelUtils
+  isExternal: true
 - uid: MBF.Revit.Data.Utils.MbUnitUtils.GetStandardUnitSymbol*
   commentId: Overload:MBF.Revit.Data.Utils.MbUnitUtils.GetStandardUnitSymbol
   isExternal: true

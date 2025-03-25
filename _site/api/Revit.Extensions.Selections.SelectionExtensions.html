@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class SelectionExtensions | MIcroBIM Docs ">
       
-      
+      <meta name="description" content="Provides extension methods for retrieving selected elements of specific types from a .">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,7 @@ Class SelectionExtensions  <a class="header-action link-secondary" title="View s
   <dl><dt>Assembly</dt><dd>Revit.Extensions.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary">Provides extension methods for retrieving selected elements of specific types from a <span class="xref">UIDocument</span>.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -169,7 +169,7 @@ Class SelectionExtensions  <a class="header-action link-secondary" title="View s
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>uiDocument</code> <span class="xref">UIDocument</span></dt>
-    <dd>The uiDocument to get the selected elements from.</dd>
+    <dd>The <span class="xref">UIDocument</span> to get the selected elements from.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -308,7 +308,9 @@ Class SelectionExtensions  <a class="header-action link-secondary" title="View s
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Selections/SelectionExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Gets the selected sprinklers from the document.</div>
+  <div class="markdown level1 summary">Gets the selected sprinklers from the document.
+Filters the selected <span class="xref">FamilyInstance</span> elements to return only those
+categorized as BuiltInCategory.OST_Sprinklers.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -324,7 +326,7 @@ Class SelectionExtensions  <a class="header-action link-secondary" title="View s
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">FamilyInstance</span>&gt;</dt>
-    <dd>A list of the selected sprinklers.</dd>
+    <dd>A list of the selected sprinkler family instances.</dd>
   </dl>
 
 

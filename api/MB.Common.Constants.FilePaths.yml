@@ -30,6 +30,11 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
+  summary: >-
+    Contains static file paths and predefined constants used throughout the application.
+
+    Paths are based on the user's local application data folder.
+  example: []
   syntax:
     content: public static class FilePaths
     content.vb: Public Module FilePaths
@@ -59,6 +64,8 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
+  summary: Constant for identifying pipe elements.
+  example: []
   syntax:
     content: public const string Pipes = "Pipes"
     return:
@@ -80,6 +87,8 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
+  summary: Constant for identifying flexible pipe elements.
+  example: []
   syntax:
     content: public const string FlexPipes = "Flex Pipes"
     return:
@@ -101,6 +110,8 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
+  summary: Constant for identifying outlet elements.
+  example: []
   syntax:
     content: public const string Outlets = "Outlets"
     return:
@@ -122,6 +133,8 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
+  summary: Constant for identifying tee elements.
+  example: []
   syntax:
     content: public const string Tees = "Tees"
     return:
@@ -143,6 +156,8 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
+  summary: Constant for identifying elbow elements.
+  example: []
   syntax:
     content: public const string Elbows = "Elbows"
     return:
@@ -164,6 +179,8 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
+  summary: Constant for identifying pipe accessory elements.
+  example: []
   syntax:
     content: public const string PipeAccessories = "Pipe Accessories"
     return:
@@ -185,6 +202,8 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
+  summary: Constant for identifying sprinkler elements.
+  example: []
   syntax:
     content: public const string Sprinklers = "Sprinklers"
     return:
@@ -206,6 +225,8 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
+  summary: Constant for identifying miscellaneous or other elements.
+  example: []
   syntax:
     content: public const string Others = "Others"
     return:
@@ -227,7 +248,7 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
-  summary: Path to the Worksets Excel file.
+  summary: Gets the full path to the Worksets Excel file.
   example: []
   syntax:
     content: public static string WorksetsExcel { get; }
@@ -252,7 +273,7 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
-  summary: Path to the Worksets JSON file.
+  summary: Gets the full path to the Worksets JSON file.
   example: []
   syntax:
     content: public static string WorksetsJson { get; }
@@ -277,7 +298,7 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
-  summary: Path to the Coverage Excel file.
+  summary: Gets the full path to the Coverage Excel file.
   example: []
   syntax:
     content: public static string CoverageExcel { get; }
@@ -302,7 +323,7 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
-  summary: Path to the Coverage JSON file.
+  summary: Gets the full path to the Coverage JSON file.
   example: []
   syntax:
     content: public static string CoverageJson { get; }
@@ -327,7 +348,7 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
-  summary: Path to the Mapper JSON file.
+  summary: Gets the path to the directory containing Mapper JSON files.
   example: []
   syntax:
     content: public static string MapperJsons { get; }

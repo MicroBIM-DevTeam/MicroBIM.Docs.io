@@ -20,6 +20,12 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Handlers
+  summary: Provides static access to Revit external event handlers used across the application.
+  remarks: >-
+    This utility class simplifies the management of Revit's <xref href="Nice3point.Revit.Toolkit.External.Handlers.ActionEventHandler" data-throw-if-not-resolved="false"></xref> and 
+
+    <xref href="Nice3point.Revit.Toolkit.External.Handlers.AsyncEventHandler" data-throw-if-not-resolved="false"></xref> instances, allowing them to be globally registered and reused.
+  example: []
   syntax:
     content: public static class MbHandlers
     content.vb: Public Module MbHandlers
@@ -49,6 +55,11 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Handlers
+  summary: >-
+    Registers and initializes the external event handlers used by the application.
+
+    Call this method during application startup or initialization.
+  example: []
   syntax:
     content: public static void RegisterHandlers()
     content.vb: Public Shared Sub RegisterHandlers()
@@ -69,6 +80,8 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Handlers
+  summary: Gets or sets the synchronous external event handler for executing Revit commands.
+  example: []
   syntax:
     content: public static ActionEventHandler ExternalEventHandler { get; set; }
     parameters: []
@@ -92,6 +105,8 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Handlers
+  summary: Gets or sets the asynchronous external event handler for executing asynchronous Revit commands.
+  example: []
   syntax:
     content: public static AsyncEventHandler AsyncExternalEventHandler { get; set; }
     parameters: []
@@ -100,6 +115,20 @@ items:
     content.vb: Public Shared Property AsyncExternalEventHandler As AsyncEventHandler
   overload: MB.Common.Utils.Handlers.MbHandlers.AsyncExternalEventHandler*
 references:
+- uid: Nice3point.Revit.Toolkit.External.Handlers.ActionEventHandler
+  commentId: T:Nice3point.Revit.Toolkit.External.Handlers.ActionEventHandler
+  parent: Nice3point.Revit.Toolkit.External.Handlers
+  isExternal: true
+  name: ActionEventHandler
+  nameWithType: ActionEventHandler
+  fullName: Nice3point.Revit.Toolkit.External.Handlers.ActionEventHandler
+- uid: Nice3point.Revit.Toolkit.External.Handlers.AsyncEventHandler
+  commentId: T:Nice3point.Revit.Toolkit.External.Handlers.AsyncEventHandler
+  parent: Nice3point.Revit.Toolkit.External.Handlers
+  isExternal: true
+  name: AsyncEventHandler
+  nameWithType: AsyncEventHandler
+  fullName: Nice3point.Revit.Toolkit.External.Handlers.AsyncEventHandler
 - uid: MB.Common.Utils.Handlers
   commentId: N:MB.Common.Utils.Handlers
   isExternal: true
@@ -377,34 +406,6 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
   - name: )
-- uid: System
-  commentId: N:System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System
-  nameWithType: System
-  fullName: System
-- uid: MB.Common.Utils.Handlers.MbHandlers.RegisterHandlers*
-  commentId: Overload:MB.Common.Utils.Handlers.MbHandlers.RegisterHandlers
-  isExternal: true
-  href: MB.Common.Utils.Handlers.MbHandlers.html#MB_Common_Utils_Handlers_MbHandlers_RegisterHandlers
-  name: RegisterHandlers
-  nameWithType: MbHandlers.RegisterHandlers
-  fullName: MB.Common.Utils.Handlers.MbHandlers.RegisterHandlers
-- uid: MB.Common.Utils.Handlers.MbHandlers.ExternalEventHandler*
-  commentId: Overload:MB.Common.Utils.Handlers.MbHandlers.ExternalEventHandler
-  isExternal: true
-  href: MB.Common.Utils.Handlers.MbHandlers.html#MB_Common_Utils_Handlers_MbHandlers_ExternalEventHandler
-  name: ExternalEventHandler
-  nameWithType: MbHandlers.ExternalEventHandler
-  fullName: MB.Common.Utils.Handlers.MbHandlers.ExternalEventHandler
-- uid: Nice3point.Revit.Toolkit.External.Handlers.ActionEventHandler
-  commentId: T:Nice3point.Revit.Toolkit.External.Handlers.ActionEventHandler
-  parent: Nice3point.Revit.Toolkit.External.Handlers
-  isExternal: true
-  name: ActionEventHandler
-  nameWithType: ActionEventHandler
-  fullName: Nice3point.Revit.Toolkit.External.Handlers.ActionEventHandler
 - uid: Nice3point.Revit.Toolkit.External.Handlers
   commentId: N:Nice3point.Revit.Toolkit.External.Handlers
   isExternal: true
@@ -451,6 +452,27 @@ references:
   - uid: Nice3point.Revit.Toolkit.External.Handlers
     name: Handlers
     isExternal: true
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MB.Common.Utils.Handlers.MbHandlers.RegisterHandlers*
+  commentId: Overload:MB.Common.Utils.Handlers.MbHandlers.RegisterHandlers
+  isExternal: true
+  href: MB.Common.Utils.Handlers.MbHandlers.html#MB_Common_Utils_Handlers_MbHandlers_RegisterHandlers
+  name: RegisterHandlers
+  nameWithType: MbHandlers.RegisterHandlers
+  fullName: MB.Common.Utils.Handlers.MbHandlers.RegisterHandlers
+- uid: MB.Common.Utils.Handlers.MbHandlers.ExternalEventHandler*
+  commentId: Overload:MB.Common.Utils.Handlers.MbHandlers.ExternalEventHandler
+  isExternal: true
+  href: MB.Common.Utils.Handlers.MbHandlers.html#MB_Common_Utils_Handlers_MbHandlers_ExternalEventHandler
+  name: ExternalEventHandler
+  nameWithType: MbHandlers.ExternalEventHandler
+  fullName: MB.Common.Utils.Handlers.MbHandlers.ExternalEventHandler
 - uid: MB.Common.Utils.Handlers.MbHandlers.AsyncExternalEventHandler*
   commentId: Overload:MB.Common.Utils.Handlers.MbHandlers.AsyncExternalEventHandler
   isExternal: true
@@ -458,11 +480,4 @@ references:
   name: AsyncExternalEventHandler
   nameWithType: MbHandlers.AsyncExternalEventHandler
   fullName: MB.Common.Utils.Handlers.MbHandlers.AsyncExternalEventHandler
-- uid: Nice3point.Revit.Toolkit.External.Handlers.AsyncEventHandler
-  commentId: T:Nice3point.Revit.Toolkit.External.Handlers.AsyncEventHandler
-  parent: Nice3point.Revit.Toolkit.External.Handlers
-  isExternal: true
-  name: AsyncEventHandler
-  nameWithType: AsyncEventHandler
-  fullName: Nice3point.Revit.Toolkit.External.Handlers.AsyncEventHandler
 shouldSkipMarkup: true

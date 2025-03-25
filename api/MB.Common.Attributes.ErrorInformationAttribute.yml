@@ -19,6 +19,11 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes
+  summary: >-
+    An attribute used to annotate fields with additional error information.
+
+    This is useful for attaching meaningful error messages or metadata to enum fields or other constants.
+  example: []
   syntax:
     content: >-
       [AttributeUsage(AttributeTargets.Field)]
@@ -98,11 +103,17 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes
+  summary: >-
+    Initializes a new instance of the <xref href="MB.Common.Attributes.ErrorInformationAttribute" data-throw-if-not-resolved="false"></xref> class
+
+    with the specified error information string.
+  example: []
   syntax:
     content: public ErrorInformationAttribute(string errorInformation)
     parameters:
     - id: errorInformation
       type: System.String
+      description: The error information to associate with the field.
     content.vb: Public Sub New(errorInformation As String)
   overload: MB.Common.Attributes.ErrorInformationAttribute.#ctor*
   nameWithType.vb: ErrorInformationAttribute.New(String)
@@ -124,6 +135,8 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes
+  summary: Gets the error information message associated with the field.
+  example: []
   syntax:
     content: public string ErrorInformation { get; }
     parameters: []
@@ -2008,6 +2021,14 @@ references:
     name: InteropServices
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: MB.Common.Attributes.ErrorInformationAttribute
+  commentId: T:MB.Common.Attributes.ErrorInformationAttribute
+  parent: MB.Common.Attributes
+  isExternal: true
+  href: MB.Common.Attributes.ErrorInformationAttribute.html
+  name: ErrorInformationAttribute
+  nameWithType: ErrorInformationAttribute
+  fullName: MB.Common.Attributes.ErrorInformationAttribute
 - uid: MB.Common.Attributes.ErrorInformationAttribute.#ctor*
   commentId: Overload:MB.Common.Attributes.ErrorInformationAttribute.#ctor
   isExternal: true

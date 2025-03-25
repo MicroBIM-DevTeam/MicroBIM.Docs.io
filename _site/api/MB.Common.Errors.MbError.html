@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum MbError | MIcroBIM Docs ">
       
-      
+      <meta name="description" content="Defines a list of error codes used throughout the application. Each enum value is annotated with   to provide a user-friendly error message.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -98,7 +98,9 @@ Enum MbError
   <dl><dt>Assembly</dt><dd>MB.Common.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary">Defines a list of error codes used throughout the application.
+Each enum value is annotated with <a class="xref" href="MB.Common.Attributes.ErrorInformationAttribute.html">ErrorInformationAttribute</a> 
+to provide a user-friendly error message.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -126,19 +128,19 @@ Enum MbError
     <dt id="MB_Common_Errors_MbError_MultipleSpacesSelected"><code>[ErrorInformation(&quot;Please select only one space.&quot;)]
 MultipleSpacesSelected = 2</code></dt>
   
-  <dd></dd>
+  <dd>Error when more than one space is selected, but only one is expected.</dd>
     <dt id="MB_Common_Errors_MbError_NoSpaceSelected"><code>[ErrorInformation(&quot;Please select the space.&quot;)]
 NoSpaceSelected = 1</code></dt>
   
-  <dd></dd>
-    <dt id="MB_Common_Errors_MbError_NoSprinklerSelected"><code>[ErrorInformation(&quot;Please select atleast one sprinkler.&quot;)]
+  <dd>Error when no space is selected by the user.</dd>
+    <dt id="MB_Common_Errors_MbError_NoSprinklerSelected"><code>[ErrorInformation(&quot;Please select at least one sprinkler.&quot;)]
 NoSprinklerSelected = 3</code></dt>
   
-  <dd></dd>
+  <dd>Error when no sprinkler is selected.</dd>
     <dt id="MB_Common_Errors_MbError_SprinklersNotInsideSpace"><code>[ErrorInformation(&quot;Sprinkler is not inside the selected space.&quot;)]
 SprinklersNotInsideSpace = 4</code></dt>
   
-  <dd></dd>
+  <dd>Error when selected sprinklers are not located inside the selected space.</dd>
   </dl>
 
 

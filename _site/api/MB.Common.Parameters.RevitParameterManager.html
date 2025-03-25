@@ -189,7 +189,8 @@ Class RevitParameterManager  <a class="header-action link-secondary" title="View
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Parameters/RevitParameterManager.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Ensures that a set of shared parameters exists in the given Revit document.
+If any of the parameters are missing, they will be added during the transaction.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -199,9 +200,9 @@ Class RevitParameterManager  <a class="header-action link-secondary" title="View
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>doc</code> <span class="xref">Document</span></dt>
-    <dd></dd>
+    <dd>The Revit <span class="xref">Autodesk.Revit.DB.Document</span> in which the parameters should be ensured.</dd>
     <dt><code>parameters</code> <a class="xref" href="MB.Common.SharedParameters.ToolsSharedParameter.html">ToolsSharedParameter</a>[]</dt>
-    <dd></dd>
+    <dd>An array of <a class="xref" href="MB.Common.SharedParameters.ToolsSharedParameter.html">ToolsSharedParameter</a> representing the shared parameters to verify or add.</dd>
   </dl>
 
 

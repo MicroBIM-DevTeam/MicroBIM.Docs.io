@@ -21,6 +21,8 @@ items:
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
+  summary: Provides utility methods for interacting with Revit views, including view type checking and zooming to elements.
+  example: []
   syntax:
     content: public class MbViewUtils
     content.vb: Public Class MbViewUtils
@@ -50,13 +52,17 @@ items:
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
+  summary: Determines if a given view is a graphical view (e.g., plan, section, 3D).
+  example: []
   syntax:
     content: public static bool IsGraphicalView(View view)
     parameters:
     - id: view
       type: Autodesk.Revit.DB.View
+      description: The <xref href="Autodesk.Revit.DB.View" data-throw-if-not-resolved="false"></xref> to check.
     return:
       type: System.Boolean
+      description: <code>true</code> if the view is a graphical type (e.g., FloorPlan, 3D, Section); otherwise, <code>false</code>.
     content.vb: Public Shared Function IsGraphicalView(view As View) As Boolean
   overload: MBF.Revit.Data.Utils.MbViewUtils.IsGraphicalView*
 - uid: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.FamilyInstance)
@@ -75,11 +81,17 @@ items:
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
+  summary: >-
+    Zooms into a specified <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> element in the currently active view.
+
+    Displays a message if the view is not graphical or the bounding box is invalid.
+  example: []
   syntax:
     content: public static void ZoomToElement(FamilyInstance instnace)
     parameters:
     - id: instnace
       type: Autodesk.Revit.DB.FamilyInstance
+      description: The family instance to zoom to.
     content.vb: Public Shared Sub ZoomToElement(instnace As FamilyInstance)
   overload: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement*
 - uid: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.Element)
@@ -98,11 +110,17 @@ items:
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
+  summary: >-
+    Zooms into a specified <xref href="Element" data-throw-if-not-resolved="false"></xref> in the currently active view.
+
+    Displays a message if the view is not graphical or the bounding box is invalid.
+  example: []
   syntax:
     content: public static void ZoomToElement(Element element)
     parameters:
     - id: element
       type: Autodesk.Revit.DB.Element
+      description: The Revit element to zoom to.
     content.vb: Public Shared Sub ZoomToElement(element As Element)
   overload: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement*
 - uid: MBF.Revit.Data.Utils.MbViewUtils.#ctor
@@ -413,6 +431,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Autodesk.Revit.DB.View
+  commentId: T:Autodesk.Revit.DB.View
+  isExternal: true
+  name: View
+  nameWithType: View
+  fullName: Autodesk.Revit.DB.View
 - uid: MBF.Revit.Data.Utils.MbViewUtils.IsGraphicalView*
   commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.IsGraphicalView
   isExternal: true
@@ -420,11 +444,6 @@ references:
   name: IsGraphicalView
   nameWithType: MbViewUtils.IsGraphicalView
   fullName: MBF.Revit.Data.Utils.MbViewUtils.IsGraphicalView
-- uid: Autodesk.Revit.DB.View
-  isExternal: true
-  name: View
-  nameWithType: View
-  fullName: Autodesk.Revit.DB.View
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -436,6 +455,9 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: FamilyInstance
+  commentId: T:FamilyInstance
+  isExternal: true
 - uid: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement*
   commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement
   isExternal: true
@@ -444,10 +466,14 @@ references:
   nameWithType: MbViewUtils.ZoomToElement
   fullName: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement
 - uid: Autodesk.Revit.DB.FamilyInstance
+  commentId: T:Autodesk.Revit.DB.FamilyInstance
   isExternal: true
   name: FamilyInstance
   nameWithType: FamilyInstance
   fullName: Autodesk.Revit.DB.FamilyInstance
+- uid: Element
+  commentId: T:Element
+  isExternal: true
 - uid: Autodesk.Revit.DB.Element
   isExternal: true
   name: Element

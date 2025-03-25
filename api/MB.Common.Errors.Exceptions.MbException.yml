@@ -20,6 +20,11 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Errors.Exceptions
+  summary: >-
+    Represents a custom exception type used within the MicroBIM system.
+
+    Wraps an <xref href="MB.Common.Errors.Exceptions.MbException.MbError" data-throw-if-not-resolved="false"></xref> and provides a description derived from it.
+  example: []
   syntax:
     content: 'public class MbException : Exception, ISerializable, _Exception'
     content.vb: Public Class MbException Inherits Exception Implements ISerializable, _Exception
@@ -64,6 +69,11 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Errors.Exceptions
+  summary: >-
+    Represents a custom exception type used within the MicroBIM system.
+
+    Wraps an <xref href="MB.Common.Errors.Exceptions.MbException.MbError" data-throw-if-not-resolved="false"></xref> and provides a description derived from it.
+  example: []
   syntax:
     content: public MbException(MbError mbError)
     parameters:
@@ -90,6 +100,11 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Errors.Exceptions
+  summary: >-
+    Gets or sets the <xref href="MB.Common.Errors.Exceptions.MbException.MbError" data-throw-if-not-resolved="false"></xref> associated with this exception.
+
+    This holds structured error information relevant to the exception.
+  example: []
   syntax:
     content: public MbError MbError { get; set; }
     parameters: []
@@ -113,6 +128,11 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Errors.Exceptions
+  summary: >-
+    Gets or sets the human-readable description of the error.
+
+    This is generated from the associated <xref href="MB.Common.Errors.Exceptions.MbException.MbError" data-throw-if-not-resolved="false"></xref> using its <code>GetErrorMessage</code> method.
+  example: []
   syntax:
     content: public string Description { get; set; }
     parameters: []
@@ -121,6 +141,13 @@ items:
     content.vb: Public Property Description As String
   overload: MB.Common.Errors.Exceptions.MbException.Description*
 references:
+- uid: MB.Common.Errors.Exceptions.MbException.MbError
+  commentId: P:MB.Common.Errors.Exceptions.MbException.MbError
+  isExternal: true
+  href: MB.Common.Errors.Exceptions.MbException.html#MB_Common_Errors_Exceptions_MbException_MbError
+  name: MbError
+  nameWithType: MbException.MbError
+  fullName: MB.Common.Errors.Exceptions.MbException.MbError
 - uid: MB.Common.Errors.Exceptions
   commentId: N:MB.Common.Errors.Exceptions
   isExternal: true

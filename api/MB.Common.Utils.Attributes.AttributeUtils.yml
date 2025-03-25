@@ -51,7 +51,10 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Attributes
-  summary: Retrieves a custom attribute of the specified type <code class="typeparamref">T</code> applied to a given enum value or field.
+  summary: >-
+    Retrieves a custom attribute of the specified type <code class="typeparamref">T</code> applied to a given enum value or
+
+    field.
   example: []
   syntax:
     content: 'public static T GetAttribute<T>(object value) where T : Attribute'
@@ -87,7 +90,7 @@ items:
   - MB.Common
   namespace: MB.Common.Utils.Attributes
   summary: >-
-    Attempts to retrieve a custom attribute of the specified type <code class="typeparamref">T</code> 
+    Attempts to retrieve a custom attribute of the specified type <code class="typeparamref">T</code>
 
     applied to a given enum value or field without throwing an exception if it is not found.
   example: []
@@ -100,7 +103,7 @@ items:
     - id: attribute
       type: '{T}'
       description: >-
-        When this method returns, contains the attribute of type <code class="typeparamref">T</code> if found; 
+        When this method returns, contains the attribute of type <code class="typeparamref">T</code> if found;
 
         otherwise, <code>null</code>.
     typeParameters:
@@ -130,7 +133,10 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Attributes
-  summary: Retrieves a custom attribute of the specified type <code class="typeparamref">T</code> applied to a given field in a class or struct.
+  summary: >-
+    Retrieves a custom attribute of the specified type <code class="typeparamref">T</code> applied to a given field in a class or
+
+    struct.
   example: []
   syntax:
     content: 'public static T GetFieldAttribute<T, TType>(string fieldName) where T : Attribute'

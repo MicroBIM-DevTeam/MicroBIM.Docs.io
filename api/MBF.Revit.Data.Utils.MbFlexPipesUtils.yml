@@ -6,7 +6,6 @@ items:
   parent: MBF.Revit.Data.Utils
   children:
   - MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
-  - MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeLength(Autodesk.Revit.DB.Plumbing.FlexPipe)
   langs:
   - csharp
   - vb
@@ -68,31 +67,6 @@ items:
   nameWithType.vb: MbFlexPipesUtils.GetFlexPipeInstances(IEnumerable(Of Element))
   fullName.vb: MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeInstances(System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.Element))
   name.vb: GetFlexPipeInstances(IEnumerable(Of Element))
-- uid: MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeLength(Autodesk.Revit.DB.Plumbing.FlexPipe)
-  commentId: M:MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeLength(Autodesk.Revit.DB.Plumbing.FlexPipe)
-  id: GetFlexPipeLength(Autodesk.Revit.DB.Plumbing.FlexPipe)
-  parent: MBF.Revit.Data.Utils.MbFlexPipesUtils
-  langs:
-  - csharp
-  - vb
-  name: GetFlexPipeLength(FlexPipe)
-  nameWithType: MbFlexPipesUtils.GetFlexPipeLength(FlexPipe)
-  fullName: MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeLength(Autodesk.Revit.DB.Plumbing.FlexPipe)
-  type: Method
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbFlexPipesUtils.cs
-  assemblies:
-  - MBF.Revit.Data
-  namespace: MBF.Revit.Data.Utils
-  syntax:
-    content: public static double GetFlexPipeLength(FlexPipe flexPipe)
-    parameters:
-    - id: flexPipe
-      type: Autodesk.Revit.DB.Plumbing.FlexPipe
-    return:
-      type: System.Double
-    content.vb: Public Shared Function GetFlexPipeLength(flexPipe As FlexPipe) As Double
-  overload: MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeLength*
 references:
 - uid: MBF.Revit.Data.Utils
   commentId: N:MBF.Revit.Data.Utils
@@ -409,9 +383,6 @@ references:
 - uid: Autodesk.Revit.DB.Plumbing.FlexPipe
   commentId: T:Autodesk.Revit.DB.Plumbing.FlexPipe
   isExternal: true
-  name: FlexPipe
-  nameWithType: FlexPipe
-  fullName: Autodesk.Revit.DB.Plumbing.FlexPipe
 - uid: MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeInstances*
   commentId: Overload:MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeInstances
   isExternal: true
@@ -522,22 +493,4 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-- uid: MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeLength*
-  commentId: Overload:MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeLength
-  isExternal: true
-  href: MBF.Revit.Data.Utils.MbFlexPipesUtils.html#MBF_Revit_Data_Utils_MbFlexPipesUtils_GetFlexPipeLength_Autodesk_Revit_DB_Plumbing_FlexPipe_
-  name: GetFlexPipeLength
-  nameWithType: MbFlexPipesUtils.GetFlexPipeLength
-  fullName: MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeLength
-- uid: System.Double
-  commentId: T:System.Double
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
 shouldSkipMarkup: true

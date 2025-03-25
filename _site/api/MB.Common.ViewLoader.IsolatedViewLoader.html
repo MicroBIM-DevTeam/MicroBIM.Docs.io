@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class IsolatedViewLoader | MIcroBIM Docs ">
       
-      
+      <meta name="description" content="Provides extension methods for loading XAML views manually and in isolation from a URI. This is used as a workaround for known issues in some WPF/Revit XAML loading contexts.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,8 @@ Class IsolatedViewLoader  <a class="header-action link-secondary" title="View so
   <dl><dt>Assembly</dt><dd>MB.Common.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary">Provides extension methods for loading XAML views manually and in isolation from a URI.
+This is used as a workaround for known issues in some WPF/Revit XAML loading contexts.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -159,7 +160,8 @@ Class IsolatedViewLoader  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/ViewLoader/IsolatedViewLoader.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Loads a XAML view from a given base URI into a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement">FrameworkElement</a>.
+Uses reflection to bypass internal WPF methods and load XAML manually.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,9 +171,9 @@ Class IsolatedViewLoader  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>view</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement">FrameworkElement</a></dt>
-    <dd></dd>
+    <dd>The view instance into which the XAML will be loaded.</dd>
     <dt><code>baseUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd>The relative URI to the XAML file (e.g. "/AssemblyName;component/ViewFolder/View.xaml").</dd>
   </dl>
 
 
@@ -192,7 +194,8 @@ Class IsolatedViewLoader  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/ViewLoader/IsolatedViewLoader.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Loads the corresponding XAML view based on the type of the view instance.
+Infers the URI automatically from the view’s type and namespace.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -202,14 +205,14 @@ Class IsolatedViewLoader  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>view</code> <span class="xref">T</span></dt>
-    <dd></dd>
+    <dd>The view instance to load.</dd>
   </dl>
 
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd>The type of the view, must inherit from <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement">FrameworkElement</a>.</dd>
   </dl>
 
 

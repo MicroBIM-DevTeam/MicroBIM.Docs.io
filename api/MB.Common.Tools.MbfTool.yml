@@ -20,13 +20,14 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Tools
-  summary: Enum representing various tools in the MBF suite.
+  summary: >-
+    Enum representing various tools in the MBF (MicroBIM Fire) suite.
+
+    Each tool is decorated with descriptive metadata and optional shared parameter requirements.
   remarks: >-
-    Each tool is associated with a description and optionally required shared parameters. 
+    Tools are annotated with <xref href="System.ComponentModel.DescriptionAttribute" data-throw-if-not-resolved="false"></xref> for display purposes,
 
-    Use attributes like <xref href="System.ComponentModel.DescriptionAttribute" data-throw-if-not-resolved="false"></xref> and <xref href="MB.Common.Attributes.RequiredSharedParametersAttribute" data-throw-if-not-resolved="false"></xref> 
-
-    to provide metadata for each tool.
+    and with <xref href="MB.Common.Attributes.RequiredSharedParametersAttribute" data-throw-if-not-resolved="false"></xref> to define necessary shared parameters.
   example: []
   syntax:
     content: public enum MbfTool
@@ -48,7 +49,10 @@ items:
   - MB.Common
   namespace: MB.Common.Tools
   summary: Represents the Sprinkler Voronoi tool.
-  remarks: This tool requires the <xref href="MB.Common.SharedParameters.ToolsSharedParameter.ActualCoverage" data-throw-if-not-resolved="false"></xref> shared parameter.
+  remarks: >-
+    This tool requires the <xref href="MB.Common.SharedParameters.ToolsSharedParameter.ActualCoverage" data-throw-if-not-resolved="false"></xref> and 
+
+    <xref href="MB.Common.SharedParameters.ToolsSharedParameter.ProtectionArea" data-throw-if-not-resolved="false"></xref> shared parameters.
   example: []
   syntax:
     content: >-
@@ -135,6 +139,18 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Tools
+  summary: Represents the Mapper tool, used to assign various metadata and fabrication-related properties.
+  remarks: >-
+    This tool requires several shared parameters including:
+
+    <xref href="MB.Common.SharedParameters.ToolsSharedParameter.Color" data-throw-if-not-resolved="false"></xref>, 
+
+    <xref href="MB.Common.SharedParameters.ToolsSharedParameter.Finish" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MB.Common.SharedParameters.ToolsSharedParameter.PipeCode" data-throw-if-not-resolved="false"></xref>, 
+
+    and many others used for downstream fabrication and reporting.
+  example: []
   syntax:
     content: >-
       [RequiredSharedParameters(new ToolsSharedParameter[] { ToolsSharedParameter.Color, ToolsSharedParameter.Finish, ToolsSharedParameter.PipeCode, ToolsSharedParameter.AddFitToId, ToolsSharedParameter.HandTight, ToolsSharedParameter.DescriptionAndAbbreviationListNo, ToolsSharedParameter.ExportedPackageName, ToolsSharedParameter.RealFittingSizes, ToolsSharedParameter.ExportedPdfName, ToolsSharedParameter.SubType, ToolsSharedParameter.FabricationGroupName, ToolsSharedParameter.Allowance, ToolsSharedParameter.ReaLGroupSize, ToolsSharedParameter.IsFitting, ToolsSharedParameter.CalculateSum })]
@@ -310,6 +326,13 @@ references:
   name: ActualCoverage
   nameWithType: ToolsSharedParameter.ActualCoverage
   fullName: MB.Common.SharedParameters.ToolsSharedParameter.ActualCoverage
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.ProtectionArea
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.ProtectionArea
+  isExternal: true
+  href: MB.Common.SharedParameters.ToolsSharedParameter.html#MB_Common_SharedParameters_ToolsSharedParameter_ProtectionArea
+  name: ProtectionArea
+  nameWithType: ToolsSharedParameter.ProtectionArea
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.ProtectionArea
 - uid: MB.Common.Tools.MbfTool
   commentId: T:MB.Common.Tools.MbfTool
   parent: MB.Common.Tools
@@ -318,4 +341,25 @@ references:
   name: MbfTool
   nameWithType: MbfTool
   fullName: MB.Common.Tools.MbfTool
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Color
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Color
+  isExternal: true
+  href: MB.Common.SharedParameters.ToolsSharedParameter.html#MB_Common_SharedParameters_ToolsSharedParameter_Color
+  name: Color
+  nameWithType: ToolsSharedParameter.Color
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Color
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Finish
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Finish
+  isExternal: true
+  href: MB.Common.SharedParameters.ToolsSharedParameter.html#MB_Common_SharedParameters_ToolsSharedParameter_Finish
+  name: Finish
+  nameWithType: ToolsSharedParameter.Finish
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Finish
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.PipeCode
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.PipeCode
+  isExternal: true
+  href: MB.Common.SharedParameters.ToolsSharedParameter.html#MB_Common_SharedParameters_ToolsSharedParameter_PipeCode
+  name: PipeCode
+  nameWithType: ToolsSharedParameter.PipeCode
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.PipeCode
 shouldSkipMarkup: true

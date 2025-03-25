@@ -22,6 +22,8 @@ items:
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Selections
+  summary: Provides extension methods for retrieving selected elements of specific types from a <xref href="UIDocument" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public static class SelectionExtensions
     content.vb: Public Module SelectionExtensions
@@ -59,7 +61,7 @@ items:
     parameters:
     - id: uiDocument
       type: Autodesk.Revit.UI.UIDocument
-      description: The uiDocument to get the selected elements from.
+      description: The <xref href="UIDocument" data-throw-if-not-resolved="false"></xref> to get the selected elements from.
     typeParameters:
     - id: T
       description: The type of elements to get.
@@ -178,7 +180,12 @@ items:
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Selections
-  summary: Gets the selected sprinklers from the document.
+  summary: >-
+    Gets the selected sprinklers from the document.
+
+    Filters the selected <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> elements to return only those
+
+    categorized as BuiltInCategory.OST_Sprinklers.
   example: []
   syntax:
     content: public static List<FamilyInstance> GetSelectedSprinklers(this UIDocument uiDocument)
@@ -188,10 +195,13 @@ items:
       description: The UI document to get the selected sprinklers from.
     return:
       type: System.Collections.Generic.List{Autodesk.Revit.DB.FamilyInstance}
-      description: A list of the selected sprinklers.
+      description: A list of the selected sprinkler family instances.
     content.vb: Public Shared Function GetSelectedSprinklers(uiDocument As UIDocument) As List(Of FamilyInstance)
   overload: Revit.Extensions.Selections.SelectionExtensions.GetSelectedSprinklers*
 references:
+- uid: UIDocument
+  commentId: T:UIDocument
+  isExternal: true
 - uid: Revit.Extensions.Selections
   commentId: N:Revit.Extensions.Selections
   isExternal: true
@@ -692,6 +702,9 @@ references:
     name: Pipe
     isExternal: true
   - name: )
+- uid: FamilyInstance
+  commentId: T:FamilyInstance
+  isExternal: true
 - uid: Revit.Extensions.Selections.SelectionExtensions.GetSelectedSprinklers*
   commentId: Overload:Revit.Extensions.Selections.SelectionExtensions.GetSelectedSprinklers
   isExternal: true

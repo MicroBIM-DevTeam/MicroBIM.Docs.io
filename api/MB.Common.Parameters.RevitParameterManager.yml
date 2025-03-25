@@ -80,13 +80,20 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Parameters
+  summary: >-
+    Ensures that a set of shared parameters exists in the given Revit document.
+
+    If any of the parameters are missing, they will be added during the transaction.
+  example: []
   syntax:
     content: public static void EnsureParameters(Document doc, ToolsSharedParameter[] parameters)
     parameters:
     - id: doc
       type: Autodesk.Revit.DB.Document
+      description: The Revit <xref href="Autodesk.Revit.DB.Document" data-throw-if-not-resolved="false"></xref> in which the parameters should be ensured.
     - id: parameters
       type: MB.Common.SharedParameters.ToolsSharedParameter[]
+      description: An array of <xref href="MB.Common.SharedParameters.ToolsSharedParameter" data-throw-if-not-resolved="false"></xref> representing the shared parameters to verify or add.
     content.vb: Public Shared Sub EnsureParameters(doc As Document, parameters As ToolsSharedParameter())
   overload: MB.Common.Parameters.RevitParameterManager.EnsureParameters*
   nameWithType.vb: RevitParameterManager.EnsureParameters(Document, ToolsSharedParameter())
@@ -447,6 +454,14 @@ references:
     name: Tools
     isExternal: true
     href: MB.Common.Tools.html
+- uid: MB.Common.SharedParameters.ToolsSharedParameter
+  commentId: T:MB.Common.SharedParameters.ToolsSharedParameter
+  parent: MB.Common.SharedParameters
+  isExternal: true
+  href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  name: ToolsSharedParameter
+  nameWithType: ToolsSharedParameter
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter
 - uid: MB.Common.SharedParameters.ToolsSharedParameter[]
   isExternal: true
   href: MB.Common.SharedParameters.ToolsSharedParameter.html
@@ -470,6 +485,43 @@ references:
     href: MB.Common.SharedParameters.ToolsSharedParameter.html
   - name: (
   - name: )
+- uid: MB.Common.SharedParameters
+  commentId: N:MB.Common.SharedParameters
+  isExternal: true
+  href: MB.html
+  name: MB.Common.SharedParameters
+  nameWithType: MB.Common.SharedParameters
+  fullName: MB.Common.SharedParameters
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.SharedParameters
+    name: SharedParameters
+    isExternal: true
+    href: MB.Common.SharedParameters.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.SharedParameters
+    name: SharedParameters
+    isExternal: true
+    href: MB.Common.SharedParameters.html
 - uid: MB.Common.Parameters.RevitParameterManager.#ctor*
   commentId: Overload:MB.Common.Parameters.RevitParameterManager.#ctor
   isExternal: true
