@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.ViewLoader
+  commentId: N:MB.Common.ViewLoader
+  id: MB.Common.ViewLoader
+  children:
+  - MB.Common.ViewLoader.IsolatedViewLoader
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.ViewLoader
+  nameWithType: MB.Common.ViewLoader
+  fullName: MB.Common.ViewLoader
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.ViewLoader.IsolatedViewLoader
+  commentId: T:MB.Common.ViewLoader.IsolatedViewLoader
+  isExternal: true
+  href: MB.Common.ViewLoader.IsolatedViewLoader.html
+  name: IsolatedViewLoader
+  nameWithType: IsolatedViewLoader
+  fullName: MB.Common.ViewLoader.IsolatedViewLoader
+shouldSkipMarkup: true

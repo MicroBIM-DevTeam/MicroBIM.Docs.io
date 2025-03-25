@@ -1,0 +1,321 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Tools.MbfTool
+  commentId: T:MB.Common.Tools.MbfTool
+  id: MbfTool
+  parent: MB.Common.Tools
+  children:
+  - MB.Common.Tools.MbfTool.ApplyParameters
+  - MB.Common.Tools.MbfTool.AssemblyManager
+  - MB.Common.Tools.MbfTool.CutLengthPipeOptimization
+  - MB.Common.Tools.MbfTool.Mapper
+  - MB.Common.Tools.MbfTool.SprinklerVoronoi
+  langs:
+  - csharp
+  - vb
+  name: MbfTool
+  nameWithType: MbfTool
+  fullName: MB.Common.Tools.MbfTool
+  type: Enum
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Tools
+  summary: Enum representing various tools in the MBF suite.
+  remarks: >-
+    Each tool is associated with a description and optionally required shared parameters. 
+
+    Use attributes like <xref href="System.ComponentModel.DescriptionAttribute" data-throw-if-not-resolved="false"></xref> and <xref href="MB.Common.Attributes.RequiredSharedParametersAttribute" data-throw-if-not-resolved="false"></xref> 
+
+    to provide metadata for each tool.
+  example: []
+  syntax:
+    content: public enum MbfTool
+    content.vb: Public Enum MbfTool
+  extensionMethods:
+  - MB.Common.Tools.MbfTool.MB.Common.Tools.MbfToolExtensions.GetRequiredSharedParameters
+- uid: MB.Common.Tools.MbfTool.SprinklerVoronoi
+  commentId: F:MB.Common.Tools.MbfTool.SprinklerVoronoi
+  id: SprinklerVoronoi
+  parent: MB.Common.Tools.MbfTool
+  langs:
+  - csharp
+  - vb
+  name: SprinklerVoronoi
+  nameWithType: MbfTool.SprinklerVoronoi
+  fullName: MB.Common.Tools.MbfTool.SprinklerVoronoi
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Tools
+  summary: Represents the Sprinkler Voronoi tool.
+  remarks: This tool requires the <xref href="MB.Common.SharedParameters.ToolsSharedParameter.ActualCoverage" data-throw-if-not-resolved="false"></xref> shared parameter.
+  example: []
+  syntax:
+    content: >-
+      [RequiredSharedParameters(new ToolsSharedParameter[] { ToolsSharedParameter.ActualCoverage, ToolsSharedParameter.ProtectionArea })]
+
+      SprinklerVoronoi = 1
+    return:
+      type: MB.Common.Tools.MbfTool
+    content.vb: >-
+      <RequiredSharedParameters(New ToolsSharedParameter() { ToolsSharedParameter.ActualCoverage, ToolsSharedParameter.ProtectionArea })>
+
+      SprinklerVoronoi = 1
+- uid: MB.Common.Tools.MbfTool.AssemblyManager
+  commentId: F:MB.Common.Tools.MbfTool.AssemblyManager
+  id: AssemblyManager
+  parent: MB.Common.Tools.MbfTool
+  langs:
+  - csharp
+  - vb
+  name: AssemblyManager
+  nameWithType: MbfTool.AssemblyManager
+  fullName: MB.Common.Tools.MbfTool.AssemblyManager
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Tools
+  summary: Represents the Assembly Manager tool.
+  example: []
+  syntax:
+    content: AssemblyManager = 2
+    return:
+      type: MB.Common.Tools.MbfTool
+- uid: MB.Common.Tools.MbfTool.CutLengthPipeOptimization
+  commentId: F:MB.Common.Tools.MbfTool.CutLengthPipeOptimization
+  id: CutLengthPipeOptimization
+  parent: MB.Common.Tools.MbfTool
+  langs:
+  - csharp
+  - vb
+  name: CutLengthPipeOptimization
+  nameWithType: MbfTool.CutLengthPipeOptimization
+  fullName: MB.Common.Tools.MbfTool.CutLengthPipeOptimization
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Tools
+  summary: Represents the Cut Length Pipe Optimization tool.
+  example: []
+  syntax:
+    content: CutLengthPipeOptimization = 3
+    return:
+      type: MB.Common.Tools.MbfTool
+- uid: MB.Common.Tools.MbfTool.ApplyParameters
+  commentId: F:MB.Common.Tools.MbfTool.ApplyParameters
+  id: ApplyParameters
+  parent: MB.Common.Tools.MbfTool
+  langs:
+  - csharp
+  - vb
+  name: ApplyParameters
+  nameWithType: MbfTool.ApplyParameters
+  fullName: MB.Common.Tools.MbfTool.ApplyParameters
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Tools
+  summary: Represents the Apply Parameters tool.
+  example: []
+  syntax:
+    content: ApplyParameters = 4
+    return:
+      type: MB.Common.Tools.MbfTool
+- uid: MB.Common.Tools.MbfTool.Mapper
+  commentId: F:MB.Common.Tools.MbfTool.Mapper
+  id: Mapper
+  parent: MB.Common.Tools.MbfTool
+  langs:
+  - csharp
+  - vb
+  name: Mapper
+  nameWithType: MbfTool.Mapper
+  fullName: MB.Common.Tools.MbfTool.Mapper
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Tools
+  syntax:
+    content: >-
+      [RequiredSharedParameters(new ToolsSharedParameter[] { ToolsSharedParameter.Color, ToolsSharedParameter.Finish, ToolsSharedParameter.PipeCode, ToolsSharedParameter.AddFitToId, ToolsSharedParameter.HandTight, ToolsSharedParameter.DescriptionAndAbbreviationListNo, ToolsSharedParameter.ExportedPackageName, ToolsSharedParameter.RealFittingSizes, ToolsSharedParameter.ExportedPdfName, ToolsSharedParameter.SubType, ToolsSharedParameter.FabricationGroupName, ToolsSharedParameter.Allowance, ToolsSharedParameter.ReaLGroupSize, ToolsSharedParameter.IsFitting, ToolsSharedParameter.CalculateSum })]
+
+      Mapper = 5
+    return:
+      type: MB.Common.Tools.MbfTool
+    content.vb: >-
+      <RequiredSharedParameters(New ToolsSharedParameter() { ToolsSharedParameter.Color, ToolsSharedParameter.Finish, ToolsSharedParameter.PipeCode, ToolsSharedParameter.AddFitToId, ToolsSharedParameter.HandTight, ToolsSharedParameter.DescriptionAndAbbreviationListNo, ToolsSharedParameter.ExportedPackageName, ToolsSharedParameter.RealFittingSizes, ToolsSharedParameter.ExportedPdfName, ToolsSharedParameter.SubType, ToolsSharedParameter.FabricationGroupName, ToolsSharedParameter.Allowance, ToolsSharedParameter.ReaLGroupSize, ToolsSharedParameter.IsFitting, ToolsSharedParameter.CalculateSum })>
+
+      Mapper = 5
+references:
+- uid: System.ComponentModel.DescriptionAttribute
+  commentId: T:System.ComponentModel.DescriptionAttribute
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.descriptionattribute
+  name: DescriptionAttribute
+  nameWithType: DescriptionAttribute
+  fullName: System.ComponentModel.DescriptionAttribute
+- uid: MB.Common.Attributes.RequiredSharedParametersAttribute
+  commentId: T:MB.Common.Attributes.RequiredSharedParametersAttribute
+  parent: MB.Common.Attributes
+  isExternal: true
+  href: MB.Common.Attributes.RequiredSharedParametersAttribute.html
+  name: RequiredSharedParametersAttribute
+  nameWithType: RequiredSharedParametersAttribute
+  fullName: MB.Common.Attributes.RequiredSharedParametersAttribute
+- uid: MB.Common.Tools
+  commentId: N:MB.Common.Tools
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Tools
+  nameWithType: MB.Common.Tools
+  fullName: MB.Common.Tools
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Tools
+    name: Tools
+    isExternal: true
+    href: MB.Common.Tools.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Tools
+    name: Tools
+    isExternal: true
+    href: MB.Common.Tools.html
+- uid: MB.Common.Tools.MbfTool.MB.Common.Tools.MbfToolExtensions.GetRequiredSharedParameters
+  commentId: M:MB.Common.Tools.MbfToolExtensions.GetRequiredSharedParameters(MB.Common.Tools.MbfTool)
+  parent: MB.Common.Tools.MbfToolExtensions
+  definition: MB.Common.Tools.MbfToolExtensions.GetRequiredSharedParameters(MB.Common.Tools.MbfTool)
+  href: MB.Common.Tools.MbfToolExtensions.html#MB_Common_Tools_MbfToolExtensions_GetRequiredSharedParameters_MB_Common_Tools_MbfTool_
+  name: GetRequiredSharedParameters(MbfTool)
+  nameWithType: MbfToolExtensions.GetRequiredSharedParameters(MbfTool)
+  fullName: MB.Common.Tools.MbfToolExtensions.GetRequiredSharedParameters(MB.Common.Tools.MbfTool)
+  spec.csharp:
+  - uid: MB.Common.Tools.MbfToolExtensions.GetRequiredSharedParameters(MB.Common.Tools.MbfTool)
+    name: GetRequiredSharedParameters
+    isExternal: true
+    href: MB.Common.Tools.MbfToolExtensions.html#MB_Common_Tools_MbfToolExtensions_GetRequiredSharedParameters_MB_Common_Tools_MbfTool_
+  - name: (
+  - uid: MB.Common.Tools.MbfTool
+    name: MbfTool
+    isExternal: true
+    href: MB.Common.Tools.MbfTool.html
+  - name: )
+  spec.vb:
+  - uid: MB.Common.Tools.MbfToolExtensions.GetRequiredSharedParameters(MB.Common.Tools.MbfTool)
+    name: GetRequiredSharedParameters
+    isExternal: true
+    href: MB.Common.Tools.MbfToolExtensions.html#MB_Common_Tools_MbfToolExtensions_GetRequiredSharedParameters_MB_Common_Tools_MbfTool_
+  - name: (
+  - uid: MB.Common.Tools.MbfTool
+    name: MbfTool
+    isExternal: true
+    href: MB.Common.Tools.MbfTool.html
+  - name: )
+- uid: MB.Common.Attributes
+  commentId: N:MB.Common.Attributes
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Attributes
+  nameWithType: MB.Common.Attributes
+  fullName: MB.Common.Attributes
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Attributes
+    name: Attributes
+    isExternal: true
+    href: MB.Common.Attributes.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Attributes
+    name: Attributes
+    isExternal: true
+    href: MB.Common.Attributes.html
+- uid: MB.Common.Tools.MbfToolExtensions.GetRequiredSharedParameters(MB.Common.Tools.MbfTool)
+  commentId: M:MB.Common.Tools.MbfToolExtensions.GetRequiredSharedParameters(MB.Common.Tools.MbfTool)
+  isExternal: true
+  href: MB.Common.Tools.MbfToolExtensions.html#MB_Common_Tools_MbfToolExtensions_GetRequiredSharedParameters_MB_Common_Tools_MbfTool_
+  name: GetRequiredSharedParameters(MbfTool)
+  nameWithType: MbfToolExtensions.GetRequiredSharedParameters(MbfTool)
+  fullName: MB.Common.Tools.MbfToolExtensions.GetRequiredSharedParameters(MB.Common.Tools.MbfTool)
+  spec.csharp:
+  - uid: MB.Common.Tools.MbfToolExtensions.GetRequiredSharedParameters(MB.Common.Tools.MbfTool)
+    name: GetRequiredSharedParameters
+    isExternal: true
+    href: MB.Common.Tools.MbfToolExtensions.html#MB_Common_Tools_MbfToolExtensions_GetRequiredSharedParameters_MB_Common_Tools_MbfTool_
+  - name: (
+  - uid: MB.Common.Tools.MbfTool
+    name: MbfTool
+    isExternal: true
+    href: MB.Common.Tools.MbfTool.html
+  - name: )
+  spec.vb:
+  - uid: MB.Common.Tools.MbfToolExtensions.GetRequiredSharedParameters(MB.Common.Tools.MbfTool)
+    name: GetRequiredSharedParameters
+    isExternal: true
+    href: MB.Common.Tools.MbfToolExtensions.html#MB_Common_Tools_MbfToolExtensions_GetRequiredSharedParameters_MB_Common_Tools_MbfTool_
+  - name: (
+  - uid: MB.Common.Tools.MbfTool
+    name: MbfTool
+    isExternal: true
+    href: MB.Common.Tools.MbfTool.html
+  - name: )
+- uid: MB.Common.Tools.MbfToolExtensions
+  commentId: T:MB.Common.Tools.MbfToolExtensions
+  parent: MB.Common.Tools
+  isExternal: true
+  href: MB.Common.Tools.MbfToolExtensions.html
+  name: MbfToolExtensions
+  nameWithType: MbfToolExtensions
+  fullName: MB.Common.Tools.MbfToolExtensions
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.ActualCoverage
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.ActualCoverage
+  isExternal: true
+  href: MB.Common.SharedParameters.ToolsSharedParameter.html#MB_Common_SharedParameters_ToolsSharedParameter_ActualCoverage
+  name: ActualCoverage
+  nameWithType: ToolsSharedParameter.ActualCoverage
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.ActualCoverage
+- uid: MB.Common.Tools.MbfTool
+  commentId: T:MB.Common.Tools.MbfTool
+  parent: MB.Common.Tools
+  isExternal: true
+  href: MB.Common.Tools.MbfTool.html
+  name: MbfTool
+  nameWithType: MbfTool
+  fullName: MB.Common.Tools.MbfTool
+shouldSkipMarkup: true

@@ -1,0 +1,350 @@
+### YamlMime:TableOfContent
+items:
+- uid: MB.Common.Aspects
+  name: MB.Common.Aspects
+  type: Namespace
+  items:
+  - uid: MB.Common.Aspects.LogAspect
+    name: LogAspect
+    type: Class
+- uid: MB.Common.Attributes
+  name: MB.Common.Attributes
+  type: Namespace
+  items:
+  - uid: MB.Common.Attributes.ErrorInformationAttribute
+    name: ErrorInformationAttribute
+    type: Class
+  - uid: MB.Common.Attributes.GuidAttribute
+    name: GuidAttribute
+    type: Class
+  - uid: MB.Common.Attributes.RequiredSharedParametersAttribute
+    name: RequiredSharedParametersAttribute
+    type: Class
+  - uid: MB.Common.Attributes.RevitCategoriesAttribute
+    name: RevitCategoriesAttribute
+    type: Class
+  - uid: MB.Common.Attributes.SharedParameterTypeAttribute
+    name: SharedParameterTypeAttribute
+    type: Class
+- uid: MB.Common.Comparers
+  name: MB.Common.Comparers
+  type: Namespace
+  items:
+  - uid: MB.Common.Comparers.BoundingBoxComparer
+    name: BoundingBoxComparer
+    type: Class
+- uid: MB.Common.Constants
+  name: MB.Common.Constants
+  type: Namespace
+  items:
+  - uid: MB.Common.Constants.FilePaths
+    name: FilePaths
+    type: Class
+  - uid: MB.Common.Constants.MbErrorMessages
+    name: MbErrorMessages
+    type: Class
+  - uid: MB.Common.Constants.MbfFiles
+    name: MbfFiles
+    type: Class
+  - uid: MB.Common.Constants.MbfGroups
+    name: MbfGroups
+    type: Class
+- uid: MB.Common.Errors
+  name: MB.Common.Errors
+  type: Namespace
+  items:
+  - uid: MB.Common.Errors.MbError
+    name: MbError
+    type: Enum
+  - uid: MB.Common.Errors.MbErrorExtensions
+    name: MbErrorExtensions
+    type: Class
+- uid: MB.Common.Errors.Exceptions
+  name: MB.Common.Errors.Exceptions
+  type: Namespace
+  items:
+  - uid: MB.Common.Errors.Exceptions.MbException
+    name: MbException
+    type: Class
+- uid: MB.Common.Parameters
+  name: MB.Common.Parameters
+  type: Namespace
+  items:
+  - uid: MB.Common.Parameters.RevitParameterManager
+    name: RevitParameterManager
+    type: Class
+- uid: MB.Common.Services
+  name: MB.Common.Services
+  type: Namespace
+  items:
+  - uid: MB.Common.Services.MailService
+    name: MailService
+    type: Class
+- uid: MB.Common.SharedParameters
+  name: MB.Common.SharedParameters
+  type: Namespace
+  items:
+  - uid: MB.Common.SharedParameters.ElementExtensions
+    name: ElementExtensions
+    type: Class
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions
+    name: SharedParameterExtensions
+    type: Class
+  - uid: MB.Common.SharedParameters.SharedParameterType
+    name: SharedParameterType
+    type: Enum
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    type: Enum
+- uid: MB.Common.Tools
+  name: MB.Common.Tools
+  type: Namespace
+  items:
+  - uid: MB.Common.Tools.MbfTool
+    name: MbfTool
+    type: Enum
+  - uid: MB.Common.Tools.MbfToolExtensions
+    name: MbfToolExtensions
+    type: Class
+- uid: MB.Common.Utils.Attributes
+  name: MB.Common.Utils.Attributes
+  type: Namespace
+  items:
+  - uid: MB.Common.Utils.Attributes.AttributeUtils
+    name: AttributeUtils
+    type: Class
+- uid: MB.Common.Utils.Handlers
+  name: MB.Common.Utils.Handlers
+  type: Namespace
+  items:
+  - uid: MB.Common.Utils.Handlers.MbHandlers
+    name: MbHandlers
+    type: Class
+- uid: MB.Common.Utils.Image
+  name: MB.Common.Utils.Image
+  type: Namespace
+  items:
+  - uid: MB.Common.Utils.Image.ImageUtils
+    name: ImageUtils
+    type: Class
+- uid: MB.Common.Utils.Result
+  name: MB.Common.Utils.Result
+  type: Namespace
+  items:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult<T>
+    type: Class
+- uid: MB.Common.ViewLoader
+  name: MB.Common.ViewLoader
+  type: Namespace
+  items:
+  - uid: MB.Common.ViewLoader.IsolatedViewLoader
+    name: IsolatedViewLoader
+    type: Class
+- uid: MBF.Revit.Data.SelectionFilters
+  name: MBF.Revit.Data.SelectionFilters
+  type: Namespace
+  items:
+  - uid: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter
+    name: DynamicCategorySelectionFilter
+    type: Class
+- uid: MBF.Revit.Data.Utils
+  name: MBF.Revit.Data.Utils
+  type: Namespace
+  items:
+  - uid: MBF.Revit.Data.Utils.MbFlexPipesUtils
+    name: MbFlexPipesUtils
+    type: Class
+  - uid: MBF.Revit.Data.Utils.MbParameterUtils
+    name: MbParameterUtils
+    type: Class
+  - uid: MBF.Revit.Data.Utils.MbPipeAccessoriesUtils
+    name: MbPipeAccessoriesUtils
+    type: Class
+  - uid: MBF.Revit.Data.Utils.MbPipeFittingsUtils
+    name: MbPipeFittingsUtils
+    type: Class
+  - uid: MBF.Revit.Data.Utils.MbPipesUtils
+    name: MbPipesUtils
+    type: Class
+  - uid: MBF.Revit.Data.Utils.MbSprinklersUtils
+    name: MbSprinklersUtils
+    type: Class
+  - uid: MBF.Revit.Data.Utils.MbUnitUtils
+    name: MbUnitUtils
+    type: Class
+  - uid: MBF.Revit.Data.Utils.MbViewUtils
+    name: MbViewUtils
+    type: Class
+- uid: MBFWpfToolkit
+  name: MBFWpfToolkit
+  type: Namespace
+  items:
+  - uid: MBFWpfToolkit.MbWindow
+    name: MbWindow
+    type: Class
+- uid: MBFWpfToolkit.AttachedProperties
+  name: MBFWpfToolkit.AttachedProperties
+  type: Namespace
+  items:
+  - uid: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior
+    name: ComboBoxSearchBehavior
+    type: Class
+  - uid: MBFWpfToolkit.AttachedProperties.HelpAssistant
+    name: HelpAssistant
+    type: Class
+  - uid: MBFWpfToolkit.AttachedProperties.LocalizationHelper
+    name: LocalizationHelper
+    type: Class
+- uid: MBFWpfToolkit.Constants
+  name: MBFWpfToolkit.Constants
+  type: Namespace
+  items:
+  - uid: MBFWpfToolkit.Constants.MbMessageIcon
+    name: MbMessageIcon
+    type: Enum
+  - uid: MBFWpfToolkit.Constants.SkinType
+    name: SkinType
+    type: Enum
+- uid: MBFWpfToolkit.Controls
+  name: MBFWpfToolkit.Controls
+  type: Namespace
+  items:
+  - uid: MBFWpfToolkit.Controls.MbMessageBox
+    name: MbMessageBox
+    type: Class
+  - uid: MBFWpfToolkit.Controls.MicroBimSprite
+    name: MicroBimSprite
+    type: Class
+- uid: MBFWpfToolkit.Controls.Help
+  name: MBFWpfToolkit.Controls.Help
+  type: Namespace
+  items:
+  - uid: MBFWpfToolkit.Controls.Help.HelpWizard
+    name: HelpWizard
+    type: Class
+- uid: MBFWpfToolkit.Converters
+  name: MBFWpfToolkit.Converters
+  type: Namespace
+  items:
+  - uid: MBFWpfToolkit.Converters.Boolean2StringConverter
+    name: Boolean2StringConverter
+    type: Class
+  - uid: MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter
+    name: BooleanToVisibilityWithInverseConverter
+    type: Class
+  - uid: MBFWpfToolkit.Converters.EnumDisplayNameConverter
+    name: EnumDisplayNameConverter
+    type: Class
+  - uid: MBFWpfToolkit.Converters.ValidationMultiConverter
+    name: ValidationMultiConverter
+    type: Class
+- uid: MBFWpfToolkit.Extensions
+  name: MBFWpfToolkit.Extensions
+  type: Namespace
+  items:
+  - uid: MBFWpfToolkit.Extensions.ListExtensions
+    name: ListExtensions
+    type: Class
+- uid: MBFWpfToolkit.Helpers
+  name: MBFWpfToolkit.Helpers
+  type: Namespace
+  items:
+  - uid: MBFWpfToolkit.Helpers.MbNotification
+    name: MbNotification
+    type: Class
+  - uid: MBFWpfToolkit.Helpers.MbResourceHelper
+    name: MbResourceHelper
+    type: Class
+  - uid: MBFWpfToolkit.Helpers.PasswordHelper
+    name: PasswordHelper
+    type: Class
+- uid: MBFWpfToolkit.MbViewModel
+  name: MBFWpfToolkit.MbViewModel
+  type: Namespace
+  items:
+  - uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel
+    name: MbBaseViewModel
+    type: Class
+- uid: MBFWpfToolkit.Models
+  name: MBFWpfToolkit.Models
+  type: Namespace
+  items:
+  - uid: MBFWpfToolkit.Models.HelpStep
+    name: HelpStep
+    type: Class
+- uid: MBFWpfToolkit.Properties.Langs
+  name: MBFWpfToolkit.Properties.Langs
+  type: Namespace
+  items:
+  - uid: MBFWpfToolkit.Properties.Langs.Lang
+    name: Lang
+    type: Class
+- uid: MBFWpfToolkit.Utils
+  name: MBFWpfToolkit.Utils
+  type: Namespace
+  items:
+  - uid: MBFWpfToolkit.Utils.WindowUtils
+    name: WindowUtils
+    type: Class
+- uid: MBFWpfToolkit.ValidationRules
+  name: MBFWpfToolkit.ValidationRules
+  type: Namespace
+  items:
+  - uid: MBFWpfToolkit.ValidationRules.DecimalValidationRule
+    name: DecimalValidationRule
+    type: Class
+  - uid: MBFWpfToolkit.ValidationRules.DoubleValidationRule
+    name: DoubleValidationRule
+    type: Class
+  - uid: MBFWpfToolkit.ValidationRules.IntegerValidationRule
+    name: IntegerValidationRule
+    type: Class
+  - uid: MBFWpfToolkit.ValidationRules.StringValidationRule
+    name: StringValidationRule
+    type: Class
+- uid: OnMethodBoundaryAspectCompile
+  name: OnMethodBoundaryAspectCompile
+  type: Namespace
+  items:
+  - uid: OnMethodBoundaryAspectCompile.MethodInfos
+    name: MethodInfos
+    type: Class
+- uid: Revit.Extensions.Elements
+  name: Revit.Extensions.Elements
+  type: Namespace
+  items:
+  - uid: Revit.Extensions.Elements.PipeExtensions
+    name: PipeExtensions
+    type: Class
+  - uid: Revit.Extensions.Elements.SpaceExtensions
+    name: SpaceExtensions
+    type: Class
+- uid: Revit.Extensions.Extensions
+  name: Revit.Extensions.Extensions
+  type: Namespace
+  items:
+  - uid: Revit.Extensions.Extensions.CollectionExtensions
+    name: CollectionExtensions
+    type: Class
+  - uid: Revit.Extensions.Extensions.DocumentExtensions
+    name: DocumentExtensions
+    type: Class
+  - uid: Revit.Extensions.Extensions.ViewExtensions
+    name: ViewExtensions
+    type: Class
+- uid: Revit.Extensions.Selections
+  name: Revit.Extensions.Selections
+  type: Namespace
+  items:
+  - uid: Revit.Extensions.Selections.SelectionExtensions
+    name: SelectionExtensions
+    type: Class
+- uid: Revit.Extensions.Unit
+  name: Revit.Extensions.Unit
+  type: Namespace
+  items:
+  - uid: Revit.Extensions.Unit.MbUnitExtensions
+    name: MbUnitExtensions
+    type: Class
+memberLayout: SamePage

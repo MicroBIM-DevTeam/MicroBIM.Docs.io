@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.MbViewModel
+  commentId: N:MBFWpfToolkit.MbViewModel
+  id: MBFWpfToolkit.MbViewModel
+  children:
+  - MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: MBFWpfToolkit.MbViewModel
+  nameWithType: MBFWpfToolkit.MbViewModel
+  fullName: MBFWpfToolkit.MbViewModel
+  type: Namespace
+  assemblies:
+  - MBFWpfToolkit
+references:
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  commentId: T:MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  isExternal: true
+  href: MBFWpfToolkit.MbViewModel.MbBaseViewModel.html
+  name: MbBaseViewModel
+  nameWithType: MbBaseViewModel
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel
+shouldSkipMarkup: true

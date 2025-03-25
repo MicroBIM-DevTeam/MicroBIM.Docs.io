@@ -1,0 +1,264 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Errors.MbError
+  commentId: T:MB.Common.Errors.MbError
+  id: MbError
+  parent: MB.Common.Errors
+  children:
+  - MB.Common.Errors.MbError.MultipleSpacesSelected
+  - MB.Common.Errors.MbError.NoSpaceSelected
+  - MB.Common.Errors.MbError.NoSprinklerSelected
+  - MB.Common.Errors.MbError.SprinklersNotInsideSpace
+  langs:
+  - csharp
+  - vb
+  name: MbError
+  nameWithType: MbError
+  fullName: MB.Common.Errors.MbError
+  type: Enum
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Errors
+  syntax:
+    content: public enum MbError
+    content.vb: Public Enum MbError
+  extensionMethods:
+  - MB.Common.Errors.MbError.MB.Common.Errors.MbErrorExtensions.GetErrorMessage
+- uid: MB.Common.Errors.MbError.NoSpaceSelected
+  commentId: F:MB.Common.Errors.MbError.NoSpaceSelected
+  id: NoSpaceSelected
+  parent: MB.Common.Errors.MbError
+  langs:
+  - csharp
+  - vb
+  name: NoSpaceSelected
+  nameWithType: MbError.NoSpaceSelected
+  fullName: MB.Common.Errors.MbError.NoSpaceSelected
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Errors
+  syntax:
+    content: >-
+      [ErrorInformation("Please select the space.")]
+
+      NoSpaceSelected = 1
+    return:
+      type: MB.Common.Errors.MbError
+    content.vb: >-
+      <ErrorInformation("Please select the space.")>
+
+      NoSpaceSelected = 1
+  attributes:
+  - type: MB.Common.Attributes.ErrorInformationAttribute
+    ctor: MB.Common.Attributes.ErrorInformationAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Please select the space.
+- uid: MB.Common.Errors.MbError.MultipleSpacesSelected
+  commentId: F:MB.Common.Errors.MbError.MultipleSpacesSelected
+  id: MultipleSpacesSelected
+  parent: MB.Common.Errors.MbError
+  langs:
+  - csharp
+  - vb
+  name: MultipleSpacesSelected
+  nameWithType: MbError.MultipleSpacesSelected
+  fullName: MB.Common.Errors.MbError.MultipleSpacesSelected
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Errors
+  syntax:
+    content: >-
+      [ErrorInformation("Please select only one space.")]
+
+      MultipleSpacesSelected = 2
+    return:
+      type: MB.Common.Errors.MbError
+    content.vb: >-
+      <ErrorInformation("Please select only one space.")>
+
+      MultipleSpacesSelected = 2
+  attributes:
+  - type: MB.Common.Attributes.ErrorInformationAttribute
+    ctor: MB.Common.Attributes.ErrorInformationAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Please select only one space.
+- uid: MB.Common.Errors.MbError.NoSprinklerSelected
+  commentId: F:MB.Common.Errors.MbError.NoSprinklerSelected
+  id: NoSprinklerSelected
+  parent: MB.Common.Errors.MbError
+  langs:
+  - csharp
+  - vb
+  name: NoSprinklerSelected
+  nameWithType: MbError.NoSprinklerSelected
+  fullName: MB.Common.Errors.MbError.NoSprinklerSelected
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Errors
+  syntax:
+    content: >-
+      [ErrorInformation("Please select atleast one sprinkler.")]
+
+      NoSprinklerSelected = 3
+    return:
+      type: MB.Common.Errors.MbError
+    content.vb: >-
+      <ErrorInformation("Please select atleast one sprinkler.")>
+
+      NoSprinklerSelected = 3
+  attributes:
+  - type: MB.Common.Attributes.ErrorInformationAttribute
+    ctor: MB.Common.Attributes.ErrorInformationAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Please select atleast one sprinkler.
+- uid: MB.Common.Errors.MbError.SprinklersNotInsideSpace
+  commentId: F:MB.Common.Errors.MbError.SprinklersNotInsideSpace
+  id: SprinklersNotInsideSpace
+  parent: MB.Common.Errors.MbError
+  langs:
+  - csharp
+  - vb
+  name: SprinklersNotInsideSpace
+  nameWithType: MbError.SprinklersNotInsideSpace
+  fullName: MB.Common.Errors.MbError.SprinklersNotInsideSpace
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Errors
+  syntax:
+    content: >-
+      [ErrorInformation("Sprinkler is not inside the selected space.")]
+
+      SprinklersNotInsideSpace = 4
+    return:
+      type: MB.Common.Errors.MbError
+    content.vb: >-
+      <ErrorInformation("Sprinkler is not inside the selected space.")>
+
+      SprinklersNotInsideSpace = 4
+  attributes:
+  - type: MB.Common.Attributes.ErrorInformationAttribute
+    ctor: MB.Common.Attributes.ErrorInformationAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Sprinkler is not inside the selected space.
+references:
+- uid: MB.Common.Errors
+  commentId: N:MB.Common.Errors
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Errors
+  nameWithType: MB.Common.Errors
+  fullName: MB.Common.Errors
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Errors
+    name: Errors
+    isExternal: true
+    href: MB.Common.Errors.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Errors
+    name: Errors
+    isExternal: true
+    href: MB.Common.Errors.html
+- uid: MB.Common.Errors.MbError.MB.Common.Errors.MbErrorExtensions.GetErrorMessage
+  commentId: M:MB.Common.Errors.MbErrorExtensions.GetErrorMessage(MB.Common.Errors.MbError)
+  parent: MB.Common.Errors.MbErrorExtensions
+  definition: MB.Common.Errors.MbErrorExtensions.GetErrorMessage(MB.Common.Errors.MbError)
+  href: MB.Common.Errors.MbErrorExtensions.html#MB_Common_Errors_MbErrorExtensions_GetErrorMessage_MB_Common_Errors_MbError_
+  name: GetErrorMessage(MbError)
+  nameWithType: MbErrorExtensions.GetErrorMessage(MbError)
+  fullName: MB.Common.Errors.MbErrorExtensions.GetErrorMessage(MB.Common.Errors.MbError)
+  spec.csharp:
+  - uid: MB.Common.Errors.MbErrorExtensions.GetErrorMessage(MB.Common.Errors.MbError)
+    name: GetErrorMessage
+    isExternal: true
+    href: MB.Common.Errors.MbErrorExtensions.html#MB_Common_Errors_MbErrorExtensions_GetErrorMessage_MB_Common_Errors_MbError_
+  - name: (
+  - uid: MB.Common.Errors.MbError
+    name: MbError
+    isExternal: true
+    href: MB.Common.Errors.MbError.html
+  - name: )
+  spec.vb:
+  - uid: MB.Common.Errors.MbErrorExtensions.GetErrorMessage(MB.Common.Errors.MbError)
+    name: GetErrorMessage
+    isExternal: true
+    href: MB.Common.Errors.MbErrorExtensions.html#MB_Common_Errors_MbErrorExtensions_GetErrorMessage_MB_Common_Errors_MbError_
+  - name: (
+  - uid: MB.Common.Errors.MbError
+    name: MbError
+    isExternal: true
+    href: MB.Common.Errors.MbError.html
+  - name: )
+- uid: MB.Common.Errors.MbErrorExtensions.GetErrorMessage(MB.Common.Errors.MbError)
+  commentId: M:MB.Common.Errors.MbErrorExtensions.GetErrorMessage(MB.Common.Errors.MbError)
+  isExternal: true
+  href: MB.Common.Errors.MbErrorExtensions.html#MB_Common_Errors_MbErrorExtensions_GetErrorMessage_MB_Common_Errors_MbError_
+  name: GetErrorMessage(MbError)
+  nameWithType: MbErrorExtensions.GetErrorMessage(MbError)
+  fullName: MB.Common.Errors.MbErrorExtensions.GetErrorMessage(MB.Common.Errors.MbError)
+  spec.csharp:
+  - uid: MB.Common.Errors.MbErrorExtensions.GetErrorMessage(MB.Common.Errors.MbError)
+    name: GetErrorMessage
+    isExternal: true
+    href: MB.Common.Errors.MbErrorExtensions.html#MB_Common_Errors_MbErrorExtensions_GetErrorMessage_MB_Common_Errors_MbError_
+  - name: (
+  - uid: MB.Common.Errors.MbError
+    name: MbError
+    isExternal: true
+    href: MB.Common.Errors.MbError.html
+  - name: )
+  spec.vb:
+  - uid: MB.Common.Errors.MbErrorExtensions.GetErrorMessage(MB.Common.Errors.MbError)
+    name: GetErrorMessage
+    isExternal: true
+    href: MB.Common.Errors.MbErrorExtensions.html#MB_Common_Errors_MbErrorExtensions_GetErrorMessage_MB_Common_Errors_MbError_
+  - name: (
+  - uid: MB.Common.Errors.MbError
+    name: MbError
+    isExternal: true
+    href: MB.Common.Errors.MbError.html
+  - name: )
+- uid: MB.Common.Errors.MbErrorExtensions
+  commentId: T:MB.Common.Errors.MbErrorExtensions
+  parent: MB.Common.Errors
+  isExternal: true
+  href: MB.Common.Errors.MbErrorExtensions.html
+  name: MbErrorExtensions
+  nameWithType: MbErrorExtensions
+  fullName: MB.Common.Errors.MbErrorExtensions
+- uid: MB.Common.Errors.MbError
+  commentId: T:MB.Common.Errors.MbError
+  parent: MB.Common.Errors
+  isExternal: true
+  href: MB.Common.Errors.MbError.html
+  name: MbError
+  nameWithType: MbError
+  fullName: MB.Common.Errors.MbError
+shouldSkipMarkup: true

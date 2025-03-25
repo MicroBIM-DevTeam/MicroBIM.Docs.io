@@ -1,0 +1,63 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Aspects
+  commentId: N:MB.Common.Aspects
+  id: MB.Common.Aspects
+  children:
+  - MB.Common.Aspects.LogAspect
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.Aspects
+  nameWithType: MB.Common.Aspects
+  fullName: MB.Common.Aspects
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.Aspects.LogAspect
+  commentId: T:MB.Common.Aspects.LogAspect
+  parent: MB.Common.Aspects
+  isExternal: true
+  href: MB.Common.Aspects.LogAspect.html
+  name: LogAspect
+  nameWithType: LogAspect
+  fullName: MB.Common.Aspects.LogAspect
+- uid: MB.Common.Aspects
+  commentId: N:MB.Common.Aspects
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Aspects
+  nameWithType: MB.Common.Aspects
+  fullName: MB.Common.Aspects
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Aspects
+    name: Aspects
+    isExternal: true
+    href: MB.Common.Aspects.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Aspects
+    name: Aspects
+    isExternal: true
+    href: MB.Common.Aspects.html
+shouldSkipMarkup: true

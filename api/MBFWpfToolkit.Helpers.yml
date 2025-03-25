@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Helpers
+  commentId: N:MBFWpfToolkit.Helpers
+  id: MBFWpfToolkit.Helpers
+  children:
+  - MBFWpfToolkit.Helpers.MbNotification
+  - MBFWpfToolkit.Helpers.MbResourceHelper
+  - MBFWpfToolkit.Helpers.PasswordHelper
+  langs:
+  - csharp
+  - vb
+  name: MBFWpfToolkit.Helpers
+  nameWithType: MBFWpfToolkit.Helpers
+  fullName: MBFWpfToolkit.Helpers
+  type: Namespace
+  assemblies:
+  - MBFWpfToolkit
+references:
+- uid: MBFWpfToolkit.Helpers.MbNotification
+  commentId: T:MBFWpfToolkit.Helpers.MbNotification
+  isExternal: true
+  href: MBFWpfToolkit.Helpers.MbNotification.html
+  name: MbNotification
+  nameWithType: MbNotification
+  fullName: MBFWpfToolkit.Helpers.MbNotification
+- uid: MBFWpfToolkit.Helpers.MbResourceHelper
+  commentId: T:MBFWpfToolkit.Helpers.MbResourceHelper
+  isExternal: true
+  href: MBFWpfToolkit.Helpers.MbResourceHelper.html
+  name: MbResourceHelper
+  nameWithType: MbResourceHelper
+  fullName: MBFWpfToolkit.Helpers.MbResourceHelper
+- uid: MBFWpfToolkit.Helpers.PasswordHelper
+  commentId: T:MBFWpfToolkit.Helpers.PasswordHelper
+  isExternal: true
+  href: MBFWpfToolkit.Helpers.PasswordHelper.html
+  name: PasswordHelper
+  nameWithType: PasswordHelper
+  fullName: MBFWpfToolkit.Helpers.PasswordHelper
+shouldSkipMarkup: true

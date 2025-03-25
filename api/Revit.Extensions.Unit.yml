@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: Revit.Extensions.Unit
+  commentId: N:Revit.Extensions.Unit
+  id: Revit.Extensions.Unit
+  children:
+  - Revit.Extensions.Unit.MbUnitExtensions
+  langs:
+  - csharp
+  - vb
+  name: Revit.Extensions.Unit
+  nameWithType: Revit.Extensions.Unit
+  fullName: Revit.Extensions.Unit
+  type: Namespace
+  assemblies:
+  - Revit.Extensions
+references:
+- uid: Revit.Extensions.Unit.MbUnitExtensions
+  commentId: T:Revit.Extensions.Unit.MbUnitExtensions
+  isExternal: true
+  href: Revit.Extensions.Unit.MbUnitExtensions.html
+  name: MbUnitExtensions
+  nameWithType: MbUnitExtensions
+  fullName: Revit.Extensions.Unit.MbUnitExtensions
+shouldSkipMarkup: true

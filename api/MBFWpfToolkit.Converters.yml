@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Converters
+  commentId: N:MBFWpfToolkit.Converters
+  id: MBFWpfToolkit.Converters
+  children:
+  - MBFWpfToolkit.Converters.Boolean2StringConverter
+  - MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter
+  - MBFWpfToolkit.Converters.EnumDisplayNameConverter
+  - MBFWpfToolkit.Converters.ValidationMultiConverter
+  langs:
+  - csharp
+  - vb
+  name: MBFWpfToolkit.Converters
+  nameWithType: MBFWpfToolkit.Converters
+  fullName: MBFWpfToolkit.Converters
+  type: Namespace
+  assemblies:
+  - MBFWpfToolkit
+references:
+- uid: MBFWpfToolkit.Converters.Boolean2StringConverter
+  commentId: T:MBFWpfToolkit.Converters.Boolean2StringConverter
+  isExternal: true
+  href: MBFWpfToolkit.Converters.Boolean2StringConverter.html
+  name: Boolean2StringConverter
+  nameWithType: Boolean2StringConverter
+  fullName: MBFWpfToolkit.Converters.Boolean2StringConverter
+- uid: MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter
+  commentId: T:MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter
+  isExternal: true
+  href: MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter.html
+  name: BooleanToVisibilityWithInverseConverter
+  nameWithType: BooleanToVisibilityWithInverseConverter
+  fullName: MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter
+- uid: MBFWpfToolkit.Converters.EnumDisplayNameConverter
+  commentId: T:MBFWpfToolkit.Converters.EnumDisplayNameConverter
+  isExternal: true
+  href: MBFWpfToolkit.Converters.EnumDisplayNameConverter.html
+  name: EnumDisplayNameConverter
+  nameWithType: EnumDisplayNameConverter
+  fullName: MBFWpfToolkit.Converters.EnumDisplayNameConverter
+- uid: MBFWpfToolkit.Converters.ValidationMultiConverter
+  commentId: T:MBFWpfToolkit.Converters.ValidationMultiConverter
+  isExternal: true
+  href: MBFWpfToolkit.Converters.ValidationMultiConverter.html
+  name: ValidationMultiConverter
+  nameWithType: ValidationMultiConverter
+  fullName: MBFWpfToolkit.Converters.ValidationMultiConverter
+shouldSkipMarkup: true

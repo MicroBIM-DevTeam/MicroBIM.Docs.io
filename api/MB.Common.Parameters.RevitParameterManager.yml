@@ -1,0 +1,483 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Parameters.RevitParameterManager
+  commentId: T:MB.Common.Parameters.RevitParameterManager
+  id: RevitParameterManager
+  parent: MB.Common.Parameters
+  children:
+  - MB.Common.Parameters.RevitParameterManager.#ctor
+  - MB.Common.Parameters.RevitParameterManager.EnsureParameters(Autodesk.Revit.DB.Document,MB.Common.SharedParameters.ToolsSharedParameter[])
+  - MB.Common.Parameters.RevitParameterManager.EnsureParameters(Autodesk.Revit.DB.Document,MB.Common.Tools.MbfTool)
+  langs:
+  - csharp
+  - vb
+  name: RevitParameterManager
+  nameWithType: RevitParameterManager
+  fullName: MB.Common.Parameters.RevitParameterManager
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Parameters/RevitParameterManager.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Parameters
+  summary: Manages shared parameters in a Revit document, ensuring required parameters exist and are properly configured.
+  example: []
+  syntax:
+    content: public class RevitParameterManager
+    content.vb: Public Class RevitParameterManager
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MB.Common.Parameters.RevitParameterManager.EnsureParameters(Autodesk.Revit.DB.Document,MB.Common.Tools.MbfTool)
+  commentId: M:MB.Common.Parameters.RevitParameterManager.EnsureParameters(Autodesk.Revit.DB.Document,MB.Common.Tools.MbfTool)
+  id: EnsureParameters(Autodesk.Revit.DB.Document,MB.Common.Tools.MbfTool)
+  parent: MB.Common.Parameters.RevitParameterManager
+  langs:
+  - csharp
+  - vb
+  name: EnsureParameters(Document, MbfTool)
+  nameWithType: RevitParameterManager.EnsureParameters(Document, MbfTool)
+  fullName: MB.Common.Parameters.RevitParameterManager.EnsureParameters(Autodesk.Revit.DB.Document, MB.Common.Tools.MbfTool)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Parameters/RevitParameterManager.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Parameters
+  summary: Ensures that all required shared parameters for a specific tool exist in the Revit document.
+  example: []
+  syntax:
+    content: public static void EnsureParameters(Document doc, MbfTool tool)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The Revit document.
+    - id: tool
+      type: MB.Common.Tools.MbfTool
+      description: The tool requiring the shared parameters.
+    content.vb: Public Shared Sub EnsureParameters(doc As Document, tool As MbfTool)
+  overload: MB.Common.Parameters.RevitParameterManager.EnsureParameters*
+- uid: MB.Common.Parameters.RevitParameterManager.EnsureParameters(Autodesk.Revit.DB.Document,MB.Common.SharedParameters.ToolsSharedParameter[])
+  commentId: M:MB.Common.Parameters.RevitParameterManager.EnsureParameters(Autodesk.Revit.DB.Document,MB.Common.SharedParameters.ToolsSharedParameter[])
+  id: EnsureParameters(Autodesk.Revit.DB.Document,MB.Common.SharedParameters.ToolsSharedParameter[])
+  parent: MB.Common.Parameters.RevitParameterManager
+  langs:
+  - csharp
+  - vb
+  name: EnsureParameters(Document, ToolsSharedParameter[])
+  nameWithType: RevitParameterManager.EnsureParameters(Document, ToolsSharedParameter[])
+  fullName: MB.Common.Parameters.RevitParameterManager.EnsureParameters(Autodesk.Revit.DB.Document, MB.Common.SharedParameters.ToolsSharedParameter[])
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Parameters/RevitParameterManager.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Parameters
+  syntax:
+    content: public static void EnsureParameters(Document doc, ToolsSharedParameter[] parameters)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+    - id: parameters
+      type: MB.Common.SharedParameters.ToolsSharedParameter[]
+    content.vb: Public Shared Sub EnsureParameters(doc As Document, parameters As ToolsSharedParameter())
+  overload: MB.Common.Parameters.RevitParameterManager.EnsureParameters*
+  nameWithType.vb: RevitParameterManager.EnsureParameters(Document, ToolsSharedParameter())
+  fullName.vb: MB.Common.Parameters.RevitParameterManager.EnsureParameters(Autodesk.Revit.DB.Document, MB.Common.SharedParameters.ToolsSharedParameter())
+  name.vb: EnsureParameters(Document, ToolsSharedParameter())
+- uid: MB.Common.Parameters.RevitParameterManager.#ctor
+  commentId: M:MB.Common.Parameters.RevitParameterManager.#ctor
+  id: '#ctor'
+  parent: MB.Common.Parameters.RevitParameterManager
+  langs:
+  - csharp
+  - vb
+  name: RevitParameterManager()
+  nameWithType: RevitParameterManager.RevitParameterManager()
+  fullName: MB.Common.Parameters.RevitParameterManager.RevitParameterManager()
+  type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Parameters/RevitParameterManager.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Parameters
+  syntax:
+    content: public RevitParameterManager()
+    content.vb: Public Sub New()
+  overload: MB.Common.Parameters.RevitParameterManager.#ctor*
+  nameWithType.vb: RevitParameterManager.New()
+  fullName.vb: MB.Common.Parameters.RevitParameterManager.New()
+  name.vb: New()
+references:
+- uid: MB.Common.Parameters
+  commentId: N:MB.Common.Parameters
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Parameters
+  nameWithType: MB.Common.Parameters
+  fullName: MB.Common.Parameters
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Parameters
+    name: Parameters
+    isExternal: true
+    href: MB.Common.Parameters.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Parameters
+    name: Parameters
+    isExternal: true
+    href: MB.Common.Parameters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MB.Common.Parameters.RevitParameterManager.EnsureParameters*
+  commentId: Overload:MB.Common.Parameters.RevitParameterManager.EnsureParameters
+  isExternal: true
+  href: MB.Common.Parameters.RevitParameterManager.html#MB_Common_Parameters_RevitParameterManager_EnsureParameters_Autodesk_Revit_DB_Document_MB_Common_Tools_MbfTool_
+  name: EnsureParameters
+  nameWithType: RevitParameterManager.EnsureParameters
+  fullName: MB.Common.Parameters.RevitParameterManager.EnsureParameters
+- uid: Autodesk.Revit.DB.Document
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
+- uid: MB.Common.Tools.MbfTool
+  commentId: T:MB.Common.Tools.MbfTool
+  parent: MB.Common.Tools
+  isExternal: true
+  href: MB.Common.Tools.MbfTool.html
+  name: MbfTool
+  nameWithType: MbfTool
+  fullName: MB.Common.Tools.MbfTool
+- uid: MB.Common.Tools
+  commentId: N:MB.Common.Tools
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Tools
+  nameWithType: MB.Common.Tools
+  fullName: MB.Common.Tools
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Tools
+    name: Tools
+    isExternal: true
+    href: MB.Common.Tools.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Tools
+    name: Tools
+    isExternal: true
+    href: MB.Common.Tools.html
+- uid: MB.Common.SharedParameters.ToolsSharedParameter[]
+  isExternal: true
+  href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  name: ToolsSharedParameter[]
+  nameWithType: ToolsSharedParameter[]
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter[]
+  nameWithType.vb: ToolsSharedParameter()
+  fullName.vb: MB.Common.SharedParameters.ToolsSharedParameter()
+  name.vb: ToolsSharedParameter()
+  spec.csharp:
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: (
+  - name: )
+- uid: MB.Common.Parameters.RevitParameterManager.#ctor*
+  commentId: Overload:MB.Common.Parameters.RevitParameterManager.#ctor
+  isExternal: true
+  href: MB.Common.Parameters.RevitParameterManager.html#MB_Common_Parameters_RevitParameterManager__ctor
+  name: RevitParameterManager
+  nameWithType: RevitParameterManager.RevitParameterManager
+  fullName: MB.Common.Parameters.RevitParameterManager.RevitParameterManager
+  nameWithType.vb: RevitParameterManager.New
+  fullName.vb: MB.Common.Parameters.RevitParameterManager.New
+  name.vb: New
+shouldSkipMarkup: true

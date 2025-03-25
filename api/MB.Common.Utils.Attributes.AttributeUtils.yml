@@ -1,0 +1,492 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Utils.Attributes.AttributeUtils
+  commentId: T:MB.Common.Utils.Attributes.AttributeUtils
+  id: AttributeUtils
+  parent: MB.Common.Utils.Attributes
+  children:
+  - MB.Common.Utils.Attributes.AttributeUtils.GetAttribute``1(System.Object)
+  - MB.Common.Utils.Attributes.AttributeUtils.GetFieldAttribute``2(System.String)
+  - MB.Common.Utils.Attributes.AttributeUtils.TryGetAttribute``1(System.Object,``0@)
+  langs:
+  - csharp
+  - vb
+  name: AttributeUtils
+  nameWithType: AttributeUtils
+  fullName: MB.Common.Utils.Attributes.AttributeUtils
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Attributes/AttributeUtils.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Utils.Attributes
+  summary: Provides utility methods for working with custom attributes in .NET.
+  example: []
+  syntax:
+    content: public static class AttributeUtils
+    content.vb: Public Module AttributeUtils
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MB.Common.Utils.Attributes.AttributeUtils.GetAttribute``1(System.Object)
+  commentId: M:MB.Common.Utils.Attributes.AttributeUtils.GetAttribute``1(System.Object)
+  id: GetAttribute``1(System.Object)
+  parent: MB.Common.Utils.Attributes.AttributeUtils
+  langs:
+  - csharp
+  - vb
+  name: GetAttribute<T>(object)
+  nameWithType: AttributeUtils.GetAttribute<T>(object)
+  fullName: MB.Common.Utils.Attributes.AttributeUtils.GetAttribute<T>(object)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Attributes/AttributeUtils.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Utils.Attributes
+  summary: Retrieves a custom attribute of the specified type <code class="typeparamref">T</code> applied to a given enum value or field.
+  example: []
+  syntax:
+    content: 'public static T GetAttribute<T>(object value) where T : Attribute'
+    parameters:
+    - id: value
+      type: System.Object
+      description: The target enum value or field.
+    typeParameters:
+    - id: T
+      description: The type of the attribute to retrieve.
+    return:
+      type: '{T}'
+      description: The attribute of type <code class="typeparamref">T</code> if it is applied; otherwise, throws an exception.
+    content.vb: Public Shared Function GetAttribute(Of T As Attribute)(value As Object) As T
+  overload: MB.Common.Utils.Attributes.AttributeUtils.GetAttribute*
+  nameWithType.vb: AttributeUtils.GetAttribute(Of T)(Object)
+  fullName.vb: MB.Common.Utils.Attributes.AttributeUtils.GetAttribute(Of T)(Object)
+  name.vb: GetAttribute(Of T)(Object)
+- uid: MB.Common.Utils.Attributes.AttributeUtils.TryGetAttribute``1(System.Object,``0@)
+  commentId: M:MB.Common.Utils.Attributes.AttributeUtils.TryGetAttribute``1(System.Object,``0@)
+  id: TryGetAttribute``1(System.Object,``0@)
+  parent: MB.Common.Utils.Attributes.AttributeUtils
+  langs:
+  - csharp
+  - vb
+  name: TryGetAttribute<T>(object, out T)
+  nameWithType: AttributeUtils.TryGetAttribute<T>(object, out T)
+  fullName: MB.Common.Utils.Attributes.AttributeUtils.TryGetAttribute<T>(object, out T)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Attributes/AttributeUtils.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Utils.Attributes
+  summary: >-
+    Attempts to retrieve a custom attribute of the specified type <code class="typeparamref">T</code> 
+
+    applied to a given enum value or field without throwing an exception if it is not found.
+  example: []
+  syntax:
+    content: 'public static bool TryGetAttribute<T>(object value, out T attribute) where T : Attribute'
+    parameters:
+    - id: value
+      type: System.Object
+      description: The target enum value or field.
+    - id: attribute
+      type: '{T}'
+      description: >-
+        When this method returns, contains the attribute of type <code class="typeparamref">T</code> if found; 
+
+        otherwise, <code>null</code>.
+    typeParameters:
+    - id: T
+      description: The type of the attribute to retrieve.
+    return:
+      type: System.Boolean
+      description: True if the attribute is found; otherwise, false.
+    content.vb: Public Shared Function TryGetAttribute(Of T As Attribute)(value As Object, attribute As T) As Boolean
+  overload: MB.Common.Utils.Attributes.AttributeUtils.TryGetAttribute*
+  nameWithType.vb: AttributeUtils.TryGetAttribute(Of T)(Object, T)
+  fullName.vb: MB.Common.Utils.Attributes.AttributeUtils.TryGetAttribute(Of T)(Object, T)
+  name.vb: TryGetAttribute(Of T)(Object, T)
+- uid: MB.Common.Utils.Attributes.AttributeUtils.GetFieldAttribute``2(System.String)
+  commentId: M:MB.Common.Utils.Attributes.AttributeUtils.GetFieldAttribute``2(System.String)
+  id: GetFieldAttribute``2(System.String)
+  parent: MB.Common.Utils.Attributes.AttributeUtils
+  langs:
+  - csharp
+  - vb
+  name: GetFieldAttribute<T, TType>(string)
+  nameWithType: AttributeUtils.GetFieldAttribute<T, TType>(string)
+  fullName: MB.Common.Utils.Attributes.AttributeUtils.GetFieldAttribute<T, TType>(string)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Attributes/AttributeUtils.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Utils.Attributes
+  summary: Retrieves a custom attribute of the specified type <code class="typeparamref">T</code> applied to a given field in a class or struct.
+  example: []
+  syntax:
+    content: 'public static T GetFieldAttribute<T, TType>(string fieldName) where T : Attribute'
+    parameters:
+    - id: fieldName
+      type: System.String
+      description: The name of the field in the class or struct.
+    typeParameters:
+    - id: T
+      description: The type of the attribute to retrieve.
+    - id: TType
+      description: The type of the target class or struct.
+    return:
+      type: '{T}'
+      description: The attribute of type <code class="typeparamref">T</code> if it is applied; otherwise, throws an exception.
+    content.vb: Public Shared Function GetFieldAttribute(Of T As Attribute, TType)(fieldName As String) As T
+  overload: MB.Common.Utils.Attributes.AttributeUtils.GetFieldAttribute*
+  nameWithType.vb: AttributeUtils.GetFieldAttribute(Of T, TType)(String)
+  fullName.vb: MB.Common.Utils.Attributes.AttributeUtils.GetFieldAttribute(Of T, TType)(String)
+  name.vb: GetFieldAttribute(Of T, TType)(String)
+references:
+- uid: MB.Common.Utils.Attributes
+  commentId: N:MB.Common.Utils.Attributes
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Utils.Attributes
+  nameWithType: MB.Common.Utils.Attributes
+  fullName: MB.Common.Utils.Attributes
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Attributes
+    name: Attributes
+    isExternal: true
+    href: MB.Common.Utils.Attributes.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Attributes
+    name: Attributes
+    isExternal: true
+    href: MB.Common.Utils.Attributes.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MB.Common.Utils.Attributes.AttributeUtils.GetAttribute*
+  commentId: Overload:MB.Common.Utils.Attributes.AttributeUtils.GetAttribute
+  isExternal: true
+  href: MB.Common.Utils.Attributes.AttributeUtils.html#MB_Common_Utils_Attributes_AttributeUtils_GetAttribute__1_System_Object_
+  name: GetAttribute
+  nameWithType: AttributeUtils.GetAttribute
+  fullName: MB.Common.Utils.Attributes.AttributeUtils.GetAttribute
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: MB.Common.Utils.Attributes.AttributeUtils.TryGetAttribute*
+  commentId: Overload:MB.Common.Utils.Attributes.AttributeUtils.TryGetAttribute
+  isExternal: true
+  href: MB.Common.Utils.Attributes.AttributeUtils.html#MB_Common_Utils_Attributes_AttributeUtils_TryGetAttribute__1_System_Object___0__
+  name: TryGetAttribute
+  nameWithType: AttributeUtils.TryGetAttribute
+  fullName: MB.Common.Utils.Attributes.AttributeUtils.TryGetAttribute
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MB.Common.Utils.Attributes.AttributeUtils.GetFieldAttribute*
+  commentId: Overload:MB.Common.Utils.Attributes.AttributeUtils.GetFieldAttribute
+  isExternal: true
+  href: MB.Common.Utils.Attributes.AttributeUtils.html#MB_Common_Utils_Attributes_AttributeUtils_GetFieldAttribute__2_System_String_
+  name: GetFieldAttribute
+  nameWithType: AttributeUtils.GetFieldAttribute
+  fullName: MB.Common.Utils.Attributes.AttributeUtils.GetFieldAttribute
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+shouldSkipMarkup: true

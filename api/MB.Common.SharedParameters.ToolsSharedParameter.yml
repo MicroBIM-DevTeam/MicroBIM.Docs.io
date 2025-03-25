@@ -1,0 +1,1591 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.SharedParameters.ToolsSharedParameter
+  commentId: T:MB.Common.SharedParameters.ToolsSharedParameter
+  id: ToolsSharedParameter
+  parent: MB.Common.SharedParameters
+  children:
+  - MB.Common.SharedParameters.ToolsSharedParameter.ActualCoverage
+  - MB.Common.SharedParameters.ToolsSharedParameter.AddFitToId
+  - MB.Common.SharedParameters.ToolsSharedParameter.Allowance
+  - MB.Common.SharedParameters.ToolsSharedParameter.CalculateSum
+  - MB.Common.SharedParameters.ToolsSharedParameter.Color
+  - MB.Common.SharedParameters.ToolsSharedParameter.DescriptionAndAbbreviationListNo
+  - MB.Common.SharedParameters.ToolsSharedParameter.ExportedPackageName
+  - MB.Common.SharedParameters.ToolsSharedParameter.ExportedPdfName
+  - MB.Common.SharedParameters.ToolsSharedParameter.FabricationGroupName
+  - MB.Common.SharedParameters.ToolsSharedParameter.Finish
+  - MB.Common.SharedParameters.ToolsSharedParameter.HandTight
+  - MB.Common.SharedParameters.ToolsSharedParameter.IgnoreInCalculation
+  - MB.Common.SharedParameters.ToolsSharedParameter.IncludeInCalculation
+  - MB.Common.SharedParameters.ToolsSharedParameter.IsFitting
+  - MB.Common.SharedParameters.ToolsSharedParameter.MinimumFlow
+  - MB.Common.SharedParameters.ToolsSharedParameter.MinimumPressure
+  - MB.Common.SharedParameters.ToolsSharedParameter.PipeCode
+  - MB.Common.SharedParameters.ToolsSharedParameter.ProtectionArea
+  - MB.Common.SharedParameters.ToolsSharedParameter.ReaLGroupSize
+  - MB.Common.SharedParameters.ToolsSharedParameter.RealFittingSizes
+  - MB.Common.SharedParameters.ToolsSharedParameter.SubType
+  langs:
+  - csharp
+  - vb
+  name: ToolsSharedParameter
+  nameWithType: ToolsSharedParameter
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter
+  type: Enum
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: >-
+    Defines shared parameters for use within Revit, including metadata such as GUIDs,
+
+    descriptions, parameter types, and applicable categories.
+  example: []
+  syntax:
+    content: public enum ToolsSharedParameter
+    content.vb: Public Enum ToolsSharedParameter
+  extensionMethods:
+  - MB.Common.SharedParameters.ToolsSharedParameter.MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions
+  - MB.Common.SharedParameters.ToolsSharedParameter.MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName
+  - MB.Common.SharedParameters.ToolsSharedParameter.MB.Common.SharedParameters.SharedParameterExtensions.GetGuid
+  - MB.Common.SharedParameters.ToolsSharedParameter.MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories
+  - MB.Common.SharedParameters.ToolsSharedParameter.MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.ActualCoverage
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.ActualCoverage
+  id: ActualCoverage
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: ActualCoverage
+  nameWithType: ToolsSharedParameter.ActualCoverage
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.ActualCoverage
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_ActualCoverage" shared parameter.
+  remarks: >-
+    This shared parameter is applicable to pipe curves, pipe fittings,
+
+    sprinklers, and pipe accessories. It is of type <xref href="MB.Common.SharedParameters.SharedParameterType.Area" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("9fdf6b2a-2772-4194-969c-f46d6e6ab866")]
+
+      [SharedParameterType(SharedParameterType.Area)]
+
+      [RevitCategories]
+
+      ActualCoverage = 1
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("9fdf6b2a-2772-4194-969c-f46d6e6ab866")>
+
+      <SharedParameterType(SharedParameterType.Area)>
+
+      <RevitCategories>
+
+      ActualCoverage = 1
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 9fdf6b2a-2772-4194-969c-f46d6e6ab866
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 3
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.IncludeInCalculation
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.IncludeInCalculation
+  id: IncludeInCalculation
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: IncludeInCalculation
+  nameWithType: ToolsSharedParameter.IncludeInCalculation
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.IncludeInCalculation
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_IncludeInCalcs" shared parameter.
+  remarks: >-
+    This shared parameter is applicable to pipe fittings,
+
+    sprinklers, pipe accessories, mechanical equipment, and fire alarm devices. It is of type
+
+    <xref href="MB.Common.SharedParameters.SharedParameterType.YesOrNo" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("e87615ee-c2b0-4f93-9194-8ffda612cdf6")]
+
+      [SharedParameterType(SharedParameterType.YesOrNo)]
+
+      [RevitCategories]
+
+      IncludeInCalculation = 2
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("e87615ee-c2b0-4f93-9194-8ffda612cdf6")>
+
+      <SharedParameterType(SharedParameterType.YesOrNo)>
+
+      <RevitCategories>
+
+      IncludeInCalculation = 2
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: e87615ee-c2b0-4f93-9194-8ffda612cdf6
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 0
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.IgnoreInCalculation
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.IgnoreInCalculation
+  id: IgnoreInCalculation
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: IgnoreInCalculation
+  nameWithType: ToolsSharedParameter.IgnoreInCalculation
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.IgnoreInCalculation
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_IgnoreInCalculation" shared parameter.
+  remarks: >-
+    This shared parameter is applicable to pipe fittings,
+
+    sprinklers, pipe accessories, mechanical equipment, and fire alarm devices. It is of type
+
+    <xref href="MB.Common.SharedParameters.SharedParameterType.YesOrNo" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("8495409d-c110-4685-b548-2f1440fa7307")]
+
+      [SharedParameterType(SharedParameterType.YesOrNo)]
+
+      [RevitCategories]
+
+      IgnoreInCalculation = 3
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("8495409d-c110-4685-b548-2f1440fa7307")>
+
+      <SharedParameterType(SharedParameterType.YesOrNo)>
+
+      <RevitCategories>
+
+      IgnoreInCalculation = 3
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 8495409d-c110-4685-b548-2f1440fa7307
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 0
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.MinimumPressure
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.MinimumPressure
+  id: MinimumPressure
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: MinimumPressure
+  nameWithType: ToolsSharedParameter.MinimumPressure
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.MinimumPressure
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_Min_Pressure" shared parameter.
+  remarks: >-
+    This shared parameter is applicable to pipe fittings,
+
+    sprinklers, and pipe accessories. It is of type <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("467a1334-8e46-4d4d-bf22-0bd377ff6be5")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      MinimumPressure = 4
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("467a1334-8e46-4d4d-bf22-0bd377ff6be5")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      MinimumPressure = 4
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 467a1334-8e46-4d4d-bf22-0bd377ff6be5
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.MinimumFlow
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.MinimumFlow
+  id: MinimumFlow
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: MinimumFlow
+  nameWithType: ToolsSharedParameter.MinimumFlow
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.MinimumFlow
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_Min_Flow" shared parameter.
+  remarks: >-
+    This shared parameter is applicable to pipe fittings,
+
+    sprinklers, and pipe accessories. It is of type <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("b06ebb90-4f1e-4881-bfb5-fef6f7a64909")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      MinimumFlow = 5
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("b06ebb90-4f1e-4881-bfb5-fef6f7a64909")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      MinimumFlow = 5
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: b06ebb90-4f1e-4881-bfb5-fef6f7a64909
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.ProtectionArea
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.ProtectionArea
+  id: ProtectionArea
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: ProtectionArea
+  nameWithType: ToolsSharedParameter.ProtectionArea
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.ProtectionArea
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_ProtectionArea" shared parameter.
+  remarks: >-
+    This shared parameter is applicable to pipe fittings,
+
+    sprinklers, and pipe accessories. It is of type <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("2e83bba8-8d6e-4a90-a29f-108c705a7661")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      ProtectionArea = 6
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("2e83bba8-8d6e-4a90-a29f-108c705a7661")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      ProtectionArea = 6
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 2e83bba8-8d6e-4a90-a29f-108c705a7661
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Color
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Color
+  id: Color
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: ToolsSharedParameter.Color
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Color
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_Color" shared parameter.
+  remarks: >-
+    This shared parameter is applicable to pipe curves, pipe fittings,
+
+    pipe accessories, generic models, model groups, mechanical equipment,
+
+    sprinklers, fire alarm devices, and flex pipe curves. It is of type
+
+    <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("14fca12a-1224-41e5-a8a6-d4c0af178974")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Color = 7
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("14fca12a-1224-41e5-a8a6-d4c0af178974")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Color = 7
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 14fca12a-1224-41e5-a8a6-d4c0af178974
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Finish
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Finish
+  id: Finish
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Finish
+  nameWithType: ToolsSharedParameter.Finish
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Finish
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_Finish" shared parameter.
+  remarks: >-
+    This shared parameter is applicable to pipe curves, pipe fittings,
+
+    pipe accessories, generic models, model groups, mechanical equipment,
+
+    sprinklers, fire alarm devices, and flex pipe curves. It is of type
+
+    <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("15b2c379-8df6-4f2d-8499-9883e0256663")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Finish = 8
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("15b2c379-8df6-4f2d-8499-9883e0256663")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Finish = 8
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 15b2c379-8df6-4f2d-8499-9883e0256663
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.PipeCode
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.PipeCode
+  id: PipeCode
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: PipeCode
+  nameWithType: ToolsSharedParameter.PipeCode
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.PipeCode
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_PipeCode" shared parameter.
+  remarks: >-
+    This shared parameter is applicable to pipe curves, pipe fittings,
+
+    pipe accessories, generic models, model groups, mechanical equipment,
+
+    sprinklers, fire alarm devices, and flex pipe curves. It is of type
+
+    <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("c4347a82-7375-42aa-ad1a-96ba6212f122")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      PipeCode = 9
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("c4347a82-7375-42aa-ad1a-96ba6212f122")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      PipeCode = 9
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: c4347a82-7375-42aa-ad1a-96ba6212f122
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.AddFitToId
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.AddFitToId
+  id: AddFitToId
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: AddFitToId
+  nameWithType: ToolsSharedParameter.AddFitToId
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.AddFitToId
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_AddFitToID" shared parameter.
+  remarks: >-
+    This shared parameter is applicable to pipe curves, pipe fittings,
+
+    pipe accessories, generic models, model groups, mechanical equipment,
+
+    sprinklers, fire alarm devices, and flex pipe curves. It is of type
+
+    <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("282d1a77-f651-4479-b6eb-85d84361c615")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      AddFitToId = 10
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("282d1a77-f651-4479-b6eb-85d84361c615")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      AddFitToId = 10
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 282d1a77-f651-4479-b6eb-85d84361c615
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.HandTight
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.HandTight
+  id: HandTight
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: HandTight
+  nameWithType: ToolsSharedParameter.HandTight
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.HandTight
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_HandTight" shared parameter.
+  remarks: >-
+    This shared parameter is applicable to pipe curves, pipe fittings,
+
+    pipe accessories, generic models, model groups, mechanical equipment,
+
+    sprinklers, fire alarm devices, and flex pipe curves. It is of type
+
+    <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("72f35e3d-3bd7-4169-b3c0-c6485cdd39c4")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      HandTight = 11
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("72f35e3d-3bd7-4169-b3c0-c6485cdd39c4")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      HandTight = 11
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 72f35e3d-3bd7-4169-b3c0-c6485cdd39c4
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.DescriptionAndAbbreviationListNo
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.DescriptionAndAbbreviationListNo
+  id: DescriptionAndAbbreviationListNo
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: DescriptionAndAbbreviationListNo
+  nameWithType: ToolsSharedParameter.DescriptionAndAbbreviationListNo
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.DescriptionAndAbbreviationListNo
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_Desc_Abbrv_ListNo" shared parameter.
+  remarks: >-
+    This shared parameter is applicable to pipe curves, pipe fittings,
+
+    pipe accessories, generic models, model groups, mechanical equipment,
+
+    sprinklers, fire alarm devices, and flex pipe curves. It is of type
+
+    <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("27e7c7ba-40cc-4ca6-b0c3-07a8e537a3bb")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      DescriptionAndAbbreviationListNo = 12
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("27e7c7ba-40cc-4ca6-b0c3-07a8e537a3bb")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      DescriptionAndAbbreviationListNo = 12
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 27e7c7ba-40cc-4ca6-b0c3-07a8e537a3bb
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.ExportedPackageName
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.ExportedPackageName
+  id: ExportedPackageName
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: ExportedPackageName
+  nameWithType: ToolsSharedParameter.ExportedPackageName
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.ExportedPackageName
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_Exported_PakageName" shared parameter.
+  remarks: >-
+    This shared parameter is applicable to pipe curves, pipe fittings,
+
+    pipe accessories, generic models, model groups, mechanical equipment,
+
+    sprinklers, fire alarm devices, and flex pipe curves. It is of type
+
+    <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("d94545bc-4956-411d-a6bc-9ec96101d350")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      ExportedPackageName = 13
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("d94545bc-4956-411d-a6bc-9ec96101d350")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      ExportedPackageName = 13
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: d94545bc-4956-411d-a6bc-9ec96101d350
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.RealFittingSizes
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.RealFittingSizes
+  id: RealFittingSizes
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: RealFittingSizes
+  nameWithType: ToolsSharedParameter.RealFittingSizes
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.RealFittingSizes
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_RealFittingSizes" shared parameter.
+  remarks: >-
+    This shared parameter is applicable to pipe curves, pipe fittings,
+
+    pipe accessories, generic models, model groups, mechanical equipment,
+
+    sprinklers, fire alarm devices, and flex pipe curves. It is of type
+
+    <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("9d698cc7-3c6d-466e-9f89-ee1baf1326a2")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      RealFittingSizes = 14
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("9d698cc7-3c6d-466e-9f89-ee1baf1326a2")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      RealFittingSizes = 14
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 9d698cc7-3c6d-466e-9f89-ee1baf1326a2
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.ExportedPdfName
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.ExportedPdfName
+  id: ExportedPdfName
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: ExportedPdfName
+  nameWithType: ToolsSharedParameter.ExportedPdfName
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.ExportedPdfName
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_Exported_PDFName" shared parameter.
+  remarks: >-
+    This shared parameter is applicable to pipe curves, pipe fittings,
+
+    pipe accessories, generic models, model groups, mechanical equipment,
+
+    sprinklers, fire alarm devices, and flex pipe curves. It is of type
+
+    <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("83d4381a-bfe9-450e-9364-c44036e81756")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      ExportedPdfName = 15
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("83d4381a-bfe9-450e-9364-c44036e81756")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      ExportedPdfName = 15
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 83d4381a-bfe9-450e-9364-c44036e81756
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.SubType
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.SubType
+  id: SubType
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: SubType
+  nameWithType: ToolsSharedParameter.SubType
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.SubType
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_Subtype" shared parameter.
+  remarks: >-
+    This shared parameter is applicable to pipe curves, pipe fittings,
+
+    pipe accessories, generic models, model groups, mechanical equipment,
+
+    sprinklers, fire alarm devices, and flex pipe curves. It is of type
+
+    <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("9d698cc7-3c6d-466e-9f89-ee1baf1326a2")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      SubType = 16
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("9d698cc7-3c6d-466e-9f89-ee1baf1326a2")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      SubType = 16
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 9d698cc7-3c6d-466e-9f89-ee1baf1326a2
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.FabricationGroupName
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.FabricationGroupName
+  id: FabricationGroupName
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: FabricationGroupName
+  nameWithType: ToolsSharedParameter.FabricationGroupName
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.FabricationGroupName
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_FabGroupName" shared parameter.
+  remarks: >-
+    This shared parameter is applicable to pipe curves, pipe fittings,
+
+    pipe accessories, generic models, model groups, mechanical equipment,
+
+    sprinklers, fire alarm devices, and flex pipe curves. It is of type
+
+    <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("1bf7feba-7bca-40c9-8ca0-8365574c2648")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      FabricationGroupName = 17
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("1bf7feba-7bca-40c9-8ca0-8365574c2648")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      FabricationGroupName = 17
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 1bf7feba-7bca-40c9-8ca0-8365574c2648
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Allowance
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Allowance
+  id: Allowance
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Allowance
+  nameWithType: ToolsSharedParameter.Allowance
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Allowance
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_Allowance" shared parameter.
+  remarks: >-
+    This shared parameter is applicable to flex pipe curves. It is of type
+
+    <xref href="MB.Common.SharedParameters.SharedParameterType.Integer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("40221BB0-FFFE-42C6-BFF1-F1048AFA0664")]
+
+      [SharedParameterType(SharedParameterType.Integer)]
+
+      [RevitCategories]
+
+      Allowance = 18
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("40221BB0-FFFE-42C6-BFF1-F1048AFA0664")>
+
+      <SharedParameterType(SharedParameterType.Integer)>
+
+      <RevitCategories>
+
+      Allowance = 18
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 40221BB0-FFFE-42C6-BFF1-F1048AFA0664
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 2
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.ReaLGroupSize
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.ReaLGroupSize
+  id: ReaLGroupSize
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: ReaLGroupSize
+  nameWithType: ToolsSharedParameter.ReaLGroupSize
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.ReaLGroupSize
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_Allowance" shared parameter.
+  remarks: >-
+    This shared parameter is applicable to flex pipe curves. It is of type
+
+    <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("5f2c6451-0d24-4421-b3f8-02386c2cd60b")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      ReaLGroupSize = 19
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("5f2c6451-0d24-4421-b3f8-02386c2cd60b")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      ReaLGroupSize = 19
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 5f2c6451-0d24-4421-b3f8-02386c2cd60b
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.IsFitting
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.IsFitting
+  id: IsFitting
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: IsFitting
+  nameWithType: ToolsSharedParameter.IsFitting
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.IsFitting
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_IsFitting" shared parameter.
+  remarks: >-
+    This shared parameter is used for flex pipe curves and is of type
+
+    <xref href="MB.Common.SharedParameters.SharedParameterType.YesOrNo" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("997C72F0-F375-439E-9AD1-BC2570651E42")]
+
+      [SharedParameterType(SharedParameterType.YesOrNo)]
+
+      [RevitCategories]
+
+      IsFitting = 20
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("997C72F0-F375-439E-9AD1-BC2570651E42")>
+
+      <SharedParameterType(SharedParameterType.YesOrNo)>
+
+      <RevitCategories>
+
+      IsFitting = 20
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 997C72F0-F375-439E-9AD1-BC2570651E42
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 0
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.CalculateSum
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.CalculateSum
+  id: CalculateSum
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: CalculateSum
+  nameWithType: ToolsSharedParameter.CalculateSum
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.CalculateSum
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "MBF_IsFitting" shared parameter.
+  remarks: >-
+    This shared parameter is used for flex pipe curves and is of type
+
+    <xref href="MB.Common.SharedParameters.SharedParameterType.YesOrNo" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("6BEC8CDC-378E-4389-A7D6-EAF2493CEB9A")]
+
+      [SharedParameterType(SharedParameterType.YesOrNo)]
+
+      [RevitCategories]
+
+      CalculateSum = 21
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("6BEC8CDC-378E-4389-A7D6-EAF2493CEB9A")>
+
+      <SharedParameterType(SharedParameterType.YesOrNo)>
+
+      <RevitCategories>
+
+      CalculateSum = 21
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 6BEC8CDC-378E-4389-A7D6-EAF2493CEB9A
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 0
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+references:
+- uid: MB.Common.SharedParameters
+  commentId: N:MB.Common.SharedParameters
+  isExternal: true
+  href: MB.html
+  name: MB.Common.SharedParameters
+  nameWithType: MB.Common.SharedParameters
+  fullName: MB.Common.SharedParameters
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.SharedParameters
+    name: SharedParameters
+    isExternal: true
+    href: MB.Common.SharedParameters.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.SharedParameters
+    name: SharedParameters
+    isExternal: true
+    href: MB.Common.SharedParameters.html
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions
+  commentId: M:MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions(MB.Common.SharedParameters.ToolsSharedParameter)
+  parent: MB.Common.SharedParameters.SharedParameterExtensions
+  definition: MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions(MB.Common.SharedParameters.ToolsSharedParameter)
+  href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetCreationOptions_MB_Common_SharedParameters_ToolsSharedParameter_
+  name: GetCreationOptions(ToolsSharedParameter)
+  nameWithType: SharedParameterExtensions.GetCreationOptions(ToolsSharedParameter)
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions(MB.Common.SharedParameters.ToolsSharedParameter)
+  spec.csharp:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetCreationOptions
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetCreationOptions_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+  spec.vb:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetCreationOptions
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetCreationOptions_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName
+  commentId: M:MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName(MB.Common.SharedParameters.ToolsSharedParameter)
+  parent: MB.Common.SharedParameters.SharedParameterExtensions
+  definition: MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName(MB.Common.SharedParameters.ToolsSharedParameter)
+  href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetDisplayName_MB_Common_SharedParameters_ToolsSharedParameter_
+  name: GetDisplayName(ToolsSharedParameter)
+  nameWithType: SharedParameterExtensions.GetDisplayName(ToolsSharedParameter)
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName(MB.Common.SharedParameters.ToolsSharedParameter)
+  spec.csharp:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetDisplayName
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetDisplayName_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+  spec.vb:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetDisplayName
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetDisplayName_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.MB.Common.SharedParameters.SharedParameterExtensions.GetGuid
+  commentId: M:MB.Common.SharedParameters.SharedParameterExtensions.GetGuid(MB.Common.SharedParameters.ToolsSharedParameter)
+  parent: MB.Common.SharedParameters.SharedParameterExtensions
+  definition: MB.Common.SharedParameters.SharedParameterExtensions.GetGuid(MB.Common.SharedParameters.ToolsSharedParameter)
+  href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetGuid_MB_Common_SharedParameters_ToolsSharedParameter_
+  name: GetGuid(ToolsSharedParameter)
+  nameWithType: SharedParameterExtensions.GetGuid(ToolsSharedParameter)
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetGuid(MB.Common.SharedParameters.ToolsSharedParameter)
+  spec.csharp:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetGuid(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetGuid
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetGuid_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+  spec.vb:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetGuid(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetGuid
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetGuid_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories
+  commentId: M:MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories(MB.Common.SharedParameters.ToolsSharedParameter)
+  parent: MB.Common.SharedParameters.SharedParameterExtensions
+  definition: MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories(MB.Common.SharedParameters.ToolsSharedParameter)
+  href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetIncludedCategories_MB_Common_SharedParameters_ToolsSharedParameter_
+  name: GetIncludedCategories(ToolsSharedParameter)
+  nameWithType: SharedParameterExtensions.GetIncludedCategories(ToolsSharedParameter)
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories(MB.Common.SharedParameters.ToolsSharedParameter)
+  spec.csharp:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetIncludedCategories
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetIncludedCategories_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+  spec.vb:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetIncludedCategories
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetIncludedCategories_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType
+  commentId: M:MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType(MB.Common.SharedParameters.ToolsSharedParameter)
+  parent: MB.Common.SharedParameters.SharedParameterExtensions
+  definition: MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType(MB.Common.SharedParameters.ToolsSharedParameter)
+  href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetSharedParameterType_MB_Common_SharedParameters_ToolsSharedParameter_
+  name: GetSharedParameterType(ToolsSharedParameter)
+  nameWithType: SharedParameterExtensions.GetSharedParameterType(ToolsSharedParameter)
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType(MB.Common.SharedParameters.ToolsSharedParameter)
+  spec.csharp:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetSharedParameterType
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetSharedParameterType_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+  spec.vb:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetSharedParameterType
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetSharedParameterType_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+- uid: MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions(MB.Common.SharedParameters.ToolsSharedParameter)
+  commentId: M:MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions(MB.Common.SharedParameters.ToolsSharedParameter)
+  isExternal: true
+  href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetCreationOptions_MB_Common_SharedParameters_ToolsSharedParameter_
+  name: GetCreationOptions(ToolsSharedParameter)
+  nameWithType: SharedParameterExtensions.GetCreationOptions(ToolsSharedParameter)
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions(MB.Common.SharedParameters.ToolsSharedParameter)
+  spec.csharp:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetCreationOptions
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetCreationOptions_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+  spec.vb:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetCreationOptions
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetCreationOptions_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+- uid: MB.Common.SharedParameters.SharedParameterExtensions
+  commentId: T:MB.Common.SharedParameters.SharedParameterExtensions
+  parent: MB.Common.SharedParameters
+  isExternal: true
+  href: MB.Common.SharedParameters.SharedParameterExtensions.html
+  name: SharedParameterExtensions
+  nameWithType: SharedParameterExtensions
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions
+- uid: MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName(MB.Common.SharedParameters.ToolsSharedParameter)
+  commentId: M:MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName(MB.Common.SharedParameters.ToolsSharedParameter)
+  isExternal: true
+  href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetDisplayName_MB_Common_SharedParameters_ToolsSharedParameter_
+  name: GetDisplayName(ToolsSharedParameter)
+  nameWithType: SharedParameterExtensions.GetDisplayName(ToolsSharedParameter)
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName(MB.Common.SharedParameters.ToolsSharedParameter)
+  spec.csharp:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetDisplayName
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetDisplayName_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+  spec.vb:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetDisplayName
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetDisplayName_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+- uid: MB.Common.SharedParameters.SharedParameterExtensions.GetGuid(MB.Common.SharedParameters.ToolsSharedParameter)
+  commentId: M:MB.Common.SharedParameters.SharedParameterExtensions.GetGuid(MB.Common.SharedParameters.ToolsSharedParameter)
+  isExternal: true
+  href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetGuid_MB_Common_SharedParameters_ToolsSharedParameter_
+  name: GetGuid(ToolsSharedParameter)
+  nameWithType: SharedParameterExtensions.GetGuid(ToolsSharedParameter)
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetGuid(MB.Common.SharedParameters.ToolsSharedParameter)
+  spec.csharp:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetGuid(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetGuid
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetGuid_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+  spec.vb:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetGuid(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetGuid
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetGuid_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+- uid: MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories(MB.Common.SharedParameters.ToolsSharedParameter)
+  commentId: M:MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories(MB.Common.SharedParameters.ToolsSharedParameter)
+  isExternal: true
+  href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetIncludedCategories_MB_Common_SharedParameters_ToolsSharedParameter_
+  name: GetIncludedCategories(ToolsSharedParameter)
+  nameWithType: SharedParameterExtensions.GetIncludedCategories(ToolsSharedParameter)
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories(MB.Common.SharedParameters.ToolsSharedParameter)
+  spec.csharp:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetIncludedCategories
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetIncludedCategories_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+  spec.vb:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetIncludedCategories
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetIncludedCategories_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+- uid: MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType(MB.Common.SharedParameters.ToolsSharedParameter)
+  commentId: M:MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType(MB.Common.SharedParameters.ToolsSharedParameter)
+  isExternal: true
+  href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetSharedParameterType_MB_Common_SharedParameters_ToolsSharedParameter_
+  name: GetSharedParameterType(ToolsSharedParameter)
+  nameWithType: SharedParameterExtensions.GetSharedParameterType(ToolsSharedParameter)
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType(MB.Common.SharedParameters.ToolsSharedParameter)
+  spec.csharp:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetSharedParameterType
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetSharedParameterType_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+  spec.vb:
+  - uid: MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType(MB.Common.SharedParameters.ToolsSharedParameter)
+    name: GetSharedParameterType
+    isExternal: true
+    href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetSharedParameterType_MB_Common_SharedParameters_ToolsSharedParameter_
+  - name: (
+  - uid: MB.Common.SharedParameters.ToolsSharedParameter
+    name: ToolsSharedParameter
+    isExternal: true
+    href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  - name: )
+- uid: MB.Common.SharedParameters.SharedParameterType.Area
+  commentId: F:MB.Common.SharedParameters.SharedParameterType.Area
+  isExternal: true
+  href: MB.Common.SharedParameters.SharedParameterType.html#MB_Common_SharedParameters_SharedParameterType_Area
+  name: Area
+  nameWithType: SharedParameterType.Area
+  fullName: MB.Common.SharedParameters.SharedParameterType.Area
+- uid: MB.Common.SharedParameters.ToolsSharedParameter
+  commentId: T:MB.Common.SharedParameters.ToolsSharedParameter
+  parent: MB.Common.SharedParameters
+  isExternal: true
+  href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  name: ToolsSharedParameter
+  nameWithType: ToolsSharedParameter
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter
+- uid: MB.Common.SharedParameters.SharedParameterType.YesOrNo
+  commentId: F:MB.Common.SharedParameters.SharedParameterType.YesOrNo
+  isExternal: true
+  href: MB.Common.SharedParameters.SharedParameterType.html#MB_Common_SharedParameters_SharedParameterType_YesOrNo
+  name: YesOrNo
+  nameWithType: SharedParameterType.YesOrNo
+  fullName: MB.Common.SharedParameters.SharedParameterType.YesOrNo
+- uid: MB.Common.SharedParameters.SharedParameterType.Text
+  commentId: F:MB.Common.SharedParameters.SharedParameterType.Text
+  isExternal: true
+  href: MB.Common.SharedParameters.SharedParameterType.html#MB_Common_SharedParameters_SharedParameterType_Text
+  name: Text
+  nameWithType: SharedParameterType.Text
+  fullName: MB.Common.SharedParameters.SharedParameterType.Text
+- uid: MB.Common.SharedParameters.SharedParameterType.Integer
+  commentId: F:MB.Common.SharedParameters.SharedParameterType.Integer
+  isExternal: true
+  href: MB.Common.SharedParameters.SharedParameterType.html#MB_Common_SharedParameters_SharedParameterType_Integer
+  name: Integer
+  nameWithType: SharedParameterType.Integer
+  fullName: MB.Common.SharedParameters.SharedParameterType.Integer
+shouldSkipMarkup: true

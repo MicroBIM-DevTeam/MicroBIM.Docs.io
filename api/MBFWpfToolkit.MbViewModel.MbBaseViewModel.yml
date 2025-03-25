@@ -1,0 +1,815 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  commentId: T:MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  id: MbBaseViewModel
+  parent: MBFWpfToolkit.MbViewModel
+  children:
+  - MBFWpfToolkit.MbViewModel.MbBaseViewModel.#ctor
+  - MBFWpfToolkit.MbViewModel.MbBaseViewModel.Culture
+  - MBFWpfToolkit.MbViewModel.MbBaseViewModel.GetLang(System.String)
+  - MBFWpfToolkit.MbViewModel.MbBaseViewModel.InitializeViewModel(MBFWpfToolkit.MbWindow)
+  - MBFWpfToolkit.MbViewModel.MbBaseViewModel.IsDark
+  - MBFWpfToolkit.MbViewModel.MbBaseViewModel.Item(System.String)
+  - MBFWpfToolkit.MbViewModel.MbBaseViewModel.MbWindow
+  - MBFWpfToolkit.MbViewModel.MbBaseViewModel.OpenLinkCommand
+  - MBFWpfToolkit.MbViewModel.MbBaseViewModel.SelectedLanguage
+  - MBFWpfToolkit.MbViewModel.MbBaseViewModel.SetLang(System.Windows.DependencyObject,System.Windows.DependencyProperty,System.String)
+  - MBFWpfToolkit.MbViewModel.MbBaseViewModel.SupportedLanguages
+  - MBFWpfToolkit.MbViewModel.MbBaseViewModel.SwitchThemeCommand
+  langs:
+  - csharp
+  - vb
+  name: MbBaseViewModel
+  nameWithType: MbBaseViewModel
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.MbViewModel
+  summary: Base ViewModel class providing theme and language management functionality.
+  example: []
+  syntax:
+    content: 'public class MbBaseViewModel : ObservableValidator'
+    content.vb: Public Class MbBaseViewModel Inherits ObservableValidator
+  inheritance:
+  - System.Object
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.#ctor
+  commentId: M:MBFWpfToolkit.MbViewModel.MbBaseViewModel.#ctor
+  id: '#ctor'
+  parent: MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: MbBaseViewModel()
+  nameWithType: MbBaseViewModel.MbBaseViewModel()
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.MbBaseViewModel()
+  type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.MbViewModel
+  summary: Initializes a new instance of the <xref href="MBFWpfToolkit.MbViewModel.MbBaseViewModel" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public MbBaseViewModel()
+    content.vb: Public Sub New()
+  overload: MBFWpfToolkit.MbViewModel.MbBaseViewModel.#ctor*
+  nameWithType.vb: MbBaseViewModel.New()
+  fullName.vb: MBFWpfToolkit.MbViewModel.MbBaseViewModel.New()
+  name.vb: New()
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.InitializeViewModel(MBFWpfToolkit.MbWindow)
+  commentId: M:MBFWpfToolkit.MbViewModel.MbBaseViewModel.InitializeViewModel(MBFWpfToolkit.MbWindow)
+  id: InitializeViewModel(MBFWpfToolkit.MbWindow)
+  parent: MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: InitializeViewModel(MbWindow)
+  nameWithType: MbBaseViewModel.InitializeViewModel(MbWindow)
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.InitializeViewModel(MBFWpfToolkit.MbWindow)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.MbViewModel
+  summary: Initializes the ViewModel with the provided window and sets default values.
+  example: []
+  syntax:
+    content: public void InitializeViewModel(MbWindow mbWindow)
+    parameters:
+    - id: mbWindow
+      type: MBFWpfToolkit.MbWindow
+      description: The window associated with this ViewModel.
+    content.vb: Public Sub InitializeViewModel(mbWindow As MbWindow)
+  overload: MBFWpfToolkit.MbViewModel.MbBaseViewModel.InitializeViewModel*
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.GetLang(System.String)
+  commentId: M:MBFWpfToolkit.MbViewModel.MbBaseViewModel.GetLang(System.String)
+  id: GetLang(System.String)
+  parent: MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: GetLang(string)
+  nameWithType: MbBaseViewModel.GetLang(string)
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.GetLang(string)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.MbViewModel
+  summary: Retrieves a localized string by its key.
+  example: []
+  syntax:
+    content: public string GetLang(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key of the string to retrieve.
+    return:
+      type: System.String
+      description: The localized string or a placeholder if not found.
+    content.vb: Public Function GetLang(key As String) As String
+  overload: MBFWpfToolkit.MbViewModel.MbBaseViewModel.GetLang*
+  nameWithType.vb: MbBaseViewModel.GetLang(String)
+  fullName.vb: MBFWpfToolkit.MbViewModel.MbBaseViewModel.GetLang(String)
+  name.vb: GetLang(String)
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SetLang(System.Windows.DependencyObject,System.Windows.DependencyProperty,System.String)
+  commentId: M:MBFWpfToolkit.MbViewModel.MbBaseViewModel.SetLang(System.Windows.DependencyObject,System.Windows.DependencyProperty,System.String)
+  id: SetLang(System.Windows.DependencyObject,System.Windows.DependencyProperty,System.String)
+  parent: MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: SetLang(DependencyObject, DependencyProperty, string)
+  nameWithType: MbBaseViewModel.SetLang(DependencyObject, DependencyProperty, string)
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SetLang(System.Windows.DependencyObject, System.Windows.DependencyProperty, string)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.MbViewModel
+  summary: Binds a dependency property to a language resource key.
+  example: []
+  syntax:
+    content: public void SetLang(DependencyObject dependencyObject, DependencyProperty dependencyProperty, string key)
+    parameters:
+    - id: dependencyObject
+      type: System.Windows.DependencyObject
+      description: The target dependency object.
+    - id: dependencyProperty
+      type: System.Windows.DependencyProperty
+      description: The target dependency property.
+    - id: key
+      type: System.String
+      description: The key of the language resource.
+    content.vb: Public Sub SetLang(dependencyObject As DependencyObject, dependencyProperty As DependencyProperty, key As String)
+  overload: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SetLang*
+  nameWithType.vb: MbBaseViewModel.SetLang(DependencyObject, DependencyProperty, String)
+  fullName.vb: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SetLang(System.Windows.DependencyObject, System.Windows.DependencyProperty, String)
+  name.vb: SetLang(DependencyObject, DependencyProperty, String)
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.MbWindow
+  commentId: P:MBFWpfToolkit.MbViewModel.MbBaseViewModel.MbWindow
+  id: MbWindow
+  parent: MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: MbWindow
+  nameWithType: MbBaseViewModel.MbWindow
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.MbWindow
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.MbViewModel
+  summary: Gets or sets the associated MbfWindow.
+  example: []
+  syntax:
+    content: public MbWindow? MbWindow { get; set; }
+    parameters: []
+    return:
+      type: MBFWpfToolkit.MbWindow
+    content.vb: Public Property MbWindow As MbWindow
+  overload: MBFWpfToolkit.MbViewModel.MbBaseViewModel.MbWindow*
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SupportedLanguages
+  commentId: P:MBFWpfToolkit.MbViewModel.MbBaseViewModel.SupportedLanguages
+  id: SupportedLanguages
+  parent: MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: SupportedLanguages
+  nameWithType: MbBaseViewModel.SupportedLanguages
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SupportedLanguages
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.MbViewModel
+  summary: Supported languages for the application.
+  example: []
+  syntax:
+    content: public ObservableCollection<CultureInfo> SupportedLanguages { get; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{System.Globalization.CultureInfo}
+    content.vb: Public ReadOnly Property SupportedLanguages As ObservableCollection(Of CultureInfo)
+  overload: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SupportedLanguages*
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SelectedLanguage
+  commentId: P:MBFWpfToolkit.MbViewModel.MbBaseViewModel.SelectedLanguage
+  id: SelectedLanguage
+  parent: MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: SelectedLanguage
+  nameWithType: MbBaseViewModel.SelectedLanguage
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SelectedLanguage
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.MbViewModel
+  summary: Gets or sets the selected language for the application.
+  example: []
+  syntax:
+    content: public CultureInfo SelectedLanguage { get; set; }
+    parameters: []
+    return:
+      type: System.Globalization.CultureInfo
+    content.vb: Public Property SelectedLanguage As CultureInfo
+  overload: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SelectedLanguage*
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.Culture
+  commentId: P:MBFWpfToolkit.MbViewModel.MbBaseViewModel.Culture
+  id: Culture
+  parent: MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: Culture
+  nameWithType: MbBaseViewModel.Culture
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.Culture
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.MbViewModel
+  summary: Gets or sets the current culture.
+  example: []
+  syntax:
+    content: public CultureInfo Culture { get; set; }
+    parameters: []
+    return:
+      type: System.Globalization.CultureInfo
+    content.vb: Public Property Culture As CultureInfo
+  overload: MBFWpfToolkit.MbViewModel.MbBaseViewModel.Culture*
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.Item(System.String)
+  commentId: P:MBFWpfToolkit.MbViewModel.MbBaseViewModel.Item(System.String)
+  id: Item(System.String)
+  parent: MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: this[string]
+  nameWithType: MbBaseViewModel.this[string]
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.this[string]
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.MbViewModel
+  summary: Indexer to access localized values dynamically.
+  example: []
+  syntax:
+    content: public string this[string key] { get; }
+    parameters:
+    - id: key
+      type: System.String
+      description: The key of the localized value.
+    return:
+      type: System.String
+      description: The localized value or a placeholder if not found.
+    content.vb: Public ReadOnly Default Property this[](key As String) As String
+  overload: MBFWpfToolkit.MbViewModel.MbBaseViewModel.Item*
+  nameWithType.vb: MbBaseViewModel.this[](String)
+  fullName.vb: MBFWpfToolkit.MbViewModel.MbBaseViewModel.this[](String)
+  name.vb: this[](String)
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.IsDark
+  commentId: P:MBFWpfToolkit.MbViewModel.MbBaseViewModel.IsDark
+  id: IsDark
+  parent: MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: IsDark
+  nameWithType: MbBaseViewModel.IsDark
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.IsDark
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/obj/Debug/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MBFWpfToolkit.MbViewModel.MbBaseViewModel.g.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.MbViewModel
+  example: []
+  syntax:
+    content: public bool IsDark { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsDark As Boolean
+  overload: MBFWpfToolkit.MbViewModel.MbBaseViewModel.IsDark*
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SwitchThemeCommand
+  commentId: P:MBFWpfToolkit.MbViewModel.MbBaseViewModel.SwitchThemeCommand
+  id: SwitchThemeCommand
+  parent: MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: SwitchThemeCommand
+  nameWithType: MbBaseViewModel.SwitchThemeCommand
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SwitchThemeCommand
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/obj/Debug/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator/MBFWpfToolkit.MbViewModel.MbBaseViewModel.SwitchTheme.g.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.MbViewModel
+  summary: Gets an <xref href="CommunityToolkit.Mvvm.Input.IRelayCommand%601" data-throw-if-not-resolved="false"></xref> instance wrapping <xref href="MBFWpfToolkit.MbViewModel.MbBaseViewModel.SwitchTheme(System.Windows.Controls.Primitives.ToggleButton)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IRelayCommand<ToggleButton> SwitchThemeCommand { get; }
+    parameters: []
+    return:
+      type: CommunityToolkit.Mvvm.Input.IRelayCommand{System.Windows.Controls.Primitives.ToggleButton}
+    content.vb: Public ReadOnly Property SwitchThemeCommand As IRelayCommand(Of ToggleButton)
+  overload: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SwitchThemeCommand*
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.OpenLinkCommand
+  commentId: P:MBFWpfToolkit.MbViewModel.MbBaseViewModel.OpenLinkCommand
+  id: OpenLinkCommand
+  parent: MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: OpenLinkCommand
+  nameWithType: MbBaseViewModel.OpenLinkCommand
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.OpenLinkCommand
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/obj/Debug/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator/MBFWpfToolkit.MbViewModel.MbBaseViewModel.OpenLink.g.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.MbViewModel
+  summary: Gets an <xref href="CommunityToolkit.Mvvm.Input.IRelayCommand%601" data-throw-if-not-resolved="false"></xref> instance wrapping <xref href="MBFWpfToolkit.MbViewModel.MbBaseViewModel.OpenLink(System.Object)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IRelayCommand<object> OpenLinkCommand { get; }
+    parameters: []
+    return:
+      type: CommunityToolkit.Mvvm.Input.IRelayCommand{System.Object}
+    content.vb: Public ReadOnly Property OpenLinkCommand As IRelayCommand(Of Object)
+  overload: MBFWpfToolkit.MbViewModel.MbBaseViewModel.OpenLinkCommand*
+references:
+- uid: MBFWpfToolkit.MbViewModel
+  commentId: N:MBFWpfToolkit.MbViewModel
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit.MbViewModel
+  nameWithType: MBFWpfToolkit.MbViewModel
+  fullName: MBFWpfToolkit.MbViewModel
+  spec.csharp:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.MbViewModel
+    name: MbViewModel
+    isExternal: true
+    href: MBFWpfToolkit.MbViewModel.html
+  spec.vb:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.MbViewModel
+    name: MbViewModel
+    isExternal: true
+    href: MBFWpfToolkit.MbViewModel.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  commentId: T:MBFWpfToolkit.MbViewModel.MbBaseViewModel
+  isExternal: true
+  href: MBFWpfToolkit.MbViewModel.MbBaseViewModel.html
+  name: MbBaseViewModel
+  nameWithType: MbBaseViewModel
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.#ctor*
+  commentId: Overload:MBFWpfToolkit.MbViewModel.MbBaseViewModel.#ctor
+  isExternal: true
+  href: MBFWpfToolkit.MbViewModel.MbBaseViewModel.html#MBFWpfToolkit_MbViewModel_MbBaseViewModel__ctor
+  name: MbBaseViewModel
+  nameWithType: MbBaseViewModel.MbBaseViewModel
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.MbBaseViewModel
+  nameWithType.vb: MbBaseViewModel.New
+  fullName.vb: MBFWpfToolkit.MbViewModel.MbBaseViewModel.New
+  name.vb: New
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.InitializeViewModel*
+  commentId: Overload:MBFWpfToolkit.MbViewModel.MbBaseViewModel.InitializeViewModel
+  isExternal: true
+  href: MBFWpfToolkit.MbViewModel.MbBaseViewModel.html#MBFWpfToolkit_MbViewModel_MbBaseViewModel_InitializeViewModel_MBFWpfToolkit_MbWindow_
+  name: InitializeViewModel
+  nameWithType: MbBaseViewModel.InitializeViewModel
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.InitializeViewModel
+- uid: MBFWpfToolkit.MbWindow
+  commentId: T:MBFWpfToolkit.MbWindow
+  parent: MBFWpfToolkit
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html
+  name: MbWindow
+  nameWithType: MbWindow
+  fullName: MBFWpfToolkit.MbWindow
+- uid: MBFWpfToolkit
+  commentId: N:MBFWpfToolkit
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit
+  nameWithType: MBFWpfToolkit
+  fullName: MBFWpfToolkit
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.GetLang*
+  commentId: Overload:MBFWpfToolkit.MbViewModel.MbBaseViewModel.GetLang
+  isExternal: true
+  href: MBFWpfToolkit.MbViewModel.MbBaseViewModel.html#MBFWpfToolkit_MbViewModel_MbBaseViewModel_GetLang_System_String_
+  name: GetLang
+  nameWithType: MbBaseViewModel.GetLang
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.GetLang
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SetLang*
+  commentId: Overload:MBFWpfToolkit.MbViewModel.MbBaseViewModel.SetLang
+  isExternal: true
+  href: MBFWpfToolkit.MbViewModel.MbBaseViewModel.html#MBFWpfToolkit_MbViewModel_MbBaseViewModel_SetLang_System_Windows_DependencyObject_System_Windows_DependencyProperty_System_String_
+  name: SetLang
+  nameWithType: MbBaseViewModel.SetLang
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SetLang
+- uid: System.Windows.DependencyObject
+  commentId: T:System.Windows.DependencyObject
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject
+  name: DependencyObject
+  nameWithType: DependencyObject
+  fullName: System.Windows.DependencyObject
+- uid: System.Windows.DependencyProperty
+  commentId: T:System.Windows.DependencyProperty
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.dependencyproperty
+  name: DependencyProperty
+  nameWithType: DependencyProperty
+  fullName: System.Windows.DependencyProperty
+- uid: System.Windows
+  commentId: N:System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows
+  nameWithType: System.Windows
+  fullName: System.Windows
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.MbWindow*
+  commentId: Overload:MBFWpfToolkit.MbViewModel.MbBaseViewModel.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbViewModel.MbBaseViewModel.html#MBFWpfToolkit_MbViewModel_MbBaseViewModel_MbWindow
+  name: MbWindow
+  nameWithType: MbBaseViewModel.MbWindow
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.MbWindow
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SupportedLanguages*
+  commentId: Overload:MBFWpfToolkit.MbViewModel.MbBaseViewModel.SupportedLanguages
+  isExternal: true
+  href: MBFWpfToolkit.MbViewModel.MbBaseViewModel.html#MBFWpfToolkit_MbViewModel_MbBaseViewModel_SupportedLanguages
+  name: SupportedLanguages
+  nameWithType: MbBaseViewModel.SupportedLanguages
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SupportedLanguages
+- uid: System.Collections.ObjectModel.ObservableCollection{System.Globalization.CultureInfo}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{System.Globalization.CultureInfo}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ObservableCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<CultureInfo>
+  nameWithType: ObservableCollection<CultureInfo>
+  fullName: System.Collections.ObjectModel.ObservableCollection<System.Globalization.CultureInfo>
+  nameWithType.vb: ObservableCollection(Of CultureInfo)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of System.Globalization.CultureInfo)
+  name.vb: ObservableCollection(Of CultureInfo)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ObservableCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SelectedLanguage*
+  commentId: Overload:MBFWpfToolkit.MbViewModel.MbBaseViewModel.SelectedLanguage
+  isExternal: true
+  href: MBFWpfToolkit.MbViewModel.MbBaseViewModel.html#MBFWpfToolkit_MbViewModel_MbBaseViewModel_SelectedLanguage
+  name: SelectedLanguage
+  nameWithType: MbBaseViewModel.SelectedLanguage
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SelectedLanguage
+- uid: System.Globalization.CultureInfo
+  commentId: T:System.Globalization.CultureInfo
+  parent: System.Globalization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  name: CultureInfo
+  nameWithType: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: System.Globalization
+  commentId: N:System.Globalization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Globalization
+  nameWithType: System.Globalization
+  fullName: System.Globalization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Globalization
+    name: Globalization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Globalization
+    name: Globalization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.Culture*
+  commentId: Overload:MBFWpfToolkit.MbViewModel.MbBaseViewModel.Culture
+  isExternal: true
+  href: MBFWpfToolkit.MbViewModel.MbBaseViewModel.html#MBFWpfToolkit_MbViewModel_MbBaseViewModel_Culture
+  name: Culture
+  nameWithType: MbBaseViewModel.Culture
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.Culture
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.Item*
+  commentId: Overload:MBFWpfToolkit.MbViewModel.MbBaseViewModel.Item
+  isExternal: true
+  href: MBFWpfToolkit.MbViewModel.MbBaseViewModel.html#MBFWpfToolkit_MbViewModel_MbBaseViewModel_Item_System_String_
+  name: this
+  nameWithType: MbBaseViewModel.this
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.this
+  nameWithType.vb: MbBaseViewModel.this[]
+  fullName.vb: MBFWpfToolkit.MbViewModel.MbBaseViewModel.this[]
+  name.vb: this[]
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.IsDark*
+  commentId: Overload:MBFWpfToolkit.MbViewModel.MbBaseViewModel.IsDark
+  isExternal: true
+  href: MBFWpfToolkit.MbViewModel.MbBaseViewModel.html#MBFWpfToolkit_MbViewModel_MbBaseViewModel_IsDark
+  name: IsDark
+  nameWithType: MbBaseViewModel.IsDark
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.IsDark
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CommunityToolkit.Mvvm.Input.IRelayCommand`1
+  commentId: T:CommunityToolkit.Mvvm.Input.IRelayCommand`1
+  isExternal: true
+  name: IRelayCommand<>
+  nameWithType: IRelayCommand<>
+  fullName: CommunityToolkit.Mvvm.Input.IRelayCommand<>
+  nameWithType.vb: IRelayCommand(Of )
+  fullName.vb: CommunityToolkit.Mvvm.Input.IRelayCommand(Of )
+  name.vb: IRelayCommand(Of )
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.Input.IRelayCommand`1
+    name: IRelayCommand
+    isExternal: true
+  - name: <
+  - name: '>'
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.Input.IRelayCommand`1
+    name: IRelayCommand
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SwitchTheme(System.Windows.Controls.Primitives.ToggleButton)
+  commentId: M:MBFWpfToolkit.MbViewModel.MbBaseViewModel.SwitchTheme(System.Windows.Controls.Primitives.ToggleButton)
+  isExternal: true
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SwitchThemeCommand*
+  commentId: Overload:MBFWpfToolkit.MbViewModel.MbBaseViewModel.SwitchThemeCommand
+  isExternal: true
+  href: MBFWpfToolkit.MbViewModel.MbBaseViewModel.html#MBFWpfToolkit_MbViewModel_MbBaseViewModel_SwitchThemeCommand
+  name: SwitchThemeCommand
+  nameWithType: MbBaseViewModel.SwitchThemeCommand
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.SwitchThemeCommand
+- uid: CommunityToolkit.Mvvm.Input.IRelayCommand{System.Windows.Controls.Primitives.ToggleButton}
+  commentId: '!:CommunityToolkit.Mvvm.Input.IRelayCommand{System.Windows.Controls.Primitives.ToggleButton}'
+  definition: CommunityToolkit.Mvvm.Input.IRelayCommand`1
+  href: https://learn.microsoft.com/dotnet/api/system.windows.controls.primitives.togglebutton
+  name: IRelayCommand<ToggleButton>
+  nameWithType: IRelayCommand<ToggleButton>
+  fullName: CommunityToolkit.Mvvm.Input.IRelayCommand<System.Windows.Controls.Primitives.ToggleButton>
+  nameWithType.vb: IRelayCommand(Of ToggleButton)
+  fullName.vb: CommunityToolkit.Mvvm.Input.IRelayCommand(Of System.Windows.Controls.Primitives.ToggleButton)
+  name.vb: IRelayCommand(Of ToggleButton)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.Input.IRelayCommand`1
+    name: IRelayCommand
+    isExternal: true
+  - name: <
+  - uid: System.Windows.Controls.Primitives.ToggleButton
+    name: ToggleButton
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.controls.primitives.togglebutton
+  - name: '>'
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.Input.IRelayCommand`1
+    name: IRelayCommand
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Windows.Controls.Primitives.ToggleButton
+    name: ToggleButton
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.controls.primitives.togglebutton
+  - name: )
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.OpenLink(System.Object)
+  commentId: M:MBFWpfToolkit.MbViewModel.MbBaseViewModel.OpenLink(System.Object)
+  isExternal: true
+- uid: MBFWpfToolkit.MbViewModel.MbBaseViewModel.OpenLinkCommand*
+  commentId: Overload:MBFWpfToolkit.MbViewModel.MbBaseViewModel.OpenLinkCommand
+  isExternal: true
+  href: MBFWpfToolkit.MbViewModel.MbBaseViewModel.html#MBFWpfToolkit_MbViewModel_MbBaseViewModel_OpenLinkCommand
+  name: OpenLinkCommand
+  nameWithType: MbBaseViewModel.OpenLinkCommand
+  fullName: MBFWpfToolkit.MbViewModel.MbBaseViewModel.OpenLinkCommand
+- uid: CommunityToolkit.Mvvm.Input.IRelayCommand{System.Object}
+  commentId: '!:CommunityToolkit.Mvvm.Input.IRelayCommand{System.Object}'
+  definition: CommunityToolkit.Mvvm.Input.IRelayCommand`1
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: IRelayCommand<object>
+  nameWithType: IRelayCommand<object>
+  fullName: CommunityToolkit.Mvvm.Input.IRelayCommand<object>
+  nameWithType.vb: IRelayCommand(Of Object)
+  fullName.vb: CommunityToolkit.Mvvm.Input.IRelayCommand(Of Object)
+  name.vb: IRelayCommand(Of Object)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.Input.IRelayCommand`1
+    name: IRelayCommand
+    isExternal: true
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.Input.IRelayCommand`1
+    name: IRelayCommand
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+shouldSkipMarkup: true

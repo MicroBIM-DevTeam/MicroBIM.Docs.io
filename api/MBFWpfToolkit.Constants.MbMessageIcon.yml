@@ -1,0 +1,264 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Constants.MbMessageIcon
+  commentId: T:MBFWpfToolkit.Constants.MbMessageIcon
+  id: MbMessageIcon
+  parent: MBFWpfToolkit.Constants
+  children:
+  - MBFWpfToolkit.Constants.MbMessageIcon.Error
+  - MBFWpfToolkit.Constants.MbMessageIcon.Information
+  - MBFWpfToolkit.Constants.MbMessageIcon.New
+  - MBFWpfToolkit.Constants.MbMessageIcon.None
+  - MBFWpfToolkit.Constants.MbMessageIcon.Question
+  - MBFWpfToolkit.Constants.MbMessageIcon.Remove
+  - MBFWpfToolkit.Constants.MbMessageIcon.Sound
+  - MBFWpfToolkit.Constants.MbMessageIcon.Success
+  - MBFWpfToolkit.Constants.MbMessageIcon.Warning
+  langs:
+  - csharp
+  - vb
+  name: MbMessageIcon
+  nameWithType: MbMessageIcon
+  fullName: MBFWpfToolkit.Constants.MbMessageIcon
+  type: Enum
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Constants
+  syntax:
+    content: public enum MbMessageIcon
+    content.vb: Public Enum MbMessageIcon
+- uid: MBFWpfToolkit.Constants.MbMessageIcon.None
+  commentId: F:MBFWpfToolkit.Constants.MbMessageIcon.None
+  id: None
+  parent: MBFWpfToolkit.Constants.MbMessageIcon
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: MbMessageIcon.None
+  fullName: MBFWpfToolkit.Constants.MbMessageIcon.None
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Constants
+  summary: No icon is displayed.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: MBFWpfToolkit.Constants.MbMessageIcon
+- uid: MBFWpfToolkit.Constants.MbMessageIcon.Error
+  commentId: F:MBFWpfToolkit.Constants.MbMessageIcon.Error
+  id: Error
+  parent: MBFWpfToolkit.Constants.MbMessageIcon
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: MbMessageIcon.Error
+  fullName: MBFWpfToolkit.Constants.MbMessageIcon.Error
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Constants
+  summary: A white X in a circle with a red background, indicating an error or failure.
+  example: []
+  syntax:
+    content: Error = 16
+    return:
+      type: MBFWpfToolkit.Constants.MbMessageIcon
+- uid: MBFWpfToolkit.Constants.MbMessageIcon.Sound
+  commentId: F:MBFWpfToolkit.Constants.MbMessageIcon.Sound
+  id: Sound
+  parent: MBFWpfToolkit.Constants.MbMessageIcon
+  langs:
+  - csharp
+  - vb
+  name: Sound
+  nameWithType: MbMessageIcon.Sound
+  fullName: MBFWpfToolkit.Constants.MbMessageIcon.Sound
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Constants
+  summary: A bold white X in a circle with a darker red background, indicating a critical error.
+  example: []
+  syntax:
+    content: Sound = 32
+    return:
+      type: MBFWpfToolkit.Constants.MbMessageIcon
+- uid: MBFWpfToolkit.Constants.MbMessageIcon.Question
+  commentId: F:MBFWpfToolkit.Constants.MbMessageIcon.Question
+  id: Question
+  parent: MBFWpfToolkit.Constants.MbMessageIcon
+  langs:
+  - csharp
+  - vb
+  name: Question
+  nameWithType: MbMessageIcon.Question
+  fullName: MBFWpfToolkit.Constants.MbMessageIcon.Question
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Constants
+  summary: A question mark in a circle, prompting the user for confirmation or input.
+  example: []
+  syntax:
+    content: Question = 48
+    return:
+      type: MBFWpfToolkit.Constants.MbMessageIcon
+- uid: MBFWpfToolkit.Constants.MbMessageIcon.Information
+  commentId: F:MBFWpfToolkit.Constants.MbMessageIcon.Information
+  id: Information
+  parent: MBFWpfToolkit.Constants.MbMessageIcon
+  langs:
+  - csharp
+  - vb
+  name: Information
+  nameWithType: MbMessageIcon.Information
+  fullName: MBFWpfToolkit.Constants.MbMessageIcon.Information
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Constants
+  summary: An exclamation point in a triangle with a yellow background, providing informational feedback.
+  example: []
+  syntax:
+    content: Information = 64
+    return:
+      type: MBFWpfToolkit.Constants.MbMessageIcon
+- uid: MBFWpfToolkit.Constants.MbMessageIcon.Warning
+  commentId: F:MBFWpfToolkit.Constants.MbMessageIcon.Warning
+  id: Warning
+  parent: MBFWpfToolkit.Constants.MbMessageIcon
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: MbMessageIcon.Warning
+  fullName: MBFWpfToolkit.Constants.MbMessageIcon.Warning
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Constants
+  summary: An exclamation point in a triangle with an orange background, warning about a potential issue.
+  example: []
+  syntax:
+    content: Warning = 128
+    return:
+      type: MBFWpfToolkit.Constants.MbMessageIcon
+- uid: MBFWpfToolkit.Constants.MbMessageIcon.Success
+  commentId: F:MBFWpfToolkit.Constants.MbMessageIcon.Success
+  id: Success
+  parent: MBFWpfToolkit.Constants.MbMessageIcon
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: MbMessageIcon.Success
+  fullName: MBFWpfToolkit.Constants.MbMessageIcon.Success
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Constants
+  summary: A lowercase letter 'i' in a circle with a green background, indicating success or completion.
+  example: []
+  syntax:
+    content: Success = 256
+    return:
+      type: MBFWpfToolkit.Constants.MbMessageIcon
+- uid: MBFWpfToolkit.Constants.MbMessageIcon.New
+  commentId: F:MBFWpfToolkit.Constants.MbMessageIcon.New
+  id: New
+  parent: MBFWpfToolkit.Constants.MbMessageIcon
+  langs:
+  - csharp
+  - vb
+  name: New
+  nameWithType: MbMessageIcon.New
+  fullName: MBFWpfToolkit.Constants.MbMessageIcon.New
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Constants
+  summary: A trash bin or cross symbol, indicating the removal or deletion of an item.
+  example: []
+  syntax:
+    content: New = 512
+    return:
+      type: MBFWpfToolkit.Constants.MbMessageIcon
+- uid: MBFWpfToolkit.Constants.MbMessageIcon.Remove
+  commentId: F:MBFWpfToolkit.Constants.MbMessageIcon.Remove
+  id: Remove
+  parent: MBFWpfToolkit.Constants.MbMessageIcon
+  langs:
+  - csharp
+  - vb
+  name: Remove
+  nameWithType: MbMessageIcon.Remove
+  fullName: MBFWpfToolkit.Constants.MbMessageIcon.Remove
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Constants
+  syntax:
+    content: Remove = 1024
+    return:
+      type: MBFWpfToolkit.Constants.MbMessageIcon
+references:
+- uid: MBFWpfToolkit.Constants
+  commentId: N:MBFWpfToolkit.Constants
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit.Constants
+  nameWithType: MBFWpfToolkit.Constants
+  fullName: MBFWpfToolkit.Constants
+  spec.csharp:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Constants
+    name: Constants
+    isExternal: true
+    href: MBFWpfToolkit.Constants.html
+  spec.vb:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Constants
+    name: Constants
+    isExternal: true
+    href: MBFWpfToolkit.Constants.html
+- uid: MBFWpfToolkit.Constants.MbMessageIcon
+  commentId: T:MBFWpfToolkit.Constants.MbMessageIcon
+  parent: MBFWpfToolkit.Constants
+  isExternal: true
+  href: MBFWpfToolkit.Constants.MbMessageIcon.html
+  name: MbMessageIcon
+  nameWithType: MbMessageIcon
+  fullName: MBFWpfToolkit.Constants.MbMessageIcon
+shouldSkipMarkup: true

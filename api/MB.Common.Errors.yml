@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Errors
+  commentId: N:MB.Common.Errors
+  id: MB.Common.Errors
+  children:
+  - MB.Common.Errors.MbError
+  - MB.Common.Errors.MbErrorExtensions
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.Errors
+  nameWithType: MB.Common.Errors
+  fullName: MB.Common.Errors
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.Errors.MbError
+  commentId: T:MB.Common.Errors.MbError
+  parent: MB.Common.Errors
+  isExternal: true
+  href: MB.Common.Errors.MbError.html
+  name: MbError
+  nameWithType: MbError
+  fullName: MB.Common.Errors.MbError
+- uid: MB.Common.Errors.MbErrorExtensions
+  commentId: T:MB.Common.Errors.MbErrorExtensions
+  parent: MB.Common.Errors
+  isExternal: true
+  href: MB.Common.Errors.MbErrorExtensions.html
+  name: MbErrorExtensions
+  nameWithType: MbErrorExtensions
+  fullName: MB.Common.Errors.MbErrorExtensions
+- uid: MB.Common.Errors
+  commentId: N:MB.Common.Errors
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Errors
+  nameWithType: MB.Common.Errors
+  fullName: MB.Common.Errors
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Errors
+    name: Errors
+    isExternal: true
+    href: MB.Common.Errors.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Errors
+    name: Errors
+    isExternal: true
+    href: MB.Common.Errors.html
+shouldSkipMarkup: true

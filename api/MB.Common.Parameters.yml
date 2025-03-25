@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Parameters
+  commentId: N:MB.Common.Parameters
+  id: MB.Common.Parameters
+  children:
+  - MB.Common.Parameters.RevitParameterManager
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.Parameters
+  nameWithType: MB.Common.Parameters
+  fullName: MB.Common.Parameters
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.Parameters.RevitParameterManager
+  commentId: T:MB.Common.Parameters.RevitParameterManager
+  isExternal: true
+  href: MB.Common.Parameters.RevitParameterManager.html
+  name: RevitParameterManager
+  nameWithType: RevitParameterManager
+  fullName: MB.Common.Parameters.RevitParameterManager
+shouldSkipMarkup: true

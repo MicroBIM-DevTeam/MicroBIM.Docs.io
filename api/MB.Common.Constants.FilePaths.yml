@@ -1,0 +1,660 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Constants.FilePaths
+  commentId: T:MB.Common.Constants.FilePaths
+  id: FilePaths
+  parent: MB.Common.Constants
+  children:
+  - MB.Common.Constants.FilePaths.CoverageExcel
+  - MB.Common.Constants.FilePaths.CoverageJson
+  - MB.Common.Constants.FilePaths.Elbows
+  - MB.Common.Constants.FilePaths.FlexPipes
+  - MB.Common.Constants.FilePaths.MapperJsons
+  - MB.Common.Constants.FilePaths.Others
+  - MB.Common.Constants.FilePaths.Outlets
+  - MB.Common.Constants.FilePaths.PipeAccessories
+  - MB.Common.Constants.FilePaths.Pipes
+  - MB.Common.Constants.FilePaths.Sprinklers
+  - MB.Common.Constants.FilePaths.Tees
+  - MB.Common.Constants.FilePaths.WorksetsExcel
+  - MB.Common.Constants.FilePaths.WorksetsJson
+  langs:
+  - csharp
+  - vb
+  name: FilePaths
+  nameWithType: FilePaths
+  fullName: MB.Common.Constants.FilePaths
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  syntax:
+    content: public static class FilePaths
+    content.vb: Public Module FilePaths
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MB.Common.Constants.FilePaths.Pipes
+  commentId: F:MB.Common.Constants.FilePaths.Pipes
+  id: Pipes
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: Pipes
+  nameWithType: FilePaths.Pipes
+  fullName: MB.Common.Constants.FilePaths.Pipes
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  syntax:
+    content: public const string Pipes = "Pipes"
+    return:
+      type: System.String
+    content.vb: Public Const Pipes As String = "Pipes"
+- uid: MB.Common.Constants.FilePaths.FlexPipes
+  commentId: F:MB.Common.Constants.FilePaths.FlexPipes
+  id: FlexPipes
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: FlexPipes
+  nameWithType: FilePaths.FlexPipes
+  fullName: MB.Common.Constants.FilePaths.FlexPipes
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  syntax:
+    content: public const string FlexPipes = "Flex Pipes"
+    return:
+      type: System.String
+    content.vb: Public Const FlexPipes As String = "Flex Pipes"
+- uid: MB.Common.Constants.FilePaths.Outlets
+  commentId: F:MB.Common.Constants.FilePaths.Outlets
+  id: Outlets
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: Outlets
+  nameWithType: FilePaths.Outlets
+  fullName: MB.Common.Constants.FilePaths.Outlets
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  syntax:
+    content: public const string Outlets = "Outlets"
+    return:
+      type: System.String
+    content.vb: Public Const Outlets As String = "Outlets"
+- uid: MB.Common.Constants.FilePaths.Tees
+  commentId: F:MB.Common.Constants.FilePaths.Tees
+  id: Tees
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: Tees
+  nameWithType: FilePaths.Tees
+  fullName: MB.Common.Constants.FilePaths.Tees
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  syntax:
+    content: public const string Tees = "Tees"
+    return:
+      type: System.String
+    content.vb: Public Const Tees As String = "Tees"
+- uid: MB.Common.Constants.FilePaths.Elbows
+  commentId: F:MB.Common.Constants.FilePaths.Elbows
+  id: Elbows
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: Elbows
+  nameWithType: FilePaths.Elbows
+  fullName: MB.Common.Constants.FilePaths.Elbows
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  syntax:
+    content: public const string Elbows = "Elbows"
+    return:
+      type: System.String
+    content.vb: Public Const Elbows As String = "Elbows"
+- uid: MB.Common.Constants.FilePaths.PipeAccessories
+  commentId: F:MB.Common.Constants.FilePaths.PipeAccessories
+  id: PipeAccessories
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: PipeAccessories
+  nameWithType: FilePaths.PipeAccessories
+  fullName: MB.Common.Constants.FilePaths.PipeAccessories
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  syntax:
+    content: public const string PipeAccessories = "Pipe Accessories"
+    return:
+      type: System.String
+    content.vb: Public Const PipeAccessories As String = "Pipe Accessories"
+- uid: MB.Common.Constants.FilePaths.Sprinklers
+  commentId: F:MB.Common.Constants.FilePaths.Sprinklers
+  id: Sprinklers
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: Sprinklers
+  nameWithType: FilePaths.Sprinklers
+  fullName: MB.Common.Constants.FilePaths.Sprinklers
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  syntax:
+    content: public const string Sprinklers = "Sprinklers"
+    return:
+      type: System.String
+    content.vb: Public Const Sprinklers As String = "Sprinklers"
+- uid: MB.Common.Constants.FilePaths.Others
+  commentId: F:MB.Common.Constants.FilePaths.Others
+  id: Others
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: Others
+  nameWithType: FilePaths.Others
+  fullName: MB.Common.Constants.FilePaths.Others
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  syntax:
+    content: public const string Others = "Others"
+    return:
+      type: System.String
+    content.vb: Public Const Others As String = "Others"
+- uid: MB.Common.Constants.FilePaths.WorksetsExcel
+  commentId: P:MB.Common.Constants.FilePaths.WorksetsExcel
+  id: WorksetsExcel
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: WorksetsExcel
+  nameWithType: FilePaths.WorksetsExcel
+  fullName: MB.Common.Constants.FilePaths.WorksetsExcel
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  summary: Path to the Worksets Excel file.
+  example: []
+  syntax:
+    content: public static string WorksetsExcel { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property WorksetsExcel As String
+  overload: MB.Common.Constants.FilePaths.WorksetsExcel*
+- uid: MB.Common.Constants.FilePaths.WorksetsJson
+  commentId: P:MB.Common.Constants.FilePaths.WorksetsJson
+  id: WorksetsJson
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: WorksetsJson
+  nameWithType: FilePaths.WorksetsJson
+  fullName: MB.Common.Constants.FilePaths.WorksetsJson
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  summary: Path to the Worksets JSON file.
+  example: []
+  syntax:
+    content: public static string WorksetsJson { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property WorksetsJson As String
+  overload: MB.Common.Constants.FilePaths.WorksetsJson*
+- uid: MB.Common.Constants.FilePaths.CoverageExcel
+  commentId: P:MB.Common.Constants.FilePaths.CoverageExcel
+  id: CoverageExcel
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: CoverageExcel
+  nameWithType: FilePaths.CoverageExcel
+  fullName: MB.Common.Constants.FilePaths.CoverageExcel
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  summary: Path to the Coverage Excel file.
+  example: []
+  syntax:
+    content: public static string CoverageExcel { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property CoverageExcel As String
+  overload: MB.Common.Constants.FilePaths.CoverageExcel*
+- uid: MB.Common.Constants.FilePaths.CoverageJson
+  commentId: P:MB.Common.Constants.FilePaths.CoverageJson
+  id: CoverageJson
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: CoverageJson
+  nameWithType: FilePaths.CoverageJson
+  fullName: MB.Common.Constants.FilePaths.CoverageJson
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  summary: Path to the Coverage JSON file.
+  example: []
+  syntax:
+    content: public static string CoverageJson { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property CoverageJson As String
+  overload: MB.Common.Constants.FilePaths.CoverageJson*
+- uid: MB.Common.Constants.FilePaths.MapperJsons
+  commentId: P:MB.Common.Constants.FilePaths.MapperJsons
+  id: MapperJsons
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: MapperJsons
+  nameWithType: FilePaths.MapperJsons
+  fullName: MB.Common.Constants.FilePaths.MapperJsons
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  summary: Path to the Mapper JSON file.
+  example: []
+  syntax:
+    content: public static string MapperJsons { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property MapperJsons As String
+  overload: MB.Common.Constants.FilePaths.MapperJsons*
+references:
+- uid: MB.Common.Constants
+  commentId: N:MB.Common.Constants
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Constants
+  nameWithType: MB.Common.Constants
+  fullName: MB.Common.Constants
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Constants
+    name: Constants
+    isExternal: true
+    href: MB.Common.Constants.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Constants
+    name: Constants
+    isExternal: true
+    href: MB.Common.Constants.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MB.Common.Constants.FilePaths.WorksetsExcel*
+  commentId: Overload:MB.Common.Constants.FilePaths.WorksetsExcel
+  isExternal: true
+  href: MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_WorksetsExcel
+  name: WorksetsExcel
+  nameWithType: FilePaths.WorksetsExcel
+  fullName: MB.Common.Constants.FilePaths.WorksetsExcel
+- uid: MB.Common.Constants.FilePaths.WorksetsJson*
+  commentId: Overload:MB.Common.Constants.FilePaths.WorksetsJson
+  isExternal: true
+  href: MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_WorksetsJson
+  name: WorksetsJson
+  nameWithType: FilePaths.WorksetsJson
+  fullName: MB.Common.Constants.FilePaths.WorksetsJson
+- uid: MB.Common.Constants.FilePaths.CoverageExcel*
+  commentId: Overload:MB.Common.Constants.FilePaths.CoverageExcel
+  isExternal: true
+  href: MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_CoverageExcel
+  name: CoverageExcel
+  nameWithType: FilePaths.CoverageExcel
+  fullName: MB.Common.Constants.FilePaths.CoverageExcel
+- uid: MB.Common.Constants.FilePaths.CoverageJson*
+  commentId: Overload:MB.Common.Constants.FilePaths.CoverageJson
+  isExternal: true
+  href: MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_CoverageJson
+  name: CoverageJson
+  nameWithType: FilePaths.CoverageJson
+  fullName: MB.Common.Constants.FilePaths.CoverageJson
+- uid: MB.Common.Constants.FilePaths.MapperJsons*
+  commentId: Overload:MB.Common.Constants.FilePaths.MapperJsons
+  isExternal: true
+  href: MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_MapperJsons
+  name: MapperJsons
+  nameWithType: FilePaths.MapperJsons
+  fullName: MB.Common.Constants.FilePaths.MapperJsons
+shouldSkipMarkup: true

@@ -1,0 +1,463 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Controls.MbMessageBox
+  commentId: T:MBFWpfToolkit.Controls.MbMessageBox
+  id: MbMessageBox
+  parent: MBFWpfToolkit.Controls
+  children:
+  - MBFWpfToolkit.Controls.MbMessageBox.Show(System.String,System.Windows.MessageBoxButton,MBFWpfToolkit.Constants.MbMessageIcon)
+  langs:
+  - csharp
+  - vb
+  name: MbMessageBox
+  nameWithType: MbMessageBox
+  fullName: MBFWpfToolkit.Controls.MbMessageBox
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Controls/MbMessageBox.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Controls
+  syntax:
+    content: 'public class MbMessageBox : MbWindow'
+    content.vb: Public Class MbMessageBox Inherits MbWindow
+  inheritance:
+  - System.Object
+  - MBFWpfToolkit.MbWindow
+  inheritedMembers:
+  - MBFWpfToolkit.MbWindow.IsThemeToggleVisibleProperty
+  - MBFWpfToolkit.MbWindow.ShowLanguagesComboBoxProperty
+  - MBFWpfToolkit.MbWindow.PluginNameProperty
+  - MBFWpfToolkit.MbWindow.PluginDescriptionProperty
+  - MBFWpfToolkit.MbWindow.PluginVersionProperty
+  - MBFWpfToolkit.MbWindow.PrimaryBrushProperty
+  - MBFWpfToolkit.MbWindow.ShowLogoProperty
+  - MBFWpfToolkit.MbWindow.ShowPluginNameProperty
+  - MBFWpfToolkit.MbWindow.ShowPluginVersionProperty
+  - MBFWpfToolkit.MbWindow.InitializeWindow
+  - MBFWpfToolkit.MbWindow.ShowSprite
+  - MBFWpfToolkit.MbWindow.GetPrimaryBrush
+  - MBFWpfToolkit.MbWindow.IsThemeToggleVisible
+  - MBFWpfToolkit.MbWindow.ShowLanguagesComboBox
+  - MBFWpfToolkit.MbWindow.PluginName
+  - MBFWpfToolkit.MbWindow.PluginDescription
+  - MBFWpfToolkit.MbWindow.PluginVersion
+  - MBFWpfToolkit.MbWindow.PrimaryBrush
+  - MBFWpfToolkit.MbWindow.ShowLogo
+  - MBFWpfToolkit.MbWindow.ShowPluginName
+  - MBFWpfToolkit.MbWindow.ShowPluginVersion
+  - MBFWpfToolkit.MbWindow.MainResources
+- uid: MBFWpfToolkit.Controls.MbMessageBox.Show(System.String,System.Windows.MessageBoxButton,MBFWpfToolkit.Constants.MbMessageIcon)
+  commentId: M:MBFWpfToolkit.Controls.MbMessageBox.Show(System.String,System.Windows.MessageBoxButton,MBFWpfToolkit.Constants.MbMessageIcon)
+  id: Show(System.String,System.Windows.MessageBoxButton,MBFWpfToolkit.Constants.MbMessageIcon)
+  parent: MBFWpfToolkit.Controls.MbMessageBox
+  langs:
+  - csharp
+  - vb
+  name: Show(string, MessageBoxButton, MbMessageIcon)
+  nameWithType: MbMessageBox.Show(string, MessageBoxButton, MbMessageIcon)
+  fullName: MBFWpfToolkit.Controls.MbMessageBox.Show(string, System.Windows.MessageBoxButton, MBFWpfToolkit.Constants.MbMessageIcon)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Controls/MbMessageBox.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Controls
+  summary: Displays the message box with the specified message and button configuration.
+  example: []
+  syntax:
+    content: public static MessageBoxResult Show(string message, MessageBoxButton button = MessageBoxButton.OK, MbMessageIcon icon = MbMessageIcon.None)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message to display.
+    - id: button
+      type: System.Windows.MessageBoxButton
+      description: The button configuration.
+    - id: icon
+      type: MBFWpfToolkit.Constants.MbMessageIcon
+      description: The icon to display.
+    return:
+      type: System.Windows.MessageBoxResult
+      description: The result of the button clicked.
+    content.vb: Public Shared Function Show(message As String, button As MessageBoxButton = MessageBoxButton.OK, icon As MbMessageIcon = MbMessageIcon.None) As MessageBoxResult
+  overload: MBFWpfToolkit.Controls.MbMessageBox.Show*
+  nameWithType.vb: MbMessageBox.Show(String, MessageBoxButton, MbMessageIcon)
+  fullName.vb: MBFWpfToolkit.Controls.MbMessageBox.Show(String, System.Windows.MessageBoxButton, MBFWpfToolkit.Constants.MbMessageIcon)
+  name.vb: Show(String, MessageBoxButton, MbMessageIcon)
+references:
+- uid: MBFWpfToolkit.Controls
+  commentId: N:MBFWpfToolkit.Controls
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit.Controls
+  nameWithType: MBFWpfToolkit.Controls
+  fullName: MBFWpfToolkit.Controls
+  spec.csharp:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Controls
+    name: Controls
+    isExternal: true
+    href: MBFWpfToolkit.Controls.html
+  spec.vb:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Controls
+    name: Controls
+    isExternal: true
+    href: MBFWpfToolkit.Controls.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MBFWpfToolkit.MbWindow
+  commentId: T:MBFWpfToolkit.MbWindow
+  parent: MBFWpfToolkit
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html
+  name: MbWindow
+  nameWithType: MbWindow
+  fullName: MBFWpfToolkit.MbWindow
+- uid: MBFWpfToolkit.MbWindow.IsThemeToggleVisibleProperty
+  commentId: F:MBFWpfToolkit.MbWindow.IsThemeToggleVisibleProperty
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_IsThemeToggleVisibleProperty
+  name: IsThemeToggleVisibleProperty
+  nameWithType: MbWindow.IsThemeToggleVisibleProperty
+  fullName: MBFWpfToolkit.MbWindow.IsThemeToggleVisibleProperty
+- uid: MBFWpfToolkit.MbWindow.ShowLanguagesComboBoxProperty
+  commentId: F:MBFWpfToolkit.MbWindow.ShowLanguagesComboBoxProperty
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowLanguagesComboBoxProperty
+  name: ShowLanguagesComboBoxProperty
+  nameWithType: MbWindow.ShowLanguagesComboBoxProperty
+  fullName: MBFWpfToolkit.MbWindow.ShowLanguagesComboBoxProperty
+- uid: MBFWpfToolkit.MbWindow.PluginNameProperty
+  commentId: F:MBFWpfToolkit.MbWindow.PluginNameProperty
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_PluginNameProperty
+  name: PluginNameProperty
+  nameWithType: MbWindow.PluginNameProperty
+  fullName: MBFWpfToolkit.MbWindow.PluginNameProperty
+- uid: MBFWpfToolkit.MbWindow.PluginDescriptionProperty
+  commentId: F:MBFWpfToolkit.MbWindow.PluginDescriptionProperty
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_PluginDescriptionProperty
+  name: PluginDescriptionProperty
+  nameWithType: MbWindow.PluginDescriptionProperty
+  fullName: MBFWpfToolkit.MbWindow.PluginDescriptionProperty
+- uid: MBFWpfToolkit.MbWindow.PluginVersionProperty
+  commentId: F:MBFWpfToolkit.MbWindow.PluginVersionProperty
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_PluginVersionProperty
+  name: PluginVersionProperty
+  nameWithType: MbWindow.PluginVersionProperty
+  fullName: MBFWpfToolkit.MbWindow.PluginVersionProperty
+- uid: MBFWpfToolkit.MbWindow.PrimaryBrushProperty
+  commentId: F:MBFWpfToolkit.MbWindow.PrimaryBrushProperty
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_PrimaryBrushProperty
+  name: PrimaryBrushProperty
+  nameWithType: MbWindow.PrimaryBrushProperty
+  fullName: MBFWpfToolkit.MbWindow.PrimaryBrushProperty
+- uid: MBFWpfToolkit.MbWindow.ShowLogoProperty
+  commentId: F:MBFWpfToolkit.MbWindow.ShowLogoProperty
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowLogoProperty
+  name: ShowLogoProperty
+  nameWithType: MbWindow.ShowLogoProperty
+  fullName: MBFWpfToolkit.MbWindow.ShowLogoProperty
+- uid: MBFWpfToolkit.MbWindow.ShowPluginNameProperty
+  commentId: F:MBFWpfToolkit.MbWindow.ShowPluginNameProperty
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowPluginNameProperty
+  name: ShowPluginNameProperty
+  nameWithType: MbWindow.ShowPluginNameProperty
+  fullName: MBFWpfToolkit.MbWindow.ShowPluginNameProperty
+- uid: MBFWpfToolkit.MbWindow.ShowPluginVersionProperty
+  commentId: F:MBFWpfToolkit.MbWindow.ShowPluginVersionProperty
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowPluginVersionProperty
+  name: ShowPluginVersionProperty
+  nameWithType: MbWindow.ShowPluginVersionProperty
+  fullName: MBFWpfToolkit.MbWindow.ShowPluginVersionProperty
+- uid: MBFWpfToolkit.MbWindow.InitializeWindow
+  commentId: M:MBFWpfToolkit.MbWindow.InitializeWindow
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_InitializeWindow
+  name: InitializeWindow()
+  nameWithType: MbWindow.InitializeWindow()
+  fullName: MBFWpfToolkit.MbWindow.InitializeWindow()
+  spec.csharp:
+  - uid: MBFWpfToolkit.MbWindow.InitializeWindow
+    name: InitializeWindow
+    isExternal: true
+    href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_InitializeWindow
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MBFWpfToolkit.MbWindow.InitializeWindow
+    name: InitializeWindow
+    isExternal: true
+    href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_InitializeWindow
+  - name: (
+  - name: )
+- uid: MBFWpfToolkit.MbWindow.ShowSprite
+  commentId: M:MBFWpfToolkit.MbWindow.ShowSprite
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowSprite
+  name: ShowSprite()
+  nameWithType: MbWindow.ShowSprite()
+  fullName: MBFWpfToolkit.MbWindow.ShowSprite()
+  spec.csharp:
+  - uid: MBFWpfToolkit.MbWindow.ShowSprite
+    name: ShowSprite
+    isExternal: true
+    href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowSprite
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MBFWpfToolkit.MbWindow.ShowSprite
+    name: ShowSprite
+    isExternal: true
+    href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowSprite
+  - name: (
+  - name: )
+- uid: MBFWpfToolkit.MbWindow.GetPrimaryBrush
+  commentId: M:MBFWpfToolkit.MbWindow.GetPrimaryBrush
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_GetPrimaryBrush
+  name: GetPrimaryBrush()
+  nameWithType: MbWindow.GetPrimaryBrush()
+  fullName: MBFWpfToolkit.MbWindow.GetPrimaryBrush()
+  spec.csharp:
+  - uid: MBFWpfToolkit.MbWindow.GetPrimaryBrush
+    name: GetPrimaryBrush
+    isExternal: true
+    href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_GetPrimaryBrush
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MBFWpfToolkit.MbWindow.GetPrimaryBrush
+    name: GetPrimaryBrush
+    isExternal: true
+    href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_GetPrimaryBrush
+  - name: (
+  - name: )
+- uid: MBFWpfToolkit.MbWindow.IsThemeToggleVisible
+  commentId: P:MBFWpfToolkit.MbWindow.IsThemeToggleVisible
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_IsThemeToggleVisible
+  name: IsThemeToggleVisible
+  nameWithType: MbWindow.IsThemeToggleVisible
+  fullName: MBFWpfToolkit.MbWindow.IsThemeToggleVisible
+- uid: MBFWpfToolkit.MbWindow.ShowLanguagesComboBox
+  commentId: P:MBFWpfToolkit.MbWindow.ShowLanguagesComboBox
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowLanguagesComboBox
+  name: ShowLanguagesComboBox
+  nameWithType: MbWindow.ShowLanguagesComboBox
+  fullName: MBFWpfToolkit.MbWindow.ShowLanguagesComboBox
+- uid: MBFWpfToolkit.MbWindow.PluginName
+  commentId: P:MBFWpfToolkit.MbWindow.PluginName
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_PluginName
+  name: PluginName
+  nameWithType: MbWindow.PluginName
+  fullName: MBFWpfToolkit.MbWindow.PluginName
+- uid: MBFWpfToolkit.MbWindow.PluginDescription
+  commentId: P:MBFWpfToolkit.MbWindow.PluginDescription
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_PluginDescription
+  name: PluginDescription
+  nameWithType: MbWindow.PluginDescription
+  fullName: MBFWpfToolkit.MbWindow.PluginDescription
+- uid: MBFWpfToolkit.MbWindow.PluginVersion
+  commentId: P:MBFWpfToolkit.MbWindow.PluginVersion
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_PluginVersion
+  name: PluginVersion
+  nameWithType: MbWindow.PluginVersion
+  fullName: MBFWpfToolkit.MbWindow.PluginVersion
+- uid: MBFWpfToolkit.MbWindow.PrimaryBrush
+  commentId: P:MBFWpfToolkit.MbWindow.PrimaryBrush
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_PrimaryBrush
+  name: PrimaryBrush
+  nameWithType: MbWindow.PrimaryBrush
+  fullName: MBFWpfToolkit.MbWindow.PrimaryBrush
+- uid: MBFWpfToolkit.MbWindow.ShowLogo
+  commentId: P:MBFWpfToolkit.MbWindow.ShowLogo
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowLogo
+  name: ShowLogo
+  nameWithType: MbWindow.ShowLogo
+  fullName: MBFWpfToolkit.MbWindow.ShowLogo
+- uid: MBFWpfToolkit.MbWindow.ShowPluginName
+  commentId: P:MBFWpfToolkit.MbWindow.ShowPluginName
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowPluginName
+  name: ShowPluginName
+  nameWithType: MbWindow.ShowPluginName
+  fullName: MBFWpfToolkit.MbWindow.ShowPluginName
+- uid: MBFWpfToolkit.MbWindow.ShowPluginVersion
+  commentId: P:MBFWpfToolkit.MbWindow.ShowPluginVersion
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowPluginVersion
+  name: ShowPluginVersion
+  nameWithType: MbWindow.ShowPluginVersion
+  fullName: MBFWpfToolkit.MbWindow.ShowPluginVersion
+- uid: MBFWpfToolkit.MbWindow.MainResources
+  commentId: P:MBFWpfToolkit.MbWindow.MainResources
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_MainResources
+  name: MainResources
+  nameWithType: MbWindow.MainResources
+  fullName: MBFWpfToolkit.MbWindow.MainResources
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MBFWpfToolkit
+  commentId: N:MBFWpfToolkit
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit
+  nameWithType: MBFWpfToolkit
+  fullName: MBFWpfToolkit
+- uid: MBFWpfToolkit.Controls.MbMessageBox.Show*
+  commentId: Overload:MBFWpfToolkit.Controls.MbMessageBox.Show
+  isExternal: true
+  href: MBFWpfToolkit.Controls.MbMessageBox.html#MBFWpfToolkit_Controls_MbMessageBox_Show_System_String_System_Windows_MessageBoxButton_MBFWpfToolkit_Constants_MbMessageIcon_
+  name: Show
+  nameWithType: MbMessageBox.Show
+  fullName: MBFWpfToolkit.Controls.MbMessageBox.Show
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Windows.MessageBoxButton
+  commentId: T:System.Windows.MessageBoxButton
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.messageboxbutton
+  name: MessageBoxButton
+  nameWithType: MessageBoxButton
+  fullName: System.Windows.MessageBoxButton
+- uid: MBFWpfToolkit.Constants.MbMessageIcon
+  commentId: T:MBFWpfToolkit.Constants.MbMessageIcon
+  parent: MBFWpfToolkit.Constants
+  isExternal: true
+  href: MBFWpfToolkit.Constants.MbMessageIcon.html
+  name: MbMessageIcon
+  nameWithType: MbMessageIcon
+  fullName: MBFWpfToolkit.Constants.MbMessageIcon
+- uid: System.Windows.MessageBoxResult
+  commentId: T:System.Windows.MessageBoxResult
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.messageboxresult
+  name: MessageBoxResult
+  nameWithType: MessageBoxResult
+  fullName: System.Windows.MessageBoxResult
+- uid: System.Windows
+  commentId: N:System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows
+  nameWithType: System.Windows
+  fullName: System.Windows
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+- uid: MBFWpfToolkit.Constants
+  commentId: N:MBFWpfToolkit.Constants
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit.Constants
+  nameWithType: MBFWpfToolkit.Constants
+  fullName: MBFWpfToolkit.Constants
+  spec.csharp:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Constants
+    name: Constants
+    isExternal: true
+    href: MBFWpfToolkit.Constants.html
+  spec.vb:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Constants
+    name: Constants
+    isExternal: true
+    href: MBFWpfToolkit.Constants.html
+shouldSkipMarkup: true

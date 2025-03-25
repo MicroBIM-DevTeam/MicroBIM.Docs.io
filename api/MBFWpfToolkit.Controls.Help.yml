@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Controls.Help
+  commentId: N:MBFWpfToolkit.Controls.Help
+  id: MBFWpfToolkit.Controls.Help
+  children:
+  - MBFWpfToolkit.Controls.Help.HelpWizard
+  langs:
+  - csharp
+  - vb
+  name: MBFWpfToolkit.Controls.Help
+  nameWithType: MBFWpfToolkit.Controls.Help
+  fullName: MBFWpfToolkit.Controls.Help
+  type: Namespace
+  assemblies:
+  - MBFWpfToolkit
+references:
+- uid: MBFWpfToolkit.Controls.Help.HelpWizard
+  commentId: T:MBFWpfToolkit.Controls.Help.HelpWizard
+  isExternal: true
+  href: MBFWpfToolkit.Controls.Help.HelpWizard.html
+  name: HelpWizard
+  nameWithType: HelpWizard
+  fullName: MBFWpfToolkit.Controls.Help.HelpWizard
+shouldSkipMarkup: true

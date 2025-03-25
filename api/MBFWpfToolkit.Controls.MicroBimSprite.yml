@@ -1,0 +1,208 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Controls.MicroBimSprite
+  commentId: T:MBFWpfToolkit.Controls.MicroBimSprite
+  id: MicroBimSprite
+  parent: MBFWpfToolkit.Controls
+  children:
+  - MBFWpfToolkit.Controls.MicroBimSprite.#ctor
+  - MBFWpfToolkit.Controls.MicroBimSprite.InitializeComponent
+  langs:
+  - csharp
+  - vb
+  name: MicroBimSprite
+  nameWithType: MicroBimSprite
+  fullName: MBFWpfToolkit.Controls.MicroBimSprite
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Controls/MicroBimSprite.xaml
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Controls
+  summary: Interaction logic for MicroBimSprite.xaml
+  example: []
+  syntax:
+    content: 'public class MicroBimSprite : Window, IComponentConnector'
+    content.vb: Public Class MicroBimSprite Inherits Window Implements IComponentConnector
+  inheritance:
+  - System.Object
+  implements:
+  - System.Windows.Markup.IComponentConnector
+- uid: MBFWpfToolkit.Controls.MicroBimSprite.#ctor
+  commentId: M:MBFWpfToolkit.Controls.MicroBimSprite.#ctor
+  id: '#ctor'
+  parent: MBFWpfToolkit.Controls.MicroBimSprite
+  langs:
+  - csharp
+  - vb
+  name: MicroBimSprite()
+  nameWithType: MicroBimSprite.MicroBimSprite()
+  fullName: MBFWpfToolkit.Controls.MicroBimSprite.MicroBimSprite()
+  type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Controls/MicroBimSprite.xaml.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Controls
+  syntax:
+    content: public MicroBimSprite()
+    content.vb: Public Sub New()
+  overload: MBFWpfToolkit.Controls.MicroBimSprite.#ctor*
+  nameWithType.vb: MicroBimSprite.New()
+  fullName.vb: MBFWpfToolkit.Controls.MicroBimSprite.New()
+  name.vb: New()
+- uid: MBFWpfToolkit.Controls.MicroBimSprite.InitializeComponent
+  commentId: M:MBFWpfToolkit.Controls.MicroBimSprite.InitializeComponent
+  id: InitializeComponent
+  parent: MBFWpfToolkit.Controls.MicroBimSprite
+  langs:
+  - csharp
+  - vb
+  name: InitializeComponent()
+  nameWithType: MicroBimSprite.InitializeComponent()
+  fullName: MBFWpfToolkit.Controls.MicroBimSprite.InitializeComponent()
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Controls/MicroBimSprite.xaml
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Controls
+  summary: InitializeComponent
+  example: []
+  syntax:
+    content: public void InitializeComponent()
+    content.vb: Public Sub InitializeComponent()
+  overload: MBFWpfToolkit.Controls.MicroBimSprite.InitializeComponent*
+  implements:
+  - System.Windows.Markup.IComponentConnector.InitializeComponent
+references:
+- uid: MBFWpfToolkit.Controls
+  commentId: N:MBFWpfToolkit.Controls
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit.Controls
+  nameWithType: MBFWpfToolkit.Controls
+  fullName: MBFWpfToolkit.Controls
+  spec.csharp:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Controls
+    name: Controls
+    isExternal: true
+    href: MBFWpfToolkit.Controls.html
+  spec.vb:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Controls
+    name: Controls
+    isExternal: true
+    href: MBFWpfToolkit.Controls.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Windows.Markup.IComponentConnector
+  commentId: T:System.Windows.Markup.IComponentConnector
+  parent: System.Windows.Markup
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.markup.icomponentconnector
+  name: IComponentConnector
+  nameWithType: IComponentConnector
+  fullName: System.Windows.Markup.IComponentConnector
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Windows.Markup
+  commentId: N:System.Windows.Markup
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Markup
+  nameWithType: System.Windows.Markup
+  fullName: System.Windows.Markup
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Markup
+    name: Markup
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.markup
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Markup
+    name: Markup
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.markup
+- uid: MBFWpfToolkit.Controls.MicroBimSprite.#ctor*
+  commentId: Overload:MBFWpfToolkit.Controls.MicroBimSprite.#ctor
+  isExternal: true
+  href: MBFWpfToolkit.Controls.MicroBimSprite.html#MBFWpfToolkit_Controls_MicroBimSprite__ctor
+  name: MicroBimSprite
+  nameWithType: MicroBimSprite.MicroBimSprite
+  fullName: MBFWpfToolkit.Controls.MicroBimSprite.MicroBimSprite
+  nameWithType.vb: MicroBimSprite.New
+  fullName.vb: MBFWpfToolkit.Controls.MicroBimSprite.New
+  name.vb: New
+- uid: MBFWpfToolkit.Controls.MicroBimSprite.InitializeComponent*
+  commentId: Overload:MBFWpfToolkit.Controls.MicroBimSprite.InitializeComponent
+  isExternal: true
+  href: MBFWpfToolkit.Controls.MicroBimSprite.html#MBFWpfToolkit_Controls_MicroBimSprite_InitializeComponent
+  name: InitializeComponent
+  nameWithType: MicroBimSprite.InitializeComponent
+  fullName: MBFWpfToolkit.Controls.MicroBimSprite.InitializeComponent
+- uid: System.Windows.Markup.IComponentConnector.InitializeComponent
+  commentId: M:System.Windows.Markup.IComponentConnector.InitializeComponent
+  parent: System.Windows.Markup.IComponentConnector
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.markup.icomponentconnector.initializecomponent
+  name: InitializeComponent()
+  nameWithType: IComponentConnector.InitializeComponent()
+  fullName: System.Windows.Markup.IComponentConnector.InitializeComponent()
+  spec.csharp:
+  - uid: System.Windows.Markup.IComponentConnector.InitializeComponent
+    name: InitializeComponent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.markup.icomponentconnector.initializecomponent
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Markup.IComponentConnector.InitializeComponent
+    name: InitializeComponent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.markup.icomponentconnector.initializecomponent
+  - name: (
+  - name: )
+shouldSkipMarkup: true

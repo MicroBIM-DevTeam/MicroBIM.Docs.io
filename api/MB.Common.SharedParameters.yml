@@ -1,0 +1,89 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.SharedParameters
+  commentId: N:MB.Common.SharedParameters
+  id: MB.Common.SharedParameters
+  children:
+  - MB.Common.SharedParameters.ElementExtensions
+  - MB.Common.SharedParameters.SharedParameterExtensions
+  - MB.Common.SharedParameters.SharedParameterType
+  - MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.SharedParameters
+  nameWithType: MB.Common.SharedParameters
+  fullName: MB.Common.SharedParameters
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.SharedParameters.ElementExtensions
+  commentId: T:MB.Common.SharedParameters.ElementExtensions
+  isExternal: true
+  href: MB.Common.SharedParameters.ElementExtensions.html
+  name: ElementExtensions
+  nameWithType: ElementExtensions
+  fullName: MB.Common.SharedParameters.ElementExtensions
+- uid: MB.Common.SharedParameters.SharedParameterExtensions
+  commentId: T:MB.Common.SharedParameters.SharedParameterExtensions
+  parent: MB.Common.SharedParameters
+  isExternal: true
+  href: MB.Common.SharedParameters.SharedParameterExtensions.html
+  name: SharedParameterExtensions
+  nameWithType: SharedParameterExtensions
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions
+- uid: MB.Common.SharedParameters.SharedParameterType
+  commentId: T:MB.Common.SharedParameters.SharedParameterType
+  parent: MB.Common.SharedParameters
+  isExternal: true
+  href: MB.Common.SharedParameters.SharedParameterType.html
+  name: SharedParameterType
+  nameWithType: SharedParameterType
+  fullName: MB.Common.SharedParameters.SharedParameterType
+- uid: MB.Common.SharedParameters.ToolsSharedParameter
+  commentId: T:MB.Common.SharedParameters.ToolsSharedParameter
+  parent: MB.Common.SharedParameters
+  isExternal: true
+  href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  name: ToolsSharedParameter
+  nameWithType: ToolsSharedParameter
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter
+- uid: MB.Common.SharedParameters
+  commentId: N:MB.Common.SharedParameters
+  isExternal: true
+  href: MB.html
+  name: MB.Common.SharedParameters
+  nameWithType: MB.Common.SharedParameters
+  fullName: MB.Common.SharedParameters
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.SharedParameters
+    name: SharedParameters
+    isExternal: true
+    href: MB.Common.SharedParameters.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.SharedParameters
+    name: SharedParameters
+    isExternal: true
+    href: MB.Common.SharedParameters.html
+shouldSkipMarkup: true

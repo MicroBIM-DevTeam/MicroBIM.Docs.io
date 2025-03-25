@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Errors.Exceptions
+  commentId: N:MB.Common.Errors.Exceptions
+  id: MB.Common.Errors.Exceptions
+  children:
+  - MB.Common.Errors.Exceptions.MbException
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.Errors.Exceptions
+  nameWithType: MB.Common.Errors.Exceptions
+  fullName: MB.Common.Errors.Exceptions
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.Errors.Exceptions.MbException
+  commentId: T:MB.Common.Errors.Exceptions.MbException
+  isExternal: true
+  href: MB.Common.Errors.Exceptions.MbException.html
+  name: MbException
+  nameWithType: MbException
+  fullName: MB.Common.Errors.Exceptions.MbException
+shouldSkipMarkup: true

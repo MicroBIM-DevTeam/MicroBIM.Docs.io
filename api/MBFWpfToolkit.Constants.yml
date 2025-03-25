@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Constants
+  commentId: N:MBFWpfToolkit.Constants
+  id: MBFWpfToolkit.Constants
+  children:
+  - MBFWpfToolkit.Constants.MbMessageIcon
+  - MBFWpfToolkit.Constants.SkinType
+  langs:
+  - csharp
+  - vb
+  name: MBFWpfToolkit.Constants
+  nameWithType: MBFWpfToolkit.Constants
+  fullName: MBFWpfToolkit.Constants
+  type: Namespace
+  assemblies:
+  - MBFWpfToolkit
+references:
+- uid: MBFWpfToolkit.Constants.MbMessageIcon
+  commentId: T:MBFWpfToolkit.Constants.MbMessageIcon
+  parent: MBFWpfToolkit.Constants
+  isExternal: true
+  href: MBFWpfToolkit.Constants.MbMessageIcon.html
+  name: MbMessageIcon
+  nameWithType: MbMessageIcon
+  fullName: MBFWpfToolkit.Constants.MbMessageIcon
+- uid: MBFWpfToolkit.Constants.SkinType
+  commentId: T:MBFWpfToolkit.Constants.SkinType
+  parent: MBFWpfToolkit.Constants
+  isExternal: true
+  href: MBFWpfToolkit.Constants.SkinType.html
+  name: SkinType
+  nameWithType: SkinType
+  fullName: MBFWpfToolkit.Constants.SkinType
+- uid: MBFWpfToolkit.Constants
+  commentId: N:MBFWpfToolkit.Constants
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit.Constants
+  nameWithType: MBFWpfToolkit.Constants
+  fullName: MBFWpfToolkit.Constants
+  spec.csharp:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Constants
+    name: Constants
+    isExternal: true
+    href: MBFWpfToolkit.Constants.html
+  spec.vb:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Constants
+    name: Constants
+    isExternal: true
+    href: MBFWpfToolkit.Constants.html
+shouldSkipMarkup: true

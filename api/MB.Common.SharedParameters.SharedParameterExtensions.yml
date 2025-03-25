@@ -1,0 +1,637 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.SharedParameters.SharedParameterExtensions
+  commentId: T:MB.Common.SharedParameters.SharedParameterExtensions
+  id: SharedParameterExtensions
+  parent: MB.Common.SharedParameters
+  children:
+  - MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions(MB.Common.SharedParameters.ToolsSharedParameter)
+  - MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName(MB.Common.SharedParameters.ToolsSharedParameter)
+  - MB.Common.SharedParameters.SharedParameterExtensions.GetGuid(MB.Common.SharedParameters.ToolsSharedParameter)
+  - MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories(MB.Common.SharedParameters.ToolsSharedParameter)
+  - MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType(MB.Common.SharedParameters.ToolsSharedParameter)
+  langs:
+  - csharp
+  - vb
+  name: SharedParameterExtensions
+  nameWithType: SharedParameterExtensions
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/SharedParameters/SharedParameterExtensions.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Provides extension methods for the <xref href="MB.Common.SharedParameters.ToolsSharedParameter" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public static class SharedParameterExtensions
+    content.vb: Public Module SharedParameterExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MB.Common.SharedParameters.SharedParameterExtensions.GetGuid(MB.Common.SharedParameters.ToolsSharedParameter)
+  commentId: M:MB.Common.SharedParameters.SharedParameterExtensions.GetGuid(MB.Common.SharedParameters.ToolsSharedParameter)
+  id: GetGuid(MB.Common.SharedParameters.ToolsSharedParameter)
+  isExtensionMethod: true
+  parent: MB.Common.SharedParameters.SharedParameterExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetGuid(ToolsSharedParameter)
+  nameWithType: SharedParameterExtensions.GetGuid(ToolsSharedParameter)
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetGuid(MB.Common.SharedParameters.ToolsSharedParameter)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/SharedParameters/SharedParameterExtensions.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Retrieves the GUID associated with a <xref href="MB.Common.SharedParameters.ToolsSharedParameter" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static string GetGuid(this ToolsSharedParameter sharedParameter)
+    parameters:
+    - id: sharedParameter
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+      description: The shared parameter.
+    return:
+      type: System.String
+      description: The GUID of the shared parameter.
+    content.vb: Public Shared Function GetGuid(sharedParameter As ToolsSharedParameter) As String
+  overload: MB.Common.SharedParameters.SharedParameterExtensions.GetGuid*
+- uid: MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName(MB.Common.SharedParameters.ToolsSharedParameter)
+  commentId: M:MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName(MB.Common.SharedParameters.ToolsSharedParameter)
+  id: GetDisplayName(MB.Common.SharedParameters.ToolsSharedParameter)
+  isExtensionMethod: true
+  parent: MB.Common.SharedParameters.SharedParameterExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDisplayName(ToolsSharedParameter)
+  nameWithType: SharedParameterExtensions.GetDisplayName(ToolsSharedParameter)
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName(MB.Common.SharedParameters.ToolsSharedParameter)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/SharedParameters/SharedParameterExtensions.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Retrieves the display name of a <xref href="MB.Common.SharedParameters.ToolsSharedParameter" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static string GetDisplayName(this ToolsSharedParameter sharedParameter)
+    parameters:
+    - id: sharedParameter
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+      description: The shared parameter.
+    return:
+      type: System.String
+      description: The display name of the shared parameter.
+    content.vb: Public Shared Function GetDisplayName(sharedParameter As ToolsSharedParameter) As String
+  overload: MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName*
+- uid: MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories(MB.Common.SharedParameters.ToolsSharedParameter)
+  commentId: M:MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories(MB.Common.SharedParameters.ToolsSharedParameter)
+  id: GetIncludedCategories(MB.Common.SharedParameters.ToolsSharedParameter)
+  isExtensionMethod: true
+  parent: MB.Common.SharedParameters.SharedParameterExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetIncludedCategories(ToolsSharedParameter)
+  nameWithType: SharedParameterExtensions.GetIncludedCategories(ToolsSharedParameter)
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories(MB.Common.SharedParameters.ToolsSharedParameter)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/SharedParameters/SharedParameterExtensions.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Retrieves the list of categories included in a <xref href="MB.Common.SharedParameters.ToolsSharedParameter" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static List<BuiltInCategory> GetIncludedCategories(this ToolsSharedParameter sharedParameter)
+    parameters:
+    - id: sharedParameter
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+      description: The shared parameter.
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory}
+      description: A list of <xref href="BuiltInCategory" data-throw-if-not-resolved="false"></xref> values.
+    content.vb: Public Shared Function GetIncludedCategories(sharedParameter As ToolsSharedParameter) As List(Of BuiltInCategory)
+  overload: MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories*
+- uid: MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType(MB.Common.SharedParameters.ToolsSharedParameter)
+  commentId: M:MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType(MB.Common.SharedParameters.ToolsSharedParameter)
+  id: GetSharedParameterType(MB.Common.SharedParameters.ToolsSharedParameter)
+  isExtensionMethod: true
+  parent: MB.Common.SharedParameters.SharedParameterExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetSharedParameterType(ToolsSharedParameter)
+  nameWithType: SharedParameterExtensions.GetSharedParameterType(ToolsSharedParameter)
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType(MB.Common.SharedParameters.ToolsSharedParameter)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/SharedParameters/SharedParameterExtensions.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Retrieves the type of <xref href="MB.Common.SharedParameters.ToolsSharedParameter" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static SharedParameterType GetSharedParameterType(this ToolsSharedParameter sharedParameter)
+    parameters:
+    - id: sharedParameter
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+      description: The shared parameter.
+    return:
+      type: MB.Common.SharedParameters.SharedParameterType
+      description: The <xref href="MB.Common.SharedParameters.SharedParameterType" data-throw-if-not-resolved="false"></xref> of the shared parameter.
+    content.vb: Public Shared Function GetSharedParameterType(sharedParameter As ToolsSharedParameter) As SharedParameterType
+  overload: MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType*
+- uid: MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions(MB.Common.SharedParameters.ToolsSharedParameter)
+  commentId: M:MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions(MB.Common.SharedParameters.ToolsSharedParameter)
+  id: GetCreationOptions(MB.Common.SharedParameters.ToolsSharedParameter)
+  isExtensionMethod: true
+  parent: MB.Common.SharedParameters.SharedParameterExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetCreationOptions(ToolsSharedParameter)
+  nameWithType: SharedParameterExtensions.GetCreationOptions(ToolsSharedParameter)
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions(MB.Common.SharedParameters.ToolsSharedParameter)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/SharedParameters/SharedParameterExtensions.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Creates an instance of <xref href="ExternalDefinitionCreationOptions" data-throw-if-not-resolved="false"></xref> for a <xref href="MB.Common.SharedParameters.ToolsSharedParameter" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static ExternalDefinitionCreationOptions GetCreationOptions(this ToolsSharedParameter sharedParameter)
+    parameters:
+    - id: sharedParameter
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+      description: The shared parameter.
+    return:
+      type: Autodesk.Revit.DB.ExternalDefinitionCreationOptions
+      description: An <xref href="ExternalDefinitionCreationOptions" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Shared Function GetCreationOptions(sharedParameter As ToolsSharedParameter) As ExternalDefinitionCreationOptions
+  overload: MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions*
+references:
+- uid: MB.Common.SharedParameters.ToolsSharedParameter
+  commentId: T:MB.Common.SharedParameters.ToolsSharedParameter
+  parent: MB.Common.SharedParameters
+  isExternal: true
+  href: MB.Common.SharedParameters.ToolsSharedParameter.html
+  name: ToolsSharedParameter
+  nameWithType: ToolsSharedParameter
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter
+- uid: MB.Common.SharedParameters
+  commentId: N:MB.Common.SharedParameters
+  isExternal: true
+  href: MB.html
+  name: MB.Common.SharedParameters
+  nameWithType: MB.Common.SharedParameters
+  fullName: MB.Common.SharedParameters
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.SharedParameters
+    name: SharedParameters
+    isExternal: true
+    href: MB.Common.SharedParameters.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.SharedParameters
+    name: SharedParameters
+    isExternal: true
+    href: MB.Common.SharedParameters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MB.Common.SharedParameters.SharedParameterExtensions.GetGuid*
+  commentId: Overload:MB.Common.SharedParameters.SharedParameterExtensions.GetGuid
+  isExternal: true
+  href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetGuid_MB_Common_SharedParameters_ToolsSharedParameter_
+  name: GetGuid
+  nameWithType: SharedParameterExtensions.GetGuid
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetGuid
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName*
+  commentId: Overload:MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName
+  isExternal: true
+  href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetDisplayName_MB_Common_SharedParameters_ToolsSharedParameter_
+  name: GetDisplayName
+  nameWithType: SharedParameterExtensions.GetDisplayName
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName
+- uid: BuiltInCategory
+  commentId: T:BuiltInCategory
+  isExternal: true
+- uid: MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories*
+  commentId: Overload:MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories
+  isExternal: true
+  href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetIncludedCategories_MB_Common_SharedParameters_ToolsSharedParameter_
+  name: GetIncludedCategories
+  nameWithType: SharedParameterExtensions.GetIncludedCategories
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<BuiltInCategory>
+  nameWithType: List<BuiltInCategory>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.BuiltInCategory>
+  nameWithType.vb: List(Of BuiltInCategory)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.BuiltInCategory)
+  name.vb: List(Of BuiltInCategory)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.BuiltInCategory
+    name: BuiltInCategory
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.BuiltInCategory
+    name: BuiltInCategory
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MB.Common.SharedParameters.SharedParameterType
+  commentId: T:MB.Common.SharedParameters.SharedParameterType
+  parent: MB.Common.SharedParameters
+  isExternal: true
+  href: MB.Common.SharedParameters.SharedParameterType.html
+  name: SharedParameterType
+  nameWithType: SharedParameterType
+  fullName: MB.Common.SharedParameters.SharedParameterType
+- uid: MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType*
+  commentId: Overload:MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType
+  isExternal: true
+  href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetSharedParameterType_MB_Common_SharedParameters_ToolsSharedParameter_
+  name: GetSharedParameterType
+  nameWithType: SharedParameterExtensions.GetSharedParameterType
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType
+- uid: ExternalDefinitionCreationOptions
+  commentId: T:ExternalDefinitionCreationOptions
+  isExternal: true
+- uid: MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions*
+  commentId: Overload:MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions
+  isExternal: true
+  href: MB.Common.SharedParameters.SharedParameterExtensions.html#MB_Common_SharedParameters_SharedParameterExtensions_GetCreationOptions_MB_Common_SharedParameters_ToolsSharedParameter_
+  name: GetCreationOptions
+  nameWithType: SharedParameterExtensions.GetCreationOptions
+  fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions
+- uid: Autodesk.Revit.DB.ExternalDefinitionCreationOptions
+  commentId: '!:Autodesk.Revit.DB.ExternalDefinitionCreationOptions'
+  isExternal: true
+  name: ExternalDefinitionCreationOptions
+  nameWithType: ExternalDefinitionCreationOptions
+  fullName: Autodesk.Revit.DB.ExternalDefinitionCreationOptions
+shouldSkipMarkup: true

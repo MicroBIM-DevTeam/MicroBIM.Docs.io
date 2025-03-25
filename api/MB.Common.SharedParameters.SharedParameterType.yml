@@ -1,0 +1,153 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.SharedParameters.SharedParameterType
+  commentId: T:MB.Common.SharedParameters.SharedParameterType
+  id: SharedParameterType
+  parent: MB.Common.SharedParameters
+  children:
+  - MB.Common.SharedParameters.SharedParameterType.Area
+  - MB.Common.SharedParameters.SharedParameterType.Integer
+  - MB.Common.SharedParameters.SharedParameterType.Text
+  - MB.Common.SharedParameters.SharedParameterType.YesOrNo
+  langs:
+  - csharp
+  - vb
+  name: SharedParameterType
+  nameWithType: SharedParameterType
+  fullName: MB.Common.SharedParameters.SharedParameterType
+  type: Enum
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the types of shared parameters that can be used in Revit.
+  example: []
+  syntax:
+    content: public enum SharedParameterType
+    content.vb: Public Enum SharedParameterType
+- uid: MB.Common.SharedParameters.SharedParameterType.YesOrNo
+  commentId: F:MB.Common.SharedParameters.SharedParameterType.YesOrNo
+  id: YesOrNo
+  parent: MB.Common.SharedParameters.SharedParameterType
+  langs:
+  - csharp
+  - vb
+  name: YesOrNo
+  nameWithType: SharedParameterType.YesOrNo
+  fullName: MB.Common.SharedParameters.SharedParameterType.YesOrNo
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a Yes/No parameter type, typically used for boolean values.
+  example: []
+  syntax:
+    content: YesOrNo = 0
+    return:
+      type: MB.Common.SharedParameters.SharedParameterType
+- uid: MB.Common.SharedParameters.SharedParameterType.Text
+  commentId: F:MB.Common.SharedParameters.SharedParameterType.Text
+  id: Text
+  parent: MB.Common.SharedParameters.SharedParameterType
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: SharedParameterType.Text
+  fullName: MB.Common.SharedParameters.SharedParameterType.Text
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a text parameter type, used for string values.
+  example: []
+  syntax:
+    content: Text = 1
+    return:
+      type: MB.Common.SharedParameters.SharedParameterType
+- uid: MB.Common.SharedParameters.SharedParameterType.Integer
+  commentId: F:MB.Common.SharedParameters.SharedParameterType.Integer
+  id: Integer
+  parent: MB.Common.SharedParameters.SharedParameterType
+  langs:
+  - csharp
+  - vb
+  name: Integer
+  nameWithType: SharedParameterType.Integer
+  fullName: MB.Common.SharedParameters.SharedParameterType.Integer
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents an integer parameter type, used for whole number values.
+  example: []
+  syntax:
+    content: Integer = 2
+    return:
+      type: MB.Common.SharedParameters.SharedParameterType
+- uid: MB.Common.SharedParameters.SharedParameterType.Area
+  commentId: F:MB.Common.SharedParameters.SharedParameterType.Area
+  id: Area
+  parent: MB.Common.SharedParameters.SharedParameterType
+  langs:
+  - csharp
+  - vb
+  name: Area
+  nameWithType: SharedParameterType.Area
+  fullName: MB.Common.SharedParameters.SharedParameterType.Area
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents an area parameter type, used for values that define area measurements.
+  example: []
+  syntax:
+    content: Area = 3
+    return:
+      type: MB.Common.SharedParameters.SharedParameterType
+references:
+- uid: MB.Common.SharedParameters
+  commentId: N:MB.Common.SharedParameters
+  isExternal: true
+  href: MB.html
+  name: MB.Common.SharedParameters
+  nameWithType: MB.Common.SharedParameters
+  fullName: MB.Common.SharedParameters
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.SharedParameters
+    name: SharedParameters
+    isExternal: true
+    href: MB.Common.SharedParameters.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.SharedParameters
+    name: SharedParameters
+    isExternal: true
+    href: MB.Common.SharedParameters.html
+- uid: MB.Common.SharedParameters.SharedParameterType
+  commentId: T:MB.Common.SharedParameters.SharedParameterType
+  parent: MB.Common.SharedParameters
+  isExternal: true
+  href: MB.Common.SharedParameters.SharedParameterType.html
+  name: SharedParameterType
+  nameWithType: SharedParameterType
+  fullName: MB.Common.SharedParameters.SharedParameterType
+shouldSkipMarkup: true

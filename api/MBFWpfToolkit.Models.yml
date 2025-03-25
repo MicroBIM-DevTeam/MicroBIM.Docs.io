@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Models
+  commentId: N:MBFWpfToolkit.Models
+  id: MBFWpfToolkit.Models
+  children:
+  - MBFWpfToolkit.Models.HelpStep
+  langs:
+  - csharp
+  - vb
+  name: MBFWpfToolkit.Models
+  nameWithType: MBFWpfToolkit.Models
+  fullName: MBFWpfToolkit.Models
+  type: Namespace
+  assemblies:
+  - MBFWpfToolkit
+references:
+- uid: MBFWpfToolkit.Models.HelpStep
+  commentId: T:MBFWpfToolkit.Models.HelpStep
+  isExternal: true
+  href: MBFWpfToolkit.Models.HelpStep.html
+  name: HelpStep
+  nameWithType: HelpStep
+  fullName: MBFWpfToolkit.Models.HelpStep
+shouldSkipMarkup: true

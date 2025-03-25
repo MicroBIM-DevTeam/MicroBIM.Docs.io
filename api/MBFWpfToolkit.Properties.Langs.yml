@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Properties.Langs
+  commentId: N:MBFWpfToolkit.Properties.Langs
+  id: MBFWpfToolkit.Properties.Langs
+  children:
+  - MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: MBFWpfToolkit.Properties.Langs
+  nameWithType: MBFWpfToolkit.Properties.Langs
+  fullName: MBFWpfToolkit.Properties.Langs
+  type: Namespace
+  assemblies:
+  - MBFWpfToolkit
+references:
+- uid: MBFWpfToolkit.Properties.Langs.Lang
+  commentId: T:MBFWpfToolkit.Properties.Langs.Lang
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html
+  name: Lang
+  nameWithType: Lang
+  fullName: MBFWpfToolkit.Properties.Langs.Lang
+shouldSkipMarkup: true

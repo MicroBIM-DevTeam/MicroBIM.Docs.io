@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Utils.Image
+  commentId: N:MB.Common.Utils.Image
+  id: MB.Common.Utils.Image
+  children:
+  - MB.Common.Utils.Image.ImageUtils
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.Utils.Image
+  nameWithType: MB.Common.Utils.Image
+  fullName: MB.Common.Utils.Image
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.Utils.Image.ImageUtils
+  commentId: T:MB.Common.Utils.Image.ImageUtils
+  isExternal: true
+  href: MB.Common.Utils.Image.ImageUtils.html
+  name: ImageUtils
+  nameWithType: ImageUtils
+  fullName: MB.Common.Utils.Image.ImageUtils
+shouldSkipMarkup: true

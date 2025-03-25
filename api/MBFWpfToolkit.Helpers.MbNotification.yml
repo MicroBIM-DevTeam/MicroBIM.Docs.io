@@ -1,0 +1,428 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Helpers.MbNotification
+  commentId: T:MBFWpfToolkit.Helpers.MbNotification
+  id: MbNotification
+  parent: MBFWpfToolkit.Helpers
+  children:
+  - MBFWpfToolkit.Helpers.MbNotification.ShowError(System.String,System.Int32)
+  - MBFWpfToolkit.Helpers.MbNotification.ShowInfo(System.String,System.Int32)
+  - MBFWpfToolkit.Helpers.MbNotification.ShowSuccess(System.String,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: MbNotification
+  nameWithType: MbNotification
+  fullName: MBFWpfToolkit.Helpers.MbNotification
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbNotification.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Helpers
+  syntax:
+    content: public static class MbNotification
+    content.vb: Public Module MbNotification
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBFWpfToolkit.Helpers.MbNotification.ShowSuccess(System.String,System.Int32)
+  commentId: M:MBFWpfToolkit.Helpers.MbNotification.ShowSuccess(System.String,System.Int32)
+  id: ShowSuccess(System.String,System.Int32)
+  parent: MBFWpfToolkit.Helpers.MbNotification
+  langs:
+  - csharp
+  - vb
+  name: ShowSuccess(string, int)
+  nameWithType: MbNotification.ShowSuccess(string, int)
+  fullName: MBFWpfToolkit.Helpers.MbNotification.ShowSuccess(string, int)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbNotification.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Helpers
+  syntax:
+    content: public static void ShowSuccess(string message, int waitTime = 2)
+    parameters:
+    - id: message
+      type: System.String
+    - id: waitTime
+      type: System.Int32
+    content.vb: Public Shared Sub ShowSuccess(message As String, waitTime As Integer = 2)
+  overload: MBFWpfToolkit.Helpers.MbNotification.ShowSuccess*
+  nameWithType.vb: MbNotification.ShowSuccess(String, Integer)
+  fullName.vb: MBFWpfToolkit.Helpers.MbNotification.ShowSuccess(String, Integer)
+  name.vb: ShowSuccess(String, Integer)
+- uid: MBFWpfToolkit.Helpers.MbNotification.ShowInfo(System.String,System.Int32)
+  commentId: M:MBFWpfToolkit.Helpers.MbNotification.ShowInfo(System.String,System.Int32)
+  id: ShowInfo(System.String,System.Int32)
+  parent: MBFWpfToolkit.Helpers.MbNotification
+  langs:
+  - csharp
+  - vb
+  name: ShowInfo(string, int)
+  nameWithType: MbNotification.ShowInfo(string, int)
+  fullName: MBFWpfToolkit.Helpers.MbNotification.ShowInfo(string, int)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbNotification.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Helpers
+  syntax:
+    content: public static void ShowInfo(string message, int waitTime = 2)
+    parameters:
+    - id: message
+      type: System.String
+    - id: waitTime
+      type: System.Int32
+    content.vb: Public Shared Sub ShowInfo(message As String, waitTime As Integer = 2)
+  overload: MBFWpfToolkit.Helpers.MbNotification.ShowInfo*
+  nameWithType.vb: MbNotification.ShowInfo(String, Integer)
+  fullName.vb: MBFWpfToolkit.Helpers.MbNotification.ShowInfo(String, Integer)
+  name.vb: ShowInfo(String, Integer)
+- uid: MBFWpfToolkit.Helpers.MbNotification.ShowError(System.String,System.Int32)
+  commentId: M:MBFWpfToolkit.Helpers.MbNotification.ShowError(System.String,System.Int32)
+  id: ShowError(System.String,System.Int32)
+  parent: MBFWpfToolkit.Helpers.MbNotification
+  langs:
+  - csharp
+  - vb
+  name: ShowError(string, int)
+  nameWithType: MbNotification.ShowError(string, int)
+  fullName: MBFWpfToolkit.Helpers.MbNotification.ShowError(string, int)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbNotification.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Helpers
+  syntax:
+    content: public static void ShowError(string message, int waitTime = 2)
+    parameters:
+    - id: message
+      type: System.String
+    - id: waitTime
+      type: System.Int32
+    content.vb: Public Shared Sub ShowError(message As String, waitTime As Integer = 2)
+  overload: MBFWpfToolkit.Helpers.MbNotification.ShowError*
+  nameWithType.vb: MbNotification.ShowError(String, Integer)
+  fullName.vb: MBFWpfToolkit.Helpers.MbNotification.ShowError(String, Integer)
+  name.vb: ShowError(String, Integer)
+references:
+- uid: MBFWpfToolkit.Helpers
+  commentId: N:MBFWpfToolkit.Helpers
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit.Helpers
+  nameWithType: MBFWpfToolkit.Helpers
+  fullName: MBFWpfToolkit.Helpers
+  spec.csharp:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Helpers
+    name: Helpers
+    isExternal: true
+    href: MBFWpfToolkit.Helpers.html
+  spec.vb:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Helpers
+    name: Helpers
+    isExternal: true
+    href: MBFWpfToolkit.Helpers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MBFWpfToolkit.Helpers.MbNotification.ShowSuccess*
+  commentId: Overload:MBFWpfToolkit.Helpers.MbNotification.ShowSuccess
+  isExternal: true
+  href: MBFWpfToolkit.Helpers.MbNotification.html#MBFWpfToolkit_Helpers_MbNotification_ShowSuccess_System_String_System_Int32_
+  name: ShowSuccess
+  nameWithType: MbNotification.ShowSuccess
+  fullName: MBFWpfToolkit.Helpers.MbNotification.ShowSuccess
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MBFWpfToolkit.Helpers.MbNotification.ShowInfo*
+  commentId: Overload:MBFWpfToolkit.Helpers.MbNotification.ShowInfo
+  isExternal: true
+  href: MBFWpfToolkit.Helpers.MbNotification.html#MBFWpfToolkit_Helpers_MbNotification_ShowInfo_System_String_System_Int32_
+  name: ShowInfo
+  nameWithType: MbNotification.ShowInfo
+  fullName: MBFWpfToolkit.Helpers.MbNotification.ShowInfo
+- uid: MBFWpfToolkit.Helpers.MbNotification.ShowError*
+  commentId: Overload:MBFWpfToolkit.Helpers.MbNotification.ShowError
+  isExternal: true
+  href: MBFWpfToolkit.Helpers.MbNotification.html#MBFWpfToolkit_Helpers_MbNotification_ShowError_System_String_System_Int32_
+  name: ShowError
+  nameWithType: MbNotification.ShowError
+  fullName: MBFWpfToolkit.Helpers.MbNotification.ShowError
+shouldSkipMarkup: true

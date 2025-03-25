@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: Revit.Extensions.Selections
+  commentId: N:Revit.Extensions.Selections
+  id: Revit.Extensions.Selections
+  children:
+  - Revit.Extensions.Selections.SelectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: Revit.Extensions.Selections
+  nameWithType: Revit.Extensions.Selections
+  fullName: Revit.Extensions.Selections
+  type: Namespace
+  assemblies:
+  - Revit.Extensions
+references:
+- uid: Revit.Extensions.Selections.SelectionExtensions
+  commentId: T:Revit.Extensions.Selections.SelectionExtensions
+  isExternal: true
+  href: Revit.Extensions.Selections.SelectionExtensions.html
+  name: SelectionExtensions
+  nameWithType: SelectionExtensions
+  fullName: Revit.Extensions.Selections.SelectionExtensions
+shouldSkipMarkup: true

@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Data.SelectionFilters
+  commentId: N:MBF.Revit.Data.SelectionFilters
+  id: MBF.Revit.Data.SelectionFilters
+  children:
+  - MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter
+  langs:
+  - csharp
+  - vb
+  name: MBF.Revit.Data.SelectionFilters
+  nameWithType: MBF.Revit.Data.SelectionFilters
+  fullName: MBF.Revit.Data.SelectionFilters
+  type: Namespace
+  assemblies:
+  - MBF.Revit.Data
+references:
+- uid: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter
+  commentId: T:MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter
+  isExternal: true
+  href: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.html
+  name: DynamicCategorySelectionFilter
+  nameWithType: DynamicCategorySelectionFilter
+  fullName: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter
+shouldSkipMarkup: true

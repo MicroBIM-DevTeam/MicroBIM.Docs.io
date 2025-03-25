@@ -1,0 +1,99 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Attributes
+  commentId: N:MB.Common.Attributes
+  id: MB.Common.Attributes
+  children:
+  - MB.Common.Attributes.ErrorInformationAttribute
+  - MB.Common.Attributes.GuidAttribute
+  - MB.Common.Attributes.RequiredSharedParametersAttribute
+  - MB.Common.Attributes.RevitCategoriesAttribute
+  - MB.Common.Attributes.SharedParameterTypeAttribute
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.Attributes
+  nameWithType: MB.Common.Attributes
+  fullName: MB.Common.Attributes
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.Attributes.ErrorInformationAttribute
+  commentId: T:MB.Common.Attributes.ErrorInformationAttribute
+  parent: MB.Common.Attributes
+  isExternal: true
+  href: MB.Common.Attributes.ErrorInformationAttribute.html
+  name: ErrorInformationAttribute
+  nameWithType: ErrorInformationAttribute
+  fullName: MB.Common.Attributes.ErrorInformationAttribute
+- uid: MB.Common.Attributes.GuidAttribute
+  commentId: T:MB.Common.Attributes.GuidAttribute
+  parent: MB.Common.Attributes
+  isExternal: true
+  href: MB.Common.Attributes.GuidAttribute.html
+  name: GuidAttribute
+  nameWithType: GuidAttribute
+  fullName: MB.Common.Attributes.GuidAttribute
+- uid: MB.Common.Attributes.RequiredSharedParametersAttribute
+  commentId: T:MB.Common.Attributes.RequiredSharedParametersAttribute
+  parent: MB.Common.Attributes
+  isExternal: true
+  href: MB.Common.Attributes.RequiredSharedParametersAttribute.html
+  name: RequiredSharedParametersAttribute
+  nameWithType: RequiredSharedParametersAttribute
+  fullName: MB.Common.Attributes.RequiredSharedParametersAttribute
+- uid: MB.Common.Attributes.RevitCategoriesAttribute
+  commentId: T:MB.Common.Attributes.RevitCategoriesAttribute
+  parent: MB.Common.Attributes
+  isExternal: true
+  href: MB.Common.Attributes.RevitCategoriesAttribute.html
+  name: RevitCategoriesAttribute
+  nameWithType: RevitCategoriesAttribute
+  fullName: MB.Common.Attributes.RevitCategoriesAttribute
+- uid: MB.Common.Attributes.SharedParameterTypeAttribute
+  commentId: T:MB.Common.Attributes.SharedParameterTypeAttribute
+  parent: MB.Common.Attributes
+  isExternal: true
+  href: MB.Common.Attributes.SharedParameterTypeAttribute.html
+  name: SharedParameterTypeAttribute
+  nameWithType: SharedParameterTypeAttribute
+  fullName: MB.Common.Attributes.SharedParameterTypeAttribute
+- uid: MB.Common.Attributes
+  commentId: N:MB.Common.Attributes
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Attributes
+  nameWithType: MB.Common.Attributes
+  fullName: MB.Common.Attributes
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Attributes
+    name: Attributes
+    isExternal: true
+    href: MB.Common.Attributes.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Attributes
+    name: Attributes
+    isExternal: true
+    href: MB.Common.Attributes.html
+shouldSkipMarkup: true

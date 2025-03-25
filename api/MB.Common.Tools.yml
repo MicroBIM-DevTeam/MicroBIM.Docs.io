@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Tools
+  commentId: N:MB.Common.Tools
+  id: MB.Common.Tools
+  children:
+  - MB.Common.Tools.MbfTool
+  - MB.Common.Tools.MbfToolExtensions
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.Tools
+  nameWithType: MB.Common.Tools
+  fullName: MB.Common.Tools
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.Tools.MbfTool
+  commentId: T:MB.Common.Tools.MbfTool
+  parent: MB.Common.Tools
+  isExternal: true
+  href: MB.Common.Tools.MbfTool.html
+  name: MbfTool
+  nameWithType: MbfTool
+  fullName: MB.Common.Tools.MbfTool
+- uid: MB.Common.Tools.MbfToolExtensions
+  commentId: T:MB.Common.Tools.MbfToolExtensions
+  parent: MB.Common.Tools
+  isExternal: true
+  href: MB.Common.Tools.MbfToolExtensions.html
+  name: MbfToolExtensions
+  nameWithType: MbfToolExtensions
+  fullName: MB.Common.Tools.MbfToolExtensions
+- uid: MB.Common.Tools
+  commentId: N:MB.Common.Tools
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Tools
+  nameWithType: MB.Common.Tools
+  fullName: MB.Common.Tools
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Tools
+    name: Tools
+    isExternal: true
+    href: MB.Common.Tools.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Tools
+    name: Tools
+    isExternal: true
+    href: MB.Common.Tools.html
+shouldSkipMarkup: true

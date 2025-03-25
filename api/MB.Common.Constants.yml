@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Constants
+  commentId: N:MB.Common.Constants
+  id: MB.Common.Constants
+  children:
+  - MB.Common.Constants.FilePaths
+  - MB.Common.Constants.MbErrorMessages
+  - MB.Common.Constants.MbfFiles
+  - MB.Common.Constants.MbfGroups
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.Constants
+  nameWithType: MB.Common.Constants
+  fullName: MB.Common.Constants
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.Constants.FilePaths
+  commentId: T:MB.Common.Constants.FilePaths
+  isExternal: true
+  href: MB.Common.Constants.FilePaths.html
+  name: FilePaths
+  nameWithType: FilePaths
+  fullName: MB.Common.Constants.FilePaths
+- uid: MB.Common.Constants.MbErrorMessages
+  commentId: T:MB.Common.Constants.MbErrorMessages
+  isExternal: true
+  href: MB.Common.Constants.MbErrorMessages.html
+  name: MbErrorMessages
+  nameWithType: MbErrorMessages
+  fullName: MB.Common.Constants.MbErrorMessages
+- uid: MB.Common.Constants.MbfFiles
+  commentId: T:MB.Common.Constants.MbfFiles
+  isExternal: true
+  href: MB.Common.Constants.MbfFiles.html
+  name: MbfFiles
+  nameWithType: MbfFiles
+  fullName: MB.Common.Constants.MbfFiles
+- uid: MB.Common.Constants.MbfGroups
+  commentId: T:MB.Common.Constants.MbfGroups
+  isExternal: true
+  href: MB.Common.Constants.MbfGroups.html
+  name: MbfGroups
+  nameWithType: MbfGroups
+  fullName: MB.Common.Constants.MbfGroups
+shouldSkipMarkup: true

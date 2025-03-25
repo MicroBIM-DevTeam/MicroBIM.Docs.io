@@ -1,0 +1,94 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Utils.Result
+  commentId: N:MB.Common.Utils.Result
+  id: MB.Common.Utils.Result
+  children:
+  - MB.Common.Utils.Result.MbResult`1
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.Utils.Result
+  nameWithType: MB.Common.Utils.Result
+  fullName: MB.Common.Utils.Result
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.Utils.Result.MbResult`1
+  commentId: T:MB.Common.Utils.Result.MbResult`1
+  parent: MB.Common.Utils.Result
+  isExternal: true
+  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+  name: MbResult<T>
+  nameWithType: MbResult<T>
+  fullName: MB.Common.Utils.Result.MbResult<T>
+  nameWithType.vb: MbResult(Of T)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of T)
+  name.vb: MbResult(Of T)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MB.Common.Utils.Result
+  commentId: N:MB.Common.Utils.Result
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Utils.Result
+  nameWithType: MB.Common.Utils.Result
+  fullName: MB.Common.Utils.Result
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+shouldSkipMarkup: true

@@ -1,0 +1,636 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Helpers.MbResourceHelper
+  commentId: T:MBFWpfToolkit.Helpers.MbResourceHelper
+  id: MbResourceHelper
+  parent: MBFWpfToolkit.Helpers
+  children:
+  - MBFWpfToolkit.Helpers.MbResourceHelper.#ctor
+  - MBFWpfToolkit.Helpers.MbResourceHelper.GetResource``1(System.String)
+  - MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin(MBFWpfToolkit.Constants.SkinType)
+  - MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin(System.Reflection.Assembly,System.String,MBFWpfToolkit.Constants.SkinType)
+  - MBFWpfToolkit.Helpers.MbResourceHelper.GetStandaloneTheme
+  - MBFWpfToolkit.Helpers.MbResourceHelper.GetTheme
+  langs:
+  - csharp
+  - vb
+  name: MbResourceHelper
+  nameWithType: MbResourceHelper
+  fullName: MBFWpfToolkit.Helpers.MbResourceHelper
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbResourceHelper.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Helpers
+  summary: 资源帮助类
+  example: []
+  syntax:
+    content: public class MbResourceHelper
+    content.vb: Public Class MbResourceHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBFWpfToolkit.Helpers.MbResourceHelper.GetResource``1(System.String)
+  commentId: M:MBFWpfToolkit.Helpers.MbResourceHelper.GetResource``1(System.String)
+  id: GetResource``1(System.String)
+  parent: MBFWpfToolkit.Helpers.MbResourceHelper
+  langs:
+  - csharp
+  - vb
+  name: GetResource<T>(string)
+  nameWithType: MbResourceHelper.GetResource<T>(string)
+  fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetResource<T>(string)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbResourceHelper.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Helpers
+  summary: 获取资源
+  example: []
+  syntax:
+    content: public static T GetResource<T>(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: ''
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+      description: ''
+    content.vb: Public Shared Function GetResource(Of T)(key As String) As T
+  overload: MBFWpfToolkit.Helpers.MbResourceHelper.GetResource*
+  nameWithType.vb: MbResourceHelper.GetResource(Of T)(String)
+  fullName.vb: MBFWpfToolkit.Helpers.MbResourceHelper.GetResource(Of T)(String)
+  name.vb: GetResource(Of T)(String)
+- uid: MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin(System.Reflection.Assembly,System.String,MBFWpfToolkit.Constants.SkinType)
+  commentId: M:MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin(System.Reflection.Assembly,System.String,MBFWpfToolkit.Constants.SkinType)
+  id: GetSkin(System.Reflection.Assembly,System.String,MBFWpfToolkit.Constants.SkinType)
+  parent: MBFWpfToolkit.Helpers.MbResourceHelper
+  langs:
+  - csharp
+  - vb
+  name: GetSkin(Assembly, string, SkinType)
+  nameWithType: MbResourceHelper.GetSkin(Assembly, string, SkinType)
+  fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin(System.Reflection.Assembly, string, MBFWpfToolkit.Constants.SkinType)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbResourceHelper.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Helpers
+  summary: 获取皮肤
+  example: []
+  syntax:
+    content: public static ResourceDictionary GetSkin(Assembly assembly, string themePath, SkinType skin)
+    parameters:
+    - id: assembly
+      type: System.Reflection.Assembly
+    - id: themePath
+      type: System.String
+    - id: skin
+      type: MBFWpfToolkit.Constants.SkinType
+    return:
+      type: System.Windows.ResourceDictionary
+    content.vb: Public Shared Function GetSkin(assembly As Assembly, themePath As String, skin As SkinType) As ResourceDictionary
+  overload: MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin*
+  nameWithType.vb: MbResourceHelper.GetSkin(Assembly, String, SkinType)
+  fullName.vb: MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin(System.Reflection.Assembly, String, MBFWpfToolkit.Constants.SkinType)
+  name.vb: GetSkin(Assembly, String, SkinType)
+- uid: MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin(MBFWpfToolkit.Constants.SkinType)
+  commentId: M:MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin(MBFWpfToolkit.Constants.SkinType)
+  id: GetSkin(MBFWpfToolkit.Constants.SkinType)
+  parent: MBFWpfToolkit.Helpers.MbResourceHelper
+  langs:
+  - csharp
+  - vb
+  name: GetSkin(SkinType)
+  nameWithType: MbResourceHelper.GetSkin(SkinType)
+  fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin(MBFWpfToolkit.Constants.SkinType)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbResourceHelper.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Helpers
+  summary: get HandyControl skin
+  example: []
+  syntax:
+    content: public static ResourceDictionary GetSkin(SkinType skin)
+    parameters:
+    - id: skin
+      type: MBFWpfToolkit.Constants.SkinType
+      description: ''
+    return:
+      type: System.Windows.ResourceDictionary
+      description: ''
+    content.vb: Public Shared Function GetSkin(skin As SkinType) As ResourceDictionary
+  overload: MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin*
+- uid: MBFWpfToolkit.Helpers.MbResourceHelper.GetTheme
+  commentId: M:MBFWpfToolkit.Helpers.MbResourceHelper.GetTheme
+  id: GetTheme
+  parent: MBFWpfToolkit.Helpers.MbResourceHelper
+  langs:
+  - csharp
+  - vb
+  name: GetTheme()
+  nameWithType: MbResourceHelper.GetTheme()
+  fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetTheme()
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbResourceHelper.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Helpers
+  summary: get HandyControl theme
+  example: []
+  syntax:
+    content: public static ResourceDictionary GetTheme()
+    return:
+      type: System.Windows.ResourceDictionary
+    content.vb: Public Shared Function GetTheme() As ResourceDictionary
+  overload: MBFWpfToolkit.Helpers.MbResourceHelper.GetTheme*
+- uid: MBFWpfToolkit.Helpers.MbResourceHelper.GetStandaloneTheme
+  commentId: M:MBFWpfToolkit.Helpers.MbResourceHelper.GetStandaloneTheme
+  id: GetStandaloneTheme
+  parent: MBFWpfToolkit.Helpers.MbResourceHelper
+  langs:
+  - csharp
+  - vb
+  name: GetStandaloneTheme()
+  nameWithType: MbResourceHelper.GetStandaloneTheme()
+  fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetStandaloneTheme()
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbResourceHelper.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Helpers
+  syntax:
+    content: public static ResourceDictionary GetStandaloneTheme()
+    return:
+      type: System.Windows.ResourceDictionary
+    content.vb: Public Shared Function GetStandaloneTheme() As ResourceDictionary
+  overload: MBFWpfToolkit.Helpers.MbResourceHelper.GetStandaloneTheme*
+- uid: MBFWpfToolkit.Helpers.MbResourceHelper.#ctor
+  commentId: M:MBFWpfToolkit.Helpers.MbResourceHelper.#ctor
+  id: '#ctor'
+  parent: MBFWpfToolkit.Helpers.MbResourceHelper
+  langs:
+  - csharp
+  - vb
+  name: MbResourceHelper()
+  nameWithType: MbResourceHelper.MbResourceHelper()
+  fullName: MBFWpfToolkit.Helpers.MbResourceHelper.MbResourceHelper()
+  type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbResourceHelper.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Helpers
+  syntax:
+    content: public MbResourceHelper()
+    content.vb: Public Sub New()
+  overload: MBFWpfToolkit.Helpers.MbResourceHelper.#ctor*
+  nameWithType.vb: MbResourceHelper.New()
+  fullName.vb: MBFWpfToolkit.Helpers.MbResourceHelper.New()
+  name.vb: New()
+references:
+- uid: MBFWpfToolkit.Helpers
+  commentId: N:MBFWpfToolkit.Helpers
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit.Helpers
+  nameWithType: MBFWpfToolkit.Helpers
+  fullName: MBFWpfToolkit.Helpers
+  spec.csharp:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Helpers
+    name: Helpers
+    isExternal: true
+    href: MBFWpfToolkit.Helpers.html
+  spec.vb:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Helpers
+    name: Helpers
+    isExternal: true
+    href: MBFWpfToolkit.Helpers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MBFWpfToolkit.Helpers.MbResourceHelper.GetResource*
+  commentId: Overload:MBFWpfToolkit.Helpers.MbResourceHelper.GetResource
+  isExternal: true
+  href: MBFWpfToolkit.Helpers.MbResourceHelper.html#MBFWpfToolkit_Helpers_MbResourceHelper_GetResource__1_System_String_
+  name: GetResource
+  nameWithType: MbResourceHelper.GetResource
+  fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetResource
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin*
+  commentId: Overload:MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin
+  isExternal: true
+  href: MBFWpfToolkit.Helpers.MbResourceHelper.html#MBFWpfToolkit_Helpers_MbResourceHelper_GetSkin_System_Reflection_Assembly_System_String_MBFWpfToolkit_Constants_SkinType_
+  name: GetSkin
+  nameWithType: MbResourceHelper.GetSkin
+  fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: MBFWpfToolkit.Constants.SkinType
+  commentId: T:MBFWpfToolkit.Constants.SkinType
+  parent: MBFWpfToolkit.Constants
+  isExternal: true
+  href: MBFWpfToolkit.Constants.SkinType.html
+  name: SkinType
+  nameWithType: SkinType
+  fullName: MBFWpfToolkit.Constants.SkinType
+- uid: System.Windows.ResourceDictionary
+  commentId: T:System.Windows.ResourceDictionary
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.resourcedictionary
+  name: ResourceDictionary
+  nameWithType: ResourceDictionary
+  fullName: System.Windows.ResourceDictionary
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: MBFWpfToolkit.Constants
+  commentId: N:MBFWpfToolkit.Constants
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit.Constants
+  nameWithType: MBFWpfToolkit.Constants
+  fullName: MBFWpfToolkit.Constants
+  spec.csharp:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Constants
+    name: Constants
+    isExternal: true
+    href: MBFWpfToolkit.Constants.html
+  spec.vb:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Constants
+    name: Constants
+    isExternal: true
+    href: MBFWpfToolkit.Constants.html
+- uid: System.Windows
+  commentId: N:System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows
+  nameWithType: System.Windows
+  fullName: System.Windows
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+- uid: MBFWpfToolkit.Helpers.MbResourceHelper.GetTheme*
+  commentId: Overload:MBFWpfToolkit.Helpers.MbResourceHelper.GetTheme
+  isExternal: true
+  href: MBFWpfToolkit.Helpers.MbResourceHelper.html#MBFWpfToolkit_Helpers_MbResourceHelper_GetTheme
+  name: GetTheme
+  nameWithType: MbResourceHelper.GetTheme
+  fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetTheme
+- uid: MBFWpfToolkit.Helpers.MbResourceHelper.GetStandaloneTheme*
+  commentId: Overload:MBFWpfToolkit.Helpers.MbResourceHelper.GetStandaloneTheme
+  isExternal: true
+  href: MBFWpfToolkit.Helpers.MbResourceHelper.html#MBFWpfToolkit_Helpers_MbResourceHelper_GetStandaloneTheme
+  name: GetStandaloneTheme
+  nameWithType: MbResourceHelper.GetStandaloneTheme
+  fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetStandaloneTheme
+- uid: MBFWpfToolkit.Helpers.MbResourceHelper.#ctor*
+  commentId: Overload:MBFWpfToolkit.Helpers.MbResourceHelper.#ctor
+  isExternal: true
+  href: MBFWpfToolkit.Helpers.MbResourceHelper.html#MBFWpfToolkit_Helpers_MbResourceHelper__ctor
+  name: MbResourceHelper
+  nameWithType: MbResourceHelper.MbResourceHelper
+  fullName: MBFWpfToolkit.Helpers.MbResourceHelper.MbResourceHelper
+  nameWithType.vb: MbResourceHelper.New
+  fullName.vb: MBFWpfToolkit.Helpers.MbResourceHelper.New
+  name.vb: New
+shouldSkipMarkup: true

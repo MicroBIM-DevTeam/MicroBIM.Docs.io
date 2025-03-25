@@ -1,0 +1,438 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.ViewLoader.IsolatedViewLoader
+  commentId: T:MB.Common.ViewLoader.IsolatedViewLoader
+  id: IsolatedViewLoader
+  parent: MB.Common.ViewLoader
+  children:
+  - MB.Common.ViewLoader.IsolatedViewLoader.LoadViewFromUri(System.Windows.FrameworkElement,System.String)
+  - MB.Common.ViewLoader.IsolatedViewLoader.LoadView``1(``0)
+  langs:
+  - csharp
+  - vb
+  name: IsolatedViewLoader
+  nameWithType: IsolatedViewLoader
+  fullName: MB.Common.ViewLoader.IsolatedViewLoader
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/ViewLoader/IsolatedViewLoader.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.ViewLoader
+  syntax:
+    content: public static class IsolatedViewLoader
+    content.vb: Public Module IsolatedViewLoader
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MB.Common.ViewLoader.IsolatedViewLoader.LoadViewFromUri(System.Windows.FrameworkElement,System.String)
+  commentId: M:MB.Common.ViewLoader.IsolatedViewLoader.LoadViewFromUri(System.Windows.FrameworkElement,System.String)
+  id: LoadViewFromUri(System.Windows.FrameworkElement,System.String)
+  isExtensionMethod: true
+  parent: MB.Common.ViewLoader.IsolatedViewLoader
+  langs:
+  - csharp
+  - vb
+  name: LoadViewFromUri(FrameworkElement, string)
+  nameWithType: IsolatedViewLoader.LoadViewFromUri(FrameworkElement, string)
+  fullName: MB.Common.ViewLoader.IsolatedViewLoader.LoadViewFromUri(System.Windows.FrameworkElement, string)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/ViewLoader/IsolatedViewLoader.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.ViewLoader
+  syntax:
+    content: public static void LoadViewFromUri(this FrameworkElement view, string baseUri)
+    parameters:
+    - id: view
+      type: System.Windows.FrameworkElement
+    - id: baseUri
+      type: System.String
+    content.vb: Public Shared Sub LoadViewFromUri(view As FrameworkElement, baseUri As String)
+  overload: MB.Common.ViewLoader.IsolatedViewLoader.LoadViewFromUri*
+  nameWithType.vb: IsolatedViewLoader.LoadViewFromUri(FrameworkElement, String)
+  fullName.vb: MB.Common.ViewLoader.IsolatedViewLoader.LoadViewFromUri(System.Windows.FrameworkElement, String)
+  name.vb: LoadViewFromUri(FrameworkElement, String)
+- uid: MB.Common.ViewLoader.IsolatedViewLoader.LoadView``1(``0)
+  commentId: M:MB.Common.ViewLoader.IsolatedViewLoader.LoadView``1(``0)
+  id: LoadView``1(``0)
+  isExtensionMethod: true
+  parent: MB.Common.ViewLoader.IsolatedViewLoader
+  langs:
+  - csharp
+  - vb
+  name: LoadView<T>(T)
+  nameWithType: IsolatedViewLoader.LoadView<T>(T)
+  fullName: MB.Common.ViewLoader.IsolatedViewLoader.LoadView<T>(T)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/ViewLoader/IsolatedViewLoader.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.ViewLoader
+  syntax:
+    content: 'public static void LoadView<T>(this T view) where T : FrameworkElement'
+    parameters:
+    - id: view
+      type: '{T}'
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub LoadView(Of T As FrameworkElement)(view As T)
+  overload: MB.Common.ViewLoader.IsolatedViewLoader.LoadView*
+  nameWithType.vb: IsolatedViewLoader.LoadView(Of T)(T)
+  fullName.vb: MB.Common.ViewLoader.IsolatedViewLoader.LoadView(Of T)(T)
+  name.vb: LoadView(Of T)(T)
+references:
+- uid: MB.Common.ViewLoader
+  commentId: N:MB.Common.ViewLoader
+  isExternal: true
+  href: MB.html
+  name: MB.Common.ViewLoader
+  nameWithType: MB.Common.ViewLoader
+  fullName: MB.Common.ViewLoader
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.ViewLoader
+    name: ViewLoader
+    isExternal: true
+    href: MB.Common.ViewLoader.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.ViewLoader
+    name: ViewLoader
+    isExternal: true
+    href: MB.Common.ViewLoader.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MB.Common.ViewLoader.IsolatedViewLoader.LoadViewFromUri*
+  commentId: Overload:MB.Common.ViewLoader.IsolatedViewLoader.LoadViewFromUri
+  isExternal: true
+  href: MB.Common.ViewLoader.IsolatedViewLoader.html#MB_Common_ViewLoader_IsolatedViewLoader_LoadViewFromUri_System_Windows_FrameworkElement_System_String_
+  name: LoadViewFromUri
+  nameWithType: IsolatedViewLoader.LoadViewFromUri
+  fullName: MB.Common.ViewLoader.IsolatedViewLoader.LoadViewFromUri
+- uid: System.Windows.FrameworkElement
+  commentId: T:System.Windows.FrameworkElement
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement
+  name: FrameworkElement
+  nameWithType: FrameworkElement
+  fullName: System.Windows.FrameworkElement
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Windows
+  commentId: N:System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows
+  nameWithType: System.Windows
+  fullName: System.Windows
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+- uid: MB.Common.ViewLoader.IsolatedViewLoader.LoadView*
+  commentId: Overload:MB.Common.ViewLoader.IsolatedViewLoader.LoadView
+  isExternal: true
+  href: MB.Common.ViewLoader.IsolatedViewLoader.html#MB_Common_ViewLoader_IsolatedViewLoader_LoadView__1___0_
+  name: LoadView
+  nameWithType: IsolatedViewLoader.LoadView
+  fullName: MB.Common.ViewLoader.IsolatedViewLoader.LoadView
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+shouldSkipMarkup: true

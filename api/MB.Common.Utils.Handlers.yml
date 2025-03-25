@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Utils.Handlers
+  commentId: N:MB.Common.Utils.Handlers
+  id: MB.Common.Utils.Handlers
+  children:
+  - MB.Common.Utils.Handlers.MbHandlers
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.Utils.Handlers
+  nameWithType: MB.Common.Utils.Handlers
+  fullName: MB.Common.Utils.Handlers
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.Utils.Handlers.MbHandlers
+  commentId: T:MB.Common.Utils.Handlers.MbHandlers
+  isExternal: true
+  href: MB.Common.Utils.Handlers.MbHandlers.html
+  name: MbHandlers
+  nameWithType: MbHandlers
+  fullName: MB.Common.Utils.Handlers.MbHandlers
+shouldSkipMarkup: true

@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Services
+  commentId: N:MB.Common.Services
+  id: MB.Common.Services
+  children:
+  - MB.Common.Services.MailService
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.Services
+  nameWithType: MB.Common.Services
+  fullName: MB.Common.Services
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.Services.MailService
+  commentId: T:MB.Common.Services.MailService
+  isExternal: true
+  href: MB.Common.Services.MailService.html
+  name: MailService
+  nameWithType: MailService
+  fullName: MB.Common.Services.MailService
+shouldSkipMarkup: true

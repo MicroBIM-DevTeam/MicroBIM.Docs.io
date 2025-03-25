@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.ValidationRules
+  commentId: N:MBFWpfToolkit.ValidationRules
+  id: MBFWpfToolkit.ValidationRules
+  children:
+  - MBFWpfToolkit.ValidationRules.DecimalValidationRule
+  - MBFWpfToolkit.ValidationRules.DoubleValidationRule
+  - MBFWpfToolkit.ValidationRules.IntegerValidationRule
+  - MBFWpfToolkit.ValidationRules.StringValidationRule
+  langs:
+  - csharp
+  - vb
+  name: MBFWpfToolkit.ValidationRules
+  nameWithType: MBFWpfToolkit.ValidationRules
+  fullName: MBFWpfToolkit.ValidationRules
+  type: Namespace
+  assemblies:
+  - MBFWpfToolkit
+references:
+- uid: MBFWpfToolkit.ValidationRules.DecimalValidationRule
+  commentId: T:MBFWpfToolkit.ValidationRules.DecimalValidationRule
+  isExternal: true
+  href: MBFWpfToolkit.ValidationRules.DecimalValidationRule.html
+  name: DecimalValidationRule
+  nameWithType: DecimalValidationRule
+  fullName: MBFWpfToolkit.ValidationRules.DecimalValidationRule
+- uid: MBFWpfToolkit.ValidationRules.DoubleValidationRule
+  commentId: T:MBFWpfToolkit.ValidationRules.DoubleValidationRule
+  isExternal: true
+  href: MBFWpfToolkit.ValidationRules.DoubleValidationRule.html
+  name: DoubleValidationRule
+  nameWithType: DoubleValidationRule
+  fullName: MBFWpfToolkit.ValidationRules.DoubleValidationRule
+- uid: MBFWpfToolkit.ValidationRules.IntegerValidationRule
+  commentId: T:MBFWpfToolkit.ValidationRules.IntegerValidationRule
+  isExternal: true
+  href: MBFWpfToolkit.ValidationRules.IntegerValidationRule.html
+  name: IntegerValidationRule
+  nameWithType: IntegerValidationRule
+  fullName: MBFWpfToolkit.ValidationRules.IntegerValidationRule
+- uid: MBFWpfToolkit.ValidationRules.StringValidationRule
+  commentId: T:MBFWpfToolkit.ValidationRules.StringValidationRule
+  isExternal: true
+  href: MBFWpfToolkit.ValidationRules.StringValidationRule.html
+  name: StringValidationRule
+  nameWithType: StringValidationRule
+  fullName: MBFWpfToolkit.ValidationRules.StringValidationRule
+shouldSkipMarkup: true

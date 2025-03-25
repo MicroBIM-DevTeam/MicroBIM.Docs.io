@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.AttachedProperties
+  commentId: N:MBFWpfToolkit.AttachedProperties
+  id: MBFWpfToolkit.AttachedProperties
+  children:
+  - MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior
+  - MBFWpfToolkit.AttachedProperties.HelpAssistant
+  - MBFWpfToolkit.AttachedProperties.LocalizationHelper
+  langs:
+  - csharp
+  - vb
+  name: MBFWpfToolkit.AttachedProperties
+  nameWithType: MBFWpfToolkit.AttachedProperties
+  fullName: MBFWpfToolkit.AttachedProperties
+  type: Namespace
+  assemblies:
+  - MBFWpfToolkit
+references:
+- uid: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior
+  commentId: T:MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior
+  isExternal: true
+  href: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.html
+  name: ComboBoxSearchBehavior
+  nameWithType: ComboBoxSearchBehavior
+  fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior
+- uid: MBFWpfToolkit.AttachedProperties.HelpAssistant
+  commentId: T:MBFWpfToolkit.AttachedProperties.HelpAssistant
+  isExternal: true
+  href: MBFWpfToolkit.AttachedProperties.HelpAssistant.html
+  name: HelpAssistant
+  nameWithType: HelpAssistant
+  fullName: MBFWpfToolkit.AttachedProperties.HelpAssistant
+- uid: MBFWpfToolkit.AttachedProperties.LocalizationHelper
+  commentId: T:MBFWpfToolkit.AttachedProperties.LocalizationHelper
+  isExternal: true
+  href: MBFWpfToolkit.AttachedProperties.LocalizationHelper.html
+  name: LocalizationHelper
+  nameWithType: LocalizationHelper
+  fullName: MBFWpfToolkit.AttachedProperties.LocalizationHelper
+shouldSkipMarkup: true

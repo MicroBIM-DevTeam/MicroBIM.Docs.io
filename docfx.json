@@ -1,0 +1,89 @@
+{
+    "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+    "metadata": [
+        {
+            "src": [
+                {
+                    "src": "C:/Users/MB-KFatihy/source/repos/MicroBIM-DevTeam/MBF.Revit.Data/bin/Debug R23/net48",
+                    "files": [
+                        "MBF.Revit.Data.dll",
+                        "MBF.Revit.Data.xml"
+                    ],
+                    "dest": "api/MBF.Revit.Data"
+                },
+                {
+                    "src": "C:/Users/MB-KFatihy/source/repos/MicroBIM-DevTeam/MB.Common/bin/Debug R23/net48",
+                    "files": [
+                        "MB.Common.dll",
+                        "MB.Common.xml"
+                    ],
+                    "dest": "api/MB.Common"
+                },
+                {
+                    "src": "C:/Users/MB-KFatihy/source/repos/MicroBIM-DevTeam/MBF.Revit.Creation/bin/Debug R23/net48",
+                    "files": [
+                        "MBF.Revit.Creation.dll",
+                        "MBF.Revit.Creation.xml"
+                    ]
+                },
+                {
+                    "src": "C:/Users/MB-KFatihy/source/repos/MicroBIM-DevTeam/MBF.Revit.Geometry/bin/Debug R23/net48",
+                    "files": [
+                        "MBF.Revit.Geometry.dll",
+                        "MBF.Revit.Geometry.xml"
+                    ],
+                    "dest": "api/MB.Common"
+                },
+                {
+                    "src": "C:/Users/MB-KFatihy/source/repos/MicroBIM-DevTeam/MBFRevitExtensions/bin/Debug R23/net48",
+                    "files": [
+                        "Revit.Extensions.dll",
+                        "Revit.Extensions.xml"
+                    ],
+                    "dest": "api/MB.Common"
+                },
+                {
+                    "src": "C:/Users/MB-KFatihy/source/repos/MicroBIM-DevTeam/MBFWpfToolkit/obj/Debug/net48",
+                    "files": [
+                        "MBFWpfToolkit.dll",
+                        "MBFWpfToolkit.xml"
+                    ]
+                }
+            ],
+            "dest": "api",
+            "references": [
+                "C:/Program Files/Autodesk/Revit 2023/RevitAPI.dll",
+                "C:/Program Files/Autodesk/Revit 2023/RevitAPIUI.dll"
+            ],
+
+            "shouldSkipMarkup": true
+        }
+    ],
+    "build": {
+        "content": [
+            { "files": [ "api/**.yml" ] },
+            { "files": [ "docs/**.yml" ] },
+            { "files": [ "About/**.yml" ] },
+            { "files": [ "index.md", "toc.yml" ] }
+        ],
+        "resource": [
+            {
+                "files": [ "images/**" ]
+            }
+        ],
+        "overwrite": [],
+        "template": [ "default", "modern" ],
+        "output": "_site",
+        "globalMetadata": {
+            "_appName": "MicroBIM",
+            "_appTitle": "MIcroBIM Docs",
+            "_appFaviconPath": "images/logo.ico",
+            "_appLogoPath": "images/MicroBimLogo.png",
+            "_disableContribution": true,
+            "_appFooter": "© 2025 MicroBIM. All rights reserved.",
+            "_enableSearch": true,
+    
+            "pdf": true
+        }
+    }
+}

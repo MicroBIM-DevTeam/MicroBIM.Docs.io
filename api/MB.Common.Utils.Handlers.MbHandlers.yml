@@ -1,0 +1,468 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Utils.Handlers.MbHandlers
+  commentId: T:MB.Common.Utils.Handlers.MbHandlers
+  id: MbHandlers
+  parent: MB.Common.Utils.Handlers
+  children:
+  - MB.Common.Utils.Handlers.MbHandlers.AsyncExternalEventHandler
+  - MB.Common.Utils.Handlers.MbHandlers.ExternalEventHandler
+  - MB.Common.Utils.Handlers.MbHandlers.RegisterHandlers
+  langs:
+  - csharp
+  - vb
+  name: MbHandlers
+  nameWithType: MbHandlers
+  fullName: MB.Common.Utils.Handlers.MbHandlers
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Handlers/MbHandlers.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Utils.Handlers
+  syntax:
+    content: public static class MbHandlers
+    content.vb: Public Module MbHandlers
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MB.Common.Utils.Handlers.MbHandlers.RegisterHandlers
+  commentId: M:MB.Common.Utils.Handlers.MbHandlers.RegisterHandlers
+  id: RegisterHandlers
+  parent: MB.Common.Utils.Handlers.MbHandlers
+  langs:
+  - csharp
+  - vb
+  name: RegisterHandlers()
+  nameWithType: MbHandlers.RegisterHandlers()
+  fullName: MB.Common.Utils.Handlers.MbHandlers.RegisterHandlers()
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Handlers/MbHandlers.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Utils.Handlers
+  syntax:
+    content: public static void RegisterHandlers()
+    content.vb: Public Shared Sub RegisterHandlers()
+  overload: MB.Common.Utils.Handlers.MbHandlers.RegisterHandlers*
+- uid: MB.Common.Utils.Handlers.MbHandlers.ExternalEventHandler
+  commentId: P:MB.Common.Utils.Handlers.MbHandlers.ExternalEventHandler
+  id: ExternalEventHandler
+  parent: MB.Common.Utils.Handlers.MbHandlers
+  langs:
+  - csharp
+  - vb
+  name: ExternalEventHandler
+  nameWithType: MbHandlers.ExternalEventHandler
+  fullName: MB.Common.Utils.Handlers.MbHandlers.ExternalEventHandler
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Handlers/MbHandlers.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Utils.Handlers
+  syntax:
+    content: public static ActionEventHandler ExternalEventHandler { get; set; }
+    parameters: []
+    return:
+      type: Nice3point.Revit.Toolkit.External.Handlers.ActionEventHandler
+    content.vb: Public Shared Property ExternalEventHandler As ActionEventHandler
+  overload: MB.Common.Utils.Handlers.MbHandlers.ExternalEventHandler*
+- uid: MB.Common.Utils.Handlers.MbHandlers.AsyncExternalEventHandler
+  commentId: P:MB.Common.Utils.Handlers.MbHandlers.AsyncExternalEventHandler
+  id: AsyncExternalEventHandler
+  parent: MB.Common.Utils.Handlers.MbHandlers
+  langs:
+  - csharp
+  - vb
+  name: AsyncExternalEventHandler
+  nameWithType: MbHandlers.AsyncExternalEventHandler
+  fullName: MB.Common.Utils.Handlers.MbHandlers.AsyncExternalEventHandler
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Handlers/MbHandlers.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Utils.Handlers
+  syntax:
+    content: public static AsyncEventHandler AsyncExternalEventHandler { get; set; }
+    parameters: []
+    return:
+      type: Nice3point.Revit.Toolkit.External.Handlers.AsyncEventHandler
+    content.vb: Public Shared Property AsyncExternalEventHandler As AsyncEventHandler
+  overload: MB.Common.Utils.Handlers.MbHandlers.AsyncExternalEventHandler*
+references:
+- uid: MB.Common.Utils.Handlers
+  commentId: N:MB.Common.Utils.Handlers
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Utils.Handlers
+  nameWithType: MB.Common.Utils.Handlers
+  fullName: MB.Common.Utils.Handlers
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Handlers
+    name: Handlers
+    isExternal: true
+    href: MB.Common.Utils.Handlers.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Handlers
+    name: Handlers
+    isExternal: true
+    href: MB.Common.Utils.Handlers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MB.Common.Utils.Handlers.MbHandlers.RegisterHandlers*
+  commentId: Overload:MB.Common.Utils.Handlers.MbHandlers.RegisterHandlers
+  isExternal: true
+  href: MB.Common.Utils.Handlers.MbHandlers.html#MB_Common_Utils_Handlers_MbHandlers_RegisterHandlers
+  name: RegisterHandlers
+  nameWithType: MbHandlers.RegisterHandlers
+  fullName: MB.Common.Utils.Handlers.MbHandlers.RegisterHandlers
+- uid: MB.Common.Utils.Handlers.MbHandlers.ExternalEventHandler*
+  commentId: Overload:MB.Common.Utils.Handlers.MbHandlers.ExternalEventHandler
+  isExternal: true
+  href: MB.Common.Utils.Handlers.MbHandlers.html#MB_Common_Utils_Handlers_MbHandlers_ExternalEventHandler
+  name: ExternalEventHandler
+  nameWithType: MbHandlers.ExternalEventHandler
+  fullName: MB.Common.Utils.Handlers.MbHandlers.ExternalEventHandler
+- uid: Nice3point.Revit.Toolkit.External.Handlers.ActionEventHandler
+  commentId: T:Nice3point.Revit.Toolkit.External.Handlers.ActionEventHandler
+  parent: Nice3point.Revit.Toolkit.External.Handlers
+  isExternal: true
+  name: ActionEventHandler
+  nameWithType: ActionEventHandler
+  fullName: Nice3point.Revit.Toolkit.External.Handlers.ActionEventHandler
+- uid: Nice3point.Revit.Toolkit.External.Handlers
+  commentId: N:Nice3point.Revit.Toolkit.External.Handlers
+  isExternal: true
+  name: Nice3point.Revit.Toolkit.External.Handlers
+  nameWithType: Nice3point.Revit.Toolkit.External.Handlers
+  fullName: Nice3point.Revit.Toolkit.External.Handlers
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Nice3point.Revit.Toolkit
+    name: Toolkit
+    isExternal: true
+  - name: .
+  - uid: Nice3point.Revit.Toolkit.External
+    name: External
+    isExternal: true
+  - name: .
+  - uid: Nice3point.Revit.Toolkit.External.Handlers
+    name: Handlers
+    isExternal: true
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+  - name: .
+  - uid: Nice3point.Revit.Toolkit
+    name: Toolkit
+    isExternal: true
+  - name: .
+  - uid: Nice3point.Revit.Toolkit.External
+    name: External
+    isExternal: true
+  - name: .
+  - uid: Nice3point.Revit.Toolkit.External.Handlers
+    name: Handlers
+    isExternal: true
+- uid: MB.Common.Utils.Handlers.MbHandlers.AsyncExternalEventHandler*
+  commentId: Overload:MB.Common.Utils.Handlers.MbHandlers.AsyncExternalEventHandler
+  isExternal: true
+  href: MB.Common.Utils.Handlers.MbHandlers.html#MB_Common_Utils_Handlers_MbHandlers_AsyncExternalEventHandler
+  name: AsyncExternalEventHandler
+  nameWithType: MbHandlers.AsyncExternalEventHandler
+  fullName: MB.Common.Utils.Handlers.MbHandlers.AsyncExternalEventHandler
+- uid: Nice3point.Revit.Toolkit.External.Handlers.AsyncEventHandler
+  commentId: T:Nice3point.Revit.Toolkit.External.Handlers.AsyncEventHandler
+  parent: Nice3point.Revit.Toolkit.External.Handlers
+  isExternal: true
+  name: AsyncEventHandler
+  nameWithType: AsyncEventHandler
+  fullName: Nice3point.Revit.Toolkit.External.Handlers.AsyncEventHandler
+shouldSkipMarkup: true

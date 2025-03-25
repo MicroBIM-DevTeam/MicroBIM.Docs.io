@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Utils.Attributes
+  commentId: N:MB.Common.Utils.Attributes
+  id: MB.Common.Utils.Attributes
+  children:
+  - MB.Common.Utils.Attributes.AttributeUtils
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.Utils.Attributes
+  nameWithType: MB.Common.Utils.Attributes
+  fullName: MB.Common.Utils.Attributes
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.Utils.Attributes.AttributeUtils
+  commentId: T:MB.Common.Utils.Attributes.AttributeUtils
+  isExternal: true
+  href: MB.Common.Utils.Attributes.AttributeUtils.html
+  name: AttributeUtils
+  nameWithType: AttributeUtils
+  fullName: MB.Common.Utils.Attributes.AttributeUtils
+shouldSkipMarkup: true

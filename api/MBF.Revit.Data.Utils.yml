@@ -1,0 +1,81 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Data.Utils
+  commentId: N:MBF.Revit.Data.Utils
+  id: MBF.Revit.Data.Utils
+  children:
+  - MBF.Revit.Data.Utils.MbFlexPipesUtils
+  - MBF.Revit.Data.Utils.MbParameterUtils
+  - MBF.Revit.Data.Utils.MbPipeAccessoriesUtils
+  - MBF.Revit.Data.Utils.MbPipeFittingsUtils
+  - MBF.Revit.Data.Utils.MbPipesUtils
+  - MBF.Revit.Data.Utils.MbSprinklersUtils
+  - MBF.Revit.Data.Utils.MbUnitUtils
+  - MBF.Revit.Data.Utils.MbViewUtils
+  langs:
+  - csharp
+  - vb
+  name: MBF.Revit.Data.Utils
+  nameWithType: MBF.Revit.Data.Utils
+  fullName: MBF.Revit.Data.Utils
+  type: Namespace
+  assemblies:
+  - MBF.Revit.Data
+references:
+- uid: MBF.Revit.Data.Utils.MbFlexPipesUtils
+  commentId: T:MBF.Revit.Data.Utils.MbFlexPipesUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbFlexPipesUtils.html
+  name: MbFlexPipesUtils
+  nameWithType: MbFlexPipesUtils
+  fullName: MBF.Revit.Data.Utils.MbFlexPipesUtils
+- uid: MBF.Revit.Data.Utils.MbParameterUtils
+  commentId: T:MBF.Revit.Data.Utils.MbParameterUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbParameterUtils.html
+  name: MbParameterUtils
+  nameWithType: MbParameterUtils
+  fullName: MBF.Revit.Data.Utils.MbParameterUtils
+- uid: MBF.Revit.Data.Utils.MbPipeAccessoriesUtils
+  commentId: T:MBF.Revit.Data.Utils.MbPipeAccessoriesUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbPipeAccessoriesUtils.html
+  name: MbPipeAccessoriesUtils
+  nameWithType: MbPipeAccessoriesUtils
+  fullName: MBF.Revit.Data.Utils.MbPipeAccessoriesUtils
+- uid: MBF.Revit.Data.Utils.MbPipeFittingsUtils
+  commentId: T:MBF.Revit.Data.Utils.MbPipeFittingsUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbPipeFittingsUtils.html
+  name: MbPipeFittingsUtils
+  nameWithType: MbPipeFittingsUtils
+  fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils
+- uid: MBF.Revit.Data.Utils.MbPipesUtils
+  commentId: T:MBF.Revit.Data.Utils.MbPipesUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbPipesUtils.html
+  name: MbPipesUtils
+  nameWithType: MbPipesUtils
+  fullName: MBF.Revit.Data.Utils.MbPipesUtils
+- uid: MBF.Revit.Data.Utils.MbSprinklersUtils
+  commentId: T:MBF.Revit.Data.Utils.MbSprinklersUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbSprinklersUtils.html
+  name: MbSprinklersUtils
+  nameWithType: MbSprinklersUtils
+  fullName: MBF.Revit.Data.Utils.MbSprinklersUtils
+- uid: MBF.Revit.Data.Utils.MbUnitUtils
+  commentId: T:MBF.Revit.Data.Utils.MbUnitUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbUnitUtils.html
+  name: MbUnitUtils
+  nameWithType: MbUnitUtils
+  fullName: MBF.Revit.Data.Utils.MbUnitUtils
+- uid: MBF.Revit.Data.Utils.MbViewUtils
+  commentId: T:MBF.Revit.Data.Utils.MbViewUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbViewUtils.html
+  name: MbViewUtils
+  nameWithType: MbViewUtils
+  fullName: MBF.Revit.Data.Utils.MbViewUtils
+shouldSkipMarkup: true

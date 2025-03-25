@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: Revit.Extensions.Extensions
+  commentId: N:Revit.Extensions.Extensions
+  id: Revit.Extensions.Extensions
+  children:
+  - Revit.Extensions.Extensions.CollectionExtensions
+  - Revit.Extensions.Extensions.DocumentExtensions
+  - Revit.Extensions.Extensions.ViewExtensions
+  langs:
+  - csharp
+  - vb
+  name: Revit.Extensions.Extensions
+  nameWithType: Revit.Extensions.Extensions
+  fullName: Revit.Extensions.Extensions
+  type: Namespace
+  assemblies:
+  - Revit.Extensions
+references:
+- uid: Revit.Extensions.Extensions.CollectionExtensions
+  commentId: T:Revit.Extensions.Extensions.CollectionExtensions
+  isExternal: true
+  href: Revit.Extensions.Extensions.CollectionExtensions.html
+  name: CollectionExtensions
+  nameWithType: CollectionExtensions
+  fullName: Revit.Extensions.Extensions.CollectionExtensions
+- uid: Revit.Extensions.Extensions.DocumentExtensions
+  commentId: T:Revit.Extensions.Extensions.DocumentExtensions
+  isExternal: true
+  href: Revit.Extensions.Extensions.DocumentExtensions.html
+  name: DocumentExtensions
+  nameWithType: DocumentExtensions
+  fullName: Revit.Extensions.Extensions.DocumentExtensions
+- uid: Revit.Extensions.Extensions.ViewExtensions
+  commentId: T:Revit.Extensions.Extensions.ViewExtensions
+  isExternal: true
+  href: Revit.Extensions.Extensions.ViewExtensions.html
+  name: ViewExtensions
+  nameWithType: ViewExtensions
+  fullName: Revit.Extensions.Extensions.ViewExtensions
+shouldSkipMarkup: true

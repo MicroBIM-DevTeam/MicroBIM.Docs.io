@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Extensions
+  commentId: N:MBFWpfToolkit.Extensions
+  id: MBFWpfToolkit.Extensions
+  children:
+  - MBFWpfToolkit.Extensions.ListExtensions
+  langs:
+  - csharp
+  - vb
+  name: MBFWpfToolkit.Extensions
+  nameWithType: MBFWpfToolkit.Extensions
+  fullName: MBFWpfToolkit.Extensions
+  type: Namespace
+  assemblies:
+  - MBFWpfToolkit
+references:
+- uid: MBFWpfToolkit.Extensions.ListExtensions
+  commentId: T:MBFWpfToolkit.Extensions.ListExtensions
+  isExternal: true
+  href: MBFWpfToolkit.Extensions.ListExtensions.html
+  name: ListExtensions
+  nameWithType: ListExtensions
+  fullName: MBFWpfToolkit.Extensions.ListExtensions
+shouldSkipMarkup: true

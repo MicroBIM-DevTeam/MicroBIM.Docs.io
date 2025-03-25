@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: OnMethodBoundaryAspectCompile
+  commentId: N:OnMethodBoundaryAspectCompile
+  id: OnMethodBoundaryAspectCompile
+  children:
+  - OnMethodBoundaryAspectCompile.MethodInfos
+  langs:
+  - csharp
+  - vb
+  name: OnMethodBoundaryAspectCompile
+  nameWithType: OnMethodBoundaryAspectCompile
+  fullName: OnMethodBoundaryAspectCompile
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: OnMethodBoundaryAspectCompile.MethodInfos
+  commentId: T:OnMethodBoundaryAspectCompile.MethodInfos
+  isExternal: true
+  href: OnMethodBoundaryAspectCompile.MethodInfos.html
+  name: MethodInfos
+  nameWithType: MethodInfos
+  fullName: OnMethodBoundaryAspectCompile.MethodInfos
+shouldSkipMarkup: true

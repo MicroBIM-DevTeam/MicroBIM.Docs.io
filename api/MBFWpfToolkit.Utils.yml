@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Utils
+  commentId: N:MBFWpfToolkit.Utils
+  id: MBFWpfToolkit.Utils
+  children:
+  - MBFWpfToolkit.Utils.WindowUtils
+  langs:
+  - csharp
+  - vb
+  name: MBFWpfToolkit.Utils
+  nameWithType: MBFWpfToolkit.Utils
+  fullName: MBFWpfToolkit.Utils
+  type: Namespace
+  assemblies:
+  - MBFWpfToolkit
+references:
+- uid: MBFWpfToolkit.Utils.WindowUtils
+  commentId: T:MBFWpfToolkit.Utils.WindowUtils
+  isExternal: true
+  href: MBFWpfToolkit.Utils.WindowUtils.html
+  name: WindowUtils
+  nameWithType: WindowUtils
+  fullName: MBFWpfToolkit.Utils.WindowUtils
+shouldSkipMarkup: true

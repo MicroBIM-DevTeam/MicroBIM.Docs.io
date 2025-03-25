@@ -1,0 +1,33 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Controls
+  commentId: N:MBFWpfToolkit.Controls
+  id: MBFWpfToolkit.Controls
+  children:
+  - MBFWpfToolkit.Controls.MbMessageBox
+  - MBFWpfToolkit.Controls.MicroBimSprite
+  langs:
+  - csharp
+  - vb
+  name: MBFWpfToolkit.Controls
+  nameWithType: MBFWpfToolkit.Controls
+  fullName: MBFWpfToolkit.Controls
+  type: Namespace
+  assemblies:
+  - MBFWpfToolkit
+references:
+- uid: MBFWpfToolkit.Controls.MbMessageBox
+  commentId: T:MBFWpfToolkit.Controls.MbMessageBox
+  isExternal: true
+  href: MBFWpfToolkit.Controls.MbMessageBox.html
+  name: MbMessageBox
+  nameWithType: MbMessageBox
+  fullName: MBFWpfToolkit.Controls.MbMessageBox
+- uid: MBFWpfToolkit.Controls.MicroBimSprite
+  commentId: T:MBFWpfToolkit.Controls.MicroBimSprite
+  isExternal: true
+  href: MBFWpfToolkit.Controls.MicroBimSprite.html
+  name: MicroBimSprite
+  nameWithType: MicroBimSprite
+  fullName: MBFWpfToolkit.Controls.MicroBimSprite
+shouldSkipMarkup: true

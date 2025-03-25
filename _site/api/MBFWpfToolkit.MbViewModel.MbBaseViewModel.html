@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MbBaseViewModel | MIcroBIM Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MbBaseViewModel | MIcroBIM Docs ">
+      
+      <meta name="description" content="Base ViewModel class providing theme and language management functionality.">
+      <link rel="icon" href="../images/logo.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/MicroBimLogo.png" alt="MicroBIM">
+            MicroBIM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel">
+
+
+
+  <h1 id="MBFWpfToolkit_MbViewModel_MbBaseViewModel" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel" class="text-break">
+Class MbBaseViewModel  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MBFWpfToolkit.html">MBFWpfToolkit</a>.<a class="xref" href="MBFWpfToolkit.MbViewModel.html">MbViewModel</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MBFWpfToolkit.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary">Base ViewModel class providing theme and language management functionality.</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MbBaseViewModel : ObservableValidator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MbBaseViewModel</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MBFWpfToolkit_MbViewModel_MbBaseViewModel__ctor_" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.#ctor*"></a>
+
+  <h3 id="MBFWpfToolkit_MbViewModel_MbBaseViewModel__ctor" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.#ctor">
+  MbBaseViewModel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Initializes a new instance of the <a class="xref" href="MBFWpfToolkit.MbViewModel.MbBaseViewModel.html">MbBaseViewModel</a> class.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MbBaseViewModel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_Culture_" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.Culture*"></a>
+
+  <h3 id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_Culture" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.Culture">
+  Culture
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Gets or sets the current culture.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CultureInfo Culture { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_IsDark_" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.IsDark*"></a>
+
+  <h3 id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_IsDark" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.IsDark">
+  IsDark
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/obj/Debug/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MBFWpfToolkit.MbViewModel.MbBaseViewModel.g.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDark { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_Item_" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.Item*"></a>
+
+  <h3 id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_Item_System_String_" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.Item(System.String)">
+  this[string]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Indexer to access localized values dynamically.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string this[string key] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd>The key of the localized value.</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd>The localized value or a placeholder if not found.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_MbWindow_" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.MbWindow*"></a>
+
+  <h3 id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_MbWindow" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.MbWindow">
+  MbWindow
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Gets or sets the associated MbfWindow.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MbWindow? MbWindow { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MBFWpfToolkit.MbWindow.html">MbWindow</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_OpenLinkCommand_" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.OpenLinkCommand*"></a>
+
+  <h3 id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_OpenLinkCommand" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.OpenLinkCommand">
+  OpenLinkCommand
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/obj/Debug/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator/MBFWpfToolkit.MbViewModel.MbBaseViewModel.OpenLink.g.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Gets an <span class="xref">CommunityToolkit.Mvvm.Input.IRelayCommand&lt;&gt;</span> instance wrapping <span class="xref">MBFWpfToolkit.MbViewModel.MbBaseViewModel.OpenLink(System.Object)</span>.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRelayCommand&lt;object&gt; OpenLinkCommand { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IRelayCommand</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_SelectedLanguage_" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.SelectedLanguage*"></a>
+
+  <h3 id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_SelectedLanguage" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.SelectedLanguage">
+  SelectedLanguage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Gets or sets the selected language for the application.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CultureInfo SelectedLanguage { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_SupportedLanguages_" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.SupportedLanguages*"></a>
+
+  <h3 id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_SupportedLanguages" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.SupportedLanguages">
+  SupportedLanguages
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Supported languages for the application.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableCollection&lt;CultureInfo&gt; SupportedLanguages { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1">ObservableCollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_SwitchThemeCommand_" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.SwitchThemeCommand*"></a>
+
+  <h3 id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_SwitchThemeCommand" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.SwitchThemeCommand">
+  SwitchThemeCommand
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/obj/Debug/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator/MBFWpfToolkit.MbViewModel.MbBaseViewModel.SwitchTheme.g.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Gets an <span class="xref">CommunityToolkit.Mvvm.Input.IRelayCommand&lt;&gt;</span> instance wrapping <span class="xref">MBFWpfToolkit.MbViewModel.MbBaseViewModel.SwitchTheme(System.Windows.Controls.Primitives.ToggleButton)</span>.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRelayCommand&lt;ToggleButton&gt; SwitchThemeCommand { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IRelayCommand</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.primitives.togglebutton">ToggleButton</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_GetLang_" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.GetLang*"></a>
+
+  <h3 id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_GetLang_System_String_" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.GetLang(System.String)">
+  GetLang(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves a localized string by its key.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetLang(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd>The key of the string to retrieve.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd>The localized string or a placeholder if not found.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_InitializeViewModel_" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.InitializeViewModel*"></a>
+
+  <h3 id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_InitializeViewModel_MBFWpfToolkit_MbWindow_" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.InitializeViewModel(MBFWpfToolkit.MbWindow)">
+  InitializeViewModel(MbWindow)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Initializes the ViewModel with the provided window and sets default values.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeViewModel(MbWindow mbWindow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mbWindow</code> <a class="xref" href="MBFWpfToolkit.MbWindow.html">MbWindow</a></dt>
+    <dd>The window associated with this ViewModel.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_SetLang_" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.SetLang*"></a>
+
+  <h3 id="MBFWpfToolkit_MbViewModel_MbBaseViewModel_SetLang_System_Windows_DependencyObject_System_Windows_DependencyProperty_System_String_" data-uid="MBFWpfToolkit.MbViewModel.MbBaseViewModel.SetLang(System.Windows.DependencyObject,System.Windows.DependencyProperty,System.String)">
+  SetLang(DependencyObject, DependencyProperty, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbViewModel/MbBaseViewModel.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Binds a dependency property to a language resource key.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLang(DependencyObject dependencyObject, DependencyProperty dependencyProperty, string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dependencyObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject">DependencyObject</a></dt>
+    <dd>The target dependency object.</dd>
+    <dt><code>dependencyProperty</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyproperty">DependencyProperty</a></dt>
+    <dd>The target dependency property.</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd>The key of the language resource.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2025 MicroBIM. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

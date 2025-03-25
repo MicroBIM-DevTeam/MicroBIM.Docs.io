@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Comparers
+  commentId: N:MB.Common.Comparers
+  id: MB.Common.Comparers
+  children:
+  - MB.Common.Comparers.BoundingBoxComparer
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.Comparers
+  nameWithType: MB.Common.Comparers
+  fullName: MB.Common.Comparers
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.Comparers.BoundingBoxComparer
+  commentId: T:MB.Common.Comparers.BoundingBoxComparer
+  isExternal: true
+  href: MB.Common.Comparers.BoundingBoxComparer.html
+  name: BoundingBoxComparer
+  nameWithType: BoundingBoxComparer
+  fullName: MB.Common.Comparers.BoundingBoxComparer
+shouldSkipMarkup: true

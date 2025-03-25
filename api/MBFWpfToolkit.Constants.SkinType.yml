@@ -1,0 +1,122 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Constants.SkinType
+  commentId: T:MBFWpfToolkit.Constants.SkinType
+  id: SkinType
+  parent: MBFWpfToolkit.Constants
+  children:
+  - MBFWpfToolkit.Constants.SkinType.Dark
+  - MBFWpfToolkit.Constants.SkinType.Default
+  - MBFWpfToolkit.Constants.SkinType.Violet
+  langs:
+  - csharp
+  - vb
+  name: SkinType
+  nameWithType: SkinType
+  fullName: MBFWpfToolkit.Constants.SkinType
+  type: Enum
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/SkinType.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Constants
+  syntax:
+    content: public enum SkinType
+    content.vb: Public Enum SkinType
+- uid: MBFWpfToolkit.Constants.SkinType.Default
+  commentId: F:MBFWpfToolkit.Constants.SkinType.Default
+  id: Default
+  parent: MBFWpfToolkit.Constants.SkinType
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: SkinType.Default
+  fullName: MBFWpfToolkit.Constants.SkinType.Default
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/SkinType.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Constants
+  syntax:
+    content: Default = 0
+    return:
+      type: MBFWpfToolkit.Constants.SkinType
+- uid: MBFWpfToolkit.Constants.SkinType.Dark
+  commentId: F:MBFWpfToolkit.Constants.SkinType.Dark
+  id: Dark
+  parent: MBFWpfToolkit.Constants.SkinType
+  langs:
+  - csharp
+  - vb
+  name: Dark
+  nameWithType: SkinType.Dark
+  fullName: MBFWpfToolkit.Constants.SkinType.Dark
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/SkinType.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Constants
+  syntax:
+    content: Dark = 1
+    return:
+      type: MBFWpfToolkit.Constants.SkinType
+- uid: MBFWpfToolkit.Constants.SkinType.Violet
+  commentId: F:MBFWpfToolkit.Constants.SkinType.Violet
+  id: Violet
+  parent: MBFWpfToolkit.Constants.SkinType
+  langs:
+  - csharp
+  - vb
+  name: Violet
+  nameWithType: SkinType.Violet
+  fullName: MBFWpfToolkit.Constants.SkinType.Violet
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/SkinType.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Constants
+  syntax:
+    content: Violet = 2
+    return:
+      type: MBFWpfToolkit.Constants.SkinType
+references:
+- uid: MBFWpfToolkit.Constants
+  commentId: N:MBFWpfToolkit.Constants
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit.Constants
+  nameWithType: MBFWpfToolkit.Constants
+  fullName: MBFWpfToolkit.Constants
+  spec.csharp:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Constants
+    name: Constants
+    isExternal: true
+    href: MBFWpfToolkit.Constants.html
+  spec.vb:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Constants
+    name: Constants
+    isExternal: true
+    href: MBFWpfToolkit.Constants.html
+- uid: MBFWpfToolkit.Constants.SkinType
+  commentId: T:MBFWpfToolkit.Constants.SkinType
+  parent: MBFWpfToolkit.Constants
+  isExternal: true
+  href: MBFWpfToolkit.Constants.SkinType.html
+  name: SkinType
+  nameWithType: SkinType
+  fullName: MBFWpfToolkit.Constants.SkinType
+shouldSkipMarkup: true
