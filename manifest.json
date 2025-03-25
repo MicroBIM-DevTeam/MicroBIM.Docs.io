@@ -764,7 +764,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior",
-      "Summary": null
+      "Summary": "Provides an attached behavior to enable live search filtering on a <xref href=\"System.Windows.Controls.ComboBox\" data-throw-if-not-resolved=\"false\"></xref>."
     },
     {
       "type": "ManagedReference",
@@ -778,7 +778,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.AttachedProperties.HelpAssistant",
-      "Summary": null
+      "Summary": "Provides attached properties to define step-based help or onboarding instructions for UI elements.\nElements can be dynamically registered and retrieved in a specific order based on their step number."
     },
     {
       "type": "ManagedReference",
@@ -792,7 +792,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.AttachedProperties.LocalizationHelper",
-      "Summary": null
+      "Summary": "Provides localization support for WPF controls using attached properties.\nWhen <xref href=\"MBFWpfToolkit.AttachedProperties.LocalizationHelper.LangKeyProperty\" data-throw-if-not-resolved=\"false\"></xref> is set on a control, the corresponding localized value will be applied automatically."
     },
     {
       "type": "ManagedReference",
@@ -820,7 +820,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Constants.MbMessageIcon",
-      "Summary": null
+      "Summary": "Defines icons that can be displayed in a custom message box.\nThese icons represent different statuses or types of feedback for the user."
     },
     {
       "type": "ManagedReference",
@@ -834,7 +834,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Constants.SkinType",
-      "Summary": null
+      "Summary": "Defines available theme skins for the application UI."
     },
     {
       "type": "ManagedReference",
@@ -862,7 +862,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Controls.Help.HelpWizard",
-      "Summary": "Interaction logic for HelpWizard.xaml"
+      "Summary": "Represents an interactive in-app help wizard that guides users through UI elements step-by-step."
     },
     {
       "type": "ManagedReference",
@@ -890,7 +890,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Controls.MbMessageBox",
-      "Summary": null
+      "Summary": "A custom message box window that supports HandyControl theming, icon display, and multiple button configurations."
     },
     {
       "type": "ManagedReference",
@@ -904,7 +904,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Controls.MicroBimSprite",
-      "Summary": "Interaction logic for MicroBimSprite.xaml"
+      "Summary": "Represents the MicroBIM Sprite window used for displaying custom interactive UI elements."
     },
     {
       "type": "ManagedReference",
@@ -932,7 +932,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Converters.Boolean2StringConverter",
-      "Summary": null
+      "Summary": "Converts a <xref href=\"System.Boolean\" data-throw-if-not-resolved=\"false\"></xref> value to a <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> based on a semicolon-delimited parameter string."
     },
     {
       "type": "ManagedReference",
@@ -946,7 +946,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter",
-      "Summary": null
+      "Summary": "Converts a <xref href=\"System.Boolean\" data-throw-if-not-resolved=\"false\"></xref> value to a <xref href=\"System.Windows.Visibility\" data-throw-if-not-resolved=\"false\"></xref> value.\nSupports optional inversion using a converter parameter."
     },
     {
       "type": "ManagedReference",
@@ -974,7 +974,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Converters.ValidationMultiConverter",
-      "Summary": null
+      "Summary": "A multi-value converter that validates a group of input values (typically bound from multiple <xref href=\"System.Windows.Controls.TextBox\" data-throw-if-not-resolved=\"false\"></xref> elements).\nIt checks for empty input and validation errors to determine whether a button (or any control) should be enabled."
     },
     {
       "type": "ManagedReference",
@@ -1002,7 +1002,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Extensions.ListExtensions",
-      "Summary": null
+      "Summary": "Provides extension methods for <xref href=\"System.Collections.Generic.List%601\" data-throw-if-not-resolved=\"false\"></xref> to support additional operations."
     },
     {
       "type": "ManagedReference",
@@ -1030,7 +1030,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Helpers.MbNotification",
-      "Summary": null
+      "Summary": "Provides utility methods to display styled notifications using HandyControl's <xref href=\"HandyControl.Controls.Growl\" data-throw-if-not-resolved=\"false\"></xref> system."
     },
     {
       "type": "ManagedReference",
@@ -1044,7 +1044,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Helpers.MbResourceHelper",
-      "Summary": "资源帮助类"
+      "Summary": "Provides helper methods for retrieving theme and skin resources in a WPF application."
     },
     {
       "type": "ManagedReference",
@@ -1058,7 +1058,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Helpers.PasswordHelper",
-      "Summary": null
+      "Summary": "Provides attached properties and helper methods to enable binding for the Password property of PasswordBox\ncontrols."
     },
     {
       "type": "ManagedReference",
@@ -1128,7 +1128,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Models.HelpStep",
-      "Summary": null
+      "Summary": "Represents a help step in the UI help wizard with an associated UI element, descriptive text, and order."
     },
     {
       "type": "ManagedReference",

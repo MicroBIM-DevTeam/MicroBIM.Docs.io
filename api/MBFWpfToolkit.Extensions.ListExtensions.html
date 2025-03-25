@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ListExtensions | MIcroBIM Docs ">
       
-      
+      <meta name="description" content="Provides extension methods for  to support additional operations.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,7 @@ Class ListExtensions  <a class="header-action link-secondary" title="View source
   <dl><dt>Assembly</dt><dd>MBFWpfToolkit.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary">Provides extension methods for <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a> to support additional operations.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -159,7 +159,7 @@ Class ListExtensions  <a class="header-action link-secondary" title="View source
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Extensions/ListExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Moves an item within a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a> from one index to another.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,18 +169,18 @@ Class ListExtensions  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</dt>
-    <dd></dd>
+    <dd>The list in which the item will be moved.</dd>
     <dt><code>oldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd>The current index of the item.</dd>
     <dt><code>newIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd>The target index to move the item to.</dd>
   </dl>
 
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd>The type of elements in the list.</dd>
   </dl>
 
 
@@ -188,6 +188,9 @@ Class ListExtensions  <a class="header-action link-secondary" title="View source
 
 
 
+  <h4 class="section" id="MBFWpfToolkit_Extensions_ListExtensions_Move__1_System_Collections_Generic_List___0__System_Int32_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">If <code class="paramref">oldIndex</code> and <code class="paramref">newIndex</code> are equal, or if either index is out of range,
+the method does nothing.</div>
 
 
 

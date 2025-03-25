@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class BooleanToVisibilityWithInverseConverter | MIcroBIM Docs ">
       
-      
+      <meta name="description" content="Converts a  value to a  value. Supports optional inversion using a converter parameter.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,8 @@ Class BooleanToVisibilityWithInverseConverter  <a class="header-action link-seco
   <dl><dt>Assembly</dt><dd>MBFWpfToolkit.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary">Converts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> value to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.visibility">Visibility</a> value.
+Supports optional inversion using a converter parameter.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -152,6 +153,9 @@ Class BooleanToVisibilityWithInverseConverter  <a class="header-action link-seco
 
 
 
+  <h2 id="MBFWpfToolkit_Converters_BooleanToVisibilityWithInverseConverter_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">If the parameter is set to "Inverse" (case-insensitive), the visibility result will be inverted.
+Useful for showing or hiding UI elements based on boolean flags with optional inversion.</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -195,7 +199,7 @@ Class BooleanToVisibilityWithInverseConverter  <a class="header-action link-seco
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Converters/BooleanToVisibilityWithInverseConverter.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Converts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.visibility">Visibility</a>.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -205,19 +209,21 @@ Class BooleanToVisibilityWithInverseConverter  <a class="header-action link-seco
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd>The boolean value to convert.</dd>
     <dt><code>targetType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-    <dd></dd>
+    <dd>The target type (expected to be <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.visibility">Visibility</a>).</dd>
     <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd>Optional parameter. If set to "Inverse", the result will be inverted.</dd>
     <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
-    <dd></dd>
+    <dd>Culture info (not used).</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd>Returns <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.visibility#system-windows-visibility-visible">Visible</a> if <code class="paramref">value</code> is true,
+or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.visibility#system-windows-visibility-collapsed">Collapsed</a> if false.
+If "Inverse" is passed as a parameter, the logic is flipped.</dd>
   </dl>
 
 
@@ -237,7 +243,7 @@ Class BooleanToVisibilityWithInverseConverter  <a class="header-action link-seco
   <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Converters/BooleanToVisibilityWithInverseConverter.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Converts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.visibility">Visibility</a> value back to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -247,19 +253,19 @@ Class BooleanToVisibilityWithInverseConverter  <a class="header-action link-seco
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd>The visibility value to convert.</dd>
     <dt><code>targetType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-    <dd></dd>
+    <dd>The target type (expected to be <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>).</dd>
     <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd>Optional parameter (not used in ConvertBack).</dd>
     <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
-    <dd></dd>
+    <dd>Culture info (not used).</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd>Returns <code>true</code> if <code class="paramref">value</code> is <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.visibility#system-windows-visibility-visible">Visible</a>, otherwise <code>false</code>.</dd>
   </dl>
 
 
