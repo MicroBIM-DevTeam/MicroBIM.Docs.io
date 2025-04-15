@@ -13,11 +13,11 @@ items:
   nameWithType: MbErrorExtensions
   fullName: MB.Common.Errors.MbErrorExtensions
   type: Class
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Errors/MbErrorExtensions.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Errors
+  summary: Provides extension methods for the <xref href="MB.Common.Errors.MbError" data-throw-if-not-resolved="false"></xref> enumeration.
+  example: []
   syntax:
     content: public static class MbErrorExtensions
     content.vb: Public Module MbErrorExtensions
@@ -43,8 +43,6 @@ items:
   nameWithType: MbErrorExtensions.GetErrorMessage(MbError)
   fullName: MB.Common.Errors.MbErrorExtensions.GetErrorMessage(MB.Common.Errors.MbError)
   type: Method
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Errors/MbErrorExtensions.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Errors
@@ -61,6 +59,14 @@ items:
     content.vb: Public Shared Function GetErrorMessage([error] As MbError) As String
   overload: MB.Common.Errors.MbErrorExtensions.GetErrorMessage*
 references:
+- uid: MB.Common.Errors.MbError
+  commentId: T:MB.Common.Errors.MbError
+  parent: MB.Common.Errors
+  isExternal: true
+  href: MB.Common.Errors.MbError.html
+  name: MbError
+  nameWithType: MbError
+  fullName: MB.Common.Errors.MbError
 - uid: MB.Common.Errors
   commentId: N:MB.Common.Errors
   isExternal: true
@@ -335,14 +341,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: MB.Common.Errors.MbError
-  commentId: T:MB.Common.Errors.MbError
-  parent: MB.Common.Errors
-  isExternal: true
-  href: MB.Common.Errors.MbError.html
-  name: MbError
-  nameWithType: MbError
-  fullName: MB.Common.Errors.MbError
 - uid: MB.Common.Errors.MbErrorExtensions.GetErrorMessage*
   commentId: Overload:MB.Common.Errors.MbErrorExtensions.GetErrorMessage
   isExternal: true

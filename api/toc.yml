@@ -127,6 +127,13 @@ items:
   - uid: MB.Common.Utils.Image.ImageUtils
     name: ImageUtils
     type: Class
+- uid: MB.Common.Utils.Loaders
+  name: MB.Common.Utils.Loaders
+  type: Namespace
+  items:
+  - uid: MB.Common.Utils.Loaders.MbResourceLoader
+    name: MbResourceLoader
+    type: Class
 - uid: MB.Common.Utils.Result
   name: MB.Common.Utils.Result
   type: Namespace
@@ -141,12 +148,35 @@ items:
   - uid: MB.Common.ViewLoader.IsolatedViewLoader
     name: IsolatedViewLoader
     type: Class
+- uid: MBF.Revit.Creation.Extensions
+  name: MBF.Revit.Creation.Extensions
+  type: Namespace
+  items:
+  - uid: MBF.Revit.Creation.Extensions.DocumentExtensions
+    name: DocumentExtensions
+    type: Class
+- uid: MBF.Revit.Data.Models
+  name: MBF.Revit.Data.Models
+  type: Namespace
+  items:
+  - uid: MBF.Revit.Data.Models.MbDocument
+    name: MbDocument
+    type: Class
 - uid: MBF.Revit.Data.SelectionFilters
   name: MBF.Revit.Data.SelectionFilters
   type: Namespace
   items:
   - uid: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter
     name: DynamicCategorySelectionFilter
+    type: Class
+  - uid: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter
+    name: FaceSelectionFilter
+    type: Class
+  - uid: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter
+    name: HostOrLinkedCategorySelectionFilter
+    type: Class
+  - uid: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter
+    name: LinkedCategorySelectionFilter
     type: Class
 - uid: MBF.Revit.Data.Utils
   name: MBF.Revit.Data.Utils
@@ -167,6 +197,9 @@ items:
   - uid: MBF.Revit.Data.Utils.MbPipesUtils
     name: MbPipesUtils
     type: Class
+  - uid: MBF.Revit.Data.Utils.MbSpaceUtils
+    name: MbSpaceUtils
+    type: Class
   - uid: MBF.Revit.Data.Utils.MbSprinklersUtils
     name: MbSprinklersUtils
     type: Class
@@ -175,6 +208,69 @@ items:
     type: Class
   - uid: MBF.Revit.Data.Utils.MbViewUtils
     name: MbViewUtils
+    type: Class
+- uid: MBF.Revit.Geometry.Extensions
+  name: MBF.Revit.Geometry.Extensions
+  type: Namespace
+  items:
+  - uid: MBF.Revit.Geometry.Extensions.BoundingBoxExtensions
+    name: BoundingBoxExtensions
+    type: Class
+  - uid: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions
+    name: BoundingBoxVisualizerExtensions
+    type: Class
+  - uid: MBF.Revit.Geometry.Extensions.ClipperExtensions
+    name: ClipperExtensions
+    type: Class
+  - uid: MBF.Revit.Geometry.Extensions.CurveLoopExtensions
+    name: CurveLoopExtensions
+    type: Class
+  - uid: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions
+    name: CurveLoopVisualizerExtensions
+    type: Class
+  - uid: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions
+    name: CurveVisualizerExtensions
+    type: Class
+  - uid: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions
+    name: PathDVisualizerExtensions
+    type: Class
+  - uid: MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions
+    name: XyzVisualizationsExtensions
+    type: Class
+- uid: MBF.Revit.Geometry.Utils
+  name: MBF.Revit.Geometry.Utils
+  type: Namespace
+  items:
+  - uid: MBF.Revit.Geometry.Utils.MbXyzUtils
+    name: MbXyzUtils
+    type: Class
+  - uid: MBF.Revit.Geometry.Utils.PolygonUtils
+    name: PolygonUtils
+    type: Class
+- uid: MBF.Revit.Geometry.Voronoi.Models
+  name: MBF.Revit.Geometry.Voronoi.Models
+  type: Namespace
+  items:
+  - uid: MBF.Revit.Geometry.Voronoi.Models.Edge
+    name: Edge
+    type: Class
+  - uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+    name: GraphEdge
+    type: Class
+  - uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge
+    name: Halfedge
+    type: Class
+  - uid: MBF.Revit.Geometry.Voronoi.Models.Point
+    name: Point
+    type: Class
+  - uid: MBF.Revit.Geometry.Voronoi.Models.Site
+    name: Site
+    type: Class
+  - uid: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX
+    name: SiteSorterYX
+    type: Class
+  - uid: MBF.Revit.Geometry.Voronoi.Models.Voronoi
+    name: Voronoi
     type: Class
 - uid: MBFWpfToolkit
   name: MBFWpfToolkit

@@ -14,10 +14,12 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
+  summary: Provides utility methods for working with pipe elements in Revit.
+  example: []
   syntax:
     content: public static class MbPipesUtils
     content.vb: Public Module MbPipesUtils
@@ -43,25 +45,35 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.GetPipeInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
-  summary: Filters the provided collection of Revit elements and retrieves all rigid pipes.
-  remarks: >-
-    This method ensures that only elements categorized as pipes
+  summary: >-
+    Retrieves all <xref href="Autodesk.Revit.DB.Plumbing.Pipe" data-throw-if-not-resolved="false"></xref> elements categorized as rigid pipes 
 
-    (BuiltInCategory.OST_PipeCurves) are returned.
+    from the provided collection of Revit elements.
+  remarks: >-
+    This method filters the input collection to include only elements whose category is "Pipes",
+
+    then casts those elements to <xref href="Autodesk.Revit.DB.Plumbing.Pipe" data-throw-if-not-resolved="false"></xref> for further use.
+
+    The filtering logic uses conditional compilation to support multiple Revit versions.
   example: []
   syntax:
     content: public static IEnumerable<Pipe> GetPipeInstances(IEnumerable<Element> selectedElements)
     parameters:
     - id: selectedElements
       type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element}
-      description: A collection of Revit elements to filter.
+      description: A collection of <xref href="Element" data-throw-if-not-resolved="false"></xref> objects to search within.
     return:
       type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Plumbing.Pipe}
-      description: An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Autodesk.Revit.DB.Plumbing.Pipe" data-throw-if-not-resolved="false"></xref> objects.
+      description: >-
+        An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> containing all elements from 
+
+        <code class="paramref">selectedElements</code> that are categorized as 
+
+        BuiltInCategory.OST_PipeCurves.
     content.vb: Public Shared Function GetPipeInstances(selectedElements As IEnumerable(Of Element)) As IEnumerable(Of Pipe)
   overload: MBF.Revit.Data.Utils.MbPipesUtils.GetPipeInstances*
   nameWithType.vb: MbPipesUtils.GetPipeInstances(IEnumerable(Of Element))
@@ -352,6 +364,15 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Autodesk.Revit.DB.Plumbing.Pipe
+  commentId: T:Autodesk.Revit.DB.Plumbing.Pipe
+  isExternal: true
+  name: Pipe
+  nameWithType: Pipe
+  fullName: Autodesk.Revit.DB.Plumbing.Pipe
+- uid: Element
+  commentId: T:Element
+  isExternal: true
 - uid: System.Collections.Generic.IEnumerable`1
   commentId: T:System.Collections.Generic.IEnumerable`1
   isExternal: true
@@ -380,12 +401,6 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Autodesk.Revit.DB.Plumbing.Pipe
-  commentId: T:Autodesk.Revit.DB.Plumbing.Pipe
-  isExternal: true
-  name: Pipe
-  nameWithType: Pipe
-  fullName: Autodesk.Revit.DB.Plumbing.Pipe
 - uid: MBF.Revit.Data.Utils.MbPipesUtils.GetPipeInstances*
   commentId: Overload:MBF.Revit.Data.Utils.MbPipesUtils.GetPipeInstances
   isExternal: true

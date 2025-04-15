@@ -7,6 +7,7 @@ items:
   children:
   - MB.Common.Tools.MbfTool.ApplyParameters
   - MB.Common.Tools.MbfTool.AssemblyManager
+  - MB.Common.Tools.MbfTool.AutoSprinklerSpacing
   - MB.Common.Tools.MbfTool.CutLengthPipeOptimization
   - MB.Common.Tools.MbfTool.Mapper
   - MB.Common.Tools.MbfTool.SprinklerVoronoi
@@ -162,6 +163,26 @@ items:
       <RequiredSharedParameters(New ToolsSharedParameter() { ToolsSharedParameter.Color, ToolsSharedParameter.Finish, ToolsSharedParameter.PipeCode, ToolsSharedParameter.AddFitToId, ToolsSharedParameter.HandTight, ToolsSharedParameter.DescriptionAndAbbreviationListNo, ToolsSharedParameter.ExportedPackageName, ToolsSharedParameter.RealFittingSizes, ToolsSharedParameter.ExportedPdfName, ToolsSharedParameter.SubType, ToolsSharedParameter.FabricationGroupName, ToolsSharedParameter.Allowance, ToolsSharedParameter.ReaLGroupSize, ToolsSharedParameter.IsFitting, ToolsSharedParameter.CalculateSum })>
 
       Mapper = 5
+- uid: MB.Common.Tools.MbfTool.AutoSprinklerSpacing
+  commentId: F:MB.Common.Tools.MbfTool.AutoSprinklerSpacing
+  id: AutoSprinklerSpacing
+  parent: MB.Common.Tools.MbfTool
+  langs:
+  - csharp
+  - vb
+  name: AutoSprinklerSpacing
+  nameWithType: MbfTool.AutoSprinklerSpacing
+  fullName: MB.Common.Tools.MbfTool.AutoSprinklerSpacing
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Tools
+  summary: Represents the Auto Sprinkler Spacing tool.
+  example: []
+  syntax:
+    content: AutoSprinklerSpacing = 6
+    return:
+      type: MB.Common.Tools.MbfTool
 references:
 - uid: System.ComponentModel.DescriptionAttribute
   commentId: T:System.ComponentModel.DescriptionAttribute

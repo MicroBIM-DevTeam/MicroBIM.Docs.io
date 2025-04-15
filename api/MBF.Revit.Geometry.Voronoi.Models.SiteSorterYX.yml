@@ -1,0 +1,598 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX
+  id: SiteSorterYX
+  parent: MBF.Revit.Geometry.Voronoi.Models
+  children:
+  - MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.#ctor
+  - MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.Compare(MBF.Revit.Geometry.Voronoi.Models.Site,MBF.Revit.Geometry.Voronoi.Models.Site)
+  langs:
+  - csharp
+  - vb
+  name: SiteSorterYX
+  nameWithType: SiteSorterYX
+  fullName: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: Compares two sites based on their y-coordinates, and x-coordinates if y-coordinates are equal.
+  example: []
+  syntax:
+    content: 'public class SiteSorterYX : IComparer<Site>'
+    content.vb: Public Class SiteSorterYX Implements IComparer(Of Site)
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IComparer{MBF.Revit.Geometry.Voronoi.Models.Site}
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.Compare(MBF.Revit.Geometry.Voronoi.Models.Site,MBF.Revit.Geometry.Voronoi.Models.Site)
+  commentId: M:MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.Compare(MBF.Revit.Geometry.Voronoi.Models.Site,MBF.Revit.Geometry.Voronoi.Models.Site)
+  id: Compare(MBF.Revit.Geometry.Voronoi.Models.Site,MBF.Revit.Geometry.Voronoi.Models.Site)
+  parent: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX
+  langs:
+  - csharp
+  - vb
+  name: Compare(Site, Site)
+  nameWithType: SiteSorterYX.Compare(Site, Site)
+  fullName: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.Compare(MBF.Revit.Geometry.Voronoi.Models.Site, MBF.Revit.Geometry.Voronoi.Models.Site)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  example: []
+  syntax:
+    content: public int Compare(Site p1, Site p2)
+    parameters:
+    - id: p1
+      type: MBF.Revit.Geometry.Voronoi.Models.Site
+    - id: p2
+      type: MBF.Revit.Geometry.Voronoi.Models.Site
+    return:
+      type: System.Int32
+    content.vb: Public Function Compare(p1 As Site, p2 As Site) As Integer
+  overload: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.Compare*
+  implements:
+  - System.Collections.Generic.IComparer{MBF.Revit.Geometry.Voronoi.Models.Site}.Compare(MBF.Revit.Geometry.Voronoi.Models.Site,MBF.Revit.Geometry.Voronoi.Models.Site)
+- uid: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.#ctor
+  commentId: M:MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.#ctor
+  id: '#ctor'
+  parent: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX
+  langs:
+  - csharp
+  - vb
+  name: SiteSorterYX()
+  nameWithType: SiteSorterYX.SiteSorterYX()
+  fullName: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.SiteSorterYX()
+  type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  syntax:
+    content: public SiteSorterYX()
+    content.vb: Public Sub New()
+  overload: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.#ctor*
+  nameWithType.vb: SiteSorterYX.New()
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.New()
+  name.vb: New()
+references:
+- uid: MBF.Revit.Geometry.Voronoi.Models
+  commentId: N:MBF.Revit.Geometry.Voronoi.Models
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Geometry.Voronoi.Models
+  nameWithType: MBF.Revit.Geometry.Voronoi.Models
+  fullName: MBF.Revit.Geometry.Voronoi.Models
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Geometry
+    name: Geometry
+    isExternal: true
+    href: MBF.Revit.Geometry.html
+  - name: .
+  - uid: MBF.Revit.Geometry.Voronoi
+    name: Voronoi
+    isExternal: true
+    href: MBF.Revit.Geometry.Voronoi.html
+  - name: .
+  - uid: MBF.Revit.Geometry.Voronoi.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Geometry.Voronoi.Models.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Geometry
+    name: Geometry
+    isExternal: true
+    href: MBF.Revit.Geometry.html
+  - name: .
+  - uid: MBF.Revit.Geometry.Voronoi
+    name: Voronoi
+    isExternal: true
+    href: MBF.Revit.Geometry.Voronoi.html
+  - name: .
+  - uid: MBF.Revit.Geometry.Voronoi.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Geometry.Voronoi.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.Generic.IComparer{MBF.Revit.Geometry.Voronoi.Models.Site}
+  commentId: T:System.Collections.Generic.IComparer{MBF.Revit.Geometry.Voronoi.Models.Site}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IComparer`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1
+  name: IComparer<Site>
+  nameWithType: IComparer<Site>
+  fullName: System.Collections.Generic.IComparer<MBF.Revit.Geometry.Voronoi.Models.Site>
+  nameWithType.vb: IComparer(Of Site)
+  fullName.vb: System.Collections.Generic.IComparer(Of MBF.Revit.Geometry.Voronoi.Models.Site)
+  name.vb: IComparer(Of Site)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1
+  - name: <
+  - uid: MBF.Revit.Geometry.Voronoi.Models.Site
+    name: Site
+    isExternal: true
+    href: MBF.Revit.Geometry.Voronoi.Models.Site.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MBF.Revit.Geometry.Voronoi.Models.Site
+    name: Site
+    isExternal: true
+    href: MBF.Revit.Geometry.Voronoi.Models.Site.html
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IComparer`1
+  commentId: T:System.Collections.Generic.IComparer`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1
+  name: IComparer<T>
+  nameWithType: IComparer<T>
+  fullName: System.Collections.Generic.IComparer<T>
+  nameWithType.vb: IComparer(Of T)
+  fullName.vb: System.Collections.Generic.IComparer(Of T)
+  name.vb: IComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.Compare*
+  commentId: Overload:MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.Compare
+  isExternal: true
+  href: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.html#MBF_Revit_Geometry_Voronoi_Models_SiteSorterYX_Compare_MBF_Revit_Geometry_Voronoi_Models_Site_MBF_Revit_Geometry_Voronoi_Models_Site_
+  name: Compare
+  nameWithType: SiteSorterYX.Compare
+  fullName: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.Compare
+- uid: System.Collections.Generic.IComparer{MBF.Revit.Geometry.Voronoi.Models.Site}.Compare(MBF.Revit.Geometry.Voronoi.Models.Site,MBF.Revit.Geometry.Voronoi.Models.Site)
+  commentId: M:System.Collections.Generic.IComparer{MBF.Revit.Geometry.Voronoi.Models.Site}.Compare(MBF.Revit.Geometry.Voronoi.Models.Site,MBF.Revit.Geometry.Voronoi.Models.Site)
+  parent: System.Collections.Generic.IComparer{MBF.Revit.Geometry.Voronoi.Models.Site}
+  definition: System.Collections.Generic.IComparer`1.Compare(`0,`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1.compare
+  name: Compare(Site, Site)
+  nameWithType: IComparer<Site>.Compare(Site, Site)
+  fullName: System.Collections.Generic.IComparer<MBF.Revit.Geometry.Voronoi.Models.Site>.Compare(MBF.Revit.Geometry.Voronoi.Models.Site, MBF.Revit.Geometry.Voronoi.Models.Site)
+  nameWithType.vb: IComparer(Of Site).Compare(Site, Site)
+  fullName.vb: System.Collections.Generic.IComparer(Of MBF.Revit.Geometry.Voronoi.Models.Site).Compare(MBF.Revit.Geometry.Voronoi.Models.Site, MBF.Revit.Geometry.Voronoi.Models.Site)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer{MBF.Revit.Geometry.Voronoi.Models.Site}.Compare(MBF.Revit.Geometry.Voronoi.Models.Site,MBF.Revit.Geometry.Voronoi.Models.Site)
+    name: Compare
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1.compare
+  - name: (
+  - uid: MBF.Revit.Geometry.Voronoi.Models.Site
+    name: Site
+    isExternal: true
+    href: MBF.Revit.Geometry.Voronoi.Models.Site.html
+  - name: ','
+  - name: " "
+  - uid: MBF.Revit.Geometry.Voronoi.Models.Site
+    name: Site
+    isExternal: true
+    href: MBF.Revit.Geometry.Voronoi.Models.Site.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer{MBF.Revit.Geometry.Voronoi.Models.Site}.Compare(MBF.Revit.Geometry.Voronoi.Models.Site,MBF.Revit.Geometry.Voronoi.Models.Site)
+    name: Compare
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1.compare
+  - name: (
+  - uid: MBF.Revit.Geometry.Voronoi.Models.Site
+    name: Site
+    isExternal: true
+    href: MBF.Revit.Geometry.Voronoi.Models.Site.html
+  - name: ','
+  - name: " "
+  - uid: MBF.Revit.Geometry.Voronoi.Models.Site
+    name: Site
+    isExternal: true
+    href: MBF.Revit.Geometry.Voronoi.Models.Site.html
+  - name: )
+- uid: MBF.Revit.Geometry.Voronoi.Models.Site
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Site
+  parent: MBF.Revit.Geometry.Voronoi.Models
+  isExternal: true
+  href: MBF.Revit.Geometry.Voronoi.Models.Site.html
+  name: Site
+  nameWithType: Site
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Site
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.IComparer`1.Compare(`0,`0)
+  commentId: M:System.Collections.Generic.IComparer`1.Compare(`0,`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1.compare
+  name: Compare(T, T)
+  nameWithType: IComparer<T>.Compare(T, T)
+  fullName: System.Collections.Generic.IComparer<T>.Compare(T, T)
+  nameWithType.vb: IComparer(Of T).Compare(T, T)
+  fullName.vb: System.Collections.Generic.IComparer(Of T).Compare(T, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1.Compare(`0,`0)
+    name: Compare
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1.compare
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1.Compare(`0,`0)
+    name: Compare
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1.compare
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.#ctor*
+  commentId: Overload:MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.#ctor
+  isExternal: true
+  href: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.html#MBF_Revit_Geometry_Voronoi_Models_SiteSorterYX__ctor
+  name: SiteSorterYX
+  nameWithType: SiteSorterYX.SiteSorterYX
+  fullName: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.SiteSorterYX
+  nameWithType.vb: SiteSorterYX.New
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.New
+  name.vb: New
+shouldSkipMarkup: true

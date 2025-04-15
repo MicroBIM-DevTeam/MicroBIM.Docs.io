@@ -1,0 +1,775 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Data.Models.MbDocument
+  commentId: T:MBF.Revit.Data.Models.MbDocument
+  id: MbDocument
+  parent: MBF.Revit.Data.Models
+  children:
+  - MBF.Revit.Data.Models.MbDocument.#ctor(Autodesk.Revit.DB.Document)
+  - MBF.Revit.Data.Models.MbDocument.#ctor(Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)
+  - MBF.Revit.Data.Models.MbDocument.Document
+  - MBF.Revit.Data.Models.MbDocument.GetAllDocuments(Autodesk.Revit.DB.Document)
+  - MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments(Autodesk.Revit.DB.Document)
+  - MBF.Revit.Data.Models.MbDocument.IsLinked
+  - MBF.Revit.Data.Models.MbDocument.LinkInstance
+  - MBF.Revit.Data.Models.MbDocument.LinkParentDocument
+  - MBF.Revit.Data.Models.MbDocument.LinkTransform
+  langs:
+  - csharp
+  - vb
+  name: MbDocument
+  nameWithType: MbDocument
+  fullName: MBF.Revit.Data.Models.MbDocument
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Represents a Revit document, either standalone or linked, including its context and transformation information.
+  example: []
+  syntax:
+    content: public class MbDocument
+    content.vb: Public Class MbDocument
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBF.Revit.Data.Models.MbDocument.#ctor(Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)
+  commentId: M:MBF.Revit.Data.Models.MbDocument.#ctor(Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)
+  id: '#ctor(Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)'
+  parent: MBF.Revit.Data.Models.MbDocument
+  langs:
+  - csharp
+  - vb
+  name: MbDocument(RevitLinkInstance, Document)
+  nameWithType: MbDocument.MbDocument(RevitLinkInstance, Document)
+  fullName: MBF.Revit.Data.Models.MbDocument.MbDocument(Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Document)
+  type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Initializes a new instance of the <xref href="MBF.Revit.Data.Models.MbDocument" data-throw-if-not-resolved="false"></xref> class for a linked document.
+  example: []
+  syntax:
+    content: public MbDocument(RevitLinkInstance linkInstance, Document parentDocument)
+    parameters:
+    - id: linkInstance
+      type: Autodesk.Revit.DB.RevitLinkInstance
+      description: The Revit link instance referencing the linked document.
+    - id: parentDocument
+      type: Autodesk.Revit.DB.Document
+      description: The parent document containing the link.
+    content.vb: Public Sub New(linkInstance As RevitLinkInstance, parentDocument As Document)
+  overload: MBF.Revit.Data.Models.MbDocument.#ctor*
+  nameWithType.vb: MbDocument.New(RevitLinkInstance, Document)
+  fullName.vb: MBF.Revit.Data.Models.MbDocument.New(Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Document)
+  name.vb: New(RevitLinkInstance, Document)
+- uid: MBF.Revit.Data.Models.MbDocument.#ctor(Autodesk.Revit.DB.Document)
+  commentId: M:MBF.Revit.Data.Models.MbDocument.#ctor(Autodesk.Revit.DB.Document)
+  id: '#ctor(Autodesk.Revit.DB.Document)'
+  parent: MBF.Revit.Data.Models.MbDocument
+  langs:
+  - csharp
+  - vb
+  name: MbDocument(Document)
+  nameWithType: MbDocument.MbDocument(Document)
+  fullName: MBF.Revit.Data.Models.MbDocument.MbDocument(Autodesk.Revit.DB.Document)
+  type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Initializes a new instance of the <xref href="MBF.Revit.Data.Models.MbDocument" data-throw-if-not-resolved="false"></xref> class for a standalone (non-linked) document.
+  example: []
+  syntax:
+    content: public MbDocument(Document document)
+    parameters:
+    - id: document
+      type: Autodesk.Revit.DB.Document
+      description: The standalone Revit document.
+    content.vb: Public Sub New(document As Document)
+  overload: MBF.Revit.Data.Models.MbDocument.#ctor*
+  nameWithType.vb: MbDocument.New(Document)
+  fullName.vb: MBF.Revit.Data.Models.MbDocument.New(Autodesk.Revit.DB.Document)
+  name.vb: New(Document)
+- uid: MBF.Revit.Data.Models.MbDocument.GetAllDocuments(Autodesk.Revit.DB.Document)
+  commentId: M:MBF.Revit.Data.Models.MbDocument.GetAllDocuments(Autodesk.Revit.DB.Document)
+  id: GetAllDocuments(Autodesk.Revit.DB.Document)
+  parent: MBF.Revit.Data.Models.MbDocument
+  langs:
+  - csharp
+  - vb
+  name: GetAllDocuments(Document)
+  nameWithType: MbDocument.GetAllDocuments(Document)
+  fullName: MBF.Revit.Data.Models.MbDocument.GetAllDocuments(Autodesk.Revit.DB.Document)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Retrieves a list of <xref href="MBF.Revit.Data.Models.MbDocument" data-throw-if-not-resolved="false"></xref> instances including the base document and all linked documents.
+  example: []
+  syntax:
+    content: public static List<MbDocument> GetAllDocuments(Document doc)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The base Revit document.
+    return:
+      type: System.Collections.Generic.List{MBF.Revit.Data.Models.MbDocument}
+      description: A list of <xref href="MBF.Revit.Data.Models.MbDocument" data-throw-if-not-resolved="false"></xref> objects.
+    content.vb: Public Shared Function GetAllDocuments(doc As Document) As List(Of MbDocument)
+  overload: MBF.Revit.Data.Models.MbDocument.GetAllDocuments*
+- uid: MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments(Autodesk.Revit.DB.Document)
+  commentId: M:MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments(Autodesk.Revit.DB.Document)
+  id: GetLinkedDocuments(Autodesk.Revit.DB.Document)
+  parent: MBF.Revit.Data.Models.MbDocument
+  langs:
+  - csharp
+  - vb
+  name: GetLinkedDocuments(Document)
+  nameWithType: MbDocument.GetLinkedDocuments(Document)
+  fullName: MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments(Autodesk.Revit.DB.Document)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Retrieves all linked documents associated with the given base document.
+  example: []
+  syntax:
+    content: public static List<MbDocument> GetLinkedDocuments(Document doc)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The base Revit document.
+    return:
+      type: System.Collections.Generic.List{MBF.Revit.Data.Models.MbDocument}
+      description: A list of <xref href="MBF.Revit.Data.Models.MbDocument" data-throw-if-not-resolved="false"></xref> objects representing the linked documents.
+    content.vb: Public Shared Function GetLinkedDocuments(doc As Document) As List(Of MbDocument)
+  overload: MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments*
+- uid: MBF.Revit.Data.Models.MbDocument.Document
+  commentId: P:MBF.Revit.Data.Models.MbDocument.Document
+  id: Document
+  parent: MBF.Revit.Data.Models.MbDocument
+  langs:
+  - csharp
+  - vb
+  name: Document
+  nameWithType: MbDocument.Document
+  fullName: MBF.Revit.Data.Models.MbDocument.Document
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Gets or sets the associated Revit <xref href="MBF.Revit.Data.Models.MbDocument.Document" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Document Document { get; set; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.Document
+    content.vb: Public Property Document As Document
+  overload: MBF.Revit.Data.Models.MbDocument.Document*
+- uid: MBF.Revit.Data.Models.MbDocument.IsLinked
+  commentId: P:MBF.Revit.Data.Models.MbDocument.IsLinked
+  id: IsLinked
+  parent: MBF.Revit.Data.Models.MbDocument
+  langs:
+  - csharp
+  - vb
+  name: IsLinked
+  nameWithType: MbDocument.IsLinked
+  fullName: MBF.Revit.Data.Models.MbDocument.IsLinked
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Gets or sets a value indicating whether this document is a linked document.
+  example: []
+  syntax:
+    content: public bool IsLinked { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsLinked As Boolean
+  overload: MBF.Revit.Data.Models.MbDocument.IsLinked*
+- uid: MBF.Revit.Data.Models.MbDocument.LinkParentDocument
+  commentId: P:MBF.Revit.Data.Models.MbDocument.LinkParentDocument
+  id: LinkParentDocument
+  parent: MBF.Revit.Data.Models.MbDocument
+  langs:
+  - csharp
+  - vb
+  name: LinkParentDocument
+  nameWithType: MbDocument.LinkParentDocument
+  fullName: MBF.Revit.Data.Models.MbDocument.LinkParentDocument
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Gets or sets the parent document from which this link was referenced, if applicable.
+  example: []
+  syntax:
+    content: public Document LinkParentDocument { get; set; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.Document
+    content.vb: Public Property LinkParentDocument As Document
+  overload: MBF.Revit.Data.Models.MbDocument.LinkParentDocument*
+- uid: MBF.Revit.Data.Models.MbDocument.LinkInstance
+  commentId: P:MBF.Revit.Data.Models.MbDocument.LinkInstance
+  id: LinkInstance
+  parent: MBF.Revit.Data.Models.MbDocument
+  langs:
+  - csharp
+  - vb
+  name: LinkInstance
+  nameWithType: MbDocument.LinkInstance
+  fullName: MBF.Revit.Data.Models.MbDocument.LinkInstance
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Gets or sets the <xref href="Autodesk.Revit.DB.RevitLinkInstance" data-throw-if-not-resolved="false"></xref> that defines the link context.
+  example: []
+  syntax:
+    content: public RevitLinkInstance LinkInstance { get; set; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.RevitLinkInstance
+    content.vb: Public Property LinkInstance As RevitLinkInstance
+  overload: MBF.Revit.Data.Models.MbDocument.LinkInstance*
+- uid: MBF.Revit.Data.Models.MbDocument.LinkTransform
+  commentId: P:MBF.Revit.Data.Models.MbDocument.LinkTransform
+  id: LinkTransform
+  parent: MBF.Revit.Data.Models.MbDocument
+  langs:
+  - csharp
+  - vb
+  name: LinkTransform
+  nameWithType: MbDocument.LinkTransform
+  fullName: MBF.Revit.Data.Models.MbDocument.LinkTransform
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Gets or sets the transformation applied to the link instance.
+  example: []
+  syntax:
+    content: public Transform LinkTransform { get; set; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.Transform
+    content.vb: Public Property LinkTransform As Transform
+  overload: MBF.Revit.Data.Models.MbDocument.LinkTransform*
+references:
+- uid: MBF.Revit.Data.Models
+  commentId: N:MBF.Revit.Data.Models
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Data.Models
+  nameWithType: MBF.Revit.Data.Models
+  fullName: MBF.Revit.Data.Models
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Data.Models.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Data.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MBF.Revit.Data.Models.MbDocument
+  commentId: T:MBF.Revit.Data.Models.MbDocument
+  isExternal: true
+  href: MBF.Revit.Data.Models.MbDocument.html
+  name: MbDocument
+  nameWithType: MbDocument
+  fullName: MBF.Revit.Data.Models.MbDocument
+- uid: MBF.Revit.Data.Models.MbDocument.#ctor*
+  commentId: Overload:MBF.Revit.Data.Models.MbDocument.#ctor
+  isExternal: true
+  href: MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument__ctor_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_Document_
+  name: MbDocument
+  nameWithType: MbDocument.MbDocument
+  fullName: MBF.Revit.Data.Models.MbDocument.MbDocument
+  nameWithType.vb: MbDocument.New
+  fullName.vb: MBF.Revit.Data.Models.MbDocument.New
+  name.vb: New
+- uid: Autodesk.Revit.DB.RevitLinkInstance
+  commentId: T:Autodesk.Revit.DB.RevitLinkInstance
+  isExternal: true
+  name: RevitLinkInstance
+  nameWithType: RevitLinkInstance
+  fullName: Autodesk.Revit.DB.RevitLinkInstance
+- uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
+- uid: MBF.Revit.Data.Models.MbDocument.GetAllDocuments*
+  commentId: Overload:MBF.Revit.Data.Models.MbDocument.GetAllDocuments
+  isExternal: true
+  href: MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_GetAllDocuments_Autodesk_Revit_DB_Document_
+  name: GetAllDocuments
+  nameWithType: MbDocument.GetAllDocuments
+  fullName: MBF.Revit.Data.Models.MbDocument.GetAllDocuments
+- uid: System.Collections.Generic.List{MBF.Revit.Data.Models.MbDocument}
+  commentId: T:System.Collections.Generic.List{MBF.Revit.Data.Models.MbDocument}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<MbDocument>
+  nameWithType: List<MbDocument>
+  fullName: System.Collections.Generic.List<MBF.Revit.Data.Models.MbDocument>
+  nameWithType.vb: List(Of MbDocument)
+  fullName.vb: System.Collections.Generic.List(Of MBF.Revit.Data.Models.MbDocument)
+  name.vb: List(Of MbDocument)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MBF.Revit.Data.Models.MbDocument
+    name: MbDocument
+    isExternal: true
+    href: MBF.Revit.Data.Models.MbDocument.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MBF.Revit.Data.Models.MbDocument
+    name: MbDocument
+    isExternal: true
+    href: MBF.Revit.Data.Models.MbDocument.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments*
+  commentId: Overload:MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments
+  isExternal: true
+  href: MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_GetLinkedDocuments_Autodesk_Revit_DB_Document_
+  name: GetLinkedDocuments
+  nameWithType: MbDocument.GetLinkedDocuments
+  fullName: MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments
+- uid: MBF.Revit.Data.Models.MbDocument.Document
+  commentId: P:MBF.Revit.Data.Models.MbDocument.Document
+  isExternal: true
+  href: MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_Document
+  name: Document
+  nameWithType: MbDocument.Document
+  fullName: MBF.Revit.Data.Models.MbDocument.Document
+- uid: MBF.Revit.Data.Models.MbDocument.Document*
+  commentId: Overload:MBF.Revit.Data.Models.MbDocument.Document
+  isExternal: true
+  href: MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_Document
+  name: Document
+  nameWithType: MbDocument.Document
+  fullName: MBF.Revit.Data.Models.MbDocument.Document
+- uid: MBF.Revit.Data.Models.MbDocument.IsLinked*
+  commentId: Overload:MBF.Revit.Data.Models.MbDocument.IsLinked
+  isExternal: true
+  href: MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_IsLinked
+  name: IsLinked
+  nameWithType: MbDocument.IsLinked
+  fullName: MBF.Revit.Data.Models.MbDocument.IsLinked
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MBF.Revit.Data.Models.MbDocument.LinkParentDocument*
+  commentId: Overload:MBF.Revit.Data.Models.MbDocument.LinkParentDocument
+  isExternal: true
+  href: MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_LinkParentDocument
+  name: LinkParentDocument
+  nameWithType: MbDocument.LinkParentDocument
+  fullName: MBF.Revit.Data.Models.MbDocument.LinkParentDocument
+- uid: MBF.Revit.Data.Models.MbDocument.LinkInstance*
+  commentId: Overload:MBF.Revit.Data.Models.MbDocument.LinkInstance
+  isExternal: true
+  href: MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_LinkInstance
+  name: LinkInstance
+  nameWithType: MbDocument.LinkInstance
+  fullName: MBF.Revit.Data.Models.MbDocument.LinkInstance
+- uid: MBF.Revit.Data.Models.MbDocument.LinkTransform*
+  commentId: Overload:MBF.Revit.Data.Models.MbDocument.LinkTransform
+  isExternal: true
+  href: MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_LinkTransform
+  name: LinkTransform
+  nameWithType: MbDocument.LinkTransform
+  fullName: MBF.Revit.Data.Models.MbDocument.LinkTransform
+- uid: Autodesk.Revit.DB.Transform
+  commentId: '!:Autodesk.Revit.DB.Transform'
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: Autodesk.Revit.DB.Transform
+shouldSkipMarkup: true

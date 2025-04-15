@@ -15,8 +15,6 @@ items:
   nameWithType: MbHandlers
   fullName: MB.Common.Utils.Handlers.MbHandlers
   type: Class
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Handlers/MbHandlers.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Handlers
@@ -50,8 +48,6 @@ items:
   nameWithType: MbHandlers.RegisterHandlers()
   fullName: MB.Common.Utils.Handlers.MbHandlers.RegisterHandlers()
   type: Method
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Handlers/MbHandlers.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Handlers
@@ -75,8 +71,6 @@ items:
   nameWithType: MbHandlers.ExternalEventHandler
   fullName: MB.Common.Utils.Handlers.MbHandlers.ExternalEventHandler
   type: Property
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Handlers/MbHandlers.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Handlers
@@ -100,8 +94,6 @@ items:
   nameWithType: MbHandlers.AsyncExternalEventHandler
   fullName: MB.Common.Utils.Handlers.MbHandlers.AsyncExternalEventHandler
   type: Property
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Handlers/MbHandlers.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Handlers

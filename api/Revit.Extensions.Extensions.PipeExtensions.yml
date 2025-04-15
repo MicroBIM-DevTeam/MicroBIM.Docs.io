@@ -19,7 +19,7 @@ items:
   fullName: Revit.Extensions.Extensions.PipeExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/PipeExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/PipeExtensions.cs
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Extensions
@@ -51,7 +51,7 @@ items:
   fullName: Revit.Extensions.Extensions.PipeExtensions.GetEndPoints(Autodesk.Revit.DB.Plumbing.Pipe)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/PipeExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/PipeExtensions.cs
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Extensions
@@ -86,7 +86,7 @@ items:
   fullName: Revit.Extensions.Extensions.PipeExtensions.GetNearestOneSideConnector(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/PipeExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/PipeExtensions.cs
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Extensions
@@ -124,7 +124,7 @@ items:
   fullName: Revit.Extensions.Extensions.PipeExtensions.GetNearestEndPoints(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/PipeExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/PipeExtensions.cs
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Extensions
@@ -162,7 +162,7 @@ items:
   fullName: Revit.Extensions.Extensions.PipeExtensions.GetLineOfPipe(Autodesk.Revit.DB.Plumbing.Pipe)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/PipeExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/PipeExtensions.cs
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Extensions
@@ -197,7 +197,7 @@ items:
   fullName: Revit.Extensions.Extensions.PipeExtensions.GetPipeCurve(Autodesk.Revit.DB.Plumbing.Pipe)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/PipeExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/PipeExtensions.cs
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Extensions
@@ -232,7 +232,7 @@ items:
   fullName: Revit.Extensions.Extensions.PipeExtensions.GetPipingSystemType(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/PipeExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/PipeExtensions.cs
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Extensions
@@ -536,7 +536,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult`1
   parent: MB.Common.Utils.Result
   isExternal: true
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+  href: MB.Common.Utils.Result.MbResult-1.html
   name: MbResult<T>
   nameWithType: MbResult<T>
   fullName: MB.Common.Utils.Result.MbResult<T>
@@ -547,7 +547,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+    href: MB.Common.Utils.Result.MbResult-1.html
   - name: <
   - name: T
   - name: '>'
@@ -555,7 +555,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+    href: MB.Common.Utils.Result.MbResult-1.html
   - name: (
   - name: Of
   - name: " "
@@ -578,7 +578,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.XYZ}}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   name: MbResult<List<XYZ>>
   nameWithType: MbResult<List<XYZ>>
   fullName: MB.Common.Utils.Result.MbResult<System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>>
@@ -589,7 +589,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: <
   - uid: System.Collections.Generic.List`1
     name: List
@@ -605,7 +604,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "
@@ -676,6 +674,7 @@ references:
   nameWithType: PipeExtensions.GetNearestOneSideConnector
   fullName: Revit.Extensions.Extensions.PipeExtensions.GetNearestOneSideConnector
 - uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
   isExternal: true
   name: XYZ
   nameWithType: XYZ
@@ -684,7 +683,6 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Connector}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   name: MbResult<Connector>
   nameWithType: MbResult<Connector>
   fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.Connector>
@@ -695,7 +693,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: <
   - uid: Autodesk.Revit.DB.Connector
     name: Connector
@@ -705,7 +702,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "
@@ -731,7 +727,6 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Line}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   name: MbResult<Line>
   nameWithType: MbResult<Line>
   fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.Line>
@@ -742,7 +737,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: <
   - uid: Autodesk.Revit.DB.Line
     name: Line
@@ -752,7 +746,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "
@@ -771,7 +764,6 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Curve}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   name: MbResult<Curve>
   nameWithType: MbResult<Curve>
   fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.Curve>
@@ -782,7 +774,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: <
   - uid: Autodesk.Revit.DB.Curve
     name: Curve
@@ -792,7 +783,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "
@@ -808,6 +798,7 @@ references:
   nameWithType: PipeExtensions.GetPipingSystemType
   fullName: Revit.Extensions.Extensions.PipeExtensions.GetPipingSystemType
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
   isExternal: true
   name: Document
   nameWithType: Document
@@ -816,7 +807,6 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Plumbing.PipingSystemType}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   name: MbResult<PipingSystemType>
   nameWithType: MbResult<PipingSystemType>
   fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.Plumbing.PipingSystemType>
@@ -827,7 +817,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: <
   - uid: Autodesk.Revit.DB.Plumbing.PipingSystemType
     name: PipingSystemType
@@ -837,7 +826,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "

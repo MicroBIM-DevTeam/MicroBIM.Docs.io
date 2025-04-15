@@ -16,8 +16,6 @@ items:
   nameWithType: LogAspect
   fullName: MB.Common.Aspects.LogAspect
   type: Class
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Aspects/LogAspect.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects
@@ -93,8 +91,6 @@ items:
   nameWithType: LogAspect.OnEntry(MethodExecutionArgs)
   fullName: MB.Common.Aspects.LogAspect.OnEntry(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
   type: Method
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Aspects/LogAspect.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects
@@ -123,8 +119,6 @@ items:
   nameWithType: LogAspect.OnExit(MethodExecutionArgs)
   fullName: MB.Common.Aspects.LogAspect.OnExit(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
   type: Method
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Aspects/LogAspect.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects
@@ -153,8 +147,6 @@ items:
   nameWithType: LogAspect.OnException(MethodExecutionArgs)
   fullName: MB.Common.Aspects.LogAspect.OnException(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
   type: Method
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Aspects/LogAspect.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects
@@ -183,8 +175,6 @@ items:
   nameWithType: LogAspect.LogAspect()
   fullName: MB.Common.Aspects.LogAspect.LogAspect()
   type: Constructor
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Aspects/LogAspect.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects

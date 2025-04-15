@@ -14,7 +14,7 @@ items:
   fullName: Revit.Extensions.Extensions.CollectionExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/CollectionExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/CollectionExtensions.cs
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Extensions
@@ -46,7 +46,7 @@ items:
   fullName: Revit.Extensions.Extensions.CollectionExtensions.ToObservableCollection<T>(System.Collections.Generic.IEnumerable<T>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/CollectionExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/CollectionExtensions.cs
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Extensions

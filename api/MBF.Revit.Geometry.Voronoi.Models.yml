@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Geometry.Voronoi.Models
+  commentId: N:MBF.Revit.Geometry.Voronoi.Models
+  id: MBF.Revit.Geometry.Voronoi.Models
+  children:
+  - MBF.Revit.Geometry.Voronoi.Models.Edge
+  - MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  - MBF.Revit.Geometry.Voronoi.Models.Halfedge
+  - MBF.Revit.Geometry.Voronoi.Models.Point
+  - MBF.Revit.Geometry.Voronoi.Models.Site
+  - MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX
+  - MBF.Revit.Geometry.Voronoi.Models.Voronoi
+  langs:
+  - csharp
+  - vb
+  name: MBF.Revit.Geometry.Voronoi.Models
+  nameWithType: MBF.Revit.Geometry.Voronoi.Models
+  fullName: MBF.Revit.Geometry.Voronoi.Models
+  type: Namespace
+  assemblies:
+  - MBF.Revit.Geometry
+references:
+- uid: MBF.Revit.Geometry.Voronoi.Models.Voronoi
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Voronoi
+  isExternal: true
+  href: MBF.Revit.Geometry.Voronoi.Models.Voronoi.html
+  name: Voronoi
+  nameWithType: Voronoi
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Voronoi
+- uid: MBF.Revit.Geometry.Voronoi.Models.Point
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Point
+  parent: MBF.Revit.Geometry.Voronoi.Models
+  isExternal: true
+  href: MBF.Revit.Geometry.Voronoi.Models.Point.html
+  name: Point
+  nameWithType: Point
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Point
+- uid: MBF.Revit.Geometry.Voronoi.Models.Site
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Site
+  parent: MBF.Revit.Geometry.Voronoi.Models
+  isExternal: true
+  href: MBF.Revit.Geometry.Voronoi.Models.Site.html
+  name: Site
+  nameWithType: Site
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Site
+- uid: MBF.Revit.Geometry.Voronoi.Models.Edge
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Edge
+  parent: MBF.Revit.Geometry.Voronoi.Models
+  isExternal: true
+  href: MBF.Revit.Geometry.Voronoi.Models.Edge.html
+  name: Edge
+  nameWithType: Edge
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge
+- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Halfedge
+  parent: MBF.Revit.Geometry.Voronoi.Models
+  isExternal: true
+  href: MBF.Revit.Geometry.Voronoi.Models.Halfedge.html
+  name: Halfedge
+  nameWithType: Halfedge
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  isExternal: true
+  href: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.html
+  name: GraphEdge
+  nameWithType: GraphEdge
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+- uid: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX
+  isExternal: true
+  href: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.html
+  name: SiteSorterYX
+  nameWithType: SiteSorterYX
+  fullName: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX
+- uid: MBF.Revit.Geometry.Voronoi.Models
+  commentId: N:MBF.Revit.Geometry.Voronoi.Models
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Geometry.Voronoi.Models
+  nameWithType: MBF.Revit.Geometry.Voronoi.Models
+  fullName: MBF.Revit.Geometry.Voronoi.Models
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Geometry
+    name: Geometry
+    isExternal: true
+    href: MBF.Revit.Geometry.html
+  - name: .
+  - uid: MBF.Revit.Geometry.Voronoi
+    name: Voronoi
+    isExternal: true
+    href: MBF.Revit.Geometry.Voronoi.html
+  - name: .
+  - uid: MBF.Revit.Geometry.Voronoi.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Geometry.Voronoi.Models.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Geometry
+    name: Geometry
+    isExternal: true
+    href: MBF.Revit.Geometry.html
+  - name: .
+  - uid: MBF.Revit.Geometry.Voronoi
+    name: Voronoi
+    isExternal: true
+    href: MBF.Revit.Geometry.Voronoi.html
+  - name: .
+  - uid: MBF.Revit.Geometry.Voronoi.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Geometry.Voronoi.Models.html
+shouldSkipMarkup: true

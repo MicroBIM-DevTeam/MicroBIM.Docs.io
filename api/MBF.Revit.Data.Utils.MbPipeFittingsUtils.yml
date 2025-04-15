@@ -22,7 +22,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -53,7 +53,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetTeeFamilyInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -62,7 +62,9 @@ items:
 
     that are categorized as "Tee" fittings.
   remarks: >-
-    This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting)
+    This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting
+
+    )
 
     and specifically of type PartType.Tee are returned.
   example: []
@@ -92,7 +94,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetElbowsFamilyInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -101,7 +103,9 @@ items:
 
     that are categorized as "Elbow" fittings.
   remarks: >-
-    This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting)
+    This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting
+
+    )
 
     and specifically of type PartType.Elbow are returned.
   example: []
@@ -131,7 +135,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOutletsFamilyInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -140,7 +144,9 @@ items:
 
     that are categorized as "Outlets" (Spud Adjustable) fittings.
   remarks: >-
-    This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting)
+    This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting
+
+    )
 
     and specifically of type PartType.SpudAdjustable (representing outlets) are returned.
   example: []
@@ -170,7 +176,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch(Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -187,7 +193,10 @@ items:
       description: >-
         An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> where <code>T</code> is <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref>:
 
-        <ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>The list contains the diameters of all connectors in ascending order.</li><li>If <code>IsSuccess</code> is <code>false</code>, an error occurred and <code>ErrorMessage</code> provides details.</li></ul>
+        <ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>The list contains the diameters of all connectors in ascending order.</li><li>
+                    If <code>IsSuccess</code> is <code>false</code>, an error occurred and <code>ErrorMessage</code> provides
+                    details.
+                </li></ul>
     content.vb: Public Shared Function GetOrderedConnectorSizesInInch(instance As FamilyInstance) As MbResult(Of List(Of Double))
   overload: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch*
 - uid: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch(Autodesk.Revit.DB.Element)
@@ -202,11 +211,14 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch(Autodesk.Revit.DB.Element)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
-  summary: Retrieves a sorted list of connector sizes (diameters) in inches for a given <xref href="Element" data-throw-if-not-resolved="false"></xref> that is an <xref href="Autodesk.Revit.DB.MEPCurve" data-throw-if-not-resolved="false"></xref>.
+  summary: >-
+    Retrieves a sorted list of connector sizes (diameters) in inches for a given <xref href="Element" data-throw-if-not-resolved="false"></xref> that is an
+
+    <xref href="Autodesk.Revit.DB.MEPCurve" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public static MbResult<List<double>> GetOrderedConnectorSizesInInch(Element element)
@@ -219,7 +231,10 @@ items:
       description: >-
         Returns an <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> where T is List&lt;double&gt;:
 
-        <ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>The list contains the diameters of all connectors in inches, sorted in ascending order.</li><li>If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides details.</li></ul>
+        <ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>The list contains the diameters of all connectors in inches, sorted in ascending order.</li><li>
+                    If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides
+                    details.
+                </li></ul>
     content.vb: Public Shared Function GetOrderedConnectorSizesInInch(element As Element) As MbResult(Of List(Of Double))
   overload: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch*
 - uid: MBF.Revit.Data.Utils.MbPipeFittingsUtils.FittingSizeIsEqual(Autodesk.Revit.DB.FamilyInstance)
@@ -234,7 +249,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.FittingSizeIsEqual(Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -251,7 +266,13 @@ items:
       description: >-
         Returns an <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> where T is <code>bool</code>:
 
-        <ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>If <code>Value</code> is <code>true</code>, all connectors have equal sizes or there are fewer than two connectors.</li><li>If <code>Value</code> is <code>false</code>, connectors have different sizes.</li><li>If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides details.</li></ul>
+        <ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>
+                    If <code>Value</code> is <code>true</code>, all connectors have equal sizes or there are fewer than two
+                    connectors.
+                </li><li>If <code>Value</code> is <code>false</code>, connectors have different sizes.</li><li>
+                    If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides
+                    details.
+                </li></ul>
     content.vb: Public Shared Function FittingSizeIsEqual(instance As FamilyInstance) As MbResult(Of Boolean)
   overload: MBF.Revit.Data.Utils.MbPipeFittingsUtils.FittingSizeIsEqual*
 - uid: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOtherFittingWhichIsNotElbowsOrTeesOrOutletsFamilyInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
@@ -266,7 +287,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOtherFittingWhichIsNotElbowsOrTeesOrOutletsFamilyInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -275,7 +296,9 @@ items:
 
     that are not categorized as "Tee", "Elbow", or "Outlets" fittings.
   remarks: >-
-    This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting)
+    This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting
+
+    )
 
     and excluding types PartType.Tee, PartType.Elbow, or
 
@@ -289,7 +312,10 @@ items:
       description: A collection of Revit elements to filter.
     return:
       type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.FamilyInstance}
-      description: An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> objects representing fittings that are not tee, elbow, or outlet fittings.
+      description: >-
+        An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> objects representing fittings that are not tee,
+
+        elbow, or outlet fittings.
     content.vb: Public Shared Function GetOtherFittingWhichIsNotElbowsOrTeesOrOutletsFamilyInstances(selectedElements As IEnumerable(Of Element)) As IEnumerable(Of FamilyInstance)
   overload: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOtherFittingWhichIsNotElbowsOrTeesOrOutletsFamilyInstances*
   nameWithType.vb: MbPipeFittingsUtils.GetOtherFittingWhichIsNotElbowsOrTeesOrOutletsFamilyInstances(IEnumerable(Of Element))
@@ -307,7 +333,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetAngleBetweenLargestRadiusConnectors(System.Collections.Generic.List<Autodesk.Revit.DB.Connector>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -324,7 +350,13 @@ items:
       description: >-
         Returns an <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> where T is <code>double</code>:
 
-        <ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>If <code>Value</code> is a valid angle, it represents the computed angle between the two connectors with the largest radius.</li><li>If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides details.</li></ul>
+        <ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>
+                    If <code>Value</code> is a valid angle, it represents the computed angle between the two connectors
+                    with the largest radius.
+                </li><li>
+                    If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides
+                    details.
+                </li></ul>
     content.vb: Public Shared Function GetAngleBetweenLargestRadiusConnectors(connectors As List(Of Connector)) As MbResult(Of Double)
   overload: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetAngleBetweenLargestRadiusConnectors*
   nameWithType.vb: MbPipeFittingsUtils.GetAngleBetweenLargestRadiusConnectors(List(Of Connector))
@@ -342,7 +374,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetAngleBetweenLargestRadiusConnectors(Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -359,7 +391,13 @@ items:
       description: >-
         Returns an <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> where T is <code>double</code>:
 
-        <ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>If <code>Value</code> is a valid angle, it represents the computed angle between the two connectors with the largest radius.</li><li>If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides details.</li></ul>
+        <ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>
+                    If <code>Value</code> is a valid angle, it represents the computed angle between the two connectors
+                    with the largest radius.
+                </li><li>
+                    If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides
+                    details.
+                </li></ul>
     content.vb: Public Shared Function GetAngleBetweenLargestRadiusConnectors(instance As FamilyInstance) As MbResult(Of Double)
   overload: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetAngleBetweenLargestRadiusConnectors*
 references:
@@ -812,7 +850,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult`1
   parent: MB.Common.Utils.Result
   isExternal: true
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+  href: MB.Common.Utils.Result.MbResult-1.html
   name: MbResult<T>
   nameWithType: MbResult<T>
   fullName: MB.Common.Utils.Result.MbResult<T>
@@ -823,7 +861,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+    href: MB.Common.Utils.Result.MbResult-1.html
   - name: <
   - name: T
   - name: '>'
@@ -831,7 +869,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+    href: MB.Common.Utils.Result.MbResult-1.html
   - name: (
   - name: Of
   - name: " "
@@ -876,7 +914,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{System.Double}}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   name: MbResult<List<double>>
   nameWithType: MbResult<List<double>>
   fullName: MB.Common.Utils.Result.MbResult<System.Collections.Generic.List<double>>
@@ -887,7 +925,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: <
   - uid: System.Collections.Generic.List`1
     name: List
@@ -904,7 +941,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "
@@ -990,7 +1026,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{System.Boolean}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+  href: MB.Common.Utils.Result.MbResult-1.html
   name: MbResult<bool>
   nameWithType: MbResult<bool>
   fullName: MB.Common.Utils.Result.MbResult<bool>
@@ -1001,7 +1037,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+    href: MB.Common.Utils.Result.MbResult-1.html
   - name: <
   - uid: System.Boolean
     name: bool
@@ -1012,7 +1048,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+    href: MB.Common.Utils.Result.MbResult-1.html
   - name: (
   - name: Of
   - name: " "
@@ -1072,7 +1108,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{System.Double}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+  href: https://learn.microsoft.com/dotnet/api/system.double
   name: MbResult<double>
   nameWithType: MbResult<double>
   fullName: MB.Common.Utils.Result.MbResult<double>
@@ -1083,7 +1119,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: <
   - uid: System.Double
     name: double
@@ -1094,7 +1129,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "

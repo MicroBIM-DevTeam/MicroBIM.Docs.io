@@ -14,7 +14,7 @@ items:
   fullName: Revit.Extensions.Extensions.ViewExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/ViewExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/ViewExtensions.cs
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Extensions
@@ -46,7 +46,7 @@ items:
   fullName: Revit.Extensions.Extensions.ViewExtensions.GetVisibleElements(Autodesk.Revit.DB.View, Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/ViewExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/ViewExtensions.cs
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Extensions
@@ -354,7 +354,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult`1
   parent: MB.Common.Utils.Result
   isExternal: true
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+  href: MB.Common.Utils.Result.MbResult-1.html
   name: MbResult<T>
   nameWithType: MbResult<T>
   fullName: MB.Common.Utils.Result.MbResult<T>
@@ -365,7 +365,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+    href: MB.Common.Utils.Result.MbResult-1.html
   - name: <
   - name: T
   - name: '>'
@@ -373,7 +373,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+    href: MB.Common.Utils.Result.MbResult-1.html
   - name: (
   - name: Of
   - name: " "
@@ -393,6 +393,7 @@ references:
   nameWithType: View
   fullName: Autodesk.Revit.DB.View
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
   isExternal: true
   name: Document
   nameWithType: Document
@@ -401,7 +402,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.Element}}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   name: MbResult<List<Element>>
   nameWithType: MbResult<List<Element>>
   fullName: MB.Common.Utils.Result.MbResult<System.Collections.Generic.List<Autodesk.Revit.DB.Element>>
@@ -412,7 +413,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: <
   - uid: System.Collections.Generic.List`1
     name: List
@@ -428,7 +428,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "

@@ -1,0 +1,81 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Geometry.Extensions
+  commentId: N:MBF.Revit.Geometry.Extensions
+  id: MBF.Revit.Geometry.Extensions
+  children:
+  - MBF.Revit.Geometry.Extensions.BoundingBoxExtensions
+  - MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions
+  - MBF.Revit.Geometry.Extensions.ClipperExtensions
+  - MBF.Revit.Geometry.Extensions.CurveLoopExtensions
+  - MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions
+  - MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions
+  - MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions
+  - MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: MBF.Revit.Geometry.Extensions
+  nameWithType: MBF.Revit.Geometry.Extensions
+  fullName: MBF.Revit.Geometry.Extensions
+  type: Namespace
+  assemblies:
+  - MBF.Revit.Geometry
+references:
+- uid: MBF.Revit.Geometry.Extensions.BoundingBoxExtensions
+  commentId: T:MBF.Revit.Geometry.Extensions.BoundingBoxExtensions
+  isExternal: true
+  href: MBF.Revit.Geometry.Extensions.BoundingBoxExtensions.html
+  name: BoundingBoxExtensions
+  nameWithType: BoundingBoxExtensions
+  fullName: MBF.Revit.Geometry.Extensions.BoundingBoxExtensions
+- uid: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions
+  commentId: T:MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions
+  isExternal: true
+  href: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.html
+  name: BoundingBoxVisualizerExtensions
+  nameWithType: BoundingBoxVisualizerExtensions
+  fullName: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions
+- uid: MBF.Revit.Geometry.Extensions.ClipperExtensions
+  commentId: T:MBF.Revit.Geometry.Extensions.ClipperExtensions
+  isExternal: true
+  href: MBF.Revit.Geometry.Extensions.ClipperExtensions.html
+  name: ClipperExtensions
+  nameWithType: ClipperExtensions
+  fullName: MBF.Revit.Geometry.Extensions.ClipperExtensions
+- uid: MBF.Revit.Geometry.Extensions.CurveLoopExtensions
+  commentId: T:MBF.Revit.Geometry.Extensions.CurveLoopExtensions
+  isExternal: true
+  href: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.html
+  name: CurveLoopExtensions
+  nameWithType: CurveLoopExtensions
+  fullName: MBF.Revit.Geometry.Extensions.CurveLoopExtensions
+- uid: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions
+  commentId: T:MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions
+  isExternal: true
+  href: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.html
+  name: CurveLoopVisualizerExtensions
+  nameWithType: CurveLoopVisualizerExtensions
+  fullName: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions
+- uid: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions
+  commentId: T:MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions
+  isExternal: true
+  href: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.html
+  name: CurveVisualizerExtensions
+  nameWithType: CurveVisualizerExtensions
+  fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions
+- uid: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions
+  commentId: T:MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions
+  isExternal: true
+  href: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.html
+  name: PathDVisualizerExtensions
+  nameWithType: PathDVisualizerExtensions
+  fullName: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions
+- uid: MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions
+  commentId: T:MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions
+  isExternal: true
+  href: MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.html
+  name: XyzVisualizationsExtensions
+  nameWithType: XyzVisualizationsExtensions
+  fullName: MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions
+shouldSkipMarkup: true

@@ -5,6 +5,9 @@ items:
   id: MBF.Revit.Data.SelectionFilters
   children:
   - MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter
+  - MBF.Revit.Data.SelectionFilters.FaceSelectionFilter
+  - MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter
+  - MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter
   langs:
   - csharp
   - vb
@@ -22,4 +25,25 @@ references:
   name: DynamicCategorySelectionFilter
   nameWithType: DynamicCategorySelectionFilter
   fullName: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter
+- uid: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter
+  commentId: T:MBF.Revit.Data.SelectionFilters.FaceSelectionFilter
+  isExternal: true
+  href: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.html
+  name: FaceSelectionFilter
+  nameWithType: FaceSelectionFilter
+  fullName: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter
+- uid: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter
+  commentId: T:MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter
+  isExternal: true
+  href: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.html
+  name: HostOrLinkedCategorySelectionFilter
+  nameWithType: HostOrLinkedCategorySelectionFilter
+  fullName: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter
+- uid: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter
+  commentId: T:MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter
+  isExternal: true
+  href: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.html
+  name: LinkedCategorySelectionFilter
+  nameWithType: LinkedCategorySelectionFilter
+  fullName: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter
 shouldSkipMarkup: true

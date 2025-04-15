@@ -13,8 +13,6 @@ items:
   nameWithType: ImageUtils
   fullName: MB.Common.Utils.Image.ImageUtils
   type: Class
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Image/ImageUtils.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Image
@@ -44,8 +42,6 @@ items:
   nameWithType: ImageUtils.ResizeImage(Image, int, int)
   fullName: MB.Common.Utils.Image.ImageUtils.ResizeImage(System.Drawing.Image, int, int)
   type: Method
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Image/ImageUtils.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Image

@@ -15,8 +15,6 @@ items:
   nameWithType: BoundingBoxComparer
   fullName: MB.Common.Comparers.BoundingBoxComparer
   type: Class
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Comparers/BoundingBoxComparer.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Comparers
@@ -46,8 +44,6 @@ items:
   nameWithType: BoundingBoxComparer.BoundingBoxComparer()
   fullName: MB.Common.Comparers.BoundingBoxComparer.BoundingBoxComparer()
   type: Constructor
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Comparers/BoundingBoxComparer.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Comparers
@@ -74,8 +70,6 @@ items:
   nameWithType: BoundingBoxComparer.Compare(XYZ)
   fullName: MB.Common.Comparers.BoundingBoxComparer.Compare(Autodesk.Revit.DB.XYZ)
   type: Method
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Comparers/BoundingBoxComparer.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Comparers
@@ -100,8 +94,6 @@ items:
   nameWithType: BoundingBoxComparer.Resolve()
   fullName: MB.Common.Comparers.BoundingBoxComparer.Resolve()
   type: Method
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Comparers/BoundingBoxComparer.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Comparers
@@ -417,6 +409,7 @@ references:
   nameWithType: BoundingBoxComparer.Compare
   fullName: MB.Common.Comparers.BoundingBoxComparer.Compare
 - uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
   isExternal: true
   name: XYZ
   nameWithType: XYZ

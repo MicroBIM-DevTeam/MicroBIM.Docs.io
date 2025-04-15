@@ -6,8 +6,10 @@ items:
   parent: Revit.Extensions.Extensions
   children:
   - Revit.Extensions.Extensions.DocumentExtensions.CreateAndPlaceColumnAtPoint(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.FamilySymbol,Autodesk.Revit.DB.Level,Autodesk.Revit.DB.Level)
+  - Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments(Autodesk.Revit.DB.Document)
   - Revit.Extensions.Extensions.DocumentExtensions.GetFamilyTypesByCategoryOrderedByName(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)
   - Revit.Extensions.Extensions.DocumentExtensions.GetLevelsOrderedByProperty``1(Autodesk.Revit.DB.Document,System.Func{Autodesk.Revit.DB.Level,``0},System.Boolean)
+  - Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly(Autodesk.Revit.DB.Document)
   - Revit.Extensions.Extensions.DocumentExtensions.GetRebarBarTypes(Autodesk.Revit.DB.Document)
   - Revit.Extensions.Extensions.DocumentExtensions.GetRebarShapes(Autodesk.Revit.DB.Document)
   - Revit.Extensions.Extensions.DocumentExtensions.SearchOrCreate3DView(Autodesk.Revit.DB.Document,System.String,System.Boolean)
@@ -19,7 +21,7 @@ items:
   fullName: Revit.Extensions.Extensions.DocumentExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/DocumentExtensions.cs
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Extensions
@@ -51,7 +53,7 @@ items:
   fullName: Revit.Extensions.Extensions.DocumentExtensions.GetFamilyTypesByCategoryOrderedByName(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.BuiltInCategory)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/DocumentExtensions.cs
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Extensions
@@ -87,7 +89,7 @@ items:
   fullName: Revit.Extensions.Extensions.DocumentExtensions.GetLevelsOrderedByProperty<TKey>(Autodesk.Revit.DB.Document, System.Func<Autodesk.Revit.DB.Level, TKey>, bool)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/DocumentExtensions.cs
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Extensions
@@ -132,7 +134,7 @@ items:
   fullName: Revit.Extensions.Extensions.DocumentExtensions.GetRebarShapes(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/DocumentExtensions.cs
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Extensions
@@ -165,7 +167,7 @@ items:
   fullName: Revit.Extensions.Extensions.DocumentExtensions.GetRebarBarTypes(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/DocumentExtensions.cs
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Extensions
@@ -198,7 +200,7 @@ items:
   fullName: Revit.Extensions.Extensions.DocumentExtensions.CreateAndPlaceColumnAtPoint(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.FamilySymbol, Autodesk.Revit.DB.Level, Autodesk.Revit.DB.Level)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/DocumentExtensions.cs
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Extensions
@@ -243,7 +245,7 @@ items:
   fullName: Revit.Extensions.Extensions.DocumentExtensions.SearchOrCreate3DView(Autodesk.Revit.DB.Document, string, bool)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/DocumentExtensions.cs
   assemblies:
   - Revit.Extensions
   namespace: Revit.Extensions.Extensions
@@ -272,6 +274,66 @@ items:
   nameWithType.vb: DocumentExtensions.SearchOrCreate3DView(Document, String, Boolean)
   fullName.vb: Revit.Extensions.Extensions.DocumentExtensions.SearchOrCreate3DView(Autodesk.Revit.DB.Document, String, Boolean)
   name.vb: SearchOrCreate3DView(Document, String, Boolean)
+- uid: Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments(Autodesk.Revit.DB.Document)
+  commentId: M:Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments(Autodesk.Revit.DB.Document)
+  id: GetAllRevitDocuments(Autodesk.Revit.DB.Document)
+  isExtensionMethod: true
+  parent: Revit.Extensions.Extensions.DocumentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAllRevitDocuments(Document)
+  nameWithType: DocumentExtensions.GetAllRevitDocuments(Document)
+  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments(Autodesk.Revit.DB.Document)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/DocumentExtensions.cs
+  assemblies:
+  - Revit.Extensions
+  namespace: Revit.Extensions.Extensions
+  summary: Retrieves the base document and all linked Revit documents.
+  example: []
+  syntax:
+    content: public static List<Document> GetAllRevitDocuments(this Document doc)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The base Revit document.
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Document}
+      description: A list of Revit <xref href="Autodesk.Revit.DB.Document" data-throw-if-not-resolved="false"></xref> instances including the base and all linked documents.
+    content.vb: Public Shared Function GetAllRevitDocuments(doc As Document) As List(Of Document)
+  overload: Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments*
+- uid: Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly(Autodesk.Revit.DB.Document)
+  commentId: M:Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly(Autodesk.Revit.DB.Document)
+  id: GetLinkedDocumentsOnly(Autodesk.Revit.DB.Document)
+  isExtensionMethod: true
+  parent: Revit.Extensions.Extensions.DocumentExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetLinkedDocumentsOnly(Document)
+  nameWithType: DocumentExtensions.GetLinkedDocumentsOnly(Document)
+  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly(Autodesk.Revit.DB.Document)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/DocumentExtensions.cs
+  assemblies:
+  - Revit.Extensions
+  namespace: Revit.Extensions.Extensions
+  summary: Retrieves only the linked Revit documents associated with the given base document.
+  example: []
+  syntax:
+    content: public static List<Document> GetLinkedDocumentsOnly(this Document doc)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The base Revit document.
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Document}
+      description: A list of linked <xref href="Autodesk.Revit.DB.Document" data-throw-if-not-resolved="false"></xref> instances.
+    content.vb: Public Shared Function GetLinkedDocumentsOnly(doc As Document) As List(Of Document)
+  overload: Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly*
 references:
 - uid: Revit.Extensions.Extensions
   commentId: N:Revit.Extensions.Extensions
@@ -551,7 +613,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult`1
   parent: MB.Common.Utils.Result
   isExternal: true
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+  href: MB.Common.Utils.Result.MbResult-1.html
   name: MbResult<T>
   nameWithType: MbResult<T>
   fullName: MB.Common.Utils.Result.MbResult<T>
@@ -562,7 +624,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+    href: MB.Common.Utils.Result.MbResult-1.html
   - name: <
   - name: T
   - name: '>'
@@ -570,7 +632,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+    href: MB.Common.Utils.Result.MbResult-1.html
   - name: (
   - name: Of
   - name: " "
@@ -584,12 +646,12 @@ references:
   nameWithType: DocumentExtensions.GetFamilyTypesByCategoryOrderedByName
   fullName: Revit.Extensions.Extensions.DocumentExtensions.GetFamilyTypesByCategoryOrderedByName
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
   isExternal: true
   name: Document
   nameWithType: Document
   fullName: Autodesk.Revit.DB.Document
 - uid: Autodesk.Revit.DB.BuiltInCategory
-  commentId: '!:Autodesk.Revit.DB.BuiltInCategory'
   isExternal: true
   name: BuiltInCategory
   nameWithType: BuiltInCategory
@@ -598,7 +660,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{System.Collections.ObjectModel.ObservableCollection{Autodesk.Revit.DB.FamilySymbol}}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
   name: MbResult<ObservableCollection<FamilySymbol>>
   nameWithType: MbResult<ObservableCollection<FamilySymbol>>
   fullName: MB.Common.Utils.Result.MbResult<System.Collections.ObjectModel.ObservableCollection<Autodesk.Revit.DB.FamilySymbol>>
@@ -609,7 +671,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: <
   - uid: System.Collections.ObjectModel.ObservableCollection`1
     name: ObservableCollection
@@ -625,7 +686,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "
@@ -749,7 +809,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{System.Collections.ObjectModel.ObservableCollection{Autodesk.Revit.DB.Level}}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
   name: MbResult<ObservableCollection<Level>>
   nameWithType: MbResult<ObservableCollection<Level>>
   fullName: MB.Common.Utils.Result.MbResult<System.Collections.ObjectModel.ObservableCollection<Autodesk.Revit.DB.Level>>
@@ -760,7 +820,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: <
   - uid: System.Collections.ObjectModel.ObservableCollection`1
     name: ObservableCollection
@@ -776,7 +835,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "
@@ -837,7 +895,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.Structure.RebarShape}}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   name: MbResult<List<RebarShape>>
   nameWithType: MbResult<List<RebarShape>>
   fullName: MB.Common.Utils.Result.MbResult<System.Collections.Generic.List<Autodesk.Revit.DB.Structure.RebarShape>>
@@ -848,7 +906,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: <
   - uid: System.Collections.Generic.List`1
     name: List
@@ -864,7 +921,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "
@@ -891,7 +947,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{System.Collections.ObjectModel.ObservableCollection{Autodesk.Revit.DB.Structure.RebarBarType}}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
   name: MbResult<ObservableCollection<RebarBarType>>
   nameWithType: MbResult<ObservableCollection<RebarBarType>>
   fullName: MB.Common.Utils.Result.MbResult<System.Collections.ObjectModel.ObservableCollection<Autodesk.Revit.DB.Structure.RebarBarType>>
@@ -902,7 +958,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: <
   - uid: System.Collections.ObjectModel.ObservableCollection`1
     name: ObservableCollection
@@ -918,7 +973,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "
@@ -942,6 +996,7 @@ references:
   nameWithType: DocumentExtensions.CreateAndPlaceColumnAtPoint
   fullName: Revit.Extensions.Extensions.DocumentExtensions.CreateAndPlaceColumnAtPoint
 - uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
   isExternal: true
   name: XYZ
   nameWithType: XYZ
@@ -961,7 +1016,6 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.FamilyInstance}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   name: MbResult<FamilyInstance>
   nameWithType: MbResult<FamilyInstance>
   fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.FamilyInstance>
@@ -972,7 +1026,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: <
   - uid: Autodesk.Revit.DB.FamilyInstance
     name: FamilyInstance
@@ -982,7 +1035,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "
@@ -1015,7 +1067,6 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.View3D}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   name: MbResult<View3D>
   nameWithType: MbResult<View3D>
   fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.View3D>
@@ -1026,7 +1077,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: <
   - uid: Autodesk.Revit.DB.View3D
     name: View3D
@@ -1036,7 +1086,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "
@@ -1044,4 +1093,116 @@ references:
     name: View3D
     isExternal: true
   - name: )
+- uid: Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments*
+  commentId: Overload:Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments
+  isExternal: true
+  href: Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetAllRevitDocuments_Autodesk_Revit_DB_Document_
+  name: GetAllRevitDocuments
+  nameWithType: DocumentExtensions.GetAllRevitDocuments
+  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.Document}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.Document}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Document>
+  nameWithType: List<Document>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.Document>
+  nameWithType.vb: List(Of Document)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.Document)
+  name.vb: List(Of Document)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Document
+    name: Document
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Document
+    name: Document
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly*
+  commentId: Overload:Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly
+  isExternal: true
+  href: Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetLinkedDocumentsOnly_Autodesk_Revit_DB_Document_
+  name: GetLinkedDocumentsOnly
+  nameWithType: DocumentExtensions.GetLinkedDocumentsOnly
+  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly
 shouldSkipMarkup: true

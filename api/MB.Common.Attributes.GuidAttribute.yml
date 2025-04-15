@@ -14,8 +14,6 @@ items:
   nameWithType: GuidAttribute
   fullName: MB.Common.Attributes.GuidAttribute
   type: Class
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Attributes/GuidAttribute.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes
@@ -99,8 +97,6 @@ items:
   nameWithType: GuidAttribute.GuidAttribute(string)
   fullName: MB.Common.Attributes.GuidAttribute.GuidAttribute(string)
   type: Constructor
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Attributes/GuidAttribute.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes
@@ -132,8 +128,6 @@ items:
   nameWithType: GuidAttribute.Guid
   fullName: MB.Common.Attributes.GuidAttribute.Guid
   type: Property
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Attributes/GuidAttribute.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes

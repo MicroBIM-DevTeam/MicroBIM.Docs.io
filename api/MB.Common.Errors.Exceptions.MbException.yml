@@ -15,8 +15,6 @@ items:
   nameWithType: MbException
   fullName: MB.Common.Errors.Exceptions.MbException
   type: Class
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Errors/Exceptions/MbException.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Errors.Exceptions
@@ -64,8 +62,6 @@ items:
   nameWithType: MbException.MbException(MbError)
   fullName: MB.Common.Errors.Exceptions.MbException.MbException(MB.Common.Errors.MbError)
   type: Constructor
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Errors/Exceptions/MbException.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Errors.Exceptions
@@ -95,8 +91,6 @@ items:
   nameWithType: MbException.MbError
   fullName: MB.Common.Errors.Exceptions.MbException.MbError
   type: Property
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Errors/Exceptions/MbException.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Errors.Exceptions
@@ -123,8 +117,6 @@ items:
   nameWithType: MbException.Description
   fullName: MB.Common.Errors.Exceptions.MbException.Description
   type: Property
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Errors/Exceptions/MbException.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Errors.Exceptions

@@ -15,8 +15,6 @@ items:
   nameWithType: RevitParameterManager
   fullName: MB.Common.Parameters.RevitParameterManager
   type: Class
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Parameters/RevitParameterManager.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Parameters
@@ -46,8 +44,6 @@ items:
   nameWithType: RevitParameterManager.EnsureParameters(Document, MbfTool)
   fullName: MB.Common.Parameters.RevitParameterManager.EnsureParameters(Autodesk.Revit.DB.Document, MB.Common.Tools.MbfTool)
   type: Method
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Parameters/RevitParameterManager.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Parameters
@@ -75,8 +71,6 @@ items:
   nameWithType: RevitParameterManager.EnsureParameters(Document, ToolsSharedParameter[])
   fullName: MB.Common.Parameters.RevitParameterManager.EnsureParameters(Autodesk.Revit.DB.Document, MB.Common.SharedParameters.ToolsSharedParameter[])
   type: Method
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Parameters/RevitParameterManager.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Parameters
@@ -110,8 +104,6 @@ items:
   nameWithType: RevitParameterManager.RevitParameterManager()
   fullName: MB.Common.Parameters.RevitParameterManager.RevitParameterManager()
   type: Constructor
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Parameters/RevitParameterManager.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Parameters
@@ -405,6 +397,7 @@ references:
   nameWithType: RevitParameterManager.EnsureParameters
   fullName: MB.Common.Parameters.RevitParameterManager.EnsureParameters
 - uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
   isExternal: true
   name: Document
   nameWithType: Document

@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Data.Models
+  commentId: N:MBF.Revit.Data.Models
+  id: MBF.Revit.Data.Models
+  children:
+  - MBF.Revit.Data.Models.MbDocument
+  langs:
+  - csharp
+  - vb
+  name: MBF.Revit.Data.Models
+  nameWithType: MBF.Revit.Data.Models
+  fullName: MBF.Revit.Data.Models
+  type: Namespace
+  assemblies:
+  - MBF.Revit.Data
+references:
+- uid: MBF.Revit.Data.Models.MbDocument
+  commentId: T:MBF.Revit.Data.Models.MbDocument
+  isExternal: true
+  href: MBF.Revit.Data.Models.MbDocument.html
+  name: MbDocument
+  nameWithType: MbDocument
+  fullName: MBF.Revit.Data.Models.MbDocument
+shouldSkipMarkup: true

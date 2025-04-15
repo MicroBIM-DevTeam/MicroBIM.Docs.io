@@ -1,0 +1,518 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  id: GraphEdge
+  parent: MBF.Revit.Geometry.Voronoi.Models
+  children:
+  - MBF.Revit.Geometry.Voronoi.Models.GraphEdge.#ctor
+  - MBF.Revit.Geometry.Voronoi.Models.GraphEdge.site1
+  - MBF.Revit.Geometry.Voronoi.Models.GraphEdge.site2
+  - MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x1
+  - MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x2
+  - MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y1
+  - MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y2
+  langs:
+  - csharp
+  - vb
+  name: GraphEdge
+  nameWithType: GraphEdge
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: Represents a graphical edge in the Voronoi diagram.
+  example: []
+  syntax:
+    content: public class GraphEdge
+    content.vb: Public Class GraphEdge
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x1
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x1
+  id: x1
+  parent: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  langs:
+  - csharp
+  - vb
+  name: x1
+  nameWithType: GraphEdge.x1
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x1
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  syntax:
+    content: public double x1
+    return:
+      type: System.Double
+    content.vb: Public x1 As Double
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y1
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y1
+  id: y1
+  parent: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  langs:
+  - csharp
+  - vb
+  name: y1
+  nameWithType: GraphEdge.y1
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y1
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  syntax:
+    content: public double y1
+    return:
+      type: System.Double
+    content.vb: Public y1 As Double
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x2
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x2
+  id: x2
+  parent: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  langs:
+  - csharp
+  - vb
+  name: x2
+  nameWithType: GraphEdge.x2
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x2
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  syntax:
+    content: public double x2
+    return:
+      type: System.Double
+    content.vb: Public x2 As Double
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y2
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y2
+  id: y2
+  parent: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  langs:
+  - csharp
+  - vb
+  name: y2
+  nameWithType: GraphEdge.y2
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y2
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  syntax:
+    content: public double y2
+    return:
+      type: System.Double
+    content.vb: Public y2 As Double
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.site1
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.site1
+  id: site1
+  parent: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  langs:
+  - csharp
+  - vb
+  name: site1
+  nameWithType: GraphEdge.site1
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.site1
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  syntax:
+    content: public int site1
+    return:
+      type: System.Int32
+    content.vb: Public site1 As Integer
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.site2
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.site2
+  id: site2
+  parent: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  langs:
+  - csharp
+  - vb
+  name: site2
+  nameWithType: GraphEdge.site2
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.site2
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  syntax:
+    content: public int site2
+    return:
+      type: System.Int32
+    content.vb: Public site2 As Integer
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.#ctor
+  commentId: M:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.#ctor
+  id: '#ctor'
+  parent: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  langs:
+  - csharp
+  - vb
+  name: GraphEdge()
+  nameWithType: GraphEdge.GraphEdge()
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.GraphEdge()
+  type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  syntax:
+    content: public GraphEdge()
+    content.vb: Public Sub New()
+  overload: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.#ctor*
+  nameWithType.vb: GraphEdge.New()
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.New()
+  name.vb: New()
+references:
+- uid: MBF.Revit.Geometry.Voronoi.Models
+  commentId: N:MBF.Revit.Geometry.Voronoi.Models
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Geometry.Voronoi.Models
+  nameWithType: MBF.Revit.Geometry.Voronoi.Models
+  fullName: MBF.Revit.Geometry.Voronoi.Models
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Geometry
+    name: Geometry
+    isExternal: true
+    href: MBF.Revit.Geometry.html
+  - name: .
+  - uid: MBF.Revit.Geometry.Voronoi
+    name: Voronoi
+    isExternal: true
+    href: MBF.Revit.Geometry.Voronoi.html
+  - name: .
+  - uid: MBF.Revit.Geometry.Voronoi.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Geometry.Voronoi.Models.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Geometry
+    name: Geometry
+    isExternal: true
+    href: MBF.Revit.Geometry.html
+  - name: .
+  - uid: MBF.Revit.Geometry.Voronoi
+    name: Voronoi
+    isExternal: true
+    href: MBF.Revit.Geometry.Voronoi.html
+  - name: .
+  - uid: MBF.Revit.Geometry.Voronoi.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Geometry.Voronoi.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.#ctor*
+  commentId: Overload:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.#ctor
+  isExternal: true
+  href: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.html#MBF_Revit_Geometry_Voronoi_Models_GraphEdge__ctor
+  name: GraphEdge
+  nameWithType: GraphEdge.GraphEdge
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.GraphEdge
+  nameWithType.vb: GraphEdge.New
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.New
+  name.vb: New
+shouldSkipMarkup: true

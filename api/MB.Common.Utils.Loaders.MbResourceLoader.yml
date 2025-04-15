@@ -1,0 +1,710 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Utils.Loaders.MbResourceLoader
+  commentId: T:MB.Common.Utils.Loaders.MbResourceLoader
+  id: MbResourceLoader
+  parent: MB.Common.Utils.Loaders
+  children:
+  - MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource(System.String,System.String)
+  - MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync``1(System.String,System.Reflection.Assembly)
+  langs:
+  - csharp
+  - vb
+  name: MbResourceLoader
+  nameWithType: MbResourceLoader
+  fullName: MB.Common.Utils.Loaders.MbResourceLoader
+  type: Class
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Utils.Loaders
+  summary: Provides utility methods for working with embedded resources, including loading JSON content and extracting files.
+  example: []
+  syntax:
+    content: public static class MbResourceLoader
+    content.vb: Public Module MbResourceLoader
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync``1(System.String,System.Reflection.Assembly)
+  commentId: M:MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync``1(System.String,System.Reflection.Assembly)
+  id: LoadEmbeddedJsonAsync``1(System.String,System.Reflection.Assembly)
+  parent: MB.Common.Utils.Loaders.MbResourceLoader
+  langs:
+  - csharp
+  - vb
+  name: LoadEmbeddedJsonAsync<T>(string, Assembly)
+  nameWithType: MbResourceLoader.LoadEmbeddedJsonAsync<T>(string, Assembly)
+  fullName: MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync<T>(string, System.Reflection.Assembly)
+  type: Method
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Utils.Loaders
+  summary: Loads an embedded JSON resource and deserializes it into a list of objects of type <code class="typeparamref">T</code>.
+  remarks: >-
+    The method searches for an embedded resource name that ends with the specified <code class="paramref">resourceFileName</code>.
+
+    It uses case-insensitive matching and supports resources embedded via project file settings.
+  example: []
+  syntax:
+    content: public static Task<List<T>> LoadEmbeddedJsonAsync<T>(string resourceFileName, Assembly assembly)
+    parameters:
+    - id: resourceFileName
+      type: System.String
+      description: The name (or suffix) of the embedded resource file (e.g., "DefaultConfig.json").
+    - id: assembly
+      type: System.Reflection.Assembly
+      description: The <xref href="System.Reflection.Assembly" data-throw-if-not-resolved="false"></xref> that contains the embedded resource.
+    typeParameters:
+    - id: T
+      description: The type of the objects to deserialize.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{{T}}}
+      description: >-
+        A task that resolves to a <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref> containing the deserialized objects. If loading or deserialization fails,
+
+        an empty list is returned and a message box will display the error.
+    content.vb: Public Shared Function LoadEmbeddedJsonAsync(Of T)(resourceFileName As String, assembly As Assembly) As Task(Of List(Of T))
+  overload: MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync*
+  nameWithType.vb: MbResourceLoader.LoadEmbeddedJsonAsync(Of T)(String, Assembly)
+  fullName.vb: MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync(Of T)(String, System.Reflection.Assembly)
+  name.vb: LoadEmbeddedJsonAsync(Of T)(String, Assembly)
+- uid: MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource(System.String,System.String)
+  commentId: M:MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource(System.String,System.String)
+  id: EnsureFileFromEmbeddedResource(System.String,System.String)
+  parent: MB.Common.Utils.Loaders.MbResourceLoader
+  langs:
+  - csharp
+  - vb
+  name: EnsureFileFromEmbeddedResource(string, string)
+  nameWithType: MbResourceLoader.EnsureFileFromEmbeddedResource(string, string)
+  fullName: MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource(string, string)
+  type: Method
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Utils.Loaders
+  summary: Ensures that a file exists at the specified path. If it does not, the method creates it using the content from an embedded resource.
+  remarks: >-
+    This method can be used to seed configuration files or default templates on first run of the application.
+
+    It supports nested directory creation and uses the currently executing assembly to locate the resource.
+  example: []
+  syntax:
+    content: public static MbResult<bool> EnsureFileFromEmbeddedResource(string outputFilePath, string embeddedResourceName)
+    parameters:
+    - id: outputFilePath
+      type: System.String
+      description: The full path where the file should be created if it doesn't exist.
+    - id: embeddedResourceName
+      type: System.String
+      description: The full name of the embedded resource (e.g., "Namespace.Resources.Default.json").
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.Boolean}
+      description: >-
+        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> indicating the outcome:
+
+        <ul><li><code>Success = true</code> — The file already exists or was created successfully from the embedded resource.</li><li><code>Success = false</code> — The resource was not found or an error occurred during file creation. The <code>ErrorMessage</code> will describe the issue.</li></ul>
+    content.vb: Public Shared Function EnsureFileFromEmbeddedResource(outputFilePath As String, embeddedResourceName As String) As MbResult(Of Boolean)
+  overload: MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource*
+  nameWithType.vb: MbResourceLoader.EnsureFileFromEmbeddedResource(String, String)
+  fullName.vb: MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource(String, String)
+  name.vb: EnsureFileFromEmbeddedResource(String, String)
+references:
+- uid: MB.Common.Utils.Loaders
+  commentId: N:MB.Common.Utils.Loaders
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Utils.Loaders
+  nameWithType: MB.Common.Utils.Loaders
+  fullName: MB.Common.Utils.Loaders
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Loaders
+    name: Loaders
+    isExternal: true
+    href: MB.Common.Utils.Loaders.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Loaders
+    name: Loaders
+    isExternal: true
+    href: MB.Common.Utils.Loaders.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync*
+  commentId: Overload:MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync
+  isExternal: true
+  href: MB.Common.Utils.Loaders.MbResourceLoader.html#MB_Common_Utils_Loaders_MbResourceLoader_LoadEmbeddedJsonAsync__1_System_String_System_Reflection_Assembly_
+  name: LoadEmbeddedJsonAsync
+  nameWithType: MbResourceLoader.LoadEmbeddedJsonAsync
+  fullName: MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{{T}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{``0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<T>>
+  nameWithType: Task<List<T>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<T>>
+  nameWithType.vb: Task(Of List(Of T))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of T))
+  name.vb: Task(Of List(Of T))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: MB.Common.Utils.Result.MbResult`1
+  commentId: T:MB.Common.Utils.Result.MbResult`1
+  parent: MB.Common.Utils.Result
+  isExternal: true
+  href: MB.Common.Utils.Result.MbResult-1.html
+  name: MbResult<T>
+  nameWithType: MbResult<T>
+  fullName: MB.Common.Utils.Result.MbResult<T>
+  nameWithType.vb: MbResult(Of T)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of T)
+  name.vb: MbResult(Of T)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource*
+  commentId: Overload:MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource
+  isExternal: true
+  href: MB.Common.Utils.Loaders.MbResourceLoader.html#MB_Common_Utils_Loaders_MbResourceLoader_EnsureFileFromEmbeddedResource_System_String_System_String_
+  name: EnsureFileFromEmbeddedResource
+  nameWithType: MbResourceLoader.EnsureFileFromEmbeddedResource
+  fullName: MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource
+- uid: MB.Common.Utils.Result.MbResult{System.Boolean}
+  commentId: T:MB.Common.Utils.Result.MbResult{System.Boolean}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: MB.Common.Utils.Result.MbResult-1.html
+  name: MbResult<bool>
+  nameWithType: MbResult<bool>
+  fullName: MB.Common.Utils.Result.MbResult<bool>
+  nameWithType.vb: MbResult(Of Boolean)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of Boolean)
+  name.vb: MbResult(Of Boolean)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: MB.Common.Utils.Result
+  commentId: N:MB.Common.Utils.Result
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Utils.Result
+  nameWithType: MB.Common.Utils.Result
+  fullName: MB.Common.Utils.Result
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+shouldSkipMarkup: true

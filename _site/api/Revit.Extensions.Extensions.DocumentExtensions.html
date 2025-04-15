@@ -89,7 +89,7 @@
 
 
   <h1 id="Revit_Extensions_Extensions_DocumentExtensions" data-uid="Revit.Extensions.Extensions.DocumentExtensions" class="text-break">
-Class DocumentExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+Class DocumentExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -156,7 +156,7 @@ Class DocumentExtensions  <a class="header-action link-secondary" title="View so
 
   <h3 id="Revit_Extensions_Extensions_DocumentExtensions_CreateAndPlaceColumnAtPoint_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_FamilySymbol_Autodesk_Revit_DB_Level_Autodesk_Revit_DB_Level_" data-uid="Revit.Extensions.Extensions.DocumentExtensions.CreateAndPlaceColumnAtPoint(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.FamilySymbol,Autodesk.Revit.DB.Level,Autodesk.Revit.DB.Level)">
   CreateAndPlaceColumnAtPoint(Document, XYZ, FamilySymbol, Level, Level)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Creates and places a column at a specified point in the Revit document.</div>
@@ -182,9 +182,45 @@ Class DocumentExtensions  <a class="header-action link-secondary" title="View so
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs">MbResult</a>&lt;<span class="xref">FamilyInstance</span>&gt;</dt>
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<span class="xref">FamilyInstance</span>&gt;</dt>
     <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing:
 <ul><li>The created FamilyInstance if successful.</li><li>An error message if any input is invalid or column creation fails.</li></ul></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Revit_Extensions_Extensions_DocumentExtensions_GetAllRevitDocuments_" data-uid="Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments*"></a>
+
+  <h3 id="Revit_Extensions_Extensions_DocumentExtensions_GetAllRevitDocuments_Autodesk_Revit_DB_Document_" data-uid="Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments(Autodesk.Revit.DB.Document)">
+  GetAllRevitDocuments(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves the base document and all linked Revit documents.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Document&gt; GetAllRevitDocuments(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd>The base Revit document.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Document</span>&gt;</dt>
+    <dd>A list of Revit <span class="xref">Autodesk.Revit.DB.Document</span> instances including the base and all linked documents.</dd>
   </dl>
 
 
@@ -201,7 +237,7 @@ Class DocumentExtensions  <a class="header-action link-secondary" title="View so
 
   <h3 id="Revit_Extensions_Extensions_DocumentExtensions_GetFamilyTypesByCategoryOrderedByName_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_" data-uid="Revit.Extensions.Extensions.DocumentExtensions.GetFamilyTypesByCategoryOrderedByName(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)">
   GetFamilyTypesByCategoryOrderedByName(Document, BuiltInCategory)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Retrieves all family types of the specified category from the given Revit document as an ObservableCollection.</div>
@@ -221,7 +257,7 @@ Class DocumentExtensions  <a class="header-action link-secondary" title="View so
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1">ObservableCollection</a>&lt;<span class="xref">FamilySymbol</span>&gt;&gt;</dt>
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1">ObservableCollection</a>&lt;<span class="xref">FamilySymbol</span>&gt;&gt;</dt>
     <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing:
 <ul><li>An ObservableCollection of FamilySymbol objects if successful.</li><li>An error message if the document or category is invalid.</li></ul></dd>
   </dl>
@@ -240,7 +276,7 @@ Class DocumentExtensions  <a class="header-action link-secondary" title="View so
 
   <h3 id="Revit_Extensions_Extensions_DocumentExtensions_GetLevelsOrderedByProperty__1_Autodesk_Revit_DB_Document_System_Func_Autodesk_Revit_DB_Level___0__System_Boolean_" data-uid="Revit.Extensions.Extensions.DocumentExtensions.GetLevelsOrderedByProperty``1(Autodesk.Revit.DB.Document,System.Func{Autodesk.Revit.DB.Level,``0},System.Boolean)">
   GetLevelsOrderedByProperty&lt;TKey&gt;(Document, Func&lt;Level, TKey&gt;, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Retrieves all levels from the specified Revit document as an ObservableCollection, ordered dynamically by a specified property.</div>
@@ -262,7 +298,7 @@ Class DocumentExtensions  <a class="header-action link-secondary" title="View so
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1">ObservableCollection</a>&lt;<span class="xref">Level</span>&gt;&gt;</dt>
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1">ObservableCollection</a>&lt;<span class="xref">Level</span>&gt;&gt;</dt>
     <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing:
 <ul><li>An ObservableCollection of Level objects if successful.</li><li>An error message if the document or keySelector is null.</li></ul></dd>
   </dl>
@@ -282,11 +318,47 @@ Class DocumentExtensions  <a class="header-action link-secondary" title="View so
 
 
 
+  <a id="Revit_Extensions_Extensions_DocumentExtensions_GetLinkedDocumentsOnly_" data-uid="Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly*"></a>
+
+  <h3 id="Revit_Extensions_Extensions_DocumentExtensions_GetLinkedDocumentsOnly_Autodesk_Revit_DB_Document_" data-uid="Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly(Autodesk.Revit.DB.Document)">
+  GetLinkedDocumentsOnly(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves only the linked Revit documents associated with the given base document.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Document&gt; GetLinkedDocumentsOnly(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd>The base Revit document.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Document</span>&gt;</dt>
+    <dd>A list of linked <span class="xref">Autodesk.Revit.DB.Document</span> instances.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Revit_Extensions_Extensions_DocumentExtensions_GetRebarBarTypes_" data-uid="Revit.Extensions.Extensions.DocumentExtensions.GetRebarBarTypes*"></a>
 
   <h3 id="Revit_Extensions_Extensions_DocumentExtensions_GetRebarBarTypes_Autodesk_Revit_DB_Document_" data-uid="Revit.Extensions.Extensions.DocumentExtensions.GetRebarBarTypes(Autodesk.Revit.DB.Document)">
   GetRebarBarTypes(Document)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Retrieves all rebar bar types from the specified Revit document as an ObservableCollection.</div>
@@ -304,7 +376,7 @@ Class DocumentExtensions  <a class="header-action link-secondary" title="View so
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1">ObservableCollection</a>&lt;<span class="xref">RebarBarType</span>&gt;&gt;</dt>
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1">ObservableCollection</a>&lt;<span class="xref">RebarBarType</span>&gt;&gt;</dt>
     <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing:
 <ul><li>An ObservableCollection of RebarBarType objects if successful.</li><li>An error message if the document is null.</li></ul></dd>
   </dl>
@@ -323,7 +395,7 @@ Class DocumentExtensions  <a class="header-action link-secondary" title="View so
 
   <h3 id="Revit_Extensions_Extensions_DocumentExtensions_GetRebarShapes_Autodesk_Revit_DB_Document_" data-uid="Revit.Extensions.Extensions.DocumentExtensions.GetRebarShapes(Autodesk.Revit.DB.Document)">
   GetRebarShapes(Document)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Retrieves all rebar shapes from the specified Revit document.</div>
@@ -341,7 +413,7 @@ Class DocumentExtensions  <a class="header-action link-secondary" title="View so
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">RebarShape</span>&gt;&gt;</dt>
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">RebarShape</span>&gt;&gt;</dt>
     <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing:
 <ul><li>A list of RebarShape objects if successful.</li><li>An error message if the document is null.</li></ul></dd>
   </dl>
@@ -360,7 +432,7 @@ Class DocumentExtensions  <a class="header-action link-secondary" title="View so
 
   <h3 id="Revit_Extensions_Extensions_DocumentExtensions_SearchOrCreate3DView_Autodesk_Revit_DB_Document_System_String_System_Boolean_" data-uid="Revit.Extensions.Extensions.DocumentExtensions.SearchOrCreate3DView(Autodesk.Revit.DB.Document,System.String,System.Boolean)">
   SearchOrCreate3DView(Document, string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/e45b507d36549afd5343dda2340b6604afe2a05a/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFRevitExtensions/blob/c87d7cbad5f00fd5b0a92c6d6767254af8515122/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Searches for a 3D view with the specified name. If it exists, returns it. Optionally, creates a new 3D view if specified.</div>
@@ -382,7 +454,7 @@ Class DocumentExtensions  <a class="header-action link-secondary" title="View so
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs">MbResult</a>&lt;<span class="xref">View3D</span>&gt;</dt>
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<span class="xref">View3D</span>&gt;</dt>
     <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing:
 <ul><li>The existing or newly created <span class="xref">Autodesk.Revit.DB.View3D</span> object if successful.</li><li>An error message if the document is null, the view name is invalid, or creation fails.</li></ul></dd>
   </dl>

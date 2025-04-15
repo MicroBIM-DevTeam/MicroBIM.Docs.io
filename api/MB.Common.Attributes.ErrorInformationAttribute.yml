@@ -14,8 +14,6 @@ items:
   nameWithType: ErrorInformationAttribute
   fullName: MB.Common.Attributes.ErrorInformationAttribute
   type: Class
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Attributes/ErrorInformationAttribute.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes
@@ -98,8 +96,6 @@ items:
   nameWithType: ErrorInformationAttribute.ErrorInformationAttribute(string)
   fullName: MB.Common.Attributes.ErrorInformationAttribute.ErrorInformationAttribute(string)
   type: Constructor
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Attributes/ErrorInformationAttribute.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes
@@ -130,8 +126,6 @@ items:
   nameWithType: ErrorInformationAttribute.ErrorInformation
   fullName: MB.Common.Attributes.ErrorInformationAttribute.ErrorInformation
   type: Property
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Attributes/ErrorInformationAttribute.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes

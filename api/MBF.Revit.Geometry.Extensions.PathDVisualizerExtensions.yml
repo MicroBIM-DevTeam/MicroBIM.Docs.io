@@ -1,0 +1,436 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions
+  commentId: T:MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions
+  id: PathDVisualizerExtensions
+  parent: MBF.Revit.Geometry.Extensions
+  children:
+  - MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D(Clipper2Lib.PathD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  - MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathsD2D(Clipper2Lib.PathsD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  langs:
+  - csharp
+  - vb
+  name: PathDVisualizerExtensions
+  nameWithType: PathDVisualizerExtensions
+  fullName: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/PathDVisualizerExtensions.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Extensions
+  summary: Extension methods for visualizing Clipper <xref href="Clipper2Lib.PathD" data-throw-if-not-resolved="false"></xref> and <xref href="Clipper2Lib.PathsD" data-throw-if-not-resolved="false"></xref> in 2D in the Revit XY plane.
+  example: []
+  syntax:
+    content: public static class PathDVisualizerExtensions
+    content.vb: Public Module PathDVisualizerExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D(Clipper2Lib.PathD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  commentId: M:MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D(Clipper2Lib.PathD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  id: VisualizePathD2D(Clipper2Lib.PathD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  isExtensionMethod: true
+  parent: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions
+  langs:
+  - csharp
+  - vb
+  name: VisualizePathD2D(PathD, Document, Color)
+  nameWithType: PathDVisualizerExtensions.VisualizePathD2D(PathD, Document, Color)
+  fullName: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D(Clipper2Lib.PathD, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/PathDVisualizerExtensions.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Extensions
+  summary: Visualizes a single <xref href="Clipper2Lib.PathD" data-throw-if-not-resolved="false"></xref> as a 2D outline using a <xref href="DirectShape" data-throw-if-not-resolved="false"></xref> in the active view of the specified Revit document.
+  example: []
+  syntax:
+    content: public static void VisualizePathD2D(this PathD path, Document doc, Color color = null)
+    parameters:
+    - id: path
+      type: Clipper2Lib.PathD
+      description: The <xref href="Clipper2Lib.PathD" data-throw-if-not-resolved="false"></xref> to visualize in 2D (XY plane).
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The Revit <xref href="Autodesk.Revit.DB.Document" data-throw-if-not-resolved="false"></xref> where the path will be visualized.
+    - id: color
+      type: Autodesk.Revit.DB.Color
+      description: Optional color for the path outline. Defaults to red if not specified.
+    content.vb: Public Shared Sub VisualizePathD2D(path As PathD, doc As Document, color As Color = Nothing)
+  overload: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D*
+- uid: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathsD2D(Clipper2Lib.PathsD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  commentId: M:MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathsD2D(Clipper2Lib.PathsD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  id: VisualizePathsD2D(Clipper2Lib.PathsD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  isExtensionMethod: true
+  parent: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions
+  langs:
+  - csharp
+  - vb
+  name: VisualizePathsD2D(PathsD, Document, Color)
+  nameWithType: PathDVisualizerExtensions.VisualizePathsD2D(PathsD, Document, Color)
+  fullName: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathsD2D(Clipper2Lib.PathsD, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/PathDVisualizerExtensions.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Extensions
+  summary: Visualizes each <xref href="Clipper2Lib.PathD" data-throw-if-not-resolved="false"></xref> in a <xref href="Clipper2Lib.PathsD" data-throw-if-not-resolved="false"></xref> collection as a 2D outline using <xref href="DirectShape" data-throw-if-not-resolved="false"></xref> elements.
+  example: []
+  syntax:
+    content: public static void VisualizePathsD2D(this PathsD paths, Document doc, Color color = null)
+    parameters:
+    - id: paths
+      type: Clipper2Lib.PathsD
+      description: The <xref href="Clipper2Lib.PathsD" data-throw-if-not-resolved="false"></xref> collection to visualize in 2D (XY plane).
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The Revit <xref href="Autodesk.Revit.DB.Document" data-throw-if-not-resolved="false"></xref> where the paths will be visualized.
+    - id: color
+      type: Autodesk.Revit.DB.Color
+      description: Optional color for the path outlines. Defaults to red if not specified.
+    content.vb: Public Shared Sub VisualizePathsD2D(paths As PathsD, doc As Document, color As Color = Nothing)
+  overload: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathsD2D*
+references:
+- uid: Clipper2Lib.PathD
+  commentId: T:Clipper2Lib.PathD
+  parent: Clipper2Lib
+  isExternal: true
+  name: PathD
+  nameWithType: PathD
+  fullName: Clipper2Lib.PathD
+- uid: Clipper2Lib.PathsD
+  commentId: T:Clipper2Lib.PathsD
+  parent: Clipper2Lib
+  isExternal: true
+  name: PathsD
+  nameWithType: PathsD
+  fullName: Clipper2Lib.PathsD
+- uid: MBF.Revit.Geometry.Extensions
+  commentId: N:MBF.Revit.Geometry.Extensions
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Geometry.Extensions
+  nameWithType: MBF.Revit.Geometry.Extensions
+  fullName: MBF.Revit.Geometry.Extensions
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Geometry
+    name: Geometry
+    isExternal: true
+    href: MBF.Revit.Geometry.html
+  - name: .
+  - uid: MBF.Revit.Geometry.Extensions
+    name: Extensions
+    isExternal: true
+    href: MBF.Revit.Geometry.Extensions.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Geometry
+    name: Geometry
+    isExternal: true
+    href: MBF.Revit.Geometry.html
+  - name: .
+  - uid: MBF.Revit.Geometry.Extensions
+    name: Extensions
+    isExternal: true
+    href: MBF.Revit.Geometry.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: Clipper2Lib
+  commentId: N:Clipper2Lib
+  isExternal: true
+  name: Clipper2Lib
+  nameWithType: Clipper2Lib
+  fullName: Clipper2Lib
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DirectShape
+  commentId: T:DirectShape
+  isExternal: true
+- uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
+- uid: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D*
+  commentId: Overload:MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D
+  isExternal: true
+  href: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_PathDVisualizerExtensions_VisualizePathD2D_Clipper2Lib_PathD_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_
+  name: VisualizePathD2D
+  nameWithType: PathDVisualizerExtensions.VisualizePathD2D
+  fullName: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D
+- uid: Autodesk.Revit.DB.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: Autodesk.Revit.DB.Color
+- uid: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathsD2D*
+  commentId: Overload:MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathsD2D
+  isExternal: true
+  href: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_PathDVisualizerExtensions_VisualizePathsD2D_Clipper2Lib_PathsD_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_
+  name: VisualizePathsD2D
+  nameWithType: PathDVisualizerExtensions.VisualizePathsD2D
+  fullName: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathsD2D
+shouldSkipMarkup: true

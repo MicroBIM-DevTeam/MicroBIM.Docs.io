@@ -1,0 +1,584 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Geometry.Utils.PolygonUtils
+  commentId: T:MBF.Revit.Geometry.Utils.PolygonUtils
+  id: PolygonUtils
+  parent: MBF.Revit.Geometry.Utils
+  children:
+  - MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ)
+  langs:
+  - csharp
+  - vb
+  name: PolygonUtils
+  nameWithType: PolygonUtils
+  fullName: MBF.Revit.Geometry.Utils.PolygonUtils
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Utils/PolygonUtils.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Utils
+  summary: >-
+    Provides utility methods for geometric operations involving 2D polygons using Revit's <xref href="Autodesk.Revit.DB.XYZ" data-throw-if-not-resolved="false"></xref> points.
+
+    This utility assumes all computations are performed in the XY plane and ignores Z-axis values.
+  example: []
+  syntax:
+    content: public static class PolygonUtils
+    content.vb: Public Module PolygonUtils
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ)
+  commentId: M:MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ)
+  id: IsPointInsidePolygon(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ)
+  parent: MBF.Revit.Geometry.Utils.PolygonUtils
+  langs:
+  - csharp
+  - vb
+  name: IsPointInsidePolygon(List<XYZ>, XYZ)
+  nameWithType: PolygonUtils.IsPointInsidePolygon(List<XYZ>, XYZ)
+  fullName: MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon(System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>, Autodesk.Revit.DB.XYZ)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Utils/PolygonUtils.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Utils
+  summary: Determines whether a given point lies inside a 2D polygon using the ray-casting algorithm (in XY plane).
+  example: []
+  syntax:
+    content: public static MbResult<bool> IsPointInsidePolygon(List<XYZ> polygon, XYZ point)
+    parameters:
+    - id: polygon
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.XYZ}
+      description: The list of polygon vertices (at least 3 points required). Z-values are ignored.
+    - id: point
+      type: Autodesk.Revit.DB.XYZ
+      description: The point to check. Z-value is ignored.
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.Boolean}
+      description: >-
+        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing:
+
+        <ul><li><code>true</code> if the point lies inside the polygon.</li><li><code>false</code> if the point lies outside or on the edge.</li><li>An error message if the input is invalid or an exception occurs.</li></ul>
+    content.vb: Public Shared Function IsPointInsidePolygon(polygon As List(Of XYZ), point As XYZ) As MbResult(Of Boolean)
+  overload: MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon*
+  nameWithType.vb: PolygonUtils.IsPointInsidePolygon(List(Of XYZ), XYZ)
+  fullName.vb: MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon(System.Collections.Generic.List(Of Autodesk.Revit.DB.XYZ), Autodesk.Revit.DB.XYZ)
+  name.vb: IsPointInsidePolygon(List(Of XYZ), XYZ)
+references:
+- uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
+  isExternal: true
+  name: XYZ
+  nameWithType: XYZ
+  fullName: Autodesk.Revit.DB.XYZ
+- uid: MBF.Revit.Geometry.Utils
+  commentId: N:MBF.Revit.Geometry.Utils
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Geometry.Utils
+  nameWithType: MBF.Revit.Geometry.Utils
+  fullName: MBF.Revit.Geometry.Utils
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Geometry
+    name: Geometry
+    isExternal: true
+    href: MBF.Revit.Geometry.html
+  - name: .
+  - uid: MBF.Revit.Geometry.Utils
+    name: Utils
+    isExternal: true
+    href: MBF.Revit.Geometry.Utils.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Geometry
+    name: Geometry
+    isExternal: true
+    href: MBF.Revit.Geometry.html
+  - name: .
+  - uid: MBF.Revit.Geometry.Utils
+    name: Utils
+    isExternal: true
+    href: MBF.Revit.Geometry.Utils.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MB.Common.Utils.Result.MbResult`1
+  commentId: T:MB.Common.Utils.Result.MbResult`1
+  parent: MB.Common.Utils.Result
+  isExternal: true
+  href: MB.Common.Utils.Result.MbResult-1.html
+  name: MbResult<T>
+  nameWithType: MbResult<T>
+  fullName: MB.Common.Utils.Result.MbResult<T>
+  nameWithType.vb: MbResult(Of T)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of T)
+  name.vb: MbResult(Of T)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon*
+  commentId: Overload:MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon
+  isExternal: true
+  href: MBF.Revit.Geometry.Utils.PolygonUtils.html#MBF_Revit_Geometry_Utils_PolygonUtils_IsPointInsidePolygon_System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__Autodesk_Revit_DB_XYZ_
+  name: IsPointInsidePolygon
+  nameWithType: PolygonUtils.IsPointInsidePolygon
+  fullName: MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.XYZ}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.XYZ}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<XYZ>
+  nameWithType: List<XYZ>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>
+  nameWithType.vb: List(Of XYZ)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.XYZ)
+  name.vb: List(Of XYZ)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: )
+- uid: MB.Common.Utils.Result.MbResult{System.Boolean}
+  commentId: T:MB.Common.Utils.Result.MbResult{System.Boolean}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: MB.Common.Utils.Result.MbResult-1.html
+  name: MbResult<bool>
+  nameWithType: MbResult<bool>
+  fullName: MB.Common.Utils.Result.MbResult<bool>
+  nameWithType.vb: MbResult(Of Boolean)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of Boolean)
+  name.vb: MbResult(Of Boolean)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: MB.Common.Utils.Result
+  commentId: N:MB.Common.Utils.Result
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Utils.Result
+  nameWithType: MB.Common.Utils.Result
+  fullName: MB.Common.Utils.Result
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+shouldSkipMarkup: true

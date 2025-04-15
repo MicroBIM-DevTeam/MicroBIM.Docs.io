@@ -5,10 +5,10 @@ items:
   id: FilePaths
   parent: MB.Common.Constants
   children:
-  - MB.Common.Constants.FilePaths.CoverageExcel
-  - MB.Common.Constants.FilePaths.CoverageJson
+  - MB.Common.Constants.FilePaths.AutoSprinklerSpacing
   - MB.Common.Constants.FilePaths.Elbows
   - MB.Common.Constants.FilePaths.FlexPipes
+  - MB.Common.Constants.FilePaths.HazardCoverageJson
   - MB.Common.Constants.FilePaths.MapperJsons
   - MB.Common.Constants.FilePaths.Others
   - MB.Common.Constants.FilePaths.Outlets
@@ -16,8 +16,6 @@ items:
   - MB.Common.Constants.FilePaths.Pipes
   - MB.Common.Constants.FilePaths.Sprinklers
   - MB.Common.Constants.FilePaths.Tees
-  - MB.Common.Constants.FilePaths.WorksetsExcel
-  - MB.Common.Constants.FilePaths.WorksetsJson
   langs:
   - csharp
   - vb
@@ -25,8 +23,6 @@ items:
   nameWithType: FilePaths
   fullName: MB.Common.Constants.FilePaths
   type: Class
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
@@ -59,8 +55,6 @@ items:
   nameWithType: FilePaths.Pipes
   fullName: MB.Common.Constants.FilePaths.Pipes
   type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
@@ -71,6 +65,27 @@ items:
     return:
       type: System.String
     content.vb: Public Const Pipes As String = "Pipes"
+- uid: MB.Common.Constants.FilePaths.HazardCoverageJson
+  commentId: F:MB.Common.Constants.FilePaths.HazardCoverageJson
+  id: HazardCoverageJson
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: HazardCoverageJson
+  nameWithType: FilePaths.HazardCoverageJson
+  fullName: MB.Common.Constants.FilePaths.HazardCoverageJson
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  summary: Constant for identifying pipe elements.
+  example: []
+  syntax:
+    content: public const string HazardCoverageJson = "HazardCoverage.json"
+    return:
+      type: System.String
+    content.vb: Public Const HazardCoverageJson As String = "HazardCoverage.json"
 - uid: MB.Common.Constants.FilePaths.FlexPipes
   commentId: F:MB.Common.Constants.FilePaths.FlexPipes
   id: FlexPipes
@@ -82,8 +97,6 @@ items:
   nameWithType: FilePaths.FlexPipes
   fullName: MB.Common.Constants.FilePaths.FlexPipes
   type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
@@ -105,8 +118,6 @@ items:
   nameWithType: FilePaths.Outlets
   fullName: MB.Common.Constants.FilePaths.Outlets
   type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
@@ -128,8 +139,6 @@ items:
   nameWithType: FilePaths.Tees
   fullName: MB.Common.Constants.FilePaths.Tees
   type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
@@ -151,8 +160,6 @@ items:
   nameWithType: FilePaths.Elbows
   fullName: MB.Common.Constants.FilePaths.Elbows
   type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
@@ -174,8 +181,6 @@ items:
   nameWithType: FilePaths.PipeAccessories
   fullName: MB.Common.Constants.FilePaths.PipeAccessories
   type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
@@ -197,8 +202,6 @@ items:
   nameWithType: FilePaths.Sprinklers
   fullName: MB.Common.Constants.FilePaths.Sprinklers
   type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
@@ -220,8 +223,6 @@ items:
   nameWithType: FilePaths.Others
   fullName: MB.Common.Constants.FilePaths.Others
   type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
@@ -232,106 +233,6 @@ items:
     return:
       type: System.String
     content.vb: Public Const Others As String = "Others"
-- uid: MB.Common.Constants.FilePaths.WorksetsExcel
-  commentId: P:MB.Common.Constants.FilePaths.WorksetsExcel
-  id: WorksetsExcel
-  parent: MB.Common.Constants.FilePaths
-  langs:
-  - csharp
-  - vb
-  name: WorksetsExcel
-  nameWithType: FilePaths.WorksetsExcel
-  fullName: MB.Common.Constants.FilePaths.WorksetsExcel
-  type: Property
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
-  assemblies:
-  - MB.Common
-  namespace: MB.Common.Constants
-  summary: Gets the full path to the Worksets Excel file.
-  example: []
-  syntax:
-    content: public static string WorksetsExcel { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Shared ReadOnly Property WorksetsExcel As String
-  overload: MB.Common.Constants.FilePaths.WorksetsExcel*
-- uid: MB.Common.Constants.FilePaths.WorksetsJson
-  commentId: P:MB.Common.Constants.FilePaths.WorksetsJson
-  id: WorksetsJson
-  parent: MB.Common.Constants.FilePaths
-  langs:
-  - csharp
-  - vb
-  name: WorksetsJson
-  nameWithType: FilePaths.WorksetsJson
-  fullName: MB.Common.Constants.FilePaths.WorksetsJson
-  type: Property
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
-  assemblies:
-  - MB.Common
-  namespace: MB.Common.Constants
-  summary: Gets the full path to the Worksets JSON file.
-  example: []
-  syntax:
-    content: public static string WorksetsJson { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Shared ReadOnly Property WorksetsJson As String
-  overload: MB.Common.Constants.FilePaths.WorksetsJson*
-- uid: MB.Common.Constants.FilePaths.CoverageExcel
-  commentId: P:MB.Common.Constants.FilePaths.CoverageExcel
-  id: CoverageExcel
-  parent: MB.Common.Constants.FilePaths
-  langs:
-  - csharp
-  - vb
-  name: CoverageExcel
-  nameWithType: FilePaths.CoverageExcel
-  fullName: MB.Common.Constants.FilePaths.CoverageExcel
-  type: Property
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
-  assemblies:
-  - MB.Common
-  namespace: MB.Common.Constants
-  summary: Gets the full path to the Coverage Excel file.
-  example: []
-  syntax:
-    content: public static string CoverageExcel { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Shared ReadOnly Property CoverageExcel As String
-  overload: MB.Common.Constants.FilePaths.CoverageExcel*
-- uid: MB.Common.Constants.FilePaths.CoverageJson
-  commentId: P:MB.Common.Constants.FilePaths.CoverageJson
-  id: CoverageJson
-  parent: MB.Common.Constants.FilePaths
-  langs:
-  - csharp
-  - vb
-  name: CoverageJson
-  nameWithType: FilePaths.CoverageJson
-  fullName: MB.Common.Constants.FilePaths.CoverageJson
-  type: Property
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
-  assemblies:
-  - MB.Common
-  namespace: MB.Common.Constants
-  summary: Gets the full path to the Coverage JSON file.
-  example: []
-  syntax:
-    content: public static string CoverageJson { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Shared ReadOnly Property CoverageJson As String
-  overload: MB.Common.Constants.FilePaths.CoverageJson*
 - uid: MB.Common.Constants.FilePaths.MapperJsons
   commentId: P:MB.Common.Constants.FilePaths.MapperJsons
   id: MapperJsons
@@ -343,8 +244,6 @@ items:
   nameWithType: FilePaths.MapperJsons
   fullName: MB.Common.Constants.FilePaths.MapperJsons
   type: Property
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Constants/FilePaths.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
@@ -357,6 +256,29 @@ items:
       type: System.String
     content.vb: Public Shared ReadOnly Property MapperJsons As String
   overload: MB.Common.Constants.FilePaths.MapperJsons*
+- uid: MB.Common.Constants.FilePaths.AutoSprinklerSpacing
+  commentId: P:MB.Common.Constants.FilePaths.AutoSprinklerSpacing
+  id: AutoSprinklerSpacing
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: AutoSprinklerSpacing
+  nameWithType: FilePaths.AutoSprinklerSpacing
+  fullName: MB.Common.Constants.FilePaths.AutoSprinklerSpacing
+  type: Property
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  summary: Gets the path to the directory containing Auto Sprinkler Spacing JSON files.
+  example: []
+  syntax:
+    content: public static string AutoSprinklerSpacing { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property AutoSprinklerSpacing As String
+  overload: MB.Common.Constants.FilePaths.AutoSprinklerSpacing*
 references:
 - uid: MB.Common.Constants
   commentId: N:MB.Common.Constants
@@ -643,34 +565,6 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: MB.Common.Constants.FilePaths.WorksetsExcel*
-  commentId: Overload:MB.Common.Constants.FilePaths.WorksetsExcel
-  isExternal: true
-  href: MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_WorksetsExcel
-  name: WorksetsExcel
-  nameWithType: FilePaths.WorksetsExcel
-  fullName: MB.Common.Constants.FilePaths.WorksetsExcel
-- uid: MB.Common.Constants.FilePaths.WorksetsJson*
-  commentId: Overload:MB.Common.Constants.FilePaths.WorksetsJson
-  isExternal: true
-  href: MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_WorksetsJson
-  name: WorksetsJson
-  nameWithType: FilePaths.WorksetsJson
-  fullName: MB.Common.Constants.FilePaths.WorksetsJson
-- uid: MB.Common.Constants.FilePaths.CoverageExcel*
-  commentId: Overload:MB.Common.Constants.FilePaths.CoverageExcel
-  isExternal: true
-  href: MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_CoverageExcel
-  name: CoverageExcel
-  nameWithType: FilePaths.CoverageExcel
-  fullName: MB.Common.Constants.FilePaths.CoverageExcel
-- uid: MB.Common.Constants.FilePaths.CoverageJson*
-  commentId: Overload:MB.Common.Constants.FilePaths.CoverageJson
-  isExternal: true
-  href: MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_CoverageJson
-  name: CoverageJson
-  nameWithType: FilePaths.CoverageJson
-  fullName: MB.Common.Constants.FilePaths.CoverageJson
 - uid: MB.Common.Constants.FilePaths.MapperJsons*
   commentId: Overload:MB.Common.Constants.FilePaths.MapperJsons
   isExternal: true
@@ -678,4 +572,11 @@ references:
   name: MapperJsons
   nameWithType: FilePaths.MapperJsons
   fullName: MB.Common.Constants.FilePaths.MapperJsons
+- uid: MB.Common.Constants.FilePaths.AutoSprinklerSpacing*
+  commentId: Overload:MB.Common.Constants.FilePaths.AutoSprinklerSpacing
+  isExternal: true
+  href: MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_AutoSprinklerSpacing
+  name: AutoSprinklerSpacing
+  nameWithType: FilePaths.AutoSprinklerSpacing
+  fullName: MB.Common.Constants.FilePaths.AutoSprinklerSpacing
 shouldSkipMarkup: true

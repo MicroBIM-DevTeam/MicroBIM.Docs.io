@@ -6,6 +6,12 @@ items:
   parent: MBF.Revit.Data.Utils
   children:
   - MBF.Revit.Data.Utils.MbViewUtils.#ctor
+  - MBF.Revit.Data.Utils.MbViewUtils.Create3DView(Autodesk.Revit.DB.Document)
+  - MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen(Autodesk.Revit.DB.Document)
+  - MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews(Autodesk.Revit.DB.Document)
+  - MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews(Autodesk.Revit.DB.Document)
+  - MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D(Autodesk.Revit.DB.Document)
+  - MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction(Autodesk.Revit.DB.Document)
   - MBF.Revit.Data.Utils.MbViewUtils.IsGraphicalView(Autodesk.Revit.DB.View)
   - MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.Element)
   - MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.FamilyInstance)
@@ -17,7 +23,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -48,7 +54,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.IsGraphicalView(Autodesk.Revit.DB.View)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -77,7 +83,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -87,13 +93,184 @@ items:
     Displays a message if the view is not graphical or the bounding box is invalid.
   example: []
   syntax:
-    content: public static void ZoomToElement(FamilyInstance instnace)
+    content: public static void ZoomToElement(FamilyInstance instance)
     parameters:
-    - id: instnace
+    - id: instance
       type: Autodesk.Revit.DB.FamilyInstance
       description: The family instance to zoom to.
-    content.vb: Public Shared Sub ZoomToElement(instnace As FamilyInstance)
+    content.vb: Public Shared Sub ZoomToElement(instance As FamilyInstance)
   overload: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement*
+- uid: MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D(Autodesk.Revit.DB.Document)
+  commentId: M:MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D(Autodesk.Revit.DB.Document)
+  id: GetOrCreateTemp3D(Autodesk.Revit.DB.Document)
+  parent: MBF.Revit.Data.Utils.MbViewUtils
+  langs:
+  - csharp
+  - vb
+  name: GetOrCreateTemp3D(Document)
+  nameWithType: MbViewUtils.GetOrCreateTemp3D(Document)
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D(Autodesk.Revit.DB.Document)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Retrieves a temporary 3D view named "Temp3DMBFire". If it doesn't exist, it will be created.
+  example: []
+  syntax:
+    content: public static MbResult<View3D> GetOrCreateTemp3D(Document doc)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The current Revit document.
+    return:
+      type: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.View3D}
+      description: An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing the view or error details.
+    content.vb: Public Shared Function GetOrCreateTemp3D(doc As Document) As MbResult(Of View3D)
+  overload: MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D*
+- uid: MBF.Revit.Data.Utils.MbViewUtils.Create3DView(Autodesk.Revit.DB.Document)
+  commentId: M:MBF.Revit.Data.Utils.MbViewUtils.Create3DView(Autodesk.Revit.DB.Document)
+  id: Create3DView(Autodesk.Revit.DB.Document)
+  parent: MBF.Revit.Data.Utils.MbViewUtils
+  langs:
+  - csharp
+  - vb
+  name: Create3DView(Document)
+  nameWithType: MbViewUtils.Create3DView(Document)
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.Create3DView(Autodesk.Revit.DB.Document)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Creates a new isometric 3D view named "Temp3DMBFire".
+  example: []
+  syntax:
+    content: public static MbResult<View3D> Create3DView(Document doc)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The Revit document.
+    return:
+      type: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.View3D}
+      description: An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> indicating success or failure.
+    content.vb: Public Shared Function Create3DView(doc As Document) As MbResult(Of View3D)
+  overload: MBF.Revit.Data.Utils.MbViewUtils.Create3DView*
+- uid: MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen(Autodesk.Revit.DB.Document)
+  commentId: M:MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen(Autodesk.Revit.DB.Document)
+  id: EnsureTemp3DViewIsOpen(Autodesk.Revit.DB.Document)
+  parent: MBF.Revit.Data.Utils.MbViewUtils
+  langs:
+  - csharp
+  - vb
+  name: EnsureTemp3DViewIsOpen(Document)
+  nameWithType: MbViewUtils.EnsureTemp3DViewIsOpen(Document)
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen(Autodesk.Revit.DB.Document)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Creates and opens the temporary 3D view if it's not already opened in the UI.
+  example: []
+  syntax:
+    content: public static void EnsureTemp3DViewIsOpen(Document activeDoc)
+    parameters:
+    - id: activeDoc
+      type: Autodesk.Revit.DB.Document
+      description: The active document wrapper.
+    content.vb: Public Shared Sub EnsureTemp3DViewIsOpen(activeDoc As Document)
+  overload: MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen*
+- uid: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction(Autodesk.Revit.DB.Document)
+  commentId: M:MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction(Autodesk.Revit.DB.Document)
+  id: GetTemp3D_NoTransaction(Autodesk.Revit.DB.Document)
+  parent: MBF.Revit.Data.Utils.MbViewUtils
+  langs:
+  - csharp
+  - vb
+  name: GetTemp3D_NoTransaction(Document)
+  nameWithType: MbViewUtils.GetTemp3D_NoTransaction(Document)
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction(Autodesk.Revit.DB.Document)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Gets the temporary 3D view without opening or switching views.
+  example: []
+  syntax:
+    content: public static MbResult<View3D> GetTemp3D_NoTransaction(Document doc)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The Revit document.
+    return:
+      type: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.View3D}
+      description: An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing the view or an error message.
+    content.vb: Public Shared Function GetTemp3D_NoTransaction(doc As Document) As MbResult(Of View3D)
+  overload: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction*
+- uid: MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews(Autodesk.Revit.DB.Document)
+  commentId: M:MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews(Autodesk.Revit.DB.Document)
+  id: GetAllPlanViews(Autodesk.Revit.DB.Document)
+  parent: MBF.Revit.Data.Utils.MbViewUtils
+  langs:
+  - csharp
+  - vb
+  name: GetAllPlanViews(Document)
+  nameWithType: MbViewUtils.GetAllPlanViews(Document)
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews(Autodesk.Revit.DB.Document)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Gets all non-template plan views in the document.
+  example: []
+  syntax:
+    content: public static IList<ViewPlan> GetAllPlanViews(Document doc)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The Revit document.
+    return:
+      type: System.Collections.Generic.IList{Autodesk.Revit.DB.ViewPlan}
+      description: A list of plan views.
+    content.vb: Public Shared Function GetAllPlanViews(doc As Document) As IList(Of ViewPlan)
+  overload: MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews*
+- uid: MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews(Autodesk.Revit.DB.Document)
+  commentId: M:MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews(Autodesk.Revit.DB.Document)
+  id: GetAllThreeDViews(Autodesk.Revit.DB.Document)
+  parent: MBF.Revit.Data.Utils.MbViewUtils
+  langs:
+  - csharp
+  - vb
+  name: GetAllThreeDViews(Document)
+  nameWithType: MbViewUtils.GetAllThreeDViews(Document)
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews(Autodesk.Revit.DB.Document)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Gets all non-template 3D views in the document.
+  example: []
+  syntax:
+    content: public static List<View3D> GetAllThreeDViews(Document doc)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The Revit document.
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.View3D}
+      description: A list of 3D views.
+    content.vb: Public Shared Function GetAllThreeDViews(doc As Document) As List(Of View3D)
+  overload: MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews*
 - uid: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.Element)
   commentId: M:MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.Element)
   id: ZoomToElement(Autodesk.Revit.DB.Element)
@@ -106,7 +283,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.Element)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -135,7 +312,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.MbViewUtils()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -471,6 +648,319 @@ references:
   name: FamilyInstance
   nameWithType: FamilyInstance
   fullName: Autodesk.Revit.DB.FamilyInstance
+- uid: MB.Common.Utils.Result.MbResult`1
+  commentId: T:MB.Common.Utils.Result.MbResult`1
+  parent: MB.Common.Utils.Result
+  isExternal: true
+  href: MB.Common.Utils.Result.MbResult-1.html
+  name: MbResult<T>
+  nameWithType: MbResult<T>
+  fullName: MB.Common.Utils.Result.MbResult<T>
+  nameWithType.vb: MbResult(Of T)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of T)
+  name.vb: MbResult(Of T)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D*
+  commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_GetOrCreateTemp3D_Autodesk_Revit_DB_Document_
+  name: GetOrCreateTemp3D
+  nameWithType: MbViewUtils.GetOrCreateTemp3D
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D
+- uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
+- uid: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.View3D}
+  commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.View3D}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  name: MbResult<View3D>
+  nameWithType: MbResult<View3D>
+  fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.View3D>
+  nameWithType.vb: MbResult(Of View3D)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of Autodesk.Revit.DB.View3D)
+  name.vb: MbResult(Of View3D)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: Autodesk.Revit.DB.View3D
+    name: View3D
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.View3D
+    name: View3D
+    isExternal: true
+  - name: )
+- uid: MB.Common.Utils.Result
+  commentId: N:MB.Common.Utils.Result
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Utils.Result
+  nameWithType: MB.Common.Utils.Result
+  fullName: MB.Common.Utils.Result
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+- uid: MBF.Revit.Data.Utils.MbViewUtils.Create3DView*
+  commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.Create3DView
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_Create3DView_Autodesk_Revit_DB_Document_
+  name: Create3DView
+  nameWithType: MbViewUtils.Create3DView
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.Create3DView
+- uid: MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen*
+  commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_EnsureTemp3DViewIsOpen_Autodesk_Revit_DB_Document_
+  name: EnsureTemp3DViewIsOpen
+  nameWithType: MbViewUtils.EnsureTemp3DViewIsOpen
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen
+- uid: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction*
+  commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_GetTemp3D_NoTransaction_Autodesk_Revit_DB_Document_
+  name: GetTemp3D_NoTransaction
+  nameWithType: MbViewUtils.GetTemp3D_NoTransaction
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction
+- uid: MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews*
+  commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_GetAllPlanViews_Autodesk_Revit_DB_Document_
+  name: GetAllPlanViews
+  nameWithType: MbViewUtils.GetAllPlanViews
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews
+- uid: System.Collections.Generic.IList{Autodesk.Revit.DB.ViewPlan}
+  commentId: T:System.Collections.Generic.IList{Autodesk.Revit.DB.ViewPlan}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<ViewPlan>
+  nameWithType: IList<ViewPlan>
+  fullName: System.Collections.Generic.IList<Autodesk.Revit.DB.ViewPlan>
+  nameWithType.vb: IList(Of ViewPlan)
+  fullName.vb: System.Collections.Generic.IList(Of Autodesk.Revit.DB.ViewPlan)
+  name.vb: IList(Of ViewPlan)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: Autodesk.Revit.DB.ViewPlan
+    name: ViewPlan
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.ViewPlan
+    name: ViewPlan
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews*
+  commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_GetAllThreeDViews_Autodesk_Revit_DB_Document_
+  name: GetAllThreeDViews
+  nameWithType: MbViewUtils.GetAllThreeDViews
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.View3D}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.View3D}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<View3D>
+  nameWithType: List<View3D>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.View3D>
+  nameWithType.vb: List(Of View3D)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.View3D)
+  name.vb: List(Of View3D)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.View3D
+    name: View3D
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.View3D
+    name: View3D
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: Element
   commentId: T:Element
   isExternal: true

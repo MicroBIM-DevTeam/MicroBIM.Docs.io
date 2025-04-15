@@ -19,7 +19,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult`1
   parent: MB.Common.Utils.Result
   isExternal: true
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+  href: MB.Common.Utils.Result.MbResult-1.html
   name: MbResult<T>
   nameWithType: MbResult<T>
   fullName: MB.Common.Utils.Result.MbResult<T>
@@ -30,7 +30,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+    href: MB.Common.Utils.Result.MbResult-1.html
   - name: <
   - name: T
   - name: '>'
@@ -38,7 +38,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+    href: MB.Common.Utils.Result.MbResult-1.html
   - name: (
   - name: Of
   - name: " "

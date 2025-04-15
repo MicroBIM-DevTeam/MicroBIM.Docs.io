@@ -14,8 +14,6 @@ items:
   nameWithType: IsolatedViewLoader
   fullName: MB.Common.ViewLoader.IsolatedViewLoader
   type: Class
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/ViewLoader/IsolatedViewLoader.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.ViewLoader
@@ -49,8 +47,6 @@ items:
   nameWithType: IsolatedViewLoader.LoadViewFromUri(FrameworkElement, string)
   fullName: MB.Common.ViewLoader.IsolatedViewLoader.LoadViewFromUri(System.Windows.FrameworkElement, string)
   type: Method
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/ViewLoader/IsolatedViewLoader.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.ViewLoader
@@ -85,8 +81,6 @@ items:
   nameWithType: IsolatedViewLoader.LoadView<T>(T)
   fullName: MB.Common.ViewLoader.IsolatedViewLoader.LoadView<T>(T)
   type: Method
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/ViewLoader/IsolatedViewLoader.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.ViewLoader

@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Utils.Loaders
+  commentId: N:MB.Common.Utils.Loaders
+  id: MB.Common.Utils.Loaders
+  children:
+  - MB.Common.Utils.Loaders.MbResourceLoader
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.Utils.Loaders
+  nameWithType: MB.Common.Utils.Loaders
+  fullName: MB.Common.Utils.Loaders
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.Utils.Loaders.MbResourceLoader
+  commentId: T:MB.Common.Utils.Loaders.MbResourceLoader
+  isExternal: true
+  href: MB.Common.Utils.Loaders.MbResourceLoader.html
+  name: MbResourceLoader
+  nameWithType: MbResourceLoader
+  fullName: MB.Common.Utils.Loaders.MbResourceLoader
+shouldSkipMarkup: true

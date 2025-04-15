@@ -14,8 +14,6 @@ items:
   nameWithType: RevitCategoriesAttribute
   fullName: MB.Common.Attributes.RevitCategoriesAttribute
   type: Class
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Attributes/RevitCategoriesAttribute.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes
@@ -99,8 +97,6 @@ items:
   nameWithType: RevitCategoriesAttribute.RevitCategoriesAttribute(params BuiltInCategory[])
   fullName: MB.Common.Attributes.RevitCategoriesAttribute.RevitCategoriesAttribute(params Autodesk.Revit.DB.BuiltInCategory[])
   type: Constructor
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Attributes/RevitCategoriesAttribute.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes
@@ -132,8 +128,6 @@ items:
   nameWithType: RevitCategoriesAttribute.Categories
   fullName: MB.Common.Attributes.RevitCategoriesAttribute.Categories
   type: Property
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Attributes/RevitCategoriesAttribute.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes

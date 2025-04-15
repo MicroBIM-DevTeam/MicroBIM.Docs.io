@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Creation.Extensions
+  commentId: N:MBF.Revit.Creation.Extensions
+  id: MBF.Revit.Creation.Extensions
+  children:
+  - MBF.Revit.Creation.Extensions.DocumentExtensions
+  langs:
+  - csharp
+  - vb
+  name: MBF.Revit.Creation.Extensions
+  nameWithType: MBF.Revit.Creation.Extensions
+  fullName: MBF.Revit.Creation.Extensions
+  type: Namespace
+  assemblies:
+  - MBF.Revit.Creation
+references:
+- uid: MBF.Revit.Creation.Extensions.DocumentExtensions
+  commentId: T:MBF.Revit.Creation.Extensions.DocumentExtensions
+  isExternal: true
+  href: MBF.Revit.Creation.Extensions.DocumentExtensions.html
+  name: DocumentExtensions
+  nameWithType: DocumentExtensions
+  fullName: MBF.Revit.Creation.Extensions.DocumentExtensions
+shouldSkipMarkup: true

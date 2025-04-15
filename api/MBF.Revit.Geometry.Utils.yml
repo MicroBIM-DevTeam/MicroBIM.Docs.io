@@ -1,0 +1,33 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Geometry.Utils
+  commentId: N:MBF.Revit.Geometry.Utils
+  id: MBF.Revit.Geometry.Utils
+  children:
+  - MBF.Revit.Geometry.Utils.MbXyzUtils
+  - MBF.Revit.Geometry.Utils.PolygonUtils
+  langs:
+  - csharp
+  - vb
+  name: MBF.Revit.Geometry.Utils
+  nameWithType: MBF.Revit.Geometry.Utils
+  fullName: MBF.Revit.Geometry.Utils
+  type: Namespace
+  assemblies:
+  - MBF.Revit.Geometry
+references:
+- uid: MBF.Revit.Geometry.Utils.MbXyzUtils
+  commentId: T:MBF.Revit.Geometry.Utils.MbXyzUtils
+  isExternal: true
+  href: MBF.Revit.Geometry.Utils.MbXyzUtils.html
+  name: MbXyzUtils
+  nameWithType: MbXyzUtils
+  fullName: MBF.Revit.Geometry.Utils.MbXyzUtils
+- uid: MBF.Revit.Geometry.Utils.PolygonUtils
+  commentId: T:MBF.Revit.Geometry.Utils.PolygonUtils
+  isExternal: true
+  href: MBF.Revit.Geometry.Utils.PolygonUtils.html
+  name: PolygonUtils
+  nameWithType: PolygonUtils
+  fullName: MBF.Revit.Geometry.Utils.PolygonUtils
+shouldSkipMarkup: true

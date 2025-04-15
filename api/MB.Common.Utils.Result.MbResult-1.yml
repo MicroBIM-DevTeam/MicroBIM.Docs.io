@@ -17,8 +17,6 @@ items:
   nameWithType: MbResult<T>
   fullName: MB.Common.Utils.Result.MbResult<T>
   type: Class
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Result
@@ -54,8 +52,6 @@ items:
   nameWithType: MbResult<T>.Success(T)
   fullName: MB.Common.Utils.Result.MbResult<T>.Success(T)
   type: Method
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Result
@@ -66,10 +62,10 @@ items:
     parameters:
     - id: value
       type: '{T}'
-      description: The value of the result.
+      description: The result value.
     return:
       type: MB.Common.Utils.Result.MbResult`1
-      description: A successful <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> instance containing the specified value.
+      description: A successful <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function Success(value As T) As MbResult(Of T)
   overload: MB.Common.Utils.Result.MbResult`1.Success*
   nameWithType.vb: MbResult(Of T).Success(T)
@@ -85,22 +81,20 @@ items:
   nameWithType: MbResult<T>.Failure(string)
   fullName: MB.Common.Utils.Result.MbResult<T>.Failure(string)
   type: Method
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Result
-  summary: Creates a failure result containing the specified error message.
+  summary: Creates a failed result containing the specified error message.
   example: []
   syntax:
     content: public static MbResult<T> Failure(string errorMessage)
     parameters:
     - id: errorMessage
       type: System.String
-      description: The error message describing the failure.
+      description: The error message.
     return:
       type: MB.Common.Utils.Result.MbResult`1
-      description: A failed <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> instance containing the specified error message.
+      description: A failed <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function Failure(errorMessage As String) As MbResult(Of T)
   overload: MB.Common.Utils.Result.MbResult`1.Failure*
   nameWithType.vb: MbResult(Of T).Failure(String)
@@ -117,8 +111,6 @@ items:
   nameWithType: MbResult<T>.IsSuccess
   fullName: MB.Common.Utils.Result.MbResult<T>.IsSuccess
   type: Property
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Result
@@ -144,8 +136,6 @@ items:
   nameWithType: MbResult<T>.Value
   fullName: MB.Common.Utils.Result.MbResult<T>.Value
   type: Property
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Result
@@ -171,8 +161,6 @@ items:
   nameWithType: MbResult<T>.ErrorMessage
   fullName: MB.Common.Utils.Result.MbResult<T>.ErrorMessage
   type: Property
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Result
@@ -476,7 +464,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult`1
   parent: MB.Common.Utils.Result
   isExternal: true
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+  href: MB.Common.Utils.Result.MbResult-1.html
   name: MbResult<T>
   nameWithType: MbResult<T>
   fullName: MB.Common.Utils.Result.MbResult<T>
@@ -487,7 +475,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+    href: MB.Common.Utils.Result.MbResult-1.html
   - name: <
   - name: T
   - name: '>'
@@ -495,7 +483,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/153d4e7aec114e879adca717125b1a58f137a6c5/Utils/Result/MbResult.cs
+    href: MB.Common.Utils.Result.MbResult-1.html
   - name: (
   - name: Of
   - name: " "

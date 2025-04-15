@@ -1,0 +1,784 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions
+  commentId: T:MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions
+  id: CurveVisualizerExtensions
+  parent: MBF.Revit.Geometry.Extensions
+  children:
+  - MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.CreateCurveWithDetailCurve(Autodesk.Revit.DB.Curve,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ViewDrafting,Autodesk.Revit.DB.Color)
+  - MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurve2D(Autodesk.Revit.DB.Curve,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  - MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  langs:
+  - csharp
+  - vb
+  name: CurveVisualizerExtensions
+  nameWithType: CurveVisualizerExtensions
+  fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveVisualizerExtensions.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Extensions
+  summary: >-
+    Provides extension methods for visualizing <xref href="Autodesk.Revit.DB.Curve" data-throw-if-not-resolved="false"></xref> instances as 2D geometry in Revit,
+
+    either using <xref href="DirectShape" data-throw-if-not-resolved="false"></xref> elements in model views or <xref href="Autodesk.Revit.DB.DetailCurve" data-throw-if-not-resolved="false"></xref> elements in drafting views.
+  example: []
+  syntax:
+    content: public static class CurveVisualizerExtensions
+    content.vb: Public Module CurveVisualizerExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurve2D(Autodesk.Revit.DB.Curve,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  commentId: M:MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurve2D(Autodesk.Revit.DB.Curve,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  id: VisualizeCurve2D(Autodesk.Revit.DB.Curve,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  isExtensionMethod: true
+  parent: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions
+  langs:
+  - csharp
+  - vb
+  name: VisualizeCurve2D(Curve, Document, Color)
+  nameWithType: CurveVisualizerExtensions.VisualizeCurve2D(Curve, Document, Color)
+  fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurve2D(Autodesk.Revit.DB.Curve, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveVisualizerExtensions.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Extensions
+  summary: >-
+    Visualizes a single <xref href="Autodesk.Revit.DB.Curve" data-throw-if-not-resolved="false"></xref> as 2D geometry using a <xref href="DirectShape" data-throw-if-not-resolved="false"></xref> element
+
+    in the active view of the given Revit <code class="paramref">doc</code>.
+  example: []
+  syntax:
+    content: public static MbResult<DirectShape> VisualizeCurve2D(this Curve curve, Document doc, Color color = null)
+    parameters:
+    - id: curve
+      type: Autodesk.Revit.DB.Curve
+      description: The <xref href="Autodesk.Revit.DB.Curve" data-throw-if-not-resolved="false"></xref> to visualize.
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The current Revit document containing the active view.
+    - id: color
+      type: Autodesk.Revit.DB.Color
+      description: Optional outline color; defaults to red if not provided.
+    return:
+      type: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.DirectShape}
+      description: >-
+        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref>:
+
+        <ul><li><b>Success:</b> Contains the created <xref href="DirectShape" data-throw-if-not-resolved="false"></xref> element.</li><li><b>Failure:</b> "Curve is null."</li><li><b>Failure:</b> "Document or active view is null."</li><li><b>Failure:</b> "Failed to visualize curve: [exception message]"</li></ul>
+    content.vb: Public Shared Function VisualizeCurve2D(curve As Curve, doc As Document, color As Color = Nothing) As MbResult(Of DirectShape)
+  overload: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurve2D*
+- uid: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.CreateCurveWithDetailCurve(Autodesk.Revit.DB.Curve,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ViewDrafting,Autodesk.Revit.DB.Color)
+  commentId: M:MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.CreateCurveWithDetailCurve(Autodesk.Revit.DB.Curve,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ViewDrafting,Autodesk.Revit.DB.Color)
+  id: CreateCurveWithDetailCurve(Autodesk.Revit.DB.Curve,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ViewDrafting,Autodesk.Revit.DB.Color)
+  isExtensionMethod: true
+  parent: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateCurveWithDetailCurve(Curve, Document, ViewDrafting, Color)
+  nameWithType: CurveVisualizerExtensions.CreateCurveWithDetailCurve(Curve, Document, ViewDrafting, Color)
+  fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.CreateCurveWithDetailCurve(Autodesk.Revit.DB.Curve, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.ViewDrafting, Autodesk.Revit.DB.Color)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveVisualizerExtensions.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Extensions
+  summary: Creates a <xref href="Autodesk.Revit.DB.DetailCurve" data-throw-if-not-resolved="false"></xref> element in a <xref href="Autodesk.Revit.DB.ViewDrafting" data-throw-if-not-resolved="false"></xref> to represent the given <xref href="Autodesk.Revit.DB.Curve" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static MbResult<DetailCurve> CreateCurveWithDetailCurve(this Curve curve, Document doc, ViewDrafting draftingView, Color color = null)
+    parameters:
+    - id: curve
+      type: Autodesk.Revit.DB.Curve
+      description: The <xref href="Autodesk.Revit.DB.Curve" data-throw-if-not-resolved="false"></xref> to draw.
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The current Revit document.
+    - id: draftingView
+      type: Autodesk.Revit.DB.ViewDrafting
+      description: The drafting view where the detail curve will be placed.
+    - id: color
+      type: Autodesk.Revit.DB.Color
+      description: Optional line color; defaults to red if not provided.
+    return:
+      type: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.DetailCurve}
+      description: >-
+        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref>:
+
+        <ul><li><b>Success:</b> Contains the created <xref href="Autodesk.Revit.DB.DetailCurve" data-throw-if-not-resolved="false"></xref> element.</li><li><b>Failure:</b> "Curve is null."</li><li><b>Failure:</b> "Document or drafting view is null."</li><li><b>Failure:</b> "Failed to create detail curve: [exception message]"</li></ul>
+    content.vb: Public Shared Function CreateCurveWithDetailCurve(curve As Curve, doc As Document, draftingView As ViewDrafting, color As Color = Nothing) As MbResult(Of DetailCurve)
+  overload: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.CreateCurveWithDetailCurve*
+- uid: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  commentId: M:MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  id: VisualizeCurves2D(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  isExtensionMethod: true
+  parent: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions
+  langs:
+  - csharp
+  - vb
+  name: VisualizeCurves2D(IEnumerable<Curve>, Document, Color)
+  nameWithType: CurveVisualizerExtensions.VisualizeCurves2D(IEnumerable<Curve>, Document, Color)
+  fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Curve>, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveVisualizerExtensions.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Extensions
+  summary: >-
+    Visualizes a list of <xref href="Autodesk.Revit.DB.Curve" data-throw-if-not-resolved="false"></xref> instances as 2D outlines using <xref href="DirectShape" data-throw-if-not-resolved="false"></xref> elements
+
+    in the active view of the given Revit <code class="paramref">doc</code>.
+  example: []
+  syntax:
+    content: public static MbResult<List<DirectShape>> VisualizeCurves2D(this IEnumerable<Curve> curves, Document doc, Color color = null)
+    parameters:
+    - id: curves
+      type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Curve}
+      description: The collection of <xref href="Autodesk.Revit.DB.Curve" data-throw-if-not-resolved="false"></xref> instances to visualize.
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The current Revit document containing the active view.
+    - id: color
+      type: Autodesk.Revit.DB.Color
+      description: Optional outline color; defaults to red if not provided.
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.DirectShape}}
+      description: >-
+        An MbResult&lt;List&lt;DirectShape&gt;&gt;:
+
+        <ul><li><b>Success:</b> Contains a list of created <xref href="DirectShape" data-throw-if-not-resolved="false"></xref> elements.</li><li><b>Failure:</b> "Curve collection is null."</li><li><b>Failure:</b> "Document or active view is null."</li><li><b>Failure:</b> "Failed to visualize curves: [exception message]"</li></ul>
+    content.vb: Public Shared Function VisualizeCurves2D(curves As IEnumerable(Of Curve), doc As Document, color As Color = Nothing) As MbResult(Of List(Of DirectShape))
+  overload: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D*
+  nameWithType.vb: CurveVisualizerExtensions.VisualizeCurves2D(IEnumerable(Of Curve), Document, Color)
+  fullName.vb: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D(System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.Curve), Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
+  name.vb: VisualizeCurves2D(IEnumerable(Of Curve), Document, Color)
+references:
+- uid: Autodesk.Revit.DB.Curve
+  commentId: T:Autodesk.Revit.DB.Curve
+  isExternal: true
+  name: Curve
+  nameWithType: Curve
+  fullName: Autodesk.Revit.DB.Curve
+- uid: DirectShape
+  commentId: T:DirectShape
+  isExternal: true
+- uid: Autodesk.Revit.DB.DetailCurve
+  commentId: T:Autodesk.Revit.DB.DetailCurve
+  isExternal: true
+- uid: MBF.Revit.Geometry.Extensions
+  commentId: N:MBF.Revit.Geometry.Extensions
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Geometry.Extensions
+  nameWithType: MBF.Revit.Geometry.Extensions
+  fullName: MBF.Revit.Geometry.Extensions
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Geometry
+    name: Geometry
+    isExternal: true
+    href: MBF.Revit.Geometry.html
+  - name: .
+  - uid: MBF.Revit.Geometry.Extensions
+    name: Extensions
+    isExternal: true
+    href: MBF.Revit.Geometry.Extensions.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Geometry
+    name: Geometry
+    isExternal: true
+    href: MBF.Revit.Geometry.html
+  - name: .
+  - uid: MBF.Revit.Geometry.Extensions
+    name: Extensions
+    isExternal: true
+    href: MBF.Revit.Geometry.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MB.Common.Utils.Result.MbResult`1
+  commentId: T:MB.Common.Utils.Result.MbResult`1
+  parent: MB.Common.Utils.Result
+  isExternal: true
+  href: MB.Common.Utils.Result.MbResult-1.html
+  name: MbResult<T>
+  nameWithType: MbResult<T>
+  fullName: MB.Common.Utils.Result.MbResult<T>
+  nameWithType.vb: MbResult(Of T)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of T)
+  name.vb: MbResult(Of T)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurve2D*
+  commentId: Overload:MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurve2D
+  isExternal: true
+  href: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_CurveVisualizerExtensions_VisualizeCurve2D_Autodesk_Revit_DB_Curve_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_
+  name: VisualizeCurve2D
+  nameWithType: CurveVisualizerExtensions.VisualizeCurve2D
+  fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurve2D
+- uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
+- uid: Autodesk.Revit.DB.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: Autodesk.Revit.DB.Color
+- uid: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.DirectShape}
+  commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.DirectShape}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  name: MbResult<DirectShape>
+  nameWithType: MbResult<DirectShape>
+  fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.DirectShape>
+  nameWithType.vb: MbResult(Of DirectShape)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of Autodesk.Revit.DB.DirectShape)
+  name.vb: MbResult(Of DirectShape)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: Autodesk.Revit.DB.DirectShape
+    name: DirectShape
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.DirectShape
+    name: DirectShape
+    isExternal: true
+  - name: )
+- uid: MB.Common.Utils.Result
+  commentId: N:MB.Common.Utils.Result
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Utils.Result
+  nameWithType: MB.Common.Utils.Result
+  fullName: MB.Common.Utils.Result
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+- uid: Autodesk.Revit.DB.ViewDrafting
+  commentId: T:Autodesk.Revit.DB.ViewDrafting
+  isExternal: true
+  name: ViewDrafting
+  nameWithType: ViewDrafting
+  fullName: Autodesk.Revit.DB.ViewDrafting
+- uid: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.CreateCurveWithDetailCurve*
+  commentId: Overload:MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.CreateCurveWithDetailCurve
+  isExternal: true
+  href: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_CurveVisualizerExtensions_CreateCurveWithDetailCurve_Autodesk_Revit_DB_Curve_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ViewDrafting_Autodesk_Revit_DB_Color_
+  name: CreateCurveWithDetailCurve
+  nameWithType: CurveVisualizerExtensions.CreateCurveWithDetailCurve
+  fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.CreateCurveWithDetailCurve
+- uid: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.DetailCurve}
+  commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.DetailCurve}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  name: MbResult<DetailCurve>
+  nameWithType: MbResult<DetailCurve>
+  fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.DetailCurve>
+  nameWithType.vb: MbResult(Of DetailCurve)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of Autodesk.Revit.DB.DetailCurve)
+  name.vb: MbResult(Of DetailCurve)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: Autodesk.Revit.DB.DetailCurve
+    name: DetailCurve
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.DetailCurve
+    name: DetailCurve
+    isExternal: true
+  - name: )
+- uid: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D*
+  commentId: Overload:MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D
+  isExternal: true
+  href: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_CurveVisualizerExtensions_VisualizeCurves2D_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Curve__Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_
+  name: VisualizeCurves2D
+  nameWithType: CurveVisualizerExtensions.VisualizeCurves2D
+  fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D
+- uid: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Curve}
+  commentId: T:System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Curve}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Curve>
+  nameWithType: IEnumerable<Curve>
+  fullName: System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Curve>
+  nameWithType.vb: IEnumerable(Of Curve)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.Curve)
+  name.vb: IEnumerable(Of Curve)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Curve
+    name: Curve
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Curve
+    name: Curve
+    isExternal: true
+  - name: )
+- uid: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.DirectShape}}
+  commentId: T:MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.DirectShape}}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: MbResult<List<DirectShape>>
+  nameWithType: MbResult<List<DirectShape>>
+  fullName: MB.Common.Utils.Result.MbResult<System.Collections.Generic.List<Autodesk.Revit.DB.DirectShape>>
+  nameWithType.vb: MbResult(Of List(Of DirectShape))
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of System.Collections.Generic.List(Of Autodesk.Revit.DB.DirectShape))
+  name.vb: MbResult(Of List(Of DirectShape))
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.DirectShape
+    name: DirectShape
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.DirectShape
+    name: DirectShape
+    isExternal: true
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+shouldSkipMarkup: true

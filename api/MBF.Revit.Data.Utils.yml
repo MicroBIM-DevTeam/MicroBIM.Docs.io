@@ -9,6 +9,7 @@ items:
   - MBF.Revit.Data.Utils.MbPipeAccessoriesUtils
   - MBF.Revit.Data.Utils.MbPipeFittingsUtils
   - MBF.Revit.Data.Utils.MbPipesUtils
+  - MBF.Revit.Data.Utils.MbSpaceUtils
   - MBF.Revit.Data.Utils.MbSprinklersUtils
   - MBF.Revit.Data.Utils.MbUnitUtils
   - MBF.Revit.Data.Utils.MbViewUtils
@@ -57,6 +58,13 @@ references:
   name: MbPipesUtils
   nameWithType: MbPipesUtils
   fullName: MBF.Revit.Data.Utils.MbPipesUtils
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils
+  commentId: T:MBF.Revit.Data.Utils.MbSpaceUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbSpaceUtils.html
+  name: MbSpaceUtils
+  nameWithType: MbSpaceUtils
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils
 - uid: MBF.Revit.Data.Utils.MbSprinklersUtils
   commentId: T:MBF.Revit.Data.Utils.MbSprinklersUtils
   isExternal: true
