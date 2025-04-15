@@ -97,6 +97,194 @@ It provides technical references and documentation for the MicroBIM codebase and
     <img src="https://img.shields.io/badge/-Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white">
   </a>
 </div>
+<h1 id="-code-policy--microbim">📌 Code Policy – MicroBIM</h1>
+<p>This document outlines the coding standards and collaboration practices for our team to ensure consistency, quality, and maintainability across all projects.</p>
+<hr>
+<h2 id="1-code-formatting">1. Code Formatting</h2>
+<ul>
+<li>Use <strong>4 spaces</strong> for indentation (no tabs).</li>
+<li>Follow standard <strong>C# naming conventions</strong>:
+<ul>
+<li><code>PascalCase</code> for class names, methods, and properties.</li>
+<li><code>camelCase</code> for local variables and parameters.</li>
+<li><code>ALL_CAPS</code> for constants.</li>
+</ul>
+</li>
+<li>❌ The use of <code>var</code> is strictly <strong>prohibited</strong>. All variables must be declared with <strong>explicit types</strong>.
+<ul>
+<li>✅ <code>int count = 0;</code></li>
+<li>❌ <code>var count = 0;</code></li>
+</ul>
+</li>
+<li>A <strong>custom analyzer</strong> is enforced to trigger a <strong>compilation error</strong> if <code>var</code> is used.</li>
+<li>Place <code>using</code> directives <strong>inside the namespace</strong>.</li>
+<li>Always include <strong>XML documentation</strong> for public members.</li>
+<li>Use <strong>expression-bodied members</strong> for simple one-liners when appropriate.</li>
+</ul>
+<p><strong>Tools</strong>: All code must be auto-formatted using the IDE’s code formatting tools (e.g., Visual Studio or Rider). Consider using <code>.editorconfig</code> to enforce formatting.</p>
+<hr>
+<h2 id="2-branching-strategy">2. Branching Strategy</h2>
+<ul>
+<li><strong>Main branches</strong>:
+<ul>
+<li><code>main</code>: Stable production-ready code.</li>
+<li><code>develop</code>: Latest development changes.</li>
+</ul>
+</li>
+<li><strong>Feature branches</strong>:
+<ul>
+<li>Naming convention: <code>feature/short-description</code></li>
+<li>Branch off: <code>develop</code></li>
+</ul>
+</li>
+<li><strong>Bugfix branches</strong>:
+<ul>
+<li>Naming convention: <code>bugfix/short-description</code></li>
+<li>Branch off: <code>develop</code> or <code>main</code> depending on context</li>
+</ul>
+</li>
+<li><strong>Release branches</strong>:
+<ul>
+<li>Naming convention: <code>release/x.y.z</code></li>
+</ul>
+</li>
+</ul>
+<p>🔁 All branches must be regularly updated with <code>develop</code> or <code>main</code> before creating a pull request.</p>
+<hr>
+<h2 id="3-pull-request-process">3. Pull Request Process</h2>
+<ul>
+<li>PRs should target <code>develop</code> unless it's a hotfix.</li>
+<li>Each PR should be linked to a work item (task, bug, story).</li>
+<li>PR title must be <strong>clear and descriptive</strong>.</li>
+<li>Provide a meaningful description including:
+<ul>
+<li>Purpose of the change</li>
+<li>Any blockers or pending tasks</li>
+<li>Screenshots or test results (if applicable)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="4-review-guidelines">4. Review Guidelines</h2>
+<ul>
+<li>At least <strong>one reviewer</strong> is required before merging.</li>
+<li>Use <strong>suggestions</strong> instead of just comments when possible.</li>
+<li>Focus on:
+<ul>
+<li>Code clarity</li>
+<li>Business logic correctness</li>
+<li>Performance and scalability</li>
+<li>Potential bugs or edge cases</li>
+</ul>
+</li>
+<li>Reviewers should respond within <strong>24 working hours</strong>.</li>
+<li>❗ No code should be merged without a proper review.</li>
+</ul>
+<hr>
+<h2 id="5-testing-requirements">5. Testing Requirements</h2>
+<ul>
+<li>All features must include <strong>unit tests</strong>.</li>
+<li>Critical logic should be covered by <strong>integration tests</strong>.</li>
+<li>✅ All tests must pass before a PR is approved.</li>
+<li>Use <strong>mocking</strong> where external dependencies are involved.</li>
+<li>Prefer <strong>automated testing</strong> over manual testing whenever possible.</li>
+</ul>
+<hr>
+<h2 id="6-commit-message-conventions">6. Commit Message Conventions</h2>
+<ul>
+<li>Use <strong>imperative tone</strong>: <code>Add user authentication</code>, not <code>Added</code> or <code>Adding</code>.</li>
+<li>Use the following structure:</li>
+</ul>
+<p>[Type] Short summary (max 72 characters)</p>
+<p>Optional longer description. Wrap at 100 characters.</p>
+<p>References: #TicketNumber</p>
+<ul>
+<li>Common types:</li>
+<li><code>feat</code>: New feature</li>
+<li><code>fix</code>: Bug fix</li>
+<li><code>refactor</code>: Code refactoring (no feature or fix)</li>
+<li><code>test</code>: Adding or updating tests</li>
+<li><code>docs</code>: Documentation only changes</li>
+<li><code>chore</code>: Maintenance tasks (build config, CI, etc.)</li>
+</ul>
+<hr>
+<h2 id="7-logging-and-error-handling">7. Logging and Error Handling</h2>
+<ul>
+<li>Use a consistent logging framework such as <strong>Serilog</strong> or <strong>NLog</strong> across the entire codebase.</li>
+<li>All exceptions and errors <strong>must be logged</strong> with sufficient detail to allow effective debugging:</li>
+<li>Include exception message, stack trace, and contextual data.</li>
+<li>❌ Never silently swallow exceptions:</li>
+<li>❌ <code>catch { }</code></li>
+<li>✅ <code>catch (Exception ex) { _logger.LogError(ex, &quot;Error occurred while processing user request.&quot;); }</code></li>
+<li>When necessary, rethrow exceptions using <code>throw;</code> to preserve the stack trace.</li>
+</ul>
+<hr>
+<h2 id="8-code-comments-and-documentation">8. Code Comments and Documentation</h2>
+<ul>
+<li><p>Use <strong>XML documentation comments</strong> (<code>///</code>) on all public classes, methods, properties, and interfaces.</p>
+</li>
+<li><p>These will be used for IntelliSense and API documentation.</p>
+</li>
+<li><p>Example:</p>
+<pre><code class="lang-csharp">/// &lt;summary&gt;
+/// Gets a list of users based on the specified role.
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;role&quot;&gt;The role to filter users by.&lt;/param&gt;
+/// &lt;returns&gt;A list of users in the given role.&lt;/returns&gt;
+public List&lt;User&gt; GetUsersByRole(string role) { ... }
+</code></pre>
+</li>
+<li><p>Use inline comments <strong>sparingly</strong>:</p>
+</li>
+<li><p>✅ <code>// This workaround is needed due to a bug in the third-party library.</code></p>
+</li>
+<li><p>❌ <code>// Increase i by 1</code></p>
+</li>
+<li><p>Always keep comments <strong>up to date</strong>. Outdated or misleading comments must be removed or corrected.</p>
+</li>
+</ul>
+<hr>
+<h2 id="9-standardized-operation-results--mbresultt">9. Standardized Operation Results – <code>MbResult&lt;T&gt;</code></h2>
+<p>To ensure consistent handling of operation outcomes and avoid using <code>null</code> or exception-based flow for regular control, <strong>all methods that return the result of an operation must use</strong> the <code>MbResult&lt;T&gt;</code> class from <code>MB.Common.Utils.Result</code>.</p>
+<h3 id="-usage-guidelines">✅ Usage Guidelines</h3>
+<ul>
+<li>Use <code>MbResult&lt;T&gt;.Success(value)</code> when the operation completes successfully.</li>
+<li>Use <code>MbResult&lt;T&gt;.Failure(errorMessage)</code> when the operation fails with a meaningful error message.</li>
+<li>Never return <code>null</code> or raw objects for operations that can fail.</li>
+<li>Avoid throwing exceptions for expected control flow; instead, use <code>MbResult&lt;T&gt;</code> to indicate success or failure.</li>
+</ul>
+<h3 id="-benefits">📌 Benefits</h3>
+<ul>
+<li>Encourages <strong>safe and predictable</strong> method contracts.</li>
+<li>Improves readability and exception traceability.</li>
+<li>Works across all Revit versions with <strong>conditional compilation support</strong>.</li>
+</ul>
+<h3 id="-example">🧪 Example</h3>
+<pre><code class="lang-csharp">public static MbResult&lt;ObservableCollection&lt;FamilySymbol&gt;&gt; GetFamilyTypesByCategoryOrderedByName(this Document doc, BuiltInCategory category)
+{
+  if (doc == null)
+      return MbResult&lt;ObservableCollection&lt;FamilySymbol&gt;&gt;.Failure(&quot;The Revit document cannot be null.&quot;);
+
+  try
+  {
+      var familyTypes = new FilteredElementCollector(doc)
+          .OfClass(typeof(FamilySymbol))
+          .OfCategory(category)
+          .Cast&lt;FamilySymbol&gt;()
+          .OrderBy(f =&gt; f.Name)
+          .ToList();
+
+      return MbResult&lt;ObservableCollection&lt;FamilySymbol&gt;&gt;.Success(new ObservableCollection&lt;FamilySymbol&gt;(familyTypes));
+  }
+  catch (Exception ex)
+  {
+      return MbResult&lt;ObservableCollection&lt;FamilySymbol&gt;&gt;.Failure($&quot;An error occurred: {ex.Message}&quot;);
+  }
+}
+
+⚠ Enforcement
+Any method that involves possible failure or data lookup must use MbResult&lt;T&gt; instead of returning raw types or throwing exceptions directly.
+</code></pre>
 
 </article>
 
