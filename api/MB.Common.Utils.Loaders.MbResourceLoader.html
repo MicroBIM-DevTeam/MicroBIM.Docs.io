@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MbResourceLoader | MIcroBIM Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MbResourceLoader | MIcroBIM Docs ">
+      
+      <meta name="description" content="Provides utility methods for working with embedded resources, including loading JSON content and extracting files.">
+      <link rel="icon" href="../images/logo.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/MicroBimLogo.png" alt="MicroBIM">
+            MicroBIM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MB.Common.Utils.Loaders.MbResourceLoader">
+
+
+
+  <h1 id="MB_Common_Utils_Loaders_MbResourceLoader" data-uid="MB.Common.Utils.Loaders.MbResourceLoader" class="text-break">
+Class MbResourceLoader  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MB.html">MB</a>.<a class="xref" href="MB.Common.html">Common</a>.<a class="xref" href="MB.Common.Utils.html">Utils</a>.<a class="xref" href="MB.Common.Utils.Loaders.html">Loaders</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MB.Common.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary">Provides utility methods for working with embedded resources, including loading JSON content and extracting files.</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class MbResourceLoader</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MbResourceLoader</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MB_Common_Utils_Loaders_MbResourceLoader_EnsureFileFromEmbeddedResource_" data-uid="MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource*"></a>
+
+  <h3 id="MB_Common_Utils_Loaders_MbResourceLoader_EnsureFileFromEmbeddedResource_System_String_System_String_" data-uid="MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource(System.String,System.String)">
+  EnsureFileFromEmbeddedResource(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary">Ensures that a file exists at the specified path. If it does not, the method creates it using the content from an embedded resource.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;bool&gt; EnsureFileFromEmbeddedResource(string outputFilePath, string embeddedResourceName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outputFilePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd>The full path where the file should be created if it doesn't exist.</dd>
+    <dt><code>embeddedResourceName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd>The full name of the embedded resource (e.g., "Namespace.Resources.Default.json").</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> indicating the outcome:
+<ul><li><code>Success = true</code> — The file already exists or was created successfully from the embedded resource.</li><li><code>Success = false</code> — The resource was not found or an error occurred during file creation. The <code>ErrorMessage</code> will describe the issue.</li></ul></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MB_Common_Utils_Loaders_MbResourceLoader_EnsureFileFromEmbeddedResource_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method can be used to seed configuration files or default templates on first run of the application.
+It supports nested directory creation and uses the currently executing assembly to locate the resource.</div>
+
+
+
+
+  <a id="MB_Common_Utils_Loaders_MbResourceLoader_LoadEmbeddedJsonAsync_" data-uid="MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync*"></a>
+
+  <h3 id="MB_Common_Utils_Loaders_MbResourceLoader_LoadEmbeddedJsonAsync__1_System_String_System_Reflection_Assembly_" data-uid="MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync``1(System.String,System.Reflection.Assembly)">
+  LoadEmbeddedJsonAsync&lt;T&gt;(string, Assembly)
+  
+  </h3>
+
+  <div class="markdown level1 summary">Loads an embedded JSON resource and deserializes it into a list of objects of type <code class="typeparamref">T</code>.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;List&lt;T&gt;&gt; LoadEmbeddedJsonAsync&lt;T&gt;(string resourceFileName, Assembly assembly)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resourceFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd>The name (or suffix) of the embedded resource file (e.g., "DefaultConfig.json").</dd>
+    <dt><code>assembly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></dt>
+    <dd>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a> that contains the embedded resource.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;&gt;</dt>
+    <dd>A task that resolves to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a> containing the deserialized objects. If loading or deserialization fails,
+an empty list is returned and a message box will display the error.</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd>The type of the objects to deserialize.</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MB_Common_Utils_Loaders_MbResourceLoader_LoadEmbeddedJsonAsync__1_System_String_System_Reflection_Assembly__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">The method searches for an embedded resource name that ends with the specified <code class="paramref">resourceFileName</code>.
+It uses case-insensitive matching and supports resources embedded via project file settings.</div>
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2025 MicroBIM. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -274,7 +274,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MB.Common.Errors.MbErrorExtensions",
-      "Summary": null
+      "Summary": "Provides extension methods for the <xref href=\"MB.Common.Errors.MbError\" data-throw-if-not-resolved=\"false\"></xref> enumeration."
     },
     {
       "type": "ManagedReference",
@@ -544,6 +544,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Utils.Loaders.MbResourceLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Utils.Loaders.MbResourceLoader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Utils.Loaders.MbResourceLoader",
+      "Summary": "Provides utility methods for working with embedded resources, including loading JSON content and extracting files."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Utils.Loaders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Utils.Loaders.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Utils.Loaders",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MB.Common.Utils.Result.MbResult-1.yml",
       "output": {
         ".html": {
@@ -600,6 +628,62 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Creation.Extensions.DocumentExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Creation.Extensions.DocumentExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Creation.Extensions.DocumentExtensions",
+      "Summary": "Provides extension methods for the Revit <xref href=\"Autodesk.Revit.DB.Document\" data-throw-if-not-resolved=\"false\"></xref> class."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Creation.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Creation.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Creation.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Models.MbDocument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Models.MbDocument.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Models.MbDocument",
+      "Summary": "Represents a Revit document, either standalone or linked, including its context and transformation information."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.yml",
       "output": {
         ".html": {
@@ -611,6 +695,48 @@
       "IsMRef": true,
       "Title": "MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter",
       "Summary": "A dynamic selection filter that allows only elements belonging to specified <xref href=\"BuiltInCategory\" data-throw-if-not-resolved=\"false\"></xref> values.\nUseful for restricting user selection to a specific set of categories."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.SelectionFilters.FaceSelectionFilter",
+      "Summary": "A selection filter that allows selecting <xref href=\"Face\" data-throw-if-not-resolved=\"false\"></xref> geometry references \nfrom elements belonging to specific <xref href=\"BuiltInCategory\" data-throw-if-not-resolved=\"false\"></xref> values."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter",
+      "Summary": "A selection filter that allows selecting elements from the host or a linked Revit model,\nrestricted to a specific set of categories."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter",
+      "Summary": "A selection filter that allows selecting elements from a linked Revit model,\nrestricted to a specific set of categories."
     },
     {
       "type": "ManagedReference",
@@ -638,7 +764,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Data.Utils.MbFlexPipesUtils",
-      "Summary": null
+      "Summary": "Utility methods for working with <xref href=\"Autodesk.Revit.DB.Plumbing.FlexPipe\" data-throw-if-not-resolved=\"false\"></xref> elements in Revit."
     },
     {
       "type": "ManagedReference",
@@ -666,7 +792,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Data.Utils.MbPipeAccessoriesUtils",
-      "Summary": null
+      "Summary": "Provides utility methods for working with pipe accessories in Revit."
     },
     {
       "type": "ManagedReference",
@@ -694,7 +820,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Data.Utils.MbPipesUtils",
-      "Summary": null
+      "Summary": "Provides utility methods for working with pipe elements in Revit."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.MbSpaceUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.MbSpaceUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.MbSpaceUtils",
+      "Summary": "Provides utility methods for working with <xref href=\"Autodesk.Revit.DB.Mechanical.Space\" data-throw-if-not-resolved=\"false\"></xref> elements in Revit."
     },
     {
       "type": "ManagedReference",
@@ -708,7 +848,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Data.Utils.MbSprinklersUtils",
-      "Summary": null
+      "Summary": "Provides utility methods for working with sprinkler elements in Revit."
     },
     {
       "type": "ManagedReference",
@@ -750,6 +890,286 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Data.Utils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Extensions.BoundingBoxExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Extensions.BoundingBoxExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Extensions.BoundingBoxExtensions",
+      "Summary": "Provides extension methods for the <xref href=\"Autodesk.Revit.DB.BoundingBoxXYZ\" data-throw-if-not-resolved=\"false\"></xref> class."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions",
+      "Summary": "Extension methods for visualizing BoundingBoxXYZ objects as 2D outlines in the XY plane using DirectShape."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Extensions.ClipperExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Extensions.ClipperExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Extensions.ClipperExtensions",
+      "Summary": "Extension methods for working with Clipper2Lib's <xref href=\"Clipper2Lib.PathD\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Clipper2Lib.PathsD\" data-throw-if-not-resolved=\"false\"></xref> types\nin conjunction with Revit geometry."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Extensions.CurveLoopExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Extensions.CurveLoopExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Extensions.CurveLoopExtensions",
+      "Summary": "Provides extension methods for converting <xref href=\"CurveLoop\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Collections.Generic.IEnumerable%601\" data-throw-if-not-resolved=\"false\"></xref> into Clipper2 <xref href=\"Clipper2Lib.PathD\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Clipper2Lib.PathsD\" data-throw-if-not-resolved=\"false\"></xref>."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions",
+      "Summary": "Provides extension methods for visualizing <xref href=\"CurveLoop\" data-throw-if-not-resolved=\"false\"></xref> instances as 2D geometry in Revit,\neither using <xref href=\"DirectShape\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"Autodesk.Revit.DB.DetailCurve\" data-throw-if-not-resolved=\"false\"></xref> elements."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions",
+      "Summary": "Provides extension methods for visualizing <xref href=\"Autodesk.Revit.DB.Curve\" data-throw-if-not-resolved=\"false\"></xref> instances as 2D geometry in Revit,\neither using <xref href=\"DirectShape\" data-throw-if-not-resolved=\"false\"></xref> elements in model views or <xref href=\"Autodesk.Revit.DB.DetailCurve\" data-throw-if-not-resolved=\"false\"></xref> elements in drafting views."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions",
+      "Summary": "Extension methods for visualizing Clipper <xref href=\"Clipper2Lib.PathD\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Clipper2Lib.PathsD\" data-throw-if-not-resolved=\"false\"></xref> in 2D in the Revit XY plane."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions",
+      "Summary": "Extension methods for visualizing <xref href=\"Autodesk.Revit.DB.XYZ\" data-throw-if-not-resolved=\"false\"></xref> points in Revit using DirectShape."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Utils.MbXyzUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Utils.MbXyzUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Utils.MbXyzUtils",
+      "Summary": "Provides utility methods for geometric operations on <xref href=\"Autodesk.Revit.DB.XYZ\" data-throw-if-not-resolved=\"false\"></xref> points."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Utils.PolygonUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Utils.PolygonUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Utils.PolygonUtils",
+      "Summary": "Provides utility methods for geometric operations involving 2D polygons using Revit's <xref href=\"Autodesk.Revit.DB.XYZ\" data-throw-if-not-resolved=\"false\"></xref> points.\nThis utility assumes all computations are performed in the XY plane and ignores Z-axis values."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Utils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Utils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Voronoi.Models.Edge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Voronoi.Models.Edge.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Voronoi.Models.Edge",
+      "Summary": "Represents an edge in the Voronoi diagram."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Voronoi.Models.GraphEdge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Voronoi.Models.GraphEdge.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Voronoi.Models.GraphEdge",
+      "Summary": "Represents a graphical edge in the Voronoi diagram."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Voronoi.Models.Halfedge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Voronoi.Models.Halfedge.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Voronoi.Models.Halfedge",
+      "Summary": "Represents a half-edge in the Voronoi diagram."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Voronoi.Models.Point.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Voronoi.Models.Point.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Voronoi.Models.Point",
+      "Summary": "Represents a point in 2D space."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Voronoi.Models.Site.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Voronoi.Models.Site.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Voronoi.Models.Site",
+      "Summary": "Represents a site used for vertices."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX",
+      "Summary": "Compares two sites based on their y-coordinates, and x-coordinates if y-coordinates are equal."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Voronoi.Models.Voronoi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Voronoi.Models.Voronoi.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Voronoi.Models.Voronoi",
+      "Summary": "Represents a Voronoi diagram generator."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Voronoi.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Voronoi.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Voronoi.Models",
       "Summary": null
     },
     {

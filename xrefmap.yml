@@ -319,30 +319,18 @@ references:
   commentId: T:MB.Common.Constants.FilePaths
   fullName: MB.Common.Constants.FilePaths
   nameWithType: FilePaths
-- uid: MB.Common.Constants.FilePaths.CoverageExcel
-  name: CoverageExcel
-  href: api/MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_CoverageExcel
-  commentId: P:MB.Common.Constants.FilePaths.CoverageExcel
-  fullName: MB.Common.Constants.FilePaths.CoverageExcel
-  nameWithType: FilePaths.CoverageExcel
-- uid: MB.Common.Constants.FilePaths.CoverageExcel*
-  name: CoverageExcel
-  href: api/MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_CoverageExcel_
-  commentId: Overload:MB.Common.Constants.FilePaths.CoverageExcel
-  fullName: MB.Common.Constants.FilePaths.CoverageExcel
-  nameWithType: FilePaths.CoverageExcel
-- uid: MB.Common.Constants.FilePaths.CoverageJson
-  name: CoverageJson
-  href: api/MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_CoverageJson
-  commentId: P:MB.Common.Constants.FilePaths.CoverageJson
-  fullName: MB.Common.Constants.FilePaths.CoverageJson
-  nameWithType: FilePaths.CoverageJson
-- uid: MB.Common.Constants.FilePaths.CoverageJson*
-  name: CoverageJson
-  href: api/MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_CoverageJson_
-  commentId: Overload:MB.Common.Constants.FilePaths.CoverageJson
-  fullName: MB.Common.Constants.FilePaths.CoverageJson
-  nameWithType: FilePaths.CoverageJson
+- uid: MB.Common.Constants.FilePaths.AutoSprinklerSpacing
+  name: AutoSprinklerSpacing
+  href: api/MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_AutoSprinklerSpacing
+  commentId: P:MB.Common.Constants.FilePaths.AutoSprinklerSpacing
+  fullName: MB.Common.Constants.FilePaths.AutoSprinklerSpacing
+  nameWithType: FilePaths.AutoSprinklerSpacing
+- uid: MB.Common.Constants.FilePaths.AutoSprinklerSpacing*
+  name: AutoSprinklerSpacing
+  href: api/MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_AutoSprinklerSpacing_
+  commentId: Overload:MB.Common.Constants.FilePaths.AutoSprinklerSpacing
+  fullName: MB.Common.Constants.FilePaths.AutoSprinklerSpacing
+  nameWithType: FilePaths.AutoSprinklerSpacing
 - uid: MB.Common.Constants.FilePaths.Elbows
   name: Elbows
   href: api/MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_Elbows
@@ -355,6 +343,12 @@ references:
   commentId: F:MB.Common.Constants.FilePaths.FlexPipes
   fullName: MB.Common.Constants.FilePaths.FlexPipes
   nameWithType: FilePaths.FlexPipes
+- uid: MB.Common.Constants.FilePaths.HazardCoverageJson
+  name: HazardCoverageJson
+  href: api/MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_HazardCoverageJson
+  commentId: F:MB.Common.Constants.FilePaths.HazardCoverageJson
+  fullName: MB.Common.Constants.FilePaths.HazardCoverageJson
+  nameWithType: FilePaths.HazardCoverageJson
 - uid: MB.Common.Constants.FilePaths.MapperJsons
   name: MapperJsons
   href: api/MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_MapperJsons
@@ -403,30 +397,6 @@ references:
   commentId: F:MB.Common.Constants.FilePaths.Tees
   fullName: MB.Common.Constants.FilePaths.Tees
   nameWithType: FilePaths.Tees
-- uid: MB.Common.Constants.FilePaths.WorksetsExcel
-  name: WorksetsExcel
-  href: api/MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_WorksetsExcel
-  commentId: P:MB.Common.Constants.FilePaths.WorksetsExcel
-  fullName: MB.Common.Constants.FilePaths.WorksetsExcel
-  nameWithType: FilePaths.WorksetsExcel
-- uid: MB.Common.Constants.FilePaths.WorksetsExcel*
-  name: WorksetsExcel
-  href: api/MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_WorksetsExcel_
-  commentId: Overload:MB.Common.Constants.FilePaths.WorksetsExcel
-  fullName: MB.Common.Constants.FilePaths.WorksetsExcel
-  nameWithType: FilePaths.WorksetsExcel
-- uid: MB.Common.Constants.FilePaths.WorksetsJson
-  name: WorksetsJson
-  href: api/MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_WorksetsJson
-  commentId: P:MB.Common.Constants.FilePaths.WorksetsJson
-  fullName: MB.Common.Constants.FilePaths.WorksetsJson
-  nameWithType: FilePaths.WorksetsJson
-- uid: MB.Common.Constants.FilePaths.WorksetsJson*
-  name: WorksetsJson
-  href: api/MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_WorksetsJson_
-  commentId: Overload:MB.Common.Constants.FilePaths.WorksetsJson
-  fullName: MB.Common.Constants.FilePaths.WorksetsJson
-  nameWithType: FilePaths.WorksetsJson
 - uid: MB.Common.Constants.MbErrorMessages
   name: MbErrorMessages
   href: api/MB.Common.Constants.MbErrorMessages.html
@@ -991,6 +961,12 @@ references:
   commentId: F:MB.Common.Tools.MbfTool.AssemblyManager
   fullName: MB.Common.Tools.MbfTool.AssemblyManager
   nameWithType: MbfTool.AssemblyManager
+- uid: MB.Common.Tools.MbfTool.AutoSprinklerSpacing
+  name: AutoSprinklerSpacing
+  href: api/MB.Common.Tools.MbfTool.html#MB_Common_Tools_MbfTool_AutoSprinklerSpacing
+  commentId: F:MB.Common.Tools.MbfTool.AutoSprinklerSpacing
+  fullName: MB.Common.Tools.MbfTool.AutoSprinklerSpacing
+  nameWithType: MbfTool.AutoSprinklerSpacing
 - uid: MB.Common.Tools.MbfTool.CutLengthPipeOptimization
   name: CutLengthPipeOptimization
   href: api/MB.Common.Tools.MbfTool.html#MB_Common_Tools_MbfTool_CutLengthPipeOptimization
@@ -1159,6 +1135,48 @@ references:
   commentId: Overload:MB.Common.Utils.Image.ImageUtils.ResizeImage
   fullName: MB.Common.Utils.Image.ImageUtils.ResizeImage
   nameWithType: ImageUtils.ResizeImage
+- uid: MB.Common.Utils.Loaders
+  name: MB.Common.Utils.Loaders
+  href: api/MB.Common.Utils.Loaders.html
+  commentId: N:MB.Common.Utils.Loaders
+  fullName: MB.Common.Utils.Loaders
+  nameWithType: MB.Common.Utils.Loaders
+- uid: MB.Common.Utils.Loaders.MbResourceLoader
+  name: MbResourceLoader
+  href: api/MB.Common.Utils.Loaders.MbResourceLoader.html
+  commentId: T:MB.Common.Utils.Loaders.MbResourceLoader
+  fullName: MB.Common.Utils.Loaders.MbResourceLoader
+  nameWithType: MbResourceLoader
+- uid: MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource(System.String,System.String)
+  name: EnsureFileFromEmbeddedResource(string, string)
+  href: api/MB.Common.Utils.Loaders.MbResourceLoader.html#MB_Common_Utils_Loaders_MbResourceLoader_EnsureFileFromEmbeddedResource_System_String_System_String_
+  commentId: M:MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource(System.String,System.String)
+  name.vb: EnsureFileFromEmbeddedResource(String, String)
+  fullName: MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource(string, string)
+  fullName.vb: MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource(String, String)
+  nameWithType: MbResourceLoader.EnsureFileFromEmbeddedResource(string, string)
+  nameWithType.vb: MbResourceLoader.EnsureFileFromEmbeddedResource(String, String)
+- uid: MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource*
+  name: EnsureFileFromEmbeddedResource
+  href: api/MB.Common.Utils.Loaders.MbResourceLoader.html#MB_Common_Utils_Loaders_MbResourceLoader_EnsureFileFromEmbeddedResource_
+  commentId: Overload:MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource
+  fullName: MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource
+  nameWithType: MbResourceLoader.EnsureFileFromEmbeddedResource
+- uid: MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync*
+  name: LoadEmbeddedJsonAsync
+  href: api/MB.Common.Utils.Loaders.MbResourceLoader.html#MB_Common_Utils_Loaders_MbResourceLoader_LoadEmbeddedJsonAsync_
+  commentId: Overload:MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync
+  fullName: MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync
+  nameWithType: MbResourceLoader.LoadEmbeddedJsonAsync
+- uid: MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync``1(System.String,System.Reflection.Assembly)
+  name: LoadEmbeddedJsonAsync<T>(string, Assembly)
+  href: api/MB.Common.Utils.Loaders.MbResourceLoader.html#MB_Common_Utils_Loaders_MbResourceLoader_LoadEmbeddedJsonAsync__1_System_String_System_Reflection_Assembly_
+  commentId: M:MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync``1(System.String,System.Reflection.Assembly)
+  name.vb: LoadEmbeddedJsonAsync(Of T)(String, Assembly)
+  fullName: MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync<T>(string, System.Reflection.Assembly)
+  fullName.vb: MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync(Of T)(String, System.Reflection.Assembly)
+  nameWithType: MbResourceLoader.LoadEmbeddedJsonAsync<T>(string, Assembly)
+  nameWithType.vb: MbResourceLoader.LoadEmbeddedJsonAsync(Of T)(String, Assembly)
 - uid: MB.Common.Utils.Result
   name: MB.Common.Utils.Result
   href: api/MB.Common.Utils.Result.html
@@ -1297,6 +1315,165 @@ references:
   fullName.vb: MB.Common.ViewLoader.IsolatedViewLoader.LoadView(Of T)(T)
   nameWithType: IsolatedViewLoader.LoadView<T>(T)
   nameWithType.vb: IsolatedViewLoader.LoadView(Of T)(T)
+- uid: MBF.Revit.Creation.Extensions
+  name: MBF.Revit.Creation.Extensions
+  href: api/MBF.Revit.Creation.Extensions.html
+  commentId: N:MBF.Revit.Creation.Extensions
+  fullName: MBF.Revit.Creation.Extensions
+  nameWithType: MBF.Revit.Creation.Extensions
+- uid: MBF.Revit.Creation.Extensions.DocumentExtensions
+  name: DocumentExtensions
+  href: api/MBF.Revit.Creation.Extensions.DocumentExtensions.html
+  commentId: T:MBF.Revit.Creation.Extensions.DocumentExtensions
+  fullName: MBF.Revit.Creation.Extensions.DocumentExtensions
+  nameWithType: DocumentExtensions
+- uid: MBF.Revit.Creation.Extensions.DocumentExtensions.GetAllLinkedRevitModels(Autodesk.Revit.DB.Document)
+  name: GetAllLinkedRevitModels(Document)
+  href: api/MBF.Revit.Creation.Extensions.DocumentExtensions.html#MBF_Revit_Creation_Extensions_DocumentExtensions_GetAllLinkedRevitModels_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Creation.Extensions.DocumentExtensions.GetAllLinkedRevitModels(Autodesk.Revit.DB.Document)
+  fullName: MBF.Revit.Creation.Extensions.DocumentExtensions.GetAllLinkedRevitModels(Autodesk.Revit.DB.Document)
+  nameWithType: DocumentExtensions.GetAllLinkedRevitModels(Document)
+- uid: MBF.Revit.Creation.Extensions.DocumentExtensions.GetAllLinkedRevitModels*
+  name: GetAllLinkedRevitModels
+  href: api/MBF.Revit.Creation.Extensions.DocumentExtensions.html#MBF_Revit_Creation_Extensions_DocumentExtensions_GetAllLinkedRevitModels_
+  commentId: Overload:MBF.Revit.Creation.Extensions.DocumentExtensions.GetAllLinkedRevitModels
+  fullName: MBF.Revit.Creation.Extensions.DocumentExtensions.GetAllLinkedRevitModels
+  nameWithType: DocumentExtensions.GetAllLinkedRevitModels
+- uid: MBF.Revit.Creation.Extensions.DocumentExtensions.MakeLinkedModelsRoomBounding(Autodesk.Revit.DB.Document)
+  name: MakeLinkedModelsRoomBounding(Document)
+  href: api/MBF.Revit.Creation.Extensions.DocumentExtensions.html#MBF_Revit_Creation_Extensions_DocumentExtensions_MakeLinkedModelsRoomBounding_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Creation.Extensions.DocumentExtensions.MakeLinkedModelsRoomBounding(Autodesk.Revit.DB.Document)
+  fullName: MBF.Revit.Creation.Extensions.DocumentExtensions.MakeLinkedModelsRoomBounding(Autodesk.Revit.DB.Document)
+  nameWithType: DocumentExtensions.MakeLinkedModelsRoomBounding(Document)
+- uid: MBF.Revit.Creation.Extensions.DocumentExtensions.MakeLinkedModelsRoomBounding*
+  name: MakeLinkedModelsRoomBounding
+  href: api/MBF.Revit.Creation.Extensions.DocumentExtensions.html#MBF_Revit_Creation_Extensions_DocumentExtensions_MakeLinkedModelsRoomBounding_
+  commentId: Overload:MBF.Revit.Creation.Extensions.DocumentExtensions.MakeLinkedModelsRoomBounding
+  fullName: MBF.Revit.Creation.Extensions.DocumentExtensions.MakeLinkedModelsRoomBounding
+  nameWithType: DocumentExtensions.MakeLinkedModelsRoomBounding
+- uid: MBF.Revit.Data.Models
+  name: MBF.Revit.Data.Models
+  href: api/MBF.Revit.Data.Models.html
+  commentId: N:MBF.Revit.Data.Models
+  fullName: MBF.Revit.Data.Models
+  nameWithType: MBF.Revit.Data.Models
+- uid: MBF.Revit.Data.Models.MbDocument
+  name: MbDocument
+  href: api/MBF.Revit.Data.Models.MbDocument.html
+  commentId: T:MBF.Revit.Data.Models.MbDocument
+  fullName: MBF.Revit.Data.Models.MbDocument
+  nameWithType: MbDocument
+- uid: MBF.Revit.Data.Models.MbDocument.#ctor(Autodesk.Revit.DB.Document)
+  name: MbDocument(Document)
+  href: api/MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument__ctor_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Data.Models.MbDocument.#ctor(Autodesk.Revit.DB.Document)
+  name.vb: New(Document)
+  fullName: MBF.Revit.Data.Models.MbDocument.MbDocument(Autodesk.Revit.DB.Document)
+  fullName.vb: MBF.Revit.Data.Models.MbDocument.New(Autodesk.Revit.DB.Document)
+  nameWithType: MbDocument.MbDocument(Document)
+  nameWithType.vb: MbDocument.New(Document)
+- uid: MBF.Revit.Data.Models.MbDocument.#ctor(Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)
+  name: MbDocument(RevitLinkInstance, Document)
+  href: api/MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument__ctor_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Data.Models.MbDocument.#ctor(Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)
+  name.vb: New(RevitLinkInstance, Document)
+  fullName: MBF.Revit.Data.Models.MbDocument.MbDocument(Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Document)
+  fullName.vb: MBF.Revit.Data.Models.MbDocument.New(Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Document)
+  nameWithType: MbDocument.MbDocument(RevitLinkInstance, Document)
+  nameWithType.vb: MbDocument.New(RevitLinkInstance, Document)
+- uid: MBF.Revit.Data.Models.MbDocument.#ctor*
+  name: MbDocument
+  href: api/MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument__ctor_
+  commentId: Overload:MBF.Revit.Data.Models.MbDocument.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Data.Models.MbDocument.MbDocument
+  fullName.vb: MBF.Revit.Data.Models.MbDocument.New
+  nameWithType: MbDocument.MbDocument
+  nameWithType.vb: MbDocument.New
+- uid: MBF.Revit.Data.Models.MbDocument.Document
+  name: Document
+  href: api/MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_Document
+  commentId: P:MBF.Revit.Data.Models.MbDocument.Document
+  fullName: MBF.Revit.Data.Models.MbDocument.Document
+  nameWithType: MbDocument.Document
+- uid: MBF.Revit.Data.Models.MbDocument.Document*
+  name: Document
+  href: api/MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_Document_
+  commentId: Overload:MBF.Revit.Data.Models.MbDocument.Document
+  fullName: MBF.Revit.Data.Models.MbDocument.Document
+  nameWithType: MbDocument.Document
+- uid: MBF.Revit.Data.Models.MbDocument.GetAllDocuments(Autodesk.Revit.DB.Document)
+  name: GetAllDocuments(Document)
+  href: api/MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_GetAllDocuments_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Data.Models.MbDocument.GetAllDocuments(Autodesk.Revit.DB.Document)
+  fullName: MBF.Revit.Data.Models.MbDocument.GetAllDocuments(Autodesk.Revit.DB.Document)
+  nameWithType: MbDocument.GetAllDocuments(Document)
+- uid: MBF.Revit.Data.Models.MbDocument.GetAllDocuments*
+  name: GetAllDocuments
+  href: api/MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_GetAllDocuments_
+  commentId: Overload:MBF.Revit.Data.Models.MbDocument.GetAllDocuments
+  fullName: MBF.Revit.Data.Models.MbDocument.GetAllDocuments
+  nameWithType: MbDocument.GetAllDocuments
+- uid: MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments(Autodesk.Revit.DB.Document)
+  name: GetLinkedDocuments(Document)
+  href: api/MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_GetLinkedDocuments_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments(Autodesk.Revit.DB.Document)
+  fullName: MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments(Autodesk.Revit.DB.Document)
+  nameWithType: MbDocument.GetLinkedDocuments(Document)
+- uid: MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments*
+  name: GetLinkedDocuments
+  href: api/MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_GetLinkedDocuments_
+  commentId: Overload:MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments
+  fullName: MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments
+  nameWithType: MbDocument.GetLinkedDocuments
+- uid: MBF.Revit.Data.Models.MbDocument.IsLinked
+  name: IsLinked
+  href: api/MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_IsLinked
+  commentId: P:MBF.Revit.Data.Models.MbDocument.IsLinked
+  fullName: MBF.Revit.Data.Models.MbDocument.IsLinked
+  nameWithType: MbDocument.IsLinked
+- uid: MBF.Revit.Data.Models.MbDocument.IsLinked*
+  name: IsLinked
+  href: api/MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_IsLinked_
+  commentId: Overload:MBF.Revit.Data.Models.MbDocument.IsLinked
+  fullName: MBF.Revit.Data.Models.MbDocument.IsLinked
+  nameWithType: MbDocument.IsLinked
+- uid: MBF.Revit.Data.Models.MbDocument.LinkInstance
+  name: LinkInstance
+  href: api/MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_LinkInstance
+  commentId: P:MBF.Revit.Data.Models.MbDocument.LinkInstance
+  fullName: MBF.Revit.Data.Models.MbDocument.LinkInstance
+  nameWithType: MbDocument.LinkInstance
+- uid: MBF.Revit.Data.Models.MbDocument.LinkInstance*
+  name: LinkInstance
+  href: api/MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_LinkInstance_
+  commentId: Overload:MBF.Revit.Data.Models.MbDocument.LinkInstance
+  fullName: MBF.Revit.Data.Models.MbDocument.LinkInstance
+  nameWithType: MbDocument.LinkInstance
+- uid: MBF.Revit.Data.Models.MbDocument.LinkParentDocument
+  name: LinkParentDocument
+  href: api/MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_LinkParentDocument
+  commentId: P:MBF.Revit.Data.Models.MbDocument.LinkParentDocument
+  fullName: MBF.Revit.Data.Models.MbDocument.LinkParentDocument
+  nameWithType: MbDocument.LinkParentDocument
+- uid: MBF.Revit.Data.Models.MbDocument.LinkParentDocument*
+  name: LinkParentDocument
+  href: api/MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_LinkParentDocument_
+  commentId: Overload:MBF.Revit.Data.Models.MbDocument.LinkParentDocument
+  fullName: MBF.Revit.Data.Models.MbDocument.LinkParentDocument
+  nameWithType: MbDocument.LinkParentDocument
+- uid: MBF.Revit.Data.Models.MbDocument.LinkTransform
+  name: LinkTransform
+  href: api/MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_LinkTransform
+  commentId: P:MBF.Revit.Data.Models.MbDocument.LinkTransform
+  fullName: MBF.Revit.Data.Models.MbDocument.LinkTransform
+  nameWithType: MbDocument.LinkTransform
+- uid: MBF.Revit.Data.Models.MbDocument.LinkTransform*
+  name: LinkTransform
+  href: api/MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument_LinkTransform_
+  commentId: Overload:MBF.Revit.Data.Models.MbDocument.LinkTransform
+  fullName: MBF.Revit.Data.Models.MbDocument.LinkTransform
+  nameWithType: MbDocument.LinkTransform
 - uid: MBF.Revit.Data.SelectionFilters
   name: MBF.Revit.Data.SelectionFilters
   href: api/MBF.Revit.Data.SelectionFilters.html
@@ -1351,6 +1528,159 @@ references:
   commentId: Overload:MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.AllowReference
   fullName: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.AllowReference
   nameWithType: DynamicCategorySelectionFilter.AllowReference
+- uid: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter
+  name: FaceSelectionFilter
+  href: api/MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.html
+  commentId: T:MBF.Revit.Data.SelectionFilters.FaceSelectionFilter
+  fullName: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter
+  nameWithType: FaceSelectionFilter
+- uid: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.#ctor(Autodesk.Revit.DB.Document)
+  name: FaceSelectionFilter(Document)
+  href: api/MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.html#MBF_Revit_Data_SelectionFilters_FaceSelectionFilter__ctor_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.#ctor(Autodesk.Revit.DB.Document)
+  name.vb: New(Document)
+  fullName: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.FaceSelectionFilter(Autodesk.Revit.DB.Document)
+  fullName.vb: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.New(Autodesk.Revit.DB.Document)
+  nameWithType: FaceSelectionFilter.FaceSelectionFilter(Document)
+  nameWithType.vb: FaceSelectionFilter.New(Document)
+- uid: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.#ctor(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)
+  name: FaceSelectionFilter(Document, BuiltInCategory)
+  href: api/MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.html#MBF_Revit_Data_SelectionFilters_FaceSelectionFilter__ctor_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_
+  commentId: M:MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.#ctor(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)
+  name.vb: New(Document, BuiltInCategory)
+  fullName: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.FaceSelectionFilter(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.BuiltInCategory)
+  fullName.vb: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.New(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.BuiltInCategory)
+  nameWithType: FaceSelectionFilter.FaceSelectionFilter(Document, BuiltInCategory)
+  nameWithType.vb: FaceSelectionFilter.New(Document, BuiltInCategory)
+- uid: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.#ctor*
+  name: FaceSelectionFilter
+  href: api/MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.html#MBF_Revit_Data_SelectionFilters_FaceSelectionFilter__ctor_
+  commentId: Overload:MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.FaceSelectionFilter
+  fullName.vb: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.New
+  nameWithType: FaceSelectionFilter.FaceSelectionFilter
+  nameWithType.vb: FaceSelectionFilter.New
+- uid: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
+  name: AllowElement(Element)
+  href: api/MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.html#MBF_Revit_Data_SelectionFilters_FaceSelectionFilter_AllowElement_Autodesk_Revit_DB_Element_
+  commentId: M:MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
+  fullName: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
+  nameWithType: FaceSelectionFilter.AllowElement(Element)
+- uid: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.AllowElement*
+  name: AllowElement
+  href: api/MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.html#MBF_Revit_Data_SelectionFilters_FaceSelectionFilter_AllowElement_
+  commentId: Overload:MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.AllowElement
+  fullName: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.AllowElement
+  nameWithType: FaceSelectionFilter.AllowElement
+- uid: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)
+  name: AllowReference(Reference, XYZ)
+  href: api/MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.html#MBF_Revit_Data_SelectionFilters_FaceSelectionFilter_AllowReference_Autodesk_Revit_DB_Reference_Autodesk_Revit_DB_XYZ_
+  commentId: M:MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)
+  fullName: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.AllowReference(Autodesk.Revit.DB.Reference, Autodesk.Revit.DB.XYZ)
+  nameWithType: FaceSelectionFilter.AllowReference(Reference, XYZ)
+- uid: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.AllowReference*
+  name: AllowReference
+  href: api/MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.html#MBF_Revit_Data_SelectionFilters_FaceSelectionFilter_AllowReference_
+  commentId: Overload:MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.AllowReference
+  fullName: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.AllowReference
+  nameWithType: FaceSelectionFilter.AllowReference
+- uid: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter
+  name: HostOrLinkedCategorySelectionFilter
+  href: api/MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.html
+  commentId: T:MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter
+  fullName: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter
+  nameWithType: HostOrLinkedCategorySelectionFilter
+- uid: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.#ctor(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Category})
+  name: HostOrLinkedCategorySelectionFilter(IEnumerable<Category>)
+  href: api/MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.html#MBF_Revit_Data_SelectionFilters_HostOrLinkedCategorySelectionFilter__ctor_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Category__
+  commentId: M:MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.#ctor(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Category})
+  name.vb: New(IEnumerable(Of Category))
+  fullName: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.HostOrLinkedCategorySelectionFilter(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Category>)
+  fullName.vb: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.New(System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.Category))
+  nameWithType: HostOrLinkedCategorySelectionFilter.HostOrLinkedCategorySelectionFilter(IEnumerable<Category>)
+  nameWithType.vb: HostOrLinkedCategorySelectionFilter.New(IEnumerable(Of Category))
+- uid: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.#ctor*
+  name: HostOrLinkedCategorySelectionFilter
+  href: api/MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.html#MBF_Revit_Data_SelectionFilters_HostOrLinkedCategorySelectionFilter__ctor_
+  commentId: Overload:MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.HostOrLinkedCategorySelectionFilter
+  fullName.vb: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.New
+  nameWithType: HostOrLinkedCategorySelectionFilter.HostOrLinkedCategorySelectionFilter
+  nameWithType.vb: HostOrLinkedCategorySelectionFilter.New
+- uid: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
+  name: AllowElement(Element)
+  href: api/MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.html#MBF_Revit_Data_SelectionFilters_HostOrLinkedCategorySelectionFilter_AllowElement_Autodesk_Revit_DB_Element_
+  commentId: M:MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
+  fullName: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
+  nameWithType: HostOrLinkedCategorySelectionFilter.AllowElement(Element)
+- uid: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowElement*
+  name: AllowElement
+  href: api/MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.html#MBF_Revit_Data_SelectionFilters_HostOrLinkedCategorySelectionFilter_AllowElement_
+  commentId: Overload:MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowElement
+  fullName: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowElement
+  nameWithType: HostOrLinkedCategorySelectionFilter.AllowElement
+- uid: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)
+  name: AllowReference(Reference, XYZ)
+  href: api/MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.html#MBF_Revit_Data_SelectionFilters_HostOrLinkedCategorySelectionFilter_AllowReference_Autodesk_Revit_DB_Reference_Autodesk_Revit_DB_XYZ_
+  commentId: M:MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)
+  fullName: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference, Autodesk.Revit.DB.XYZ)
+  nameWithType: HostOrLinkedCategorySelectionFilter.AllowReference(Reference, XYZ)
+- uid: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference*
+  name: AllowReference
+  href: api/MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.html#MBF_Revit_Data_SelectionFilters_HostOrLinkedCategorySelectionFilter_AllowReference_
+  commentId: Overload:MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference
+  fullName: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference
+  nameWithType: HostOrLinkedCategorySelectionFilter.AllowReference
+- uid: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter
+  name: LinkedCategorySelectionFilter
+  href: api/MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.html
+  commentId: T:MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter
+  fullName: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter
+  nameWithType: LinkedCategorySelectionFilter
+- uid: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.#ctor(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Category})
+  name: LinkedCategorySelectionFilter(IEnumerable<Category>)
+  href: api/MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.html#MBF_Revit_Data_SelectionFilters_LinkedCategorySelectionFilter__ctor_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Category__
+  commentId: M:MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.#ctor(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Category})
+  name.vb: New(IEnumerable(Of Category))
+  fullName: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.LinkedCategorySelectionFilter(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Category>)
+  fullName.vb: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.New(System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.Category))
+  nameWithType: LinkedCategorySelectionFilter.LinkedCategorySelectionFilter(IEnumerable<Category>)
+  nameWithType.vb: LinkedCategorySelectionFilter.New(IEnumerable(Of Category))
+- uid: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.#ctor*
+  name: LinkedCategorySelectionFilter
+  href: api/MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.html#MBF_Revit_Data_SelectionFilters_LinkedCategorySelectionFilter__ctor_
+  commentId: Overload:MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.LinkedCategorySelectionFilter
+  fullName.vb: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.New
+  nameWithType: LinkedCategorySelectionFilter.LinkedCategorySelectionFilter
+  nameWithType.vb: LinkedCategorySelectionFilter.New
+- uid: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
+  name: AllowElement(Element)
+  href: api/MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.html#MBF_Revit_Data_SelectionFilters_LinkedCategorySelectionFilter_AllowElement_Autodesk_Revit_DB_Element_
+  commentId: M:MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
+  fullName: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
+  nameWithType: LinkedCategorySelectionFilter.AllowElement(Element)
+- uid: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.AllowElement*
+  name: AllowElement
+  href: api/MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.html#MBF_Revit_Data_SelectionFilters_LinkedCategorySelectionFilter_AllowElement_
+  commentId: Overload:MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.AllowElement
+  fullName: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.AllowElement
+  nameWithType: LinkedCategorySelectionFilter.AllowElement
+- uid: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)
+  name: AllowReference(Reference, XYZ)
+  href: api/MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.html#MBF_Revit_Data_SelectionFilters_LinkedCategorySelectionFilter_AllowReference_Autodesk_Revit_DB_Reference_Autodesk_Revit_DB_XYZ_
+  commentId: M:MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)
+  fullName: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference, Autodesk.Revit.DB.XYZ)
+  nameWithType: LinkedCategorySelectionFilter.AllowReference(Reference, XYZ)
+- uid: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.AllowReference*
+  name: AllowReference
+  href: api/MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.html#MBF_Revit_Data_SelectionFilters_LinkedCategorySelectionFilter_AllowReference_
+  commentId: Overload:MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.AllowReference
+  fullName: MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.AllowReference
+  nameWithType: LinkedCategorySelectionFilter.AllowReference
 - uid: MBF.Revit.Data.Utils
   name: MBF.Revit.Data.Utils
   href: api/MBF.Revit.Data.Utils.html
@@ -1555,6 +1885,24 @@ references:
   commentId: Overload:MBF.Revit.Data.Utils.MbPipesUtils.GetPipeInstances
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.GetPipeInstances
   nameWithType: MbPipesUtils.GetPipeInstances
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils
+  name: MbSpaceUtils
+  href: api/MBF.Revit.Data.Utils.MbSpaceUtils.html
+  commentId: T:MBF.Revit.Data.Utils.MbSpaceUtils
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils
+  nameWithType: MbSpaceUtils
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.GetSpacesFromSelection(Autodesk.Revit.UI.UIDocument)
+  name: GetSpacesFromSelection(UIDocument)
+  href: api/MBF.Revit.Data.Utils.MbSpaceUtils.html#MBF_Revit_Data_Utils_MbSpaceUtils_GetSpacesFromSelection_Autodesk_Revit_UI_UIDocument_
+  commentId: M:MBF.Revit.Data.Utils.MbSpaceUtils.GetSpacesFromSelection(Autodesk.Revit.UI.UIDocument)
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.GetSpacesFromSelection(Autodesk.Revit.UI.UIDocument)
+  nameWithType: MbSpaceUtils.GetSpacesFromSelection(UIDocument)
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.GetSpacesFromSelection*
+  name: GetSpacesFromSelection
+  href: api/MBF.Revit.Data.Utils.MbSpaceUtils.html#MBF_Revit_Data_Utils_MbSpaceUtils_GetSpacesFromSelection_
+  commentId: Overload:MBF.Revit.Data.Utils.MbSpaceUtils.GetSpacesFromSelection
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.GetSpacesFromSelection
+  nameWithType: MbSpaceUtils.GetSpacesFromSelection
 - uid: MBF.Revit.Data.Utils.MbSprinklersUtils
   name: MbSprinklersUtils
   href: api/MBF.Revit.Data.Utils.MbSprinklersUtils.html
@@ -1633,6 +1981,78 @@ references:
   fullName.vb: MBF.Revit.Data.Utils.MbViewUtils.New
   nameWithType: MbViewUtils.MbViewUtils
   nameWithType.vb: MbViewUtils.New
+- uid: MBF.Revit.Data.Utils.MbViewUtils.Create3DView(Autodesk.Revit.DB.Document)
+  name: Create3DView(Document)
+  href: api/MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_Create3DView_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Data.Utils.MbViewUtils.Create3DView(Autodesk.Revit.DB.Document)
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.Create3DView(Autodesk.Revit.DB.Document)
+  nameWithType: MbViewUtils.Create3DView(Document)
+- uid: MBF.Revit.Data.Utils.MbViewUtils.Create3DView*
+  name: Create3DView
+  href: api/MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_Create3DView_
+  commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.Create3DView
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.Create3DView
+  nameWithType: MbViewUtils.Create3DView
+- uid: MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen(Autodesk.Revit.DB.Document)
+  name: EnsureTemp3DViewIsOpen(Document)
+  href: api/MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_EnsureTemp3DViewIsOpen_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen(Autodesk.Revit.DB.Document)
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen(Autodesk.Revit.DB.Document)
+  nameWithType: MbViewUtils.EnsureTemp3DViewIsOpen(Document)
+- uid: MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen*
+  name: EnsureTemp3DViewIsOpen
+  href: api/MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_EnsureTemp3DViewIsOpen_
+  commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen
+  nameWithType: MbViewUtils.EnsureTemp3DViewIsOpen
+- uid: MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews(Autodesk.Revit.DB.Document)
+  name: GetAllPlanViews(Document)
+  href: api/MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_GetAllPlanViews_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews(Autodesk.Revit.DB.Document)
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews(Autodesk.Revit.DB.Document)
+  nameWithType: MbViewUtils.GetAllPlanViews(Document)
+- uid: MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews*
+  name: GetAllPlanViews
+  href: api/MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_GetAllPlanViews_
+  commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews
+  nameWithType: MbViewUtils.GetAllPlanViews
+- uid: MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews(Autodesk.Revit.DB.Document)
+  name: GetAllThreeDViews(Document)
+  href: api/MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_GetAllThreeDViews_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews(Autodesk.Revit.DB.Document)
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews(Autodesk.Revit.DB.Document)
+  nameWithType: MbViewUtils.GetAllThreeDViews(Document)
+- uid: MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews*
+  name: GetAllThreeDViews
+  href: api/MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_GetAllThreeDViews_
+  commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews
+  nameWithType: MbViewUtils.GetAllThreeDViews
+- uid: MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D(Autodesk.Revit.DB.Document)
+  name: GetOrCreateTemp3D(Document)
+  href: api/MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_GetOrCreateTemp3D_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D(Autodesk.Revit.DB.Document)
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D(Autodesk.Revit.DB.Document)
+  nameWithType: MbViewUtils.GetOrCreateTemp3D(Document)
+- uid: MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D*
+  name: GetOrCreateTemp3D
+  href: api/MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_GetOrCreateTemp3D_
+  commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D
+  nameWithType: MbViewUtils.GetOrCreateTemp3D
+- uid: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction(Autodesk.Revit.DB.Document)
+  name: GetTemp3D_NoTransaction(Document)
+  href: api/MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_GetTemp3D_NoTransaction_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction(Autodesk.Revit.DB.Document)
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction(Autodesk.Revit.DB.Document)
+  nameWithType: MbViewUtils.GetTemp3D_NoTransaction(Document)
+- uid: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction*
+  name: GetTemp3D_NoTransaction
+  href: api/MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_GetTemp3D_NoTransaction_
+  commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction
+  nameWithType: MbViewUtils.GetTemp3D_NoTransaction
 - uid: MBF.Revit.Data.Utils.MbViewUtils.IsGraphicalView(Autodesk.Revit.DB.View)
   name: IsGraphicalView(View)
   href: api/MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_IsGraphicalView_Autodesk_Revit_DB_View_
@@ -1663,6 +2083,729 @@ references:
   commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement
   fullName: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement
   nameWithType: MbViewUtils.ZoomToElement
+- uid: MBF.Revit.Geometry.Extensions
+  name: MBF.Revit.Geometry.Extensions
+  href: api/MBF.Revit.Geometry.Extensions.html
+  commentId: N:MBF.Revit.Geometry.Extensions
+  fullName: MBF.Revit.Geometry.Extensions
+  nameWithType: MBF.Revit.Geometry.Extensions
+- uid: MBF.Revit.Geometry.Extensions.BoundingBoxExtensions
+  name: BoundingBoxExtensions
+  href: api/MBF.Revit.Geometry.Extensions.BoundingBoxExtensions.html
+  commentId: T:MBF.Revit.Geometry.Extensions.BoundingBoxExtensions
+  fullName: MBF.Revit.Geometry.Extensions.BoundingBoxExtensions
+  nameWithType: BoundingBoxExtensions
+- uid: MBF.Revit.Geometry.Extensions.BoundingBoxExtensions.ToCurveLoop(Autodesk.Revit.DB.BoundingBoxXYZ)
+  name: ToCurveLoop(BoundingBoxXYZ)
+  href: api/MBF.Revit.Geometry.Extensions.BoundingBoxExtensions.html#MBF_Revit_Geometry_Extensions_BoundingBoxExtensions_ToCurveLoop_Autodesk_Revit_DB_BoundingBoxXYZ_
+  commentId: M:MBF.Revit.Geometry.Extensions.BoundingBoxExtensions.ToCurveLoop(Autodesk.Revit.DB.BoundingBoxXYZ)
+  fullName: MBF.Revit.Geometry.Extensions.BoundingBoxExtensions.ToCurveLoop(Autodesk.Revit.DB.BoundingBoxXYZ)
+  nameWithType: BoundingBoxExtensions.ToCurveLoop(BoundingBoxXYZ)
+- uid: MBF.Revit.Geometry.Extensions.BoundingBoxExtensions.ToCurveLoop*
+  name: ToCurveLoop
+  href: api/MBF.Revit.Geometry.Extensions.BoundingBoxExtensions.html#MBF_Revit_Geometry_Extensions_BoundingBoxExtensions_ToCurveLoop_
+  commentId: Overload:MBF.Revit.Geometry.Extensions.BoundingBoxExtensions.ToCurveLoop
+  fullName: MBF.Revit.Geometry.Extensions.BoundingBoxExtensions.ToCurveLoop
+  nameWithType: BoundingBoxExtensions.ToCurveLoop
+- uid: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions
+  name: BoundingBoxVisualizerExtensions
+  href: api/MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.html
+  commentId: T:MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions
+  fullName: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions
+  nameWithType: BoundingBoxVisualizerExtensions
+- uid: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D(Autodesk.Revit.DB.BoundingBoxXYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  name: VisualizeBoundingBox2D(BoundingBoxXYZ, Document, Color)
+  href: api/MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_BoundingBoxVisualizerExtensions_VisualizeBoundingBox2D_Autodesk_Revit_DB_BoundingBoxXYZ_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_
+  commentId: M:MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D(Autodesk.Revit.DB.BoundingBoxXYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  fullName: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D(Autodesk.Revit.DB.BoundingBoxXYZ, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
+  nameWithType: BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D(BoundingBoxXYZ, Document, Color)
+- uid: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D*
+  name: VisualizeBoundingBox2D
+  href: api/MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_BoundingBoxVisualizerExtensions_VisualizeBoundingBox2D_
+  commentId: Overload:MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D
+  fullName: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D
+  nameWithType: BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D
+- uid: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBoxes2D(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.BoundingBoxXYZ},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  name: VisualizeBoundingBoxes2D(IEnumerable<BoundingBoxXYZ>, Document, Color)
+  href: api/MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_BoundingBoxVisualizerExtensions_VisualizeBoundingBoxes2D_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_BoundingBoxXYZ__Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_
+  commentId: M:MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBoxes2D(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.BoundingBoxXYZ},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  name.vb: VisualizeBoundingBoxes2D(IEnumerable(Of BoundingBoxXYZ), Document, Color)
+  fullName: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBoxes2D(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.BoundingBoxXYZ>, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
+  fullName.vb: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBoxes2D(System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.BoundingBoxXYZ), Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
+  nameWithType: BoundingBoxVisualizerExtensions.VisualizeBoundingBoxes2D(IEnumerable<BoundingBoxXYZ>, Document, Color)
+  nameWithType.vb: BoundingBoxVisualizerExtensions.VisualizeBoundingBoxes2D(IEnumerable(Of BoundingBoxXYZ), Document, Color)
+- uid: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBoxes2D*
+  name: VisualizeBoundingBoxes2D
+  href: api/MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_BoundingBoxVisualizerExtensions_VisualizeBoundingBoxes2D_
+  commentId: Overload:MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBoxes2D
+  fullName: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBoxes2D
+  nameWithType: BoundingBoxVisualizerExtensions.VisualizeBoundingBoxes2D
+- uid: MBF.Revit.Geometry.Extensions.ClipperExtensions
+  name: ClipperExtensions
+  href: api/MBF.Revit.Geometry.Extensions.ClipperExtensions.html
+  commentId: T:MBF.Revit.Geometry.Extensions.ClipperExtensions
+  fullName: MBF.Revit.Geometry.Extensions.ClipperExtensions
+  nameWithType: ClipperExtensions
+- uid: MBF.Revit.Geometry.Extensions.ClipperExtensions.AddPathDToPathsD(Clipper2Lib.PathsD,Clipper2Lib.PathD)
+  name: AddPathDToPathsD(PathsD, PathD)
+  href: api/MBF.Revit.Geometry.Extensions.ClipperExtensions.html#MBF_Revit_Geometry_Extensions_ClipperExtensions_AddPathDToPathsD_Clipper2Lib_PathsD_Clipper2Lib_PathD_
+  commentId: M:MBF.Revit.Geometry.Extensions.ClipperExtensions.AddPathDToPathsD(Clipper2Lib.PathsD,Clipper2Lib.PathD)
+  fullName: MBF.Revit.Geometry.Extensions.ClipperExtensions.AddPathDToPathsD(Clipper2Lib.PathsD, Clipper2Lib.PathD)
+  nameWithType: ClipperExtensions.AddPathDToPathsD(PathsD, PathD)
+- uid: MBF.Revit.Geometry.Extensions.ClipperExtensions.AddPathDToPathsD*
+  name: AddPathDToPathsD
+  href: api/MBF.Revit.Geometry.Extensions.ClipperExtensions.html#MBF_Revit_Geometry_Extensions_ClipperExtensions_AddPathDToPathsD_
+  commentId: Overload:MBF.Revit.Geometry.Extensions.ClipperExtensions.AddPathDToPathsD
+  fullName: MBF.Revit.Geometry.Extensions.ClipperExtensions.AddPathDToPathsD
+  nameWithType: ClipperExtensions.AddPathDToPathsD
+- uid: MBF.Revit.Geometry.Extensions.ClipperExtensions.ToCurveLoop(Clipper2Lib.PathD)
+  name: ToCurveLoop(PathD)
+  href: api/MBF.Revit.Geometry.Extensions.ClipperExtensions.html#MBF_Revit_Geometry_Extensions_ClipperExtensions_ToCurveLoop_Clipper2Lib_PathD_
+  commentId: M:MBF.Revit.Geometry.Extensions.ClipperExtensions.ToCurveLoop(Clipper2Lib.PathD)
+  fullName: MBF.Revit.Geometry.Extensions.ClipperExtensions.ToCurveLoop(Clipper2Lib.PathD)
+  nameWithType: ClipperExtensions.ToCurveLoop(PathD)
+- uid: MBF.Revit.Geometry.Extensions.ClipperExtensions.ToCurveLoop*
+  name: ToCurveLoop
+  href: api/MBF.Revit.Geometry.Extensions.ClipperExtensions.html#MBF_Revit_Geometry_Extensions_ClipperExtensions_ToCurveLoop_
+  commentId: Overload:MBF.Revit.Geometry.Extensions.ClipperExtensions.ToCurveLoop
+  fullName: MBF.Revit.Geometry.Extensions.ClipperExtensions.ToCurveLoop
+  nameWithType: ClipperExtensions.ToCurveLoop
+- uid: MBF.Revit.Geometry.Extensions.CurveLoopExtensions
+  name: CurveLoopExtensions
+  href: api/MBF.Revit.Geometry.Extensions.CurveLoopExtensions.html
+  commentId: T:MBF.Revit.Geometry.Extensions.CurveLoopExtensions
+  fullName: MBF.Revit.Geometry.Extensions.CurveLoopExtensions
+  nameWithType: CurveLoopExtensions
+- uid: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathD(Autodesk.Revit.DB.CurveLoop)
+  name: ToClipperPathD(CurveLoop)
+  href: api/MBF.Revit.Geometry.Extensions.CurveLoopExtensions.html#MBF_Revit_Geometry_Extensions_CurveLoopExtensions_ToClipperPathD_Autodesk_Revit_DB_CurveLoop_
+  commentId: M:MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathD(Autodesk.Revit.DB.CurveLoop)
+  fullName: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathD(Autodesk.Revit.DB.CurveLoop)
+  nameWithType: CurveLoopExtensions.ToClipperPathD(CurveLoop)
+- uid: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathD*
+  name: ToClipperPathD
+  href: api/MBF.Revit.Geometry.Extensions.CurveLoopExtensions.html#MBF_Revit_Geometry_Extensions_CurveLoopExtensions_ToClipperPathD_
+  commentId: Overload:MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathD
+  fullName: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathD
+  nameWithType: CurveLoopExtensions.ToClipperPathD
+- uid: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathsD(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.CurveLoop})
+  name: ToClipperPathsD(IEnumerable<CurveLoop>)
+  href: api/MBF.Revit.Geometry.Extensions.CurveLoopExtensions.html#MBF_Revit_Geometry_Extensions_CurveLoopExtensions_ToClipperPathsD_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_CurveLoop__
+  commentId: M:MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathsD(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.CurveLoop})
+  name.vb: ToClipperPathsD(IEnumerable(Of CurveLoop))
+  fullName: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathsD(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.CurveLoop>)
+  fullName.vb: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathsD(System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.CurveLoop))
+  nameWithType: CurveLoopExtensions.ToClipperPathsD(IEnumerable<CurveLoop>)
+  nameWithType.vb: CurveLoopExtensions.ToClipperPathsD(IEnumerable(Of CurveLoop))
+- uid: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathsD*
+  name: ToClipperPathsD
+  href: api/MBF.Revit.Geometry.Extensions.CurveLoopExtensions.html#MBF_Revit_Geometry_Extensions_CurveLoopExtensions_ToClipperPathsD_
+  commentId: Overload:MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathsD
+  fullName: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathsD
+  nameWithType: CurveLoopExtensions.ToClipperPathsD
+- uid: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToPathsD(Autodesk.Revit.DB.CurveLoop)
+  name: ToPathsD(CurveLoop)
+  href: api/MBF.Revit.Geometry.Extensions.CurveLoopExtensions.html#MBF_Revit_Geometry_Extensions_CurveLoopExtensions_ToPathsD_Autodesk_Revit_DB_CurveLoop_
+  commentId: M:MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToPathsD(Autodesk.Revit.DB.CurveLoop)
+  fullName: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToPathsD(Autodesk.Revit.DB.CurveLoop)
+  nameWithType: CurveLoopExtensions.ToPathsD(CurveLoop)
+- uid: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToPathsD*
+  name: ToPathsD
+  href: api/MBF.Revit.Geometry.Extensions.CurveLoopExtensions.html#MBF_Revit_Geometry_Extensions_CurveLoopExtensions_ToPathsD_
+  commentId: Overload:MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToPathsD
+  fullName: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToPathsD
+  nameWithType: CurveLoopExtensions.ToPathsD
+- uid: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions
+  name: CurveLoopVisualizerExtensions
+  href: api/MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.html
+  commentId: T:MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions
+  fullName: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions
+  nameWithType: CurveLoopVisualizerExtensions
+- uid: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.CreateCurveLoopWithDetailCurves(Autodesk.Revit.DB.CurveLoop,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ViewDrafting,Autodesk.Revit.DB.Color)
+  name: CreateCurveLoopWithDetailCurves(CurveLoop, Document, ViewDrafting, Color)
+  href: api/MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_CurveLoopVisualizerExtensions_CreateCurveLoopWithDetailCurves_Autodesk_Revit_DB_CurveLoop_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ViewDrafting_Autodesk_Revit_DB_Color_
+  commentId: M:MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.CreateCurveLoopWithDetailCurves(Autodesk.Revit.DB.CurveLoop,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ViewDrafting,Autodesk.Revit.DB.Color)
+  fullName: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.CreateCurveLoopWithDetailCurves(Autodesk.Revit.DB.CurveLoop, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.ViewDrafting, Autodesk.Revit.DB.Color)
+  nameWithType: CurveLoopVisualizerExtensions.CreateCurveLoopWithDetailCurves(CurveLoop, Document, ViewDrafting, Color)
+- uid: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.CreateCurveLoopWithDetailCurves*
+  name: CreateCurveLoopWithDetailCurves
+  href: api/MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_CurveLoopVisualizerExtensions_CreateCurveLoopWithDetailCurves_
+  commentId: Overload:MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.CreateCurveLoopWithDetailCurves
+  fullName: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.CreateCurveLoopWithDetailCurves
+  nameWithType: CurveLoopVisualizerExtensions.CreateCurveLoopWithDetailCurves
+- uid: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoop2D(Autodesk.Revit.DB.CurveLoop,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  name: VisualizeCurveLoop2D(CurveLoop, Document, Color)
+  href: api/MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_CurveLoopVisualizerExtensions_VisualizeCurveLoop2D_Autodesk_Revit_DB_CurveLoop_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_
+  commentId: M:MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoop2D(Autodesk.Revit.DB.CurveLoop,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  fullName: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoop2D(Autodesk.Revit.DB.CurveLoop, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
+  nameWithType: CurveLoopVisualizerExtensions.VisualizeCurveLoop2D(CurveLoop, Document, Color)
+- uid: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoop2D*
+  name: VisualizeCurveLoop2D
+  href: api/MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_CurveLoopVisualizerExtensions_VisualizeCurveLoop2D_
+  commentId: Overload:MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoop2D
+  fullName: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoop2D
+  nameWithType: CurveLoopVisualizerExtensions.VisualizeCurveLoop2D
+- uid: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoops2D(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.CurveLoop},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  name: VisualizeCurveLoops2D(IEnumerable<CurveLoop>, Document, Color)
+  href: api/MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_CurveLoopVisualizerExtensions_VisualizeCurveLoops2D_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_CurveLoop__Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_
+  commentId: M:MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoops2D(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.CurveLoop},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  name.vb: VisualizeCurveLoops2D(IEnumerable(Of CurveLoop), Document, Color)
+  fullName: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoops2D(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.CurveLoop>, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
+  fullName.vb: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoops2D(System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.CurveLoop), Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
+  nameWithType: CurveLoopVisualizerExtensions.VisualizeCurveLoops2D(IEnumerable<CurveLoop>, Document, Color)
+  nameWithType.vb: CurveLoopVisualizerExtensions.VisualizeCurveLoops2D(IEnumerable(Of CurveLoop), Document, Color)
+- uid: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoops2D*
+  name: VisualizeCurveLoops2D
+  href: api/MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_CurveLoopVisualizerExtensions_VisualizeCurveLoops2D_
+  commentId: Overload:MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoops2D
+  fullName: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoops2D
+  nameWithType: CurveLoopVisualizerExtensions.VisualizeCurveLoops2D
+- uid: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions
+  name: CurveVisualizerExtensions
+  href: api/MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.html
+  commentId: T:MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions
+  fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions
+  nameWithType: CurveVisualizerExtensions
+- uid: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.CreateCurveWithDetailCurve(Autodesk.Revit.DB.Curve,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ViewDrafting,Autodesk.Revit.DB.Color)
+  name: CreateCurveWithDetailCurve(Curve, Document, ViewDrafting, Color)
+  href: api/MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_CurveVisualizerExtensions_CreateCurveWithDetailCurve_Autodesk_Revit_DB_Curve_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ViewDrafting_Autodesk_Revit_DB_Color_
+  commentId: M:MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.CreateCurveWithDetailCurve(Autodesk.Revit.DB.Curve,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ViewDrafting,Autodesk.Revit.DB.Color)
+  fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.CreateCurveWithDetailCurve(Autodesk.Revit.DB.Curve, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.ViewDrafting, Autodesk.Revit.DB.Color)
+  nameWithType: CurveVisualizerExtensions.CreateCurveWithDetailCurve(Curve, Document, ViewDrafting, Color)
+- uid: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.CreateCurveWithDetailCurve*
+  name: CreateCurveWithDetailCurve
+  href: api/MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_CurveVisualizerExtensions_CreateCurveWithDetailCurve_
+  commentId: Overload:MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.CreateCurveWithDetailCurve
+  fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.CreateCurveWithDetailCurve
+  nameWithType: CurveVisualizerExtensions.CreateCurveWithDetailCurve
+- uid: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurve2D(Autodesk.Revit.DB.Curve,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  name: VisualizeCurve2D(Curve, Document, Color)
+  href: api/MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_CurveVisualizerExtensions_VisualizeCurve2D_Autodesk_Revit_DB_Curve_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_
+  commentId: M:MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurve2D(Autodesk.Revit.DB.Curve,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurve2D(Autodesk.Revit.DB.Curve, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
+  nameWithType: CurveVisualizerExtensions.VisualizeCurve2D(Curve, Document, Color)
+- uid: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurve2D*
+  name: VisualizeCurve2D
+  href: api/MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_CurveVisualizerExtensions_VisualizeCurve2D_
+  commentId: Overload:MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurve2D
+  fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurve2D
+  nameWithType: CurveVisualizerExtensions.VisualizeCurve2D
+- uid: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  name: VisualizeCurves2D(IEnumerable<Curve>, Document, Color)
+  href: api/MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_CurveVisualizerExtensions_VisualizeCurves2D_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Curve__Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_
+  commentId: M:MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  name.vb: VisualizeCurves2D(IEnumerable(Of Curve), Document, Color)
+  fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Curve>, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
+  fullName.vb: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D(System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.Curve), Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
+  nameWithType: CurveVisualizerExtensions.VisualizeCurves2D(IEnumerable<Curve>, Document, Color)
+  nameWithType.vb: CurveVisualizerExtensions.VisualizeCurves2D(IEnumerable(Of Curve), Document, Color)
+- uid: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D*
+  name: VisualizeCurves2D
+  href: api/MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_CurveVisualizerExtensions_VisualizeCurves2D_
+  commentId: Overload:MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D
+  fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D
+  nameWithType: CurveVisualizerExtensions.VisualizeCurves2D
+- uid: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions
+  name: PathDVisualizerExtensions
+  href: api/MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.html
+  commentId: T:MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions
+  fullName: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions
+  nameWithType: PathDVisualizerExtensions
+- uid: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D(Clipper2Lib.PathD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  name: VisualizePathD2D(PathD, Document, Color)
+  href: api/MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_PathDVisualizerExtensions_VisualizePathD2D_Clipper2Lib_PathD_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_
+  commentId: M:MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D(Clipper2Lib.PathD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  fullName: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D(Clipper2Lib.PathD, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
+  nameWithType: PathDVisualizerExtensions.VisualizePathD2D(PathD, Document, Color)
+- uid: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D*
+  name: VisualizePathD2D
+  href: api/MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_PathDVisualizerExtensions_VisualizePathD2D_
+  commentId: Overload:MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D
+  fullName: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D
+  nameWithType: PathDVisualizerExtensions.VisualizePathD2D
+- uid: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathsD2D(Clipper2Lib.PathsD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  name: VisualizePathsD2D(PathsD, Document, Color)
+  href: api/MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_PathDVisualizerExtensions_VisualizePathsD2D_Clipper2Lib_PathsD_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_
+  commentId: M:MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathsD2D(Clipper2Lib.PathsD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  fullName: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathsD2D(Clipper2Lib.PathsD, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
+  nameWithType: PathDVisualizerExtensions.VisualizePathsD2D(PathsD, Document, Color)
+- uid: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathsD2D*
+  name: VisualizePathsD2D
+  href: api/MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.html#MBF_Revit_Geometry_Extensions_PathDVisualizerExtensions_VisualizePathsD2D_
+  commentId: Overload:MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathsD2D
+  fullName: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathsD2D
+  nameWithType: PathDVisualizerExtensions.VisualizePathsD2D
+- uid: MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions
+  name: XyzVisualizationsExtensions
+  href: api/MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.html
+  commentId: T:MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions
+  fullName: MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions
+  nameWithType: XyzVisualizationsExtensions
+- uid: MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.VisualizePoint(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  name: VisualizePoint(XYZ, Document, Color)
+  href: api/MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.html#MBF_Revit_Geometry_Extensions_XyzVisualizationsExtensions_VisualizePoint_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_
+  commentId: M:MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.VisualizePoint(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  fullName: MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.VisualizePoint(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
+  nameWithType: XyzVisualizationsExtensions.VisualizePoint(XYZ, Document, Color)
+- uid: MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.VisualizePoint*
+  name: VisualizePoint
+  href: api/MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.html#MBF_Revit_Geometry_Extensions_XyzVisualizationsExtensions_VisualizePoint_
+  commentId: Overload:MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.VisualizePoint
+  fullName: MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.VisualizePoint
+  nameWithType: XyzVisualizationsExtensions.VisualizePoint
+- uid: MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.VisualizePointAsElement(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  name: VisualizePointAsElement(XYZ, Document, Color)
+  href: api/MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.html#MBF_Revit_Geometry_Extensions_XyzVisualizationsExtensions_VisualizePointAsElement_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_
+  commentId: M:MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.VisualizePointAsElement(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
+  fullName: MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.VisualizePointAsElement(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
+  nameWithType: XyzVisualizationsExtensions.VisualizePointAsElement(XYZ, Document, Color)
+- uid: MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.VisualizePointAsElement*
+  name: VisualizePointAsElement
+  href: api/MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.html#MBF_Revit_Geometry_Extensions_XyzVisualizationsExtensions_VisualizePointAsElement_
+  commentId: Overload:MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.VisualizePointAsElement
+  fullName: MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.VisualizePointAsElement
+  nameWithType: XyzVisualizationsExtensions.VisualizePointAsElement
+- uid: MBF.Revit.Geometry.Utils
+  name: MBF.Revit.Geometry.Utils
+  href: api/MBF.Revit.Geometry.Utils.html
+  commentId: N:MBF.Revit.Geometry.Utils
+  fullName: MBF.Revit.Geometry.Utils
+  nameWithType: MBF.Revit.Geometry.Utils
+- uid: MBF.Revit.Geometry.Utils.MbXyzUtils
+  name: MbXyzUtils
+  href: api/MBF.Revit.Geometry.Utils.MbXyzUtils.html
+  commentId: T:MBF.Revit.Geometry.Utils.MbXyzUtils
+  fullName: MBF.Revit.Geometry.Utils.MbXyzUtils
+  nameWithType: MbXyzUtils
+- uid: MBF.Revit.Geometry.Utils.MbXyzUtils.DoLinesIntersect2D(Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line)
+  name: DoLinesIntersect2D(Line, Line)
+  href: api/MBF.Revit.Geometry.Utils.MbXyzUtils.html#MBF_Revit_Geometry_Utils_MbXyzUtils_DoLinesIntersect2D_Autodesk_Revit_DB_Line_Autodesk_Revit_DB_Line_
+  commentId: M:MBF.Revit.Geometry.Utils.MbXyzUtils.DoLinesIntersect2D(Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line)
+  fullName: MBF.Revit.Geometry.Utils.MbXyzUtils.DoLinesIntersect2D(Autodesk.Revit.DB.Line, Autodesk.Revit.DB.Line)
+  nameWithType: MbXyzUtils.DoLinesIntersect2D(Line, Line)
+- uid: MBF.Revit.Geometry.Utils.MbXyzUtils.DoLinesIntersect2D(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ)
+  name: DoLinesIntersect2D(XYZ, XYZ, XYZ, XYZ)
+  href: api/MBF.Revit.Geometry.Utils.MbXyzUtils.html#MBF_Revit_Geometry_Utils_MbXyzUtils_DoLinesIntersect2D_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_XYZ_
+  commentId: M:MBF.Revit.Geometry.Utils.MbXyzUtils.DoLinesIntersect2D(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ)
+  fullName: MBF.Revit.Geometry.Utils.MbXyzUtils.DoLinesIntersect2D(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.XYZ)
+  nameWithType: MbXyzUtils.DoLinesIntersect2D(XYZ, XYZ, XYZ, XYZ)
+- uid: MBF.Revit.Geometry.Utils.MbXyzUtils.DoLinesIntersect2D*
+  name: DoLinesIntersect2D
+  href: api/MBF.Revit.Geometry.Utils.MbXyzUtils.html#MBF_Revit_Geometry_Utils_MbXyzUtils_DoLinesIntersect2D_
+  commentId: Overload:MBF.Revit.Geometry.Utils.MbXyzUtils.DoLinesIntersect2D
+  fullName: MBF.Revit.Geometry.Utils.MbXyzUtils.DoLinesIntersect2D
+  nameWithType: MbXyzUtils.DoLinesIntersect2D
+- uid: MBF.Revit.Geometry.Utils.MbXyzUtils.HasSelfIntersections(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ})
+  name: HasSelfIntersections(List<XYZ>)
+  href: api/MBF.Revit.Geometry.Utils.MbXyzUtils.html#MBF_Revit_Geometry_Utils_MbXyzUtils_HasSelfIntersections_System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__
+  commentId: M:MBF.Revit.Geometry.Utils.MbXyzUtils.HasSelfIntersections(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ})
+  name.vb: HasSelfIntersections(List(Of XYZ))
+  fullName: MBF.Revit.Geometry.Utils.MbXyzUtils.HasSelfIntersections(System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>)
+  fullName.vb: MBF.Revit.Geometry.Utils.MbXyzUtils.HasSelfIntersections(System.Collections.Generic.List(Of Autodesk.Revit.DB.XYZ))
+  nameWithType: MbXyzUtils.HasSelfIntersections(List<XYZ>)
+  nameWithType.vb: MbXyzUtils.HasSelfIntersections(List(Of XYZ))
+- uid: MBF.Revit.Geometry.Utils.MbXyzUtils.HasSelfIntersections*
+  name: HasSelfIntersections
+  href: api/MBF.Revit.Geometry.Utils.MbXyzUtils.html#MBF_Revit_Geometry_Utils_MbXyzUtils_HasSelfIntersections_
+  commentId: Overload:MBF.Revit.Geometry.Utils.MbXyzUtils.HasSelfIntersections
+  fullName: MBF.Revit.Geometry.Utils.MbXyzUtils.HasSelfIntersections
+  nameWithType: MbXyzUtils.HasSelfIntersections
+- uid: MBF.Revit.Geometry.Utils.MbXyzUtils.SortPointsClockwise(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ})
+  name: SortPointsClockwise(List<XYZ>)
+  href: api/MBF.Revit.Geometry.Utils.MbXyzUtils.html#MBF_Revit_Geometry_Utils_MbXyzUtils_SortPointsClockwise_System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__
+  commentId: M:MBF.Revit.Geometry.Utils.MbXyzUtils.SortPointsClockwise(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ})
+  name.vb: SortPointsClockwise(List(Of XYZ))
+  fullName: MBF.Revit.Geometry.Utils.MbXyzUtils.SortPointsClockwise(System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>)
+  fullName.vb: MBF.Revit.Geometry.Utils.MbXyzUtils.SortPointsClockwise(System.Collections.Generic.List(Of Autodesk.Revit.DB.XYZ))
+  nameWithType: MbXyzUtils.SortPointsClockwise(List<XYZ>)
+  nameWithType.vb: MbXyzUtils.SortPointsClockwise(List(Of XYZ))
+- uid: MBF.Revit.Geometry.Utils.MbXyzUtils.SortPointsClockwise*
+  name: SortPointsClockwise
+  href: api/MBF.Revit.Geometry.Utils.MbXyzUtils.html#MBF_Revit_Geometry_Utils_MbXyzUtils_SortPointsClockwise_
+  commentId: Overload:MBF.Revit.Geometry.Utils.MbXyzUtils.SortPointsClockwise
+  fullName: MBF.Revit.Geometry.Utils.MbXyzUtils.SortPointsClockwise
+  nameWithType: MbXyzUtils.SortPointsClockwise
+- uid: MBF.Revit.Geometry.Utils.PolygonUtils
+  name: PolygonUtils
+  href: api/MBF.Revit.Geometry.Utils.PolygonUtils.html
+  commentId: T:MBF.Revit.Geometry.Utils.PolygonUtils
+  fullName: MBF.Revit.Geometry.Utils.PolygonUtils
+  nameWithType: PolygonUtils
+- uid: MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ)
+  name: IsPointInsidePolygon(List<XYZ>, XYZ)
+  href: api/MBF.Revit.Geometry.Utils.PolygonUtils.html#MBF_Revit_Geometry_Utils_PolygonUtils_IsPointInsidePolygon_System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__Autodesk_Revit_DB_XYZ_
+  commentId: M:MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ)
+  name.vb: IsPointInsidePolygon(List(Of XYZ), XYZ)
+  fullName: MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon(System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>, Autodesk.Revit.DB.XYZ)
+  fullName.vb: MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon(System.Collections.Generic.List(Of Autodesk.Revit.DB.XYZ), Autodesk.Revit.DB.XYZ)
+  nameWithType: PolygonUtils.IsPointInsidePolygon(List<XYZ>, XYZ)
+  nameWithType.vb: PolygonUtils.IsPointInsidePolygon(List(Of XYZ), XYZ)
+- uid: MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon*
+  name: IsPointInsidePolygon
+  href: api/MBF.Revit.Geometry.Utils.PolygonUtils.html#MBF_Revit_Geometry_Utils_PolygonUtils_IsPointInsidePolygon_
+  commentId: Overload:MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon
+  fullName: MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon
+  nameWithType: PolygonUtils.IsPointInsidePolygon
+- uid: MBF.Revit.Geometry.Voronoi.Models
+  name: MBF.Revit.Geometry.Voronoi.Models
+  href: api/MBF.Revit.Geometry.Voronoi.Models.html
+  commentId: N:MBF.Revit.Geometry.Voronoi.Models
+  fullName: MBF.Revit.Geometry.Voronoi.Models
+  nameWithType: MBF.Revit.Geometry.Voronoi.Models
+- uid: MBF.Revit.Geometry.Voronoi.Models.Edge
+  name: Edge
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Edge.html
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Edge
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge
+  nameWithType: Edge
+- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.#ctor
+  name: Edge()
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Edge.html#MBF_Revit_Geometry_Voronoi_Models_Edge__ctor
+  commentId: M:MBF.Revit.Geometry.Voronoi.Models.Edge.#ctor
+  name.vb: New()
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.Edge()
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.Edge.New()
+  nameWithType: Edge.Edge()
+  nameWithType.vb: Edge.New()
+- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.#ctor*
+  name: Edge
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Edge.html#MBF_Revit_Geometry_Voronoi_Models_Edge__ctor_
+  commentId: Overload:MBF.Revit.Geometry.Voronoi.Models.Edge.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.Edge
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.Edge.New
+  nameWithType: Edge.Edge
+  nameWithType.vb: Edge.New
+- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.a
+  name: a
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Edge.html#MBF_Revit_Geometry_Voronoi_Models_Edge_a
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Edge.a
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.a
+  nameWithType: Edge.a
+- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.b
+  name: b
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Edge.html#MBF_Revit_Geometry_Voronoi_Models_Edge_b
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Edge.b
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.b
+  nameWithType: Edge.b
+- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.c
+  name: c
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Edge.html#MBF_Revit_Geometry_Voronoi_Models_Edge_c
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Edge.c
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.c
+  nameWithType: Edge.c
+- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.edgenbr
+  name: edgenbr
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Edge.html#MBF_Revit_Geometry_Voronoi_Models_Edge_edgenbr
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Edge.edgenbr
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.edgenbr
+  nameWithType: Edge.edgenbr
+- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.ep
+  name: ep
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Edge.html#MBF_Revit_Geometry_Voronoi_Models_Edge_ep
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Edge.ep
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.ep
+  nameWithType: Edge.ep
+- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.reg
+  name: reg
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Edge.html#MBF_Revit_Geometry_Voronoi_Models_Edge_reg
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Edge.reg
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.reg
+  nameWithType: Edge.reg
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  name: GraphEdge
+  href: api/MBF.Revit.Geometry.Voronoi.Models.GraphEdge.html
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  nameWithType: GraphEdge
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.#ctor
+  name: GraphEdge()
+  href: api/MBF.Revit.Geometry.Voronoi.Models.GraphEdge.html#MBF_Revit_Geometry_Voronoi_Models_GraphEdge__ctor
+  commentId: M:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.#ctor
+  name.vb: New()
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.GraphEdge()
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.New()
+  nameWithType: GraphEdge.GraphEdge()
+  nameWithType.vb: GraphEdge.New()
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.#ctor*
+  name: GraphEdge
+  href: api/MBF.Revit.Geometry.Voronoi.Models.GraphEdge.html#MBF_Revit_Geometry_Voronoi_Models_GraphEdge__ctor_
+  commentId: Overload:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.GraphEdge
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.New
+  nameWithType: GraphEdge.GraphEdge
+  nameWithType.vb: GraphEdge.New
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.site1
+  name: site1
+  href: api/MBF.Revit.Geometry.Voronoi.Models.GraphEdge.html#MBF_Revit_Geometry_Voronoi_Models_GraphEdge_site1
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.site1
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.site1
+  nameWithType: GraphEdge.site1
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.site2
+  name: site2
+  href: api/MBF.Revit.Geometry.Voronoi.Models.GraphEdge.html#MBF_Revit_Geometry_Voronoi_Models_GraphEdge_site2
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.site2
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.site2
+  nameWithType: GraphEdge.site2
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x1
+  name: x1
+  href: api/MBF.Revit.Geometry.Voronoi.Models.GraphEdge.html#MBF_Revit_Geometry_Voronoi_Models_GraphEdge_x1
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x1
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x1
+  nameWithType: GraphEdge.x1
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x2
+  name: x2
+  href: api/MBF.Revit.Geometry.Voronoi.Models.GraphEdge.html#MBF_Revit_Geometry_Voronoi_Models_GraphEdge_x2
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x2
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x2
+  nameWithType: GraphEdge.x2
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y1
+  name: y1
+  href: api/MBF.Revit.Geometry.Voronoi.Models.GraphEdge.html#MBF_Revit_Geometry_Voronoi_Models_GraphEdge_y1
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y1
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y1
+  nameWithType: GraphEdge.y1
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y2
+  name: y2
+  href: api/MBF.Revit.Geometry.Voronoi.Models.GraphEdge.html#MBF_Revit_Geometry_Voronoi_Models_GraphEdge_y2
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y2
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y2
+  nameWithType: GraphEdge.y2
+- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge
+  name: Halfedge
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Halfedge.html
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Halfedge
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge
+  nameWithType: Halfedge
+- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.#ctor
+  name: Halfedge()
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Halfedge.html#MBF_Revit_Geometry_Voronoi_Models_Halfedge__ctor
+  commentId: M:MBF.Revit.Geometry.Voronoi.Models.Halfedge.#ctor
+  name.vb: New()
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.Halfedge()
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.Halfedge.New()
+  nameWithType: Halfedge.Halfedge()
+  nameWithType.vb: Halfedge.New()
+- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.#ctor*
+  name: Halfedge
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Halfedge.html#MBF_Revit_Geometry_Voronoi_Models_Halfedge__ctor_
+  commentId: Overload:MBF.Revit.Geometry.Voronoi.Models.Halfedge.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.Halfedge
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.Halfedge.New
+  nameWithType: Halfedge.Halfedge
+  nameWithType.vb: Halfedge.New
+- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELedge
+  name: ELedge
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Halfedge.html#MBF_Revit_Geometry_Voronoi_Models_Halfedge_ELedge
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELedge
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELedge
+  nameWithType: Halfedge.ELedge
+- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELleft
+  name: ELleft
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Halfedge.html#MBF_Revit_Geometry_Voronoi_Models_Halfedge_ELleft
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELleft
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELleft
+  nameWithType: Halfedge.ELleft
+- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELpm
+  name: ELpm
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Halfedge.html#MBF_Revit_Geometry_Voronoi_Models_Halfedge_ELpm
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELpm
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELpm
+  nameWithType: Halfedge.ELpm
+- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELright
+  name: ELright
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Halfedge.html#MBF_Revit_Geometry_Voronoi_Models_Halfedge_ELright
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELright
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELright
+  nameWithType: Halfedge.ELright
+- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.PQnext
+  name: PQnext
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Halfedge.html#MBF_Revit_Geometry_Voronoi_Models_Halfedge_PQnext
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Halfedge.PQnext
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.PQnext
+  nameWithType: Halfedge.PQnext
+- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.deleted
+  name: deleted
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Halfedge.html#MBF_Revit_Geometry_Voronoi_Models_Halfedge_deleted
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Halfedge.deleted
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.deleted
+  nameWithType: Halfedge.deleted
+- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.vertex
+  name: vertex
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Halfedge.html#MBF_Revit_Geometry_Voronoi_Models_Halfedge_vertex
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Halfedge.vertex
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.vertex
+  nameWithType: Halfedge.vertex
+- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ystar
+  name: ystar
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Halfedge.html#MBF_Revit_Geometry_Voronoi_Models_Halfedge_ystar
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Halfedge.ystar
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ystar
+  nameWithType: Halfedge.ystar
+- uid: MBF.Revit.Geometry.Voronoi.Models.Point
+  name: Point
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Point.html
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Point
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Point
+  nameWithType: Point
+- uid: MBF.Revit.Geometry.Voronoi.Models.Point.#ctor
+  name: Point()
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Point.html#MBF_Revit_Geometry_Voronoi_Models_Point__ctor
+  commentId: M:MBF.Revit.Geometry.Voronoi.Models.Point.#ctor
+  name.vb: New()
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Point.Point()
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.Point.New()
+  nameWithType: Point.Point()
+  nameWithType.vb: Point.New()
+- uid: MBF.Revit.Geometry.Voronoi.Models.Point.#ctor*
+  name: Point
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Point.html#MBF_Revit_Geometry_Voronoi_Models_Point__ctor_
+  commentId: Overload:MBF.Revit.Geometry.Voronoi.Models.Point.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Point.Point
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.Point.New
+  nameWithType: Point.Point
+  nameWithType.vb: Point.New
+- uid: MBF.Revit.Geometry.Voronoi.Models.Point.setPoint(System.Double,System.Double)
+  name: setPoint(double, double)
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Point.html#MBF_Revit_Geometry_Voronoi_Models_Point_setPoint_System_Double_System_Double_
+  commentId: M:MBF.Revit.Geometry.Voronoi.Models.Point.setPoint(System.Double,System.Double)
+  name.vb: setPoint(Double, Double)
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Point.setPoint(double, double)
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.Point.setPoint(Double, Double)
+  nameWithType: Point.setPoint(double, double)
+  nameWithType.vb: Point.setPoint(Double, Double)
+- uid: MBF.Revit.Geometry.Voronoi.Models.Point.setPoint*
+  name: setPoint
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Point.html#MBF_Revit_Geometry_Voronoi_Models_Point_setPoint_
+  commentId: Overload:MBF.Revit.Geometry.Voronoi.Models.Point.setPoint
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Point.setPoint
+  nameWithType: Point.setPoint
+- uid: MBF.Revit.Geometry.Voronoi.Models.Point.x
+  name: x
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Point.html#MBF_Revit_Geometry_Voronoi_Models_Point_x
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Point.x
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Point.x
+  nameWithType: Point.x
+- uid: MBF.Revit.Geometry.Voronoi.Models.Point.y
+  name: y
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Point.html#MBF_Revit_Geometry_Voronoi_Models_Point_y
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Point.y
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Point.y
+  nameWithType: Point.y
+- uid: MBF.Revit.Geometry.Voronoi.Models.Site
+  name: Site
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Site.html
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Site
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Site
+  nameWithType: Site
+- uid: MBF.Revit.Geometry.Voronoi.Models.Site.#ctor
+  name: Site()
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Site.html#MBF_Revit_Geometry_Voronoi_Models_Site__ctor
+  commentId: M:MBF.Revit.Geometry.Voronoi.Models.Site.#ctor
+  name.vb: New()
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Site.Site()
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.Site.New()
+  nameWithType: Site.Site()
+  nameWithType.vb: Site.New()
+- uid: MBF.Revit.Geometry.Voronoi.Models.Site.#ctor*
+  name: Site
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Site.html#MBF_Revit_Geometry_Voronoi_Models_Site__ctor_
+  commentId: Overload:MBF.Revit.Geometry.Voronoi.Models.Site.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Site.Site
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.Site.New
+  nameWithType: Site.Site
+  nameWithType.vb: Site.New
+- uid: MBF.Revit.Geometry.Voronoi.Models.Site.coord
+  name: coord
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Site.html#MBF_Revit_Geometry_Voronoi_Models_Site_coord
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Site.coord
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Site.coord
+  nameWithType: Site.coord
+- uid: MBF.Revit.Geometry.Voronoi.Models.Site.sitenbr
+  name: sitenbr
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Site.html#MBF_Revit_Geometry_Voronoi_Models_Site_sitenbr
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Site.sitenbr
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Site.sitenbr
+  nameWithType: Site.sitenbr
+- uid: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX
+  name: SiteSorterYX
+  href: api/MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.html
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX
+  fullName: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX
+  nameWithType: SiteSorterYX
+- uid: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.#ctor
+  name: SiteSorterYX()
+  href: api/MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.html#MBF_Revit_Geometry_Voronoi_Models_SiteSorterYX__ctor
+  commentId: M:MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.#ctor
+  name.vb: New()
+  fullName: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.SiteSorterYX()
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.New()
+  nameWithType: SiteSorterYX.SiteSorterYX()
+  nameWithType.vb: SiteSorterYX.New()
+- uid: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.#ctor*
+  name: SiteSorterYX
+  href: api/MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.html#MBF_Revit_Geometry_Voronoi_Models_SiteSorterYX__ctor_
+  commentId: Overload:MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.SiteSorterYX
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.New
+  nameWithType: SiteSorterYX.SiteSorterYX
+  nameWithType.vb: SiteSorterYX.New
+- uid: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.Compare(MBF.Revit.Geometry.Voronoi.Models.Site,MBF.Revit.Geometry.Voronoi.Models.Site)
+  name: Compare(Site, Site)
+  href: api/MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.html#MBF_Revit_Geometry_Voronoi_Models_SiteSorterYX_Compare_MBF_Revit_Geometry_Voronoi_Models_Site_MBF_Revit_Geometry_Voronoi_Models_Site_
+  commentId: M:MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.Compare(MBF.Revit.Geometry.Voronoi.Models.Site,MBF.Revit.Geometry.Voronoi.Models.Site)
+  fullName: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.Compare(MBF.Revit.Geometry.Voronoi.Models.Site, MBF.Revit.Geometry.Voronoi.Models.Site)
+  nameWithType: SiteSorterYX.Compare(Site, Site)
+- uid: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.Compare*
+  name: Compare
+  href: api/MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.html#MBF_Revit_Geometry_Voronoi_Models_SiteSorterYX_Compare_
+  commentId: Overload:MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.Compare
+  fullName: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.Compare
+  nameWithType: SiteSorterYX.Compare
+- uid: MBF.Revit.Geometry.Voronoi.Models.Voronoi
+  name: Voronoi
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Voronoi.html
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Voronoi
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Voronoi
+  nameWithType: Voronoi
+- uid: MBF.Revit.Geometry.Voronoi.Models.Voronoi.#ctor(System.Double)
+  name: Voronoi(double)
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Voronoi.html#MBF_Revit_Geometry_Voronoi_Models_Voronoi__ctor_System_Double_
+  commentId: M:MBF.Revit.Geometry.Voronoi.Models.Voronoi.#ctor(System.Double)
+  name.vb: New(Double)
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Voronoi.Voronoi(double)
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.Voronoi.New(Double)
+  nameWithType: Voronoi.Voronoi(double)
+  nameWithType.vb: Voronoi.New(Double)
+- uid: MBF.Revit.Geometry.Voronoi.Models.Voronoi.#ctor*
+  name: Voronoi
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Voronoi.html#MBF_Revit_Geometry_Voronoi_Models_Voronoi__ctor_
+  commentId: Overload:MBF.Revit.Geometry.Voronoi.Models.Voronoi.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Voronoi.Voronoi
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.Voronoi.New
+  nameWithType: Voronoi.Voronoi
+  nameWithType.vb: Voronoi.New
+- uid: MBF.Revit.Geometry.Voronoi.Models.Voronoi.generateVoronoi(System.Double[],System.Double[],System.Double,System.Double,System.Double,System.Double)
+  name: generateVoronoi(double[], double[], double, double, double, double)
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Voronoi.html#MBF_Revit_Geometry_Voronoi_Models_Voronoi_generateVoronoi_System_Double___System_Double___System_Double_System_Double_System_Double_System_Double_
+  commentId: M:MBF.Revit.Geometry.Voronoi.Models.Voronoi.generateVoronoi(System.Double[],System.Double[],System.Double,System.Double,System.Double,System.Double)
+  name.vb: generateVoronoi(Double(), Double(), Double, Double, Double, Double)
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Voronoi.generateVoronoi(double[], double[], double, double, double, double)
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.Voronoi.generateVoronoi(Double(), Double(), Double, Double, Double, Double)
+  nameWithType: Voronoi.generateVoronoi(double[], double[], double, double, double, double)
+  nameWithType.vb: Voronoi.generateVoronoi(Double(), Double(), Double, Double, Double, Double)
+- uid: MBF.Revit.Geometry.Voronoi.Models.Voronoi.generateVoronoi*
+  name: generateVoronoi
+  href: api/MBF.Revit.Geometry.Voronoi.Models.Voronoi.html#MBF_Revit_Geometry_Voronoi_Models_Voronoi_generateVoronoi_
+  commentId: Overload:MBF.Revit.Geometry.Voronoi.Models.Voronoi.generateVoronoi
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Voronoi.generateVoronoi
+  nameWithType: Voronoi.generateVoronoi
 - uid: MBFWpfToolkit
   name: MBFWpfToolkit
   href: api/MBFWpfToolkit.html
@@ -1681,6 +2824,18 @@ references:
   commentId: T:MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior
   fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior
   nameWithType: ComboBoxSearchBehavior
+- uid: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetFilteredItems(System.Windows.DependencyObject)
+  name: GetFilteredItems(DependencyObject)
+  href: api/MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.html#MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior_GetFilteredItems_System_Windows_DependencyObject_
+  commentId: M:MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetFilteredItems(System.Windows.DependencyObject)
+  fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetFilteredItems(System.Windows.DependencyObject)
+  nameWithType: ComboBoxSearchBehavior.GetFilteredItems(DependencyObject)
+- uid: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetFilteredItems*
+  name: GetFilteredItems
+  href: api/MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.html#MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior_GetFilteredItems_
+  commentId: Overload:MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetFilteredItems
+  fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetFilteredItems
+  nameWithType: ComboBoxSearchBehavior.GetFilteredItems
 - uid: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetIsSearchEnabled(System.Windows.DependencyObject)
   name: GetIsSearchEnabled(DependencyObject)
   href: api/MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.html#MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior_GetIsSearchEnabled_System_Windows_DependencyObject_
@@ -1693,24 +2848,27 @@ references:
   commentId: Overload:MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetIsSearchEnabled
   fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetIsSearchEnabled
   nameWithType: ComboBoxSearchBehavior.GetIsSearchEnabled
-- uid: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetOriginalItemsSource(System.Windows.DependencyObject)
-  name: GetOriginalItemsSource(DependencyObject)
-  href: api/MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.html#MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior_GetOriginalItemsSource_System_Windows_DependencyObject_
-  commentId: M:MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetOriginalItemsSource(System.Windows.DependencyObject)
-  fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetOriginalItemsSource(System.Windows.DependencyObject)
-  nameWithType: ComboBoxSearchBehavior.GetOriginalItemsSource(DependencyObject)
-- uid: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetOriginalItemsSource*
-  name: GetOriginalItemsSource
-  href: api/MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.html#MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior_GetOriginalItemsSource_
-  commentId: Overload:MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetOriginalItemsSource
-  fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetOriginalItemsSource
-  nameWithType: ComboBoxSearchBehavior.GetOriginalItemsSource
 - uid: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.IsSearchEnabledProperty
   name: IsSearchEnabledProperty
   href: api/MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.html#MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior_IsSearchEnabledProperty
   commentId: F:MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.IsSearchEnabledProperty
   fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.IsSearchEnabledProperty
   nameWithType: ComboBoxSearchBehavior.IsSearchEnabledProperty
+- uid: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetFilteredItems(System.Windows.DependencyObject,System.Collections.ObjectModel.ObservableCollection{System.String})
+  name: SetFilteredItems(DependencyObject, ObservableCollection<string>)
+  href: api/MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.html#MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior_SetFilteredItems_System_Windows_DependencyObject_System_Collections_ObjectModel_ObservableCollection_System_String__
+  commentId: M:MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetFilteredItems(System.Windows.DependencyObject,System.Collections.ObjectModel.ObservableCollection{System.String})
+  name.vb: SetFilteredItems(DependencyObject, ObservableCollection(Of String))
+  fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetFilteredItems(System.Windows.DependencyObject, System.Collections.ObjectModel.ObservableCollection<string>)
+  fullName.vb: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetFilteredItems(System.Windows.DependencyObject, System.Collections.ObjectModel.ObservableCollection(Of String))
+  nameWithType: ComboBoxSearchBehavior.SetFilteredItems(DependencyObject, ObservableCollection<string>)
+  nameWithType.vb: ComboBoxSearchBehavior.SetFilteredItems(DependencyObject, ObservableCollection(Of String))
+- uid: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetFilteredItems*
+  name: SetFilteredItems
+  href: api/MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.html#MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior_SetFilteredItems_
+  commentId: Overload:MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetFilteredItems
+  fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetFilteredItems
+  nameWithType: ComboBoxSearchBehavior.SetFilteredItems
 - uid: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetIsSearchEnabled(System.Windows.DependencyObject,System.Boolean)
   name: SetIsSearchEnabled(DependencyObject, bool)
   href: api/MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.html#MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior_SetIsSearchEnabled_System_Windows_DependencyObject_System_Boolean_
@@ -3631,6 +4789,18 @@ references:
   commentId: Overload:Revit.Extensions.Extensions.DocumentExtensions.CreateAndPlaceColumnAtPoint
   fullName: Revit.Extensions.Extensions.DocumentExtensions.CreateAndPlaceColumnAtPoint
   nameWithType: DocumentExtensions.CreateAndPlaceColumnAtPoint
+- uid: Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments(Autodesk.Revit.DB.Document)
+  name: GetAllRevitDocuments(Document)
+  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetAllRevitDocuments_Autodesk_Revit_DB_Document_
+  commentId: M:Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments(Autodesk.Revit.DB.Document)
+  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments(Autodesk.Revit.DB.Document)
+  nameWithType: DocumentExtensions.GetAllRevitDocuments(Document)
+- uid: Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments*
+  name: GetAllRevitDocuments
+  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetAllRevitDocuments_
+  commentId: Overload:Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments
+  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments
+  nameWithType: DocumentExtensions.GetAllRevitDocuments
 - uid: Revit.Extensions.Extensions.DocumentExtensions.GetFamilyTypesByCategoryOrderedByName(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)
   name: GetFamilyTypesByCategoryOrderedByName(Document, BuiltInCategory)
   href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetFamilyTypesByCategoryOrderedByName_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_
@@ -3658,6 +4828,18 @@ references:
   fullName.vb: Revit.Extensions.Extensions.DocumentExtensions.GetLevelsOrderedByProperty(Of TKey)(Autodesk.Revit.DB.Document, System.Func(Of Autodesk.Revit.DB.Level, TKey), Boolean)
   nameWithType: DocumentExtensions.GetLevelsOrderedByProperty<TKey>(Document, Func<Level, TKey>, bool)
   nameWithType.vb: DocumentExtensions.GetLevelsOrderedByProperty(Of TKey)(Document, Func(Of Level, TKey), Boolean)
+- uid: Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly(Autodesk.Revit.DB.Document)
+  name: GetLinkedDocumentsOnly(Document)
+  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetLinkedDocumentsOnly_Autodesk_Revit_DB_Document_
+  commentId: M:Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly(Autodesk.Revit.DB.Document)
+  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly(Autodesk.Revit.DB.Document)
+  nameWithType: DocumentExtensions.GetLinkedDocumentsOnly(Document)
+- uid: Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly*
+  name: GetLinkedDocumentsOnly
+  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetLinkedDocumentsOnly_
+  commentId: Overload:Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly
+  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly
+  nameWithType: DocumentExtensions.GetLinkedDocumentsOnly
 - uid: Revit.Extensions.Extensions.DocumentExtensions.GetRebarBarTypes(Autodesk.Revit.DB.Document)
   name: GetRebarBarTypes(Document)
   href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetRebarBarTypes_Autodesk_Revit_DB_Document_

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MbPipesUtils | MIcroBIM Docs ">
       
-      
+      <meta name="description" content="Provides utility methods for working with pipe elements in Revit.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Data_Utils_MbPipesUtils" data-uid="MBF.Revit.Data.Utils.MbPipesUtils" class="text-break">
-Class MbPipesUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+Class MbPipesUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,7 @@ Class MbPipesUtils  <a class="header-action link-secondary" title="View source" 
   <dl><dt>Assembly</dt><dd>MBF.Revit.Data.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary">Provides utility methods for working with pipe elements in Revit.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -156,10 +156,11 @@ Class MbPipesUtils  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_GetPipeInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element__" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetPipeInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})">
   GetPipeInstances(IEnumerable&lt;Element&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/6231c8ca1b5d79c79f0dc1120f84979ca31c9b95/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Filters the provided collection of Revit elements and retrieves all rigid pipes.</div>
+  <div class="markdown level1 summary">Retrieves all <span class="xref">Autodesk.Revit.DB.Plumbing.Pipe</span> elements categorized as rigid pipes 
+from the provided collection of Revit elements.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,13 +170,15 @@ Class MbPipesUtils  <a class="header-action link-secondary" title="View source" 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>selectedElements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
-    <dd>A collection of Revit elements to filter.</dd>
+    <dd>A collection of <span class="xref">Element</span> objects to search within.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Pipe</span>&gt;</dt>
-    <dd>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <span class="xref">Autodesk.Revit.DB.Plumbing.Pipe</span> objects.</dd>
+    <dd>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> containing all elements from 
+<code class="paramref">selectedElements</code> that are categorized as 
+BuiltInCategory.OST_PipeCurves.</dd>
   </dl>
 
 
@@ -185,8 +188,9 @@ Class MbPipesUtils  <a class="header-action link-secondary" title="View source" 
 
 
   <h4 class="section" id="MBF_Revit_Data_Utils_MbPipesUtils_GetPipeInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element___remarks">Remarks</h4>
-  <div class="markdown level1 remarks">This method ensures that only elements categorized as pipes
-(BuiltInCategory.OST_PipeCurves) are returned.</div>
+  <div class="markdown level1 remarks">This method filters the input collection to include only elements whose category is "Pipes",
+then casts those elements to <span class="xref">Autodesk.Revit.DB.Plumbing.Pipe</span> for further use.
+The filtering logic uses conditional compilation to support multiple Revit versions.</div>
 
 
 
