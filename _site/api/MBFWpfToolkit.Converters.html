@@ -99,17 +99,37 @@ Classes
       <dd>Converts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> value to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> based on a semicolon-delimited parameter string.</dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="MBFWpfToolkit.Converters.BooleanErrorGroupToEnabledConverter.html">BooleanErrorGroupToEnabledConverter</a></dt>
+      <dd>A multi-value converter that checks a list of boolean values (typically HasError flags).
+If any value is <code>true</code>, it returns <code>false</code> to disable a control (e.g., a button).</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter.html">BooleanToVisibilityWithInverseConverter</a></dt>
       <dd>Converts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> value to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.visibility">Visibility</a> value.
 Supports optional inversion using a converter parameter.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBFWpfToolkit.Converters.EnumDisplayNameConverter.html">EnumDisplayNameConverter</a></dt>
-      <dd>A value converter for converting between enum values and their display names specified by the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.displayattribute">DisplayAttribute</a>.</dd>
+      <dd>A value converter for converting between enum values and their display names specified by the
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.displayattribute">DisplayAttribute</a>.</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MBFWpfToolkit.Converters.NullToBooleanConverter.html">NullToBooleanConverter</a></dt>
+      <dd>Converts a value to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.visibility">Visibility</a> based on whether it is null.</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MBFWpfToolkit.Converters.NullToVisibilityConverter.html">NullToVisibilityConverter</a></dt>
+      <dd>Converts a value to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.visibility">Visibility</a> based on whether it is null.</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MBFWpfToolkit.Converters.NullToVisibilityWithInverseConverter.html">NullToVisibilityWithInverseConverter</a></dt>
+      <dd>Converts a <code>null</code> value to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.visibility">Visibility</a> value.
+Supports optional inversion using a converter parameter.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBFWpfToolkit.Converters.ValidationMultiConverter.html">ValidationMultiConverter</a></dt>
-      <dd>A multi-value converter that validates a group of input values (typically bound from multiple <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.textbox">TextBox</a> elements).
+      <dd>A multi-value converter that validates a group of input values (typically bound from multiple
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.textbox">TextBox</a> elements).
 It checks for empty input and validation errors to determine whether a button (or any control) should be enabled.</dd>
     </dl>
 

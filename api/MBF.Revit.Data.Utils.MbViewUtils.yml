@@ -11,9 +11,12 @@ items:
   - MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews(Autodesk.Revit.DB.Document)
   - MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews(Autodesk.Revit.DB.Document)
   - MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D(Autodesk.Revit.DB.Document)
-  - MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction(Autodesk.Revit.DB.Document)
+  - MBF.Revit.Data.Utils.MbViewUtils.GetTemp3DNoTransaction(Autodesk.Revit.DB.Document)
   - MBF.Revit.Data.Utils.MbViewUtils.IsGraphicalView(Autodesk.Revit.DB.View)
+  - MBF.Revit.Data.Utils.MbViewUtils.ResetTemporaryIsolate
+  - MBF.Revit.Data.Utils.MbViewUtils.TemporarilyIsolateElement(Autodesk.Revit.DB.Element)
   - MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.Element)
+  - MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.ElementId)
   - MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.FamilyInstance)
   langs:
   - csharp
@@ -23,15 +26,29 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
-  summary: Provides utility methods for interacting with Revit views, including view type checking and zooming to elements.
+  summary: >-
+    Provides utility methods for working with Revit views, including graphical view checks, zooming to elements,
+
+    creating temporary 3D views, and managing view isolation.
+  remarks: >-
+    This class contains static methods designed to simplify common operations related to Revit views. It
+                includes functionality for determining view types, manipulating graphical views, and creating or managing temporary
+                3D views. These utilities are intended to streamline workflows in Revit add-ins and enhance user interaction with
+                views.
   example: []
   syntax:
-    content: public class MbViewUtils
-    content.vb: Public Class MbViewUtils
+    content: >-
+      [LogAspect]
+
+      public class MbViewUtils
+    content.vb: >-
+      <LogAspect>
+
+      Public Class MbViewUtils
   inheritance:
   - System.Object
   inheritedMembers:
@@ -42,6 +59,10 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: MB.Common.Aspects.LogAspect
+    ctor: MB.Common.Aspects.LogAspect.#ctor
+    arguments: []
 - uid: MBF.Revit.Data.Utils.MbViewUtils.IsGraphicalView(Autodesk.Revit.DB.View)
   commentId: M:MBF.Revit.Data.Utils.MbViewUtils.IsGraphicalView(Autodesk.Revit.DB.View)
   id: IsGraphicalView(Autodesk.Revit.DB.View)
@@ -54,21 +75,27 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.IsGraphicalView(Autodesk.Revit.DB.View)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
-  summary: Determines if a given view is a graphical view (e.g., plan, section, 3D).
+  summary: Determines whether the specified <xref href="Autodesk.Revit.DB.View" data-throw-if-not-resolved="false"></xref> represents a graphical view.
+  remarks: >-
+    Graphical views include types such as floor plans, ceiling plans, sections, elevations, 3D views,
+                drafting views, area plans, engineering plans, details, and legends. Non-graphical views include schedules, reports,
+                and undefined views.
   example: []
   syntax:
     content: public static bool IsGraphicalView(View view)
     parameters:
     - id: view
       type: Autodesk.Revit.DB.View
-      description: The <xref href="Autodesk.Revit.DB.View" data-throw-if-not-resolved="false"></xref> to check.
+      description: The <xref href="Autodesk.Revit.DB.View" data-throw-if-not-resolved="false"></xref> to evaluate. Must not be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
     return:
       type: System.Boolean
-      description: <code>true</code> if the view is a graphical type (e.g., FloorPlan, 3D, Section); otherwise, <code>false</code>.
+      description: >-
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">view</code> is a graphical view, such as a floor plan, section, or 3D
+                    view; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Shared Function IsGraphicalView(view As View) As Boolean
   overload: MBF.Revit.Data.Utils.MbViewUtils.IsGraphicalView*
 - uid: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.FamilyInstance)
@@ -83,22 +110,56 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
-  summary: >-
-    Zooms into a specified <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> element in the currently active view.
-
-    Displays a message if the view is not graphical or the bounding box is invalid.
+  summary: Zooms and centers the active view on the specified <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> element.
+  remarks: >-
+    This method adjusts the active view to focus on the bounding box of the specified element.  If
+                the bounding box cannot be retrieved, an error message is displayed. The method works  only in graphical views
+                such as plan, 3D, section, or legend views. If the active view is  not a supported graphical view, an error
+                message is displayed.
   example: []
   syntax:
     content: public static void ZoomToElement(FamilyInstance instance)
     parameters:
     - id: instance
       type: Autodesk.Revit.DB.FamilyInstance
-      description: The family instance to zoom to.
+      description: The <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> to zoom to. Must belong to the active document.
     content.vb: Public Shared Sub ZoomToElement(instance As FamilyInstance)
+  overload: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement*
+- uid: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.ElementId)
+  commentId: M:MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.ElementId)
+  id: ZoomToElement(Autodesk.Revit.DB.ElementId)
+  parent: MBF.Revit.Data.Utils.MbViewUtils
+  langs:
+  - csharp
+  - vb
+  name: ZoomToElement(ElementId)
+  nameWithType: MbViewUtils.ZoomToElement(ElementId)
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.ElementId)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Zooms and centers the active view on the specified element by its <xref href="ElementId" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    This method adjusts the active view to focus on the bounding box of the specified element. If the bounding box 
+
+    cannot be retrieved, an error message is displayed. The method works only in graphical views such as plan, 3D,
+
+    section, or legend views. If the active view is not a supported graphical view, an error message is displayed.
+  example: []
+  syntax:
+    content: public static void ZoomToElement(ElementId elementId)
+    parameters:
+    - id: elementId
+      type: Autodesk.Revit.DB.ElementId
+      description: The <xref href="ElementId" data-throw-if-not-resolved="false"></xref> of the element to zoom to. Must belong to the active document.
+    content.vb: Public Shared Sub ZoomToElement(elementId As ElementId)
   overload: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement*
 - uid: MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D(Autodesk.Revit.DB.Document)
   commentId: M:MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D(Autodesk.Revit.DB.Document)
@@ -112,21 +173,30 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
-  summary: Retrieves a temporary 3D view named "Temp3DMBFire". If it doesn't exist, it will be created.
+  summary: >-
+    Retrieves an existing 3D view named "Temp3DMBFire" from the specified document,  or creates a new one if it does not
+
+    exist.
+  remarks: >-
+    This method first searches for an existing 3D view with the name "Temp3DMBFire".  If found, it
+                returns the existing view wrapped in a successful <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref>.  If no such view exists, a new 3D view
+                is created and returned.
   example: []
   syntax:
     content: public static MbResult<View3D> GetOrCreateTemp3D(Document doc)
     parameters:
     - id: doc
       type: Autodesk.Revit.DB.Document
-      description: The current Revit document.
+      description: The <xref href="Autodesk.Revit.DB.Document" data-throw-if-not-resolved="false"></xref> from which to retrieve or create the 3D view.  This parameter cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
     return:
       type: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.View3D}
-      description: An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing the view or error details.
+      description: >-
+        A <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing the 3D view. If a view named "Temp3DMBFire" exists,  it is returned;
+                    otherwise, a new 3D view is created and returned.
     content.vb: Public Shared Function GetOrCreateTemp3D(doc As Document) As MbResult(Of View3D)
   overload: MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D*
 - uid: MBF.Revit.Data.Utils.MbViewUtils.Create3DView(Autodesk.Revit.DB.Document)
@@ -141,21 +211,36 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.Create3DView(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
-  summary: Creates a new isometric 3D view named "Temp3DMBFire".
+  summary: Creates a new isometric 3D view in the specified document.
+  remarks: >-
+    This method attempts to create a new isometric 3D view by copying the settings from an existing
+
+    non-template 3D view in the document. The new view is named "Temp3DMBFire" and has its detail level set to
+
+    ViewDetailLevel.Fine.
   example: []
   syntax:
     content: public static MbResult<View3D> Create3DView(Document doc)
     parameters:
     - id: doc
       type: Autodesk.Revit.DB.Document
-      description: The Revit document.
+      description: The Revit document in which the 3D view will be created. Cannot be null.
     return:
       type: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.View3D}
-      description: An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> indicating success or failure.
+      description: >-
+        <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing the result of the operation:
+
+        <ul><li>
+                    <b>Success:</b> Returns a successful <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing the newly created
+                    <xref href="Autodesk.Revit.DB.View3D" data-throw-if-not-resolved="false"></xref>.
+                </li><li>
+                    <b>Failure:</b> Returns a failed <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> with an error message if:
+                    <ul><li>No 3D view type is found to copy from.</li><li>The <xref href="Autodesk.Revit.DB.ViewFamilyType" data-throw-if-not-resolved="false"></xref> could not be retrieved.</li><li>Failure to create the 3D view.</li></ul>
+                </li></ul>
     content.vb: Public Shared Function Create3DView(doc As Document) As MbResult(Of View3D)
   overload: MBF.Revit.Data.Utils.MbViewUtils.Create3DView*
 - uid: MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen(Autodesk.Revit.DB.Document)
@@ -170,7 +255,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -184,35 +269,37 @@ items:
       description: The active document wrapper.
     content.vb: Public Shared Sub EnsureTemp3DViewIsOpen(activeDoc As Document)
   overload: MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen*
-- uid: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction(Autodesk.Revit.DB.Document)
-  commentId: M:MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction(Autodesk.Revit.DB.Document)
-  id: GetTemp3D_NoTransaction(Autodesk.Revit.DB.Document)
+- uid: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3DNoTransaction(Autodesk.Revit.DB.Document)
+  commentId: M:MBF.Revit.Data.Utils.MbViewUtils.GetTemp3DNoTransaction(Autodesk.Revit.DB.Document)
+  id: GetTemp3DNoTransaction(Autodesk.Revit.DB.Document)
   parent: MBF.Revit.Data.Utils.MbViewUtils
   langs:
   - csharp
   - vb
-  name: GetTemp3D_NoTransaction(Document)
-  nameWithType: MbViewUtils.GetTemp3D_NoTransaction(Document)
-  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction(Autodesk.Revit.DB.Document)
+  name: GetTemp3DNoTransaction(Document)
+  nameWithType: MbViewUtils.GetTemp3DNoTransaction(Document)
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3DNoTransaction(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
-  summary: Gets the temporary 3D view without opening or switching views.
+  summary: Retrieves a temporary 3D view for the specified document without initiating a transaction.
   example: []
   syntax:
-    content: public static MbResult<View3D> GetTemp3D_NoTransaction(Document doc)
+    content: public static MbResult<View3D> GetTemp3DNoTransaction(Document doc)
     parameters:
     - id: doc
       type: Autodesk.Revit.DB.Document
-      description: The Revit document.
+      description: The document for which the temporary 3D view is to be retrieved or created. Cannot be null.
     return:
       type: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.View3D}
-      description: An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing the view or an error message.
-    content.vb: Public Shared Function GetTemp3D_NoTransaction(doc As Document) As MbResult(Of View3D)
-  overload: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction*
+      description: >-
+        A <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing the temporary 3D view if successful, or an error result if the operation
+                    fails.
+    content.vb: Public Shared Function GetTemp3DNoTransaction(doc As Document) As MbResult(Of View3D)
+  overload: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3DNoTransaction*
 - uid: MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews(Autodesk.Revit.DB.Document)
   commentId: M:MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews(Autodesk.Revit.DB.Document)
   id: GetAllPlanViews(Autodesk.Revit.DB.Document)
@@ -225,21 +312,23 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
-  summary: Gets all non-template plan views in the document.
+  summary: Retrieves all non-template plan views from the specified Revit document.
   example: []
   syntax:
     content: public static IList<ViewPlan> GetAllPlanViews(Document doc)
     parameters:
     - id: doc
       type: Autodesk.Revit.DB.Document
-      description: The Revit document.
+      description: The Revit document from which to retrieve the plan views. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
     return:
       type: System.Collections.Generic.IList{Autodesk.Revit.DB.ViewPlan}
-      description: A list of plan views.
+      description: >-
+        A list of <xref href="Autodesk.Revit.DB.ViewPlan" data-throw-if-not-resolved="false"></xref> objects representing all non-template plan views in the document.  Returns an empty
+                    list if no such views are found.
     content.vb: Public Shared Function GetAllPlanViews(doc As Document) As IList(Of ViewPlan)
   overload: MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews*
 - uid: MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews(Autodesk.Revit.DB.Document)
@@ -254,21 +343,23 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
-  summary: Gets all non-template 3D views in the document.
+  summary: Retrieves all 3D views in the specified Revit document that are not templates.
   example: []
   syntax:
     content: public static List<View3D> GetAllThreeDViews(Document doc)
     parameters:
     - id: doc
       type: Autodesk.Revit.DB.Document
-      description: The Revit document.
+      description: The Revit document from which to retrieve the 3D views. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
     return:
       type: System.Collections.Generic.List{Autodesk.Revit.DB.View3D}
-      description: A list of 3D views.
+      description: >-
+        A list of <xref href="Autodesk.Revit.DB.View3D" data-throw-if-not-resolved="false"></xref> objects representing all non-template 3D views in the document. Returns an empty list
+                    if no such views are found.
     content.vb: Public Shared Function GetAllThreeDViews(doc As Document) As List(Of View3D)
   overload: MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews*
 - uid: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.Element)
@@ -283,23 +374,84 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.Element)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
-  summary: >-
-    Zooms into a specified <xref href="Element" data-throw-if-not-resolved="false"></xref> in the currently active view.
-
-    Displays a message if the view is not graphical or the bounding box is invalid.
+  summary: Zooms and centers the active view on the specified element's bounding box.
+  remarks: >-
+    This method adjusts the active view to focus on the bounding box of the specified element.  If the
+                bounding box cannot be retrieved or the active view is not a graphical view (e.g., plan, 3D view, section, or
+                legend),  an error message is displayed, and no action is taken. The method also optionally selects the element in
+                the active view.
   example: []
   syntax:
     content: public static void ZoomToElement(Element element)
     parameters:
     - id: element
       type: Autodesk.Revit.DB.Element
-      description: The Revit element to zoom to.
+      description: The element to zoom to. Must belong to the active document and have a valid bounding box in the active view.
     content.vb: Public Shared Sub ZoomToElement(element As Element)
   overload: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement*
+- uid: MBF.Revit.Data.Utils.MbViewUtils.TemporarilyIsolateElement(Autodesk.Revit.DB.Element)
+  commentId: M:MBF.Revit.Data.Utils.MbViewUtils.TemporarilyIsolateElement(Autodesk.Revit.DB.Element)
+  id: TemporarilyIsolateElement(Autodesk.Revit.DB.Element)
+  parent: MBF.Revit.Data.Utils.MbViewUtils
+  langs:
+  - csharp
+  - vb
+  name: TemporarilyIsolateElement(Element)
+  nameWithType: MbViewUtils.TemporarilyIsolateElement(Element)
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.TemporarilyIsolateElement(Autodesk.Revit.DB.Element)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Temporarily isolates the specified element in the active graphical view.
+  remarks: >-
+    This method isolates the specified element temporarily in the active view of the document.  Isolation
+                is only supported in graphical views. If the active view is not graphical, the method  displays a warning message
+                and returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>. If an error occurs during the  isolation process, an error message is
+                displayed, and the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+  example: []
+  syntax:
+    content: public static bool TemporarilyIsolateElement(Element element)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: The element to isolate. Must belong to the document of the active view.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the element was successfully isolated; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Shared Function TemporarilyIsolateElement(element As Element) As Boolean
+  overload: MBF.Revit.Data.Utils.MbViewUtils.TemporarilyIsolateElement*
+- uid: MBF.Revit.Data.Utils.MbViewUtils.ResetTemporaryIsolate
+  commentId: M:MBF.Revit.Data.Utils.MbViewUtils.ResetTemporaryIsolate
+  id: ResetTemporaryIsolate
+  parent: MBF.Revit.Data.Utils.MbViewUtils
+  langs:
+  - csharp
+  - vb
+  name: ResetTemporaryIsolate()
+  nameWithType: MbViewUtils.ResetTemporaryIsolate()
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.ResetTemporaryIsolate()
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Resets the temporary isolate mode for the active view, if it is currently enabled.
+  remarks: >-
+    This method checks if the active view has temporary isolate mode enabled and, if so, disables it. If
+                no active view exists or temporary isolate mode is not active, the method performs no action.
+  example: []
+  syntax:
+    content: public static void ResetTemporaryIsolate()
+    content.vb: Public Shared Sub ResetTemporaryIsolate()
+  overload: MBF.Revit.Data.Utils.MbViewUtils.ResetTemporaryIsolate*
 - uid: MBF.Revit.Data.Utils.MbViewUtils.#ctor
   commentId: M:MBF.Revit.Data.Utils.MbViewUtils.#ctor
   id: '#ctor'
@@ -312,7 +464,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.MbViewUtils()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -609,7 +761,6 @@ references:
   nameWithType: System
   fullName: System
 - uid: Autodesk.Revit.DB.View
-  commentId: T:Autodesk.Revit.DB.View
   isExternal: true
   name: View
   nameWithType: View
@@ -648,6 +799,14 @@ references:
   name: FamilyInstance
   nameWithType: FamilyInstance
   fullName: Autodesk.Revit.DB.FamilyInstance
+- uid: ElementId
+  commentId: T:ElementId
+  isExternal: true
+- uid: Autodesk.Revit.DB.ElementId
+  isExternal: true
+  name: ElementId
+  nameWithType: ElementId
+  fullName: Autodesk.Revit.DB.ElementId
 - uid: MB.Common.Utils.Result.MbResult`1
   commentId: T:MB.Common.Utils.Result.MbResult`1
   parent: MB.Common.Utils.Result
@@ -677,6 +836,12 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
 - uid: MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D*
   commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D
   isExternal: true
@@ -684,12 +849,6 @@ references:
   name: GetOrCreateTemp3D
   nameWithType: MbViewUtils.GetOrCreateTemp3D
   fullName: MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D
-- uid: Autodesk.Revit.DB.Document
-  commentId: T:Autodesk.Revit.DB.Document
-  isExternal: true
-  name: Document
-  nameWithType: Document
-  fullName: Autodesk.Revit.DB.Document
 - uid: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.View3D}
   commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.View3D}
   parent: MB.Common.Utils.Result
@@ -767,6 +926,12 @@ references:
     name: Result
     isExternal: true
     href: MB.Common.Utils.Result.html
+- uid: Autodesk.Revit.DB.View3D
+  commentId: T:Autodesk.Revit.DB.View3D
+  isExternal: true
+- uid: Autodesk.Revit.DB.ViewFamilyType
+  commentId: T:Autodesk.Revit.DB.ViewFamilyType
+  isExternal: true
 - uid: MBF.Revit.Data.Utils.MbViewUtils.Create3DView*
   commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.Create3DView
   isExternal: true
@@ -781,13 +946,16 @@ references:
   name: EnsureTemp3DViewIsOpen
   nameWithType: MbViewUtils.EnsureTemp3DViewIsOpen
   fullName: MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen
-- uid: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction*
-  commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction
+- uid: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3DNoTransaction*
+  commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.GetTemp3DNoTransaction
   isExternal: true
-  href: MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_GetTemp3D_NoTransaction_Autodesk_Revit_DB_Document_
-  name: GetTemp3D_NoTransaction
-  nameWithType: MbViewUtils.GetTemp3D_NoTransaction
-  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction
+  href: MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_GetTemp3DNoTransaction_Autodesk_Revit_DB_Document_
+  name: GetTemp3DNoTransaction
+  nameWithType: MbViewUtils.GetTemp3DNoTransaction
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3DNoTransaction
+- uid: Autodesk.Revit.DB.ViewPlan
+  commentId: T:Autodesk.Revit.DB.ViewPlan
+  isExternal: true
 - uid: MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews*
   commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews
   isExternal: true
@@ -961,14 +1129,25 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Element
-  commentId: T:Element
-  isExternal: true
 - uid: Autodesk.Revit.DB.Element
   isExternal: true
   name: Element
   nameWithType: Element
   fullName: Autodesk.Revit.DB.Element
+- uid: MBF.Revit.Data.Utils.MbViewUtils.TemporarilyIsolateElement*
+  commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.TemporarilyIsolateElement
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_TemporarilyIsolateElement_Autodesk_Revit_DB_Element_
+  name: TemporarilyIsolateElement
+  nameWithType: MbViewUtils.TemporarilyIsolateElement
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.TemporarilyIsolateElement
+- uid: MBF.Revit.Data.Utils.MbViewUtils.ResetTemporaryIsolate*
+  commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.ResetTemporaryIsolate
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_ResetTemporaryIsolate
+  name: ResetTemporaryIsolate
+  nameWithType: MbViewUtils.ResetTemporaryIsolate
+  fullName: MBF.Revit.Data.Utils.MbViewUtils.ResetTemporaryIsolate
 - uid: MBF.Revit.Data.Utils.MbViewUtils.#ctor*
   commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.#ctor
   isExternal: true

@@ -14,15 +14,27 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.BoundingBoxExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/BoundingBoxExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/BoundingBoxExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
-  summary: Provides extension methods for the <xref href="Autodesk.Revit.DB.BoundingBoxXYZ" data-throw-if-not-resolved="false"></xref> class.
+  summary: Provides extension methods for working with <xref href="Autodesk.Revit.DB.BoundingBoxXYZ" data-throw-if-not-resolved="false"></xref> objects.
+  remarks: >-
+    This class includes methods to convert <xref href="Autodesk.Revit.DB.BoundingBoxXYZ" data-throw-if-not-resolved="false"></xref> instances into other geometric
+
+    representations, such as <xref href="CurveLoop" data-throw-if-not-resolved="false"></xref> objects, for use in various geometric and modeling
+
+    operations.
   example: []
   syntax:
-    content: public static class BoundingBoxExtensions
-    content.vb: Public Module BoundingBoxExtensions
+    content: >-
+      [LogAspect]
+
+      public static class BoundingBoxExtensions
+    content.vb: >-
+      <LogAspect>
+
+      Public Module BoundingBoxExtensions
   inheritance:
   - System.Object
   inheritedMembers:
@@ -33,6 +45,10 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: MB.Common.Aspects.LogAspect
+    ctor: MB.Common.Aspects.LogAspect.#ctor
+    arguments: []
 - uid: MBF.Revit.Geometry.Extensions.BoundingBoxExtensions.ToCurveLoop(Autodesk.Revit.DB.BoundingBoxXYZ)
   commentId: M:MBF.Revit.Geometry.Extensions.BoundingBoxExtensions.ToCurveLoop(Autodesk.Revit.DB.BoundingBoxXYZ)
   id: ToCurveLoop(Autodesk.Revit.DB.BoundingBoxXYZ)
@@ -46,7 +62,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.BoundingBoxExtensions.ToCurveLoop(Autodesk.Revit.DB.BoundingBoxXYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/BoundingBoxExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/BoundingBoxExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -73,6 +89,9 @@ references:
   name: BoundingBoxXYZ
   nameWithType: BoundingBoxXYZ
   fullName: Autodesk.Revit.DB.BoundingBoxXYZ
+- uid: CurveLoop
+  commentId: T:CurveLoop
+  isExternal: true
 - uid: MBF.Revit.Geometry.Extensions
   commentId: N:MBF.Revit.Geometry.Extensions
   isExternal: true
@@ -357,9 +376,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: CurveLoop
-  commentId: T:CurveLoop
-  isExternal: true
 - uid: MB.Common.Utils.Result.MbResult`1
   commentId: T:MB.Common.Utils.Result.MbResult`1
   parent: MB.Common.Utils.Result

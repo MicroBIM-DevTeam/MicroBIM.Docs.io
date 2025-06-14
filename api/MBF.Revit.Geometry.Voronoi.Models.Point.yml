@@ -6,7 +6,7 @@ items:
   parent: MBF.Revit.Geometry.Voronoi.Models
   children:
   - MBF.Revit.Geometry.Voronoi.Models.Point.#ctor
-  - MBF.Revit.Geometry.Voronoi.Models.Point.setPoint(System.Double,System.Double)
+  - MBF.Revit.Geometry.Voronoi.Models.Point.SetPoint(System.Double,System.Double)
   - MBF.Revit.Geometry.Voronoi.Models.Point.x
   - MBF.Revit.Geometry.Voronoi.Models.Point.y
   langs:
@@ -17,7 +17,7 @@ items:
   fullName: MBF.Revit.Geometry.Voronoi.Models.Point
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Point.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
@@ -48,10 +48,12 @@ items:
   fullName: MBF.Revit.Geometry.Voronoi.Models.Point.x
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Point.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: The x-coordinate of the point.
+  example: []
   syntax:
     content: public double x
     return:
@@ -69,10 +71,12 @@ items:
   fullName: MBF.Revit.Geometry.Voronoi.Models.Point.y
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Point.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: The y-coordinate of the point.
+  example: []
   syntax:
     content: public double y
     return:
@@ -90,10 +94,12 @@ items:
   fullName: MBF.Revit.Geometry.Voronoi.Models.Point.Point()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Point.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: Initializes a new instance of the <xref href="MBF.Revit.Geometry.Voronoi.Models.Point" data-throw-if-not-resolved="false"></xref> class.
+  example: []
   syntax:
     content: public Point()
     content.vb: Public Sub New()
@@ -101,26 +107,26 @@ items:
   nameWithType.vb: Point.New()
   fullName.vb: MBF.Revit.Geometry.Voronoi.Models.Point.New()
   name.vb: New()
-- uid: MBF.Revit.Geometry.Voronoi.Models.Point.setPoint(System.Double,System.Double)
-  commentId: M:MBF.Revit.Geometry.Voronoi.Models.Point.setPoint(System.Double,System.Double)
-  id: setPoint(System.Double,System.Double)
+- uid: MBF.Revit.Geometry.Voronoi.Models.Point.SetPoint(System.Double,System.Double)
+  commentId: M:MBF.Revit.Geometry.Voronoi.Models.Point.SetPoint(System.Double,System.Double)
+  id: SetPoint(System.Double,System.Double)
   parent: MBF.Revit.Geometry.Voronoi.Models.Point
   langs:
   - csharp
   - vb
-  name: setPoint(double, double)
-  nameWithType: Point.setPoint(double, double)
-  fullName: MBF.Revit.Geometry.Voronoi.Models.Point.setPoint(double, double)
+  name: SetPoint(double, double)
+  nameWithType: Point.SetPoint(double, double)
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Point.SetPoint(double, double)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Point.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
   summary: Sets the coordinates of the point.
   example: []
   syntax:
-    content: public void setPoint(double x, double y)
+    content: public void SetPoint(double x, double y)
     parameters:
     - id: x
       type: System.Double
@@ -128,11 +134,11 @@ items:
     - id: y
       type: System.Double
       description: The y-coordinate.
-    content.vb: Public Sub setPoint(x As Double, y As Double)
-  overload: MBF.Revit.Geometry.Voronoi.Models.Point.setPoint*
-  nameWithType.vb: Point.setPoint(Double, Double)
-  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.Point.setPoint(Double, Double)
-  name.vb: setPoint(Double, Double)
+    content.vb: Public Sub SetPoint(x As Double, y As Double)
+  overload: MBF.Revit.Geometry.Voronoi.Models.Point.SetPoint*
+  nameWithType.vb: Point.SetPoint(Double, Double)
+  fullName.vb: MBF.Revit.Geometry.Voronoi.Models.Point.SetPoint(Double, Double)
+  name.vb: SetPoint(Double, Double)
 references:
 - uid: MBF.Revit.Geometry.Voronoi.Models
   commentId: N:MBF.Revit.Geometry.Voronoi.Models
@@ -439,6 +445,14 @@ references:
   nameWithType.vb: Double
   fullName.vb: Double
   name.vb: Double
+- uid: MBF.Revit.Geometry.Voronoi.Models.Point
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Point
+  parent: MBF.Revit.Geometry.Voronoi.Models
+  isExternal: true
+  href: MBF.Revit.Geometry.Voronoi.Models.Point.html
+  name: Point
+  nameWithType: Point
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Point
 - uid: MBF.Revit.Geometry.Voronoi.Models.Point.#ctor*
   commentId: Overload:MBF.Revit.Geometry.Voronoi.Models.Point.#ctor
   isExternal: true
@@ -449,11 +463,11 @@ references:
   nameWithType.vb: Point.New
   fullName.vb: MBF.Revit.Geometry.Voronoi.Models.Point.New
   name.vb: New
-- uid: MBF.Revit.Geometry.Voronoi.Models.Point.setPoint*
-  commentId: Overload:MBF.Revit.Geometry.Voronoi.Models.Point.setPoint
+- uid: MBF.Revit.Geometry.Voronoi.Models.Point.SetPoint*
+  commentId: Overload:MBF.Revit.Geometry.Voronoi.Models.Point.SetPoint
   isExternal: true
-  href: MBF.Revit.Geometry.Voronoi.Models.Point.html#MBF_Revit_Geometry_Voronoi_Models_Point_setPoint_System_Double_System_Double_
-  name: setPoint
-  nameWithType: Point.setPoint
-  fullName: MBF.Revit.Geometry.Voronoi.Models.Point.setPoint
+  href: MBF.Revit.Geometry.Voronoi.Models.Point.html#MBF_Revit_Geometry_Voronoi_Models_Point_SetPoint_System_Double_System_Double_
+  name: SetPoint
+  nameWithType: Point.SetPoint
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Point.SetPoint
 shouldSkipMarkup: true

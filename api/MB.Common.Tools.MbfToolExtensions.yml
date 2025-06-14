@@ -57,7 +57,7 @@ items:
     return:
       type: MB.Common.SharedParameters.ToolsSharedParameter[]
       description: >-
-        An array of <xref href="MB.Common.SharedParameters.ToolsSharedParameter" data-throw-if-not-resolved="false"></xref> objects if the <xref href="MB.Common.Attributes.RequiredSharedParametersAttribute" data-throw-if-not-resolved="false"></xref> 
+        An array of <xref href="MB.Common.SharedParameters.ToolsSharedParameter" data-throw-if-not-resolved="false"></xref> objects if the <xref href="MB.Common.Attributes.RequiredSharedParametersAttribute" data-throw-if-not-resolved="false"></xref>
 
         is found; otherwise, an empty array.
     content.vb: Public Shared Function GetRequiredSharedParameters(tool As MbfTool) As ToolsSharedParameter()

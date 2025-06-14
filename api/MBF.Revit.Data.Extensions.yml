@@ -1,0 +1,57 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Data.Extensions
+  commentId: N:MBF.Revit.Data.Extensions
+  id: MBF.Revit.Data.Extensions
+  children:
+  - MBF.Revit.Data.Extensions.DocumentExtensions
+  - MBF.Revit.Data.Extensions.PipeExtensions
+  - MBF.Revit.Data.Extensions.SelectionExtensions
+  - MBF.Revit.Data.Extensions.SpaceExtensions
+  - MBF.Revit.Data.Extensions.ViewExtensions
+  langs:
+  - csharp
+  - vb
+  name: MBF.Revit.Data.Extensions
+  nameWithType: MBF.Revit.Data.Extensions
+  fullName: MBF.Revit.Data.Extensions
+  type: Namespace
+  assemblies:
+  - MBF.Revit.Data
+references:
+- uid: MBF.Revit.Data.Extensions.DocumentExtensions
+  commentId: T:MBF.Revit.Data.Extensions.DocumentExtensions
+  isExternal: true
+  href: MBF.Revit.Data.Extensions.DocumentExtensions.html
+  name: DocumentExtensions
+  nameWithType: DocumentExtensions
+  fullName: MBF.Revit.Data.Extensions.DocumentExtensions
+- uid: MBF.Revit.Data.Extensions.PipeExtensions
+  commentId: T:MBF.Revit.Data.Extensions.PipeExtensions
+  isExternal: true
+  href: MBF.Revit.Data.Extensions.PipeExtensions.html
+  name: PipeExtensions
+  nameWithType: PipeExtensions
+  fullName: MBF.Revit.Data.Extensions.PipeExtensions
+- uid: MBF.Revit.Data.Extensions.SelectionExtensions
+  commentId: T:MBF.Revit.Data.Extensions.SelectionExtensions
+  isExternal: true
+  href: MBF.Revit.Data.Extensions.SelectionExtensions.html
+  name: SelectionExtensions
+  nameWithType: SelectionExtensions
+  fullName: MBF.Revit.Data.Extensions.SelectionExtensions
+- uid: MBF.Revit.Data.Extensions.SpaceExtensions
+  commentId: T:MBF.Revit.Data.Extensions.SpaceExtensions
+  isExternal: true
+  href: MBF.Revit.Data.Extensions.SpaceExtensions.html
+  name: SpaceExtensions
+  nameWithType: SpaceExtensions
+  fullName: MBF.Revit.Data.Extensions.SpaceExtensions
+- uid: MBF.Revit.Data.Extensions.ViewExtensions
+  commentId: T:MBF.Revit.Data.Extensions.ViewExtensions
+  isExternal: true
+  href: MBF.Revit.Data.Extensions.ViewExtensions.html
+  name: ViewExtensions
+  nameWithType: ViewExtensions
+  fullName: MBF.Revit.Data.Extensions.ViewExtensions
+shouldSkipMarkup: true

@@ -14,15 +14,24 @@ items:
   fullName: MBF.Revit.Data.Utils.MbFlexPipesUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbFlexPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbFlexPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
-  summary: Utility methods for working with <xref href="Autodesk.Revit.DB.Plumbing.FlexPipe" data-throw-if-not-resolved="false"></xref> elements in Revit.
+  summary: Filters the provided collection of Revit elements and retrieves all flex pipes.
+  remarks: >-
+    This method ensures that only elements categorized as flex pipes  (BuiltInCategory.OST_FlexPipeCurves) are returned.  It uses the category information of each element to
+                perform the filtering.
   example: []
   syntax:
-    content: public static class MbFlexPipesUtils
-    content.vb: Public Module MbFlexPipesUtils
+    content: >-
+      [LogAspect]
+
+      public static class MbFlexPipesUtils
+    content.vb: >-
+      <LogAspect>
+
+      Public Module MbFlexPipesUtils
   inheritance:
   - System.Object
   inheritedMembers:
@@ -33,6 +42,10 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: MB.Common.Aspects.LogAspect
+    ctor: MB.Common.Aspects.LogAspect.#ctor
+    arguments: []
 - uid: MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
   commentId: M:MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
   id: GetFlexPipeInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
@@ -45,7 +58,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbFlexPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbFlexPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -54,6 +67,14 @@ items:
     This method ensures that only elements categorized as flex pipes
 
     (BuiltInCategory.OST_FlexPipeCurves) are returned.
+
+    <p>Possible error messages:</p>
+
+    <ul><li>
+                <code>ArgumentNullException</code>: Thrown if <code class="paramref">selectedElements</code> is null.
+            </li><li>
+                <code>InvalidCastException</code>: Thrown if an element cannot be cast to <xref href="Autodesk.Revit.DB.Plumbing.FlexPipe" data-throw-if-not-resolved="false"></xref>.
+            </li></ul>
   example: []
   syntax:
     content: public static IEnumerable<FlexPipe> GetFlexPipeInstances(IEnumerable<Element> selectedElements)
@@ -70,9 +91,6 @@ items:
   fullName.vb: MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeInstances(System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.Element))
   name.vb: GetFlexPipeInstances(IEnumerable(Of Element))
 references:
-- uid: Autodesk.Revit.DB.Plumbing.FlexPipe
-  commentId: T:Autodesk.Revit.DB.Plumbing.FlexPipe
-  isExternal: true
 - uid: MBF.Revit.Data.Utils
   commentId: N:MBF.Revit.Data.Utils
   isExternal: true
@@ -385,6 +403,9 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: Autodesk.Revit.DB.Plumbing.FlexPipe
+  commentId: T:Autodesk.Revit.DB.Plumbing.FlexPipe
+  isExternal: true
 - uid: MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeInstances*
   commentId: Overload:MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeInstances
   isExternal: true

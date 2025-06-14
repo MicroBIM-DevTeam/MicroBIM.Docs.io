@@ -22,11 +22,14 @@ items:
   fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
-  summary: Represents a half-edge in the Voronoi diagram.
+  summary: >-
+    Represents a half-edge in the Voronoi diagram, used primarily in Fortune's algorithm for managing the beach line
+
+    and event queue.
   example: []
   syntax:
     content: public class Halfedge
@@ -41,69 +44,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELleft
-  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELleft
-  id: ELleft
-  parent: MBF.Revit.Geometry.Voronoi.Models.Halfedge
-  langs:
-  - csharp
-  - vb
-  name: ELleft
-  nameWithType: Halfedge.ELleft
-  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELleft
-  type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
-  assemblies:
-  - MBF.Revit.Geometry
-  namespace: MBF.Revit.Geometry.Voronoi.Models
-  syntax:
-    content: public Halfedge ELleft
-    return:
-      type: MBF.Revit.Geometry.Voronoi.Models.Halfedge
-    content.vb: Public ELleft As Halfedge
-- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELright
-  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELright
-  id: ELright
-  parent: MBF.Revit.Geometry.Voronoi.Models.Halfedge
-  langs:
-  - csharp
-  - vb
-  name: ELright
-  nameWithType: Halfedge.ELright
-  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELright
-  type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
-  assemblies:
-  - MBF.Revit.Geometry
-  namespace: MBF.Revit.Geometry.Voronoi.Models
-  syntax:
-    content: public Halfedge ELright
-    return:
-      type: MBF.Revit.Geometry.Voronoi.Models.Halfedge
-    content.vb: Public ELright As Halfedge
-- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELedge
-  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELedge
-  id: ELedge
-  parent: MBF.Revit.Geometry.Voronoi.Models.Halfedge
-  langs:
-  - csharp
-  - vb
-  name: ELedge
-  nameWithType: Halfedge.ELedge
-  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELedge
-  type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
-  assemblies:
-  - MBF.Revit.Geometry
-  namespace: MBF.Revit.Geometry.Voronoi.Models
-  syntax:
-    content: public Edge ELedge
-    return:
-      type: MBF.Revit.Geometry.Voronoi.Models.Edge
-    content.vb: Public ELedge As Edge
 - uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.deleted
   commentId: F:MBF.Revit.Geometry.Voronoi.Models.Halfedge.deleted
   id: deleted
@@ -116,15 +56,63 @@ items:
   fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.deleted
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: Indicates whether this half-edge has been marked for deletion.
+  example: []
   syntax:
     content: public bool deleted
     return:
       type: System.Boolean
     content.vb: Public deleted As Boolean
+- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELedge
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELedge
+  id: ELedge
+  parent: MBF.Revit.Geometry.Voronoi.Models.Halfedge
+  langs:
+  - csharp
+  - vb
+  name: ELedge
+  nameWithType: Halfedge.ELedge
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELedge
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: The edge associated with this half-edge.
+  example: []
+  syntax:
+    content: public Edge ELedge
+    return:
+      type: MBF.Revit.Geometry.Voronoi.Models.Edge
+    content.vb: Public ELedge As Edge
+- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELleft
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELleft
+  id: ELleft
+  parent: MBF.Revit.Geometry.Voronoi.Models.Halfedge
+  langs:
+  - csharp
+  - vb
+  name: ELleft
+  nameWithType: Halfedge.ELleft
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELleft
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: The left neighboring half-edge in the edge list.
+  example: []
+  syntax:
+    content: public Halfedge ELleft
+    return:
+      type: MBF.Revit.Geometry.Voronoi.Models.Halfedge
+    content.vb: Public ELleft As Halfedge
 - uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELpm
   commentId: F:MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELpm
   id: ELpm
@@ -137,15 +125,63 @@ items:
   fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELpm
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: 'Side indicator: 0 for left, 1 for right. Determines which region the half-edge belongs to.'
+  example: []
   syntax:
     content: public int ELpm
     return:
       type: System.Int32
     content.vb: Public ELpm As Integer
+- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELright
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELright
+  id: ELright
+  parent: MBF.Revit.Geometry.Voronoi.Models.Halfedge
+  langs:
+  - csharp
+  - vb
+  name: ELright
+  nameWithType: Halfedge.ELright
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELright
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: The right neighboring half-edge in the edge list.
+  example: []
+  syntax:
+    content: public Halfedge ELright
+    return:
+      type: MBF.Revit.Geometry.Voronoi.Models.Halfedge
+    content.vb: Public ELright As Halfedge
+- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.PQnext
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Halfedge.PQnext
+  id: PQnext
+  parent: MBF.Revit.Geometry.Voronoi.Models.Halfedge
+  langs:
+  - csharp
+  - vb
+  name: PQnext
+  nameWithType: Halfedge.PQnext
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.PQnext
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: The next half-edge in the priority queue.
+  example: []
+  syntax:
+    content: public Halfedge PQnext
+    return:
+      type: MBF.Revit.Geometry.Voronoi.Models.Halfedge
+    content.vb: Public PQnext As Halfedge
 - uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.vertex
   commentId: F:MBF.Revit.Geometry.Voronoi.Models.Halfedge.vertex
   id: vertex
@@ -158,10 +194,12 @@ items:
   fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.vertex
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: The vertex where this half-edge ends (used in the priority queue for upcoming events).
+  example: []
   syntax:
     content: public Site vertex
     return:
@@ -179,36 +217,17 @@ items:
   fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.ystar
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: The Y-coordinate of the event associated with this half-edge in the priority queue.
+  example: []
   syntax:
     content: public double ystar
     return:
       type: System.Double
     content.vb: Public ystar As Double
-- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.PQnext
-  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Halfedge.PQnext
-  id: PQnext
-  parent: MBF.Revit.Geometry.Voronoi.Models.Halfedge
-  langs:
-  - csharp
-  - vb
-  name: PQnext
-  nameWithType: Halfedge.PQnext
-  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.PQnext
-  type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
-  assemblies:
-  - MBF.Revit.Geometry
-  namespace: MBF.Revit.Geometry.Voronoi.Models
-  syntax:
-    content: public Halfedge PQnext
-    return:
-      type: MBF.Revit.Geometry.Voronoi.Models.Halfedge
-    content.vb: Public PQnext As Halfedge
 - uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge.#ctor
   commentId: M:MBF.Revit.Geometry.Voronoi.Models.Halfedge.#ctor
   id: '#ctor'
@@ -221,10 +240,12 @@ items:
   fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge.Halfedge()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: Initializes a new instance of the <xref href="MBF.Revit.Geometry.Voronoi.Models.Halfedge" data-throw-if-not-resolved="false"></xref> class.
+  example: []
   syntax:
     content: public Halfedge()
     content.vb: Public Sub New()
@@ -527,22 +548,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge
-  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Halfedge
-  parent: MBF.Revit.Geometry.Voronoi.Models
-  isExternal: true
-  href: MBF.Revit.Geometry.Voronoi.Models.Halfedge.html
-  name: Halfedge
-  nameWithType: Halfedge
-  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge
-- uid: MBF.Revit.Geometry.Voronoi.Models.Edge
-  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Edge
-  parent: MBF.Revit.Geometry.Voronoi.Models
-  isExternal: true
-  href: MBF.Revit.Geometry.Voronoi.Models.Edge.html
-  name: Edge
-  nameWithType: Edge
-  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -554,6 +559,22 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: MBF.Revit.Geometry.Voronoi.Models.Edge
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Edge
+  parent: MBF.Revit.Geometry.Voronoi.Models
+  isExternal: true
+  href: MBF.Revit.Geometry.Voronoi.Models.Edge.html
+  name: Edge
+  nameWithType: Edge
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge
+- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Halfedge
+  parent: MBF.Revit.Geometry.Voronoi.Models
+  isExternal: true
+  href: MBF.Revit.Geometry.Voronoi.Models.Halfedge.html
+  name: Halfedge
+  nameWithType: Halfedge
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System

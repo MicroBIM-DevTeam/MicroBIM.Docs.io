@@ -19,12 +19,13 @@ items:
   nameWithType: GraphEdge
   fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
   type: Class
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
-  summary: Represents a graphical edge in the Voronoi diagram.
+  summary: >-
+    Represents a graphical edge in the Voronoi diagram, defined by two endpoints and the indices of the two sites it
+
+    separates.
   example: []
   syntax:
     content: public class GraphEdge
@@ -39,90 +40,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x1
-  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x1
-  id: x1
-  parent: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
-  langs:
-  - csharp
-  - vb
-  name: x1
-  nameWithType: GraphEdge.x1
-  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x1
-  type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
-  assemblies:
-  - MBF.Revit.Geometry
-  namespace: MBF.Revit.Geometry.Voronoi.Models
-  syntax:
-    content: public double x1
-    return:
-      type: System.Double
-    content.vb: Public x1 As Double
-- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y1
-  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y1
-  id: y1
-  parent: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
-  langs:
-  - csharp
-  - vb
-  name: y1
-  nameWithType: GraphEdge.y1
-  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y1
-  type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
-  assemblies:
-  - MBF.Revit.Geometry
-  namespace: MBF.Revit.Geometry.Voronoi.Models
-  syntax:
-    content: public double y1
-    return:
-      type: System.Double
-    content.vb: Public y1 As Double
-- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x2
-  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x2
-  id: x2
-  parent: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
-  langs:
-  - csharp
-  - vb
-  name: x2
-  nameWithType: GraphEdge.x2
-  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x2
-  type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
-  assemblies:
-  - MBF.Revit.Geometry
-  namespace: MBF.Revit.Geometry.Voronoi.Models
-  syntax:
-    content: public double x2
-    return:
-      type: System.Double
-    content.vb: Public x2 As Double
-- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y2
-  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y2
-  id: y2
-  parent: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
-  langs:
-  - csharp
-  - vb
-  name: y2
-  nameWithType: GraphEdge.y2
-  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y2
-  type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
-  assemblies:
-  - MBF.Revit.Geometry
-  namespace: MBF.Revit.Geometry.Voronoi.Models
-  syntax:
-    content: public double y2
-    return:
-      type: System.Double
-    content.vb: Public y2 As Double
 - uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.site1
   commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.site1
   id: site1
@@ -134,11 +51,11 @@ items:
   nameWithType: GraphEdge.site1
   fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.site1
   type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: The index of the first site that this edge separates.
+  example: []
   syntax:
     content: public int site1
     return:
@@ -155,16 +72,100 @@ items:
   nameWithType: GraphEdge.site2
   fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.site2
   type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: The index of the second site that this edge separates.
+  example: []
   syntax:
     content: public int site2
     return:
       type: System.Int32
     content.vb: Public site2 As Integer
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x1
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x1
+  id: x1
+  parent: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  langs:
+  - csharp
+  - vb
+  name: x1
+  nameWithType: GraphEdge.x1
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x1
+  type: Field
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: The X-coordinate of the starting point of the edge.
+  example: []
+  syntax:
+    content: public double x1
+    return:
+      type: System.Double
+    content.vb: Public x1 As Double
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x2
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x2
+  id: x2
+  parent: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  langs:
+  - csharp
+  - vb
+  name: x2
+  nameWithType: GraphEdge.x2
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.x2
+  type: Field
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: The X-coordinate of the ending point of the edge.
+  example: []
+  syntax:
+    content: public double x2
+    return:
+      type: System.Double
+    content.vb: Public x2 As Double
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y1
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y1
+  id: y1
+  parent: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  langs:
+  - csharp
+  - vb
+  name: y1
+  nameWithType: GraphEdge.y1
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y1
+  type: Field
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: The Y-coordinate of the starting point of the edge.
+  example: []
+  syntax:
+    content: public double y1
+    return:
+      type: System.Double
+    content.vb: Public y1 As Double
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y2
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y2
+  id: y2
+  parent: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  langs:
+  - csharp
+  - vb
+  name: y2
+  nameWithType: GraphEdge.y2
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.y2
+  type: Field
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: The Y-coordinate of the ending point of the edge.
+  example: []
+  syntax:
+    content: public double y2
+    return:
+      type: System.Double
+    content.vb: Public y2 As Double
 - uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.#ctor
   commentId: M:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.#ctor
   id: '#ctor'
@@ -176,8 +177,6 @@ items:
   nameWithType: GraphEdge.GraphEdge()
   fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.GraphEdge()
   type: Constructor
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
@@ -483,17 +482,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.Double
-  commentId: T:System.Double
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -505,6 +493,17 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
 - uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.#ctor*
   commentId: Overload:MBF.Revit.Geometry.Voronoi.Models.GraphEdge.#ctor
   isExternal: true

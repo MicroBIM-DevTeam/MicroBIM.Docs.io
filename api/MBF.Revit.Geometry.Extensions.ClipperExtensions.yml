@@ -15,18 +15,28 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.ClipperExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/ClipperExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/ClipperExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
   summary: >-
-    Extension methods for working with Clipper2Lib's <xref href="Clipper2Lib.PathD" data-throw-if-not-resolved="false"></xref> and <xref href="Clipper2Lib.PathsD" data-throw-if-not-resolved="false"></xref> types
+    Provides extension methods for working with <xref href="Clipper2Lib.PathsD" data-throw-if-not-resolved="false"></xref> and <xref href="Clipper2Lib.PathD" data-throw-if-not-resolved="false"></xref> collections, as well as
 
-    in conjunction with Revit geometry.
+    converting <xref href="Clipper2Lib.PathD" data-throw-if-not-resolved="false"></xref> objects to Revit <xref href="CurveLoop" data-throw-if-not-resolved="false"></xref> instances.
+  remarks: >-
+    This class includes utility methods for manipulating Clipper paths and integrating them with Revit
+
+    geometry.
   example: []
   syntax:
-    content: public static class ClipperExtensions
-    content.vb: Public Module ClipperExtensions
+    content: >-
+      [LogAspect]
+
+      public static class ClipperExtensions
+    content.vb: >-
+      <LogAspect>
+
+      Public Module ClipperExtensions
   inheritance:
   - System.Object
   inheritedMembers:
@@ -37,6 +47,10 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: MB.Common.Aspects.LogAspect
+    ctor: MB.Common.Aspects.LogAspect.#ctor
+    arguments: []
 - uid: MBF.Revit.Geometry.Extensions.ClipperExtensions.AddPathDToPathsD(Clipper2Lib.PathsD,Clipper2Lib.PathD)
   commentId: M:MBF.Revit.Geometry.Extensions.ClipperExtensions.AddPathDToPathsD(Clipper2Lib.PathsD,Clipper2Lib.PathD)
   id: AddPathDToPathsD(Clipper2Lib.PathsD,Clipper2Lib.PathD)
@@ -50,7 +64,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.ClipperExtensions.AddPathDToPathsD(Clipper2Lib.PathsD, Clipper2Lib.PathD)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/ClipperExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/ClipperExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -83,7 +97,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.ClipperExtensions.ToCurveLoop(Clipper2Lib.PathD)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/ClipperExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/ClipperExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -104,13 +118,6 @@ items:
     content.vb: Public Shared Function ToCurveLoop(pathD As PathD) As MbResult(Of CurveLoop)
   overload: MBF.Revit.Geometry.Extensions.ClipperExtensions.ToCurveLoop*
 references:
-- uid: Clipper2Lib.PathD
-  commentId: T:Clipper2Lib.PathD
-  parent: Clipper2Lib
-  isExternal: true
-  name: PathD
-  nameWithType: PathD
-  fullName: Clipper2Lib.PathD
 - uid: Clipper2Lib.PathsD
   commentId: T:Clipper2Lib.PathsD
   parent: Clipper2Lib
@@ -118,6 +125,16 @@ references:
   name: PathsD
   nameWithType: PathsD
   fullName: Clipper2Lib.PathsD
+- uid: Clipper2Lib.PathD
+  commentId: T:Clipper2Lib.PathD
+  parent: Clipper2Lib
+  isExternal: true
+  name: PathD
+  nameWithType: PathD
+  fullName: Clipper2Lib.PathD
+- uid: CurveLoop
+  commentId: T:CurveLoop
+  isExternal: true
 - uid: MBF.Revit.Geometry.Extensions
   commentId: N:MBF.Revit.Geometry.Extensions
   isExternal: true
@@ -415,9 +432,6 @@ references:
   name: AddPathDToPathsD
   nameWithType: ClipperExtensions.AddPathDToPathsD
   fullName: MBF.Revit.Geometry.Extensions.ClipperExtensions.AddPathDToPathsD
-- uid: CurveLoop
-  commentId: T:CurveLoop
-  isExternal: true
 - uid: MB.Common.Utils.Result.MbResult`1
   commentId: T:MB.Common.Utils.Result.MbResult`1
   parent: MB.Common.Utils.Result

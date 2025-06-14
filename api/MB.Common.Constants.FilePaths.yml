@@ -9,13 +9,19 @@ items:
   - MB.Common.Constants.FilePaths.Elbows
   - MB.Common.Constants.FilePaths.FlexPipes
   - MB.Common.Constants.FilePaths.HazardCoverageJson
+  - MB.Common.Constants.FilePaths.ListingSettingsJsons
+  - MB.Common.Constants.FilePaths.LogBaseDirectory
   - MB.Common.Constants.FilePaths.MapperJsons
+  - MB.Common.Constants.FilePaths.MicroBimListingSettingsJsons
   - MB.Common.Constants.FilePaths.Others
   - MB.Common.Constants.FilePaths.Outlets
   - MB.Common.Constants.FilePaths.PipeAccessories
   - MB.Common.Constants.FilePaths.Pipes
+  - MB.Common.Constants.FilePaths.SettingsJsons
   - MB.Common.Constants.FilePaths.Sprinklers
   - MB.Common.Constants.FilePaths.Tees
+  - MB.Common.Constants.FilePaths.UserListing
+  - MB.Common.Constants.FilePaths.UserValuesToStandardJson
   langs:
   - csharp
   - vb
@@ -233,6 +239,31 @@ items:
     return:
       type: System.String
     content.vb: Public Const Others As String = "Others"
+- uid: MB.Common.Constants.FilePaths.LogBaseDirectory
+  commentId: F:MB.Common.Constants.FilePaths.LogBaseDirectory
+  id: LogBaseDirectory
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: LogBaseDirectory
+  nameWithType: FilePaths.LogBaseDirectory
+  fullName: MB.Common.Constants.FilePaths.LogBaseDirectory
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  summary: Gets the base directory path where log files are stored.
+  remarks: >-
+    The directory path is constructed by combining the local application data folder, a
+                subdirectory named "MicroBIM", and a "Logs" folder. This path is intended to provide a consistent location for
+                storing application log files.
+  example: []
+  syntax:
+    content: public static readonly string LogBaseDirectory
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly LogBaseDirectory As String
 - uid: MB.Common.Constants.FilePaths.MapperJsons
   commentId: P:MB.Common.Constants.FilePaths.MapperJsons
   id: MapperJsons
@@ -256,6 +287,121 @@ items:
       type: System.String
     content.vb: Public Shared ReadOnly Property MapperJsons As String
   overload: MB.Common.Constants.FilePaths.MapperJsons*
+- uid: MB.Common.Constants.FilePaths.SettingsJsons
+  commentId: P:MB.Common.Constants.FilePaths.SettingsJsons
+  id: SettingsJsons
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: SettingsJsons
+  nameWithType: FilePaths.SettingsJsons
+  fullName: MB.Common.Constants.FilePaths.SettingsJsons
+  type: Property
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  summary: Gets the path to the directory containing general Mapper JSON settings.
+  example: []
+  syntax:
+    content: public static string SettingsJsons { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property SettingsJsons As String
+  overload: MB.Common.Constants.FilePaths.SettingsJsons*
+- uid: MB.Common.Constants.FilePaths.ListingSettingsJsons
+  commentId: P:MB.Common.Constants.FilePaths.ListingSettingsJsons
+  id: ListingSettingsJsons
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: ListingSettingsJsons
+  nameWithType: FilePaths.ListingSettingsJsons
+  fullName: MB.Common.Constants.FilePaths.ListingSettingsJsons
+  type: Property
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  summary: Gets the path to the directory containing listing-specific Mapper JSON settings.
+  example: []
+  syntax:
+    content: public static string ListingSettingsJsons { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property ListingSettingsJsons As String
+  overload: MB.Common.Constants.FilePaths.ListingSettingsJsons*
+- uid: MB.Common.Constants.FilePaths.UserListing
+  commentId: P:MB.Common.Constants.FilePaths.UserListing
+  id: UserListing
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: UserListing
+  nameWithType: FilePaths.UserListing
+  fullName: MB.Common.Constants.FilePaths.UserListing
+  type: Property
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  summary: Gets the path to the directory containing user-specific listing settings JSON files.
+  example: []
+  syntax:
+    content: public static string UserListing { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property UserListing As String
+  overload: MB.Common.Constants.FilePaths.UserListing*
+- uid: MB.Common.Constants.FilePaths.UserValuesToStandardJson
+  commentId: P:MB.Common.Constants.FilePaths.UserValuesToStandardJson
+  id: UserValuesToStandardJson
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: UserValuesToStandardJson
+  nameWithType: FilePaths.UserValuesToStandardJson
+  fullName: MB.Common.Constants.FilePaths.UserValuesToStandardJson
+  type: Property
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  summary: Path for mapping user-defined values to a standard JSON format within listing settings.
+  example: []
+  syntax:
+    content: public static string UserValuesToStandardJson { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property UserValuesToStandardJson As String
+  overload: MB.Common.Constants.FilePaths.UserValuesToStandardJson*
+- uid: MB.Common.Constants.FilePaths.MicroBimListingSettingsJsons
+  commentId: P:MB.Common.Constants.FilePaths.MicroBimListingSettingsJsons
+  id: MicroBimListingSettingsJsons
+  parent: MB.Common.Constants.FilePaths
+  langs:
+  - csharp
+  - vb
+  name: MicroBimListingSettingsJsons
+  nameWithType: FilePaths.MicroBimListingSettingsJsons
+  fullName: MB.Common.Constants.FilePaths.MicroBimListingSettingsJsons
+  type: Property
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Constants
+  summary: Gets the path to the directory containing MicroBIM Listing Settings JSON files.
+  example: []
+  syntax:
+    content: public static string MicroBimListingSettingsJsons { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property MicroBimListingSettingsJsons As String
+  overload: MB.Common.Constants.FilePaths.MicroBimListingSettingsJsons*
 - uid: MB.Common.Constants.FilePaths.AutoSprinklerSpacing
   commentId: P:MB.Common.Constants.FilePaths.AutoSprinklerSpacing
   id: AutoSprinklerSpacing
@@ -572,6 +718,41 @@ references:
   name: MapperJsons
   nameWithType: FilePaths.MapperJsons
   fullName: MB.Common.Constants.FilePaths.MapperJsons
+- uid: MB.Common.Constants.FilePaths.SettingsJsons*
+  commentId: Overload:MB.Common.Constants.FilePaths.SettingsJsons
+  isExternal: true
+  href: MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_SettingsJsons
+  name: SettingsJsons
+  nameWithType: FilePaths.SettingsJsons
+  fullName: MB.Common.Constants.FilePaths.SettingsJsons
+- uid: MB.Common.Constants.FilePaths.ListingSettingsJsons*
+  commentId: Overload:MB.Common.Constants.FilePaths.ListingSettingsJsons
+  isExternal: true
+  href: MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_ListingSettingsJsons
+  name: ListingSettingsJsons
+  nameWithType: FilePaths.ListingSettingsJsons
+  fullName: MB.Common.Constants.FilePaths.ListingSettingsJsons
+- uid: MB.Common.Constants.FilePaths.UserListing*
+  commentId: Overload:MB.Common.Constants.FilePaths.UserListing
+  isExternal: true
+  href: MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_UserListing
+  name: UserListing
+  nameWithType: FilePaths.UserListing
+  fullName: MB.Common.Constants.FilePaths.UserListing
+- uid: MB.Common.Constants.FilePaths.UserValuesToStandardJson*
+  commentId: Overload:MB.Common.Constants.FilePaths.UserValuesToStandardJson
+  isExternal: true
+  href: MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_UserValuesToStandardJson
+  name: UserValuesToStandardJson
+  nameWithType: FilePaths.UserValuesToStandardJson
+  fullName: MB.Common.Constants.FilePaths.UserValuesToStandardJson
+- uid: MB.Common.Constants.FilePaths.MicroBimListingSettingsJsons*
+  commentId: Overload:MB.Common.Constants.FilePaths.MicroBimListingSettingsJsons
+  isExternal: true
+  href: MB.Common.Constants.FilePaths.html#MB_Common_Constants_FilePaths_MicroBimListingSettingsJsons
+  name: MicroBimListingSettingsJsons
+  nameWithType: FilePaths.MicroBimListingSettingsJsons
+  fullName: MB.Common.Constants.FilePaths.MicroBimListingSettingsJsons
 - uid: MB.Common.Constants.FilePaths.AutoSprinklerSpacing*
   commentId: Overload:MB.Common.Constants.FilePaths.AutoSprinklerSpacing
   isExternal: true

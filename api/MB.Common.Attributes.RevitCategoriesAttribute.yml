@@ -19,7 +19,7 @@ items:
   namespace: MB.Common.Attributes
   summary: Represents an attribute to associate a target with a set of Revit built-in categories.
   remarks: >-
-    This attribute can be used to declare which Revit built-in categories are relevant for a specific 
+    This attribute can be used to declare which Revit built-in categories are relevant for a specific
 
     class, method, or property. It allows for filtering or categorization based on Revit's predefined categories.
   example: []

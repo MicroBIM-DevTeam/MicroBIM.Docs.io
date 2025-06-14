@@ -7,6 +7,9 @@ items:
   - MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior
   - MBFWpfToolkit.AttachedProperties.HelpAssistant
   - MBFWpfToolkit.AttachedProperties.LocalizationHelper
+  - MBFWpfToolkit.AttachedProperties.MicroBimThemeBehavior
+  - MBFWpfToolkit.AttachedProperties.ThemeBehavior
+  - MBFWpfToolkit.AttachedProperties.ThemeUtils
   langs:
   - csharp
   - vb
@@ -38,4 +41,25 @@ references:
   name: LocalizationHelper
   nameWithType: LocalizationHelper
   fullName: MBFWpfToolkit.AttachedProperties.LocalizationHelper
+- uid: MBFWpfToolkit.AttachedProperties.MicroBimThemeBehavior
+  commentId: T:MBFWpfToolkit.AttachedProperties.MicroBimThemeBehavior
+  isExternal: true
+  href: MBFWpfToolkit.AttachedProperties.MicroBimThemeBehavior.html
+  name: MicroBimThemeBehavior
+  nameWithType: MicroBimThemeBehavior
+  fullName: MBFWpfToolkit.AttachedProperties.MicroBimThemeBehavior
+- uid: MBFWpfToolkit.AttachedProperties.ThemeBehavior
+  commentId: T:MBFWpfToolkit.AttachedProperties.ThemeBehavior
+  isExternal: true
+  href: MBFWpfToolkit.AttachedProperties.ThemeBehavior.html
+  name: ThemeBehavior
+  nameWithType: ThemeBehavior
+  fullName: MBFWpfToolkit.AttachedProperties.ThemeBehavior
+- uid: MBFWpfToolkit.AttachedProperties.ThemeUtils
+  commentId: T:MBFWpfToolkit.AttachedProperties.ThemeUtils
+  isExternal: true
+  href: MBFWpfToolkit.AttachedProperties.ThemeUtils.html
+  name: ThemeUtils
+  nameWithType: ThemeUtils
+  fullName: MBFWpfToolkit.AttachedProperties.ThemeUtils
 shouldSkipMarkup: true

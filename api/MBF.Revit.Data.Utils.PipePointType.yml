@@ -1,0 +1,127 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Data.Utils.PipePointType
+  commentId: T:MBF.Revit.Data.Utils.PipePointType
+  id: PipePointType
+  parent: MBF.Revit.Data.Utils
+  children:
+  - MBF.Revit.Data.Utils.PipePointType.End
+  - MBF.Revit.Data.Utils.PipePointType.Start
+  langs:
+  - csharp
+  - vb
+  name: PipePointType
+  nameWithType: PipePointType
+  fullName: MBF.Revit.Data.Utils.PipePointType
+  type: Enum
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Reprepipents a specific point along a pipe, either at the start or the end.
+  example: []
+  syntax:
+    content: public enum PipePointType
+    content.vb: Public Enum PipePointType
+- uid: MBF.Revit.Data.Utils.PipePointType.Start
+  commentId: F:MBF.Revit.Data.Utils.PipePointType.Start
+  id: Start
+  parent: MBF.Revit.Data.Utils.PipePointType
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: PipePointType.Start
+  fullName: MBF.Revit.Data.Utils.PipePointType.Start
+  type: Field
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: >-
+    Refers to the start point of the pipe geometry.
+
+    Equivalent to <code>pipe.get_EndPoint(0)</code>.
+  example: []
+  syntax:
+    content: Start = 0
+    return:
+      type: MBF.Revit.Data.Utils.PipePointType
+- uid: MBF.Revit.Data.Utils.PipePointType.End
+  commentId: F:MBF.Revit.Data.Utils.PipePointType.End
+  id: End
+  parent: MBF.Revit.Data.Utils.PipePointType
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: PipePointType.End
+  fullName: MBF.Revit.Data.Utils.PipePointType.End
+  type: Field
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: >-
+    Refers to the end point of the pipe geometry.
+
+    Equivalent to <code>pipe.get_EndPoint(1)</code>.
+  example: []
+  syntax:
+    content: End = 1
+    return:
+      type: MBF.Revit.Data.Utils.PipePointType
+references:
+- uid: MBF.Revit.Data.Utils
+  commentId: N:MBF.Revit.Data.Utils
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Data.Utils
+  nameWithType: MBF.Revit.Data.Utils
+  fullName: MBF.Revit.Data.Utils
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Utils
+    name: Utils
+    isExternal: true
+    href: MBF.Revit.Data.Utils.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Utils
+    name: Utils
+    isExternal: true
+    href: MBF.Revit.Data.Utils.html
+- uid: MBF.Revit.Data.Utils.PipePointType
+  commentId: T:MBF.Revit.Data.Utils.PipePointType
+  parent: MBF.Revit.Data.Utils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.PipePointType.html
+  name: PipePointType
+  nameWithType: PipePointType
+  fullName: MBF.Revit.Data.Utils.PipePointType
+shouldSkipMarkup: true

@@ -14,7 +14,7 @@ items:
   fullName: MBFWpfToolkit.Extensions.ListExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Extensions/ListExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Extensions/ListExtensions.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Extensions
@@ -46,7 +46,7 @@ items:
   fullName: MBFWpfToolkit.Extensions.ListExtensions.Move<T>(System.Collections.Generic.List<T>, int, int)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Extensions/ListExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Extensions/ListExtensions.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Extensions

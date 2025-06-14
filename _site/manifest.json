@@ -260,7 +260,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MB.Common.Errors.MbError",
-      "Summary": "Defines a list of error codes used throughout the application.\nEach enum value is annotated with <xref href=\"MB.Common.Attributes.ErrorInformationAttribute\" data-throw-if-not-resolved=\"false\"></xref> \nto provide a user-friendly error message."
+      "Summary": "Defines a list of error codes used throughout the application.\nEach enum value is annotated with <xref href=\"MB.Common.Attributes.ErrorInformationAttribute\" data-throw-if-not-resolved=\"false\"></xref>\nto provide a user-friendly error message."
     },
     {
       "type": "ManagedReference",
@@ -288,6 +288,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MB.Common.Errors",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Jsons.GenericJsonFileService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Jsons.GenericJsonFileService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Jsons.GenericJsonFileService",
+      "Summary": "Provides generic methods for saving and loading JSON files from disk."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Jsons.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Jsons.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Jsons",
       "Summary": null
     },
     {
@@ -320,6 +348,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Services.EmbeddedResourceService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Services.EmbeddedResourceService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Services.EmbeddedResourceService",
+      "Summary": "Provides functionality for accessing and processing embedded resources in assemblies."
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MB.Common.Services.MailService.yml",
       "output": {
         ".html": {
@@ -330,7 +372,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MB.Common.Services.MailService",
-      "Summary": "Provides methods for sending emails, including support for attachments and both synchronous and asynchronous operations."
+      "Summary": "Provides methods for sending emails, including support for attachments and both synchronous and asynchronous\noperations."
     },
     {
       "type": "ManagedReference",
@@ -344,6 +386,174 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MB.Common.Services",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Settings.ListingSettings.FittingGroupHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Settings.ListingSettings.FittingGroupHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Settings.ListingSettings.FittingGroupHelper",
+      "Summary": "Provides helper methods for grouping <xref href=\"MB.Common.Settings.ListingSettings.StandardFittingType\" data-throw-if-not-resolved=\"false\"></xref> values\ninto their corresponding PDF group names for listing and reporting purposes."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Settings.ListingSettings.ListingConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Settings.ListingSettings.ListingConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Settings.ListingSettings.ListingConfig",
+      "Summary": "Represents the configuration for a listing, including elements, family details, category,\nand fitting types. This class provides constructors to initialize its properties either\nfrom a collection of elements or from a Data Transfer Object (DTO)."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Settings.ListingSettings.ListingDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Settings.ListingSettings.ListingDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Settings.ListingSettings.ListingDto",
+      "Summary": "Represents a data transfer object for a listing, including details such as family name, symbol name, category, and\nselected fitting type."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Settings.ListingSettings.ListingMapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Settings.ListingSettings.ListingMapper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Settings.ListingSettings.ListingMapper",
+      "Summary": "Provides methods for mapping between <xref href=\"MB.Common.Settings.ListingSettings.ListingConfig\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"MB.Common.Settings.ListingSettings.ListingDto\" data-throw-if-not-resolved=\"false\"></xref> objects."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Settings.ListingSettings.ListingSettingsHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Settings.ListingSettings.ListingSettingsHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Settings.ListingSettings.ListingSettingsHelper",
+      "Summary": "Provides helper methods for working with listing settings, including retrieval of <xref href=\"MB.Common.Settings.ListingSettings.ListingDto\" data-throw-if-not-resolved=\"false\"></xref> objects\nbased on family and type information."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto",
+      "Summary": "Represents a Data Transfer Object (DTO) used for providing recommendations specific to Micro BIM listings."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Settings.ListingSettings.StandardFittingGroups.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Settings.ListingSettings.StandardFittingGroups.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Settings.ListingSettings.StandardFittingGroups",
+      "Summary": "Provides predefined groupings of standard fitting types for different fitting categories."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Settings.ListingSettings.StandardFittingType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Settings.ListingSettings.StandardFittingType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Settings.ListingSettings.StandardFittingType",
+      "Summary": "Represents a collection of fitting types commonly utilized within piping systems,\ncategorized by different connection methods such as threaded, grooved, embedded couplings,\nintegrated systems (IGS), flanged connections, and more."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Settings.ListingSettings.ValueToStandardTypeDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Settings.ListingSettings.ValueToStandardTypeDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Settings.ListingSettings.ValueToStandardTypeDto",
+      "Summary": "Represents a Data Transfer Object (DTO) that associates a specific value with a standard fitting type."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Settings.ListingSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Settings.ListingSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Settings.ListingSettings",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Settings.ParameterData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Settings.ParameterData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Settings.ParameterData",
+      "Summary": "Represents a parameter with a name, display name, and selection state."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Settings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Settings",
       "Summary": null
     },
     {
@@ -638,7 +848,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Creation.Extensions.DocumentExtensions",
-      "Summary": "Provides extension methods for the Revit <xref href=\"Autodesk.Revit.DB.Document\" data-throw-if-not-resolved=\"false\"></xref> class."
+      "Summary": "Provides extension methods for working with Revit documents, specifically for managing linked Revit models."
     },
     {
       "type": "ManagedReference",
@@ -656,6 +866,90 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Extensions.DocumentExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Extensions.DocumentExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Extensions.DocumentExtensions",
+      "Summary": "Provides extension methods for working with Revit documents, enabling operations such as retrieving elements,\ncreating views, and managing linked documents."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Extensions.PipeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Extensions.PipeExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Extensions.PipeExtensions",
+      "Summary": "Provides extension methods for working with <xref href=\"Autodesk.Revit.DB.Plumbing.Pipe\" data-throw-if-not-resolved=\"false\"></xref> objects in Revit."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Extensions.SelectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Extensions.SelectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Extensions.SelectionExtensions",
+      "Summary": "Provides extension methods for retrieving selected elements of specific types from a <xref href=\"UIDocument\" data-throw-if-not-resolved=\"false\"></xref>."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Extensions.SpaceExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Extensions.SpaceExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Extensions.SpaceExtensions",
+      "Summary": "Provides extension methods for working with <xref href=\"Autodesk.Revit.DB.Mechanical.Space\" data-throw-if-not-resolved=\"false\"></xref> objects,  including retrieving boundary segments and\nvalidating the space."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Extensions.ViewExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Extensions.ViewExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Extensions.ViewExtensions",
+      "Summary": "Provides extension methods for working with Revit views."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MBF.Revit.Data.Models.MbDocument.yml",
       "output": {
         ".html": {
@@ -666,7 +960,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Data.Models.MbDocument",
-      "Summary": "Represents a Revit document, either standalone or linked, including its context and transformation information."
+      "Summary": "Represents a Revit document, including both standalone documents and linked documents."
     },
     {
       "type": "ManagedReference",
@@ -694,7 +988,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter",
-      "Summary": "A dynamic selection filter that allows only elements belonging to specified <xref href=\"BuiltInCategory\" data-throw-if-not-resolved=\"false\"></xref> values.\nUseful for restricting user selection to a specific set of categories."
+      "Summary": "Represents a selection filter that dynamically allows elements based on their categories."
     },
     {
       "type": "ManagedReference",
@@ -708,7 +1002,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Data.SelectionFilters.FaceSelectionFilter",
-      "Summary": "A selection filter that allows selecting <xref href=\"Face\" data-throw-if-not-resolved=\"false\"></xref> geometry references \nfrom elements belonging to specific <xref href=\"BuiltInCategory\" data-throw-if-not-resolved=\"false\"></xref> values."
+      "Summary": "Provides a selection filter for Revit elements and references, allowing selection of elements based on their\ncategory and ensuring that references correspond to geometric faces."
     },
     {
       "type": "ManagedReference",
@@ -736,7 +1030,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter",
-      "Summary": "A selection filter that allows selecting elements from a linked Revit model,\nrestricted to a specific set of categories."
+      "Summary": "Selection filter for linked Revit documents that restricts selection to elements\nbelonging to specified categories within a selected <xref href=\"MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.RevitLinkInstance\" data-throw-if-not-resolved=\"false\"></xref>."
     },
     {
       "type": "ManagedReference",
@@ -754,6 +1048,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.EntityUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.EntityUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.EntityUtils",
+      "Summary": "Provides utility methods for working with entities and their associated fields, enabling the retrieval and\nassignment of values such as <xref href=\"Autodesk.Revit.DB.XYZ\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"ElementId\" data-throw-if-not-resolved=\"false\"></xref>."
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MBF.Revit.Data.Utils.MbFlexPipesUtils.yml",
       "output": {
         ".html": {
@@ -764,7 +1072,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Data.Utils.MbFlexPipesUtils",
-      "Summary": "Utility methods for working with <xref href=\"Autodesk.Revit.DB.Plumbing.FlexPipe\" data-throw-if-not-resolved=\"false\"></xref> elements in Revit."
+      "Summary": "Filters the provided collection of Revit elements and retrieves all flex pipes."
     },
     {
       "type": "ManagedReference",
@@ -792,7 +1100,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Data.Utils.MbPipeAccessoriesUtils",
-      "Summary": "Provides utility methods for working with pipe accessories in Revit."
+      "Summary": "Provides utility methods for working with pipe accessory elements in Revit."
     },
     {
       "type": "ManagedReference",
@@ -834,7 +1142,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Data.Utils.MbSpaceUtils",
-      "Summary": "Provides utility methods for working with <xref href=\"Autodesk.Revit.DB.Mechanical.Space\" data-throw-if-not-resolved=\"false\"></xref> elements in Revit."
+      "Summary": "Provides utility methods for working with <xref href=\"Autodesk.Revit.DB.Mechanical.Space\" data-throw-if-not-resolved=\"false\"></xref> elements in Autodesk Revit."
     },
     {
       "type": "ManagedReference",
@@ -862,7 +1170,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Data.Utils.MbUnitUtils",
-      "Summary": "Provides utility methods for retrieving and converting Revit units to standard textual representations."
+      "Summary": "Provides utility methods for working with measurement units in Revit."
     },
     {
       "type": "ManagedReference",
@@ -876,7 +1184,49 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Data.Utils.MbViewUtils",
-      "Summary": "Provides utility methods for interacting with Revit views, including view type checking and zooming to elements."
+      "Summary": "Provides utility methods for working with Revit views, including graphical view checks, zooming to elements,\ncreating temporary 3D views, and managing view isolation."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.PipePointType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.PipePointType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.PipePointType",
+      "Summary": "Reprepipents a specific point along a pipe, either at the start or the end."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.RevitUnitUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.RevitUnitUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.RevitUnitUtils",
+      "Summary": "Determines whether the units of the specified Revit document are metric."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.XyzExtensibleStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.XyzExtensibleStorage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.XyzExtensibleStorage",
+      "Summary": "Provides utilities for reading and writing <xref href=\"Autodesk.Revit.DB.XYZ\" data-throw-if-not-resolved=\"false\"></xref> start point data\nfor <xref href=\"Autodesk.Revit.DB.Plumbing.Pipe\" data-throw-if-not-resolved=\"false\"></xref> elements using Revit's Extensible Storage API."
     },
     {
       "type": "ManagedReference",
@@ -904,7 +1254,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Geometry.Extensions.BoundingBoxExtensions",
-      "Summary": "Provides extension methods for the <xref href=\"Autodesk.Revit.DB.BoundingBoxXYZ\" data-throw-if-not-resolved=\"false\"></xref> class."
+      "Summary": "Provides extension methods for working with <xref href=\"Autodesk.Revit.DB.BoundingBoxXYZ\" data-throw-if-not-resolved=\"false\"></xref> objects."
     },
     {
       "type": "ManagedReference",
@@ -918,7 +1268,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions",
-      "Summary": "Extension methods for visualizing BoundingBoxXYZ objects as 2D outlines in the XY plane using DirectShape."
+      "Summary": "Provides extension methods for visualizing bounding boxes as 2D outlines in a Revit document."
     },
     {
       "type": "ManagedReference",
@@ -932,7 +1282,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Geometry.Extensions.ClipperExtensions",
-      "Summary": "Extension methods for working with Clipper2Lib's <xref href=\"Clipper2Lib.PathD\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Clipper2Lib.PathsD\" data-throw-if-not-resolved=\"false\"></xref> types\nin conjunction with Revit geometry."
+      "Summary": "Provides extension methods for working with <xref href=\"Clipper2Lib.PathsD\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Clipper2Lib.PathD\" data-throw-if-not-resolved=\"false\"></xref> collections, as well as\nconverting <xref href=\"Clipper2Lib.PathD\" data-throw-if-not-resolved=\"false\"></xref> objects to Revit <xref href=\"CurveLoop\" data-throw-if-not-resolved=\"false\"></xref> instances."
     },
     {
       "type": "ManagedReference",
@@ -946,7 +1296,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Geometry.Extensions.CurveLoopExtensions",
-      "Summary": "Provides extension methods for converting <xref href=\"CurveLoop\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Collections.Generic.IEnumerable%601\" data-throw-if-not-resolved=\"false\"></xref> into Clipper2 <xref href=\"Clipper2Lib.PathD\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Clipper2Lib.PathsD\" data-throw-if-not-resolved=\"false\"></xref>."
+      "Summary": "Provides extension methods for converting <xref href=\"CurveLoop\" data-throw-if-not-resolved=\"false\"></xref> objects into Clipper-compatible path\nrepresentations, such as <xref href=\"Clipper2Lib.PathD\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Clipper2Lib.PathsD\" data-throw-if-not-resolved=\"false\"></xref>."
     },
     {
       "type": "ManagedReference",
@@ -960,7 +1310,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions",
-      "Summary": "Provides extension methods for visualizing <xref href=\"CurveLoop\" data-throw-if-not-resolved=\"false\"></xref> instances as 2D geometry in Revit,\neither using <xref href=\"DirectShape\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"Autodesk.Revit.DB.DetailCurve\" data-throw-if-not-resolved=\"false\"></xref> elements."
+      "Summary": "Provides extension methods for visualizing and creating Revit elements from <xref href=\"CurveLoop\" data-throw-if-not-resolved=\"false\"></xref> objects."
     },
     {
       "type": "ManagedReference",
@@ -974,7 +1324,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions",
-      "Summary": "Provides extension methods for visualizing <xref href=\"Autodesk.Revit.DB.Curve\" data-throw-if-not-resolved=\"false\"></xref> instances as 2D geometry in Revit,\neither using <xref href=\"DirectShape\" data-throw-if-not-resolved=\"false\"></xref> elements in model views or <xref href=\"Autodesk.Revit.DB.DetailCurve\" data-throw-if-not-resolved=\"false\"></xref> elements in drafting views."
+      "Summary": "Provides extension methods for visualizing <xref href=\"Autodesk.Revit.DB.Curve\" data-throw-if-not-resolved=\"false\"></xref> instances as 2D geometry in Revit,\neither using <xref href=\"DirectShape\" data-throw-if-not-resolved=\"false\"></xref> elements in model views or <xref href=\"Autodesk.Revit.DB.DetailCurve\" data-throw-if-not-resolved=\"false\"></xref> elements in drafting\nviews."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Extensions.DirectShapeVisualization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Extensions.DirectShapeVisualization.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Extensions.DirectShapeVisualization",
+      "Summary": "Provides methods for creating and managing <xref href=\"DirectShape\" data-throw-if-not-resolved=\"false\"></xref> elements in a Revit document."
     },
     {
       "type": "ManagedReference",
@@ -988,7 +1352,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions",
-      "Summary": "Extension methods for visualizing Clipper <xref href=\"Clipper2Lib.PathD\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Clipper2Lib.PathsD\" data-throw-if-not-resolved=\"false\"></xref> in 2D in the Revit XY plane."
+      "Summary": "Provides extension methods for visualizing <xref href=\"Clipper2Lib.PathD\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Clipper2Lib.PathsD\" data-throw-if-not-resolved=\"false\"></xref> objects as 2D outlines in\na\nRevit document using <xref href=\"DirectShape\" data-throw-if-not-resolved=\"false\"></xref> elements."
     },
     {
       "type": "ManagedReference",
@@ -1002,7 +1366,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions",
-      "Summary": "Extension methods for visualizing <xref href=\"Autodesk.Revit.DB.XYZ\" data-throw-if-not-resolved=\"false\"></xref> points in Revit using DirectShape."
+      "Summary": "Provides extension methods for visualizing <xref href=\"Autodesk.Revit.DB.XYZ\" data-throw-if-not-resolved=\"false\"></xref> points as 3D objects in a Revit document."
     },
     {
       "type": "ManagedReference",
@@ -1030,7 +1394,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Geometry.Utils.MbXyzUtils",
-      "Summary": "Provides utility methods for geometric operations on <xref href=\"Autodesk.Revit.DB.XYZ\" data-throw-if-not-resolved=\"false\"></xref> points."
+      "Summary": "Provides utility methods for working with 2D geometry, including operations on polygons and line segments."
     },
     {
       "type": "ManagedReference",
@@ -1044,7 +1408,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Geometry.Utils.PolygonUtils",
-      "Summary": "Provides utility methods for geometric operations involving 2D polygons using Revit's <xref href=\"Autodesk.Revit.DB.XYZ\" data-throw-if-not-resolved=\"false\"></xref> points.\nThis utility assumes all computations are performed in the XY plane and ignores Z-axis values."
+      "Summary": "Provides utility methods for working with 2D polygons in the XY plane."
     },
     {
       "type": "ManagedReference",
@@ -1072,7 +1436,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Geometry.Voronoi.Models.Edge",
-      "Summary": "Represents an edge in the Voronoi diagram."
+      "Summary": "Represents an edge in the Voronoi diagram, defined by a line equation and associated sites."
     },
     {
       "type": "ManagedReference",
@@ -1086,7 +1450,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Geometry.Voronoi.Models.GraphEdge",
-      "Summary": "Represents a graphical edge in the Voronoi diagram."
+      "Summary": "Represents a graphical edge in the Voronoi diagram, defined by two endpoints and the indices of the two sites it\nseparates."
     },
     {
       "type": "ManagedReference",
@@ -1100,7 +1464,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Geometry.Voronoi.Models.Halfedge",
-      "Summary": "Represents a half-edge in the Voronoi diagram."
+      "Summary": "Represents a half-edge in the Voronoi diagram, used primarily in Fortune's algorithm for managing the beach line\nand event queue."
     },
     {
       "type": "ManagedReference",
@@ -1128,7 +1492,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Geometry.Voronoi.Models.Site",
-      "Summary": "Represents a site used for vertices."
+      "Summary": "Represents a site (or generator point) used in the Voronoi diagram, typically associated with a cell in the\ndiagram."
     },
     {
       "type": "ManagedReference",
@@ -1142,7 +1506,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX",
-      "Summary": "Compares two sites based on their y-coordinates, and x-coordinates if y-coordinates are equal."
+      "Summary": "Provides a comparison mechanism for sorting <xref href=\"MBF.Revit.Geometry.Voronoi.Models.Site\" data-throw-if-not-resolved=\"false\"></xref> instances.\nSorts first by Y-coordinate, then by X-coordinate if Y values are equal.\nUseful for processing sites in Fortune's algorithm."
     },
     {
       "type": "ManagedReference",
@@ -1174,6 +1538,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Voronoi.Utils.MbVoronoiAlgorithmHelpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Voronoi.Utils.MbVoronoiAlgorithmHelpers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Voronoi.Utils.MbVoronoiAlgorithmHelpers",
+      "Summary": "Provides helper methods for generating Voronoi diagrams within a specified polygonal boundary."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Voronoi.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Voronoi.Utils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Voronoi.Utils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.yml",
       "output": {
         ".html": {
@@ -1184,7 +1576,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior",
-      "Summary": "Provides an attached behavior to enable live search filtering on a <xref href=\"System.Windows.Controls.ComboBox\" data-throw-if-not-resolved=\"false\"></xref>."
+      "Summary": "Provides an attached behavior to enable search functionality in a <xref href=\"System.Windows.Controls.ComboBox\" data-throw-if-not-resolved=\"false\"></xref>,\nallowing live filtering of items based on user input."
     },
     {
       "type": "ManagedReference",
@@ -1212,7 +1604,49 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.AttachedProperties.LocalizationHelper",
-      "Summary": "Provides localization support for WPF controls using attached properties.\nWhen <xref href=\"MBFWpfToolkit.AttachedProperties.LocalizationHelper.LangKeyProperty\" data-throw-if-not-resolved=\"false\"></xref> is set on a control, the corresponding localized value will be applied automatically."
+      "Summary": "Provides localization support for WPF controls using attached properties.\nWhen <xref href=\"MBFWpfToolkit.AttachedProperties.LocalizationHelper.LangKeyProperty\" data-throw-if-not-resolved=\"false\"></xref> is set on a control, the corresponding localized value will be applied\nautomatically."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.AttachedProperties.MicroBimThemeBehavior.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.AttachedProperties.MicroBimThemeBehavior.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.AttachedProperties.MicroBimThemeBehavior",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.AttachedProperties.ThemeBehavior.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.AttachedProperties.ThemeBehavior.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.AttachedProperties.ThemeBehavior",
+      "Summary": "Provides attached properties and behaviors for managing themes in a WPF application."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.AttachedProperties.ThemeUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.AttachedProperties.ThemeUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.AttachedProperties.ThemeUtils",
+      "Summary": "Provides utility methods for handling theme-related operations on WPF <xref href=\"System.Windows.FrameworkElement\" data-throw-if-not-resolved=\"false\"></xref> instances."
     },
     {
       "type": "ManagedReference",
@@ -1310,7 +1744,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Controls.MbMessageBox",
-      "Summary": "A custom message box window that supports HandyControl theming, icon display, and multiple button configurations."
+      "Summary": "A custom message box window that supports MicroBIM.UI theming, icon display, and multiple button configurations."
     },
     {
       "type": "ManagedReference",
@@ -1356,6 +1790,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Converters.BooleanErrorGroupToEnabledConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Converters.BooleanErrorGroupToEnabledConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Converters.BooleanErrorGroupToEnabledConverter",
+      "Summary": "A multi-value converter that checks a list of boolean values (typically HasError flags).\nIf any value is <code>true</code>, it returns <code>false</code> to disable a control (e.g., a button)."
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter.yml",
       "output": {
         ".html": {
@@ -1380,7 +1828,49 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Converters.EnumDisplayNameConverter",
-      "Summary": "A value converter for converting between enum values and their display names specified by the <xref href=\"System.ComponentModel.DataAnnotations.DisplayAttribute\" data-throw-if-not-resolved=\"false\"></xref>."
+      "Summary": "A value converter for converting between enum values and their display names specified by the\n<xref href=\"System.ComponentModel.DataAnnotations.DisplayAttribute\" data-throw-if-not-resolved=\"false\"></xref>."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Converters.NullToBooleanConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Converters.NullToBooleanConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Converters.NullToBooleanConverter",
+      "Summary": "Converts a value to <xref href=\"System.Windows.Visibility\" data-throw-if-not-resolved=\"false\"></xref> based on whether it is null."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Converters.NullToVisibilityConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Converters.NullToVisibilityConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Converters.NullToVisibilityConverter",
+      "Summary": "Converts a value to <xref href=\"System.Windows.Visibility\" data-throw-if-not-resolved=\"false\"></xref> based on whether it is null."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Converters.NullToVisibilityWithInverseConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Converters.NullToVisibilityWithInverseConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Converters.NullToVisibilityWithInverseConverter",
+      "Summary": "Converts a <code>null</code> value to a <xref href=\"System.Windows.Visibility\" data-throw-if-not-resolved=\"false\"></xref> value.\nSupports optional inversion using a converter parameter."
     },
     {
       "type": "ManagedReference",
@@ -1394,7 +1884,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Converters.ValidationMultiConverter",
-      "Summary": "A multi-value converter that validates a group of input values (typically bound from multiple <xref href=\"System.Windows.Controls.TextBox\" data-throw-if-not-resolved=\"false\"></xref> elements).\nIt checks for empty input and validation errors to determine whether a button (or any control) should be enabled."
+      "Summary": "A multi-value converter that validates a group of input values (typically bound from multiple\n<xref href=\"System.Windows.Controls.TextBox\" data-throw-if-not-resolved=\"false\"></xref> elements).\nIt checks for empty input and validation errors to determine whether a button (or any control) should be enabled."
     },
     {
       "type": "ManagedReference",
@@ -1412,6 +1902,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Extensions.CollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Extensions.CollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Extensions.CollectionExtensions",
+      "Summary": "Provides extension methods for working with collections."
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MBFWpfToolkit.Extensions.ListExtensions.yml",
       "output": {
         ".html": {
@@ -1423,6 +1927,20 @@
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Extensions.ListExtensions",
       "Summary": "Provides extension methods for <xref href=\"System.Collections.Generic.List%601\" data-throw-if-not-resolved=\"false\"></xref> to support additional operations."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Extensions.ToleranceGroup-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Extensions.ToleranceGroup-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Extensions.ToleranceGroup<TKey, TElement>",
+      "Summary": "Represents a collection of elements that share a common key, with additional functionality for grouping and list\noperations."
     },
     {
       "type": "ManagedReference",
@@ -1450,7 +1968,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Helpers.MbNotification",
-      "Summary": "Provides utility methods to display styled notifications using HandyControl's <xref href=\"HandyControl.Controls.Growl\" data-throw-if-not-resolved=\"false\"></xref> system."
+      "Summary": "Provides utility methods to display styled notifications using MicroBIM.UI's <xref href=\"MicroBIM.UI.Controls.Growl\" data-throw-if-not-resolved=\"false\"></xref> system."
     },
     {
       "type": "ManagedReference",
@@ -1482,6 +2000,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Helpers.WindowController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Helpers.WindowController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Helpers.WindowController",
+      "Summary": "Manages the lifecycle of modeless WPF windows to prevent duplicates,\nmaintain a global reference list, and enable programmatic control."
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MBFWpfToolkit.Helpers.yml",
       "output": {
         ".html": {
@@ -1506,7 +2038,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.MbViewModel.MbBaseViewModel",
-      "Summary": "Base ViewModel class providing theme and language management functionality."
+      "Summary": "Represents the base ViewModel class inheriting from ObservableValidator.\nProvides a common set of functionalities for ViewModels, including validation capabilities."
     },
     {
       "type": "ManagedReference",
@@ -1534,7 +2066,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.MbWindow",
-      "Summary": "Represents a custom window with additional properties and functionalities."
+      "Summary": "Represents a customizable WPF window with extended properties and features,\nincluding theming, language selection, and plugin-related configurations."
     },
     {
       "type": "ManagedReference",
@@ -1576,6 +2108,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Properties.Langs.Lang",
+      "Summary": "A strongly-typed resource class, for looking up localized strings, etc."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Properties.Langs.Lang_en.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Properties.Langs.Lang_en.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Properties.Langs.Lang_en",
       "Summary": "A strongly-typed resource class, for looking up localized strings, etc."
     },
     {
@@ -1923,6 +2469,16 @@
         },
         ".json": {
           "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "downloads/MicroBIM.Revit.Template.1.2.0.nupkg",
+      "output": {
+        "resource": {
+          "relative_path": "downloads/MicroBIM.Revit.Template.1.2.0.nupkg"
         }
       },
       "version": ""

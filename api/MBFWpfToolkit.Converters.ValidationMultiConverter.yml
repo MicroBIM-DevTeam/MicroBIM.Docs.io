@@ -16,12 +16,14 @@ items:
   fullName: MBFWpfToolkit.Converters.ValidationMultiConverter
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Converters/ValidationMultiConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Converters/ValidationMultiConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
   summary: >-
-    A multi-value converter that validates a group of input values (typically bound from multiple <xref href="System.Windows.Controls.TextBox" data-throw-if-not-resolved="false"></xref> elements).
+    A multi-value converter that validates a group of input values (typically bound from multiple
+
+    <xref href="System.Windows.Controls.TextBox" data-throw-if-not-resolved="false"></xref> elements).
 
     It checks for empty input and validation errors to determine whether a button (or any control) should be enabled.
   remarks: >-
@@ -56,7 +58,7 @@ items:
   fullName: MBFWpfToolkit.Converters.ValidationMultiConverter.Convert(object[], System.Type, object, System.Globalization.CultureInfo)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Converters/ValidationMultiConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Converters/ValidationMultiConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
@@ -99,7 +101,7 @@ items:
   fullName: MBFWpfToolkit.Converters.ValidationMultiConverter.ConvertBack(object, System.Type[], object, System.Globalization.CultureInfo)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Converters/ValidationMultiConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Converters/ValidationMultiConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
@@ -138,7 +140,7 @@ items:
   fullName: MBFWpfToolkit.Converters.ValidationMultiConverter.ValidationMultiConverter()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Converters/ValidationMultiConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Converters/ValidationMultiConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters

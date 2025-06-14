@@ -46,30 +46,23 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Loaders
-  summary: Loads an embedded JSON resource and deserializes it into a list of objects of type <code class="typeparamref">T</code>.
-  remarks: >-
-    The method searches for an embedded resource name that ends with the specified <code class="paramref">resourceFileName</code>.
-
-    It uses case-insensitive matching and supports resources embedded via project file settings.
+  summary: Loads a JSON list of objects from an embedded resource using Newtonsoft.Json.
   example: []
   syntax:
     content: public static Task<List<T>> LoadEmbeddedJsonAsync<T>(string resourceFileName, Assembly assembly)
     parameters:
     - id: resourceFileName
       type: System.String
-      description: The name (or suffix) of the embedded resource file (e.g., "DefaultConfig.json").
+      description: The name of the embedded resource file.
     - id: assembly
       type: System.Reflection.Assembly
-      description: The <xref href="System.Reflection.Assembly" data-throw-if-not-resolved="false"></xref> that contains the embedded resource.
+      description: The assembly containing the embedded resource.
     typeParameters:
     - id: T
-      description: The type of the objects to deserialize.
+      description: The type of objects in the JSON list.
     return:
       type: System.Threading.Tasks.Task{System.Collections.Generic.List{{T}}}
-      description: >-
-        A task that resolves to a <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref> containing the deserialized objects. If loading or deserialization fails,
-
-        an empty list is returned and a message box will display the error.
+      description: A list of deserialized objects, or an empty list on failure.
     content.vb: Public Shared Function LoadEmbeddedJsonAsync(Of T)(resourceFileName As String, assembly As Assembly) As Task(Of List(Of T))
   overload: MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync*
   nameWithType.vb: MbResourceLoader.LoadEmbeddedJsonAsync(Of T)(String, Assembly)
@@ -89,7 +82,10 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Loaders
-  summary: Ensures that a file exists at the specified path. If it does not, the method creates it using the content from an embedded resource.
+  summary: >-
+    Ensures that a file exists at the specified path. If it does not, the method creates it using the content from an
+
+    embedded resource.
   remarks: >-
     This method can be used to seed configuration files or default templates on first run of the application.
 
@@ -109,7 +105,13 @@ items:
       description: >-
         An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> indicating the outcome:
 
-        <ul><li><code>Success = true</code> — The file already exists or was created successfully from the embedded resource.</li><li><code>Success = false</code> — The resource was not found or an error occurred during file creation. The <code>ErrorMessage</code> will describe the issue.</li></ul>
+        <ul><li>
+                    <code>Success = true</code> — The file already exists or was created successfully from the embedded
+                    resource.
+                </li><li>
+                    <code>Success = false</code> — The resource was not found or an error occurred during file creation.
+                    The <code>ErrorMessage</code> will describe the issue.
+                </li></ul>
     content.vb: Public Shared Function EnsureFileFromEmbeddedResource(outputFilePath As String, embeddedResourceName As String) As MbResult(Of Boolean)
   overload: MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource*
   nameWithType.vb: MbResourceLoader.EnsureFileFromEmbeddedResource(String, String)
@@ -400,42 +402,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.Reflection.Assembly
-  commentId: T:System.Reflection.Assembly
-  parent: System.Reflection
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
-  name: Assembly
-  nameWithType: Assembly
-  fullName: System.Reflection.Assembly
-- uid: System.Collections.Generic.List`1
-  commentId: T:System.Collections.Generic.List`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
 - uid: MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync*
   commentId: Overload:MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync
   isExternal: true
@@ -454,6 +420,14 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
 - uid: System.Threading.Tasks.Task{System.Collections.Generic.List{{T}}}
   commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{``0}}
   parent: System.Threading.Tasks

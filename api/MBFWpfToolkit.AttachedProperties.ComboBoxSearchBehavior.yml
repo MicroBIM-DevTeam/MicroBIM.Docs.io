@@ -18,11 +18,14 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/ComboBoxSearchBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ComboBoxSearchBehavior.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
-  summary: Provides an attached behavior to enable live search filtering on a <xref href="System.Windows.Controls.ComboBox" data-throw-if-not-resolved="false"></xref>.
+  summary: >-
+    Provides an attached behavior to enable search functionality in a <xref href="System.Windows.Controls.ComboBox" data-throw-if-not-resolved="false"></xref>,
+
+    allowing live filtering of items based on user input.
   example: []
   syntax:
     content: public static class ComboBoxSearchBehavior
@@ -49,14 +52,31 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.IsSearchEnabledProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/ComboBoxSearchBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ComboBoxSearchBehavior.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: >-
+    Identifies the IsSearchEnabled dependency property. This property can be attached to a
+
+    <xref href="System.Windows.Controls.ComboBox" data-throw-if-not-resolved="false"></xref> to enable or disable live search filtering functionality.
+  remarks: >-
+    When this property is set to true, the ComboBox supports a live search filtering mechanism
+
+    for its items based on the current input text. It also modifies the behavior of the ComboBox,
+
+    making it editable, disabling built-in text search, and keeping the dropdown open during edits.
+
+    When set to false, the standard ComboBox behavior is restored.
+  example: []
   syntax:
     content: public static readonly DependencyProperty IsSearchEnabledProperty
     return:
       type: System.Windows.DependencyProperty
+      description: >-
+        true if the search functionality is enabled for the associated ComboBox; otherwise, false.
+
+        The default value is false.
     content.vb: Public Shared ReadOnly IsSearchEnabledProperty As DependencyProperty
 - uid: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetIsSearchEnabled(System.Windows.DependencyObject,System.Boolean)
   commentId: M:MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetIsSearchEnabled(System.Windows.DependencyObject,System.Boolean)
@@ -70,17 +90,24 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetIsSearchEnabled(System.Windows.DependencyObject, bool)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/ComboBoxSearchBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ComboBoxSearchBehavior.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: >-
+    Sets the value of the <xref href="MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.IsSearchEnabledProperty" data-throw-if-not-resolved="false"></xref> attached property,
+
+    enabling or disabling live search filtering on a <xref href="System.Windows.Controls.ComboBox" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public static void SetIsSearchEnabled(DependencyObject obj, bool value)
     parameters:
     - id: obj
       type: System.Windows.DependencyObject
+      description: The dependency object to which the property is attached.
     - id: value
       type: System.Boolean
+      description: A boolean value indicating whether the search feature should be enabled or disabled.
     content.vb: Public Shared Sub SetIsSearchEnabled(obj As DependencyObject, value As Boolean)
   overload: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetIsSearchEnabled*
   nameWithType.vb: ComboBoxSearchBehavior.SetIsSearchEnabled(DependencyObject, Boolean)
@@ -98,17 +125,21 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetIsSearchEnabled(System.Windows.DependencyObject)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/ComboBoxSearchBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ComboBoxSearchBehavior.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: Gets the value of the IsSearchEnabled attached property for a specified <xref href="System.Windows.DependencyObject" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public static bool GetIsSearchEnabled(DependencyObject obj)
     parameters:
     - id: obj
       type: System.Windows.DependencyObject
+      description: The <xref href="System.Windows.DependencyObject" data-throw-if-not-resolved="false"></xref> from which to read the attached property value.
     return:
       type: System.Boolean
+      description: A boolean value indicating whether the live search behavior is enabled on the specified <xref href="System.Windows.DependencyObject" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function GetIsSearchEnabled(obj As DependencyObject) As Boolean
   overload: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetIsSearchEnabled*
 - uid: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetFilteredItems(System.Windows.DependencyObject)
@@ -123,17 +154,24 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetFilteredItems(System.Windows.DependencyObject)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/ComboBoxSearchBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ComboBoxSearchBehavior.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: >-
+    Gets the filtered items associated with the specified <xref href="System.Windows.DependencyObject" data-throw-if-not-resolved="false"></xref>.
+
+    The filtered items are updated dynamically as the user types into the search-enabled ComboBox.
+  example: []
   syntax:
     content: public static ObservableCollection<string> GetFilteredItems(DependencyObject obj)
     parameters:
     - id: obj
       type: System.Windows.DependencyObject
+      description: The <xref href="System.Windows.DependencyObject" data-throw-if-not-resolved="false"></xref> for which to retrieve the filtered items.
     return:
       type: System.Collections.ObjectModel.ObservableCollection{System.String}
+      description: An <xref href="System.Collections.ObjectModel.ObservableCollection%601" data-throw-if-not-resolved="false"></xref> of strings representing the currently filtered items.
     content.vb: Public Shared Function GetFilteredItems(obj As DependencyObject) As ObservableCollection(Of String)
   overload: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetFilteredItems*
 - uid: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetFilteredItems(System.Windows.DependencyObject,System.Collections.ObjectModel.ObservableCollection{System.String})
@@ -148,17 +186,21 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetFilteredItems(System.Windows.DependencyObject, System.Collections.ObjectModel.ObservableCollection<string>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/ComboBoxSearchBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ComboBoxSearchBehavior.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
+  summary: Sets the filtered collection of items to be displayed in the <xref href="System.Windows.Controls.ComboBox" data-throw-if-not-resolved="false"></xref> based on the current search behavior.
+  example: []
   syntax:
     content: public static void SetFilteredItems(DependencyObject obj, ObservableCollection<string> value)
     parameters:
     - id: obj
       type: System.Windows.DependencyObject
+      description: The <xref href="System.Windows.DependencyObject" data-throw-if-not-resolved="false"></xref> to set the filtered items for.
     - id: value
       type: System.Collections.ObjectModel.ObservableCollection{System.String}
+      description: The <xref href="System.Collections.ObjectModel.ObservableCollection%601" data-throw-if-not-resolved="false"></xref> of filtered items to set.
     content.vb: Public Shared Sub SetFilteredItems(obj As DependencyObject, value As ObservableCollection(Of String))
   overload: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetFilteredItems*
   nameWithType.vb: ComboBoxSearchBehavior.SetFilteredItems(DependencyObject, ObservableCollection(Of String))
@@ -471,6 +513,13 @@ references:
     name: Windows
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.windows
+- uid: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.IsSearchEnabledProperty
+  commentId: F:MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.IsSearchEnabledProperty
+  isExternal: true
+  href: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.html#MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior_IsSearchEnabledProperty
+  name: IsSearchEnabledProperty
+  nameWithType: ComboBoxSearchBehavior.IsSearchEnabledProperty
+  fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.IsSearchEnabledProperty
 - uid: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetIsSearchEnabled*
   commentId: Overload:MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetIsSearchEnabled
   isExternal: true
@@ -504,6 +553,34 @@ references:
   name: GetIsSearchEnabled
   nameWithType: ComboBoxSearchBehavior.GetIsSearchEnabled
   fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetIsSearchEnabled
+- uid: System.Collections.ObjectModel.ObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ObservableCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetFilteredItems*
   commentId: Overload:MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetFilteredItems
   isExternal: true
@@ -545,34 +622,6 @@ references:
     name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-- uid: System.Collections.ObjectModel.ObservableCollection`1
-  commentId: T:System.Collections.ObjectModel.ObservableCollection`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
-  name: ObservableCollection<T>
-  nameWithType: ObservableCollection<T>
-  fullName: System.Collections.ObjectModel.ObservableCollection<T>
-  nameWithType.vb: ObservableCollection(Of T)
-  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
-  name.vb: ObservableCollection(Of T)
-  spec.csharp:
-  - uid: System.Collections.ObjectModel.ObservableCollection`1
-    name: ObservableCollection
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.ObjectModel.ObservableCollection`1
-    name: ObservableCollection
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
   - name: )
 - uid: System.Collections.ObjectModel
   commentId: N:System.Collections.ObjectModel

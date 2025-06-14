@@ -11,6 +11,7 @@ items:
   - MB.Common.SharedParameters.ToolsSharedParameter.CalculateSum
   - MB.Common.SharedParameters.ToolsSharedParameter.Color
   - MB.Common.SharedParameters.ToolsSharedParameter.DescriptionAndAbbreviationListNo
+  - MB.Common.SharedParameters.ToolsSharedParameter.EndPap
   - MB.Common.SharedParameters.ToolsSharedParameter.ExportedPackageName
   - MB.Common.SharedParameters.ToolsSharedParameter.ExportedPdfName
   - MB.Common.SharedParameters.ToolsSharedParameter.FabricationGroupName
@@ -21,10 +22,30 @@ items:
   - MB.Common.SharedParameters.ToolsSharedParameter.IsFitting
   - MB.Common.SharedParameters.ToolsSharedParameter.MinimumFlow
   - MB.Common.SharedParameters.ToolsSharedParameter.MinimumPressure
+  - MB.Common.SharedParameters.ToolsSharedParameter.Pap1
+  - MB.Common.SharedParameters.ToolsSharedParameter.Pap2
+  - MB.Common.SharedParameters.ToolsSharedParameter.Pap3
+  - MB.Common.SharedParameters.ToolsSharedParameter.Pap4
+  - MB.Common.SharedParameters.ToolsSharedParameter.Pap5
+  - MB.Common.SharedParameters.ToolsSharedParameter.Pap6
+  - MB.Common.SharedParameters.ToolsSharedParameter.Pap7
+  - MB.Common.SharedParameters.ToolsSharedParameter.Pap8
+  - MB.Common.SharedParameters.ToolsSharedParameter.Pap9
   - MB.Common.SharedParameters.ToolsSharedParameter.PipeCode
+  - MB.Common.SharedParameters.ToolsSharedParameter.PipeNoListing
   - MB.Common.SharedParameters.ToolsSharedParameter.ProtectionArea
   - MB.Common.SharedParameters.ToolsSharedParameter.ReaLGroupSize
   - MB.Common.SharedParameters.ToolsSharedParameter.RealFittingSizes
+  - MB.Common.SharedParameters.ToolsSharedParameter.Run1Dim
+  - MB.Common.SharedParameters.ToolsSharedParameter.Run2Dim
+  - MB.Common.SharedParameters.ToolsSharedParameter.Run3Dim
+  - MB.Common.SharedParameters.ToolsSharedParameter.Run4Dim
+  - MB.Common.SharedParameters.ToolsSharedParameter.Run5Dim
+  - MB.Common.SharedParameters.ToolsSharedParameter.Run6Dim
+  - MB.Common.SharedParameters.ToolsSharedParameter.Run7Dim
+  - MB.Common.SharedParameters.ToolsSharedParameter.Run8Dim
+  - MB.Common.SharedParameters.ToolsSharedParameter.Run9Dim
+  - MB.Common.SharedParameters.ToolsSharedParameter.StartPap
   - MB.Common.SharedParameters.ToolsSharedParameter.SubType
   langs:
   - csharp
@@ -461,7 +482,7 @@ items:
 
       [RevitCategories]
 
-      Finish = 8
+      Finish = 7
     return:
       type: MB.Common.SharedParameters.ToolsSharedParameter
     content.vb: >-
@@ -471,7 +492,7 @@ items:
 
       <RevitCategories>
 
-      Finish = 8
+      Finish = 7
   attributes:
   - type: MB.Common.Attributes.GuidAttribute
     ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
@@ -518,7 +539,7 @@ items:
 
       [RevitCategories]
 
-      PipeCode = 9
+      PipeCode = 8
     return:
       type: MB.Common.SharedParameters.ToolsSharedParameter
     content.vb: >-
@@ -528,7 +549,7 @@ items:
 
       <RevitCategories>
 
-      PipeCode = 9
+      PipeCode = 8
   attributes:
   - type: MB.Common.Attributes.GuidAttribute
     ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
@@ -575,7 +596,7 @@ items:
 
       [RevitCategories]
 
-      AddFitToId = 10
+      AddFitToId = 9
     return:
       type: MB.Common.SharedParameters.ToolsSharedParameter
     content.vb: >-
@@ -585,7 +606,7 @@ items:
 
       <RevitCategories>
 
-      AddFitToId = 10
+      AddFitToId = 9
   attributes:
   - type: MB.Common.Attributes.GuidAttribute
     ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
@@ -632,7 +653,7 @@ items:
 
       [RevitCategories]
 
-      HandTight = 11
+      HandTight = 10
     return:
       type: MB.Common.SharedParameters.ToolsSharedParameter
     content.vb: >-
@@ -642,7 +663,7 @@ items:
 
       <RevitCategories>
 
-      HandTight = 11
+      HandTight = 10
   attributes:
   - type: MB.Common.Attributes.GuidAttribute
     ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
@@ -671,7 +692,7 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.SharedParameters
-  summary: Represents the "MBF_Desc_Abbrv_ListNo" shared parameter.
+  summary: Represents the "MBF_DescAbbrvListNo" shared parameter.
   remarks: >-
     This shared parameter is applicable to pipe curves, pipe fittings,
 
@@ -689,7 +710,7 @@ items:
 
       [RevitCategories]
 
-      DescriptionAndAbbreviationListNo = 12
+      DescriptionAndAbbreviationListNo = 11
     return:
       type: MB.Common.SharedParameters.ToolsSharedParameter
     content.vb: >-
@@ -699,7 +720,7 @@ items:
 
       <RevitCategories>
 
-      DescriptionAndAbbreviationListNo = 12
+      DescriptionAndAbbreviationListNo = 11
   attributes:
   - type: MB.Common.Attributes.GuidAttribute
     ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
@@ -728,7 +749,7 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.SharedParameters
-  summary: Represents the "MBF_Exported_PakageName" shared parameter.
+  summary: Represents the "MBF_Exported_PackageName" shared parameter.
   remarks: >-
     This shared parameter is applicable to pipe curves, pipe fittings,
 
@@ -746,7 +767,7 @@ items:
 
       [RevitCategories]
 
-      ExportedPackageName = 13
+      ExportedPackageName = 12
     return:
       type: MB.Common.SharedParameters.ToolsSharedParameter
     content.vb: >-
@@ -756,7 +777,7 @@ items:
 
       <RevitCategories>
 
-      ExportedPackageName = 13
+      ExportedPackageName = 12
   attributes:
   - type: MB.Common.Attributes.GuidAttribute
     ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
@@ -797,29 +818,29 @@ items:
   example: []
   syntax:
     content: >-
-      [Guid("9d698cc7-3c6d-466e-9f89-ee1baf1326a2")]
+      [Guid("5f2c6451-0d24-4421-b3f8-02386c2cd60b")]
 
       [SharedParameterType(SharedParameterType.Text)]
 
       [RevitCategories]
 
-      RealFittingSizes = 14
+      RealFittingSizes = 13
     return:
       type: MB.Common.SharedParameters.ToolsSharedParameter
     content.vb: >-
-      <Guid("9d698cc7-3c6d-466e-9f89-ee1baf1326a2")>
+      <Guid("5f2c6451-0d24-4421-b3f8-02386c2cd60b")>
 
       <SharedParameterType(SharedParameterType.Text)>
 
       <RevitCategories>
 
-      RealFittingSizes = 14
+      RealFittingSizes = 13
   attributes:
   - type: MB.Common.Attributes.GuidAttribute
     ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: 9d698cc7-3c6d-466e-9f89-ee1baf1326a2
+      value: 5f2c6451-0d24-4421-b3f8-02386c2cd60b
   - type: MB.Common.Attributes.SharedParameterTypeAttribute
     ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
     arguments:
@@ -860,7 +881,7 @@ items:
 
       [RevitCategories]
 
-      ExportedPdfName = 15
+      ExportedPdfName = 14
     return:
       type: MB.Common.SharedParameters.ToolsSharedParameter
     content.vb: >-
@@ -870,7 +891,7 @@ items:
 
       <RevitCategories>
 
-      ExportedPdfName = 15
+      ExportedPdfName = 14
   attributes:
   - type: MB.Common.Attributes.GuidAttribute
     ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
@@ -917,7 +938,7 @@ items:
 
       [RevitCategories]
 
-      SubType = 16
+      SubType = 15
     return:
       type: MB.Common.SharedParameters.ToolsSharedParameter
     content.vb: >-
@@ -927,7 +948,7 @@ items:
 
       <RevitCategories>
 
-      SubType = 16
+      SubType = 15
   attributes:
   - type: MB.Common.Attributes.GuidAttribute
     ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
@@ -974,7 +995,7 @@ items:
 
       [RevitCategories]
 
-      FabricationGroupName = 17
+      FabricationGroupName = 16
     return:
       type: MB.Common.SharedParameters.ToolsSharedParameter
     content.vb: >-
@@ -984,7 +1005,7 @@ items:
 
       <RevitCategories>
 
-      FabricationGroupName = 17
+      FabricationGroupName = 16
   attributes:
   - type: MB.Common.Attributes.GuidAttribute
     ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
@@ -1027,7 +1048,7 @@ items:
 
       [RevitCategories]
 
-      Allowance = 18
+      Allowance = 17
     return:
       type: MB.Common.SharedParameters.ToolsSharedParameter
     content.vb: >-
@@ -1037,7 +1058,7 @@ items:
 
       <RevitCategories>
 
-      Allowance = 18
+      Allowance = 17
   attributes:
   - type: MB.Common.Attributes.GuidAttribute
     ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
@@ -1080,7 +1101,7 @@ items:
 
       [RevitCategories]
 
-      ReaLGroupSize = 19
+      ReaLGroupSize = 18
     return:
       type: MB.Common.SharedParameters.ToolsSharedParameter
     content.vb: >-
@@ -1090,7 +1111,7 @@ items:
 
       <RevitCategories>
 
-      ReaLGroupSize = 19
+      ReaLGroupSize = 18
   attributes:
   - type: MB.Common.Attributes.GuidAttribute
     ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
@@ -1133,7 +1154,7 @@ items:
 
       [RevitCategories]
 
-      IsFitting = 20
+      IsFitting = 19
     return:
       type: MB.Common.SharedParameters.ToolsSharedParameter
     content.vb: >-
@@ -1143,7 +1164,7 @@ items:
 
       <RevitCategories>
 
-      IsFitting = 20
+      IsFitting = 19
   attributes:
   - type: MB.Common.Attributes.GuidAttribute
     ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
@@ -1186,7 +1207,7 @@ items:
 
       [RevitCategories]
 
-      CalculateSum = 21
+      CalculateSum = 20
     return:
       type: MB.Common.SharedParameters.ToolsSharedParameter
     content.vb: >-
@@ -1196,7 +1217,7 @@ items:
 
       <RevitCategories>
 
-      CalculateSum = 21
+      CalculateSum = 20
   attributes:
   - type: MB.Common.Attributes.GuidAttribute
     ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
@@ -1208,6 +1229,1094 @@ items:
     arguments:
     - type: MB.Common.SharedParameters.SharedParameterType
       value: 0
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.PipeNoListing
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.PipeNoListing
+  id: PipeNoListing
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: PipeNoListing
+  nameWithType: ToolsSharedParameter.PipeNoListing
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.PipeNoListing
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter for specifying a pipe number listing in a Revit model.
+  remarks: >-
+    This parameter is associated with Revit categories such as BuiltInCategory.OST_PipeCurves and BuiltInCategory.OST_PipeFitting. It is defined as a
+                text-based shared parameter and is identified by the GUID "a137e596-b255-494a-9c8a-1f32f4ec0a5f".
+  example: []
+  syntax:
+    content: >-
+      [Guid("a137e596-b255-494a-9c8a-1f32f4ec0a5f")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      PipeNoListing = 21
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("a137e596-b255-494a-9c8a-1f32f4ec0a5f")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      PipeNoListing = 21
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: a137e596-b255-494a-9c8a-1f32f4ec0a5f
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.StartPap
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.StartPap
+  id: StartPap
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: StartPap
+  nameWithType: ToolsSharedParameter.StartPap
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.StartPap
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the "Start Pap" shared parameter, which is associated with pipe curves and pipe fittings in Revit.
+  remarks: >-
+    This parameter is categorized under BuiltInCategory.OST_PipeCurves and BuiltInCategory.OST_PipeFitting. It is defined as a text-based shared parameter and is identified by the
+                GUID "ab1be1ed-1730-433c-b2c6-51edfafe84b5".
+  example: []
+  syntax:
+    content: >-
+      [Guid("ab1be1ed-1730-433c-b2c6-51edfafe84b5")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      StartPap = 22
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("ab1be1ed-1730-433c-b2c6-51edfafe84b5")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      StartPap = 22
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ab1be1ed-1730-433c-b2c6-51edfafe84b5
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.EndPap
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.EndPap
+  id: EndPap
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: EndPap
+  nameWithType: ToolsSharedParameter.EndPap
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.EndPap
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the end paper (EndPap) parameter for Revit elements, typically used in piping systems.
+  remarks: >-
+    This parameter is associated with Revit categories such as pipes and pipe fittings.  It is defined
+                as a shared parameter of type <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("b1af6c8f-8b44-4e5d-ad1d-80deb78bc6b6")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      EndPap = 23
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("b1af6c8f-8b44-4e5d-ad1d-80deb78bc6b6")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      EndPap = 23
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: b1af6c8f-8b44-4e5d-ad1d-80deb78bc6b6
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Run1Dim
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Run1Dim
+  id: Run1Dim
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Run1Dim
+  nameWithType: ToolsSharedParameter.Run1Dim
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Run1Dim
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter for specifying the dimension of a pipe run in Revit.
+  remarks: This parameter is associated with the "1_RUN DIM" description and is categorized under  BuiltInCategory.OST_PipeCurves. It is defined as a text-based shared parameter.
+  example: []
+  syntax:
+    content: >-
+      [Guid("5fa85912-77b2-4d48-a7df-5e524aa45c43")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Run1Dim = 24
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("5fa85912-77b2-4d48-a7df-5e524aa45c43")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Run1Dim = 24
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 5fa85912-77b2-4d48-a7df-5e524aa45c43
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Pap1
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Pap1
+  id: Pap1
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Pap1
+  nameWithType: ToolsSharedParameter.Pap1
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Pap1
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter type for Revit elements, specifically associated with pipe curves.
+  remarks: >-
+    This class is identified by the GUID "c0932a83-87c2-4286-9c28-d4eb4ae03ef8" and is categorized under
+                the Revit built-in category BuiltInCategory.OST_PipeCurves. It is intended for use with shared
+                parameters of type <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Guid("c0932a83-87c2-4286-9c28-d4eb4ae03ef8")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Pap1 = 25
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("c0932a83-87c2-4286-9c28-d4eb4ae03ef8")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Pap1 = 25
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: c0932a83-87c2-4286-9c28-d4eb4ae03ef8
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Run2Dim
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Run2Dim
+  id: Run2Dim
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Run2Dim
+  nameWithType: ToolsSharedParameter.Run2Dim
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Run2Dim
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter for specifying the 2_RUN DIM value in Revit.
+  remarks: >-
+    This parameter is associated with pipe curves in Revit and is categorized as a text parameter. It is
+                identified by the GUID "28aba22e-1438-4608-b8ce-a85e52854267".
+  example: []
+  syntax:
+    content: >-
+      [Guid("28aba22e-1438-4608-b8ce-a85e52854267")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Run2Dim = 26
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("28aba22e-1438-4608-b8ce-a85e52854267")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Run2Dim = 26
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 28aba22e-1438-4608-b8ce-a85e52854267
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Pap2
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Pap2
+  id: Pap2
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Pap2
+  nameWithType: ToolsSharedParameter.Pap2
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Pap2
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter with the identifier "2_PAP" for use in Revit's pipe curves category.
+  remarks: >-
+    This parameter is associated with the BuiltInCategory.OST_PipeCurves category in
+                Revit and is defined as a text-based shared parameter. It is identified by the GUID
+                "64f2f492-72f6-4e92-9b54-4e6bd8845275".
+  example: []
+  syntax:
+    content: >-
+      [Guid("64f2f492-72f6-4e92-9b54-4e6bd8845275")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Pap2 = 27
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("64f2f492-72f6-4e92-9b54-4e6bd8845275")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Pap2 = 27
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 64f2f492-72f6-4e92-9b54-4e6bd8845275
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Run3Dim
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Run3Dim
+  id: Run3Dim
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Run3Dim
+  nameWithType: ToolsSharedParameter.Run3Dim
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Run3Dim
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter for the "3_RUN DIM" property in Revit, associated with pipe curves.
+  remarks: >-
+    This parameter is identified by the GUID "47e8420e-dc38-47ce-9dbd-74358a69a28c" and is categorized
+                under BuiltInCategory.OST_PipeCurves. It is defined as a text-based shared parameter.
+  example: []
+  syntax:
+    content: >-
+      [Guid("47e8420e-dc38-47ce-9dbd-74358a69a28c")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Run3Dim = 28
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("47e8420e-dc38-47ce-9dbd-74358a69a28c")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Run3Dim = 28
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 47e8420e-dc38-47ce-9dbd-74358a69a28c
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Pap3
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Pap3
+  id: Pap3
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Pap3
+  nameWithType: ToolsSharedParameter.Pap3
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Pap3
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter with the identifier "3_PAP" for use in Revit's pipe curves category.
+  remarks: >-
+    This parameter is associated with the BuiltInCategory.OST_PipeCurves category in Revit
+                and is defined as a text-based shared parameter. It is identified by the GUID
+                "4acd2fa4-e8c4-4d00-89e6-bdeed126fb39".
+  example: []
+  syntax:
+    content: >-
+      [Guid("4acd2fa4-e8c4-4d00-89e6-bdeed126fb39")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Pap3 = 29
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("4acd2fa4-e8c4-4d00-89e6-bdeed126fb39")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Pap3 = 29
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 4acd2fa4-e8c4-4d00-89e6-bdeed126fb39
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Run4Dim
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Run4Dim
+  id: Run4Dim
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Run4Dim
+  nameWithType: ToolsSharedParameter.Run4Dim
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Run4Dim
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter for specifying the "4_RUN DIM" value in Revit pipe curves.
+  remarks: This parameter is associated with the "4_RUN DIM" description and is categorized under  BuiltInCategory.OST_PipeCurves. It is defined as a text-based shared parameter.
+  example: []
+  syntax:
+    content: >-
+      [Guid("216fb144-f402-4d1b-b6f9-dc1f62850017")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Run4Dim = 30
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("216fb144-f402-4d1b-b6f9-dc1f62850017")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Run4Dim = 30
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 216fb144-f402-4d1b-b6f9-dc1f62850017
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Pap4
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Pap4
+  id: Pap4
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Pap4
+  nameWithType: ToolsSharedParameter.Pap4
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Pap4
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter type with the identifier "4_PAP" for use in Revit.
+  remarks: >-
+    This parameter is associated with the Revit category BuiltInCategory.OST_PipeCurves 
+                and is defined as a text-based shared parameter. It is identified by the GUID 
+                "b710b589-43a3-4663-9f5d-c7c255095194".
+  example: []
+  syntax:
+    content: >-
+      [Guid("b710b589-43a3-4663-9f5d-c7c255095194")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Pap4 = 31
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("b710b589-43a3-4663-9f5d-c7c255095194")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Pap4 = 31
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: b710b589-43a3-4663-9f5d-c7c255095194
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Run5Dim
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Run5Dim
+  id: Run5Dim
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Run5Dim
+  nameWithType: ToolsSharedParameter.Run5Dim
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Run5Dim
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter for specifying the "5_RUN DIM" value in Revit.
+  remarks: This parameter is associated with the "PipeCurves" category in Revit and is of type <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>. It is identified by the GUID "236886e5-b9d9-4a7a-a456-27324bb33869".
+  example: []
+  syntax:
+    content: >-
+      [Guid("236886e5-b9d9-4a7a-a456-27324bb33869")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Run5Dim = 32
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("236886e5-b9d9-4a7a-a456-27324bb33869")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Run5Dim = 32
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 236886e5-b9d9-4a7a-a456-27324bb33869
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Pap5
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Pap5
+  id: Pap5
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Pap5
+  nameWithType: ToolsSharedParameter.Pap5
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Pap5
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter with the identifier "5_PAP" for use in Revit projects.
+  remarks: >-
+    This parameter is associated with the Revit category BuiltInCategory.OST_PipeCurves 
+                and is defined as a text-based shared parameter. It is identified by the GUID 
+                "2073ad09-f450-4369-b152-366f3c97f352".
+  example: []
+  syntax:
+    content: >-
+      [Guid("2073ad09-f450-4369-b152-366f3c97f352")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Pap5 = 33
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("2073ad09-f450-4369-b152-366f3c97f352")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Pap5 = 33
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 2073ad09-f450-4369-b152-366f3c97f352
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Run6Dim
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Run6Dim
+  id: Run6Dim
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Run6Dim
+  nameWithType: ToolsSharedParameter.Run6Dim
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Run6Dim
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter for specifying the "6_RUN DIM" value associated with pipe curves in Revit.
+  remarks: >-
+    This parameter is categorized under the Revit built-in category BuiltInCategory.OST_PipeCurves  and is defined as a text-based shared parameter. It is identified by the
+                GUID "5914c51d-8028-48c3-bde0-98e21dca0d67".
+  example: []
+  syntax:
+    content: >-
+      [Guid("5914c51d-8028-48c3-bde0-98e21dca0d67")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Run6Dim = 34
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("5914c51d-8028-48c3-bde0-98e21dca0d67")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Run6Dim = 34
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 5914c51d-8028-48c3-bde0-98e21dca0d67
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Pap6
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Pap6
+  id: Pap6
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Pap6
+  nameWithType: ToolsSharedParameter.Pap6
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Pap6
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter with the identifier "6_PAP" for use in Revit projects.
+  remarks: >-
+    This parameter is associated with the Revit category BuiltInCategory.OST_PipeCurves 
+                and is defined as a text-based shared parameter. It is identified by the GUID 
+                "b25b7441-fe65-4a68-b5da-0195cf452a66".
+  example: []
+  syntax:
+    content: >-
+      [Guid("b25b7441-fe65-4a68-b5da-0195cf452a66")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Pap6 = 35
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("b25b7441-fe65-4a68-b5da-0195cf452a66")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Pap6 = 35
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: b25b7441-fe65-4a68-b5da-0195cf452a66
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Run7Dim
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Run7Dim
+  id: Run7Dim
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Run7Dim
+  nameWithType: ToolsSharedParameter.Run7Dim
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Run7Dim
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter for specifying the "7_RUN DIM" value in Revit.
+  remarks: This parameter is associated with the "PipeCurves" category in Revit and is of type <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>. It is identified by the GUID "fc237068-ae9a-45eb-81da-f4a3a7c00a38".
+  example: []
+  syntax:
+    content: >-
+      [Guid("fc237068-ae9a-45eb-81da-f4a3a7c00a38")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Run7Dim = 36
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("fc237068-ae9a-45eb-81da-f4a3a7c00a38")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Run7Dim = 36
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: fc237068-ae9a-45eb-81da-f4a3a7c00a38
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Pap7
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Pap7
+  id: Pap7
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Pap7
+  nameWithType: ToolsSharedParameter.Pap7
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Pap7
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter with the identifier "7_PAP" for use in Revit projects.
+  remarks: >-
+    This parameter is associated with the Revit category BuiltInCategory.OST_PipeCurves 
+                and is defined as a text-based shared parameter. It is identified by the GUID 
+                "38005670-ec77-4a15-a561-ff65273fc09a".
+  example: []
+  syntax:
+    content: >-
+      [Guid("38005670-ec77-4a15-a561-ff65273fc09a")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Pap7 = 37
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("38005670-ec77-4a15-a561-ff65273fc09a")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Pap7 = 37
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 38005670-ec77-4a15-a561-ff65273fc09a
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Run8Dim
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Run8Dim
+  id: Run8Dim
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Run8Dim
+  nameWithType: ToolsSharedParameter.Run8Dim
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Run8Dim
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter for specifying the "8_RUN DIM" value in Revit pipe curves.
+  remarks: This parameter is associated with the "8_RUN DIM" description and is categorized under  BuiltInCategory.OST_PipeCurves. It is defined as a text-based shared parameter.
+  example: []
+  syntax:
+    content: >-
+      [Guid("62244904-01e1-45f3-a2c6-cf15ea715713")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Run8Dim = 38
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("62244904-01e1-45f3-a2c6-cf15ea715713")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Run8Dim = 38
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 62244904-01e1-45f3-a2c6-cf15ea715713
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Pap8
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Pap8
+  id: Pap8
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Pap8
+  nameWithType: ToolsSharedParameter.Pap8
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Pap8
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter with the identifier "8_PAP" for use in Revit projects.
+  remarks: This parameter is associated with pipe curves in Revit and is categorized under BuiltInCategory.OST_PipeCurves. It is defined as a text-based shared parameter.
+  example: []
+  syntax:
+    content: >-
+      [Guid("9d447d9e-3100-45b6-9cc9-f6cbe40381ca")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Pap8 = 39
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("9d447d9e-3100-45b6-9cc9-f6cbe40381ca")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Pap8 = 39
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 9d447d9e-3100-45b6-9cc9-f6cbe40381ca
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Run9Dim
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Run9Dim
+  id: Run9Dim
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Run9Dim
+  nameWithType: ToolsSharedParameter.Run9Dim
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Run9Dim
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter for the "9_RUN DIM" dimension, associated with pipe curves in Revit.
+  remarks: >-
+    This parameter is categorized under the BuiltInCategory.OST_PipeCurves category  and is
+                defined as a length parameter. It is identified by the GUID "a5f94330-0a3b-4242-91be-8a66ddc62e56".
+  example: []
+  syntax:
+    content: >-
+      [Guid("a5f94330-0a3b-4242-91be-8a66ddc62e56")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Run9Dim = 40
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("a5f94330-0a3b-4242-91be-8a66ddc62e56")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Run9Dim = 40
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: a5f94330-0a3b-4242-91be-8a66ddc62e56
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.Pap9
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.Pap9
+  id: Pap9
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: Pap9
+  nameWithType: ToolsSharedParameter.Pap9
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.Pap9
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter with the identifier "9_PAP" for use in Revit.
+  remarks: >-
+    This parameter is associated with the Revit category BuiltInCategory.OST_PipeCurves 
+                and is defined as a text-based shared parameter. It is identified by the GUID 
+                "2b164db7-983f-455e-9b0a-ba77061456d6".
+  example: []
+  syntax:
+    content: >-
+      [Guid("2b164db7-983f-455e-9b0a-ba77061456d6")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      Pap9 = 41
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("2b164db7-983f-455e-9b0a-ba77061456d6")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      Pap9 = 41
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 2b164db7-983f-455e-9b0a-ba77061456d6
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
   - type: MB.Common.Attributes.RevitCategoriesAttribute
     ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
     arguments: []

@@ -22,11 +22,16 @@ items:
   fullName: MBF.Revit.Data.Models.MbDocument
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Models/MbDocument.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Models
-  summary: Represents a Revit document, either standalone or linked, including its context and transformation information.
+  summary: Represents a Revit document, including both standalone documents and linked documents.
+  remarks: >-
+    The <xref href="MBF.Revit.Data.Models.MbDocument" data-throw-if-not-resolved="false"></xref> class provides functionality to manage and retrieve information  about
+                Revit documents, including linked documents. It supports operations such as retrieving  all linked documents
+                associated with a base document and accessing properties like the  transformation applied to a linked document or
+                its parent document.
   example: []
   syntax:
     content: public class MbDocument
@@ -41,6 +46,64 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+- uid: MBF.Revit.Data.Models.MbDocument.GetAllDocuments(Autodesk.Revit.DB.Document)
+  commentId: M:MBF.Revit.Data.Models.MbDocument.GetAllDocuments(Autodesk.Revit.DB.Document)
+  id: GetAllDocuments(Autodesk.Revit.DB.Document)
+  parent: MBF.Revit.Data.Models.MbDocument
+  langs:
+  - csharp
+  - vb
+  name: GetAllDocuments(Document)
+  nameWithType: MbDocument.GetAllDocuments(Document)
+  fullName: MBF.Revit.Data.Models.MbDocument.GetAllDocuments(Autodesk.Revit.DB.Document)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Models/MbDocument.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Retrieves a list of <xref href="MBF.Revit.Data.Models.MbDocument" data-throw-if-not-resolved="false"></xref> instances including the base document and all linked documents.
+  example: []
+  syntax:
+    content: public static List<MbDocument> GetAllDocuments(Document doc)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The base Revit document.
+    return:
+      type: System.Collections.Generic.List{MBF.Revit.Data.Models.MbDocument}
+      description: A list of <xref href="MBF.Revit.Data.Models.MbDocument" data-throw-if-not-resolved="false"></xref> objects.
+    content.vb: Public Shared Function GetAllDocuments(doc As Document) As List(Of MbDocument)
+  overload: MBF.Revit.Data.Models.MbDocument.GetAllDocuments*
+- uid: MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments(Autodesk.Revit.DB.Document)
+  commentId: M:MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments(Autodesk.Revit.DB.Document)
+  id: GetLinkedDocuments(Autodesk.Revit.DB.Document)
+  parent: MBF.Revit.Data.Models.MbDocument
+  langs:
+  - csharp
+  - vb
+  name: GetLinkedDocuments(Document)
+  nameWithType: MbDocument.GetLinkedDocuments(Document)
+  fullName: MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments(Autodesk.Revit.DB.Document)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Models/MbDocument.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Retrieves all linked documents associated with the given base document.
+  example: []
+  syntax:
+    content: public static List<MbDocument> GetLinkedDocuments(Document doc)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The base Revit document.
+    return:
+      type: System.Collections.Generic.List{MBF.Revit.Data.Models.MbDocument}
+      description: A list of <xref href="MBF.Revit.Data.Models.MbDocument" data-throw-if-not-resolved="false"></xref> objects representing the linked documents.
+    content.vb: Public Shared Function GetLinkedDocuments(doc As Document) As List(Of MbDocument)
+  overload: MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments*
 - uid: MBF.Revit.Data.Models.MbDocument.#ctor(Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)
   commentId: M:MBF.Revit.Data.Models.MbDocument.#ctor(Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)
   id: '#ctor(Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)'
@@ -53,7 +116,7 @@ items:
   fullName: MBF.Revit.Data.Models.MbDocument.MbDocument(Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Document)
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Models/MbDocument.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Models
@@ -85,7 +148,7 @@ items:
   fullName: MBF.Revit.Data.Models.MbDocument.MbDocument(Autodesk.Revit.DB.Document)
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Models/MbDocument.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Models
@@ -102,64 +165,6 @@ items:
   nameWithType.vb: MbDocument.New(Document)
   fullName.vb: MBF.Revit.Data.Models.MbDocument.New(Autodesk.Revit.DB.Document)
   name.vb: New(Document)
-- uid: MBF.Revit.Data.Models.MbDocument.GetAllDocuments(Autodesk.Revit.DB.Document)
-  commentId: M:MBF.Revit.Data.Models.MbDocument.GetAllDocuments(Autodesk.Revit.DB.Document)
-  id: GetAllDocuments(Autodesk.Revit.DB.Document)
-  parent: MBF.Revit.Data.Models.MbDocument
-  langs:
-  - csharp
-  - vb
-  name: GetAllDocuments(Document)
-  nameWithType: MbDocument.GetAllDocuments(Document)
-  fullName: MBF.Revit.Data.Models.MbDocument.GetAllDocuments(Autodesk.Revit.DB.Document)
-  type: Method
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
-  assemblies:
-  - MBF.Revit.Data
-  namespace: MBF.Revit.Data.Models
-  summary: Retrieves a list of <xref href="MBF.Revit.Data.Models.MbDocument" data-throw-if-not-resolved="false"></xref> instances including the base document and all linked documents.
-  example: []
-  syntax:
-    content: public static List<MbDocument> GetAllDocuments(Document doc)
-    parameters:
-    - id: doc
-      type: Autodesk.Revit.DB.Document
-      description: The base Revit document.
-    return:
-      type: System.Collections.Generic.List{MBF.Revit.Data.Models.MbDocument}
-      description: A list of <xref href="MBF.Revit.Data.Models.MbDocument" data-throw-if-not-resolved="false"></xref> objects.
-    content.vb: Public Shared Function GetAllDocuments(doc As Document) As List(Of MbDocument)
-  overload: MBF.Revit.Data.Models.MbDocument.GetAllDocuments*
-- uid: MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments(Autodesk.Revit.DB.Document)
-  commentId: M:MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments(Autodesk.Revit.DB.Document)
-  id: GetLinkedDocuments(Autodesk.Revit.DB.Document)
-  parent: MBF.Revit.Data.Models.MbDocument
-  langs:
-  - csharp
-  - vb
-  name: GetLinkedDocuments(Document)
-  nameWithType: MbDocument.GetLinkedDocuments(Document)
-  fullName: MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments(Autodesk.Revit.DB.Document)
-  type: Method
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
-  assemblies:
-  - MBF.Revit.Data
-  namespace: MBF.Revit.Data.Models
-  summary: Retrieves all linked documents associated with the given base document.
-  example: []
-  syntax:
-    content: public static List<MbDocument> GetLinkedDocuments(Document doc)
-    parameters:
-    - id: doc
-      type: Autodesk.Revit.DB.Document
-      description: The base Revit document.
-    return:
-      type: System.Collections.Generic.List{MBF.Revit.Data.Models.MbDocument}
-      description: A list of <xref href="MBF.Revit.Data.Models.MbDocument" data-throw-if-not-resolved="false"></xref> objects representing the linked documents.
-    content.vb: Public Shared Function GetLinkedDocuments(doc As Document) As List(Of MbDocument)
-  overload: MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments*
 - uid: MBF.Revit.Data.Models.MbDocument.Document
   commentId: P:MBF.Revit.Data.Models.MbDocument.Document
   id: Document
@@ -172,7 +177,7 @@ items:
   fullName: MBF.Revit.Data.Models.MbDocument.Document
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Models/MbDocument.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Models
@@ -197,7 +202,7 @@ items:
   fullName: MBF.Revit.Data.Models.MbDocument.IsLinked
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Models/MbDocument.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Models
@@ -222,7 +227,7 @@ items:
   fullName: MBF.Revit.Data.Models.MbDocument.LinkParentDocument
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Models/MbDocument.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Models
@@ -247,7 +252,7 @@ items:
   fullName: MBF.Revit.Data.Models.MbDocument.LinkInstance
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Models/MbDocument.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Models
@@ -272,7 +277,7 @@ items:
   fullName: MBF.Revit.Data.Models.MbDocument.LinkTransform
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Models/MbDocument.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Models/MbDocument.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Models
@@ -286,6 +291,13 @@ items:
     content.vb: Public Property LinkTransform As Transform
   overload: MBF.Revit.Data.Models.MbDocument.LinkTransform*
 references:
+- uid: MBF.Revit.Data.Models.MbDocument
+  commentId: T:MBF.Revit.Data.Models.MbDocument
+  isExternal: true
+  href: MBF.Revit.Data.Models.MbDocument.html
+  name: MbDocument
+  nameWithType: MbDocument
+  fullName: MBF.Revit.Data.Models.MbDocument
 - uid: MBF.Revit.Data.Models
   commentId: N:MBF.Revit.Data.Models
   isExternal: true
@@ -570,35 +582,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: MBF.Revit.Data.Models.MbDocument
-  commentId: T:MBF.Revit.Data.Models.MbDocument
-  isExternal: true
-  href: MBF.Revit.Data.Models.MbDocument.html
-  name: MbDocument
-  nameWithType: MbDocument
-  fullName: MBF.Revit.Data.Models.MbDocument
-- uid: MBF.Revit.Data.Models.MbDocument.#ctor*
-  commentId: Overload:MBF.Revit.Data.Models.MbDocument.#ctor
-  isExternal: true
-  href: MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument__ctor_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_Document_
-  name: MbDocument
-  nameWithType: MbDocument.MbDocument
-  fullName: MBF.Revit.Data.Models.MbDocument.MbDocument
-  nameWithType.vb: MbDocument.New
-  fullName.vb: MBF.Revit.Data.Models.MbDocument.New
-  name.vb: New
-- uid: Autodesk.Revit.DB.RevitLinkInstance
-  commentId: T:Autodesk.Revit.DB.RevitLinkInstance
-  isExternal: true
-  name: RevitLinkInstance
-  nameWithType: RevitLinkInstance
-  fullName: Autodesk.Revit.DB.RevitLinkInstance
-- uid: Autodesk.Revit.DB.Document
-  commentId: T:Autodesk.Revit.DB.Document
-  isExternal: true
-  name: Document
-  nameWithType: Document
-  fullName: Autodesk.Revit.DB.Document
 - uid: MBF.Revit.Data.Models.MbDocument.GetAllDocuments*
   commentId: Overload:MBF.Revit.Data.Models.MbDocument.GetAllDocuments
   isExternal: true
@@ -606,6 +589,12 @@ references:
   name: GetAllDocuments
   nameWithType: MbDocument.GetAllDocuments
   fullName: MBF.Revit.Data.Models.MbDocument.GetAllDocuments
+- uid: Autodesk.Revit.DB.Document
+  commentId: T:Autodesk.Revit.DB.Document
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
 - uid: System.Collections.Generic.List{MBF.Revit.Data.Models.MbDocument}
   commentId: T:System.Collections.Generic.List{MBF.Revit.Data.Models.MbDocument}
   parent: System.Collections.Generic
@@ -713,6 +702,22 @@ references:
   name: GetLinkedDocuments
   nameWithType: MbDocument.GetLinkedDocuments
   fullName: MBF.Revit.Data.Models.MbDocument.GetLinkedDocuments
+- uid: MBF.Revit.Data.Models.MbDocument.#ctor*
+  commentId: Overload:MBF.Revit.Data.Models.MbDocument.#ctor
+  isExternal: true
+  href: MBF.Revit.Data.Models.MbDocument.html#MBF_Revit_Data_Models_MbDocument__ctor_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_Document_
+  name: MbDocument
+  nameWithType: MbDocument.MbDocument
+  fullName: MBF.Revit.Data.Models.MbDocument.MbDocument
+  nameWithType.vb: MbDocument.New
+  fullName.vb: MBF.Revit.Data.Models.MbDocument.New
+  name.vb: New
+- uid: Autodesk.Revit.DB.RevitLinkInstance
+  commentId: T:Autodesk.Revit.DB.RevitLinkInstance
+  isExternal: true
+  name: RevitLinkInstance
+  nameWithType: RevitLinkInstance
+  fullName: Autodesk.Revit.DB.RevitLinkInstance
 - uid: MBF.Revit.Data.Models.MbDocument.Document
   commentId: P:MBF.Revit.Data.Models.MbDocument.Document
   isExternal: true

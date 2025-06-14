@@ -16,7 +16,7 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
@@ -24,10 +24,20 @@ items:
     A selection filter that allows selecting elements from the host or a linked Revit model,
 
     restricted to a specific set of categories.
+  remarks: >-
+    <p>Error messages:</p>
+
+    <ul><li>If <code>categories</code> is <code>null</code> in the constructor, an empty list is used.</li><li>If <code>_revitLinkInstance</code> is <code>null</code> in <xref href="MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference%2cAutodesk.Revit.DB.XYZ)" data-throw-if-not-resolved="false"></xref>, returns <code>false</code>.</li><li>If <code>linkedDoc</code> is <code>null</code> in <xref href="MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference%2cAutodesk.Revit.DB.XYZ)" data-throw-if-not-resolved="false"></xref>, returns <code>false</code>.</li></ul>
   example: []
   syntax:
-    content: 'public class HostOrLinkedCategorySelectionFilter : ISelectionFilter'
-    content.vb: Public Class HostOrLinkedCategorySelectionFilter Implements ISelectionFilter
+    content: >-
+      [LogAspect]
+
+      public class HostOrLinkedCategorySelectionFilter : ISelectionFilter
+    content.vb: >-
+      <LogAspect>
+
+      Public Class HostOrLinkedCategorySelectionFilter Implements ISelectionFilter
   inheritance:
   - System.Object
   implements:
@@ -40,6 +50,10 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: MB.Common.Aspects.LogAspect
+    ctor: MB.Common.Aspects.LogAspect.#ctor
+    arguments: []
 - uid: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.#ctor(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Category})
   commentId: M:MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.#ctor(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Category})
   id: '#ctor(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Category})'
@@ -52,11 +66,12 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.HostOrLinkedCategorySelectionFilter(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Category>)
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
   summary: Initializes a new instance of the <xref href="MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter" data-throw-if-not-resolved="false"></xref> class.
+  remarks: <ul><li>If <code class="paramref">categories</code> is <code>null</code>, an empty list is used.</li></ul>
   example: []
   syntax:
     content: public HostOrLinkedCategorySelectionFilter(IEnumerable<Category> categories)
@@ -81,7 +96,7 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
@@ -95,7 +110,7 @@ items:
       description: The element being evaluated.
     return:
       type: System.Boolean
-      description: <code>true</code> if it's a host element in the allowed categories or a RevitLinkInstance; otherwise, <code>false</code>.
+      description: <code>true</code> if it's a host element in the allowed categories or a <xref href="Autodesk.Revit.DB.RevitLinkInstance" data-throw-if-not-resolved="false"></xref>; otherwise, <code>false</code>.
     content.vb: Public Function AllowElement(elem As Element) As Boolean
   overload: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowElement*
 - uid: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)
@@ -110,11 +125,12 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
   summary: Determines whether a reference (e.g. in a linked file) is selectable.
+  remarks: <ul><li>Returns <code>false</code> if <code>_revitLinkInstance</code> is <code>null</code>.</li><li>Returns <code>false</code> if <code>linkedDoc</code> is <code>null</code>.</li></ul>
   example: []
   syntax:
     content: public bool AllowReference(Reference reference, XYZ position)
@@ -131,6 +147,9 @@ items:
     content.vb: Public Function AllowReference(reference As Reference, position As XYZ) As Boolean
   overload: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference*
 references:
+- uid: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)
+  commentId: M:MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)
+  isExternal: true
 - uid: MBF.Revit.Data.SelectionFilters
   commentId: N:MBF.Revit.Data.SelectionFilters
   isExternal: true
@@ -535,6 +554,12 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Autodesk.Revit.DB.RevitLinkInstance
+  commentId: T:Autodesk.Revit.DB.RevitLinkInstance
+  isExternal: true
+  name: RevitLinkInstance
+  nameWithType: RevitLinkInstance
+  fullName: Autodesk.Revit.DB.RevitLinkInstance
 - uid: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowElement*
   commentId: Overload:MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowElement
   isExternal: true
@@ -571,7 +596,6 @@ references:
   nameWithType: Reference
   fullName: Autodesk.Revit.DB.Reference
 - uid: Autodesk.Revit.DB.XYZ
-  commentId: T:Autodesk.Revit.DB.XYZ
   isExternal: true
   name: XYZ
   nameWithType: XYZ

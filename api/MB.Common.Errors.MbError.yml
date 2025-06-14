@@ -22,7 +22,7 @@ items:
   summary: >-
     Defines a list of error codes used throughout the application.
 
-    Each enum value is annotated with <xref href="MB.Common.Attributes.ErrorInformationAttribute" data-throw-if-not-resolved="false"></xref> 
+    Each enum value is annotated with <xref href="MB.Common.Attributes.ErrorInformationAttribute" data-throw-if-not-resolved="false"></xref>
 
     to provide a user-friendly error message.
   example: []

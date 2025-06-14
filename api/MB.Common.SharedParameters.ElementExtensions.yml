@@ -47,7 +47,10 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.SharedParameters
-  summary: Retrieves a Revit <xref href="Autodesk.Revit.DB.Parameter" data-throw-if-not-resolved="false"></xref> associated with the specified shared parameter from the given <xref href="Element" data-throw-if-not-resolved="false"></xref>.
+  summary: >-
+    Retrieves a Revit <xref href="Autodesk.Revit.DB.Parameter" data-throw-if-not-resolved="false"></xref> associated with the specified shared parameter from the given
+
+    <xref href="Element" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public static Parameter MbGetParameter(this Element element, ToolsSharedParameter sharedParameter)

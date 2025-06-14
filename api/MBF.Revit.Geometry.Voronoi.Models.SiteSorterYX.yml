@@ -15,11 +15,16 @@ items:
   fullName: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/VoronoiElements.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
-  summary: Compares two sites based on their y-coordinates, and x-coordinates if y-coordinates are equal.
+  summary: >-
+    Provides a comparison mechanism for sorting <xref href="MBF.Revit.Geometry.Voronoi.Models.Site" data-throw-if-not-resolved="false"></xref> instances.
+
+    Sorts first by Y-coordinate, then by X-coordinate if Y values are equal.
+
+    Useful for processing sites in Fortune's algorithm.
   example: []
   syntax:
     content: 'public class SiteSorterYX : IComparer<Site>'
@@ -48,20 +53,29 @@ items:
   fullName: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.Compare(MBF.Revit.Geometry.Voronoi.Models.Site, MBF.Revit.Geometry.Voronoi.Models.Site)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/VoronoiElements.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: Compares two <xref href="MBF.Revit.Geometry.Voronoi.Models.Site" data-throw-if-not-resolved="false"></xref> objects based on their Y and X coordinates.
   example: []
   syntax:
     content: public int Compare(Site p1, Site p2)
     parameters:
     - id: p1
       type: MBF.Revit.Geometry.Voronoi.Models.Site
+      description: The first site to compare.
     - id: p2
       type: MBF.Revit.Geometry.Voronoi.Models.Site
+      description: The second site to compare.
     return:
       type: System.Int32
+      description: >-
+        -1 if <code class="paramref">p1</code> comes before <code class="paramref">p2</code>,
+
+        1 if it comes after,
+
+        0 if they are equal.
     content.vb: Public Function Compare(p1 As Site, p2 As Site) As Integer
   overload: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.Compare*
   implements:
@@ -78,7 +92,7 @@ items:
   fullName: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.SiteSorterYX()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/VoronoiElements.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
@@ -90,6 +104,14 @@ items:
   fullName.vb: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.New()
   name.vb: New()
 references:
+- uid: MBF.Revit.Geometry.Voronoi.Models.Site
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Site
+  parent: MBF.Revit.Geometry.Voronoi.Models
+  isExternal: true
+  href: MBF.Revit.Geometry.Voronoi.Models.Site.html
+  name: Site
+  nameWithType: Site
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Site
 - uid: MBF.Revit.Geometry.Voronoi.Models
   commentId: N:MBF.Revit.Geometry.Voronoi.Models
   isExternal: true
@@ -535,14 +557,6 @@ references:
     isExternal: true
     href: MBF.Revit.Geometry.Voronoi.Models.Site.html
   - name: )
-- uid: MBF.Revit.Geometry.Voronoi.Models.Site
-  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Site
-  parent: MBF.Revit.Geometry.Voronoi.Models
-  isExternal: true
-  href: MBF.Revit.Geometry.Voronoi.Models.Site.html
-  name: Site
-  nameWithType: Site
-  fullName: MBF.Revit.Geometry.Voronoi.Models.Site
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System

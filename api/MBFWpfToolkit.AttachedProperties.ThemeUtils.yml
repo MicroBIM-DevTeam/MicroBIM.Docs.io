@@ -1,0 +1,477 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.AttachedProperties.ThemeUtils
+  commentId: T:MBFWpfToolkit.AttachedProperties.ThemeUtils
+  id: ThemeUtils
+  parent: MBFWpfToolkit.AttachedProperties
+  children:
+  - MBFWpfToolkit.AttachedProperties.ThemeUtils.ApplyThemeForElement(System.Windows.FrameworkElement,System.String)
+  - MBFWpfToolkit.AttachedProperties.ThemeUtils.GetCurrentThemeForElement(System.Windows.FrameworkElement)
+  - MBFWpfToolkit.AttachedProperties.ThemeUtils.HasMicroBimTheme(System.Windows.FrameworkElement)
+  langs:
+  - csharp
+  - vb
+  name: ThemeUtils
+  nameWithType: ThemeUtils
+  fullName: MBFWpfToolkit.AttachedProperties.ThemeUtils
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ThemeUtils.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.AttachedProperties
+  summary: Provides utility methods for handling theme-related operations on WPF <xref href="System.Windows.FrameworkElement" data-throw-if-not-resolved="false"></xref> instances.
+  example: []
+  syntax:
+    content: public static class ThemeUtils
+    content.vb: Public Module ThemeUtils
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBFWpfToolkit.AttachedProperties.ThemeUtils.HasMicroBimTheme(System.Windows.FrameworkElement)
+  commentId: M:MBFWpfToolkit.AttachedProperties.ThemeUtils.HasMicroBimTheme(System.Windows.FrameworkElement)
+  id: HasMicroBimTheme(System.Windows.FrameworkElement)
+  parent: MBFWpfToolkit.AttachedProperties.ThemeUtils
+  langs:
+  - csharp
+  - vb
+  name: HasMicroBimTheme(FrameworkElement)
+  nameWithType: ThemeUtils.HasMicroBimTheme(FrameworkElement)
+  fullName: MBFWpfToolkit.AttachedProperties.ThemeUtils.HasMicroBimTheme(System.Windows.FrameworkElement)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ThemeUtils.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.AttachedProperties
+  example: []
+  syntax:
+    content: public static bool HasMicroBimTheme(FrameworkElement element)
+    parameters:
+    - id: element
+      type: System.Windows.FrameworkElement
+      description: The FrameworkElement to inspect for the MicroBIM theme.
+    return:
+      type: System.Boolean
+      description: True if the FrameworkElement's resources include the MicroBIM theme; otherwise, false.
+    content.vb: Public Shared Function HasMicroBimTheme(element As FrameworkElement) As Boolean
+  overload: MBFWpfToolkit.AttachedProperties.ThemeUtils.HasMicroBimTheme*
+- uid: MBFWpfToolkit.AttachedProperties.ThemeUtils.GetCurrentThemeForElement(System.Windows.FrameworkElement)
+  commentId: M:MBFWpfToolkit.AttachedProperties.ThemeUtils.GetCurrentThemeForElement(System.Windows.FrameworkElement)
+  id: GetCurrentThemeForElement(System.Windows.FrameworkElement)
+  parent: MBFWpfToolkit.AttachedProperties.ThemeUtils
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentThemeForElement(FrameworkElement)
+  nameWithType: ThemeUtils.GetCurrentThemeForElement(FrameworkElement)
+  fullName: MBFWpfToolkit.AttachedProperties.ThemeUtils.GetCurrentThemeForElement(System.Windows.FrameworkElement)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ThemeUtils.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.AttachedProperties
+  example: []
+  syntax:
+    content: public static string? GetCurrentThemeForElement(FrameworkElement element)
+    parameters:
+    - id: element
+      type: System.Windows.FrameworkElement
+      description: >-
+        The FrameworkElement for which the current theme
+                    is to be identified. Must be non-null and have resource dictionaries.
+    return:
+      type: System.String
+      description: >-
+        A string representing the current theme applied to the element ("Dark"
+
+        or "Light"), or null if no compatible theme is found.
+    content.vb: Public Shared Function GetCurrentThemeForElement(element As FrameworkElement) As String
+  overload: MBFWpfToolkit.AttachedProperties.ThemeUtils.GetCurrentThemeForElement*
+- uid: MBFWpfToolkit.AttachedProperties.ThemeUtils.ApplyThemeForElement(System.Windows.FrameworkElement,System.String)
+  commentId: M:MBFWpfToolkit.AttachedProperties.ThemeUtils.ApplyThemeForElement(System.Windows.FrameworkElement,System.String)
+  id: ApplyThemeForElement(System.Windows.FrameworkElement,System.String)
+  parent: MBFWpfToolkit.AttachedProperties.ThemeUtils
+  langs:
+  - csharp
+  - vb
+  name: ApplyThemeForElement(FrameworkElement, string)
+  nameWithType: ThemeUtils.ApplyThemeForElement(FrameworkElement, string)
+  fullName: MBFWpfToolkit.AttachedProperties.ThemeUtils.ApplyThemeForElement(System.Windows.FrameworkElement, string)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ThemeUtils.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.AttachedProperties
+  summary: Applies a specified theme (Dark or Light) to the given FrameworkElement.
+  example: []
+  syntax:
+    content: public static void ApplyThemeForElement(FrameworkElement element, string darkOrLight)
+    parameters:
+    - id: element
+      type: System.Windows.FrameworkElement
+      description: The FrameworkElement to which the theme will be applied.
+    - id: darkOrLight
+      type: System.String
+      description: >-
+        A string specifying the theme to apply.
+
+        Accepted values are "Dark" or "Light".
+    content.vb: Public Shared Sub ApplyThemeForElement(element As FrameworkElement, darkOrLight As String)
+  overload: MBFWpfToolkit.AttachedProperties.ThemeUtils.ApplyThemeForElement*
+  nameWithType.vb: ThemeUtils.ApplyThemeForElement(FrameworkElement, String)
+  fullName.vb: MBFWpfToolkit.AttachedProperties.ThemeUtils.ApplyThemeForElement(System.Windows.FrameworkElement, String)
+  name.vb: ApplyThemeForElement(FrameworkElement, String)
+references:
+- uid: System.Windows.FrameworkElement
+  commentId: T:System.Windows.FrameworkElement
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement
+  name: FrameworkElement
+  nameWithType: FrameworkElement
+  fullName: System.Windows.FrameworkElement
+- uid: MBFWpfToolkit.AttachedProperties
+  commentId: N:MBFWpfToolkit.AttachedProperties
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit.AttachedProperties
+  nameWithType: MBFWpfToolkit.AttachedProperties
+  fullName: MBFWpfToolkit.AttachedProperties
+  spec.csharp:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.AttachedProperties
+    name: AttachedProperties
+    isExternal: true
+    href: MBFWpfToolkit.AttachedProperties.html
+  spec.vb:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.AttachedProperties
+    name: AttachedProperties
+    isExternal: true
+    href: MBFWpfToolkit.AttachedProperties.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Windows
+  commentId: N:System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows
+  nameWithType: System.Windows
+  fullName: System.Windows
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MBFWpfToolkit.AttachedProperties.ThemeUtils.HasMicroBimTheme*
+  commentId: Overload:MBFWpfToolkit.AttachedProperties.ThemeUtils.HasMicroBimTheme
+  isExternal: true
+  href: MBFWpfToolkit.AttachedProperties.ThemeUtils.html#MBFWpfToolkit_AttachedProperties_ThemeUtils_HasMicroBimTheme_System_Windows_FrameworkElement_
+  name: HasMicroBimTheme
+  nameWithType: ThemeUtils.HasMicroBimTheme
+  fullName: MBFWpfToolkit.AttachedProperties.ThemeUtils.HasMicroBimTheme
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MBFWpfToolkit.AttachedProperties.ThemeUtils.GetCurrentThemeForElement*
+  commentId: Overload:MBFWpfToolkit.AttachedProperties.ThemeUtils.GetCurrentThemeForElement
+  isExternal: true
+  href: MBFWpfToolkit.AttachedProperties.ThemeUtils.html#MBFWpfToolkit_AttachedProperties_ThemeUtils_GetCurrentThemeForElement_System_Windows_FrameworkElement_
+  name: GetCurrentThemeForElement
+  nameWithType: ThemeUtils.GetCurrentThemeForElement
+  fullName: MBFWpfToolkit.AttachedProperties.ThemeUtils.GetCurrentThemeForElement
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MBFWpfToolkit.AttachedProperties.ThemeUtils.ApplyThemeForElement*
+  commentId: Overload:MBFWpfToolkit.AttachedProperties.ThemeUtils.ApplyThemeForElement
+  isExternal: true
+  href: MBFWpfToolkit.AttachedProperties.ThemeUtils.html#MBFWpfToolkit_AttachedProperties_ThemeUtils_ApplyThemeForElement_System_Windows_FrameworkElement_System_String_
+  name: ApplyThemeForElement
+  nameWithType: ThemeUtils.ApplyThemeForElement
+  fullName: MBFWpfToolkit.AttachedProperties.ThemeUtils.ApplyThemeForElement
+shouldSkipMarkup: true

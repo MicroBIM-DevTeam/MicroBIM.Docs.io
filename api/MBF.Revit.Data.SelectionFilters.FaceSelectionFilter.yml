@@ -17,18 +17,30 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/SelectionFilters/FaceSelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/FaceSelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
   summary: >-
-    A selection filter that allows selecting <xref href="Face" data-throw-if-not-resolved="false"></xref> geometry references 
+    Provides a selection filter for Revit elements and references, allowing selection of elements based on their
 
-    from elements belonging to specific <xref href="BuiltInCategory" data-throw-if-not-resolved="false"></xref> values.
+    category and ensuring that references correspond to geometric faces.
+  remarks: >-
+    This filter can be used to restrict element selection to specific categories or to ensure that only
+                face references are considered valid. It supports two modes of operation: <ul><li>Allowing all element categories by default.</li><li>Restricting
+                selection to specific categories by providing a list of allowed categories.</li></ul> The filter
+                is particularly useful in scenarios where precise control over element or reference selection is required, such as
+                in custom Revit add-ins or tools.
   example: []
   syntax:
-    content: 'public class FaceSelectionFilter : ISelectionFilter'
-    content.vb: Public Class FaceSelectionFilter Implements ISelectionFilter
+    content: >-
+      [LogAspect]
+
+      public class FaceSelectionFilter : ISelectionFilter
+    content.vb: >-
+      <LogAspect>
+
+      Public Class FaceSelectionFilter Implements ISelectionFilter
   inheritance:
   - System.Object
   implements:
@@ -41,6 +53,10 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: MB.Common.Aspects.LogAspect
+    ctor: MB.Common.Aspects.LogAspect.#ctor
+    arguments: []
 - uid: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.#ctor(Autodesk.Revit.DB.Document)
   commentId: M:MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.#ctor(Autodesk.Revit.DB.Document)
   id: '#ctor(Autodesk.Revit.DB.Document)'
@@ -53,7 +69,7 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.FaceSelectionFilter(Autodesk.Revit.DB.Document)
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/SelectionFilters/FaceSelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/FaceSelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
@@ -82,11 +98,14 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.FaceSelectionFilter(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.BuiltInCategory)
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/SelectionFilters/FaceSelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/FaceSelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
-  summary: Initializes a new instance of the <xref href="MBF.Revit.Data.SelectionFilters.FaceSelectionFilter" data-throw-if-not-resolved="false"></xref> that only allows elements from the specified category.
+  summary: >-
+    Initializes a new instance of the <xref href="MBF.Revit.Data.SelectionFilters.FaceSelectionFilter" data-throw-if-not-resolved="false"></xref> that only allows elements from the specified
+
+    category.
   example: []
   syntax:
     content: public FaceSelectionFilter(Document document, BuiltInCategory category)
@@ -114,7 +133,7 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/SelectionFilters/FaceSelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/FaceSelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
@@ -143,7 +162,7 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.AllowReference(Autodesk.Revit.DB.Reference, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/SelectionFilters/FaceSelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/FaceSelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
@@ -164,12 +183,6 @@ items:
     content.vb: Public Function AllowReference(refer As Reference, point As XYZ) As Boolean
   overload: MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.AllowReference*
 references:
-- uid: Face
-  commentId: T:Face
-  isExternal: true
-- uid: BuiltInCategory
-  commentId: T:BuiltInCategory
-  isExternal: true
 - uid: MBF.Revit.Data.SelectionFilters
   commentId: N:MBF.Revit.Data.SelectionFilters
   isExternal: true
@@ -482,6 +495,9 @@ references:
   name: Document
   nameWithType: Document
   fullName: Autodesk.Revit.DB.Document
+- uid: BuiltInCategory
+  commentId: T:BuiltInCategory
+  isExternal: true
 - uid: Autodesk.Revit.DB.BuiltInCategory
   isExternal: true
   name: BuiltInCategory
@@ -523,7 +539,6 @@ references:
   nameWithType: Reference
   fullName: Autodesk.Revit.DB.Reference
 - uid: Autodesk.Revit.DB.XYZ
-  commentId: T:Autodesk.Revit.DB.XYZ
   isExternal: true
   name: XYZ
   nameWithType: XYZ

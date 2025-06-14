@@ -409,7 +409,6 @@ references:
   nameWithType: BoundingBoxComparer.Compare
   fullName: MB.Common.Comparers.BoundingBoxComparer.Compare
 - uid: Autodesk.Revit.DB.XYZ
-  commentId: T:Autodesk.Revit.DB.XYZ
   isExternal: true
   name: XYZ
   nameWithType: XYZ
@@ -425,40 +424,40 @@ references:
   commentId: T:System.ValueTuple{Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ}
   parent: System
   definition: System.ValueTuple`2
-  href: https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.revit.db.xyz,autodesk.revit.db.xyz-.min
-  name: (XYZ min, XYZ max)
-  nameWithType: (XYZ min, XYZ max)
-  fullName: (Autodesk.Revit.DB.XYZ min, Autodesk.Revit.DB.XYZ max)
-  nameWithType.vb: (min As XYZ, max As XYZ)
-  fullName.vb: (min As Autodesk.Revit.DB.XYZ, max As Autodesk.Revit.DB.XYZ)
-  name.vb: (min As XYZ, max As XYZ)
+  href: https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.revit.db.xyz,autodesk.revit.db.xyz-.perpendicular
+  name: (XYZ Perpendicular, XYZ Normal)
+  nameWithType: (XYZ Perpendicular, XYZ Normal)
+  fullName: (Autodesk.Revit.DB.XYZ Perpendicular, Autodesk.Revit.DB.XYZ Normal)
+  nameWithType.vb: (Perpendicular As XYZ, Normal As XYZ)
+  fullName.vb: (Perpendicular As Autodesk.Revit.DB.XYZ, Normal As Autodesk.Revit.DB.XYZ)
+  name.vb: (Perpendicular As XYZ, Normal As XYZ)
   spec.csharp:
   - name: (
   - uid: Autodesk.Revit.DB.XYZ
     name: XYZ
     isExternal: true
   - name: " "
-  - uid: System.ValueTuple{Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ}.min
-    name: min
+  - uid: System.ValueTuple{Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ}.Perpendicular
+    name: Perpendicular
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.revit.db.xyz,autodesk.revit.db.xyz-.min
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.revit.db.xyz,autodesk.revit.db.xyz-.perpendicular
   - name: ','
   - name: " "
   - uid: Autodesk.Revit.DB.XYZ
     name: XYZ
     isExternal: true
   - name: " "
-  - uid: System.ValueTuple{Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ}.max
-    name: max
+  - uid: System.ValueTuple{Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ}.Normal
+    name: Normal
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.revit.db.xyz,autodesk.revit.db.xyz-.max
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.revit.db.xyz,autodesk.revit.db.xyz-.normal
   - name: )
   spec.vb:
   - name: (
-  - uid: System.ValueTuple{Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ}.min
-    name: min
+  - uid: System.ValueTuple{Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ}.Perpendicular
+    name: Perpendicular
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.revit.db.xyz,autodesk.revit.db.xyz-.min
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.revit.db.xyz,autodesk.revit.db.xyz-.perpendicular
   - name: " "
   - name: As
   - name: " "
@@ -467,10 +466,10 @@ references:
     isExternal: true
   - name: ','
   - name: " "
-  - uid: System.ValueTuple{Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ}.max
-    name: max
+  - uid: System.ValueTuple{Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ}.Normal
+    name: Normal
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.revit.db.xyz,autodesk.revit.db.xyz-.max
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.revit.db.xyz,autodesk.revit.db.xyz-.normal
   - name: " "
   - name: As
   - name: " "

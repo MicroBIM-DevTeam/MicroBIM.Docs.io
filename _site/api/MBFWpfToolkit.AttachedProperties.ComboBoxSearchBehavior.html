@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ComboBoxSearchBehavior | MIcroBIM Docs ">
       
-      <meta name="description" content="Provides an attached behavior to enable live search filtering on a .">
+      <meta name="description" content="Provides an attached behavior to enable search functionality in a , allowing live filtering of items based on user input.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior" data-uid="MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior" class="text-break">
-Class ComboBoxSearchBehavior  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/ComboBoxSearchBehavior.cs"><i class="bi bi-code-slash"></i></a>
+Class ComboBoxSearchBehavior  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ComboBoxSearchBehavior.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class ComboBoxSearchBehavior  <a class="header-action link-secondary" title="Vie
   <dl><dt>Assembly</dt><dd>MBFWpfToolkit.dll</dd></dl>
   </div>
 
-  <div class="markdown summary">Provides an attached behavior to enable live search filtering on a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.combobox">ComboBox</a>.</div>
+  <div class="markdown summary">Provides an attached behavior to enable search functionality in a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.combobox">ComboBox</a>,
+allowing live filtering of items based on user input.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -155,10 +156,11 @@ Class ComboBoxSearchBehavior  <a class="header-action link-secondary" title="Vie
 
   <h3 id="MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior_IsSearchEnabledProperty" data-uid="MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.IsSearchEnabledProperty">
   IsSearchEnabledProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/ComboBoxSearchBehavior.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ComboBoxSearchBehavior.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Identifies the IsSearchEnabled dependency property. This property can be attached to a
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.combobox">ComboBox</a> to enable or disable live search filtering functionality.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -171,13 +173,19 @@ Class ComboBoxSearchBehavior  <a class="header-action link-secondary" title="Vie
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyproperty">DependencyProperty</a></dt>
-    <dd></dd>
+    <dd>true if the search functionality is enabled for the associated ComboBox; otherwise, false.
+The default value is false.</dd>
   </dl>
 
 
 
 
 
+  <h4 class="section" id="MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior_IsSearchEnabledProperty_remarks">Remarks</h4>
+  <div class="markdown level1 remarks">When this property is set to true, the ComboBox supports a live search filtering mechanism
+for its items based on the current input text. It also modifies the behavior of the ComboBox,
+making it editable, disabling built-in text search, and keeping the dropdown open during edits.
+When set to false, the standard ComboBox behavior is restored.</div>
 
 
 
@@ -190,10 +198,11 @@ Class ComboBoxSearchBehavior  <a class="header-action link-secondary" title="Vie
 
   <h3 id="MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior_GetFilteredItems_System_Windows_DependencyObject_" data-uid="MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetFilteredItems(System.Windows.DependencyObject)">
   GetFilteredItems(DependencyObject)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/ComboBoxSearchBehavior.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ComboBoxSearchBehavior.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Gets the filtered items associated with the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject">DependencyObject</a>.
+The filtered items are updated dynamically as the user types into the search-enabled ComboBox.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -203,13 +212,13 @@ Class ComboBoxSearchBehavior  <a class="header-action link-secondary" title="Vie
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject">DependencyObject</a></dt>
-    <dd></dd>
+    <dd>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject">DependencyObject</a> for which to retrieve the filtered items.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1">ObservableCollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
+    <dd>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1">ObservableCollection&lt;T&gt;</a> of strings representing the currently filtered items.</dd>
   </dl>
 
 
@@ -226,10 +235,10 @@ Class ComboBoxSearchBehavior  <a class="header-action link-secondary" title="Vie
 
   <h3 id="MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior_GetIsSearchEnabled_System_Windows_DependencyObject_" data-uid="MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetIsSearchEnabled(System.Windows.DependencyObject)">
   GetIsSearchEnabled(DependencyObject)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/ComboBoxSearchBehavior.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ComboBoxSearchBehavior.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Gets the value of the IsSearchEnabled attached property for a specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject">DependencyObject</a>.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -239,13 +248,13 @@ Class ComboBoxSearchBehavior  <a class="header-action link-secondary" title="Vie
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject">DependencyObject</a></dt>
-    <dd></dd>
+    <dd>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject">DependencyObject</a> from which to read the attached property value.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd>A boolean value indicating whether the live search behavior is enabled on the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject">DependencyObject</a>.</dd>
   </dl>
 
 
@@ -262,10 +271,10 @@ Class ComboBoxSearchBehavior  <a class="header-action link-secondary" title="Vie
 
   <h3 id="MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior_SetFilteredItems_System_Windows_DependencyObject_System_Collections_ObjectModel_ObservableCollection_System_String__" data-uid="MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetFilteredItems(System.Windows.DependencyObject,System.Collections.ObjectModel.ObservableCollection{System.String})">
   SetFilteredItems(DependencyObject, ObservableCollection&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/ComboBoxSearchBehavior.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ComboBoxSearchBehavior.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Sets the filtered collection of items to be displayed in the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.combobox">ComboBox</a> based on the current search behavior.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -275,9 +284,9 @@ Class ComboBoxSearchBehavior  <a class="header-action link-secondary" title="Vie
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject">DependencyObject</a></dt>
-    <dd></dd>
+    <dd>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject">DependencyObject</a> to set the filtered items for.</dd>
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1">ObservableCollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
+    <dd>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1">ObservableCollection&lt;T&gt;</a> of filtered items to set.</dd>
   </dl>
 
 
@@ -295,10 +304,11 @@ Class ComboBoxSearchBehavior  <a class="header-action link-secondary" title="Vie
 
   <h3 id="MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior_SetIsSearchEnabled_System_Windows_DependencyObject_System_Boolean_" data-uid="MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetIsSearchEnabled(System.Windows.DependencyObject,System.Boolean)">
   SetIsSearchEnabled(DependencyObject, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/ComboBoxSearchBehavior.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ComboBoxSearchBehavior.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Sets the value of the <a class="xref" href="MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.html#MBFWpfToolkit_AttachedProperties_ComboBoxSearchBehavior_IsSearchEnabledProperty">IsSearchEnabledProperty</a> attached property,
+enabling or disabling live search filtering on a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.combobox">ComboBox</a>.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -308,9 +318,9 @@ Class ComboBoxSearchBehavior  <a class="header-action link-secondary" title="Vie
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject">DependencyObject</a></dt>
-    <dd></dd>
+    <dd>The dependency object to which the property is attached.</dd>
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd>A boolean value indicating whether the search feature should be enabled or disabled.</dd>
   </dl>
 
 

@@ -16,18 +16,29 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveLoopVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveLoopVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
-  summary: >-
-    Provides extension methods for visualizing <xref href="CurveLoop" data-throw-if-not-resolved="false"></xref> instances as 2D geometry in Revit,
+  summary: Provides extension methods for visualizing and creating Revit elements from <xref href="CurveLoop" data-throw-if-not-resolved="false"></xref> objects.
+  remarks: >-
+    This class includes methods for creating 2D visualizations of <xref href="CurveLoop" data-throw-if-not-resolved="false"></xref> objects using
 
-    either using <xref href="DirectShape" data-throw-if-not-resolved="false"></xref> or <xref href="Autodesk.Revit.DB.DetailCurve" data-throw-if-not-resolved="false"></xref> elements.
+    <xref href="DirectShape" data-throw-if-not-resolved="false"></xref> elements and for generating <xref href="Autodesk.Revit.DB.DetailCurve" data-throw-if-not-resolved="false"></xref> elements in drafting views. These
+
+    methods are designed to work with the active view of a Revit document and provide optional customization, such as
+
+    specifying outline colors.
   example: []
   syntax:
-    content: public static class CurveLoopVisualizerExtensions
-    content.vb: Public Module CurveLoopVisualizerExtensions
+    content: >-
+      [LogAspect]
+
+      public static class CurveLoopVisualizerExtensions
+    content.vb: >-
+      <LogAspect>
+
+      Public Module CurveLoopVisualizerExtensions
   inheritance:
   - System.Object
   inheritedMembers:
@@ -38,6 +49,10 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: MB.Common.Aspects.LogAspect
+    ctor: MB.Common.Aspects.LogAspect.#ctor
+    arguments: []
 - uid: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoop2D(Autodesk.Revit.DB.CurveLoop,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
   commentId: M:MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoop2D(Autodesk.Revit.DB.CurveLoop,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
   id: VisualizeCurveLoop2D(Autodesk.Revit.DB.CurveLoop,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
@@ -51,7 +66,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoop2D(Autodesk.Revit.DB.CurveLoop, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveLoopVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveLoopVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -93,7 +108,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoops2D(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.CurveLoop>, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveLoopVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveLoopVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -117,7 +132,7 @@ items:
     return:
       type: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.DirectShape}}
       description: >-
-        An MbResult&lt;List&lt;DirectShape&gt;&gt;:
+        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> where <code>T</code> is <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref>:
 
         <ul><li><b>Success:</b> Contains a list of created <xref href="DirectShape" data-throw-if-not-resolved="false"></xref> elements.</li><li><b>Failure:</b> "CurveLoop collection is null."</li><li><b>Failure:</b> "Document or active view is null."</li><li><b>Failure:</b> "Failed to visualize multiple CurveLoops: [exception message]"</li></ul>
     content.vb: Public Shared Function VisualizeCurveLoops2D(curveLoops As IEnumerable(Of CurveLoop), doc As Document, color As Color = Nothing) As MbResult(Of List(Of DirectShape))
@@ -138,11 +153,14 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.CreateCurveLoopWithDetailCurves(Autodesk.Revit.DB.CurveLoop, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.ViewDrafting, Autodesk.Revit.DB.Color)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveLoopVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveLoopVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
-  summary: Creates <xref href="Autodesk.Revit.DB.DetailCurve" data-throw-if-not-resolved="false"></xref> elements in a <xref href="Autodesk.Revit.DB.ViewDrafting" data-throw-if-not-resolved="false"></xref> to represent the given <xref href="CurveLoop" data-throw-if-not-resolved="false"></xref>.
+  summary: >-
+    Creates <xref href="Autodesk.Revit.DB.DetailCurve" data-throw-if-not-resolved="false"></xref> elements in a <xref href="Autodesk.Revit.DB.ViewDrafting" data-throw-if-not-resolved="false"></xref> to represent the given
+
+    <xref href="CurveLoop" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public static MbResult<List<DetailCurve>> CreateCurveLoopWithDetailCurves(this CurveLoop curveLoop, Document doc, ViewDrafting draftingView, Color color = null)
@@ -162,7 +180,7 @@ items:
     return:
       type: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.DetailCurve}}
       description: >-
-        An MbResult&lt;List&lt;DetailCurve&gt;&gt;:
+        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> where <code>T</code> is <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref>:
 
         <ul><li><b>Success:</b> Contains the created list of <xref href="Autodesk.Revit.DB.DetailCurve" data-throw-if-not-resolved="false"></xref> elements.</li><li><b>Failure:</b> "CurveLoop is null."</li><li><b>Failure:</b> "Document or drafting view is null."</li><li><b>Failure:</b> "Failed to create detail curves: [exception message]"</li></ul>
     content.vb: Public Shared Function CreateCurveLoopWithDetailCurves(curveLoop As CurveLoop, doc As Document, draftingView As ViewDrafting, color As Color = Nothing) As MbResult(Of List(Of DetailCurve))
@@ -590,6 +608,34 @@ references:
     name: Result
     isExternal: true
     href: MB.Common.Utils.Result.html
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoops2D*
   commentId: Overload:MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoops2D
   isExternal: true

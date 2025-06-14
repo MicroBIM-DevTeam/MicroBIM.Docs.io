@@ -10,6 +10,7 @@ items:
   - MBF.Revit.Geometry.Extensions.CurveLoopExtensions
   - MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions
   - MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions
+  - MBF.Revit.Geometry.Extensions.DirectShapeVisualization
   - MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions
   - MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions
   langs:
@@ -64,6 +65,13 @@ references:
   name: CurveVisualizerExtensions
   nameWithType: CurveVisualizerExtensions
   fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions
+- uid: MBF.Revit.Geometry.Extensions.DirectShapeVisualization
+  commentId: T:MBF.Revit.Geometry.Extensions.DirectShapeVisualization
+  isExternal: true
+  href: MBF.Revit.Geometry.Extensions.DirectShapeVisualization.html
+  name: DirectShapeVisualization
+  nameWithType: DirectShapeVisualization
+  fullName: MBF.Revit.Geometry.Extensions.DirectShapeVisualization
 - uid: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions
   commentId: T:MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions
   isExternal: true

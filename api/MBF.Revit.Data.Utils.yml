@@ -4,6 +4,7 @@ items:
   commentId: N:MBF.Revit.Data.Utils
   id: MBF.Revit.Data.Utils
   children:
+  - MBF.Revit.Data.Utils.EntityUtils
   - MBF.Revit.Data.Utils.MbFlexPipesUtils
   - MBF.Revit.Data.Utils.MbParameterUtils
   - MBF.Revit.Data.Utils.MbPipeAccessoriesUtils
@@ -13,6 +14,9 @@ items:
   - MBF.Revit.Data.Utils.MbSprinklersUtils
   - MBF.Revit.Data.Utils.MbUnitUtils
   - MBF.Revit.Data.Utils.MbViewUtils
+  - MBF.Revit.Data.Utils.PipePointType
+  - MBF.Revit.Data.Utils.RevitUnitUtils
+  - MBF.Revit.Data.Utils.XyzExtensibleStorage
   langs:
   - csharp
   - vb
@@ -23,6 +27,13 @@ items:
   assemblies:
   - MBF.Revit.Data
 references:
+- uid: MBF.Revit.Data.Utils.EntityUtils
+  commentId: T:MBF.Revit.Data.Utils.EntityUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.EntityUtils.html
+  name: EntityUtils
+  nameWithType: EntityUtils
+  fullName: MBF.Revit.Data.Utils.EntityUtils
 - uid: MBF.Revit.Data.Utils.MbFlexPipesUtils
   commentId: T:MBF.Revit.Data.Utils.MbFlexPipesUtils
   isExternal: true
@@ -58,6 +69,21 @@ references:
   name: MbPipesUtils
   nameWithType: MbPipesUtils
   fullName: MBF.Revit.Data.Utils.MbPipesUtils
+- uid: MBF.Revit.Data.Utils.PipePointType
+  commentId: T:MBF.Revit.Data.Utils.PipePointType
+  parent: MBF.Revit.Data.Utils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.PipePointType.html
+  name: PipePointType
+  nameWithType: PipePointType
+  fullName: MBF.Revit.Data.Utils.PipePointType
+- uid: MBF.Revit.Data.Utils.RevitUnitUtils
+  commentId: T:MBF.Revit.Data.Utils.RevitUnitUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.RevitUnitUtils.html
+  name: RevitUnitUtils
+  nameWithType: RevitUnitUtils
+  fullName: MBF.Revit.Data.Utils.RevitUnitUtils
 - uid: MBF.Revit.Data.Utils.MbSpaceUtils
   commentId: T:MBF.Revit.Data.Utils.MbSpaceUtils
   isExternal: true
@@ -86,4 +112,58 @@ references:
   name: MbViewUtils
   nameWithType: MbViewUtils
   fullName: MBF.Revit.Data.Utils.MbViewUtils
+- uid: MBF.Revit.Data.Utils.XyzExtensibleStorage
+  commentId: T:MBF.Revit.Data.Utils.XyzExtensibleStorage
+  isExternal: true
+  href: MBF.Revit.Data.Utils.XyzExtensibleStorage.html
+  name: XyzExtensibleStorage
+  nameWithType: XyzExtensibleStorage
+  fullName: MBF.Revit.Data.Utils.XyzExtensibleStorage
+- uid: MBF.Revit.Data.Utils
+  commentId: N:MBF.Revit.Data.Utils
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Data.Utils
+  nameWithType: MBF.Revit.Data.Utils
+  fullName: MBF.Revit.Data.Utils
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Utils
+    name: Utils
+    isExternal: true
+    href: MBF.Revit.Data.Utils.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Utils
+    name: Utils
+    isExternal: true
+    href: MBF.Revit.Data.Utils.html
 shouldSkipMarkup: true

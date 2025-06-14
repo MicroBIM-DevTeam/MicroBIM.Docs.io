@@ -19,7 +19,7 @@ items:
   namespace: MB.Common.Attributes
   summary: Represents an attribute to specify required shared parameters for a given target.
   remarks: >-
-    This attribute allows developers to declare a set of shared parameters that are required 
+    This attribute allows developers to declare a set of shared parameters that are required
 
     for the functionality or configuration of a specific target (e.g., class, method, or property).
   example: []
@@ -107,7 +107,10 @@ items:
     parameters:
     - id: sharedParameters
       type: MB.Common.SharedParameters.ToolsSharedParameter[]
-      description: A variable-length array of <xref href="MB.Common.SharedParameters.ToolsSharedParameter" data-throw-if-not-resolved="false"></xref> objects that represent the required shared parameters.
+      description: >-
+        A variable-length array of <xref href="MB.Common.SharedParameters.ToolsSharedParameter" data-throw-if-not-resolved="false"></xref> objects that represent the required shared
+
+        parameters.
     content.vb: Public Sub New(ParamArray sharedParameters As ToolsSharedParameter())
   overload: MB.Common.Attributes.RequiredSharedParametersAttribute.#ctor*
   exceptions:

@@ -96,15 +96,17 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Geometry.Voronoi.Models.Edge.html">Edge</a></dt>
-      <dd>Represents an edge in the Voronoi diagram.</dd>
+      <dd>Represents an edge in the Voronoi diagram, defined by a line equation and associated sites.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Geometry.Voronoi.Models.GraphEdge.html">GraphEdge</a></dt>
-      <dd>Represents a graphical edge in the Voronoi diagram.</dd>
+      <dd>Represents a graphical edge in the Voronoi diagram, defined by two endpoints and the indices of the two sites it
+separates.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Geometry.Voronoi.Models.Halfedge.html">Halfedge</a></dt>
-      <dd>Represents a half-edge in the Voronoi diagram.</dd>
+      <dd>Represents a half-edge in the Voronoi diagram, used primarily in Fortune's algorithm for managing the beach line
+and event queue.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Geometry.Voronoi.Models.Point.html">Point</a></dt>
@@ -112,11 +114,14 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Geometry.Voronoi.Models.Site.html">Site</a></dt>
-      <dd>Represents a site used for vertices.</dd>
+      <dd>Represents a site (or generator point) used in the Voronoi diagram, typically associated with a cell in the
+diagram.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.html">SiteSorterYX</a></dt>
-      <dd>Compares two sites based on their y-coordinates, and x-coordinates if y-coordinates are equal.</dd>
+      <dd>Provides a comparison mechanism for sorting <a class="xref" href="MBF.Revit.Geometry.Voronoi.Models.Site.html">Site</a> instances.
+Sorts first by Y-coordinate, then by X-coordinate if Y values are equal.
+Useful for processing sites in Fortune's algorithm.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Geometry.Voronoi.Models.Voronoi.html">Voronoi</a></dt>

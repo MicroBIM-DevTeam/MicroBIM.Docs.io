@@ -5,8 +5,12 @@ items:
   id: MBFWpfToolkit.Converters
   children:
   - MBFWpfToolkit.Converters.Boolean2StringConverter
+  - MBFWpfToolkit.Converters.BooleanErrorGroupToEnabledConverter
   - MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter
   - MBFWpfToolkit.Converters.EnumDisplayNameConverter
+  - MBFWpfToolkit.Converters.NullToBooleanConverter
+  - MBFWpfToolkit.Converters.NullToVisibilityConverter
+  - MBFWpfToolkit.Converters.NullToVisibilityWithInverseConverter
   - MBFWpfToolkit.Converters.ValidationMultiConverter
   langs:
   - csharp
@@ -25,6 +29,13 @@ references:
   name: Boolean2StringConverter
   nameWithType: Boolean2StringConverter
   fullName: MBFWpfToolkit.Converters.Boolean2StringConverter
+- uid: MBFWpfToolkit.Converters.BooleanErrorGroupToEnabledConverter
+  commentId: T:MBFWpfToolkit.Converters.BooleanErrorGroupToEnabledConverter
+  isExternal: true
+  href: MBFWpfToolkit.Converters.BooleanErrorGroupToEnabledConverter.html
+  name: BooleanErrorGroupToEnabledConverter
+  nameWithType: BooleanErrorGroupToEnabledConverter
+  fullName: MBFWpfToolkit.Converters.BooleanErrorGroupToEnabledConverter
 - uid: MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter
   commentId: T:MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter
   isExternal: true
@@ -39,6 +50,27 @@ references:
   name: EnumDisplayNameConverter
   nameWithType: EnumDisplayNameConverter
   fullName: MBFWpfToolkit.Converters.EnumDisplayNameConverter
+- uid: MBFWpfToolkit.Converters.NullToBooleanConverter
+  commentId: T:MBFWpfToolkit.Converters.NullToBooleanConverter
+  isExternal: true
+  href: MBFWpfToolkit.Converters.NullToBooleanConverter.html
+  name: NullToBooleanConverter
+  nameWithType: NullToBooleanConverter
+  fullName: MBFWpfToolkit.Converters.NullToBooleanConverter
+- uid: MBFWpfToolkit.Converters.NullToVisibilityConverter
+  commentId: T:MBFWpfToolkit.Converters.NullToVisibilityConverter
+  isExternal: true
+  href: MBFWpfToolkit.Converters.NullToVisibilityConverter.html
+  name: NullToVisibilityConverter
+  nameWithType: NullToVisibilityConverter
+  fullName: MBFWpfToolkit.Converters.NullToVisibilityConverter
+- uid: MBFWpfToolkit.Converters.NullToVisibilityWithInverseConverter
+  commentId: T:MBFWpfToolkit.Converters.NullToVisibilityWithInverseConverter
+  isExternal: true
+  href: MBFWpfToolkit.Converters.NullToVisibilityWithInverseConverter.html
+  name: NullToVisibilityWithInverseConverter
+  nameWithType: NullToVisibilityWithInverseConverter
+  fullName: MBFWpfToolkit.Converters.NullToVisibilityWithInverseConverter
 - uid: MBFWpfToolkit.Converters.ValidationMultiConverter
   commentId: T:MBFWpfToolkit.Converters.ValidationMultiConverter
   isExternal: true

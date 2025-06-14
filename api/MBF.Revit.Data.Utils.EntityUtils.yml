@@ -1,0 +1,588 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Data.Utils.EntityUtils
+  commentId: T:MBF.Revit.Data.Utils.EntityUtils
+  id: EntityUtils
+  parent: MBF.Revit.Data.Utils
+  children:
+  - MBF.Revit.Data.Utils.EntityUtils.GetElementId(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field)
+  - MBF.Revit.Data.Utils.EntityUtils.GetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field)
+  - MBF.Revit.Data.Utils.EntityUtils.SetElementId(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field,Autodesk.Revit.DB.ElementId)
+  - MBF.Revit.Data.Utils.EntityUtils.SetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field,Autodesk.Revit.DB.XYZ)
+  langs:
+  - csharp
+  - vb
+  name: EntityUtils
+  nameWithType: EntityUtils
+  fullName: MBF.Revit.Data.Utils.EntityUtils
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/EntityUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: >-
+    Provides utility methods for working with entities and their associated fields, enabling the retrieval and
+
+    assignment of values such as <xref href="Autodesk.Revit.DB.XYZ" data-throw-if-not-resolved="false"></xref> and <xref href="ElementId" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    The <xref href="MBF.Revit.Data.Utils.EntityUtils" data-throw-if-not-resolved="false"></xref> class adapts to different runtime environments to ensure compatibility
+
+    with varying unit systems. It includes methods for retrieving and setting field values in entities, handling both
+
+    <xref href="Autodesk.Revit.DB.XYZ" data-throw-if-not-resolved="false"></xref> and <xref href="ElementId" data-throw-if-not-resolved="false"></xref> types. This class is designed for use in scenarios where precise
+
+    handling of units and field data is required.
+
+    <p>
+
+    <b>Error messages:</b>
+
+    <ul><li>Entity or field cannot be null.</li><li>Value cannot be null.</li><li>Failed to retrieve or set the specified field value.</li></ul>
+
+    </p>
+  example: []
+  syntax:
+    content: >-
+      [LogAspect]
+
+      public static class EntityUtils
+    content.vb: >-
+      <LogAspect>
+
+      Public Module EntityUtils
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: MB.Common.Aspects.LogAspect
+    ctor: MB.Common.Aspects.LogAspect.#ctor
+    arguments: []
+- uid: MBF.Revit.Data.Utils.EntityUtils.GetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field)
+  commentId: M:MBF.Revit.Data.Utils.EntityUtils.GetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field)
+  id: GetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field)
+  parent: MBF.Revit.Data.Utils.EntityUtils
+  langs:
+  - csharp
+  - vb
+  name: GetXYZ(Entity, Field)
+  nameWithType: EntityUtils.GetXYZ(Entity, Field)
+  fullName: MBF.Revit.Data.Utils.EntityUtils.GetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity, Autodesk.Revit.DB.ExtensibleStorage.Field)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/EntityUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Retrieves the <xref href="Autodesk.Revit.DB.XYZ" data-throw-if-not-resolved="false"></xref> value of the specified field from the given entity.
+  remarks: >-
+    The method adapts to different versions of the API to ensure compatibility.
+
+    <p>
+
+    <b>Error messages:</b>
+
+    <ul><li>Entity or field cannot be null.</li><li>Failed to retrieve the XYZ value from the entity.</li></ul>
+
+    </p>
+  example: []
+  syntax:
+    content: public static XYZ GetXYZ(Entity entity, Field field)
+    parameters:
+    - id: entity
+      type: Autodesk.Revit.DB.ExtensibleStorage.Entity
+      description: The entity from which to retrieve the <xref href="Autodesk.Revit.DB.XYZ" data-throw-if-not-resolved="false"></xref> value. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    - id: field
+      type: Autodesk.Revit.DB.ExtensibleStorage.Field
+      description: The field that specifies which <xref href="Autodesk.Revit.DB.XYZ" data-throw-if-not-resolved="false"></xref> value to retrieve. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    return:
+      type: Autodesk.Revit.DB.XYZ
+      description: The <xref href="Autodesk.Revit.DB.XYZ" data-throw-if-not-resolved="false"></xref> value associated with the specified field in the entity.
+    content.vb: Public Shared Function GetXYZ(entity As Entity, field As Field) As XYZ
+  overload: MBF.Revit.Data.Utils.EntityUtils.GetXYZ*
+- uid: MBF.Revit.Data.Utils.EntityUtils.GetElementId(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field)
+  commentId: M:MBF.Revit.Data.Utils.EntityUtils.GetElementId(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field)
+  id: GetElementId(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field)
+  parent: MBF.Revit.Data.Utils.EntityUtils
+  langs:
+  - csharp
+  - vb
+  name: GetElementId(Entity, Field)
+  nameWithType: EntityUtils.GetElementId(Entity, Field)
+  fullName: MBF.Revit.Data.Utils.EntityUtils.GetElementId(Autodesk.Revit.DB.ExtensibleStorage.Entity, Autodesk.Revit.DB.ExtensibleStorage.Field)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/EntityUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: >-
+    Retrieves the <xref href="ElementId" data-throw-if-not-resolved="false"></xref> value associated with the specified <code class="paramref">field</code> in the given
+
+    <code class="paramref">entity</code>.
+  remarks: >-
+    The method retrieves the <xref href="ElementId" data-throw-if-not-resolved="false"></xref> value using the appropriate unit system based on the
+
+    runtime environment.
+
+    <p>
+
+    <b>Error messages:</b>
+
+    <ul><li>Entity or field cannot be null.</li><li>Failed to retrieve the ElementId value from the entity.</li></ul>
+
+    </p>
+  example: []
+  syntax:
+    content: public static ElementId GetElementId(Entity entity, Field field)
+    parameters:
+    - id: entity
+      type: Autodesk.Revit.DB.ExtensibleStorage.Entity
+      description: The <xref href="Autodesk.Revit.DB.ExtensibleStorage.Entity" data-throw-if-not-resolved="false"></xref> from which to retrieve the <xref href="ElementId" data-throw-if-not-resolved="false"></xref> value. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    - id: field
+      type: Autodesk.Revit.DB.ExtensibleStorage.Field
+      description: The <xref href="Autodesk.Revit.DB.ExtensibleStorage.Field" data-throw-if-not-resolved="false"></xref> that identifies the data to retrieve. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    return:
+      type: Autodesk.Revit.DB.ElementId
+      description: The <xref href="ElementId" data-throw-if-not-resolved="false"></xref> value associated with the specified <code class="paramref">field</code> in the <code class="paramref">entity</code>.
+    content.vb: Public Shared Function GetElementId(entity As Entity, field As Field) As ElementId
+  overload: MBF.Revit.Data.Utils.EntityUtils.GetElementId*
+- uid: MBF.Revit.Data.Utils.EntityUtils.SetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field,Autodesk.Revit.DB.XYZ)
+  commentId: M:MBF.Revit.Data.Utils.EntityUtils.SetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field,Autodesk.Revit.DB.XYZ)
+  id: SetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field,Autodesk.Revit.DB.XYZ)
+  parent: MBF.Revit.Data.Utils.EntityUtils
+  langs:
+  - csharp
+  - vb
+  name: SetXYZ(Entity, Field, XYZ)
+  nameWithType: EntityUtils.SetXYZ(Entity, Field, XYZ)
+  fullName: MBF.Revit.Data.Utils.EntityUtils.SetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity, Autodesk.Revit.DB.ExtensibleStorage.Field, Autodesk.Revit.DB.XYZ)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/EntityUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Sets the specified field of the given entity to the provided XYZ value, using the appropriate unit system.
+  remarks: >-
+    The method determines the appropriate unit system based on the runtime environment and applies it
+
+    when setting the field.
+
+    <p>
+
+    <b>Error messages:</b>
+
+    <ul><li>Entity, field, or value cannot be null.</li><li>Failed to set the XYZ value for the specified field.</li></ul>
+
+    </p>
+  example: []
+  syntax:
+    content: public static void SetXYZ(Entity entity, Field field, XYZ value)
+    parameters:
+    - id: entity
+      type: Autodesk.Revit.DB.ExtensibleStorage.Entity
+      description: The entity whose field is to be updated. Cannot be null.
+    - id: field
+      type: Autodesk.Revit.DB.ExtensibleStorage.Field
+      description: The field of the entity to set. Cannot be null.
+    - id: value
+      type: Autodesk.Revit.DB.XYZ
+      description: The XYZ value to assign to the specified field. Cannot be null.
+    content.vb: Public Shared Sub SetXYZ(entity As Entity, field As Field, value As XYZ)
+  overload: MBF.Revit.Data.Utils.EntityUtils.SetXYZ*
+- uid: MBF.Revit.Data.Utils.EntityUtils.SetElementId(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field,Autodesk.Revit.DB.ElementId)
+  commentId: M:MBF.Revit.Data.Utils.EntityUtils.SetElementId(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field,Autodesk.Revit.DB.ElementId)
+  id: SetElementId(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field,Autodesk.Revit.DB.ElementId)
+  parent: MBF.Revit.Data.Utils.EntityUtils
+  langs:
+  - csharp
+  - vb
+  name: SetElementId(Entity, Field, ElementId)
+  nameWithType: EntityUtils.SetElementId(Entity, Field, ElementId)
+  fullName: MBF.Revit.Data.Utils.EntityUtils.SetElementId(Autodesk.Revit.DB.ExtensibleStorage.Entity, Autodesk.Revit.DB.ExtensibleStorage.Field, Autodesk.Revit.DB.ElementId)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/EntityUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Sets the specified <xref href="ElementId" data-throw-if-not-resolved="false"></xref> value for the given <xref href="Autodesk.Revit.DB.ExtensibleStorage.Entity" data-throw-if-not-resolved="false"></xref> and <xref href="Autodesk.Revit.DB.ExtensibleStorage.Field" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    The method ensures compatibility with different versions of the API by using the appropriate unit
+
+    type when setting the value.
+
+    <p>
+
+    <b>Error messages:</b>
+
+    <ul><li>Entity, field, or value cannot be null.</li><li>Failed to set the ElementId value for the specified field.</li></ul>
+
+    </p>
+  example: []
+  syntax:
+    content: public static void SetElementId(Entity entity, Field field, ElementId value)
+    parameters:
+    - id: entity
+      type: Autodesk.Revit.DB.ExtensibleStorage.Entity
+      description: The <xref href="Autodesk.Revit.DB.ExtensibleStorage.Entity" data-throw-if-not-resolved="false"></xref> to which the value will be assigned. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    - id: field
+      type: Autodesk.Revit.DB.ExtensibleStorage.Field
+      description: The <xref href="Autodesk.Revit.DB.ExtensibleStorage.Field" data-throw-if-not-resolved="false"></xref> that identifies the property to set. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    - id: value
+      type: Autodesk.Revit.DB.ElementId
+      description: The <xref href="ElementId" data-throw-if-not-resolved="false"></xref> value to assign to the specified field. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Shared Sub SetElementId(entity As Entity, field As Field, value As ElementId)
+  overload: MBF.Revit.Data.Utils.EntityUtils.SetElementId*
+references:
+- uid: Autodesk.Revit.DB.XYZ
+  isExternal: true
+  name: XYZ
+  nameWithType: XYZ
+  fullName: Autodesk.Revit.DB.XYZ
+- uid: ElementId
+  commentId: T:ElementId
+  isExternal: true
+- uid: MBF.Revit.Data.Utils.EntityUtils
+  commentId: T:MBF.Revit.Data.Utils.EntityUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.EntityUtils.html
+  name: EntityUtils
+  nameWithType: EntityUtils
+  fullName: MBF.Revit.Data.Utils.EntityUtils
+- uid: MBF.Revit.Data.Utils
+  commentId: N:MBF.Revit.Data.Utils
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Data.Utils
+  nameWithType: MBF.Revit.Data.Utils
+  fullName: MBF.Revit.Data.Utils
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Utils
+    name: Utils
+    isExternal: true
+    href: MBF.Revit.Data.Utils.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Utils
+    name: Utils
+    isExternal: true
+    href: MBF.Revit.Data.Utils.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MBF.Revit.Data.Utils.EntityUtils.GetXYZ*
+  commentId: Overload:MBF.Revit.Data.Utils.EntityUtils.GetXYZ
+  isExternal: true
+  href: MBF.Revit.Data.Utils.EntityUtils.html#MBF_Revit_Data_Utils_EntityUtils_GetXYZ_Autodesk_Revit_DB_ExtensibleStorage_Entity_Autodesk_Revit_DB_ExtensibleStorage_Field_
+  name: GetXYZ
+  nameWithType: EntityUtils.GetXYZ
+  fullName: MBF.Revit.Data.Utils.EntityUtils.GetXYZ
+- uid: Autodesk.Revit.DB.ExtensibleStorage.Entity
+  isExternal: true
+  name: Entity
+  nameWithType: Entity
+  fullName: Autodesk.Revit.DB.ExtensibleStorage.Entity
+- uid: Autodesk.Revit.DB.ExtensibleStorage.Field
+  isExternal: true
+  name: Field
+  nameWithType: Field
+  fullName: Autodesk.Revit.DB.ExtensibleStorage.Field
+- uid: MBF.Revit.Data.Utils.EntityUtils.GetElementId*
+  commentId: Overload:MBF.Revit.Data.Utils.EntityUtils.GetElementId
+  isExternal: true
+  href: MBF.Revit.Data.Utils.EntityUtils.html#MBF_Revit_Data_Utils_EntityUtils_GetElementId_Autodesk_Revit_DB_ExtensibleStorage_Entity_Autodesk_Revit_DB_ExtensibleStorage_Field_
+  name: GetElementId
+  nameWithType: EntityUtils.GetElementId
+  fullName: MBF.Revit.Data.Utils.EntityUtils.GetElementId
+- uid: Autodesk.Revit.DB.ElementId
+  isExternal: true
+  name: ElementId
+  nameWithType: ElementId
+  fullName: Autodesk.Revit.DB.ElementId
+- uid: MBF.Revit.Data.Utils.EntityUtils.SetXYZ*
+  commentId: Overload:MBF.Revit.Data.Utils.EntityUtils.SetXYZ
+  isExternal: true
+  href: MBF.Revit.Data.Utils.EntityUtils.html#MBF_Revit_Data_Utils_EntityUtils_SetXYZ_Autodesk_Revit_DB_ExtensibleStorage_Entity_Autodesk_Revit_DB_ExtensibleStorage_Field_Autodesk_Revit_DB_XYZ_
+  name: SetXYZ
+  nameWithType: EntityUtils.SetXYZ
+  fullName: MBF.Revit.Data.Utils.EntityUtils.SetXYZ
+- uid: MBF.Revit.Data.Utils.EntityUtils.SetElementId*
+  commentId: Overload:MBF.Revit.Data.Utils.EntityUtils.SetElementId
+  isExternal: true
+  href: MBF.Revit.Data.Utils.EntityUtils.html#MBF_Revit_Data_Utils_EntityUtils_SetElementId_Autodesk_Revit_DB_ExtensibleStorage_Entity_Autodesk_Revit_DB_ExtensibleStorage_Field_Autodesk_Revit_DB_ElementId_
+  name: SetElementId
+  nameWithType: EntityUtils.SetElementId
+  fullName: MBF.Revit.Data.Utils.EntityUtils.SetElementId
+shouldSkipMarkup: true

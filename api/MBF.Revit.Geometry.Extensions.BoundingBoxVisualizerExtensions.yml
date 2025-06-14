@@ -15,15 +15,27 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/BoundingBoxVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/BoundingBoxVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
-  summary: Extension methods for visualizing BoundingBoxXYZ objects as 2D outlines in the XY plane using DirectShape.
+  summary: Provides extension methods for visualizing bounding boxes as 2D outlines in a Revit document.
+  remarks: >-
+    This class includes methods to visualize single or multiple bounding boxes as 2D shapes in the
+
+    specified Revit document. The visualizations are created as red outlines by default, but an optional color can be
+
+    specified.
   example: []
   syntax:
-    content: public static class BoundingBoxVisualizerExtensions
-    content.vb: Public Module BoundingBoxVisualizerExtensions
+    content: >-
+      [LogAspect]
+
+      public static class BoundingBoxVisualizerExtensions
+    content.vb: >-
+      <LogAspect>
+
+      Public Module BoundingBoxVisualizerExtensions
   inheritance:
   - System.Object
   inheritedMembers:
@@ -34,6 +46,10 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: MB.Common.Aspects.LogAspect
+    ctor: MB.Common.Aspects.LogAspect.#ctor
+    arguments: []
 - uid: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D(Autodesk.Revit.DB.BoundingBoxXYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
   commentId: M:MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D(Autodesk.Revit.DB.BoundingBoxXYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
   id: VisualizeBoundingBox2D(Autodesk.Revit.DB.BoundingBoxXYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
@@ -47,24 +63,33 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D(Autodesk.Revit.DB.BoundingBoxXYZ, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/BoundingBoxVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/BoundingBoxVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
-  summary: Visualizes a single bounding box as a 2D red outline in the specified Revit document.
+  summary: Visualizes a 2D representation of the specified <xref href="Autodesk.Revit.DB.BoundingBoxXYZ" data-throw-if-not-resolved="false"></xref> in the given Revit document.
+  remarks: >-
+    This method creates a 2D visualization of the bounding box as a direct shape in the specified
+
+    document.  The visualization is created within a transaction, which is started and committed by this
+
+    method.
   example: []
   syntax:
     content: public static void VisualizeBoundingBox2D(this BoundingBoxXYZ boundingBox, Document doc, Color color = null)
     parameters:
     - id: boundingBox
       type: Autodesk.Revit.DB.BoundingBoxXYZ
-      description: The bounding box to visualize.
+      description: The 2D bounding box to visualize. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
     - id: doc
       type: Autodesk.Revit.DB.Document
-      description: The Revit document where the shape will be drawn.
+      description: The Revit document where the bounding box will be visualized. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
     - id: color
       type: Autodesk.Revit.DB.Color
-      description: Optional color; defaults to red if null.
+      description: >-
+        The color to use for the visualization. If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, the default color is red (RGB:
+
+        255, 0, 0).
     content.vb: Public Shared Sub VisualizeBoundingBox2D(boundingBox As BoundingBoxXYZ, doc As Document, color As Color = Nothing)
   overload: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D*
 - uid: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBoxes2D(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.BoundingBoxXYZ},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
@@ -80,24 +105,37 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBoxes2D(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.BoundingBoxXYZ>, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/BoundingBoxVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/BoundingBoxVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
-  summary: Visualizes multiple bounding boxes as 2D red outlines in the specified Revit document.
+  summary: Visualizes a collection of 2D bounding boxes in the specified Revit document.
+  remarks: >-
+    This method creates 2D visual representations of the provided bounding boxes as direct shapes in the
+
+    Revit document. If a bounding box in the collection is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, it will be skipped.
   example: []
   syntax:
     content: public static void VisualizeBoundingBoxes2D(this IEnumerable<BoundingBoxXYZ> boundingBoxes, Document doc, Color color = null)
     parameters:
     - id: boundingBoxes
       type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.BoundingBoxXYZ}
-      description: List of bounding boxes to visualize.
+      description: >-
+        A collection of <xref href="Autodesk.Revit.DB.BoundingBoxXYZ" data-throw-if-not-resolved="false"></xref> objects representing the 2D bounding boxes to
+
+        visualize.
     - id: doc
       type: Autodesk.Revit.DB.Document
-      description: The Revit document where the shapes will be drawn.
+      description: >-
+        The <xref href="Autodesk.Revit.DB.Document" data-throw-if-not-resolved="false"></xref> in which the bounding boxes will be visualized. This cannot be
+
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
     - id: color
       type: Autodesk.Revit.DB.Color
-      description: Optional color; defaults to red if null.
+      description: >-
+        An optional <xref href="Autodesk.Revit.DB.Color" data-throw-if-not-resolved="false"></xref> to use for the bounding box visualization. If not specified, the default color is
+
+        red (RGB: 255, 0, 0).
     content.vb: Public Shared Sub VisualizeBoundingBoxes2D(boundingBoxes As IEnumerable(Of BoundingBoxXYZ), doc As Document, color As Color = Nothing)
   overload: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBoxes2D*
   nameWithType.vb: BoundingBoxVisualizerExtensions.VisualizeBoundingBoxes2D(IEnumerable(Of BoundingBoxXYZ), Document, Color)
@@ -388,6 +426,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Autodesk.Revit.DB.BoundingBoxXYZ
+  commentId: T:Autodesk.Revit.DB.BoundingBoxXYZ
+  isExternal: true
+  name: BoundingBoxXYZ
+  nameWithType: BoundingBoxXYZ
+  fullName: Autodesk.Revit.DB.BoundingBoxXYZ
 - uid: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D*
   commentId: Overload:MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D
   isExternal: true
@@ -395,12 +439,6 @@ references:
   name: VisualizeBoundingBox2D
   nameWithType: BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D
   fullName: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D
-- uid: Autodesk.Revit.DB.BoundingBoxXYZ
-  commentId: T:Autodesk.Revit.DB.BoundingBoxXYZ
-  isExternal: true
-  name: BoundingBoxXYZ
-  nameWithType: BoundingBoxXYZ
-  fullName: Autodesk.Revit.DB.BoundingBoxXYZ
 - uid: Autodesk.Revit.DB.Document
   commentId: T:Autodesk.Revit.DB.Document
   isExternal: true

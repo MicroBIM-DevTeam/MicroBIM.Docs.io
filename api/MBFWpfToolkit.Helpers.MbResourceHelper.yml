@@ -19,7 +19,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.MbResourceHelper
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbResourceHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbResourceHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -50,7 +50,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetResource<T>(string)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbResourceHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbResourceHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -67,7 +67,10 @@ items:
       description: The expected type of the resource.
     return:
       type: '{T}'
-      description: The resource cast to type <code class="typeparamref">T</code> if found; otherwise, the default value of <code class="typeparamref">T</code>.
+      description: >-
+        The resource cast to type <code class="typeparamref">T</code> if found; otherwise, the default value of
+
+        <code class="typeparamref">T</code>.
     content.vb: Public Shared Function GetResource(Of T)(key As String) As T
   overload: MBFWpfToolkit.Helpers.MbResourceHelper.GetResource*
   nameWithType.vb: MbResourceHelper.GetResource(Of T)(String)
@@ -85,7 +88,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin(System.Reflection.Assembly, string, MBFWpfToolkit.Constants.SkinType)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbResourceHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbResourceHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -123,11 +126,11 @@ items:
   fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin(MBFWpfToolkit.Constants.SkinType)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbResourceHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbResourceHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
-  summary: Loads a built-in HandyControl skin resource dictionary by skin type.
+  summary: Loads a built-in MicroBIM.UI skin resource dictionary by skin type.
   example: []
   syntax:
     content: public static ResourceDictionary GetSkin(SkinType skin)
@@ -152,11 +155,11 @@ items:
   fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetTheme()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbResourceHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbResourceHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
-  summary: Retrieves the current theme resource dictionary. If not already loaded, it loads the standalone HandyControl theme.
+  summary: Retrieves the current theme resource dictionary. If not already loaded, it loads the standalone MicroBIM.UI theme.
   example: []
   syntax:
     content: public static ResourceDictionary GetTheme()
@@ -177,11 +180,11 @@ items:
   fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetStandaloneTheme()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbResourceHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbResourceHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
-  summary: Loads the standalone HandyControl theme resource dictionary.
+  summary: Loads the standalone MicroBIM.UI theme resource dictionary.
   example: []
   syntax:
     content: public static ResourceDictionary GetStandaloneTheme()
@@ -202,7 +205,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.MbResourceHelper.MbResourceHelper()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbResourceHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbResourceHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers

@@ -13,7 +13,7 @@ items:
   fullName: OnMethodBoundaryAspectCompile
   type: Namespace
   assemblies:
-  - MB.Common
+  - MBF.Revit.Data
 references:
 - uid: OnMethodBoundaryAspectCompile.MethodInfos
   commentId: T:OnMethodBoundaryAspectCompile.MethodInfos

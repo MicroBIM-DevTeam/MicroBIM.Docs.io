@@ -1,0 +1,434 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto
+  commentId: T:MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto
+  id: MicroBimListingRecommendationDto
+  parent: MB.Common.Settings.ListingSettings
+  children:
+  - MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.#ctor
+  - MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.Name
+  - MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.SuggestedType
+  langs:
+  - csharp
+  - vb
+  name: MicroBimListingRecommendationDto
+  nameWithType: MicroBimListingRecommendationDto
+  fullName: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto
+  type: Class
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents a Data Transfer Object (DTO) used for providing recommendations specific to Micro BIM listings.
+  example: []
+  syntax:
+    content: public class MicroBimListingRecommendationDto
+    content.vb: Public Class MicroBimListingRecommendationDto
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.#ctor
+  commentId: M:MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.#ctor
+  id: '#ctor'
+  parent: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto
+  langs:
+  - csharp
+  - vb
+  name: MicroBimListingRecommendationDto()
+  nameWithType: MicroBimListingRecommendationDto.MicroBimListingRecommendationDto()
+  fullName: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.MicroBimListingRecommendationDto()
+  type: Constructor
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  syntax:
+    content: public MicroBimListingRecommendationDto()
+    content.vb: Public Sub New()
+  overload: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.#ctor*
+  nameWithType.vb: MicroBimListingRecommendationDto.New()
+  fullName.vb: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.New()
+  name.vb: New()
+- uid: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.Name
+  commentId: P:MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.Name
+  id: Name
+  parent: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: MicroBimListingRecommendationDto.Name
+  fullName: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.Name
+  type: Property
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Gets or sets the name, which must follow the format "FamilyName-SymbolName".
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.Name*
+- uid: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.SuggestedType
+  commentId: P:MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.SuggestedType
+  id: SuggestedType
+  parent: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto
+  langs:
+  - csharp
+  - vb
+  name: SuggestedType
+  nameWithType: MicroBimListingRecommendationDto.SuggestedType
+  fullName: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.SuggestedType
+  type: Property
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents the suggested fitting type for a listing recommendation.
+
+    This property must follow the format "FamilyName-SymbolName".
+  example: []
+  syntax:
+    content: public StandardFittingType SuggestedType { get; set; }
+    parameters: []
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+    content.vb: Public Property SuggestedType As StandardFittingType
+  overload: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.SuggestedType*
+references:
+- uid: MB.Common.Settings.ListingSettings
+  commentId: N:MB.Common.Settings.ListingSettings
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Settings.ListingSettings
+  nameWithType: MB.Common.Settings.ListingSettings
+  fullName: MB.Common.Settings.ListingSettings
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Settings
+    name: Settings
+    isExternal: true
+    href: MB.Common.Settings.html
+  - name: .
+  - uid: MB.Common.Settings.ListingSettings
+    name: ListingSettings
+    isExternal: true
+    href: MB.Common.Settings.ListingSettings.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Settings
+    name: Settings
+    isExternal: true
+    href: MB.Common.Settings.html
+  - name: .
+  - uid: MB.Common.Settings.ListingSettings
+    name: ListingSettings
+    isExternal: true
+    href: MB.Common.Settings.ListingSettings.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.#ctor*
+  commentId: Overload:MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.#ctor
+  isExternal: true
+  href: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.html#MB_Common_Settings_ListingSettings_MicroBimListingRecommendationDto__ctor
+  name: MicroBimListingRecommendationDto
+  nameWithType: MicroBimListingRecommendationDto.MicroBimListingRecommendationDto
+  fullName: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.MicroBimListingRecommendationDto
+  nameWithType.vb: MicroBimListingRecommendationDto.New
+  fullName.vb: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.New
+  name.vb: New
+- uid: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.Name*
+  commentId: Overload:MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.Name
+  isExternal: true
+  href: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.html#MB_Common_Settings_ListingSettings_MicroBimListingRecommendationDto_Name
+  name: Name
+  nameWithType: MicroBimListingRecommendationDto.Name
+  fullName: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.SuggestedType*
+  commentId: Overload:MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.SuggestedType
+  isExternal: true
+  href: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.html#MB_Common_Settings_ListingSettings_MicroBimListingRecommendationDto_SuggestedType
+  name: SuggestedType
+  nameWithType: MicroBimListingRecommendationDto.SuggestedType
+  fullName: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.SuggestedType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType
+  commentId: T:MB.Common.Settings.ListingSettings.StandardFittingType
+  parent: MB.Common.Settings.ListingSettings
+  isExternal: true
+  href: MB.Common.Settings.ListingSettings.StandardFittingType.html
+  name: StandardFittingType
+  nameWithType: StandardFittingType
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType
+shouldSkipMarkup: true

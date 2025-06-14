@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Geometry.Voronoi.Utils
+  commentId: N:MBF.Revit.Geometry.Voronoi.Utils
+  id: MBF.Revit.Geometry.Voronoi.Utils
+  children:
+  - MBF.Revit.Geometry.Voronoi.Utils.MbVoronoiAlgorithmHelpers
+  langs:
+  - csharp
+  - vb
+  name: MBF.Revit.Geometry.Voronoi.Utils
+  nameWithType: MBF.Revit.Geometry.Voronoi.Utils
+  fullName: MBF.Revit.Geometry.Voronoi.Utils
+  type: Namespace
+  assemblies:
+  - MBF.Revit.Geometry
+references:
+- uid: MBF.Revit.Geometry.Voronoi.Utils.MbVoronoiAlgorithmHelpers
+  commentId: T:MBF.Revit.Geometry.Voronoi.Utils.MbVoronoiAlgorithmHelpers
+  isExternal: true
+  href: MBF.Revit.Geometry.Voronoi.Utils.MbVoronoiAlgorithmHelpers.html
+  name: MbVoronoiAlgorithmHelpers
+  nameWithType: MbVoronoiAlgorithmHelpers
+  fullName: MBF.Revit.Geometry.Voronoi.Utils.MbVoronoiAlgorithmHelpers
+shouldSkipMarkup: true

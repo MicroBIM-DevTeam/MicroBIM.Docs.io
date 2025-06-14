@@ -14,15 +14,25 @@ items:
   fullName: MBF.Revit.Data.Utils.MbSprinklersUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbSprinklersUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbSprinklersUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
   summary: Provides utility methods for working with sprinkler elements in Revit.
+  remarks: >-
+    This class contains methods to assist in identifying and working with Revit elements categorized as
+                sprinklers. It is designed to simplify common operations related to sprinkler elements, such as filtering and
+                casting.
   example: []
   syntax:
-    content: public static class MbSprinklersUtils
-    content.vb: Public Module MbSprinklersUtils
+    content: >-
+      [LogAspect]
+
+      public static class MbSprinklersUtils
+    content.vb: >-
+      <LogAspect>
+
+      Public Module MbSprinklersUtils
   inheritance:
   - System.Object
   inheritedMembers:
@@ -33,6 +43,10 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: MB.Common.Aspects.LogAspect
+    ctor: MB.Common.Aspects.LogAspect.#ctor
+    arguments: []
 - uid: MBF.Revit.Data.Utils.MbSprinklersUtils.GetSprinklerInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
   commentId: M:MBF.Revit.Data.Utils.MbSprinklersUtils.GetSprinklerInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
   id: GetSprinklerInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
@@ -45,7 +59,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbSprinklersUtils.GetSprinklerInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbSprinklersUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbSprinklersUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils

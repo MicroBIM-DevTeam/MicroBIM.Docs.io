@@ -5,9 +5,11 @@ items:
   id: MbNotification
   parent: MBFWpfToolkit.Helpers
   children:
+  - MBFWpfToolkit.Helpers.MbNotification.Host
   - MBFWpfToolkit.Helpers.MbNotification.ShowError(System.String,System.Int32)
   - MBFWpfToolkit.Helpers.MbNotification.ShowInfo(System.String,System.Int32)
   - MBFWpfToolkit.Helpers.MbNotification.ShowSuccess(System.String,System.Int32)
+  - MBFWpfToolkit.Helpers.MbNotification.ShowWarning(System.String,System.Int32)
   langs:
   - csharp
   - vb
@@ -16,11 +18,11 @@ items:
   fullName: MBFWpfToolkit.Helpers.MbNotification
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbNotification.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbNotification.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
-  summary: Provides utility methods to display styled notifications using HandyControl's <xref href="HandyControl.Controls.Growl" data-throw-if-not-resolved="false"></xref> system.
+  summary: Provides utility methods to display styled notifications using MicroBIM.UI's <xref href="MicroBIM.UI.Controls.Growl" data-throw-if-not-resolved="false"></xref> system.
   example: []
   syntax:
     content: public static class MbNotification
@@ -47,7 +49,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.MbNotification.ShowSuccess(string, int)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbNotification.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbNotification.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -79,7 +81,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.MbNotification.ShowInfo(string, int)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbNotification.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbNotification.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -111,7 +113,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.MbNotification.ShowError(string, int)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Helpers/MbNotification.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbNotification.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -131,9 +133,67 @@ items:
   nameWithType.vb: MbNotification.ShowError(String, Integer)
   fullName.vb: MBFWpfToolkit.Helpers.MbNotification.ShowError(String, Integer)
   name.vb: ShowError(String, Integer)
+- uid: MBFWpfToolkit.Helpers.MbNotification.ShowWarning(System.String,System.Int32)
+  commentId: M:MBFWpfToolkit.Helpers.MbNotification.ShowWarning(System.String,System.Int32)
+  id: ShowWarning(System.String,System.Int32)
+  parent: MBFWpfToolkit.Helpers.MbNotification
+  langs:
+  - csharp
+  - vb
+  name: ShowWarning(string, int)
+  nameWithType: MbNotification.ShowWarning(string, int)
+  fullName: MBFWpfToolkit.Helpers.MbNotification.ShowWarning(string, int)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbNotification.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Helpers
+  summary: Displays a warning notification with a specified message and optional wait time.
+  example: []
+  syntax:
+    content: public static void ShowWarning(string message, int waitTime = 2)
+    parameters:
+    - id: message
+      type: System.String
+      description: The warning message to display.
+    - id: waitTime
+      type: System.Int32
+      description: >-
+        The time in seconds to display the notification before it disappears.
+
+        Defaults to 2 seconds if not specified.
+    content.vb: Public Shared Sub ShowWarning(message As String, waitTime As Integer = 2)
+  overload: MBFWpfToolkit.Helpers.MbNotification.ShowWarning*
+  nameWithType.vb: MbNotification.ShowWarning(String, Integer)
+  fullName.vb: MBFWpfToolkit.Helpers.MbNotification.ShowWarning(String, Integer)
+  name.vb: ShowWarning(String, Integer)
+- uid: MBFWpfToolkit.Helpers.MbNotification.Host
+  commentId: P:MBFWpfToolkit.Helpers.MbNotification.Host
+  id: Host
+  parent: MBFWpfToolkit.Helpers.MbNotification
+  langs:
+  - csharp
+  - vb
+  name: Host
+  nameWithType: MbNotification.Host
+  fullName: MBFWpfToolkit.Helpers.MbNotification.Host
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbNotification.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Helpers
+  syntax:
+    content: public static MbWindow Host { get; set; }
+    parameters: []
+    return:
+      type: MBFWpfToolkit.MbWindow
+    content.vb: Public Shared Property Host As MbWindow
+  overload: MBFWpfToolkit.Helpers.MbNotification.Host*
 references:
-- uid: HandyControl.Controls.Growl
-  commentId: T:HandyControl.Controls.Growl
+- uid: MicroBIM.UI.Controls.Growl
+  commentId: T:MicroBIM.UI.Controls.Growl
   isExternal: true
 - uid: MBFWpfToolkit.Helpers
   commentId: N:MBFWpfToolkit.Helpers
@@ -442,4 +502,33 @@ references:
   name: ShowError
   nameWithType: MbNotification.ShowError
   fullName: MBFWpfToolkit.Helpers.MbNotification.ShowError
+- uid: MBFWpfToolkit.Helpers.MbNotification.ShowWarning*
+  commentId: Overload:MBFWpfToolkit.Helpers.MbNotification.ShowWarning
+  isExternal: true
+  href: MBFWpfToolkit.Helpers.MbNotification.html#MBFWpfToolkit_Helpers_MbNotification_ShowWarning_System_String_System_Int32_
+  name: ShowWarning
+  nameWithType: MbNotification.ShowWarning
+  fullName: MBFWpfToolkit.Helpers.MbNotification.ShowWarning
+- uid: MBFWpfToolkit.Helpers.MbNotification.Host*
+  commentId: Overload:MBFWpfToolkit.Helpers.MbNotification.Host
+  isExternal: true
+  href: MBFWpfToolkit.Helpers.MbNotification.html#MBFWpfToolkit_Helpers_MbNotification_Host
+  name: Host
+  nameWithType: MbNotification.Host
+  fullName: MBFWpfToolkit.Helpers.MbNotification.Host
+- uid: MBFWpfToolkit.MbWindow
+  commentId: T:MBFWpfToolkit.MbWindow
+  parent: MBFWpfToolkit
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html
+  name: MbWindow
+  nameWithType: MbWindow
+  fullName: MBFWpfToolkit.MbWindow
+- uid: MBFWpfToolkit
+  commentId: N:MBFWpfToolkit
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit
+  nameWithType: MBFWpfToolkit
+  fullName: MBFWpfToolkit
 shouldSkipMarkup: true

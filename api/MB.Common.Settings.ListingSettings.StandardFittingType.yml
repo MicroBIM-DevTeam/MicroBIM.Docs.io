@@ -1,0 +1,1573 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType
+  commentId: T:MB.Common.Settings.ListingSettings.StandardFittingType
+  id: StandardFittingType
+  parent: MB.Common.Settings.ListingSettings
+  children:
+  - MB.Common.Settings.ListingSettings.StandardFittingType.BlankEnd
+  - MB.Common.Settings.ListingSettings.StandardFittingType.Bush
+  - MB.Common.Settings.ListingSettings.StandardFittingType.CrossEmbeddedCoupling
+  - MB.Common.Settings.ListingSettings.StandardFittingType.ElbowWithEmbeddedCoupling
+  - MB.Common.Settings.ListingSettings.StandardFittingType.FlangedFittingGeneral
+  - MB.Common.Settings.ListingSettings.StandardFittingType.FullSocket
+  - MB.Common.Settings.ListingSettings.StandardFittingType.GRVFlangedFittingGeneral
+  - MB.Common.Settings.ListingSettings.StandardFittingType.GRVTRDFittingGeneral
+  - MB.Common.Settings.ListingSettings.StandardFittingType.GroovedBranchOletGOLBO
+  - MB.Common.Settings.ListingSettings.StandardFittingType.GroovedCap
+  - MB.Common.Settings.ListingSettings.StandardFittingType.GroovedCoupling
+  - MB.Common.Settings.ListingSettings.StandardFittingType.GroovedCross
+  - MB.Common.Settings.ListingSettings.StandardFittingType.GroovedElbow
+  - MB.Common.Settings.ListingSettings.StandardFittingType.GroovedFittingGeneral
+  - MB.Common.Settings.ListingSettings.StandardFittingType.GroovedMechanicalCross
+  - MB.Common.Settings.ListingSettings.StandardFittingType.GroovedMechanicalTee
+  - MB.Common.Settings.ListingSettings.StandardFittingType.GroovedReducer
+  - MB.Common.Settings.ListingSettings.StandardFittingType.GroovedTee
+  - MB.Common.Settings.ListingSettings.StandardFittingType.HalfSocket
+  - MB.Common.Settings.ListingSettings.StandardFittingType.HexNipple
+  - MB.Common.Settings.ListingSettings.StandardFittingType.IGSCap
+  - MB.Common.Settings.ListingSettings.StandardFittingType.IGSCoupling
+  - MB.Common.Settings.ListingSettings.StandardFittingType.IGSElbowWithEmbeddedCoupling
+  - MB.Common.Settings.ListingSettings.StandardFittingType.IGSEndOlet
+  - MB.Common.Settings.ListingSettings.StandardFittingType.IGSFittingGeneral
+  - MB.Common.Settings.ListingSettings.StandardFittingType.IGSGRVFittingGeneral
+  - MB.Common.Settings.ListingSettings.StandardFittingType.IGSIRFittingGeneral
+  - MB.Common.Settings.ListingSettings.StandardFittingType.IGSMechanicalTee
+  - MB.Common.Settings.ListingSettings.StandardFittingType.IGSOlet
+  - MB.Common.Settings.ListingSettings.StandardFittingType.IGSReducer
+  - MB.Common.Settings.ListingSettings.StandardFittingType.IGSTRDFittingGeneral
+  - MB.Common.Settings.ListingSettings.StandardFittingType.IGSTeeEmbeddedCoupling
+  - MB.Common.Settings.ListingSettings.StandardFittingType.IRCap
+  - MB.Common.Settings.ListingSettings.StandardFittingType.IRCoupling
+  - MB.Common.Settings.ListingSettings.StandardFittingType.IRElbowEmbeddedCoupling
+  - MB.Common.Settings.ListingSettings.StandardFittingType.IRGroovedEndOlet
+  - MB.Common.Settings.ListingSettings.StandardFittingType.IRReducer
+  - MB.Common.Settings.ListingSettings.StandardFittingType.IRTeeEmbeddedCoupling
+  - MB.Common.Settings.ListingSettings.StandardFittingType.MechTee922TRD
+  - MB.Common.Settings.ListingSettings.StandardFittingType.ModelingHelperNonConnector
+  - MB.Common.Settings.ListingSettings.StandardFittingType.NewMapping
+  - MB.Common.Settings.ListingSettings.StandardFittingType.None
+  - MB.Common.Settings.ListingSettings.StandardFittingType.PVCFittingGeneralPlainEnd
+  - MB.Common.Settings.ListingSettings.StandardFittingType.PipeOletTap
+  - MB.Common.Settings.ListingSettings.StandardFittingType.Plug
+  - MB.Common.Settings.ListingSettings.StandardFittingType.PlugConnectedAfterFullSocket
+  - MB.Common.Settings.ListingSettings.StandardFittingType.PlugConnectedAfterHalfSocket
+  - MB.Common.Settings.ListingSettings.StandardFittingType.TeeWithEmbeddedCoupling
+  - MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedCap
+  - MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedCouplingUS
+  - MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedCross
+  - MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedElbow
+  - MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedFittingGeneral
+  - MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedMechanicalCross
+  - MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedMechanicalTee
+  - MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedTee
+  - MB.Common.Settings.ListingSettings.StandardFittingType.WGRVFittingGeneral
+  - MB.Common.Settings.ListingSettings.StandardFittingType.WeldedEndFittingGeneral
+  - MB.Common.Settings.ListingSettings.StandardFittingType.WeldedGroovedPieceIR
+  langs:
+  - csharp
+  - vb
+  name: StandardFittingType
+  nameWithType: StandardFittingType
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType
+  type: Enum
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a collection of fitting types commonly utilized within piping systems,
+
+    categorized by different connection methods such as threaded, grooved, embedded couplings,
+
+    integrated systems (IGS), flanged connections, and more.
+  example: []
+  syntax:
+    content: >-
+      [TypeConverter(typeof(EnumDescriptionTypeConverter))]
+
+      public enum StandardFittingType
+    content.vb: >-
+      <TypeConverter(GetType(EnumDescriptionTypeConverter))>
+
+      Public Enum StandardFittingType
+  attributes:
+  - type: System.ComponentModel.TypeConverterAttribute
+    ctor: System.ComponentModel.TypeConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: MicroBIM.UI.Tools.Converter.EnumDescriptionTypeConverter
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedElbow
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedElbow
+  id: ThreadedElbow
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: ThreadedElbow
+  nameWithType: StandardFittingType.ThreadedElbow
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedElbow
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a threaded elbow fitting type within the standard fitting category.
+
+    Threaded elbow fittings are designed to join two pipes at an angle,
+
+    typically 90 or 45 degrees, and utilize threading for connection.
+  example: []
+  syntax:
+    content: ThreadedElbow = 1
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedTee
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedTee
+  id: ThreadedTee
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: ThreadedTee
+  nameWithType: StandardFittingType.ThreadedTee
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedTee
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a type of standard fitting known as "Threaded Tee."
+
+    This fitting features a T-shaped design with threaded connections
+
+    at all three connection points, commonly used in piping systems
+
+    for branching a flow into two lines or combining two flows into one.
+  example: []
+  syntax:
+    content: ThreadedTee = 2
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.ElbowWithEmbeddedCoupling
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.ElbowWithEmbeddedCoupling
+  id: ElbowWithEmbeddedCoupling
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: ElbowWithEmbeddedCoupling
+  nameWithType: StandardFittingType.ElbowWithEmbeddedCoupling
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.ElbowWithEmbeddedCoupling
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a type of fitting defined as "Elbow with Embedded Coupling."
+
+    This fitting combines an elbow and a coupling into a single embedded component,
+
+    providing a seamless transition and integrated functionality within piping systems.
+  example: []
+  syntax:
+    content: ElbowWithEmbeddedCoupling = 3
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.TeeWithEmbeddedCoupling
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.TeeWithEmbeddedCoupling
+  id: TeeWithEmbeddedCoupling
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: TeeWithEmbeddedCoupling
+  nameWithType: StandardFittingType.TeeWithEmbeddedCoupling
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.TeeWithEmbeddedCoupling
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a tee fitting that includes an embedded coupling.
+
+    This fitting type combines the functionality of a tee and a coupling,
+
+    offering a streamlined design for specific pipe connection scenarios.
+  example: []
+  syntax:
+    content: TeeWithEmbeddedCoupling = 4
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.PipeOletTap
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.PipeOletTap
+  id: PipeOletTap
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: PipeOletTap
+  nameWithType: StandardFittingType.PipeOletTap
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.PipeOletTap
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents the "Pipe Olet Tap" type in the <xref href="MB.Common.Settings.ListingSettings.StandardFittingType" data-throw-if-not-resolved="false"></xref> enumeration.
+
+    This fitting is typically used for branching off the main pipe,
+
+    allowing for the connection of smaller pipes or outlets.
+  example: []
+  syntax:
+    content: PipeOletTap = 5
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedBranchOletGOLBO
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.GroovedBranchOletGOLBO
+  id: GroovedBranchOletGOLBO
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: GroovedBranchOletGOLBO
+  nameWithType: StandardFittingType.GroovedBranchOletGOLBO
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedBranchOletGOLBO
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a grooved branch olet fitting, identified with the abbreviation GOL BO.
+
+    This type of fitting is commonly used in piping systems to provide a branch connection
+
+    with grooved ends for easy installation and alignment.
+  example: []
+  syntax:
+    content: GroovedBranchOletGOLBO = 6
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.PlugConnectedAfterHalfSocket
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.PlugConnectedAfterHalfSocket
+  id: PlugConnectedAfterHalfSocket
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: PlugConnectedAfterHalfSocket
+  nameWithType: StandardFittingType.PlugConnectedAfterHalfSocket
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.PlugConnectedAfterHalfSocket
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a plug that is connected after a half socket fitting.
+
+    This type is typically used in pipeline or plumbing systems to seal
+
+    or terminate a connection while attached to a half socket configuration.
+  example: []
+  syntax:
+    content: PlugConnectedAfterHalfSocket = 7
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedCross
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedCross
+  id: ThreadedCross
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: ThreadedCross
+  nameWithType: StandardFittingType.ThreadedCross
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedCross
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a fitting type classified as "Threaded Cross".
+
+    This fitting type is designed with threaded connections,
+
+    allowing for a cross-shaped configuration that provides four-way pipe connection points.
+  example: []
+  syntax:
+    content: ThreadedCross = 8
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedCross
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.GroovedCross
+  id: GroovedCross
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: GroovedCross
+  nameWithType: StandardFittingType.GroovedCross
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedCross
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a grooved cross fitting type commonly used in piping
+
+    systems. This fitting is designed with grooves that enable secure
+
+    coupling and assembly within grooved pipe systems. It typically
+
+    serves as a four-way connection point for pipes in a cross
+
+    configuration, ensuring efficient fluid distribution.
+  example: []
+  syntax:
+    content: GroovedCross = 9
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.Bush
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.Bush
+  id: Bush
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: Bush
+  nameWithType: StandardFittingType.Bush
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.Bush
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents the "Bush" fitting type in the StandardFittingType enumeration.
+  example: []
+  syntax:
+    content: Bush = 10
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.HalfSocket
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.HalfSocket
+  id: HalfSocket
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: HalfSocket
+  nameWithType: StandardFittingType.HalfSocket
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.HalfSocket
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents a standard fitting type "Half Socket".
+  remarks: >-
+    This enum value is used to represent a half socket fitting in various configurations
+
+    within the system. It is identified by the enum value of 11 and has a display name of "Half Socket".
+  example: []
+  syntax:
+    content: HalfSocket = 11
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.FullSocket
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.FullSocket
+  id: FullSocket
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: FullSocket
+  nameWithType: StandardFittingType.FullSocket
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.FullSocket
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents a full socket fitting type in the <xref href="MB.Common.Settings.ListingSettings.StandardFittingType" data-throw-if-not-resolved="false"></xref> enumeration.
+  remarks: >-
+    A full socket is typically used to provide a secure and complete connection
+
+    in piping systems, allowing joining of components with an extended and
+
+    enclosed fitting interface.
+  example: []
+  syntax:
+    content: FullSocket = 12
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.HexNipple
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.HexNipple
+  id: HexNipple
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: HexNipple
+  nameWithType: StandardFittingType.HexNipple
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.HexNipple
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents a hex nipple fitting type in the <xref href="MB.Common.Settings.ListingSettings.StandardFittingType" data-throw-if-not-resolved="false"></xref> enumeration.
+  remarks: >-
+    A hex nipple is a threaded fitting with hexagonal sides, designed for connecting two pipes or fittings.
+
+    It is commonly used in piping systems to create secure and leak-proof connections.
+  example: []
+  syntax:
+    content: HexNipple = 13
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedCoupling
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.GroovedCoupling
+  id: GroovedCoupling
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: GroovedCoupling
+  nameWithType: StandardFittingType.GroovedCoupling
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedCoupling
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents the Grooved Coupling fitting type in the StandardFittingType enumeration.
+  remarks: >-
+    The Grooved Coupling is a standard fitting type used in piping systems. It utilizes a grooved design
+
+    to enable secure and efficient assembly of piping connections, ensuring structural integrity
+
+    and ease of installation.
+  example: []
+  syntax:
+    content: GroovedCoupling = 14
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedCouplingUS
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedCouplingUS
+  id: ThreadedCouplingUS
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: ThreadedCouplingUS
+  nameWithType: StandardFittingType.ThreadedCouplingUS
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedCouplingUS
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents a threaded coupling fitting specific to U.S. standards.
+  example: []
+  syntax:
+    content: ThreadedCouplingUS = 15
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedMechanicalTee
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.GroovedMechanicalTee
+  id: GroovedMechanicalTee
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: GroovedMechanicalTee
+  nameWithType: StandardFittingType.GroovedMechanicalTee
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedMechanicalTee
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents a grooved mechanical tee fitting type, used in piping systems.
+  example: []
+  syntax:
+    content: GroovedMechanicalTee = 16
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedMechanicalTee
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedMechanicalTee
+  id: ThreadedMechanicalTee
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: ThreadedMechanicalTee
+  nameWithType: StandardFittingType.ThreadedMechanicalTee
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedMechanicalTee
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a threaded mechanical tee fitting type within the
+
+    <xref href="MB.Common.Settings.ListingSettings.StandardFittingType" data-throw-if-not-resolved="false"></xref> enumeration.
+  remarks: >-
+    The ThreadedMechanicalTee is a type of pipe fitting used to connect
+
+    branches of piping systems. It features threaded connections for
+
+    secure assembly in mechanical piping configurations.
+  example: []
+  syntax:
+    content: ThreadedMechanicalTee = 17
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedMechanicalCross
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.GroovedMechanicalCross
+  id: GroovedMechanicalCross
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: GroovedMechanicalCross
+  nameWithType: StandardFittingType.GroovedMechanicalCross
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedMechanicalCross
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a grooved mechanical cross fitting type, typically used in piping systems.
+
+    This fitting allows four pipes to be joined at right angles to one another,
+
+    facilitating mechanical joint installations with grooved connections.
+  example: []
+  syntax:
+    content: GroovedMechanicalCross = 18
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedMechanicalCross
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedMechanicalCross
+  id: ThreadedMechanicalCross
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: ThreadedMechanicalCross
+  nameWithType: StandardFittingType.ThreadedMechanicalCross
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedMechanicalCross
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Specifies a fitting type that represents a threaded mechanical cross.
+  example: []
+  syntax:
+    content: ThreadedMechanicalCross = 19
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.IGSElbowWithEmbeddedCoupling
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.IGSElbowWithEmbeddedCoupling
+  id: IGSElbowWithEmbeddedCoupling
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: IGSElbowWithEmbeddedCoupling
+  nameWithType: StandardFittingType.IGSElbowWithEmbeddedCoupling
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.IGSElbowWithEmbeddedCoupling
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents an IGS elbow fitting that includes an embedded coupling.
+
+    This type of fitting is commonly used in piping systems to connect two pipe segments
+
+    at an angle while providing an integrated coupling for secure and efficient connections.
+  example: []
+  syntax:
+    content: IGSElbowWithEmbeddedCoupling = 20
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.IGSTeeEmbeddedCoupling
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.IGSTeeEmbeddedCoupling
+  id: IGSTeeEmbeddedCoupling
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: IGSTeeEmbeddedCoupling
+  nameWithType: StandardFittingType.IGSTeeEmbeddedCoupling
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.IGSTeeEmbeddedCoupling
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a fitting type categorized as IGS Tee with Embedded Coupling.
+
+    This fitting type is typically used in piping or plumbing systems where an IGS-standard tee fitting
+
+    incorporates an embedded coupling for streamlined and integrated connections.
+  example: []
+  syntax:
+    content: IGSTeeEmbeddedCoupling = 21
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.IGSCoupling
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.IGSCoupling
+  id: IGSCoupling
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: IGSCoupling
+  nameWithType: StandardFittingType.IGSCoupling
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.IGSCoupling
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents the "IGS Coupling" fitting type in the StandardFittingType enumeration.
+
+    This fitting type is part of the Integrated Grooved System (IGS), designed to provide
+
+    secure connections in piping systems using the coupling mechanism.
+  example: []
+  syntax:
+    content: IGSCoupling = 22
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.IGSOlet
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.IGSOlet
+  id: IGSOlet
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: IGSOlet
+  nameWithType: StandardFittingType.IGSOlet
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.IGSOlet
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents the IGS Olet fitting type in the <xref href="MB.Common.Settings.ListingSettings.StandardFittingType" data-throw-if-not-resolved="false"></xref> enumeration.
+
+    This type is used for fittings designed to connect or branch pipes within the
+
+    IGS (Integrated Grooved System) category.
+  example: []
+  syntax:
+    content: IGSOlet = 23
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.IGSCap
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.IGSCap
+  id: IGSCap
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: IGSCap
+  nameWithType: StandardFittingType.IGSCap
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.IGSCap
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents an IGS-specific cap fitting type in the standard fitting type enumeration.
+
+    This fitting is used to seal the end of a pipe or other component in a system that uses
+
+    IGS (Integrated Grooved System) fittings.
+  example: []
+  syntax:
+    content: IGSCap = 24
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.IGSMechanicalTee
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.IGSMechanicalTee
+  id: IGSMechanicalTee
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: IGSMechanicalTee
+  nameWithType: StandardFittingType.IGSMechanicalTee
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.IGSMechanicalTee
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents an IGS Mechanical Tee fitting type within the
+
+    <xref href="MB.Common.Settings.ListingSettings.StandardFittingType" data-throw-if-not-resolved="false"></xref> enumeration.
+
+    An IGS Mechanical Tee is a type of fitting used in piping
+
+    systems that typically allows for the branching of a pipeline
+
+    while maintaining a mechanical connection.
+  example: []
+  syntax:
+    content: IGSMechanicalTee = 25
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.IGSReducer
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.IGSReducer
+  id: IGSReducer
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: IGSReducer
+  nameWithType: StandardFittingType.IGSReducer
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.IGSReducer
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents the IGS Reducer fitting type in the <xref href="MB.Common.Settings.ListingSettings.StandardFittingType" data-throw-if-not-resolved="false"></xref> enumeration.
+
+    This fitting type is specific to IGS (Integrated Grooved System) and is used when a reducer is
+
+    required to transition between pipes of different diameters in a grooved piping system.
+  example: []
+  syntax:
+    content: IGSReducer = 27
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.IRGroovedEndOlet
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.IRGroovedEndOlet
+  id: IRGroovedEndOlet
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: IRGroovedEndOlet
+  nameWithType: StandardFittingType.IRGroovedEndOlet
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.IRGroovedEndOlet
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents an IR Grooved End Olet fitting type.
+
+    This fitting is typically used in piping systems where grooved end connections
+
+    are required to facilitate assembly without welding.
+  example: []
+  syntax:
+    content: IRGroovedEndOlet = 28
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.IRCoupling
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.IRCoupling
+  id: IRCoupling
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: IRCoupling
+  nameWithType: StandardFittingType.IRCoupling
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.IRCoupling
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents the IR Coupling fitting type used in piping configurations.
+  remarks: >-
+    Corresponds to the fitting type with the designation "IR Coupling".
+
+    Identified by its unique enum value within the StandardFittingType enumeration.
+  example: []
+  syntax:
+    content: IRCoupling = 29
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.IRElbowEmbeddedCoupling
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.IRElbowEmbeddedCoupling
+  id: IRElbowEmbeddedCoupling
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: IRElbowEmbeddedCoupling
+  nameWithType: StandardFittingType.IRElbowEmbeddedCoupling
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.IRElbowEmbeddedCoupling
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents an IR (Integrated Rolled) elbow fitting with an embedded coupling.
+
+    This type of fitting is designed to connect two pipes at an angle,
+
+    while integrating a coupling within the fitting itself to facilitate secure and efficient connections.
+  example: []
+  syntax:
+    content: IRElbowEmbeddedCoupling = 30
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.IRTeeEmbeddedCoupling
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.IRTeeEmbeddedCoupling
+  id: IRTeeEmbeddedCoupling
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: IRTeeEmbeddedCoupling
+  nameWithType: StandardFittingType.IRTeeEmbeddedCoupling
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.IRTeeEmbeddedCoupling
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a type of fitting identified as "IR Tee with Embedded Coupling".
+
+    This fitting type is typically used for connection systems where a Tee shape
+
+    with an integrated coupling mechanism is required for industrial or plumbing
+
+    applications under the IR (InfraRed) fitting category.
+  example: []
+  syntax:
+    content: IRTeeEmbeddedCoupling = 31
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.IRReducer
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.IRReducer
+  id: IRReducer
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: IRReducer
+  nameWithType: StandardFittingType.IRReducer
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.IRReducer
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a specific type of fitting known as "IR Reducer," which is part of the
+
+    "IR" (Integral Reducer) grouping within the available standard fitting types.
+
+    This type is typically used to connect pipes of different diameters
+
+    while adhering to the specifications of the "IR" fitting standard.
+  example: []
+  syntax:
+    content: IRReducer = 32
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.IRCap
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.IRCap
+  id: IRCap
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: IRCap
+  nameWithType: StandardFittingType.IRCap
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.IRCap
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents a standard fitting type classified as "IR Cap".
+  example: []
+  syntax:
+    content: IRCap = 33
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.CrossEmbeddedCoupling
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.CrossEmbeddedCoupling
+  id: CrossEmbeddedCoupling
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: CrossEmbeddedCoupling
+  nameWithType: StandardFittingType.CrossEmbeddedCoupling
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.CrossEmbeddedCoupling
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents a cross fitting type that includes an embedded coupling.
+  remarks: >-
+    This fitting type is typically used in plumbing or piping systems where a cross layout,
+
+    integrated with an embedded coupling, is required to connect multiple pipes or components.
+  example: []
+  syntax:
+    content: CrossEmbeddedCoupling = 34
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.PlugConnectedAfterFullSocket
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.PlugConnectedAfterFullSocket
+  id: PlugConnectedAfterFullSocket
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: PlugConnectedAfterFullSocket
+  nameWithType: StandardFittingType.PlugConnectedAfterFullSocket
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.PlugConnectedAfterFullSocket
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents a standard fitting type where a plug is connected after the application of a full socket.
+  example: []
+  syntax:
+    content: PlugConnectedAfterFullSocket = 35
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.NewMapping
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.NewMapping
+  id: NewMapping
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: NewMapping
+  nameWithType: StandardFittingType.NewMapping
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.NewMapping
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents a new mapping type of fitting in the <xref href="MB.Common.Settings.ListingSettings.StandardFittingType" data-throw-if-not-resolved="false"></xref> enum.
+  example: []
+  syntax:
+    content: NewMapping = 36
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.Plug
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.Plug
+  id: Plug
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: Plug
+  nameWithType: StandardFittingType.Plug
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.Plug
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents a plug fitting type. This fitting is typically used to seal or close the end of a pipe or fitting, preventing fluid or gas flow.
+  example: []
+  syntax:
+    content: Plug = 37
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.BlankEnd
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.BlankEnd
+  id: BlankEnd
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: BlankEnd
+  nameWithType: StandardFittingType.BlankEnd
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.BlankEnd
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents a fitting type that is identified as a blank end.
+  example: []
+  syntax:
+    content: BlankEnd = 38
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.WeldedGroovedPieceIR
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.WeldedGroovedPieceIR
+  id: WeldedGroovedPieceIR
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: WeldedGroovedPieceIR
+  nameWithType: StandardFittingType.WeldedGroovedPieceIR
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.WeldedGroovedPieceIR
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a welded fitting type with grooved connections for the IR (In-Room) standard.
+
+    This enum member is part of the <xref href="MB.Common.Settings.ListingSettings.StandardFittingType" data-throw-if-not-resolved="false"></xref> enumeration and
+
+    is commonly used for creating or identifying welded fittings with grooved design
+
+    utilized in IR-specific applications or configurations in mechanical systems.
+  example: []
+  syntax:
+    content: WeldedGroovedPieceIR = 39
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.WeldedEndFittingGeneral
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.WeldedEndFittingGeneral
+  id: WeldedEndFittingGeneral
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: WeldedEndFittingGeneral
+  nameWithType: StandardFittingType.WeldedEndFittingGeneral
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.WeldedEndFittingGeneral
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a generalized welded end fitting type.
+
+    This enumeration member is used to categorize fittings that utilize welded connections for establishing a secure link between piping systems and components.
+  example: []
+  syntax:
+    content: WeldedEndFittingGeneral = 40
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedCap
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.GroovedCap
+  id: GroovedCap
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: GroovedCap
+  nameWithType: StandardFittingType.GroovedCap
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedCap
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a grooved cap type fitting in the context of standard fitting types.
+
+    Used for applications requiring a grooved cap connection.
+  example: []
+  syntax:
+    content: GroovedCap = 41
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedReducer
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.GroovedReducer
+  id: GroovedReducer
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: GroovedReducer
+  nameWithType: StandardFittingType.GroovedReducer
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedReducer
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents a grooved reducer fitting type within the <xref href="MB.Common.Settings.ListingSettings.StandardFittingType" data-throw-if-not-resolved="false"></xref> enumeration.
+  remarks: >-
+    A grooved reducer is a type of pipe fitting used to connect two pipes of different diameters
+
+    while employing a grooved connection mechanism.
+  example: []
+  syntax:
+    content: GroovedReducer = 42
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.ModelingHelperNonConnector
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.ModelingHelperNonConnector
+  id: ModelingHelperNonConnector
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: ModelingHelperNonConnector
+  nameWithType: StandardFittingType.ModelingHelperNonConnector
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.ModelingHelperNonConnector
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a placeholder or helper fitting type that is not connected
+
+    to any actual model or component. It can be used as a utility within
+
+    modeling processes where a non-functional connector type is needed.
+  example: []
+  syntax:
+    content: ModelingHelperNonConnector = 43
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedElbow
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.GroovedElbow
+  id: GroovedElbow
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: GroovedElbow
+  nameWithType: StandardFittingType.GroovedElbow
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedElbow
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a grooved elbow fitting type within the StandardFittingType enumeration.
+
+    A grooved elbow is typically used in piping systems to change the direction of flow while
+
+    maintaining a grooved connection for easy assembly and disassembly of components.
+  example: []
+  syntax:
+    content: GroovedElbow = 44
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedTee
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.GroovedTee
+  id: GroovedTee
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: GroovedTee
+  nameWithType: StandardFittingType.GroovedTee
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedTee
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a grooved tee fitting type.
+
+    This fitting is characterized by its grooved ends
+
+    and branch connections, commonly used for mechanical pipe joining systems.
+  example: []
+  syntax:
+    content: GroovedTee = 45
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedFittingGeneral
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.GroovedFittingGeneral
+  id: GroovedFittingGeneral
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: GroovedFittingGeneral
+  nameWithType: StandardFittingType.GroovedFittingGeneral
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.GroovedFittingGeneral
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a general fitting type for grooved connections.
+
+    This enum member is used to identify standard fittings that align with
+
+    the classification of grooved fittings without specifying a more precise category.
+  example: []
+  syntax:
+    content: GroovedFittingGeneral = 46
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedFittingGeneral
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedFittingGeneral
+  id: ThreadedFittingGeneral
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: ThreadedFittingGeneral
+  nameWithType: StandardFittingType.ThreadedFittingGeneral
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedFittingGeneral
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a general threaded fitting type. It is a category within the
+
+    StandardFittingType enumeration that serves as a generic descriptor for
+
+    threaded fitting components where no specific subtype is identified or required.
+  example: []
+  syntax:
+    content: ThreadedFittingGeneral = 47
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.IGSIRFittingGeneral
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.IGSIRFittingGeneral
+  id: IGSIRFittingGeneral
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: IGSIRFittingGeneral
+  nameWithType: StandardFittingType.IGSIRFittingGeneral
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.IGSIRFittingGeneral
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a general fitting type for the IGS and IR classifications.
+
+    This enumeration member is part of the StandardFittingType enum, used for
+
+    identifying fittings that combine characteristics or applications of both
+
+    IGS (Integrated Groove System) and IR (Internal Resistance).
+  example: []
+  syntax:
+    content: IGSIRFittingGeneral = 48
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.GRVTRDFittingGeneral
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.GRVTRDFittingGeneral
+  id: GRVTRDFittingGeneral
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: GRVTRDFittingGeneral
+  nameWithType: StandardFittingType.GRVTRDFittingGeneral
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.GRVTRDFittingGeneral
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a grooved fitting of the TRD (Threaded Rotational Design) type within the
+
+    StandardFittingType enumeration. This type is used to categorize general-purpose grooved TRD fittings.
+  example: []
+  syntax:
+    content: GRVTRDFittingGeneral = 49
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.None
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.None
+  id: None
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: StandardFittingType.None
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.None
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents an unspecified or default fitting type in the <xref href="MB.Common.Settings.ListingSettings.StandardFittingType" data-throw-if-not-resolved="false"></xref> enumeration.
+
+    This value is used when no specific fitting type is applicable or has not been determined.
+  example: []
+  syntax:
+    content: None = 50
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedCap
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedCap
+  id: ThreadedCap
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: ThreadedCap
+  nameWithType: StandardFittingType.ThreadedCap
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.ThreadedCap
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents a threaded cap fitting type.
+  example: []
+  syntax:
+    content: ThreadedCap = 51
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.IGSTRDFittingGeneral
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.IGSTRDFittingGeneral
+  id: IGSTRDFittingGeneral
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: IGSTRDFittingGeneral
+  nameWithType: StandardFittingType.IGSTRDFittingGeneral
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.IGSTRDFittingGeneral
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents the general fitting type for IGS threaded connections.
+
+    This enum member is used to categorize fittings with threaded specifications
+
+    under the IGS (Integrated Grooved System) standards.
+  example: []
+  syntax:
+    content: IGSTRDFittingGeneral = 52
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.WGRVFittingGeneral
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.WGRVFittingGeneral
+  id: WGRVFittingGeneral
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: WGRVFittingGeneral
+  nameWithType: StandardFittingType.WGRVFittingGeneral
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.WGRVFittingGeneral
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents a welded grooved fitting general type in the <xref href="MB.Common.Settings.ListingSettings.StandardFittingType" data-throw-if-not-resolved="false"></xref> enumeration.
+  example: []
+  syntax:
+    content: WGRVFittingGeneral = 53
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.IGSGRVFittingGeneral
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.IGSGRVFittingGeneral
+  id: IGSGRVFittingGeneral
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: IGSGRVFittingGeneral
+  nameWithType: StandardFittingType.IGSGRVFittingGeneral
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.IGSGRVFittingGeneral
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents the "IGS GRV Fitting General" type within the <xref href="MB.Common.Settings.ListingSettings.StandardFittingType" data-throw-if-not-resolved="false"></xref> enumeration.
+  remarks: It is used to denote a general category of grooved fittings within the IGS system.
+  example: []
+  syntax:
+    content: IGSGRVFittingGeneral = 54
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.MechTee922TRD
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.MechTee922TRD
+  id: MechTee922TRD
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: MechTee922TRD
+  nameWithType: StandardFittingType.MechTee922TRD
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.MechTee922TRD
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents the "Mechanical Tee 922 TRD" fitting type in the <xref href="MB.Common.Settings.ListingSettings.StandardFittingType" data-throw-if-not-resolved="false"></xref> enumeration.
+
+    This fitting type typically refers to a specific threaded mechanical tee designed for use in piping systems.
+  example: []
+  syntax:
+    content: MechTee922TRD = 55
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.PVCFittingGeneralPlainEnd
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.PVCFittingGeneralPlainEnd
+  id: PVCFittingGeneralPlainEnd
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: PVCFittingGeneralPlainEnd
+  nameWithType: StandardFittingType.PVCFittingGeneralPlainEnd
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.PVCFittingGeneralPlainEnd
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: Represents a general-purpose PVC fitting with a plain end.
+  example: []
+  syntax:
+    content: PVCFittingGeneralPlainEnd = 56
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.FlangedFittingGeneral
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.FlangedFittingGeneral
+  id: FlangedFittingGeneral
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: FlangedFittingGeneral
+  nameWithType: StandardFittingType.FlangedFittingGeneral
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.FlangedFittingGeneral
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a general type of flanged fitting in the enumeration of standard fitting types.
+
+    This member is used to categorize fittings that utilize a flange connection,
+
+    typically offering a secure and durable method of joining pipes or other components.
+  example: []
+  syntax:
+    content: FlangedFittingGeneral = 57
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.IGSEndOlet
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.IGSEndOlet
+  id: IGSEndOlet
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: IGSEndOlet
+  nameWithType: StandardFittingType.IGSEndOlet
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.IGSEndOlet
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a fitting type categorized as "IGS End Olet".
+
+    This type is designed as part of the IGS (Integrated Grooved System) fittings
+
+    and typically serves as an end connection or branch outlet in piping systems.
+  example: []
+  syntax:
+    content: IGSEndOlet = 58
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.GRVFlangedFittingGeneral
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.GRVFlangedFittingGeneral
+  id: GRVFlangedFittingGeneral
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: GRVFlangedFittingGeneral
+  nameWithType: StandardFittingType.GRVFlangedFittingGeneral
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.GRVFlangedFittingGeneral
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a grooved flanged fitting general type in the
+
+    <xref href="MB.Common.Settings.ListingSettings.StandardFittingType" data-throw-if-not-resolved="false"></xref> enumeration.
+  example: []
+  syntax:
+    content: GRVFlangedFittingGeneral = 59
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.IGSFittingGeneral
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.IGSFittingGeneral
+  id: IGSFittingGeneral
+  parent: MB.Common.Settings.ListingSettings.StandardFittingType
+  langs:
+  - csharp
+  - vb
+  name: IGSFittingGeneral
+  nameWithType: StandardFittingType.IGSFittingGeneral
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.IGSFittingGeneral
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Settings.ListingSettings
+  summary: >-
+    Represents a general fitting type for the IGS (International Groove System) standard.
+
+    This designation is used when a specific IGS fitting does not have a more detailed
+
+    classification within the enumeration.
+  example: []
+  syntax:
+    content: IGSFittingGeneral = 60
+    return:
+      type: MB.Common.Settings.ListingSettings.StandardFittingType
+references:
+- uid: MB.Common.Settings.ListingSettings
+  commentId: N:MB.Common.Settings.ListingSettings
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Settings.ListingSettings
+  nameWithType: MB.Common.Settings.ListingSettings
+  fullName: MB.Common.Settings.ListingSettings
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Settings
+    name: Settings
+    isExternal: true
+    href: MB.Common.Settings.html
+  - name: .
+  - uid: MB.Common.Settings.ListingSettings
+    name: ListingSettings
+    isExternal: true
+    href: MB.Common.Settings.ListingSettings.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Settings
+    name: Settings
+    isExternal: true
+    href: MB.Common.Settings.html
+  - name: .
+  - uid: MB.Common.Settings.ListingSettings
+    name: ListingSettings
+    isExternal: true
+    href: MB.Common.Settings.ListingSettings.html
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType
+  commentId: T:MB.Common.Settings.ListingSettings.StandardFittingType
+  parent: MB.Common.Settings.ListingSettings
+  isExternal: true
+  href: MB.Common.Settings.ListingSettings.StandardFittingType.html
+  name: StandardFittingType
+  nameWithType: StandardFittingType
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType
+shouldSkipMarkup: true

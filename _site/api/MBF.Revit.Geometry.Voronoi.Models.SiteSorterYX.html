@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class SiteSorterYX | MIcroBIM Docs ">
       
-      <meta name="description" content="Compares two sites based on their y-coordinates, and x-coordinates if y-coordinates are equal.">
+      <meta name="description" content="Provides a comparison mechanism for sorting  instances. Sorts first by Y-coordinate, then by X-coordinate if Y values are equal. Useful for processing sites in Fortune&#39;s algorithm.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Geometry_Voronoi_Models_SiteSorterYX" data-uid="MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX" class="text-break">
-Class SiteSorterYX  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs"><i class="bi bi-code-slash"></i></a>
+Class SiteSorterYX  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/VoronoiElements.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class SiteSorterYX  <a class="header-action link-secondary" title="View source" 
   <dl><dt>Assembly</dt><dd>MBF.Revit.Geometry.dll</dd></dl>
   </div>
 
-  <div class="markdown summary">Compares two sites based on their y-coordinates, and x-coordinates if y-coordinates are equal.</div>
+  <div class="markdown summary">Provides a comparison mechanism for sorting <a class="xref" href="MBF.Revit.Geometry.Voronoi.Models.Site.html">Site</a> instances.
+Sorts first by Y-coordinate, then by X-coordinate if Y values are equal.
+Useful for processing sites in Fortune's algorithm.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -162,7 +164,7 @@ Class SiteSorterYX  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="MBF_Revit_Geometry_Voronoi_Models_SiteSorterYX__ctor" data-uid="MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.#ctor">
   SiteSorterYX()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/VoronoiElements.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -192,10 +194,10 @@ Class SiteSorterYX  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="MBF_Revit_Geometry_Voronoi_Models_SiteSorterYX_Compare_MBF_Revit_Geometry_Voronoi_Models_Site_MBF_Revit_Geometry_Voronoi_Models_Site_" data-uid="MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX.Compare(MBF.Revit.Geometry.Voronoi.Models.Site,MBF.Revit.Geometry.Voronoi.Models.Site)">
   Compare(Site, Site)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/VoronoiElements.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Compares two <a class="xref" href="MBF.Revit.Geometry.Voronoi.Models.Site.html">Site</a> objects based on their Y and X coordinates.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -205,15 +207,17 @@ Class SiteSorterYX  <a class="header-action link-secondary" title="View source" 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>p1</code> <a class="xref" href="MBF.Revit.Geometry.Voronoi.Models.Site.html">Site</a></dt>
-    <dd></dd>
+    <dd>The first site to compare.</dd>
     <dt><code>p2</code> <a class="xref" href="MBF.Revit.Geometry.Voronoi.Models.Site.html">Site</a></dt>
-    <dd></dd>
+    <dd>The second site to compare.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd>-1 if <code class="paramref">p1</code> comes before <code class="paramref">p2</code>,
+1 if it comes after,
+0 if they are equal.</dd>
   </dl>
 
 

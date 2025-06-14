@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Jsons
+  commentId: N:MB.Common.Jsons
+  id: MB.Common.Jsons
+  children:
+  - MB.Common.Jsons.GenericJsonFileService
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.Jsons
+  nameWithType: MB.Common.Jsons
+  fullName: MB.Common.Jsons
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.Jsons.GenericJsonFileService
+  commentId: T:MB.Common.Jsons.GenericJsonFileService
+  isExternal: true
+  href: MB.Common.Jsons.GenericJsonFileService.html
+  name: GenericJsonFileService
+  nameWithType: GenericJsonFileService
+  fullName: MB.Common.Jsons.GenericJsonFileService
+shouldSkipMarkup: true

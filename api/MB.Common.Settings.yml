@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Settings
+  commentId: N:MB.Common.Settings
+  id: MB.Common.Settings
+  children:
+  - MB.Common.Settings.ParameterData
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.Settings
+  nameWithType: MB.Common.Settings
+  fullName: MB.Common.Settings
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.Settings.ParameterData
+  commentId: T:MB.Common.Settings.ParameterData
+  isExternal: true
+  href: MB.Common.Settings.ParameterData.html
+  name: ParameterData
+  nameWithType: ParameterData
+  fullName: MB.Common.Settings.ParameterData
+shouldSkipMarkup: true

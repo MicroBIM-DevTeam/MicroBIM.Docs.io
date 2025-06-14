@@ -7,6 +7,7 @@ items:
   - MBFWpfToolkit.Helpers.MbNotification
   - MBFWpfToolkit.Helpers.MbResourceHelper
   - MBFWpfToolkit.Helpers.PasswordHelper
+  - MBFWpfToolkit.Helpers.WindowController
   langs:
   - csharp
   - vb
@@ -38,4 +39,11 @@ references:
   name: PasswordHelper
   nameWithType: PasswordHelper
   fullName: MBFWpfToolkit.Helpers.PasswordHelper
+- uid: MBFWpfToolkit.Helpers.WindowController
+  commentId: T:MBFWpfToolkit.Helpers.WindowController
+  isExternal: true
+  href: MBFWpfToolkit.Helpers.WindowController.html
+  name: WindowController
+  nameWithType: WindowController
+  fullName: MBFWpfToolkit.Helpers.WindowController
 shouldSkipMarkup: true

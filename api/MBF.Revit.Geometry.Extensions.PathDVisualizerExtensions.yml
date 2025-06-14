@@ -15,15 +15,32 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/PathDVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/PathDVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
-  summary: Extension methods for visualizing Clipper <xref href="Clipper2Lib.PathD" data-throw-if-not-resolved="false"></xref> and <xref href="Clipper2Lib.PathsD" data-throw-if-not-resolved="false"></xref> in 2D in the Revit XY plane.
+  summary: >-
+    Provides extension methods for visualizing <xref href="Clipper2Lib.PathD" data-throw-if-not-resolved="false"></xref> and <xref href="Clipper2Lib.PathsD" data-throw-if-not-resolved="false"></xref> objects as 2D outlines in
+
+    a
+
+    Revit document using <xref href="DirectShape" data-throw-if-not-resolved="false"></xref> elements.
+  remarks: >-
+    These methods allow developers to create visual representations of 2D paths in the active view of a
+
+    Revit document. The visualizations are rendered as outlines on the XY plane and can be customized with an optional
+
+    color parameter.
   example: []
   syntax:
-    content: public static class PathDVisualizerExtensions
-    content.vb: Public Module PathDVisualizerExtensions
+    content: >-
+      [LogAspect]
+
+      public static class PathDVisualizerExtensions
+    content.vb: >-
+      <LogAspect>
+
+      Public Module PathDVisualizerExtensions
   inheritance:
   - System.Object
   inheritedMembers:
@@ -34,6 +51,10 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: MB.Common.Aspects.LogAspect
+    ctor: MB.Common.Aspects.LogAspect.#ctor
+    arguments: []
 - uid: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D(Clipper2Lib.PathD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
   commentId: M:MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D(Clipper2Lib.PathD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
   id: VisualizePathD2D(Clipper2Lib.PathD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
@@ -47,11 +68,14 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D(Clipper2Lib.PathD, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/PathDVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/PathDVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
-  summary: Visualizes a single <xref href="Clipper2Lib.PathD" data-throw-if-not-resolved="false"></xref> as a 2D outline using a <xref href="DirectShape" data-throw-if-not-resolved="false"></xref> in the active view of the specified Revit document.
+  summary: >-
+    Visualizes a single <xref href="Clipper2Lib.PathD" data-throw-if-not-resolved="false"></xref> as a 2D outline using a <xref href="DirectShape" data-throw-if-not-resolved="false"></xref> in the active view of
+
+    the specified Revit document.
   example: []
   syntax:
     content: public static void VisualizePathD2D(this PathD path, Document doc, Color color = null)
@@ -80,11 +104,14 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathsD2D(Clipper2Lib.PathsD, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/PathDVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/PathDVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
-  summary: Visualizes each <xref href="Clipper2Lib.PathD" data-throw-if-not-resolved="false"></xref> in a <xref href="Clipper2Lib.PathsD" data-throw-if-not-resolved="false"></xref> collection as a 2D outline using <xref href="DirectShape" data-throw-if-not-resolved="false"></xref> elements.
+  summary: >-
+    Visualizes each <xref href="Clipper2Lib.PathD" data-throw-if-not-resolved="false"></xref> in a <xref href="Clipper2Lib.PathsD" data-throw-if-not-resolved="false"></xref> collection as a 2D outline using
+
+    <xref href="DirectShape" data-throw-if-not-resolved="false"></xref> elements.
   example: []
   syntax:
     content: public static void VisualizePathsD2D(this PathsD paths, Document doc, Color color = null)
@@ -115,6 +142,9 @@ references:
   name: PathsD
   nameWithType: PathsD
   fullName: Clipper2Lib.PathsD
+- uid: DirectShape
+  commentId: T:DirectShape
+  isExternal: true
 - uid: MBF.Revit.Geometry.Extensions
   commentId: N:MBF.Revit.Geometry.Extensions
   isExternal: true
@@ -405,9 +435,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: DirectShape
-  commentId: T:DirectShape
-  isExternal: true
 - uid: Autodesk.Revit.DB.Document
   commentId: T:Autodesk.Revit.DB.Document
   isExternal: true

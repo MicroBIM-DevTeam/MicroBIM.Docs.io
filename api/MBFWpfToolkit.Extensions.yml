@@ -4,7 +4,9 @@ items:
   commentId: N:MBFWpfToolkit.Extensions
   id: MBFWpfToolkit.Extensions
   children:
+  - MBFWpfToolkit.Extensions.CollectionExtensions
   - MBFWpfToolkit.Extensions.ListExtensions
+  - MBFWpfToolkit.Extensions.ToleranceGroup`2
   langs:
   - csharp
   - vb
@@ -15,11 +17,81 @@ items:
   assemblies:
   - MBFWpfToolkit
 references:
+- uid: MBFWpfToolkit.Extensions.CollectionExtensions
+  commentId: T:MBFWpfToolkit.Extensions.CollectionExtensions
+  parent: MBFWpfToolkit.Extensions
+  isExternal: true
+  href: MBFWpfToolkit.Extensions.CollectionExtensions.html
+  name: CollectionExtensions
+  nameWithType: CollectionExtensions
+  fullName: MBFWpfToolkit.Extensions.CollectionExtensions
 - uid: MBFWpfToolkit.Extensions.ListExtensions
   commentId: T:MBFWpfToolkit.Extensions.ListExtensions
+  parent: MBFWpfToolkit.Extensions
   isExternal: true
   href: MBFWpfToolkit.Extensions.ListExtensions.html
   name: ListExtensions
   nameWithType: ListExtensions
   fullName: MBFWpfToolkit.Extensions.ListExtensions
+- uid: MBFWpfToolkit.Extensions.ToleranceGroup`2
+  commentId: T:MBFWpfToolkit.Extensions.ToleranceGroup`2
+  isExternal: true
+  href: MBFWpfToolkit.Extensions.ToleranceGroup-2.html
+  name: ToleranceGroup<TKey, TElement>
+  nameWithType: ToleranceGroup<TKey, TElement>
+  fullName: MBFWpfToolkit.Extensions.ToleranceGroup<TKey, TElement>
+  nameWithType.vb: ToleranceGroup(Of TKey, TElement)
+  fullName.vb: MBFWpfToolkit.Extensions.ToleranceGroup(Of TKey, TElement)
+  name.vb: ToleranceGroup(Of TKey, TElement)
+  spec.csharp:
+  - uid: MBFWpfToolkit.Extensions.ToleranceGroup`2
+    name: ToleranceGroup
+    isExternal: true
+    href: MBFWpfToolkit.Extensions.ToleranceGroup-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: MBFWpfToolkit.Extensions.ToleranceGroup`2
+    name: ToleranceGroup
+    isExternal: true
+    href: MBFWpfToolkit.Extensions.ToleranceGroup-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: MBFWpfToolkit.Extensions
+  commentId: N:MBFWpfToolkit.Extensions
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit.Extensions
+  nameWithType: MBFWpfToolkit.Extensions
+  fullName: MBFWpfToolkit.Extensions
+  spec.csharp:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Extensions
+    name: Extensions
+    isExternal: true
+    href: MBFWpfToolkit.Extensions.html
+  spec.vb:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Extensions
+    name: Extensions
+    isExternal: true
+    href: MBFWpfToolkit.Extensions.html
 shouldSkipMarkup: true

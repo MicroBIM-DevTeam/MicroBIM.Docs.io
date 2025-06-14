@@ -16,15 +16,32 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.CurveLoopExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveLoopExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveLoopExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
-  summary: Provides extension methods for converting <xref href="CurveLoop" data-throw-if-not-resolved="false"></xref> and <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> into Clipper2 <xref href="Clipper2Lib.PathD" data-throw-if-not-resolved="false"></xref> and <xref href="Clipper2Lib.PathsD" data-throw-if-not-resolved="false"></xref>.
+  summary: >-
+    Provides extension methods for converting <xref href="CurveLoop" data-throw-if-not-resolved="false"></xref> objects into Clipper-compatible path
+
+    representations, such as <xref href="Clipper2Lib.PathD" data-throw-if-not-resolved="false"></xref> and <xref href="Clipper2Lib.PathsD" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    These methods facilitate the conversion of geometric curve data into formats compatible with the
+
+    Clipper library, enabling operations such as polygon clipping and path manipulation. The methods handle common
+
+    validation scenarios, such as ensuring the input is not null and that the geometry meets the minimum requirements
+
+    for conversion.
   example: []
   syntax:
-    content: public static class CurveLoopExtensions
-    content.vb: Public Module CurveLoopExtensions
+    content: >-
+      [LogAspect]
+
+      public static class CurveLoopExtensions
+    content.vb: >-
+      <LogAspect>
+
+      Public Module CurveLoopExtensions
   inheritance:
   - System.Object
   inheritedMembers:
@@ -35,6 +52,10 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: MB.Common.Aspects.LogAspect
+    ctor: MB.Common.Aspects.LogAspect.#ctor
+    arguments: []
 - uid: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathD(Autodesk.Revit.DB.CurveLoop)
   commentId: M:MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathD(Autodesk.Revit.DB.CurveLoop)
   id: ToClipperPathD(Autodesk.Revit.DB.CurveLoop)
@@ -48,11 +69,14 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathD(Autodesk.Revit.DB.CurveLoop)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveLoopExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveLoopExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
-  summary: Converts a <xref href="CurveLoop" data-throw-if-not-resolved="false"></xref> into a Clipper-compatible <xref href="Clipper2Lib.PathD" data-throw-if-not-resolved="false"></xref> by collecting its curve endpoints.
+  summary: >-
+    Converts a <xref href="CurveLoop" data-throw-if-not-resolved="false"></xref> into a Clipper-compatible <xref href="Clipper2Lib.PathD" data-throw-if-not-resolved="false"></xref> by collecting its curve
+
+    endpoints.
   example: []
   syntax:
     content: public static MbResult<PathD> ToClipperPathD(this CurveLoop curveLoop)
@@ -81,7 +105,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathsD(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.CurveLoop>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveLoopExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveLoopExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -98,7 +122,10 @@ items:
       description: >-
         An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref>:
 
-        <ul><li><b>Success:</b> Contains the converted <xref href="Clipper2Lib.PathsD" data-throw-if-not-resolved="false"></xref>.</li><li><b>Failure:</b> "CurveLoop collection is null."</li><li><b>Failure:</b> Any error from <xref href="MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathD(Autodesk.Revit.DB.CurveLoop)" data-throw-if-not-resolved="false"></xref> such as "CurveLoop is null." or invalid geometry.</li><li><b>Failure:</b> "Failed to convert CurveLoops to PathsD: [exception message]"</li></ul>
+        <ul><li><b>Success:</b> Contains the converted <xref href="Clipper2Lib.PathsD" data-throw-if-not-resolved="false"></xref>.</li><li><b>Failure:</b> "CurveLoop collection is null."</li><li>
+                    <b>Failure:</b> Any error from <xref href="MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathD(Autodesk.Revit.DB.CurveLoop)" data-throw-if-not-resolved="false"></xref> such as "CurveLoop is null." or
+                    invalid geometry.
+                </li><li><b>Failure:</b> "Failed to convert CurveLoops to PathsD: [exception message]"</li></ul>
     content.vb: Public Shared Function ToClipperPathsD(curveLoops As IEnumerable(Of CurveLoop)) As MbResult(Of PathsD)
   overload: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathsD*
   nameWithType.vb: CurveLoopExtensions.ToClipperPathsD(IEnumerable(Of CurveLoop))
@@ -117,7 +144,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToPathsD(Autodesk.Revit.DB.CurveLoop)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveLoopExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveLoopExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -134,41 +161,16 @@ items:
       description: >-
         An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref>:
 
-        <ul><li><b>Success:</b> Contains a <xref href="Clipper2Lib.PathsD" data-throw-if-not-resolved="false"></xref> with one converted path.</li><li><b>Failure:</b> Any error from <xref href="MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathD(Autodesk.Revit.DB.CurveLoop)" data-throw-if-not-resolved="false"></xref>, such as null or invalid geometry.</li></ul>
+        <ul><li><b>Success:</b> Contains a <xref href="Clipper2Lib.PathsD" data-throw-if-not-resolved="false"></xref> with one converted path.</li><li>
+                    <b>Failure:</b> Any error from <xref href="MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathD(Autodesk.Revit.DB.CurveLoop)" data-throw-if-not-resolved="false"></xref>, such as null or invalid
+                    geometry.
+                </li></ul>
     content.vb: Public Shared Function ToPathsD(curveLoop As CurveLoop) As MbResult(Of PathsD)
   overload: MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToPathsD*
 references:
 - uid: CurveLoop
   commentId: T:CurveLoop
   isExternal: true
-- uid: System.Collections.Generic.IEnumerable`1
-  commentId: T:System.Collections.Generic.IEnumerable`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<T>
-  nameWithType: IEnumerable<T>
-  fullName: System.Collections.Generic.IEnumerable<T>
-  nameWithType.vb: IEnumerable(Of T)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
-  name.vb: IEnumerable(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
 - uid: Clipper2Lib.PathD
   commentId: T:Clipper2Lib.PathD
   parent: Clipper2Lib
@@ -663,6 +665,34 @@ references:
   - uid: Clipper2Lib.PathsD
     name: PathsD
     isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
   - name: )
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic

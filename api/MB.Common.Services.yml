@@ -4,6 +4,7 @@ items:
   commentId: N:MB.Common.Services
   id: MB.Common.Services
   children:
+  - MB.Common.Services.EmbeddedResourceService
   - MB.Common.Services.MailService
   langs:
   - csharp
@@ -15,6 +16,13 @@ items:
   assemblies:
   - MB.Common
 references:
+- uid: MB.Common.Services.EmbeddedResourceService
+  commentId: T:MB.Common.Services.EmbeddedResourceService
+  isExternal: true
+  href: MB.Common.Services.EmbeddedResourceService.html
+  name: EmbeddedResourceService
+  nameWithType: EmbeddedResourceService
+  fullName: MB.Common.Services.EmbeddedResourceService
 - uid: MB.Common.Services.MailService
   commentId: T:MB.Common.Services.MailService
   isExternal: true

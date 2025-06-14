@@ -16,14 +16,16 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.LocalizationHelper
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/LocalizationHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/LocalizationHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
   summary: >-
     Provides localization support for WPF controls using attached properties.
 
-    When <xref href="MBFWpfToolkit.AttachedProperties.LocalizationHelper.LangKeyProperty" data-throw-if-not-resolved="false"></xref> is set on a control, the corresponding localized value will be applied automatically.
+    When <xref href="MBFWpfToolkit.AttachedProperties.LocalizationHelper.LangKeyProperty" data-throw-if-not-resolved="false"></xref> is set on a control, the corresponding localized value will be applied
+
+    automatically.
   example: []
   syntax:
     content: public static class LocalizationHelper
@@ -50,7 +52,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.LocalizationHelper.LangKeyProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/LocalizationHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/LocalizationHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -76,7 +78,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.LocalizationHelper.GetLangKey(System.Windows.DependencyObject)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/LocalizationHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/LocalizationHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -103,7 +105,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.LocalizationHelper.SetLangKey(System.Windows.DependencyObject, string)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/AttachedProperties/LocalizationHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/LocalizationHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties

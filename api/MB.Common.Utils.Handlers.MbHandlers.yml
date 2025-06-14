@@ -20,7 +20,7 @@ items:
   namespace: MB.Common.Utils.Handlers
   summary: Provides static access to Revit external event handlers used across the application.
   remarks: >-
-    This utility class simplifies the management of Revit's <xref href="Nice3point.Revit.Toolkit.External.Handlers.ActionEventHandler" data-throw-if-not-resolved="false"></xref> and 
+    This utility class simplifies the management of Revit's <xref href="Nice3point.Revit.Toolkit.External.Handlers.ActionEventHandler" data-throw-if-not-resolved="false"></xref> and
 
     <xref href="Nice3point.Revit.Toolkit.External.Handlers.AsyncEventHandler" data-throw-if-not-resolved="false"></xref> instances, allowing them to be globally registered and reused.
   example: []

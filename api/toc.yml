@@ -66,6 +66,13 @@ items:
   - uid: MB.Common.Errors.Exceptions.MbException
     name: MbException
     type: Class
+- uid: MB.Common.Jsons
+  name: MB.Common.Jsons
+  type: Namespace
+  items:
+  - uid: MB.Common.Jsons.GenericJsonFileService
+    name: GenericJsonFileService
+    type: Class
 - uid: MB.Common.Parameters
   name: MB.Common.Parameters
   type: Namespace
@@ -77,8 +84,49 @@ items:
   name: MB.Common.Services
   type: Namespace
   items:
+  - uid: MB.Common.Services.EmbeddedResourceService
+    name: EmbeddedResourceService
+    type: Class
   - uid: MB.Common.Services.MailService
     name: MailService
+    type: Class
+- uid: MB.Common.Settings
+  name: MB.Common.Settings
+  type: Namespace
+  items:
+  - uid: MB.Common.Settings.ParameterData
+    name: ParameterData
+    type: Class
+- uid: MB.Common.Settings.ListingSettings
+  name: MB.Common.Settings.ListingSettings
+  type: Namespace
+  items:
+  - uid: MB.Common.Settings.ListingSettings.FittingGroupHelper
+    name: FittingGroupHelper
+    type: Class
+  - uid: MB.Common.Settings.ListingSettings.ListingConfig
+    name: ListingConfig
+    type: Class
+  - uid: MB.Common.Settings.ListingSettings.ListingDto
+    name: ListingDto
+    type: Class
+  - uid: MB.Common.Settings.ListingSettings.ListingMapper
+    name: ListingMapper
+    type: Class
+  - uid: MB.Common.Settings.ListingSettings.ListingSettingsHelper
+    name: ListingSettingsHelper
+    type: Class
+  - uid: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto
+    name: MicroBimListingRecommendationDto
+    type: Class
+  - uid: MB.Common.Settings.ListingSettings.StandardFittingGroups
+    name: StandardFittingGroups
+    type: Class
+  - uid: MB.Common.Settings.ListingSettings.StandardFittingType
+    name: StandardFittingType
+    type: Enum
+  - uid: MB.Common.Settings.ListingSettings.ValueToStandardTypeDto
+    name: ValueToStandardTypeDto
     type: Class
 - uid: MB.Common.SharedParameters
   name: MB.Common.SharedParameters
@@ -155,6 +203,25 @@ items:
   - uid: MBF.Revit.Creation.Extensions.DocumentExtensions
     name: DocumentExtensions
     type: Class
+- uid: MBF.Revit.Data.Extensions
+  name: MBF.Revit.Data.Extensions
+  type: Namespace
+  items:
+  - uid: MBF.Revit.Data.Extensions.DocumentExtensions
+    name: DocumentExtensions
+    type: Class
+  - uid: MBF.Revit.Data.Extensions.PipeExtensions
+    name: PipeExtensions
+    type: Class
+  - uid: MBF.Revit.Data.Extensions.SelectionExtensions
+    name: SelectionExtensions
+    type: Class
+  - uid: MBF.Revit.Data.Extensions.SpaceExtensions
+    name: SpaceExtensions
+    type: Class
+  - uid: MBF.Revit.Data.Extensions.ViewExtensions
+    name: ViewExtensions
+    type: Class
 - uid: MBF.Revit.Data.Models
   name: MBF.Revit.Data.Models
   type: Namespace
@@ -182,6 +249,9 @@ items:
   name: MBF.Revit.Data.Utils
   type: Namespace
   items:
+  - uid: MBF.Revit.Data.Utils.EntityUtils
+    name: EntityUtils
+    type: Class
   - uid: MBF.Revit.Data.Utils.MbFlexPipesUtils
     name: MbFlexPipesUtils
     type: Class
@@ -209,6 +279,15 @@ items:
   - uid: MBF.Revit.Data.Utils.MbViewUtils
     name: MbViewUtils
     type: Class
+  - uid: MBF.Revit.Data.Utils.PipePointType
+    name: PipePointType
+    type: Enum
+  - uid: MBF.Revit.Data.Utils.RevitUnitUtils
+    name: RevitUnitUtils
+    type: Class
+  - uid: MBF.Revit.Data.Utils.XyzExtensibleStorage
+    name: XyzExtensibleStorage
+    type: Class
 - uid: MBF.Revit.Geometry.Extensions
   name: MBF.Revit.Geometry.Extensions
   type: Namespace
@@ -230,6 +309,9 @@ items:
     type: Class
   - uid: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions
     name: CurveVisualizerExtensions
+    type: Class
+  - uid: MBF.Revit.Geometry.Extensions.DirectShapeVisualization
+    name: DirectShapeVisualization
     type: Class
   - uid: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions
     name: PathDVisualizerExtensions
@@ -272,6 +354,13 @@ items:
   - uid: MBF.Revit.Geometry.Voronoi.Models.Voronoi
     name: Voronoi
     type: Class
+- uid: MBF.Revit.Geometry.Voronoi.Utils
+  name: MBF.Revit.Geometry.Voronoi.Utils
+  type: Namespace
+  items:
+  - uid: MBF.Revit.Geometry.Voronoi.Utils.MbVoronoiAlgorithmHelpers
+    name: MbVoronoiAlgorithmHelpers
+    type: Class
 - uid: MBFWpfToolkit
   name: MBFWpfToolkit
   type: Namespace
@@ -291,6 +380,15 @@ items:
     type: Class
   - uid: MBFWpfToolkit.AttachedProperties.LocalizationHelper
     name: LocalizationHelper
+    type: Class
+  - uid: MBFWpfToolkit.AttachedProperties.MicroBimThemeBehavior
+    name: MicroBimThemeBehavior
+    type: Class
+  - uid: MBFWpfToolkit.AttachedProperties.ThemeBehavior
+    name: ThemeBehavior
+    type: Class
+  - uid: MBFWpfToolkit.AttachedProperties.ThemeUtils
+    name: ThemeUtils
     type: Class
 - uid: MBFWpfToolkit.Constants
   name: MBFWpfToolkit.Constants
@@ -326,11 +424,23 @@ items:
   - uid: MBFWpfToolkit.Converters.Boolean2StringConverter
     name: Boolean2StringConverter
     type: Class
+  - uid: MBFWpfToolkit.Converters.BooleanErrorGroupToEnabledConverter
+    name: BooleanErrorGroupToEnabledConverter
+    type: Class
   - uid: MBFWpfToolkit.Converters.BooleanToVisibilityWithInverseConverter
     name: BooleanToVisibilityWithInverseConverter
     type: Class
   - uid: MBFWpfToolkit.Converters.EnumDisplayNameConverter
     name: EnumDisplayNameConverter
+    type: Class
+  - uid: MBFWpfToolkit.Converters.NullToBooleanConverter
+    name: NullToBooleanConverter
+    type: Class
+  - uid: MBFWpfToolkit.Converters.NullToVisibilityConverter
+    name: NullToVisibilityConverter
+    type: Class
+  - uid: MBFWpfToolkit.Converters.NullToVisibilityWithInverseConverter
+    name: NullToVisibilityWithInverseConverter
     type: Class
   - uid: MBFWpfToolkit.Converters.ValidationMultiConverter
     name: ValidationMultiConverter
@@ -339,8 +449,14 @@ items:
   name: MBFWpfToolkit.Extensions
   type: Namespace
   items:
+  - uid: MBFWpfToolkit.Extensions.CollectionExtensions
+    name: CollectionExtensions
+    type: Class
   - uid: MBFWpfToolkit.Extensions.ListExtensions
     name: ListExtensions
+    type: Class
+  - uid: MBFWpfToolkit.Extensions.ToleranceGroup`2
+    name: ToleranceGroup<TKey, TElement>
     type: Class
 - uid: MBFWpfToolkit.Helpers
   name: MBFWpfToolkit.Helpers
@@ -354,6 +470,9 @@ items:
     type: Class
   - uid: MBFWpfToolkit.Helpers.PasswordHelper
     name: PasswordHelper
+    type: Class
+  - uid: MBFWpfToolkit.Helpers.WindowController
+    name: WindowController
     type: Class
 - uid: MBFWpfToolkit.MbViewModel
   name: MBFWpfToolkit.MbViewModel
@@ -373,8 +492,8 @@ items:
   name: MBFWpfToolkit.Properties.Langs
   type: Namespace
   items:
-  - uid: MBFWpfToolkit.Properties.Langs.Lang
-    name: Lang
+  - uid: MBFWpfToolkit.Properties.Langs.Lang_en
+    name: Lang_en
     type: Class
 - uid: MBFWpfToolkit.Utils
   name: MBFWpfToolkit.Utils
@@ -405,38 +524,5 @@ items:
   items:
   - uid: OnMethodBoundaryAspectCompile.MethodInfos
     name: MethodInfos
-    type: Class
-- uid: Revit.Extensions.Extensions
-  name: Revit.Extensions.Extensions
-  type: Namespace
-  items:
-  - uid: Revit.Extensions.Extensions.CollectionExtensions
-    name: CollectionExtensions
-    type: Class
-  - uid: Revit.Extensions.Extensions.DocumentExtensions
-    name: DocumentExtensions
-    type: Class
-  - uid: Revit.Extensions.Extensions.PipeExtensions
-    name: PipeExtensions
-    type: Class
-  - uid: Revit.Extensions.Extensions.SpaceExtensions
-    name: SpaceExtensions
-    type: Class
-  - uid: Revit.Extensions.Extensions.ViewExtensions
-    name: ViewExtensions
-    type: Class
-- uid: Revit.Extensions.Selections
-  name: Revit.Extensions.Selections
-  type: Namespace
-  items:
-  - uid: Revit.Extensions.Selections.SelectionExtensions
-    name: SelectionExtensions
-    type: Class
-- uid: Revit.Extensions.Unit
-  name: Revit.Extensions.Unit
-  type: Namespace
-  items:
-  - uid: Revit.Extensions.Unit.MbUnitExtensions
-    name: MbUnitExtensions
     type: Class
 memberLayout: SamePage

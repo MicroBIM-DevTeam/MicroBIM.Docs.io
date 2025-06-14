@@ -6,11 +6,16 @@ items:
   parent: MBFWpfToolkit
   children:
   - MBFWpfToolkit.MbWindow.#ctor
+  - MBFWpfToolkit.MbWindow.ApplyThemeForElement(System.Windows.FrameworkElement,System.String)
+  - MBFWpfToolkit.MbWindow.GetAllChildrenOfType``1(System.Windows.DependencyObject)
   - MBFWpfToolkit.MbWindow.GetPrimaryBrush
   - MBFWpfToolkit.MbWindow.InitializeWindow
+  - MBFWpfToolkit.MbWindow.IsDark
   - MBFWpfToolkit.MbWindow.IsThemeToggleVisible
   - MBFWpfToolkit.MbWindow.IsThemeToggleVisibleProperty
+  - MBFWpfToolkit.MbWindow.Item(System.String)
   - MBFWpfToolkit.MbWindow.MainResources
+  - MBFWpfToolkit.MbWindow.OnPropertyChanged(System.String)
   - MBFWpfToolkit.MbWindow.PluginDescription
   - MBFWpfToolkit.MbWindow.PluginDescriptionProperty
   - MBFWpfToolkit.MbWindow.PluginName
@@ -19,6 +24,9 @@ items:
   - MBFWpfToolkit.MbWindow.PluginVersionProperty
   - MBFWpfToolkit.MbWindow.PrimaryBrush
   - MBFWpfToolkit.MbWindow.PrimaryBrushProperty
+  - MBFWpfToolkit.MbWindow.PropertyChanged
+  - MBFWpfToolkit.MbWindow.SelectedLanguage
+  - MBFWpfToolkit.MbWindow.SetField``1(``0@,``0,System.String)
   - MBFWpfToolkit.MbWindow.ShowLanguagesComboBox
   - MBFWpfToolkit.MbWindow.ShowLanguagesComboBoxProperty
   - MBFWpfToolkit.MbWindow.ShowLogo
@@ -28,6 +36,7 @@ items:
   - MBFWpfToolkit.MbWindow.ShowPluginVersion
   - MBFWpfToolkit.MbWindow.ShowPluginVersionProperty
   - MBFWpfToolkit.MbWindow.ShowSprite
+  - MBFWpfToolkit.MbWindow.SupportedLanguages
   langs:
   - csharp
   - vb
@@ -36,20 +45,25 @@ items:
   fullName: MBFWpfToolkit.MbWindow
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
-  summary: Represents a custom window with additional properties and functionalities.
+  summary: >-
+    Represents a customizable WPF window with extended properties and features,
+
+    including theming, language selection, and plugin-related configurations.
   example: []
   syntax:
-    content: 'public class MbWindow : Window'
-    content.vb: Public Class MbWindow Inherits Window
+    content: 'public class MbWindow : Window, INotifyPropertyChanged'
+    content.vb: Public Class MbWindow Inherits Window Implements INotifyPropertyChanged
   inheritance:
   - System.Object
   derivedClasses:
   - MBFWpfToolkit.Controls.Help.HelpWizard
   - MBFWpfToolkit.Controls.MbMessageBox
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
 - uid: MBFWpfToolkit.MbWindow.IsThemeToggleVisibleProperty
   commentId: F:MBFWpfToolkit.MbWindow.IsThemeToggleVisibleProperty
   id: IsThemeToggleVisibleProperty
@@ -62,11 +76,11 @@ items:
   fullName: MBFWpfToolkit.MbWindow.IsThemeToggleVisibleProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
-  summary: Identifies the <xref href="MBFWpfToolkit.MbWindow.IsThemeToggleVisible" data-throw-if-not-resolved="false"></xref> dependency property.
+  summary: Represents the dependency property that identifies whether the theme toggle is visible.
   example: []
   syntax:
     content: public static readonly DependencyProperty IsThemeToggleVisibleProperty
@@ -85,7 +99,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowLanguagesComboBoxProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -108,7 +122,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PluginNameProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -131,7 +145,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PluginDescriptionProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -154,7 +168,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PluginVersionProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -177,7 +191,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PrimaryBrushProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -200,7 +214,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowLogoProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -223,7 +237,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowPluginNameProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -246,7 +260,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowPluginVersionProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -257,6 +271,72 @@ items:
     return:
       type: System.Windows.DependencyProperty
     content.vb: Public Shared ReadOnly ShowPluginVersionProperty As DependencyProperty
+- uid: MBFWpfToolkit.MbWindow.GetAllChildrenOfType``1(System.Windows.DependencyObject)
+  commentId: M:MBFWpfToolkit.MbWindow.GetAllChildrenOfType``1(System.Windows.DependencyObject)
+  id: GetAllChildrenOfType``1(System.Windows.DependencyObject)
+  parent: MBFWpfToolkit.MbWindow
+  langs:
+  - csharp
+  - vb
+  name: GetAllChildrenOfType<T>(DependencyObject)
+  nameWithType: MbWindow.GetAllChildrenOfType<T>(DependencyObject)
+  fullName: MBFWpfToolkit.MbWindow.GetAllChildrenOfType<T>(System.Windows.DependencyObject)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit
+  summary: Retrieves all children of a specified type from a given dependency object in the visual tree.
+  example: []
+  syntax:
+    content: 'public static IEnumerable<T> GetAllChildrenOfType<T>(DependencyObject parent) where T : DependencyObject'
+    parameters:
+    - id: parent
+      type: System.Windows.DependencyObject
+      description: The parent dependency object to search within.
+    typeParameters:
+    - id: T
+      description: The type of children to find.
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+    content.vb: Public Shared Function GetAllChildrenOfType(Of T As DependencyObject)(parent As DependencyObject) As IEnumerable(Of T)
+  overload: MBFWpfToolkit.MbWindow.GetAllChildrenOfType*
+  nameWithType.vb: MbWindow.GetAllChildrenOfType(Of T)(DependencyObject)
+  fullName.vb: MBFWpfToolkit.MbWindow.GetAllChildrenOfType(Of T)(System.Windows.DependencyObject)
+  name.vb: GetAllChildrenOfType(Of T)(DependencyObject)
+- uid: MBFWpfToolkit.MbWindow.ApplyThemeForElement(System.Windows.FrameworkElement,System.String)
+  commentId: M:MBFWpfToolkit.MbWindow.ApplyThemeForElement(System.Windows.FrameworkElement,System.String)
+  id: ApplyThemeForElement(System.Windows.FrameworkElement,System.String)
+  parent: MBFWpfToolkit.MbWindow
+  langs:
+  - csharp
+  - vb
+  name: ApplyThemeForElement(FrameworkElement, string)
+  nameWithType: MbWindow.ApplyThemeForElement(FrameworkElement, string)
+  fullName: MBFWpfToolkit.MbWindow.ApplyThemeForElement(System.Windows.FrameworkElement, string)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit
+  summary: Applies a theme to the specified framework element based on the provided theme name.
+  example: []
+  syntax:
+    content: public static void ApplyThemeForElement(FrameworkElement element, string darkOrLight)
+    parameters:
+    - id: element
+      type: System.Windows.FrameworkElement
+      description: The framework element to which the theme will be applied.
+    - id: darkOrLight
+      type: System.String
+      description: The name of the theme, typically indicating dark or light mode.
+    content.vb: Public Shared Sub ApplyThemeForElement(element As FrameworkElement, darkOrLight As String)
+  overload: MBFWpfToolkit.MbWindow.ApplyThemeForElement*
+  nameWithType.vb: MbWindow.ApplyThemeForElement(FrameworkElement, String)
+  fullName.vb: MBFWpfToolkit.MbWindow.ApplyThemeForElement(System.Windows.FrameworkElement, String)
+  name.vb: ApplyThemeForElement(FrameworkElement, String)
 - uid: MBFWpfToolkit.MbWindow.#ctor
   commentId: M:MBFWpfToolkit.MbWindow.#ctor
   id: '#ctor'
@@ -269,16 +349,14 @@ items:
   fullName: MBFWpfToolkit.MbWindow.MbWindow()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
-  summary: >-
-    Initializes a new instance of the <xref href="MBFWpfToolkit.MbWindow" data-throw-if-not-resolved="false"></xref> class.
-
-    Subscribes to <xref href="System.Windows.FrameworkElement.Loaded" data-throw-if-not-resolved="false"></xref> and Window.Closed events
-
-    to handle resource initialization and cleanup.
+  summary: Initializes a new instance of the <xref href="MBFWpfToolkit.MbWindow" data-throw-if-not-resolved="false"></xref> class.
+  remarks: >-
+    This constructor sets up event handlers for the Loaded and Closed
+                events. It ensures that main resources are cached and reused across windows.
   example: []
   syntax:
     content: public MbWindow()
@@ -299,7 +377,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.InitializeWindow()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -326,14 +404,16 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowSprite()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
   summary: >-
-    Displays the <xref href="MBFWpfToolkit.Controls.MicroBimSprite" data-throw-if-not-resolved="false"></xref> overlay window (e.g., a floating mascot or animation).
+    Displays the <xref href="MBFWpfToolkit.Controls.MicroBimSprite" data-throw-if-not-resolved="false"></xref> overlay window, which can act as a floating mascot
 
-    Stores the instance internally and calls its <code>Show()</code> method to render it on screen.
+    or animation on the screen. Initializes an instance of the <xref href="MBFWpfToolkit.Controls.MicroBimSprite" data-throw-if-not-resolved="false"></xref>,
+
+    stores it internally, and invokes its <code>Show()</code> method to render it.
   example: []
   syntax:
     content: public void ShowSprite()
@@ -351,7 +431,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.GetPrimaryBrush()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -364,6 +444,188 @@ items:
       description: The primary brush color.
     content.vb: Protected Shared Function GetPrimaryBrush() As Color
   overload: MBFWpfToolkit.MbWindow.GetPrimaryBrush*
+- uid: MBFWpfToolkit.MbWindow.OnPropertyChanged(System.String)
+  commentId: M:MBFWpfToolkit.MbWindow.OnPropertyChanged(System.String)
+  id: OnPropertyChanged(System.String)
+  parent: MBFWpfToolkit.MbWindow
+  langs:
+  - csharp
+  - vb
+  name: OnPropertyChanged(string?)
+  nameWithType: MbWindow.OnPropertyChanged(string?)
+  fullName: MBFWpfToolkit.MbWindow.OnPropertyChanged(string?)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit
+  summary: Invoked when a property value changes.
+  example: []
+  syntax:
+    content: protected virtual void OnPropertyChanged(string? propertyName = null)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: The name of the property that changed. Automatically set by the caller if not supplied.
+    content.vb: Protected Overridable Sub OnPropertyChanged(propertyName As String = Nothing)
+  overload: MBFWpfToolkit.MbWindow.OnPropertyChanged*
+  nameWithType.vb: MbWindow.OnPropertyChanged(String)
+  fullName.vb: MBFWpfToolkit.MbWindow.OnPropertyChanged(String)
+  name.vb: OnPropertyChanged(String)
+- uid: MBFWpfToolkit.MbWindow.SetField``1(``0@,``0,System.String)
+  commentId: M:MBFWpfToolkit.MbWindow.SetField``1(``0@,``0,System.String)
+  id: SetField``1(``0@,``0,System.String)
+  parent: MBFWpfToolkit.MbWindow
+  langs:
+  - csharp
+  - vb
+  name: SetField<T>(ref T, T, string?)
+  nameWithType: MbWindow.SetField<T>(ref T, T, string?)
+  fullName: MBFWpfToolkit.MbWindow.SetField<T>(ref T, T, string?)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit
+  summary: Updates the specified field with a new value and raises the PropertyChanged event if the value changes.
+  example: []
+  syntax:
+    content: protected bool SetField<T>(ref T field, T value, string? propertyName = null)
+    parameters:
+    - id: field
+      type: '{T}'
+      description: A reference to the field being updated.
+    - id: value
+      type: '{T}'
+      description: The new value to assign to the field.
+    - id: propertyName
+      type: System.String
+      description: The name of the property. This parameter is optional and is automatically supplied by the CallerMemberName attribute.
+    typeParameters:
+    - id: T
+      description: The type of the field and value.
+    return:
+      type: System.Boolean
+      description: True if the field value was updated; otherwise, false.
+    content.vb: Protected Function SetField(Of T)(field As T, value As T, propertyName As String = Nothing) As Boolean
+  overload: MBFWpfToolkit.MbWindow.SetField*
+  nameWithType.vb: MbWindow.SetField(Of T)(T, T, String)
+  fullName.vb: MBFWpfToolkit.MbWindow.SetField(Of T)(T, T, String)
+  name.vb: SetField(Of T)(T, T, String)
+- uid: MBFWpfToolkit.MbWindow.IsDark
+  commentId: P:MBFWpfToolkit.MbWindow.IsDark
+  id: IsDark
+  parent: MBFWpfToolkit.MbWindow
+  langs:
+  - csharp
+  - vb
+  name: IsDark
+  nameWithType: MbWindow.IsDark
+  fullName: MBFWpfToolkit.MbWindow.IsDark
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit
+  summary: Gets or sets a value indicating whether the window should use a dark theme or not.
+  example: []
+  syntax:
+    content: public bool IsDark { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsDark As Boolean
+  overload: MBFWpfToolkit.MbWindow.IsDark*
+- uid: MBFWpfToolkit.MbWindow.SelectedLanguage
+  commentId: P:MBFWpfToolkit.MbWindow.SelectedLanguage
+  id: SelectedLanguage
+  parent: MBFWpfToolkit.MbWindow
+  langs:
+  - csharp
+  - vb
+  name: SelectedLanguage
+  nameWithType: MbWindow.SelectedLanguage
+  fullName: MBFWpfToolkit.MbWindow.SelectedLanguage
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit
+  summary: Gets or sets the selected language for the window.
+  example: []
+  syntax:
+    content: public CultureInfo SelectedLanguage { get; set; }
+    parameters: []
+    return:
+      type: System.Globalization.CultureInfo
+    content.vb: Public Property SelectedLanguage As CultureInfo
+  overload: MBFWpfToolkit.MbWindow.SelectedLanguage*
+- uid: MBFWpfToolkit.MbWindow.SupportedLanguages
+  commentId: P:MBFWpfToolkit.MbWindow.SupportedLanguages
+  id: SupportedLanguages
+  parent: MBFWpfToolkit.MbWindow
+  langs:
+  - csharp
+  - vb
+  name: SupportedLanguages
+  nameWithType: MbWindow.SupportedLanguages
+  fullName: MBFWpfToolkit.MbWindow.SupportedLanguages
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit
+  summary: Gets the collection of supported languages available for the application.
+  example: []
+  syntax:
+    content: public ObservableCollection<CultureInfo> SupportedLanguages { get; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{System.Globalization.CultureInfo}
+    content.vb: Public ReadOnly Property SupportedLanguages As ObservableCollection(Of CultureInfo)
+  overload: MBFWpfToolkit.MbWindow.SupportedLanguages*
+- uid: MBFWpfToolkit.MbWindow.Item(System.String)
+  commentId: P:MBFWpfToolkit.MbWindow.Item(System.String)
+  id: Item(System.String)
+  parent: MBFWpfToolkit.MbWindow
+  langs:
+  - csharp
+  - vb
+  name: this[string]
+  nameWithType: MbWindow.this[string]
+  fullName: MBFWpfToolkit.MbWindow.this[string]
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit
+  summary: >-
+    Represents the current instance of the class.
+
+    Use 'this' to refer explicitly to the calling object in methods,
+
+    constructors, or property accessors. It is useful to resolve naming
+
+    conflicts between instance members and method or constructor arguments.
+  example: []
+  syntax:
+    content: public string this[string key] { get; }
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Default Property this[](key As String) As String
+  overload: MBFWpfToolkit.MbWindow.Item*
+  nameWithType.vb: MbWindow.this[](String)
+  fullName.vb: MBFWpfToolkit.MbWindow.this[](String)
+  name.vb: this[](String)
 - uid: MBFWpfToolkit.MbWindow.IsThemeToggleVisible
   commentId: P:MBFWpfToolkit.MbWindow.IsThemeToggleVisible
   id: IsThemeToggleVisible
@@ -376,11 +638,12 @@ items:
   fullName: MBFWpfToolkit.MbWindow.IsThemeToggleVisible
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
-  summary: Gets or sets a value indicating whether the theme toggle button (light/dark mode switch) is visible in the window's title bar.
+  summary: Gets or sets a value indicating whether the theme toggle control is visible.
+  remarks: By default, the theme toggle control is visible unless explicitly set to false.
   example: []
   syntax:
     content: public bool IsThemeToggleVisible { get; set; }
@@ -401,11 +664,11 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowLanguagesComboBox
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
-  summary: Gets or sets a value indicating whether to show the ComboBox for languages.
+  summary: Identifies the <xref href="MBFWpfToolkit.MbWindow.ShowLanguagesComboBox" data-throw-if-not-resolved="false"></xref> dependency property.
   example: []
   syntax:
     content: public bool ShowLanguagesComboBox { get; set; }
@@ -426,11 +689,11 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PluginName
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
-  summary: Gets or sets the name of the plugin.
+  summary: Identifies the <xref href="MBFWpfToolkit.MbWindow.PluginName" data-throw-if-not-resolved="false"></xref> dependency property.
   example: []
   syntax:
     content: public string PluginName { get; set; }
@@ -451,11 +714,11 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PluginDescription
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
-  summary: Gets or sets the description of the plugin.
+  summary: Identifies the <xref href="MBFWpfToolkit.MbWindow.PluginDescription" data-throw-if-not-resolved="false"></xref> dependency property.
   example: []
   syntax:
     content: public string PluginDescription { get; set; }
@@ -476,11 +739,11 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PluginVersion
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
-  summary: Gets or sets the version of the plugin.
+  summary: Identifies the <xref href="MBFWpfToolkit.MbWindow.PluginVersion" data-throw-if-not-resolved="false"></xref> dependency property.
   example: []
   syntax:
     content: public string PluginVersion { get; set; }
@@ -501,11 +764,11 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PrimaryBrush
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
-  summary: Gets or sets the primary brush as a Color.
+  summary: Identifies the <xref href="MBFWpfToolkit.MbWindow.PrimaryBrush" data-throw-if-not-resolved="false"></xref> dependency property.
   example: []
   syntax:
     content: public Color PrimaryBrush { get; set; }
@@ -526,11 +789,11 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowLogo
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
-  summary: Gets or sets a value indicating whether the logo should be displayed in the window's header.
+  summary: Identifies the <xref href="MBFWpfToolkit.MbWindow.ShowLogo" data-throw-if-not-resolved="false"></xref> dependency property.
   example: []
   syntax:
     content: public bool ShowLogo { get; set; }
@@ -551,11 +814,11 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowPluginName
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
-  summary: Gets or sets a value indicating whether the plugin name should be displayed in the window's header.
+  summary: Identifies the <xref href="MBFWpfToolkit.MbWindow.ShowPluginName" data-throw-if-not-resolved="false"></xref> dependency property.
   example: []
   syntax:
     content: public bool ShowPluginName { get; set; }
@@ -576,11 +839,11 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowPluginVersion
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
-  summary: Gets or sets a value indicating whether the plugin version should be displayed in the window's header.
+  summary: Identifies the <xref href="MBFWpfToolkit.MbWindow.ShowPluginVersion" data-throw-if-not-resolved="false"></xref> dependency property.
   example: []
   syntax:
     content: public bool ShowPluginVersion { get; set; }
@@ -601,14 +864,14 @@ items:
   fullName: MBFWpfToolkit.MbWindow.MainResources
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
   summary: >-
-    Gets or sets the main shared resource dictionary used across all <xref href="MBFWpfToolkit.MbWindow" data-throw-if-not-resolved="false"></xref> instances.
+    Gets or sets the shared resource dictionary that can be used to cache and reuse resources
 
-    This allows consistent styling and resource reuse throughout the application.
+    across multiple instances of <xref href="MBFWpfToolkit.MbWindow" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public static ResourceDictionary? MainResources { get; set; }
@@ -617,6 +880,31 @@ items:
       type: System.Windows.ResourceDictionary
     content.vb: Public Shared Property MainResources As ResourceDictionary
   overload: MBFWpfToolkit.MbWindow.MainResources*
+- uid: MBFWpfToolkit.MbWindow.PropertyChanged
+  commentId: E:MBFWpfToolkit.MbWindow.PropertyChanged
+  id: PropertyChanged
+  parent: MBFWpfToolkit.MbWindow
+  langs:
+  - csharp
+  - vb
+  name: PropertyChanged
+  nameWithType: MbWindow.PropertyChanged
+  fullName: MBFWpfToolkit.MbWindow.PropertyChanged
+  type: Event
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit
+  summary: Occurs when a property value changes.
+  example: []
+  syntax:
+    content: public event PropertyChangedEventHandler PropertyChanged
+    return:
+      type: System.ComponentModel.PropertyChangedEventHandler
+    content.vb: Public Event PropertyChanged As PropertyChangedEventHandler
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged.PropertyChanged
 references:
 - uid: MBFWpfToolkit
   commentId: N:MBFWpfToolkit
@@ -636,6 +924,14 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
 - uid: System
   commentId: N:System
   isExternal: true
@@ -643,14 +939,33 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: MBFWpfToolkit.MbWindow.IsThemeToggleVisible
-  commentId: P:MBFWpfToolkit.MbWindow.IsThemeToggleVisible
-  parent: MBFWpfToolkit.MbWindow
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
   isExternal: true
-  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_IsThemeToggleVisible
-  name: IsThemeToggleVisible
-  nameWithType: MbWindow.IsThemeToggleVisible
-  fullName: MBFWpfToolkit.MbWindow.IsThemeToggleVisible
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
 - uid: System.Windows.DependencyProperty
   commentId: T:System.Windows.DependencyProperty
   parent: System.Windows
@@ -659,14 +974,6 @@ references:
   name: DependencyProperty
   nameWithType: DependencyProperty
   fullName: System.Windows.DependencyProperty
-- uid: MBFWpfToolkit.MbWindow
-  commentId: T:MBFWpfToolkit.MbWindow
-  parent: MBFWpfToolkit
-  isExternal: true
-  href: MBFWpfToolkit.MbWindow.html
-  name: MbWindow
-  nameWithType: MbWindow
-  fullName: MBFWpfToolkit.MbWindow
 - uid: System.Windows
   commentId: N:System.Windows
   isExternal: true
@@ -702,6 +1009,14 @@ references:
   name: ShowLogo
   nameWithType: MbWindow.ShowLogo
   fullName: MBFWpfToolkit.MbWindow.ShowLogo
+- uid: MBFWpfToolkit.MbWindow
+  commentId: T:MBFWpfToolkit.MbWindow
+  parent: MBFWpfToolkit
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html
+  name: MbWindow
+  nameWithType: MbWindow
+  fullName: MBFWpfToolkit.MbWindow
 - uid: MBFWpfToolkit.MbWindow.ShowPluginName
   commentId: P:MBFWpfToolkit.MbWindow.ShowPluginName
   parent: MBFWpfToolkit.MbWindow
@@ -718,13 +1033,141 @@ references:
   name: ShowPluginVersion
   nameWithType: MbWindow.ShowPluginVersion
   fullName: MBFWpfToolkit.MbWindow.ShowPluginVersion
-- uid: System.Windows.FrameworkElement.Loaded
-  commentId: E:System.Windows.FrameworkElement.Loaded
+- uid: MBFWpfToolkit.MbWindow.GetAllChildrenOfType*
+  commentId: Overload:MBFWpfToolkit.MbWindow.GetAllChildrenOfType
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement.loaded
-  name: Loaded
-  nameWithType: FrameworkElement.Loaded
-  fullName: System.Windows.FrameworkElement.Loaded
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_GetAllChildrenOfType__1_System_Windows_DependencyObject_
+  name: GetAllChildrenOfType
+  nameWithType: MbWindow.GetAllChildrenOfType
+  fullName: MBFWpfToolkit.MbWindow.GetAllChildrenOfType
+- uid: System.Windows.DependencyObject
+  commentId: T:System.Windows.DependencyObject
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject
+  name: DependencyObject
+  nameWithType: DependencyObject
+  fullName: System.Windows.DependencyObject
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MBFWpfToolkit.MbWindow.ApplyThemeForElement*
+  commentId: Overload:MBFWpfToolkit.MbWindow.ApplyThemeForElement
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ApplyThemeForElement_System_Windows_FrameworkElement_System_String_
+  name: ApplyThemeForElement
+  nameWithType: MbWindow.ApplyThemeForElement
+  fullName: MBFWpfToolkit.MbWindow.ApplyThemeForElement
+- uid: System.Windows.FrameworkElement
+  commentId: T:System.Windows.FrameworkElement
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement
+  name: FrameworkElement
+  nameWithType: FrameworkElement
+  fullName: System.Windows.FrameworkElement
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: MBFWpfToolkit.MbWindow.#ctor*
   commentId: Overload:MBFWpfToolkit.MbWindow.#ctor
   isExternal: true
@@ -816,13 +1259,26 @@ references:
     name: Media
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.windows.media
-- uid: MBFWpfToolkit.MbWindow.IsThemeToggleVisible*
-  commentId: Overload:MBFWpfToolkit.MbWindow.IsThemeToggleVisible
+- uid: MBFWpfToolkit.MbWindow.OnPropertyChanged*
+  commentId: Overload:MBFWpfToolkit.MbWindow.OnPropertyChanged
   isExternal: true
-  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_IsThemeToggleVisible
-  name: IsThemeToggleVisible
-  nameWithType: MbWindow.IsThemeToggleVisible
-  fullName: MBFWpfToolkit.MbWindow.IsThemeToggleVisible
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_OnPropertyChanged_System_String_
+  name: OnPropertyChanged
+  nameWithType: MbWindow.OnPropertyChanged
+  fullName: MBFWpfToolkit.MbWindow.OnPropertyChanged
+- uid: MBFWpfToolkit.MbWindow.SetField*
+  commentId: Overload:MBFWpfToolkit.MbWindow.SetField
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_SetField__1___0____0_System_String_
+  name: SetField
+  nameWithType: MbWindow.SetField
+  fullName: MBFWpfToolkit.MbWindow.SetField
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -834,6 +1290,191 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: MBFWpfToolkit.MbWindow.IsDark*
+  commentId: Overload:MBFWpfToolkit.MbWindow.IsDark
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_IsDark
+  name: IsDark
+  nameWithType: MbWindow.IsDark
+  fullName: MBFWpfToolkit.MbWindow.IsDark
+- uid: MBFWpfToolkit.MbWindow.SelectedLanguage*
+  commentId: Overload:MBFWpfToolkit.MbWindow.SelectedLanguage
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_SelectedLanguage
+  name: SelectedLanguage
+  nameWithType: MbWindow.SelectedLanguage
+  fullName: MBFWpfToolkit.MbWindow.SelectedLanguage
+- uid: System.Globalization.CultureInfo
+  commentId: T:System.Globalization.CultureInfo
+  parent: System.Globalization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  name: CultureInfo
+  nameWithType: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: System.Globalization
+  commentId: N:System.Globalization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Globalization
+  nameWithType: System.Globalization
+  fullName: System.Globalization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Globalization
+    name: Globalization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Globalization
+    name: Globalization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization
+- uid: MBFWpfToolkit.MbWindow.SupportedLanguages*
+  commentId: Overload:MBFWpfToolkit.MbWindow.SupportedLanguages
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_SupportedLanguages
+  name: SupportedLanguages
+  nameWithType: MbWindow.SupportedLanguages
+  fullName: MBFWpfToolkit.MbWindow.SupportedLanguages
+- uid: System.Collections.ObjectModel.ObservableCollection{System.Globalization.CultureInfo}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{System.Globalization.CultureInfo}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ObservableCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<CultureInfo>
+  nameWithType: ObservableCollection<CultureInfo>
+  fullName: System.Collections.ObjectModel.ObservableCollection<System.Globalization.CultureInfo>
+  nameWithType.vb: ObservableCollection(Of CultureInfo)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of System.Globalization.CultureInfo)
+  name.vb: ObservableCollection(Of CultureInfo)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ObservableCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+- uid: MBFWpfToolkit.MbWindow.Item*
+  commentId: Overload:MBFWpfToolkit.MbWindow.Item
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_Item_System_String_
+  name: this
+  nameWithType: MbWindow.this
+  fullName: MBFWpfToolkit.MbWindow.this
+  nameWithType.vb: MbWindow.this[]
+  fullName.vb: MBFWpfToolkit.MbWindow.this[]
+  name.vb: this[]
+- uid: MBFWpfToolkit.MbWindow.IsThemeToggleVisible*
+  commentId: Overload:MBFWpfToolkit.MbWindow.IsThemeToggleVisible
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_IsThemeToggleVisible
+  name: IsThemeToggleVisible
+  nameWithType: MbWindow.IsThemeToggleVisible
+  fullName: MBFWpfToolkit.MbWindow.IsThemeToggleVisible
+- uid: MBFWpfToolkit.MbWindow.ShowLanguagesComboBox
+  commentId: P:MBFWpfToolkit.MbWindow.ShowLanguagesComboBox
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowLanguagesComboBox
+  name: ShowLanguagesComboBox
+  nameWithType: MbWindow.ShowLanguagesComboBox
+  fullName: MBFWpfToolkit.MbWindow.ShowLanguagesComboBox
 - uid: MBFWpfToolkit.MbWindow.ShowLanguagesComboBox*
   commentId: Overload:MBFWpfToolkit.MbWindow.ShowLanguagesComboBox
   isExternal: true
@@ -841,6 +1482,14 @@ references:
   name: ShowLanguagesComboBox
   nameWithType: MbWindow.ShowLanguagesComboBox
   fullName: MBFWpfToolkit.MbWindow.ShowLanguagesComboBox
+- uid: MBFWpfToolkit.MbWindow.PluginName
+  commentId: P:MBFWpfToolkit.MbWindow.PluginName
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_PluginName
+  name: PluginName
+  nameWithType: MbWindow.PluginName
+  fullName: MBFWpfToolkit.MbWindow.PluginName
 - uid: MBFWpfToolkit.MbWindow.PluginName*
   commentId: Overload:MBFWpfToolkit.MbWindow.PluginName
   isExternal: true
@@ -848,17 +1497,14 @@ references:
   name: PluginName
   nameWithType: MbWindow.PluginName
   fullName: MBFWpfToolkit.MbWindow.PluginName
-- uid: System.String
-  commentId: T:System.String
-  parent: System
+- uid: MBFWpfToolkit.MbWindow.PluginDescription
+  commentId: P:MBFWpfToolkit.MbWindow.PluginDescription
+  parent: MBFWpfToolkit.MbWindow
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_PluginDescription
+  name: PluginDescription
+  nameWithType: MbWindow.PluginDescription
+  fullName: MBFWpfToolkit.MbWindow.PluginDescription
 - uid: MBFWpfToolkit.MbWindow.PluginDescription*
   commentId: Overload:MBFWpfToolkit.MbWindow.PluginDescription
   isExternal: true
@@ -866,6 +1512,14 @@ references:
   name: PluginDescription
   nameWithType: MbWindow.PluginDescription
   fullName: MBFWpfToolkit.MbWindow.PluginDescription
+- uid: MBFWpfToolkit.MbWindow.PluginVersion
+  commentId: P:MBFWpfToolkit.MbWindow.PluginVersion
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_PluginVersion
+  name: PluginVersion
+  nameWithType: MbWindow.PluginVersion
+  fullName: MBFWpfToolkit.MbWindow.PluginVersion
 - uid: MBFWpfToolkit.MbWindow.PluginVersion*
   commentId: Overload:MBFWpfToolkit.MbWindow.PluginVersion
   isExternal: true
@@ -873,6 +1527,14 @@ references:
   name: PluginVersion
   nameWithType: MbWindow.PluginVersion
   fullName: MBFWpfToolkit.MbWindow.PluginVersion
+- uid: MBFWpfToolkit.MbWindow.PrimaryBrush
+  commentId: P:MBFWpfToolkit.MbWindow.PrimaryBrush
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_PrimaryBrush
+  name: PrimaryBrush
+  nameWithType: MbWindow.PrimaryBrush
+  fullName: MBFWpfToolkit.MbWindow.PrimaryBrush
 - uid: MBFWpfToolkit.MbWindow.PrimaryBrush*
   commentId: Overload:MBFWpfToolkit.MbWindow.PrimaryBrush
   isExternal: true
@@ -916,4 +1578,20 @@ references:
   name: ResourceDictionary
   nameWithType: ResourceDictionary
   fullName: System.Windows.ResourceDictionary
+- uid: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  commentId: E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  parent: System.ComponentModel.INotifyPropertyChanged
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged.propertychanged
+  name: PropertyChanged
+  nameWithType: INotifyPropertyChanged.PropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+- uid: System.ComponentModel.PropertyChangedEventHandler
+  commentId: T:System.ComponentModel.PropertyChangedEventHandler
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventhandler
+  name: PropertyChangedEventHandler
+  nameWithType: PropertyChangedEventHandler
+  fullName: System.ComponentModel.PropertyChangedEventHandler
 shouldSkipMarkup: true

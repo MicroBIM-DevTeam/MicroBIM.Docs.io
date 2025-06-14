@@ -17,19 +17,20 @@ items:
   fullName: MBFWpfToolkit.Controls.Help.HelpWizard
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Controls/Help/HelpWizard.xaml
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Controls/Help/HelpWizard.xaml
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls.Help
   summary: Represents an interactive in-app help wizard that guides users through UI elements step-by-step.
   example: []
   syntax:
-    content: 'public class HelpWizard : MbWindow, IComponentConnector'
-    content.vb: Public Class HelpWizard Inherits MbWindow Implements IComponentConnector
+    content: 'public class HelpWizard : MbWindow, INotifyPropertyChanged, IComponentConnector'
+    content.vb: Public Class HelpWizard Inherits MbWindow Implements INotifyPropertyChanged, IComponentConnector
   inheritance:
   - System.Object
   - MBFWpfToolkit.MbWindow
   implements:
+  - System.ComponentModel.INotifyPropertyChanged
   - System.Windows.Markup.IComponentConnector
   inheritedMembers:
   - MBFWpfToolkit.MbWindow.IsThemeToggleVisibleProperty
@@ -41,9 +42,17 @@ items:
   - MBFWpfToolkit.MbWindow.ShowLogoProperty
   - MBFWpfToolkit.MbWindow.ShowPluginNameProperty
   - MBFWpfToolkit.MbWindow.ShowPluginVersionProperty
+  - MBFWpfToolkit.MbWindow.GetAllChildrenOfType``1(System.Windows.DependencyObject)
+  - MBFWpfToolkit.MbWindow.ApplyThemeForElement(System.Windows.FrameworkElement,System.String)
   - MBFWpfToolkit.MbWindow.InitializeWindow
   - MBFWpfToolkit.MbWindow.ShowSprite
   - MBFWpfToolkit.MbWindow.GetPrimaryBrush
+  - MBFWpfToolkit.MbWindow.OnPropertyChanged(System.String)
+  - MBFWpfToolkit.MbWindow.SetField``1({T}@,{T},System.String)
+  - MBFWpfToolkit.MbWindow.IsDark
+  - MBFWpfToolkit.MbWindow.SelectedLanguage
+  - MBFWpfToolkit.MbWindow.SupportedLanguages
+  - MBFWpfToolkit.MbWindow.Item(System.String)
   - MBFWpfToolkit.MbWindow.IsThemeToggleVisible
   - MBFWpfToolkit.MbWindow.ShowLanguagesComboBox
   - MBFWpfToolkit.MbWindow.PluginName
@@ -54,6 +63,7 @@ items:
   - MBFWpfToolkit.MbWindow.ShowPluginName
   - MBFWpfToolkit.MbWindow.ShowPluginVersion
   - MBFWpfToolkit.MbWindow.MainResources
+  - MBFWpfToolkit.MbWindow.PropertyChanged
 - uid: MBFWpfToolkit.Controls.Help.HelpWizard.#ctor(MBFWpfToolkit.MbWindow)
   commentId: M:MBFWpfToolkit.Controls.Help.HelpWizard.#ctor(MBFWpfToolkit.MbWindow)
   id: '#ctor(MBFWpfToolkit.MbWindow)'
@@ -66,7 +76,7 @@ items:
   fullName: MBFWpfToolkit.Controls.Help.HelpWizard.HelpWizard(MBFWpfToolkit.MbWindow)
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Controls/Help/HelpWizard.xaml.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Controls/Help/HelpWizard.xaml.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls.Help
@@ -95,7 +105,7 @@ items:
   fullName: MBFWpfToolkit.Controls.Help.HelpWizard.InitializeComponent()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Controls/Help/HelpWizard.xaml
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Controls/Help/HelpWizard.xaml
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls.Help
@@ -119,7 +129,7 @@ items:
   fullName: MBFWpfToolkit.Controls.Help.HelpWizard.Steps
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Controls/Help/HelpWizard.xaml.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Controls/Help/HelpWizard.xaml.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls.Help
@@ -144,7 +154,7 @@ items:
   fullName: MBFWpfToolkit.Controls.Help.HelpWizard.CurrentStep
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Controls/Help/HelpWizard.xaml.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Controls/Help/HelpWizard.xaml.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls.Help
@@ -214,6 +224,14 @@ references:
   name: MbWindow
   nameWithType: MbWindow
   fullName: MBFWpfToolkit.MbWindow
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
 - uid: System.Windows.Markup.IComponentConnector
   commentId: T:System.Windows.Markup.IComponentConnector
   parent: System.Windows.Markup
@@ -294,6 +312,92 @@ references:
   name: ShowPluginVersionProperty
   nameWithType: MbWindow.ShowPluginVersionProperty
   fullName: MBFWpfToolkit.MbWindow.ShowPluginVersionProperty
+- uid: MBFWpfToolkit.MbWindow.GetAllChildrenOfType``1(System.Windows.DependencyObject)
+  commentId: M:MBFWpfToolkit.MbWindow.GetAllChildrenOfType``1(System.Windows.DependencyObject)
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_GetAllChildrenOfType__1_System_Windows_DependencyObject_
+  name: GetAllChildrenOfType<T>(DependencyObject)
+  nameWithType: MbWindow.GetAllChildrenOfType<T>(DependencyObject)
+  fullName: MBFWpfToolkit.MbWindow.GetAllChildrenOfType<T>(System.Windows.DependencyObject)
+  nameWithType.vb: MbWindow.GetAllChildrenOfType(Of T)(DependencyObject)
+  fullName.vb: MBFWpfToolkit.MbWindow.GetAllChildrenOfType(Of T)(System.Windows.DependencyObject)
+  name.vb: GetAllChildrenOfType(Of T)(DependencyObject)
+  spec.csharp:
+  - uid: MBFWpfToolkit.MbWindow.GetAllChildrenOfType``1(System.Windows.DependencyObject)
+    name: GetAllChildrenOfType
+    isExternal: true
+    href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_GetAllChildrenOfType__1_System_Windows_DependencyObject_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Windows.DependencyObject
+    name: DependencyObject
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject
+  - name: )
+  spec.vb:
+  - uid: MBFWpfToolkit.MbWindow.GetAllChildrenOfType``1(System.Windows.DependencyObject)
+    name: GetAllChildrenOfType
+    isExternal: true
+    href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_GetAllChildrenOfType__1_System_Windows_DependencyObject_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Windows.DependencyObject
+    name: DependencyObject
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject
+  - name: )
+- uid: MBFWpfToolkit.MbWindow.ApplyThemeForElement(System.Windows.FrameworkElement,System.String)
+  commentId: M:MBFWpfToolkit.MbWindow.ApplyThemeForElement(System.Windows.FrameworkElement,System.String)
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ApplyThemeForElement_System_Windows_FrameworkElement_System_String_
+  name: ApplyThemeForElement(FrameworkElement, string)
+  nameWithType: MbWindow.ApplyThemeForElement(FrameworkElement, string)
+  fullName: MBFWpfToolkit.MbWindow.ApplyThemeForElement(System.Windows.FrameworkElement, string)
+  nameWithType.vb: MbWindow.ApplyThemeForElement(FrameworkElement, String)
+  fullName.vb: MBFWpfToolkit.MbWindow.ApplyThemeForElement(System.Windows.FrameworkElement, String)
+  name.vb: ApplyThemeForElement(FrameworkElement, String)
+  spec.csharp:
+  - uid: MBFWpfToolkit.MbWindow.ApplyThemeForElement(System.Windows.FrameworkElement,System.String)
+    name: ApplyThemeForElement
+    isExternal: true
+    href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ApplyThemeForElement_System_Windows_FrameworkElement_System_String_
+  - name: (
+  - uid: System.Windows.FrameworkElement
+    name: FrameworkElement
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MBFWpfToolkit.MbWindow.ApplyThemeForElement(System.Windows.FrameworkElement,System.String)
+    name: ApplyThemeForElement
+    isExternal: true
+    href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ApplyThemeForElement_System_Windows_FrameworkElement_System_String_
+  - name: (
+  - uid: System.Windows.FrameworkElement
+    name: FrameworkElement
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
 - uid: MBFWpfToolkit.MbWindow.InitializeWindow
   commentId: M:MBFWpfToolkit.MbWindow.InitializeWindow
   parent: MBFWpfToolkit.MbWindow
@@ -359,6 +463,148 @@ references:
     isExternal: true
     href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_GetPrimaryBrush
   - name: (
+  - name: )
+- uid: MBFWpfToolkit.MbWindow.OnPropertyChanged(System.String)
+  commentId: M:MBFWpfToolkit.MbWindow.OnPropertyChanged(System.String)
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_OnPropertyChanged_System_String_
+  name: OnPropertyChanged(string)
+  nameWithType: MbWindow.OnPropertyChanged(string)
+  fullName: MBFWpfToolkit.MbWindow.OnPropertyChanged(string)
+  nameWithType.vb: MbWindow.OnPropertyChanged(String)
+  fullName.vb: MBFWpfToolkit.MbWindow.OnPropertyChanged(String)
+  name.vb: OnPropertyChanged(String)
+  spec.csharp:
+  - uid: MBFWpfToolkit.MbWindow.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    isExternal: true
+    href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_OnPropertyChanged_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MBFWpfToolkit.MbWindow.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    isExternal: true
+    href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_OnPropertyChanged_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: MBFWpfToolkit.MbWindow.SetField``1({T}@,{T},System.String)
+  commentId: M:MBFWpfToolkit.MbWindow.SetField``1(``0@,``0,System.String)
+  parent: MBFWpfToolkit.MbWindow
+  definition: MBFWpfToolkit.MbWindow.SetField``1(``0@,``0,System.String)
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_SetField__1___0____0_System_String_
+  name: SetField<T>(ref T, T, string)
+  nameWithType: MbWindow.SetField<T>(ref T, T, string)
+  fullName: MBFWpfToolkit.MbWindow.SetField<T>(ref T, T, string)
+  nameWithType.vb: MbWindow.SetField(Of T)(T, T, String)
+  fullName.vb: MBFWpfToolkit.MbWindow.SetField(Of T)(T, T, String)
+  name.vb: SetField(Of T)(T, T, String)
+  spec.csharp:
+  - uid: MBFWpfToolkit.MbWindow.SetField``1(``0@,``0,System.String)
+    name: SetField
+    isExternal: true
+    href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_SetField__1___0____0_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MBFWpfToolkit.MbWindow.SetField``1(``0@,``0,System.String)
+    name: SetField
+    isExternal: true
+    href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_SetField__1___0____0_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: MBFWpfToolkit.MbWindow.IsDark
+  commentId: P:MBFWpfToolkit.MbWindow.IsDark
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_IsDark
+  name: IsDark
+  nameWithType: MbWindow.IsDark
+  fullName: MBFWpfToolkit.MbWindow.IsDark
+- uid: MBFWpfToolkit.MbWindow.SelectedLanguage
+  commentId: P:MBFWpfToolkit.MbWindow.SelectedLanguage
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_SelectedLanguage
+  name: SelectedLanguage
+  nameWithType: MbWindow.SelectedLanguage
+  fullName: MBFWpfToolkit.MbWindow.SelectedLanguage
+- uid: MBFWpfToolkit.MbWindow.SupportedLanguages
+  commentId: P:MBFWpfToolkit.MbWindow.SupportedLanguages
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_SupportedLanguages
+  name: SupportedLanguages
+  nameWithType: MbWindow.SupportedLanguages
+  fullName: MBFWpfToolkit.MbWindow.SupportedLanguages
+- uid: MBFWpfToolkit.MbWindow.Item(System.String)
+  commentId: P:MBFWpfToolkit.MbWindow.Item(System.String)
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: this[string]
+  nameWithType: MbWindow.this[string]
+  fullName: MBFWpfToolkit.MbWindow.this[string]
+  nameWithType.vb: MbWindow.this[](String)
+  fullName.vb: MBFWpfToolkit.MbWindow.this[](String)
+  name.vb: this[](String)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ']'
+  spec.vb:
+  - uid: MBFWpfToolkit.MbWindow.Item(System.String)
+    name: this[]
+    isExternal: true
+    href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_Item_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: MBFWpfToolkit.MbWindow.IsThemeToggleVisible
   commentId: P:MBFWpfToolkit.MbWindow.IsThemeToggleVisible
@@ -440,6 +686,14 @@ references:
   name: MainResources
   nameWithType: MbWindow.MainResources
   fullName: MBFWpfToolkit.MbWindow.MainResources
+- uid: MBFWpfToolkit.MbWindow.PropertyChanged
+  commentId: E:MBFWpfToolkit.MbWindow.PropertyChanged
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_PropertyChanged
+  name: PropertyChanged
+  nameWithType: MbWindow.PropertyChanged
+  fullName: MBFWpfToolkit.MbWindow.PropertyChanged
 - uid: System
   commentId: N:System
   isExternal: true
@@ -454,6 +708,33 @@ references:
   name: MBFWpfToolkit
   nameWithType: MBFWpfToolkit
   fullName: MBFWpfToolkit
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
 - uid: System.Windows.Markup
   commentId: N:System.Windows.Markup
   isExternal: true
@@ -491,6 +772,60 @@ references:
     name: Markup
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.windows.markup
+- uid: MBFWpfToolkit.MbWindow.SetField``1(``0@,``0,System.String)
+  commentId: M:MBFWpfToolkit.MbWindow.SetField``1(``0@,``0,System.String)
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_SetField__1___0____0_System_String_
+  name: SetField<T>(ref T, T, string)
+  nameWithType: MbWindow.SetField<T>(ref T, T, string)
+  fullName: MBFWpfToolkit.MbWindow.SetField<T>(ref T, T, string)
+  nameWithType.vb: MbWindow.SetField(Of T)(T, T, String)
+  fullName.vb: MBFWpfToolkit.MbWindow.SetField(Of T)(T, T, String)
+  name.vb: SetField(Of T)(T, T, String)
+  spec.csharp:
+  - uid: MBFWpfToolkit.MbWindow.SetField``1(``0@,``0,System.String)
+    name: SetField
+    isExternal: true
+    href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_SetField__1___0____0_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MBFWpfToolkit.MbWindow.SetField``1(``0@,``0,System.String)
+    name: SetField
+    isExternal: true
+    href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_SetField__1___0____0_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
 - uid: MBFWpfToolkit.Controls.Help.HelpWizard
   commentId: T:MBFWpfToolkit.Controls.Help.HelpWizard
   isExternal: true

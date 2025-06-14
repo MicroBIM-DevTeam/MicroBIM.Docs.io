@@ -17,7 +17,7 @@ items:
   fullName: MBFWpfToolkit.Models.HelpStep
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Models/HelpStep.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Models/HelpStep.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Models
@@ -48,7 +48,7 @@ items:
   fullName: MBFWpfToolkit.Models.HelpStep.HelpStep()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Models/HelpStep.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Models/HelpStep.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Models
@@ -71,7 +71,7 @@ items:
   fullName: MBFWpfToolkit.Models.HelpStep.StepNumber
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Models/HelpStep.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Models/HelpStep.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Models
@@ -96,7 +96,7 @@ items:
   fullName: MBFWpfToolkit.Models.HelpStep.StepText
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Models/HelpStep.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Models/HelpStep.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Models
@@ -121,7 +121,7 @@ items:
   fullName: MBFWpfToolkit.Models.HelpStep.Element
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Models/HelpStep.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Models/HelpStep.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Models

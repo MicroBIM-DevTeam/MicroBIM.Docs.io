@@ -1,0 +1,758 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Data.Extensions.SelectionExtensions
+  commentId: T:MBF.Revit.Data.Extensions.SelectionExtensions
+  id: SelectionExtensions
+  parent: MBF.Revit.Data.Extensions
+  children:
+  - MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedElements``1(Autodesk.Revit.UI.UIDocument)
+  - MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedFamilyInstances(Autodesk.Revit.UI.UIDocument)
+  - MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedPipes(Autodesk.Revit.UI.UIDocument)
+  - MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedSpaces(Autodesk.Revit.UI.UIDocument)
+  - MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedSprinklers(Autodesk.Revit.UI.UIDocument)
+  langs:
+  - csharp
+  - vb
+  name: SelectionExtensions
+  nameWithType: SelectionExtensions
+  fullName: MBF.Revit.Data.Extensions.SelectionExtensions
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/SelectionExtensions.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Extensions
+  summary: Provides extension methods for retrieving selected elements of specific types from a <xref href="UIDocument" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [LogAspect]
+
+      public static class SelectionExtensions
+    content.vb: >-
+      <LogAspect>
+
+      Public Module SelectionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: MB.Common.Aspects.LogAspect
+    ctor: MB.Common.Aspects.LogAspect.#ctor
+    arguments: []
+- uid: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedElements``1(Autodesk.Revit.UI.UIDocument)
+  commentId: M:MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedElements``1(Autodesk.Revit.UI.UIDocument)
+  id: GetSelectedElements``1(Autodesk.Revit.UI.UIDocument)
+  isExtensionMethod: true
+  parent: MBF.Revit.Data.Extensions.SelectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetSelectedElements<T>(UIDocument)
+  nameWithType: SelectionExtensions.GetSelectedElements<T>(UIDocument)
+  fullName: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedElements<T>(Autodesk.Revit.UI.UIDocument)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/SelectionExtensions.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Extensions
+  summary: Gets the selected elements of the specified type from the document.
+  remarks: >-
+    <p>Error messages:</p>
+
+    <ul><li>Returns an empty list if no elements of the specified type are selected.</li><li>Throws <xref href="ArgumentNullException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">uiDocument</code> is null.</li></ul>
+  example: []
+  syntax:
+    content: 'public static List<T> GetSelectedElements<T>(this UIDocument uiDocument) where T : Element'
+    parameters:
+    - id: uiDocument
+      type: Autodesk.Revit.UI.UIDocument
+      description: The <xref href="UIDocument" data-throw-if-not-resolved="false"></xref> to get the selected elements from.
+    typeParameters:
+    - id: T
+      description: The type of elements to get.
+    return:
+      type: System.Collections.Generic.List{{T}}
+      description: A list of the selected elements of the specified type.
+    content.vb: Public Shared Function GetSelectedElements(Of T As Element)(uiDocument As UIDocument) As List(Of T)
+  overload: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedElements*
+  nameWithType.vb: SelectionExtensions.GetSelectedElements(Of T)(UIDocument)
+  fullName.vb: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedElements(Of T)(Autodesk.Revit.UI.UIDocument)
+  name.vb: GetSelectedElements(Of T)(UIDocument)
+- uid: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedSpaces(Autodesk.Revit.UI.UIDocument)
+  commentId: M:MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedSpaces(Autodesk.Revit.UI.UIDocument)
+  id: GetSelectedSpaces(Autodesk.Revit.UI.UIDocument)
+  isExtensionMethod: true
+  parent: MBF.Revit.Data.Extensions.SelectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetSelectedSpaces(UIDocument)
+  nameWithType: SelectionExtensions.GetSelectedSpaces(UIDocument)
+  fullName: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedSpaces(Autodesk.Revit.UI.UIDocument)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/SelectionExtensions.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Extensions
+  summary: Gets the selected spaces from the document.
+  remarks: >-
+    <p>Error messages:</p>
+
+    <ul><li>Returns an empty list if no spaces are selected.</li></ul>
+  example: []
+  syntax:
+    content: public static List<Space> GetSelectedSpaces(this UIDocument uiDocument)
+    parameters:
+    - id: uiDocument
+      type: Autodesk.Revit.UI.UIDocument
+      description: The UI document to get the selected spaces from.
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Mechanical.Space}
+      description: A list of the selected spaces.
+    content.vb: Public Shared Function GetSelectedSpaces(uiDocument As UIDocument) As List(Of Space)
+  overload: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedSpaces*
+- uid: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedFamilyInstances(Autodesk.Revit.UI.UIDocument)
+  commentId: M:MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedFamilyInstances(Autodesk.Revit.UI.UIDocument)
+  id: GetSelectedFamilyInstances(Autodesk.Revit.UI.UIDocument)
+  isExtensionMethod: true
+  parent: MBF.Revit.Data.Extensions.SelectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetSelectedFamilyInstances(UIDocument)
+  nameWithType: SelectionExtensions.GetSelectedFamilyInstances(UIDocument)
+  fullName: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedFamilyInstances(Autodesk.Revit.UI.UIDocument)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/SelectionExtensions.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Extensions
+  summary: Gets the selected family instances from the document.
+  remarks: >-
+    <p>Error messages:</p>
+
+    <ul><li>Returns an empty list if no family instances are selected.</li></ul>
+  example: []
+  syntax:
+    content: public static List<FamilyInstance> GetSelectedFamilyInstances(this UIDocument uiDocument)
+    parameters:
+    - id: uiDocument
+      type: Autodesk.Revit.UI.UIDocument
+      description: The UI document to get the selected family instances from.
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.FamilyInstance}
+      description: A list of the selected family instances.
+    content.vb: Public Shared Function GetSelectedFamilyInstances(uiDocument As UIDocument) As List(Of FamilyInstance)
+  overload: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedFamilyInstances*
+- uid: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedPipes(Autodesk.Revit.UI.UIDocument)
+  commentId: M:MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedPipes(Autodesk.Revit.UI.UIDocument)
+  id: GetSelectedPipes(Autodesk.Revit.UI.UIDocument)
+  isExtensionMethod: true
+  parent: MBF.Revit.Data.Extensions.SelectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetSelectedPipes(UIDocument)
+  nameWithType: SelectionExtensions.GetSelectedPipes(UIDocument)
+  fullName: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedPipes(Autodesk.Revit.UI.UIDocument)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/SelectionExtensions.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Extensions
+  summary: Gets the selected pipes from the document.
+  remarks: >-
+    <p>Error messages:</p>
+
+    <ul><li>Returns an empty list if no pipes are selected.</li></ul>
+  example: []
+  syntax:
+    content: public static List<Pipe> GetSelectedPipes(this UIDocument uiDocument)
+    parameters:
+    - id: uiDocument
+      type: Autodesk.Revit.UI.UIDocument
+      description: The UI document to get the selected pipes from.
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Plumbing.Pipe}
+      description: A list of the selected pipes.
+    content.vb: Public Shared Function GetSelectedPipes(uiDocument As UIDocument) As List(Of Pipe)
+  overload: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedPipes*
+- uid: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedSprinklers(Autodesk.Revit.UI.UIDocument)
+  commentId: M:MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedSprinklers(Autodesk.Revit.UI.UIDocument)
+  id: GetSelectedSprinklers(Autodesk.Revit.UI.UIDocument)
+  isExtensionMethod: true
+  parent: MBF.Revit.Data.Extensions.SelectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetSelectedSprinklers(UIDocument)
+  nameWithType: SelectionExtensions.GetSelectedSprinklers(UIDocument)
+  fullName: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedSprinklers(Autodesk.Revit.UI.UIDocument)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/SelectionExtensions.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Extensions
+  summary: >-
+    Gets the selected sprinklers from the document.
+
+    Filters the selected <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> elements to return only those
+
+    categorized as BuiltInCategory.OST_Sprinklers.
+  remarks: >-
+    <p>Error messages:</p>
+
+    <ul><li>Returns an empty list if no sprinklers are selected.</li></ul>
+  example: []
+  syntax:
+    content: public static List<FamilyInstance> GetSelectedSprinklers(this UIDocument uiDocument)
+    parameters:
+    - id: uiDocument
+      type: Autodesk.Revit.UI.UIDocument
+      description: The UI document to get the selected sprinklers from.
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.FamilyInstance}
+      description: A list of the selected sprinkler family instances.
+    content.vb: Public Shared Function GetSelectedSprinklers(uiDocument As UIDocument) As List(Of FamilyInstance)
+  overload: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedSprinklers*
+references:
+- uid: UIDocument
+  commentId: T:UIDocument
+  isExternal: true
+- uid: MBF.Revit.Data.Extensions
+  commentId: N:MBF.Revit.Data.Extensions
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Data.Extensions
+  nameWithType: MBF.Revit.Data.Extensions
+  fullName: MBF.Revit.Data.Extensions
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Extensions
+    name: Extensions
+    isExternal: true
+    href: MBF.Revit.Data.Extensions.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Extensions
+    name: Extensions
+    isExternal: true
+    href: MBF.Revit.Data.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ArgumentNullException
+  commentId: T:ArgumentNullException
+  isExternal: true
+- uid: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedElements*
+  commentId: Overload:MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedElements
+  isExternal: true
+  href: MBF.Revit.Data.Extensions.SelectionExtensions.html#MBF_Revit_Data_Extensions_SelectionExtensions_GetSelectedElements__1_Autodesk_Revit_UI_UIDocument_
+  name: GetSelectedElements
+  nameWithType: SelectionExtensions.GetSelectedElements
+  fullName: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedElements
+- uid: Autodesk.Revit.UI.UIDocument
+  isExternal: true
+  name: UIDocument
+  nameWithType: UIDocument
+  fullName: Autodesk.Revit.UI.UIDocument
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedSpaces*
+  commentId: Overload:MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedSpaces
+  isExternal: true
+  href: MBF.Revit.Data.Extensions.SelectionExtensions.html#MBF_Revit_Data_Extensions_SelectionExtensions_GetSelectedSpaces_Autodesk_Revit_UI_UIDocument_
+  name: GetSelectedSpaces
+  nameWithType: SelectionExtensions.GetSelectedSpaces
+  fullName: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedSpaces
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.Mechanical.Space}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.Mechanical.Space}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Space>
+  nameWithType: List<Space>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.Mechanical.Space>
+  nameWithType.vb: List(Of Space)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.Mechanical.Space)
+  name.vb: List(Of Space)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Mechanical.Space
+    name: Space
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Mechanical.Space
+    name: Space
+    isExternal: true
+  - name: )
+- uid: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedFamilyInstances*
+  commentId: Overload:MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedFamilyInstances
+  isExternal: true
+  href: MBF.Revit.Data.Extensions.SelectionExtensions.html#MBF_Revit_Data_Extensions_SelectionExtensions_GetSelectedFamilyInstances_Autodesk_Revit_UI_UIDocument_
+  name: GetSelectedFamilyInstances
+  nameWithType: SelectionExtensions.GetSelectedFamilyInstances
+  fullName: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedFamilyInstances
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.FamilyInstance}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.FamilyInstance}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<FamilyInstance>
+  nameWithType: List<FamilyInstance>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.FamilyInstance>
+  nameWithType.vb: List(Of FamilyInstance)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.FamilyInstance)
+  name.vb: List(Of FamilyInstance)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.FamilyInstance
+    name: FamilyInstance
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.FamilyInstance
+    name: FamilyInstance
+    isExternal: true
+  - name: )
+- uid: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedPipes*
+  commentId: Overload:MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedPipes
+  isExternal: true
+  href: MBF.Revit.Data.Extensions.SelectionExtensions.html#MBF_Revit_Data_Extensions_SelectionExtensions_GetSelectedPipes_Autodesk_Revit_UI_UIDocument_
+  name: GetSelectedPipes
+  nameWithType: SelectionExtensions.GetSelectedPipes
+  fullName: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedPipes
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.Plumbing.Pipe}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.Plumbing.Pipe}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Pipe>
+  nameWithType: List<Pipe>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.Plumbing.Pipe>
+  nameWithType.vb: List(Of Pipe)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.Plumbing.Pipe)
+  name.vb: List(Of Pipe)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Plumbing.Pipe
+    name: Pipe
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Plumbing.Pipe
+    name: Pipe
+    isExternal: true
+  - name: )
+- uid: FamilyInstance
+  commentId: T:FamilyInstance
+  isExternal: true
+- uid: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedSprinklers*
+  commentId: Overload:MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedSprinklers
+  isExternal: true
+  href: MBF.Revit.Data.Extensions.SelectionExtensions.html#MBF_Revit_Data_Extensions_SelectionExtensions_GetSelectedSprinklers_Autodesk_Revit_UI_UIDocument_
+  name: GetSelectedSprinklers
+  nameWithType: SelectionExtensions.GetSelectedSprinklers
+  fullName: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedSprinklers
+shouldSkipMarkup: true

@@ -14,18 +14,27 @@ items:
   fullName: MBF.Revit.Geometry.Utils.PolygonUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Utils/PolygonUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Utils/PolygonUtils.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Utils
-  summary: >-
-    Provides utility methods for geometric operations involving 2D polygons using Revit's <xref href="Autodesk.Revit.DB.XYZ" data-throw-if-not-resolved="false"></xref> points.
+  summary: Provides utility methods for working with 2D polygons in the XY plane.
+  remarks: >-
+    This class includes methods for determining spatial relationships between points and polygons, such
 
-    This utility assumes all computations are performed in the XY plane and ignores Z-axis values.
+    as checking whether a point lies inside a polygon. All calculations are performed in the XY plane, and Z-values of
+
+    input points are ignored.
   example: []
   syntax:
-    content: public static class PolygonUtils
-    content.vb: Public Module PolygonUtils
+    content: >-
+      [LogAspect]
+
+      public static class PolygonUtils
+    content.vb: >-
+      <LogAspect>
+
+      Public Module PolygonUtils
   inheritance:
   - System.Object
   inheritedMembers:
@@ -36,6 +45,10 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: MB.Common.Aspects.LogAspect
+    ctor: MB.Common.Aspects.LogAspect.#ctor
+    arguments: []
 - uid: MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ)
   commentId: M:MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ)
   id: IsPointInsidePolygon(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ)
@@ -48,7 +61,7 @@ items:
   fullName: MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon(System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Utils/PolygonUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Utils/PolygonUtils.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Utils
@@ -75,12 +88,6 @@ items:
   fullName.vb: MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon(System.Collections.Generic.List(Of Autodesk.Revit.DB.XYZ), Autodesk.Revit.DB.XYZ)
   name.vb: IsPointInsidePolygon(List(Of XYZ), XYZ)
 references:
-- uid: Autodesk.Revit.DB.XYZ
-  commentId: T:Autodesk.Revit.DB.XYZ
-  isExternal: true
-  name: XYZ
-  nameWithType: XYZ
-  fullName: Autodesk.Revit.DB.XYZ
 - uid: MBF.Revit.Geometry.Utils
   commentId: N:MBF.Revit.Geometry.Utils
   isExternal: true
@@ -434,6 +441,11 @@ references:
     name: XYZ
     isExternal: true
   - name: )
+- uid: Autodesk.Revit.DB.XYZ
+  isExternal: true
+  name: XYZ
+  nameWithType: XYZ
+  fullName: Autodesk.Revit.DB.XYZ
 - uid: MB.Common.Utils.Result.MbResult{System.Boolean}
   commentId: T:MB.Common.Utils.Result.MbResult{System.Boolean}
   parent: MB.Common.Utils.Result

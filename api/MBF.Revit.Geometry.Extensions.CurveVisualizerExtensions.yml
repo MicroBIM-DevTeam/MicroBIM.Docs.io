@@ -16,18 +16,26 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
   summary: >-
     Provides extension methods for visualizing <xref href="Autodesk.Revit.DB.Curve" data-throw-if-not-resolved="false"></xref> instances as 2D geometry in Revit,
 
-    either using <xref href="DirectShape" data-throw-if-not-resolved="false"></xref> elements in model views or <xref href="Autodesk.Revit.DB.DetailCurve" data-throw-if-not-resolved="false"></xref> elements in drafting views.
+    either using <xref href="DirectShape" data-throw-if-not-resolved="false"></xref> elements in model views or <xref href="Autodesk.Revit.DB.DetailCurve" data-throw-if-not-resolved="false"></xref> elements in drafting
+
+    views.
   example: []
   syntax:
-    content: public static class CurveVisualizerExtensions
-    content.vb: Public Module CurveVisualizerExtensions
+    content: >-
+      [LogAspect]
+
+      public static class CurveVisualizerExtensions
+    content.vb: >-
+      <LogAspect>
+
+      Public Module CurveVisualizerExtensions
   inheritance:
   - System.Object
   inheritedMembers:
@@ -38,6 +46,10 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: MB.Common.Aspects.LogAspect
+    ctor: MB.Common.Aspects.LogAspect.#ctor
+    arguments: []
 - uid: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurve2D(Autodesk.Revit.DB.Curve,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
   commentId: M:MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurve2D(Autodesk.Revit.DB.Curve,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
   id: VisualizeCurve2D(Autodesk.Revit.DB.Curve,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
@@ -51,7 +63,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurve2D(Autodesk.Revit.DB.Curve, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -93,11 +105,14 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.CreateCurveWithDetailCurve(Autodesk.Revit.DB.Curve, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.ViewDrafting, Autodesk.Revit.DB.Color)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
-  summary: Creates a <xref href="Autodesk.Revit.DB.DetailCurve" data-throw-if-not-resolved="false"></xref> element in a <xref href="Autodesk.Revit.DB.ViewDrafting" data-throw-if-not-resolved="false"></xref> to represent the given <xref href="Autodesk.Revit.DB.Curve" data-throw-if-not-resolved="false"></xref>.
+  summary: >-
+    Creates a <xref href="Autodesk.Revit.DB.DetailCurve" data-throw-if-not-resolved="false"></xref> element in a <xref href="Autodesk.Revit.DB.ViewDrafting" data-throw-if-not-resolved="false"></xref> to represent the given
+
+    <xref href="Autodesk.Revit.DB.Curve" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public static MbResult<DetailCurve> CreateCurveWithDetailCurve(this Curve curve, Document doc, ViewDrafting draftingView, Color color = null)
@@ -135,7 +150,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Curve>, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -159,7 +174,7 @@ items:
     return:
       type: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.DirectShape}}
       description: >-
-        An MbResult&lt;List&lt;DirectShape&gt;&gt;:
+        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> where T is <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref>:
 
         <ul><li><b>Success:</b> Contains a list of created <xref href="DirectShape" data-throw-if-not-resolved="false"></xref> elements.</li><li><b>Failure:</b> "Curve collection is null."</li><li><b>Failure:</b> "Document or active view is null."</li><li><b>Failure:</b> "Failed to visualize curves: [exception message]"</li></ul>
     content.vb: Public Shared Function VisualizeCurves2D(curves As IEnumerable(Of Curve), doc As Document, color As Color = Nothing) As MbResult(Of List(Of DirectShape))
@@ -630,6 +645,34 @@ references:
   - uid: Autodesk.Revit.DB.DetailCurve
     name: DetailCurve
     isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
   - name: )
 - uid: MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D*
   commentId: Overload:MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D

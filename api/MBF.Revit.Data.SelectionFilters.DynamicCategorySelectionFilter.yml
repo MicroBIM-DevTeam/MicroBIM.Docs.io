@@ -16,18 +16,24 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/SelectionFilters/DynamicCategorySelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/DynamicCategorySelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
-  summary: >-
-    A dynamic selection filter that allows only elements belonging to specified <xref href="BuiltInCategory" data-throw-if-not-resolved="false"></xref> values.
-
-    Useful for restricting user selection to a specific set of categories.
+  summary: Represents a selection filter that dynamically allows elements based on their categories.
+  remarks: >-
+    This filter is designed to restrict selection to elements belonging to specific categories. It
+                supports both Revit 2024+ (long-based ElementId) and earlier versions (int-based ElementId).
   example: []
   syntax:
-    content: 'public class DynamicCategorySelectionFilter : ISelectionFilter'
-    content.vb: Public Class DynamicCategorySelectionFilter Implements ISelectionFilter
+    content: >-
+      [LogAspect]
+
+      public class DynamicCategorySelectionFilter : ISelectionFilter
+    content.vb: >-
+      <LogAspect>
+
+      Public Class DynamicCategorySelectionFilter Implements ISelectionFilter
   inheritance:
   - System.Object
   implements:
@@ -40,6 +46,10 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: MB.Common.Aspects.LogAspect
+    ctor: MB.Common.Aspects.LogAspect.#ctor
+    arguments: []
 - uid: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
   commentId: M:MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
   id: '#ctor(Autodesk.Revit.DB.BuiltInCategory[])'
@@ -52,7 +62,7 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.DynamicCategorySelectionFilter(params Autodesk.Revit.DB.BuiltInCategory[])
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/SelectionFilters/DynamicCategorySelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/DynamicCategorySelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
@@ -84,7 +94,7 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/SelectionFilters/DynamicCategorySelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/DynamicCategorySelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
@@ -113,7 +123,7 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/SelectionFilters/DynamicCategorySelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/DynamicCategorySelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
@@ -137,9 +147,6 @@ items:
     content.vb: Public Function AllowReference(reference As Reference, position As XYZ) As Boolean
   overload: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.AllowReference*
 references:
-- uid: BuiltInCategory
-  commentId: T:BuiltInCategory
-  isExternal: true
 - uid: MBF.Revit.Data.SelectionFilters
   commentId: N:MBF.Revit.Data.SelectionFilters
   isExternal: true
@@ -436,6 +443,9 @@ references:
   name: DynamicCategorySelectionFilter
   nameWithType: DynamicCategorySelectionFilter
   fullName: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter
+- uid: BuiltInCategory
+  commentId: T:BuiltInCategory
+  isExternal: true
 - uid: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.#ctor*
   commentId: Overload:MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.#ctor
   isExternal: true
@@ -502,7 +512,6 @@ references:
   nameWithType: Reference
   fullName: Autodesk.Revit.DB.Reference
 - uid: Autodesk.Revit.DB.XYZ
-  commentId: T:Autodesk.Revit.DB.XYZ
   isExternal: true
   name: XYZ
   nameWithType: XYZ

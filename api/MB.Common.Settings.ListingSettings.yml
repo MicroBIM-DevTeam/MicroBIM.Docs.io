@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Settings.ListingSettings
+  commentId: N:MB.Common.Settings.ListingSettings
+  id: MB.Common.Settings.ListingSettings
+  children:
+  - MB.Common.Settings.ListingSettings.FittingGroupHelper
+  - MB.Common.Settings.ListingSettings.ListingConfig
+  - MB.Common.Settings.ListingSettings.ListingDto
+  - MB.Common.Settings.ListingSettings.ListingMapper
+  - MB.Common.Settings.ListingSettings.ListingSettingsHelper
+  - MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto
+  - MB.Common.Settings.ListingSettings.StandardFittingGroups
+  - MB.Common.Settings.ListingSettings.StandardFittingType
+  - MB.Common.Settings.ListingSettings.ValueToStandardTypeDto
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.Settings.ListingSettings
+  nameWithType: MB.Common.Settings.ListingSettings
+  fullName: MB.Common.Settings.ListingSettings
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.Settings.ListingSettings.FittingGroupHelper
+  commentId: T:MB.Common.Settings.ListingSettings.FittingGroupHelper
+  isExternal: true
+  href: MB.Common.Settings.ListingSettings.FittingGroupHelper.html
+  name: FittingGroupHelper
+  nameWithType: FittingGroupHelper
+  fullName: MB.Common.Settings.ListingSettings.FittingGroupHelper
+- uid: MB.Common.Settings.ListingSettings.ListingConfig
+  commentId: T:MB.Common.Settings.ListingSettings.ListingConfig
+  parent: MB.Common.Settings.ListingSettings
+  isExternal: true
+  href: MB.Common.Settings.ListingSettings.ListingConfig.html
+  name: ListingConfig
+  nameWithType: ListingConfig
+  fullName: MB.Common.Settings.ListingSettings.ListingConfig
+- uid: MB.Common.Settings.ListingSettings.ListingDto
+  commentId: T:MB.Common.Settings.ListingSettings.ListingDto
+  parent: MB.Common.Settings.ListingSettings
+  isExternal: true
+  href: MB.Common.Settings.ListingSettings.ListingDto.html
+  name: ListingDto
+  nameWithType: ListingDto
+  fullName: MB.Common.Settings.ListingSettings.ListingDto
+- uid: MB.Common.Settings.ListingSettings.ListingMapper
+  commentId: T:MB.Common.Settings.ListingSettings.ListingMapper
+  isExternal: true
+  href: MB.Common.Settings.ListingSettings.ListingMapper.html
+  name: ListingMapper
+  nameWithType: ListingMapper
+  fullName: MB.Common.Settings.ListingSettings.ListingMapper
+- uid: MB.Common.Settings.ListingSettings.ListingSettingsHelper
+  commentId: T:MB.Common.Settings.ListingSettings.ListingSettingsHelper
+  isExternal: true
+  href: MB.Common.Settings.ListingSettings.ListingSettingsHelper.html
+  name: ListingSettingsHelper
+  nameWithType: ListingSettingsHelper
+  fullName: MB.Common.Settings.ListingSettings.ListingSettingsHelper
+- uid: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto
+  commentId: T:MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto
+  isExternal: true
+  href: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.html
+  name: MicroBimListingRecommendationDto
+  nameWithType: MicroBimListingRecommendationDto
+  fullName: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto
+- uid: MB.Common.Settings.ListingSettings.StandardFittingGroups
+  commentId: T:MB.Common.Settings.ListingSettings.StandardFittingGroups
+  isExternal: true
+  href: MB.Common.Settings.ListingSettings.StandardFittingGroups.html
+  name: StandardFittingGroups
+  nameWithType: StandardFittingGroups
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingGroups
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType
+  commentId: T:MB.Common.Settings.ListingSettings.StandardFittingType
+  parent: MB.Common.Settings.ListingSettings
+  isExternal: true
+  href: MB.Common.Settings.ListingSettings.StandardFittingType.html
+  name: StandardFittingType
+  nameWithType: StandardFittingType
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType
+- uid: MB.Common.Settings.ListingSettings.ValueToStandardTypeDto
+  commentId: T:MB.Common.Settings.ListingSettings.ValueToStandardTypeDto
+  isExternal: true
+  href: MB.Common.Settings.ListingSettings.ValueToStandardTypeDto.html
+  name: ValueToStandardTypeDto
+  nameWithType: ValueToStandardTypeDto
+  fullName: MB.Common.Settings.ListingSettings.ValueToStandardTypeDto
+- uid: MB.Common.Settings.ListingSettings
+  commentId: N:MB.Common.Settings.ListingSettings
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Settings.ListingSettings
+  nameWithType: MB.Common.Settings.ListingSettings
+  fullName: MB.Common.Settings.ListingSettings
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Settings
+    name: Settings
+    isExternal: true
+    href: MB.Common.Settings.html
+  - name: .
+  - uid: MB.Common.Settings.ListingSettings
+    name: ListingSettings
+    isExternal: true
+    href: MB.Common.Settings.ListingSettings.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Settings
+    name: Settings
+    isExternal: true
+    href: MB.Common.Settings.html
+  - name: .
+  - uid: MB.Common.Settings.ListingSettings
+    name: ListingSettings
+    isExternal: true
+    href: MB.Common.Settings.ListingSettings.html
+shouldSkipMarkup: true

@@ -6,12 +6,12 @@ items:
   parent: MBF.Revit.Geometry.Voronoi.Models
   children:
   - MBF.Revit.Geometry.Voronoi.Models.Edge.#ctor
-  - MBF.Revit.Geometry.Voronoi.Models.Edge.a
-  - MBF.Revit.Geometry.Voronoi.Models.Edge.b
-  - MBF.Revit.Geometry.Voronoi.Models.Edge.c
-  - MBF.Revit.Geometry.Voronoi.Models.Edge.edgenbr
-  - MBF.Revit.Geometry.Voronoi.Models.Edge.ep
-  - MBF.Revit.Geometry.Voronoi.Models.Edge.reg
+  - MBF.Revit.Geometry.Voronoi.Models.Edge.A
+  - MBF.Revit.Geometry.Voronoi.Models.Edge.B
+  - MBF.Revit.Geometry.Voronoi.Models.Edge.C
+  - MBF.Revit.Geometry.Voronoi.Models.Edge.Edgenbr
+  - MBF.Revit.Geometry.Voronoi.Models.Edge.Ep
+  - MBF.Revit.Geometry.Voronoi.Models.Edge.Reg
   langs:
   - csharp
   - vb
@@ -20,11 +20,11 @@ items:
   fullName: MBF.Revit.Geometry.Voronoi.Models.Edge
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Edge.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
-  summary: Represents an edge in the Voronoi diagram.
+  summary: Represents an edge in the Voronoi diagram, defined by a line equation and associated sites.
   example: []
   syntax:
     content: public class Edge
@@ -39,132 +39,144 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.a
-  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Edge.a
-  id: a
+- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.A
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Edge.A
+  id: A
   parent: MBF.Revit.Geometry.Voronoi.Models.Edge
   langs:
   - csharp
   - vb
-  name: a
-  nameWithType: Edge.a
-  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.a
+  name: A
+  nameWithType: Edge.A
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.A
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Edge.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: Coefficient 'a' in the line equation of the edge (a * x + b * y = c).
+  example: []
   syntax:
-    content: public double a
+    content: public double A
     return:
       type: System.Double
-    content.vb: Public a As Double
-- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.b
-  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Edge.b
-  id: b
+    content.vb: Public A As Double
+- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.B
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Edge.B
+  id: B
   parent: MBF.Revit.Geometry.Voronoi.Models.Edge
   langs:
   - csharp
   - vb
-  name: b
-  nameWithType: Edge.b
-  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.b
+  name: B
+  nameWithType: Edge.B
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.B
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Edge.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: Coefficient 'b' in the line equation of the edge (a * x + b * y = c).
+  example: []
   syntax:
-    content: public double b
+    content: public double B
     return:
       type: System.Double
-    content.vb: Public b As Double
-- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.c
-  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Edge.c
-  id: c
+    content.vb: Public B As Double
+- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.C
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Edge.C
+  id: C
   parent: MBF.Revit.Geometry.Voronoi.Models.Edge
   langs:
   - csharp
   - vb
-  name: c
-  nameWithType: Edge.c
-  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.c
+  name: C
+  nameWithType: Edge.C
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.C
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Edge.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: Constant term 'c' in the line equation of the edge (a * x + b * y = c).
+  example: []
   syntax:
-    content: public double c
+    content: public double C
     return:
       type: System.Double
-    content.vb: Public c As Double
-- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.ep
-  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Edge.ep
-  id: ep
+    content.vb: Public C As Double
+- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.Edgenbr
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Edge.Edgenbr
+  id: Edgenbr
   parent: MBF.Revit.Geometry.Voronoi.Models.Edge
   langs:
   - csharp
   - vb
-  name: ep
-  nameWithType: Edge.ep
-  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.ep
+  name: Edgenbr
+  nameWithType: Edge.Edgenbr
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.Edgenbr
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Edge.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: Unique identifier for the edge.
+  example: []
   syntax:
-    content: public Site[] ep
-    return:
-      type: MBF.Revit.Geometry.Voronoi.Models.Site[]
-    content.vb: Public ep As Site()
-- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.reg
-  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Edge.reg
-  id: reg
-  parent: MBF.Revit.Geometry.Voronoi.Models.Edge
-  langs:
-  - csharp
-  - vb
-  name: reg
-  nameWithType: Edge.reg
-  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.reg
-  type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
-  assemblies:
-  - MBF.Revit.Geometry
-  namespace: MBF.Revit.Geometry.Voronoi.Models
-  syntax:
-    content: public Site[] reg
-    return:
-      type: MBF.Revit.Geometry.Voronoi.Models.Site[]
-    content.vb: Public reg As Site()
-- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.edgenbr
-  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Edge.edgenbr
-  id: edgenbr
-  parent: MBF.Revit.Geometry.Voronoi.Models.Edge
-  langs:
-  - csharp
-  - vb
-  name: edgenbr
-  nameWithType: Edge.edgenbr
-  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.edgenbr
-  type: Field
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
-  assemblies:
-  - MBF.Revit.Geometry
-  namespace: MBF.Revit.Geometry.Voronoi.Models
-  syntax:
-    content: public int edgenbr
+    content: public int Edgenbr
     return:
       type: System.Int32
-    content.vb: Public edgenbr As Integer
+    content.vb: Public Edgenbr As Integer
+- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.Ep
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Edge.Ep
+  id: Ep
+  parent: MBF.Revit.Geometry.Voronoi.Models.Edge
+  langs:
+  - csharp
+  - vb
+  name: Ep
+  nameWithType: Edge.Ep
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.Ep
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Edge.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: Endpoints of the edge (can be null if the edge is a ray or still under construction).
+  example: []
+  syntax:
+    content: public Site[] Ep
+    return:
+      type: MBF.Revit.Geometry.Voronoi.Models.Site[]
+    content.vb: Public Ep As Site()
+- uid: MBF.Revit.Geometry.Voronoi.Models.Edge.Reg
+  commentId: F:MBF.Revit.Geometry.Voronoi.Models.Edge.Reg
+  id: Reg
+  parent: MBF.Revit.Geometry.Voronoi.Models.Edge
+  langs:
+  - csharp
+  - vb
+  name: Reg
+  nameWithType: Edge.Reg
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.Reg
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Edge.cs
+  assemblies:
+  - MBF.Revit.Geometry
+  namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: Sites that the edge bisects; these are the two sites whose Voronoi cells are separated by this edge.
+  example: []
+  syntax:
+    content: public Site[] Reg
+    return:
+      type: MBF.Revit.Geometry.Voronoi.Models.Site[]
+    content.vb: Public Reg As Site()
 - uid: MBF.Revit.Geometry.Voronoi.Models.Edge.#ctor
   commentId: M:MBF.Revit.Geometry.Voronoi.Models.Edge.#ctor
   id: '#ctor'
@@ -177,10 +189,12 @@ items:
   fullName: MBF.Revit.Geometry.Voronoi.Models.Edge.Edge()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Edge.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Models
+  summary: Initializes a new instance of the <xref href="MBF.Revit.Geometry.Voronoi.Models.Edge" data-throw-if-not-resolved="false"></xref> class.
+  example: []
   syntax:
     content: public Edge()
     content.vb: Public Sub New()
@@ -494,6 +508,17 @@ references:
   nameWithType.vb: Double
   fullName.vb: Double
   name.vb: Double
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
 - uid: MBF.Revit.Geometry.Voronoi.Models.Site[]
   isExternal: true
   href: MBF.Revit.Geometry.Voronoi.Models.Site.html
@@ -517,17 +542,14 @@ references:
     href: MBF.Revit.Geometry.Voronoi.Models.Site.html
   - name: (
   - name: )
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
+- uid: MBF.Revit.Geometry.Voronoi.Models.Edge
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Edge
+  parent: MBF.Revit.Geometry.Voronoi.Models
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  href: MBF.Revit.Geometry.Voronoi.Models.Edge.html
+  name: Edge
+  nameWithType: Edge
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge
 - uid: MBF.Revit.Geometry.Voronoi.Models.Edge.#ctor*
   commentId: Overload:MBF.Revit.Geometry.Voronoi.Models.Edge.#ctor
   isExternal: true

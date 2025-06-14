@@ -21,13 +21,29 @@ items:
   assemblies:
   - MBF.Revit.Geometry
 references:
-- uid: MBF.Revit.Geometry.Voronoi.Models.Voronoi
-  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Voronoi
+- uid: MBF.Revit.Geometry.Voronoi.Models.Edge
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Edge
+  parent: MBF.Revit.Geometry.Voronoi.Models
   isExternal: true
-  href: MBF.Revit.Geometry.Voronoi.Models.Voronoi.html
-  name: Voronoi
-  nameWithType: Voronoi
-  fullName: MBF.Revit.Geometry.Voronoi.Models.Voronoi
+  href: MBF.Revit.Geometry.Voronoi.Models.Edge.html
+  name: Edge
+  nameWithType: Edge
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge
+- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  isExternal: true
+  href: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.html
+  name: GraphEdge
+  nameWithType: GraphEdge
+  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Halfedge
+  parent: MBF.Revit.Geometry.Voronoi.Models
+  isExternal: true
+  href: MBF.Revit.Geometry.Voronoi.Models.Halfedge.html
+  name: Halfedge
+  nameWithType: Halfedge
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge
 - uid: MBF.Revit.Geometry.Voronoi.Models.Point
   commentId: T:MBF.Revit.Geometry.Voronoi.Models.Point
   parent: MBF.Revit.Geometry.Voronoi.Models
@@ -44,29 +60,13 @@ references:
   name: Site
   nameWithType: Site
   fullName: MBF.Revit.Geometry.Voronoi.Models.Site
-- uid: MBF.Revit.Geometry.Voronoi.Models.Edge
-  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Edge
-  parent: MBF.Revit.Geometry.Voronoi.Models
+- uid: MBF.Revit.Geometry.Voronoi.Models.Voronoi
+  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Voronoi
   isExternal: true
-  href: MBF.Revit.Geometry.Voronoi.Models.Edge.html
-  name: Edge
-  nameWithType: Edge
-  fullName: MBF.Revit.Geometry.Voronoi.Models.Edge
-- uid: MBF.Revit.Geometry.Voronoi.Models.Halfedge
-  commentId: T:MBF.Revit.Geometry.Voronoi.Models.Halfedge
-  parent: MBF.Revit.Geometry.Voronoi.Models
-  isExternal: true
-  href: MBF.Revit.Geometry.Voronoi.Models.Halfedge.html
-  name: Halfedge
-  nameWithType: Halfedge
-  fullName: MBF.Revit.Geometry.Voronoi.Models.Halfedge
-- uid: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
-  commentId: T:MBF.Revit.Geometry.Voronoi.Models.GraphEdge
-  isExternal: true
-  href: MBF.Revit.Geometry.Voronoi.Models.GraphEdge.html
-  name: GraphEdge
-  nameWithType: GraphEdge
-  fullName: MBF.Revit.Geometry.Voronoi.Models.GraphEdge
+  href: MBF.Revit.Geometry.Voronoi.Models.Voronoi.html
+  name: Voronoi
+  nameWithType: Voronoi
+  fullName: MBF.Revit.Geometry.Voronoi.Models.Voronoi
 - uid: MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX
   commentId: T:MBF.Revit.Geometry.Voronoi.Models.SiteSorterYX
   isExternal: true

@@ -96,13 +96,12 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.html">DynamicCategorySelectionFilter</a></dt>
-      <dd>A dynamic selection filter that allows only elements belonging to specified <span class="xref">BuiltInCategory</span> values.
-Useful for restricting user selection to a specific set of categories.</dd>
+      <dd>Represents a selection filter that dynamically allows elements based on their categories.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Data.SelectionFilters.FaceSelectionFilter.html">FaceSelectionFilter</a></dt>
-      <dd>A selection filter that allows selecting <span class="xref">Face</span> geometry references 
-from elements belonging to specific <span class="xref">BuiltInCategory</span> values.</dd>
+      <dd>Provides a selection filter for Revit elements and references, allowing selection of elements based on their
+category and ensuring that references correspond to geometric faces.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.html">HostOrLinkedCategorySelectionFilter</a></dt>
@@ -111,8 +110,8 @@ restricted to a specific set of categories.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.html">LinkedCategorySelectionFilter</a></dt>
-      <dd>A selection filter that allows selecting elements from a linked Revit model,
-restricted to a specific set of categories.</dd>
+      <dd>Selection filter for linked Revit documents that restricts selection to elements
+belonging to specified categories within a selected <span class="xref">MBF.Revit.Data.SelectionFilters.LinkedCategorySelectionFilter.RevitLinkInstance</span>.</dd>
     </dl>
 
 

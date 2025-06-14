@@ -51,7 +51,7 @@ items:
   namespace: MB.Common.Tools
   summary: Represents the Sprinkler Voronoi tool.
   remarks: >-
-    This tool requires the <xref href="MB.Common.SharedParameters.ToolsSharedParameter.ActualCoverage" data-throw-if-not-resolved="false"></xref> and 
+    This tool requires the <xref href="MB.Common.SharedParameters.ToolsSharedParameter.ActualCoverage" data-throw-if-not-resolved="false"></xref> and
 
     <xref href="MB.Common.SharedParameters.ToolsSharedParameter.ProtectionArea" data-throw-if-not-resolved="false"></xref> shared parameters.
   example: []
@@ -144,23 +144,23 @@ items:
   remarks: >-
     This tool requires several shared parameters including:
 
-    <xref href="MB.Common.SharedParameters.ToolsSharedParameter.Color" data-throw-if-not-resolved="false"></xref>, 
+    <xref href="MB.Common.SharedParameters.ToolsSharedParameter.Color" data-throw-if-not-resolved="false"></xref>,
 
     <xref href="MB.Common.SharedParameters.ToolsSharedParameter.Finish" data-throw-if-not-resolved="false"></xref>,
 
-    <xref href="MB.Common.SharedParameters.ToolsSharedParameter.PipeCode" data-throw-if-not-resolved="false"></xref>, 
+    <xref href="MB.Common.SharedParameters.ToolsSharedParameter.PipeCode" data-throw-if-not-resolved="false"></xref>,
 
     and many others used for downstream fabrication and reporting.
   example: []
   syntax:
     content: >-
-      [RequiredSharedParameters(new ToolsSharedParameter[] { ToolsSharedParameter.Color, ToolsSharedParameter.Finish, ToolsSharedParameter.PipeCode, ToolsSharedParameter.AddFitToId, ToolsSharedParameter.HandTight, ToolsSharedParameter.DescriptionAndAbbreviationListNo, ToolsSharedParameter.ExportedPackageName, ToolsSharedParameter.RealFittingSizes, ToolsSharedParameter.ExportedPdfName, ToolsSharedParameter.SubType, ToolsSharedParameter.FabricationGroupName, ToolsSharedParameter.Allowance, ToolsSharedParameter.ReaLGroupSize, ToolsSharedParameter.IsFitting, ToolsSharedParameter.CalculateSum })]
+      [RequiredSharedParameters(new ToolsSharedParameter[] { ToolsSharedParameter.Color, ToolsSharedParameter.Color, ToolsSharedParameter.PipeCode, ToolsSharedParameter.AddFitToId, ToolsSharedParameter.HandTight, ToolsSharedParameter.DescriptionAndAbbreviationListNo, ToolsSharedParameter.ExportedPackageName, ToolsSharedParameter.RealFittingSizes, ToolsSharedParameter.ExportedPdfName, ToolsSharedParameter.SubType, ToolsSharedParameter.FabricationGroupName, ToolsSharedParameter.Allowance, ToolsSharedParameter.ReaLGroupSize, ToolsSharedParameter.IsFitting, ToolsSharedParameter.CalculateSum })]
 
       Mapper = 5
     return:
       type: MB.Common.Tools.MbfTool
     content.vb: >-
-      <RequiredSharedParameters(New ToolsSharedParameter() { ToolsSharedParameter.Color, ToolsSharedParameter.Finish, ToolsSharedParameter.PipeCode, ToolsSharedParameter.AddFitToId, ToolsSharedParameter.HandTight, ToolsSharedParameter.DescriptionAndAbbreviationListNo, ToolsSharedParameter.ExportedPackageName, ToolsSharedParameter.RealFittingSizes, ToolsSharedParameter.ExportedPdfName, ToolsSharedParameter.SubType, ToolsSharedParameter.FabricationGroupName, ToolsSharedParameter.Allowance, ToolsSharedParameter.ReaLGroupSize, ToolsSharedParameter.IsFitting, ToolsSharedParameter.CalculateSum })>
+      <RequiredSharedParameters(New ToolsSharedParameter() { ToolsSharedParameter.Color, ToolsSharedParameter.Color, ToolsSharedParameter.PipeCode, ToolsSharedParameter.AddFitToId, ToolsSharedParameter.HandTight, ToolsSharedParameter.DescriptionAndAbbreviationListNo, ToolsSharedParameter.ExportedPackageName, ToolsSharedParameter.RealFittingSizes, ToolsSharedParameter.ExportedPdfName, ToolsSharedParameter.SubType, ToolsSharedParameter.FabricationGroupName, ToolsSharedParameter.Allowance, ToolsSharedParameter.ReaLGroupSize, ToolsSharedParameter.IsFitting, ToolsSharedParameter.CalculateSum })>
 
       Mapper = 5
 - uid: MB.Common.Tools.MbfTool.AutoSprinklerSpacing

@@ -19,7 +19,7 @@ items:
   namespace: MB.Common.Attributes
   summary: Represents an attribute to specify the type of a shared parameter.
   remarks: >-
-    This attribute is used to associate a target (e.g., a class, method, or property) with a specific 
+    This attribute is used to associate a target (e.g., a class, method, or property) with a specific
 
     shared parameter type. It helps define the type of shared parameter in a structured and reusable way.
   example: []

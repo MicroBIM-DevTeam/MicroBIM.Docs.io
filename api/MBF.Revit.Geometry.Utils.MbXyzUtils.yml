@@ -17,15 +17,29 @@ items:
   fullName: MBF.Revit.Geometry.Utils.MbXyzUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Utils/MbXyzUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Utils/MbXyzUtils.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Utils
-  summary: Provides utility methods for geometric operations on <xref href="Autodesk.Revit.DB.XYZ" data-throw-if-not-resolved="false"></xref> points.
+  summary: Provides utility methods for working with 2D geometry, including operations on polygons and line segments.
+  remarks: >-
+    This class includes methods for detecting self-intersections in polygons, determining line segment
+
+    intersections, and sorting points in a clockwise order. It is designed to work with 2D geometry represented by
+
+    <xref href="Autodesk.Revit.DB.XYZ" data-throw-if-not-resolved="false"></xref>
+
+    points, where the Z-coordinate is ignored in calculations.
   example: []
   syntax:
-    content: public static class MbXyzUtils
-    content.vb: Public Module MbXyzUtils
+    content: >-
+      [LogAspect]
+
+      public static class MbXyzUtils
+    content.vb: >-
+      <LogAspect>
+
+      Public Module MbXyzUtils
   inheritance:
   - System.Object
   inheritedMembers:
@@ -36,6 +50,10 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: MB.Common.Aspects.LogAspect
+    ctor: MB.Common.Aspects.LogAspect.#ctor
+    arguments: []
 - uid: MBF.Revit.Geometry.Utils.MbXyzUtils.HasSelfIntersections(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ})
   commentId: M:MBF.Revit.Geometry.Utils.MbXyzUtils.HasSelfIntersections(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ})
   id: HasSelfIntersections(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ})
@@ -48,7 +66,7 @@ items:
   fullName: MBF.Revit.Geometry.Utils.MbXyzUtils.HasSelfIntersections(System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Utils/MbXyzUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Utils/MbXyzUtils.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Utils
@@ -56,7 +74,10 @@ items:
   remarks: >-
     The method performs three checks:
 
-    <ol><li>Checks all non-adjacent segment pairs within the polygon to detect internal intersections.</li><li>Checks if the most recently added segment intersects any existing (non-adjacent) segment.</li><li>Checks if the closing segment (from the last point to the first) intersects any interior segment (excluding adjacent ones).</li></ol>
+    <ol><li>Checks all non-adjacent segment pairs within the polygon to detect internal intersections.</li><li>Checks if the most recently added segment intersects any existing (non-adjacent) segment.</li><li>
+                Checks if the closing segment (from the last point to the first) intersects any interior
+                segment (excluding adjacent ones).
+            </li></ol>
   example: []
   syntax:
     content: public static bool HasSelfIntersections(List<XYZ> points)
@@ -84,31 +105,35 @@ items:
   fullName: MBF.Revit.Geometry.Utils.MbXyzUtils.DoLinesIntersect2D(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Utils/MbXyzUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Utils/MbXyzUtils.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Utils
-  summary: Determines whether two 2D segments (represented by points) intersect.
+  summary: Determines whether two line segments in 2D space intersect.
+  remarks: >-
+    This method uses a counter-clockwise orientation test to determine if the line segments intersect.
+
+    The segments are considered to intersect if they share any point in common, including endpoints.
   example: []
   syntax:
-    content: public static bool DoLinesIntersect2D(XYZ a1, XYZ a2, XYZ b1, XYZ b2)
+    content: public static bool DoLinesIntersect2D(XYZ segment1Start, XYZ segment1End, XYZ segment2Start, XYZ segment2End)
     parameters:
-    - id: a1
+    - id: segment1Start
       type: Autodesk.Revit.DB.XYZ
-      description: Start of first segment.
-    - id: a2
+      description: The starting point of the first line segment.
+    - id: segment1End
       type: Autodesk.Revit.DB.XYZ
-      description: End of first segment.
-    - id: b1
+      description: The ending point of the first line segment.
+    - id: segment2Start
       type: Autodesk.Revit.DB.XYZ
-      description: Start of second segment.
-    - id: b2
+      description: The starting point of the second line segment.
+    - id: segment2End
       type: Autodesk.Revit.DB.XYZ
-      description: End of second segment.
+      description: The ending point of the second line segment.
     return:
       type: System.Boolean
-      description: <code>true</code> if the two segments intersect in 2D; otherwise, <code>false</code>.
-    content.vb: Public Shared Function DoLinesIntersect2D(a1 As XYZ, a2 As XYZ, b1 As XYZ, b2 As XYZ) As Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the two line segments intersect; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Shared Function DoLinesIntersect2D(segment1Start As XYZ, segment1End As XYZ, segment2Start As XYZ, segment2End As XYZ) As Boolean
   overload: MBF.Revit.Geometry.Utils.MbXyzUtils.DoLinesIntersect2D*
 - uid: MBF.Revit.Geometry.Utils.MbXyzUtils.DoLinesIntersect2D(Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line)
   commentId: M:MBF.Revit.Geometry.Utils.MbXyzUtils.DoLinesIntersect2D(Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line)
@@ -122,7 +147,7 @@ items:
   fullName: MBF.Revit.Geometry.Utils.MbXyzUtils.DoLinesIntersect2D(Autodesk.Revit.DB.Line, Autodesk.Revit.DB.Line)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Utils/MbXyzUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Utils/MbXyzUtils.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Utils
@@ -154,7 +179,7 @@ items:
   fullName: MBF.Revit.Geometry.Utils.MbXyzUtils.SortPointsClockwise(System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Utils/MbXyzUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Utils/MbXyzUtils.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Utils
@@ -176,7 +201,6 @@ items:
   name.vb: SortPointsClockwise(List(Of XYZ))
 references:
 - uid: Autodesk.Revit.DB.XYZ
-  commentId: T:Autodesk.Revit.DB.XYZ
   isExternal: true
   name: XYZ
   nameWithType: XYZ

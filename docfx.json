@@ -33,15 +33,7 @@
                         "MBF.Revit.Geometry.xml"
                     ],
                     "dest": "api/MB.Common"
-                },
-                {
-                    "src": "C:/Users/MB-KFatihy/source/repos/MicroBIM-DevTeam/MBFRevitExtensions/bin/Debug R23/net48",
-                    "files": [
-                        "Revit.Extensions.dll",
-                        "Revit.Extensions.xml"
-                    ],
-                    "dest": "api/MB.Common"
-                },
+                },      
                 {
                     "src": "C:/Users/MB-KFatihy/source/repos/MicroBIM-DevTeam/MBFWpfToolkit/obj/Debug/net48",
                     "files": [
@@ -69,6 +61,9 @@
         "resource": [
             {
                 "files": [ "images/**" ]
+            },
+            {
+                "files": [ "downloads/**" ]
             }
         ],
         "overwrite": [],

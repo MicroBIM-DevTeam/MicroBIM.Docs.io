@@ -16,11 +16,14 @@ items:
   fullName: MBFWpfToolkit.Converters.EnumDisplayNameConverter
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Converters/EnumDisplayNameConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Converters/EnumDisplayNameConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
-  summary: A value converter for converting between enum values and their display names specified by the <xref href="System.ComponentModel.DataAnnotations.DisplayAttribute" data-throw-if-not-resolved="false"></xref>.
+  summary: >-
+    A value converter for converting between enum values and their display names specified by the
+
+    <xref href="System.ComponentModel.DataAnnotations.DisplayAttribute" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: 'public class EnumDisplayNameConverter : IValueConverter'
@@ -49,7 +52,7 @@ items:
   fullName: MBFWpfToolkit.Converters.EnumDisplayNameConverter.Convert(object, System.Type, object, System.Globalization.CultureInfo)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Converters/EnumDisplayNameConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Converters/EnumDisplayNameConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
@@ -72,7 +75,10 @@ items:
       description: The culture to be used in the converter (not used).
     return:
       type: System.Object
-      description: The display name of the enum value, or its string representation if no <xref href="System.ComponentModel.DataAnnotations.DisplayAttribute" data-throw-if-not-resolved="false"></xref> is found.
+      description: >-
+        The display name of the enum value, or its string representation if no <xref href="System.ComponentModel.DataAnnotations.DisplayAttribute" data-throw-if-not-resolved="false"></xref> is
+
+        found.
     content.vb: Public Function Convert(value As Object, targetType As Type, parameter As Object, culture As CultureInfo) As Object
   overload: MBFWpfToolkit.Converters.EnumDisplayNameConverter.Convert*
   implements:
@@ -92,7 +98,7 @@ items:
   fullName: MBFWpfToolkit.Converters.EnumDisplayNameConverter.ConvertBack(object, System.Type, object, System.Globalization.CultureInfo)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Converters/EnumDisplayNameConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Converters/EnumDisplayNameConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
@@ -139,7 +145,7 @@ items:
   fullName: MBFWpfToolkit.Converters.EnumDisplayNameConverter.EnumDisplayNameConverter()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Converters/EnumDisplayNameConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Converters/EnumDisplayNameConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters

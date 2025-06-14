@@ -87,7 +87,10 @@ items:
       description: The Revit <xref href="Autodesk.Revit.DB.Document" data-throw-if-not-resolved="false"></xref> in which the parameters should be ensured.
     - id: parameters
       type: MB.Common.SharedParameters.ToolsSharedParameter[]
-      description: An array of <xref href="MB.Common.SharedParameters.ToolsSharedParameter" data-throw-if-not-resolved="false"></xref> representing the shared parameters to verify or add.
+      description: >-
+        An array of <xref href="MB.Common.SharedParameters.ToolsSharedParameter" data-throw-if-not-resolved="false"></xref> representing the shared parameters to verify
+
+        or add.
     content.vb: Public Shared Sub EnsureParameters(doc As Document, parameters As ToolsSharedParameter())
   overload: MB.Common.Parameters.RevitParameterManager.EnsureParameters*
   nameWithType.vb: RevitParameterManager.EnsureParameters(Document, ToolsSharedParameter())

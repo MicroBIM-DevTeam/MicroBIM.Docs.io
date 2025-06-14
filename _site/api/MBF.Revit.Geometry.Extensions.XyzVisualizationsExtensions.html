@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class XyzVisualizationsExtensions | MIcroBIM Docs ">
       
-      <meta name="description" content="Extension methods for visualizing  points in Revit using DirectShape.">
+      <meta name="description" content="Provides extension methods for visualizing  points as 3D objects in a Revit document.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Geometry_Extensions_XyzVisualizationsExtensions" data-uid="MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions" class="text-break">
-Class XyzVisualizationsExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/XYZVisualizationsExtensions.cs"><i class="bi bi-code-slash"></i></a>
+Class XyzVisualizationsExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/XYZVisualizationsExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,11 +97,12 @@ Class XyzVisualizationsExtensions  <a class="header-action link-secondary" title
   <dl><dt>Assembly</dt><dd>MBF.Revit.Geometry.dll</dd></dl>
   </div>
 
-  <div class="markdown summary">Extension methods for visualizing <span class="xref">Autodesk.Revit.DB.XYZ</span> points in Revit using DirectShape.</div>
+  <div class="markdown summary">Provides extension methods for visualizing <span class="xref">Autodesk.Revit.DB.XYZ</span> points as 3D objects in a Revit document.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class XyzVisualizationsExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">[LogAspect]
+public static class XyzVisualizationsExtensions</code></pre>
   </div>
 
 
@@ -146,6 +147,10 @@ Class XyzVisualizationsExtensions  <a class="header-action link-secondary" title
 
 
 
+  <h2 id="MBF_Revit_Geometry_Extensions_XyzVisualizationsExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">These methods allow users to create visual representations of <span class="xref">Autodesk.Revit.DB.XYZ</span> points in the active
+view of a Revit document. The visualizations are implemented using <span class="xref">DirectShape</span> elements, with
+optional color customization.</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -156,7 +161,7 @@ Class XyzVisualizationsExtensions  <a class="header-action link-secondary" title
 
   <h3 id="MBF_Revit_Geometry_Extensions_XyzVisualizationsExtensions_VisualizePoint_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_" data-uid="MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.VisualizePoint(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)">
   VisualizePoint(XYZ, Document, Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/XYZVisualizationsExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/XYZVisualizationsExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Visualizes an <span class="xref">Autodesk.Revit.DB.XYZ</span> point as a 3D point object using a <span class="xref">DirectShape</span> in the active view.</div>
@@ -191,7 +196,7 @@ Class XyzVisualizationsExtensions  <a class="header-action link-secondary" title
 
   <h3 id="MBF_Revit_Geometry_Extensions_XyzVisualizationsExtensions_VisualizePointAsElement_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_" data-uid="MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.VisualizePointAsElement(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)">
   VisualizePointAsElement(XYZ, Document, Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/XYZVisualizationsExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/XYZVisualizationsExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Visualizes an <span class="xref">Autodesk.Revit.DB.XYZ</span> point as a 3D geometry using a <span class="xref">DirectShape</span> element

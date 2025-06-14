@@ -50,10 +50,6 @@ This document outlines the coding standards and collaboration practices for our 
   - `PascalCase` for class names, methods, and properties.
   - `camelCase` for local variables and parameters.
   - `ALL_CAPS` for constants.
-- ❌ The use of `var` is strictly **prohibited**. All variables must be declared with **explicit types**.
-  - ✅ `int count = 0;`
-  - ❌ `var count = 0;`
-- A **custom analyzer** is enforced to trigger a **compilation error** if `var` is used.
 - Place `using` directives **inside the namespace**.
 - Always include **XML documentation** for public members.
 - Use **expression-bodied members** for simple one-liners when appropriate.
@@ -215,3 +211,13 @@ public static MbResult<ObservableCollection<FamilySymbol>> GetFamilyTypesByCateg
 
 ⚠ Enforcement
 Any method that involves possible failure or data lookup must use MbResult<T> instead of returning raw types or throwing exceptions directly.
+
+
+
+## 📦 Download NuGet Package
+
+You can download the latest version of the `MicroBIM.Revit.Template` package below:
+
+[Download MicroBIM.Revit.Template.1.2.0.nupkg](downloads/MicroBIM.Revit.Template.1.2.0.nupkg)
+
+> Place the `.nupkg` file inside your `downloads/` folder before building the docs.

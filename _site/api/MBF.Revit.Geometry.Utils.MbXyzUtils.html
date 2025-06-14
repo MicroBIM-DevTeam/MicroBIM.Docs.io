@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MbXyzUtils | MIcroBIM Docs ">
       
-      <meta name="description" content="Provides utility methods for geometric operations on  points.">
+      <meta name="description" content="Provides utility methods for working with 2D geometry, including operations on polygons and line segments.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Geometry_Utils_MbXyzUtils" data-uid="MBF.Revit.Geometry.Utils.MbXyzUtils" class="text-break">
-Class MbXyzUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Utils/MbXyzUtils.cs"><i class="bi bi-code-slash"></i></a>
+Class MbXyzUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Utils/MbXyzUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,11 +97,12 @@ Class MbXyzUtils  <a class="header-action link-secondary" title="View source" hr
   <dl><dt>Assembly</dt><dd>MBF.Revit.Geometry.dll</dd></dl>
   </div>
 
-  <div class="markdown summary">Provides utility methods for geometric operations on <span class="xref">Autodesk.Revit.DB.XYZ</span> points.</div>
+  <div class="markdown summary">Provides utility methods for working with 2D geometry, including operations on polygons and line segments.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class MbXyzUtils</code></pre>
+    <pre><code class="lang-csharp hljs">[LogAspect]
+public static class MbXyzUtils</code></pre>
   </div>
 
 
@@ -146,6 +147,11 @@ Class MbXyzUtils  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <h2 id="MBF_Revit_Geometry_Utils_MbXyzUtils_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">This class includes methods for detecting self-intersections in polygons, determining line segment
+intersections, and sorting points in a clockwise order. It is designed to work with 2D geometry represented by
+<span class="xref">Autodesk.Revit.DB.XYZ</span>
+points, where the Z-coordinate is ignored in calculations.</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -156,7 +162,7 @@ Class MbXyzUtils  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="MBF_Revit_Geometry_Utils_MbXyzUtils_DoLinesIntersect2D_Autodesk_Revit_DB_Line_Autodesk_Revit_DB_Line_" data-uid="MBF.Revit.Geometry.Utils.MbXyzUtils.DoLinesIntersect2D(Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line)">
   DoLinesIntersect2D(Line, Line)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Utils/MbXyzUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Utils/MbXyzUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Determines whether two Revit <span class="xref">Autodesk.Revit.DB.Line</span> objects intersect in 2D (ignoring Z).</div>
@@ -194,32 +200,32 @@ Class MbXyzUtils  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="MBF_Revit_Geometry_Utils_MbXyzUtils_DoLinesIntersect2D_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_XYZ_" data-uid="MBF.Revit.Geometry.Utils.MbXyzUtils.DoLinesIntersect2D(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ)">
   DoLinesIntersect2D(XYZ, XYZ, XYZ, XYZ)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Utils/MbXyzUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Utils/MbXyzUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Determines whether two 2D segments (represented by points) intersect.</div>
+  <div class="markdown level1 summary">Determines whether two line segments in 2D space intersect.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool DoLinesIntersect2D(XYZ a1, XYZ a2, XYZ b1, XYZ b2)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool DoLinesIntersect2D(XYZ segment1Start, XYZ segment1End, XYZ segment2Start, XYZ segment2End)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>a1</code> <span class="xref">XYZ</span></dt>
-    <dd>Start of first segment.</dd>
-    <dt><code>a2</code> <span class="xref">XYZ</span></dt>
-    <dd>End of first segment.</dd>
-    <dt><code>b1</code> <span class="xref">XYZ</span></dt>
-    <dd>Start of second segment.</dd>
-    <dt><code>b2</code> <span class="xref">XYZ</span></dt>
-    <dd>End of second segment.</dd>
+    <dt><code>segment1Start</code> <span class="xref">XYZ</span></dt>
+    <dd>The starting point of the first line segment.</dd>
+    <dt><code>segment1End</code> <span class="xref">XYZ</span></dt>
+    <dd>The ending point of the first line segment.</dd>
+    <dt><code>segment2Start</code> <span class="xref">XYZ</span></dt>
+    <dd>The starting point of the second line segment.</dd>
+    <dt><code>segment2End</code> <span class="xref">XYZ</span></dt>
+    <dd>The ending point of the second line segment.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><code>true</code> if the two segments intersect in 2D; otherwise, <code>false</code>.</dd>
+    <dd><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the two line segments intersect; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</dd>
   </dl>
 
 
@@ -228,6 +234,9 @@ Class MbXyzUtils  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <h4 class="section" id="MBF_Revit_Geometry_Utils_MbXyzUtils_DoLinesIntersect2D_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_XYZ__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method uses a counter-clockwise orientation test to determine if the line segments intersect.
+The segments are considered to intersect if they share any point in common, including endpoints.</div>
 
 
 
@@ -236,7 +245,7 @@ Class MbXyzUtils  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="MBF_Revit_Geometry_Utils_MbXyzUtils_HasSelfIntersections_System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__" data-uid="MBF.Revit.Geometry.Utils.MbXyzUtils.HasSelfIntersections(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ})">
   HasSelfIntersections(List&lt;XYZ&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Utils/MbXyzUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Utils/MbXyzUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Determines whether a list of <span class="xref">Autodesk.Revit.DB.XYZ</span> points forming a polygon has any self-intersections.</div>
@@ -266,7 +275,10 @@ Class MbXyzUtils  <a class="header-action link-secondary" title="View source" hr
 
   <h4 class="section" id="MBF_Revit_Geometry_Utils_MbXyzUtils_HasSelfIntersections_System_Collections_Generic_List_Autodesk_Revit_DB_XYZ___remarks">Remarks</h4>
   <div class="markdown level1 remarks">The method performs three checks:
-<ol><li>Checks all non-adjacent segment pairs within the polygon to detect internal intersections.</li><li>Checks if the most recently added segment intersects any existing (non-adjacent) segment.</li><li>Checks if the closing segment (from the last point to the first) intersects any interior segment (excluding adjacent ones).</li></ol></div>
+<ol><li>Checks all non-adjacent segment pairs within the polygon to detect internal intersections.</li><li>Checks if the most recently added segment intersects any existing (non-adjacent) segment.</li><li>
+            Checks if the closing segment (from the last point to the first) intersects any interior
+            segment (excluding adjacent ones).
+        </li></ol></div>
 
 
 
@@ -275,7 +287,7 @@ Class MbXyzUtils  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="MBF_Revit_Geometry_Utils_MbXyzUtils_SortPointsClockwise_System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__" data-uid="MBF.Revit.Geometry.Utils.MbXyzUtils.SortPointsClockwise(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ})">
   SortPointsClockwise(List&lt;XYZ&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Utils/MbXyzUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Utils/MbXyzUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Sorts a list of <span class="xref">Autodesk.Revit.DB.XYZ</span> points in clockwise order around their centroid (in 2D plane).</div>

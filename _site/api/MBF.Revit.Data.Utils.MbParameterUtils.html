@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Data_Utils_MbParameterUtils" data-uid="MBF.Revit.Data.Utils.MbParameterUtils" class="text-break">
-Class MbParameterUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbParameterUtils.cs"><i class="bi bi-code-slash"></i></a>
+Class MbParameterUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbParameterUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -101,7 +101,8 @@ Class MbParameterUtils  <a class="header-action link-secondary" title="View sour
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class MbParameterUtils</code></pre>
+    <pre><code class="lang-csharp hljs">[LogAspect]
+public static class MbParameterUtils</code></pre>
   </div>
 
 
@@ -156,7 +157,7 @@ Class MbParameterUtils  <a class="header-action link-secondary" title="View sour
 
   <h3 id="MBF_Revit_Data_Utils_MbParameterUtils_GetParameterValue_Autodesk_Revit_DB_StorageType_Autodesk_Revit_DB_Parameter_" data-uid="MBF.Revit.Data.Utils.MbParameterUtils.GetParameterValue(Autodesk.Revit.DB.StorageType,Autodesk.Revit.DB.Parameter)">
   GetParameterValue(StorageType, Parameter)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbParameterUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbParameterUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Retrieves the string representation of a parameter's value based on its <span class="xref">Autodesk.Revit.DB.StorageType</span>.</div>
@@ -177,7 +178,13 @@ Class MbParameterUtils  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd>A string representation of the parameter's value. If the storage type is unsupported, returns "Unsupported Type".</dd>
+    <dd>A string representation of the parameter's value.
+<p>Possible error messages:</p>
+<ul><li>
+            <code>"N/A"</code> - Returned if the parameter value is a string and is <code>null</code>.
+        </li><li>
+            <code>"Unsupported Type"</code> - Returned if the storage type is not supported.
+        </li></ul></dd>
   </dl>
 
 

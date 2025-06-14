@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MbMessageBox | MIcroBIM Docs ">
       
-      <meta name="description" content="A custom message box window that supports HandyControl theming, icon display, and multiple button configurations.">
+      <meta name="description" content="A custom message box window that supports MicroBIM.UI theming, icon display, and multiple button configurations.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MBFWpfToolkit_Controls_MbMessageBox" data-uid="MBFWpfToolkit.Controls.MbMessageBox" class="text-break">
-Class MbMessageBox  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Controls/MbMessageBox.cs"><i class="bi bi-code-slash"></i></a>
+Class MbMessageBox  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Controls/MbMessageBox.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,11 +97,11 @@ Class MbMessageBox  <a class="header-action link-secondary" title="View source" 
   <dl><dt>Assembly</dt><dd>MBFWpfToolkit.dll</dd></dl>
   </div>
 
-  <div class="markdown summary">A custom message box window that supports HandyControl theming, icon display, and multiple button configurations.</div>
+  <div class="markdown summary">A custom message box window that supports MicroBIM.UI theming, icon display, and multiple button configurations.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MbMessageBox : MbWindow</code></pre>
+    <pre><code class="lang-csharp hljs">public class MbMessageBox : MbWindow, INotifyPropertyChanged</code></pre>
   </div>
 
 
@@ -116,6 +116,12 @@ Class MbMessageBox  <a class="header-action link-secondary" title="View source" 
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -149,6 +155,12 @@ Class MbMessageBox  <a class="header-action link-secondary" title="View source" 
       <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowPluginVersionProperty">MbWindow.ShowPluginVersionProperty</a>
     </div>
     <div>
+      <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_GetAllChildrenOfType__1_System_Windows_DependencyObject_">MbWindow.GetAllChildrenOfType&lt;T&gt;(DependencyObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ApplyThemeForElement_System_Windows_FrameworkElement_System_String_">MbWindow.ApplyThemeForElement(FrameworkElement, string)</a>
+    </div>
+    <div>
       <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_InitializeWindow">MbWindow.InitializeWindow()</a>
     </div>
     <div>
@@ -156,6 +168,24 @@ Class MbMessageBox  <a class="header-action link-secondary" title="View source" 
     </div>
     <div>
       <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_GetPrimaryBrush">MbWindow.GetPrimaryBrush()</a>
+    </div>
+    <div>
+      <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_OnPropertyChanged_System_String_">MbWindow.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_SetField__1___0____0_System_String_">MbWindow.SetField&lt;T&gt;(ref T, T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_IsDark">MbWindow.IsDark</a>
+    </div>
+    <div>
+      <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_SelectedLanguage">MbWindow.SelectedLanguage</a>
+    </div>
+    <div>
+      <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_SupportedLanguages">MbWindow.SupportedLanguages</a>
+    </div>
+    <div>
+      <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_Item_System_String_">MbWindow.this[string]</a>
     </div>
     <div>
       <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_IsThemeToggleVisible">MbWindow.IsThemeToggleVisible</a>
@@ -187,6 +217,9 @@ Class MbMessageBox  <a class="header-action link-secondary" title="View source" 
     <div>
       <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_MainResources">MbWindow.MainResources</a>
     </div>
+    <div>
+      <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_PropertyChanged">MbWindow.PropertyChanged</a>
+    </div>
   </dd></dl>
 
 
@@ -202,7 +235,7 @@ Class MbMessageBox  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="MBFWpfToolkit_Controls_MbMessageBox_Show_System_String_System_Windows_MessageBoxButton_MBFWpfToolkit_Constants_MbMessageIcon_" data-uid="MBFWpfToolkit.Controls.MbMessageBox.Show(System.String,System.Windows.MessageBoxButton,MBFWpfToolkit.Constants.MbMessageIcon)">
   Show(string, MessageBoxButton, MbMessageIcon)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Controls/MbMessageBox.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Controls/MbMessageBox.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Displays the message box with the specified message and button configuration.</div>

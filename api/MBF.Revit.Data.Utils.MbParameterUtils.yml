@@ -14,15 +14,21 @@ items:
   fullName: MBF.Revit.Data.Utils.MbParameterUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbParameterUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbParameterUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
   summary: Provides utility methods for working with Revit parameters.
   example: []
   syntax:
-    content: public static class MbParameterUtils
-    content.vb: Public Module MbParameterUtils
+    content: >-
+      [LogAspect]
+
+      public static class MbParameterUtils
+    content.vb: >-
+      <LogAspect>
+
+      Public Module MbParameterUtils
   inheritance:
   - System.Object
   inheritedMembers:
@@ -33,6 +39,10 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: MB.Common.Aspects.LogAspect
+    ctor: MB.Common.Aspects.LogAspect.#ctor
+    arguments: []
 - uid: MBF.Revit.Data.Utils.MbParameterUtils.GetParameterValue(Autodesk.Revit.DB.StorageType,Autodesk.Revit.DB.Parameter)
   commentId: M:MBF.Revit.Data.Utils.MbParameterUtils.GetParameterValue(Autodesk.Revit.DB.StorageType,Autodesk.Revit.DB.Parameter)
   id: GetParameterValue(Autodesk.Revit.DB.StorageType,Autodesk.Revit.DB.Parameter)
@@ -45,7 +55,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbParameterUtils.GetParameterValue(Autodesk.Revit.DB.StorageType, Autodesk.Revit.DB.Parameter)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbParameterUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbParameterUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -62,7 +72,16 @@ items:
       description: The parameter from which to extract the value.
     return:
       type: System.String
-      description: A string representation of the parameter's value. If the storage type is unsupported, returns "Unsupported Type".
+      description: >-
+        A string representation of the parameter's value.
+
+        <p>Possible error messages:</p>
+
+        <ul><li>
+                    <code>"N/A"</code> - Returned if the parameter value is a string and is <code>null</code>.
+                </li><li>
+                    <code>"Unsupported Type"</code> - Returned if the storage type is not supported.
+                </li></ul>
     content.vb: Public Shared Function GetParameterValue(storageType As StorageType, instanceParameter As Parameter) As String
   overload: MBF.Revit.Data.Utils.MbParameterUtils.GetParameterValue*
 references:

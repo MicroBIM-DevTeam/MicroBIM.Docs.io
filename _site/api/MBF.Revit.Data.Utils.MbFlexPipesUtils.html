@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MbFlexPipesUtils | MIcroBIM Docs ">
       
-      <meta name="description" content="Utility methods for working with  elements in Revit.">
+      <meta name="description" content="Filters the provided collection of Revit elements and retrieves all flex pipes.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Data_Utils_MbFlexPipesUtils" data-uid="MBF.Revit.Data.Utils.MbFlexPipesUtils" class="text-break">
-Class MbFlexPipesUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbFlexPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+Class MbFlexPipesUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbFlexPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,11 +97,12 @@ Class MbFlexPipesUtils  <a class="header-action link-secondary" title="View sour
   <dl><dt>Assembly</dt><dd>MBF.Revit.Data.dll</dd></dl>
   </div>
 
-  <div class="markdown summary">Utility methods for working with <span class="xref">Autodesk.Revit.DB.Plumbing.FlexPipe</span> elements in Revit.</div>
+  <div class="markdown summary">Filters the provided collection of Revit elements and retrieves all flex pipes.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class MbFlexPipesUtils</code></pre>
+    <pre><code class="lang-csharp hljs">[LogAspect]
+public static class MbFlexPipesUtils</code></pre>
   </div>
 
 
@@ -146,6 +147,9 @@ Class MbFlexPipesUtils  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h2 id="MBF_Revit_Data_Utils_MbFlexPipesUtils_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">This method ensures that only elements categorized as flex pipes  (BuiltInCategory.OST_FlexPipeCurves) are returned.  It uses the category information of each element to
+            perform the filtering.</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -156,7 +160,7 @@ Class MbFlexPipesUtils  <a class="header-action link-secondary" title="View sour
 
   <h3 id="MBF_Revit_Data_Utils_MbFlexPipesUtils_GetFlexPipeInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element__" data-uid="MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})">
   GetFlexPipeInstances(IEnumerable&lt;Element&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbFlexPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbFlexPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Filters the provided collection of Revit elements and retrieves all flex pipes.</div>
@@ -186,7 +190,13 @@ Class MbFlexPipesUtils  <a class="header-action link-secondary" title="View sour
 
   <h4 class="section" id="MBF_Revit_Data_Utils_MbFlexPipesUtils_GetFlexPipeInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element___remarks">Remarks</h4>
   <div class="markdown level1 remarks">This method ensures that only elements categorized as flex pipes
-(BuiltInCategory.OST_FlexPipeCurves) are returned.</div>
+(BuiltInCategory.OST_FlexPipeCurves) are returned.
+<p>Possible error messages:</p>
+<ul><li>
+            <code>ArgumentNullException</code>: Thrown if <code class="paramref">selectedElements</code> is null.
+        </li><li>
+            <code>InvalidCastException</code>: Thrown if an element cannot be cast to <span class="xref">Autodesk.Revit.DB.Plumbing.FlexPipe</span>.
+        </li></ul></div>
 
 
 

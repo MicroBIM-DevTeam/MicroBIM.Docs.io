@@ -22,7 +22,7 @@ items:
   fullName: MBFWpfToolkit.Constants.MbMessageIcon
   type: Enum
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Constants/MbMessageIcons.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants
@@ -46,7 +46,7 @@ items:
   fullName: MBFWpfToolkit.Constants.MbMessageIcon.None
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Constants/MbMessageIcons.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants
@@ -68,7 +68,7 @@ items:
   fullName: MBFWpfToolkit.Constants.MbMessageIcon.Error
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Constants/MbMessageIcons.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants
@@ -90,7 +90,7 @@ items:
   fullName: MBFWpfToolkit.Constants.MbMessageIcon.Sound
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Constants/MbMessageIcons.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants
@@ -112,7 +112,7 @@ items:
   fullName: MBFWpfToolkit.Constants.MbMessageIcon.Question
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Constants/MbMessageIcons.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants
@@ -134,7 +134,7 @@ items:
   fullName: MBFWpfToolkit.Constants.MbMessageIcon.Information
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Constants/MbMessageIcons.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants
@@ -156,7 +156,7 @@ items:
   fullName: MBFWpfToolkit.Constants.MbMessageIcon.Warning
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Constants/MbMessageIcons.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants
@@ -178,7 +178,7 @@ items:
   fullName: MBFWpfToolkit.Constants.MbMessageIcon.Success
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Constants/MbMessageIcons.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants
@@ -200,7 +200,7 @@ items:
   fullName: MBFWpfToolkit.Constants.MbMessageIcon.New
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Constants/MbMessageIcons.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants
@@ -222,7 +222,7 @@ items:
   fullName: MBFWpfToolkit.Constants.MbMessageIcon.Remove
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Constants/MbMessageIcons.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Constants/MbMessageIcons.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants

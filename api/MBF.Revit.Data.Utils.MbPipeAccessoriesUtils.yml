@@ -14,15 +14,25 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeAccessoriesUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeAccessoriesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeAccessoriesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
-  summary: Provides utility methods for working with pipe accessories in Revit.
+  summary: Provides utility methods for working with pipe accessory elements in Revit.
+  remarks: >-
+    This class contains methods to filter and retrieve Revit elements categorized as pipe accessories. It
+                is designed to work with collections of Revit elements and supports conditional compilation for compatibility with
+                different Revit versions.
   example: []
   syntax:
-    content: public static class MbPipeAccessoriesUtils
-    content.vb: Public Module MbPipeAccessoriesUtils
+    content: >-
+      [LogAspect]
+
+      public static class MbPipeAccessoriesUtils
+    content.vb: >-
+      <LogAspect>
+
+      Public Module MbPipeAccessoriesUtils
   inheritance:
   - System.Object
   inheritedMembers:
@@ -33,6 +43,10 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: MB.Common.Aspects.LogAspect
+    ctor: MB.Common.Aspects.LogAspect.#ctor
+    arguments: []
 - uid: MBF.Revit.Data.Utils.MbPipeAccessoriesUtils.GetPipeAccessoriesInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
   commentId: M:MBF.Revit.Data.Utils.MbPipeAccessoriesUtils.GetPipeAccessoriesInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
   id: GetPipeAccessoriesInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
@@ -45,20 +59,28 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeAccessoriesUtils.GetPipeAccessoriesInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeAccessoriesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeAccessoriesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
   summary: >-
-    Retrieves all <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> elements categorized as pipe accessories 
+    Retrieves all <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> elements categorized as pipe accessories
 
     from the provided collection of Revit elements.
   remarks: >-
-    This method filters the input collection to include only elements whose category is 
+    <p>
+        This method filters the input collection to include only elements whose category is
+        "Pipe Accessories", then casts those elements to <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> for further use.
+        The filtering logic uses conditional compilation to support different Revit versions.
+    </p>
 
-    "Pipe Accessories", then casts those elements to <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> for further use.
+    <p>Possible error messages:</p>
 
-    The filtering logic uses conditional compilation to support different Revit versions.
+    <ul><li>
+                <b>ArgumentNullException</b>: Thrown if <code class="paramref">selectedElements</code> is null.
+            </li><li>
+                <b>InvalidCastException</b>: Thrown if an element cannot be cast to <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> (should not occur due to <code>OfType</code> usage).
+            </li></ul>
   example: []
   syntax:
     content: public static IEnumerable<FamilyInstance> GetPipeAccessoriesInstances(IEnumerable<Element> selectedElements)
@@ -69,9 +91,9 @@ items:
     return:
       type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.FamilyInstance}
       description: >-
-        An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> containing all elements from 
+        An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> containing all elements from
 
-        <code class="paramref">selectedElements</code> that are instances of families and belong to 
+        <code class="paramref">selectedElements</code> that are instances of families and belong to
 
         the BuiltInCategory.OST_PipeAccessory category.
     content.vb: Public Shared Function GetPipeAccessoriesInstances(selectedElements As IEnumerable(Of Element)) As IEnumerable(Of FamilyInstance)

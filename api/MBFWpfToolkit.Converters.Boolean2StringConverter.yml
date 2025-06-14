@@ -16,7 +16,7 @@ items:
   fullName: MBFWpfToolkit.Converters.Boolean2StringConverter
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Converters/Boolean2StringConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Converters/Boolean2StringConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
@@ -50,7 +50,7 @@ items:
   fullName: MBFWpfToolkit.Converters.Boolean2StringConverter.Convert(object, System.Type, object, System.Globalization.CultureInfo)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Converters/Boolean2StringConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Converters/Boolean2StringConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
@@ -96,7 +96,7 @@ items:
   fullName: MBFWpfToolkit.Converters.Boolean2StringConverter.ConvertBack(object, System.Type, object, System.Globalization.CultureInfo)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Converters/Boolean2StringConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Converters/Boolean2StringConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
@@ -135,7 +135,7 @@ items:
   fullName: MBFWpfToolkit.Converters.Boolean2StringConverter.Boolean2StringConverter()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Converters/Boolean2StringConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Converters/Boolean2StringConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
