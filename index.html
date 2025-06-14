@@ -116,7 +116,7 @@ It provides technical references and documentation for the MicroBIM codebase and
 <li>Always include <strong>XML documentation</strong> for public members.</li>
 <li>Use <strong>expression-bodied members</strong> for simple one-liners when appropriate.</li>
 </ul>
-<p><strong>Tools</strong>: All code must be auto-formatted using the IDE’s code formatting tools (e.g., Visual Studio or Rider). Consider using <code>.editorconfig</code> to enforce formatting.</p>
+<p><strong>Tools</strong>: All code must be auto-formatted using the IDE's code formatting tools (e.g., Visual Studio or Rider). Consider using <code>.editorconfig</code> to enforce formatting.</p>
 <hr>
 <h2 id="2-branching-strategy">2. Branching Strategy</h2>
 <ul>
@@ -276,30 +276,16 @@ public List&lt;User&gt; GetUsersByRole(string role) { ... }
       return MbResult&lt;ObservableCollection&lt;FamilySymbol&gt;&gt;.Failure($&quot;An error occurred: {ex.Message}&quot;);
   }
 }
-
-⚠ Enforcement
-Any method that involves possible failure or data lookup must use MbResult&lt;T&gt; instead of returning raw types or throwing exceptions directly.
-
-
-
-
-
----
-
-## 📦 Download NuGet Package
-
-You can download the latest release of the `MicroBIM.Revit.Template` package below:
-
-&lt;div style=&quot;margin-top: 1rem; margin-bottom: 1rem;&quot;&gt;
-
-[![Download Now](https://img.shields.io/badge/Download-v1.2.0-blue?style=for-the-badge&amp;logo=nuget&amp;logoColor=white)](downloads/MicroBIM.Revit.Template.1.2.0.nupkg)
-
-&lt;/div&gt;
-
-&gt; 📁 Make sure the `.nupkg` file is placed inside the `downloads/` folder before building the docs.
-
----
 </code></pre>
+<h3 id="-enforcement">⚠ Enforcement</h3>
+<p>Any method that involves possible failure or data lookup must use MbResult<t> instead of returning raw types or throwing exceptions directly.</t></p>
+<hr>
+<h2 id="-download-nuget-package">📦 Download NuGet Package</h2>
+<p>You can download the latest release of the <code>MicroBIM.Revit.Template</code> package below:</p>
+<p><a href="downloads/MicroBIM.Revit.Template.1.2.0.nupkg"><img src="https://img.shields.io/badge/Download-v1.2.0-blue?style=for-the-badge&amp;logo=nuget&amp;logoColor=white" alt="Download Now"></a></p>
+<blockquote>
+<p>📁 Make sure the <code>.nupkg</code> file is placed inside the <code>downloads/</code> folder before building the docs.</p>
+</blockquote>
 
 </article>
 
