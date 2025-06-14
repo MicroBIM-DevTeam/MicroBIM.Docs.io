@@ -215,15 +215,19 @@ Any method that involves possible failure or data lookup must use MbResult<T> in
 
 
 
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+
+---
 
 ## 📦 Download NuGet Package
 
-You can download the latest version of the `MicroBIM.Revit.Template` package below:
+You can download the latest release of the `MicroBIM.Revit.Template` package below:
 
-[Download MicroBIM.Revit.Template.1.2.0.nupkg](downloads/MicroBIM.Revit.Template.1.2.0.nupkg)
+<div style="margin-top: 1rem; margin-bottom: 1rem;">
 
-> Place the `.nupkg` file inside your `downloads/` folder before building the docs.
+[![Download Now](https://img.shields.io/badge/Download-v1.2.0-blue?style=for-the-badge&logo=nuget&logoColor=white)](downloads/MicroBIM.Revit.Template.1.2.0.nupkg)
+
+</div>
+
+> 📁 Make sure the `.nupkg` file is placed inside the `downloads/` folder before building the docs.
+
+---
