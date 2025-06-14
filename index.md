@@ -221,7 +221,6 @@ You can download the latest release of the `MicroBIM.Revit.Template` package bel
 
 [![Download Now](https://img.shields.io/badge/Download-v1.2.0-blue?style=for-the-badge&logo=nuget&logoColor=white)](downloads/MicroBIM.Revit.Template.1.2.0.nupkg)
 
-> 📁 Make sure the `.nupkg` file is placed inside the `downloads/` folder before building the docs.
 ## 📥 How to Install
 
 To install the MicroBIM.Revit.Template package, follow these steps:
