@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ListingConfig | MIcroBIM Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ListingConfig | MIcroBIM Docs ">
+      
+      <meta name="description" content="Represents the configuration for a listing, including elements, family details, category, and fitting types. This class provides constructors to initialize its properties either from a collection of elements or from a Data Transfer Object (DTO).">
+      <link rel="icon" href="../images/logo.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/MicroBimLogo.png" alt="MicroBIM">
+            MicroBIM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MB.Common.Settings.ListingSettings.ListingConfig">
+
+
+
+  <h1 id="MB_Common_Settings_ListingSettings_ListingConfig" data-uid="MB.Common.Settings.ListingSettings.ListingConfig" class="text-break">
+Class ListingConfig  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MB.html">MB</a>.<a class="xref" href="MB.Common.html">Common</a>.<a class="xref" href="MB.Common.Settings.html">Settings</a>.<a class="xref" href="MB.Common.Settings.ListingSettings.html">ListingSettings</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MB.Common.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary">Represents the configuration for a listing, including elements, family details, category,
+and fitting types. This class provides constructors to initialize its properties either
+from a collection of elements or from a Data Transfer Object (DTO).</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ListingConfig : ObservableObject, INotifyPropertyChanged, INotifyPropertyChanging</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject">ObservableObject</a></div>
+      <div><span class="xref">ListingConfig</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging">INotifyPropertyChanging</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.onpropertychanged#communitytoolkit-mvvm-componentmodel-observableobject-onpropertychanged(system-componentmodel-propertychangedeventargs)">ObservableObject.OnPropertyChanged(PropertyChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.onpropertychanging#communitytoolkit-mvvm-componentmodel-observableobject-onpropertychanging(system-componentmodel-propertychangingeventargs)">ObservableObject.OnPropertyChanging(PropertyChangingEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.onpropertychanged#communitytoolkit-mvvm-componentmodel-observableobject-onpropertychanged(system-string)">ObservableObject.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.onpropertychanging#communitytoolkit-mvvm-componentmodel-observableobject-onpropertychanging(system-string)">ObservableObject.OnPropertyChanging(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0@-0-system-string)">ObservableObject.SetProperty&lt;T&gt;(ref T, T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0@-0-system-collections-generic-iequalitycomparer((-0))-system-string)">ObservableObject.SetProperty&lt;T&gt;(ref T, T, IEqualityComparer&lt;T&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0-0-system-action((-0))-system-string)">ObservableObject.SetProperty&lt;T&gt;(T, T, Action&lt;T&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0-0-system-collections-generic-iequalitycomparer((-0))-system-action((-0))-system-string)">ObservableObject.SetProperty&lt;T&gt;(T, T, IEqualityComparer&lt;T&gt;, Action&lt;T&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-2(-1-1-0-system-action((-0-1))-system-string)">ObservableObject.SetProperty&lt;TModel, T&gt;(T, T, TModel, Action&lt;TModel, T&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-2(-1-1-system-collections-generic-iequalitycomparer((-1))-0-system-action((-0-1))-system-string)">ObservableObject.SetProperty&lt;TModel, T&gt;(T, T, IEqualityComparer&lt;T&gt;, TModel, Action&lt;TModel, T&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier@-system-threading-tasks-task-system-string)">ObservableObject.SetPropertyAndNotifyOnCompletion(ref ObservableObject.TaskNotifier, Task, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier@-system-threading-tasks-task-system-action((system-threading-tasks-task))-system-string)">ObservableObject.SetPropertyAndNotifyOnCompletion(ref ObservableObject.TaskNotifier, Task, Action&lt;Task&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion-1(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier((-0))@-system-threading-tasks-task((-0))-system-string)">ObservableObject.SetPropertyAndNotifyOnCompletion&lt;T&gt;(ref ObservableObject.TaskNotifier&lt;T&gt;, Task&lt;T&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion-1(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier((-0))@-system-threading-tasks-task((-0))-system-action((system-threading-tasks-task((-0))))-system-string)">ObservableObject.SetPropertyAndNotifyOnCompletion&lt;T&gt;(ref ObservableObject.TaskNotifier&lt;T&gt;, Task&lt;T&gt;, Action&lt;Task&lt;T&gt;&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.propertychanged">ObservableObject.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.propertychanging">ObservableObject.PropertyChanging</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MB_Common_Settings_ListingSettings_ListingConfig__ctor_" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.#ctor*"></a>
+
+  <h3 id="MB_Common_Settings_ListingSettings_ListingConfig__ctor_MB_Common_Settings_ListingSettings_ListingDto_" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.#ctor(MB.Common.Settings.ListingSettings.ListingDto)">
+  ListingConfig(ListingDto)
+  
+  </h3>
+
+  <div class="markdown level1 summary">Represents a configuration for a listing, managing elements, family names, symbol names, and associated metadata.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListingConfig(ListingDto dto)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dto</code> <a class="xref" href="MB.Common.Settings.ListingSettings.ListingDto.html">ListingDto</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MB_Common_Settings_ListingSettings_ListingConfig__ctor_" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.#ctor*"></a>
+
+  <h3 id="MB_Common_Settings_ListingSettings_ListingConfig__ctor_System_Collections_Generic_List_Autodesk_Revit_DB_FamilyInstance__MB_Common_Settings_ListingSettings_StandardFittingType_" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.#ctor(System.Collections.Generic.List{Autodesk.Revit.DB.FamilyInstance},MB.Common.Settings.ListingSettings.StandardFittingType)">
+  ListingConfig(List&lt;FamilyInstance&gt;, StandardFittingType)
+  
+  </h3>
+
+  <div class="markdown level1 summary">Represents the configuration of a listing, including information about the
+elements, fitting type, category, and suggested values.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListingConfig(List&lt;FamilyInstance&gt; elements, StandardFittingType standardFitting = StandardFittingType.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">FamilyInstance</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>standardFitting</code> <a class="xref" href="MB.Common.Settings.ListingSettings.StandardFittingType.html">StandardFittingType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MB_Common_Settings_ListingSettings_ListingConfig__ctor_System_Collections_Generic_List_Autodesk_Revit_DB_FamilyInstance__MB_Common_Settings_ListingSettings_StandardFittingType__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This class sets the initial configuration for a list of elements including family and symbol names,
+category, fitting type, and other properties based on a representative element from the provided list.</div>
+
+
+
+
+  <a id="MB_Common_Settings_ListingSettings_ListingConfig__ctor_" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.#ctor*"></a>
+
+  <h3 id="MB_Common_Settings_ListingSettings_ListingConfig__ctor_System_String_MB_Common_Settings_ListingSettings_StandardFittingType_" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.#ctor(System.String,MB.Common.Settings.ListingSettings.StandardFittingType)">
+  ListingConfig(string, StandardFittingType)
+  
+  </h3>
+
+  <div class="markdown level1 summary">Represents the configuration for a listing, including the handling of family and symbol names,
+associated category, selected fitting type, and suggested values, derived from the specified inputs.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListingConfig(string name, StandardFittingType selectedFittingType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>selectedFittingType</code> <a class="xref" href="MB.Common.Settings.ListingSettings.StandardFittingType.html">StandardFittingType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MB_Common_Settings_ListingSettings_ListingConfig__ctor_System_String_MB_Common_Settings_ListingSettings_StandardFittingType__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This class processes the provided name and fitting type to initialize properties such as family name,
+symbol name, full name, and the category associated with the represented elements. It also manages
+suggested values and determines whether a valid value is selected.</div>
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MB_Common_Settings_ListingSettings_ListingConfig_CategoryName_" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.CategoryName*"></a>
+
+  <h3 id="MB_Common_Settings_ListingSettings_ListingConfig_CategoryName" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.CategoryName">
+  CategoryName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CategoryName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MB_Common_Settings_ListingSettings_ListingConfig_Count_" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.Count*"></a>
+
+  <h3 id="MB_Common_Settings_ListingSettings_ListingConfig_Count" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MB_Common_Settings_ListingSettings_ListingConfig_Elements_" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.Elements*"></a>
+
+  <h3 id="MB_Common_Settings_ListingSettings_ListingConfig_Elements" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.Elements">
+  Elements
+  
+  </h3>
+
+  <div class="markdown level1 summary">Gets the collection of <span class="xref">FamilyInstance</span> objects associated with the current listing configuration.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FamilyInstance&gt; Elements { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">FamilyInstance</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MB_Common_Settings_ListingSettings_ListingConfig_Elements_remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This property holds an immutable list of family instance elements, typically used to represent
+a grouped set of related elements in a listing configuration. The collection is initialized
+during the creation of the <a class="xref" href="MB.Common.Settings.ListingSettings.ListingConfig.html">ListingConfig</a> and cannot be modified outside the class.</div>
+
+
+
+
+  <a id="MB_Common_Settings_ListingSettings_ListingConfig_FamilyName_" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.FamilyName*"></a>
+
+  <h3 id="MB_Common_Settings_ListingSettings_ListingConfig_FamilyName" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.FamilyName">
+  FamilyName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FamilyName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MB_Common_Settings_ListingSettings_ListingConfig_HasValue_" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.HasValue*"></a>
+
+  <h3 id="MB_Common_Settings_ListingSettings_ListingConfig_HasValue" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.HasValue">
+  HasValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MB_Common_Settings_ListingSettings_ListingConfig_Name_" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.Name*"></a>
+
+  <h3 id="MB_Common_Settings_ListingSettings_ListingConfig_Name" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MB_Common_Settings_ListingSettings_ListingConfig_SelectedFittingType_" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.SelectedFittingType*"></a>
+
+  <h3 id="MB_Common_Settings_ListingSettings_ListingConfig_SelectedFittingType" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.SelectedFittingType">
+  SelectedFittingType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StandardFittingType SelectedFittingType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Settings.ListingSettings.StandardFittingType.html">StandardFittingType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MB_Common_Settings_ListingSettings_ListingConfig_SuggestedValues_" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.SuggestedValues*"></a>
+
+  <h3 id="MB_Common_Settings_ListingSettings_ListingConfig_SuggestedValues" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.SuggestedValues">
+  SuggestedValues
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;StandardFittingType&gt; SuggestedValues { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MB.Common.Settings.ListingSettings.StandardFittingType.html">StandardFittingType</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MB_Common_Settings_ListingSettings_ListingConfig_SymbolName_" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.SymbolName*"></a>
+
+  <h3 id="MB_Common_Settings_ListingSettings_ListingConfig_SymbolName" data-uid="MB.Common.Settings.ListingSettings.ListingConfig.SymbolName">
+  SymbolName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SymbolName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2025 MicroBIM. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Data_Utils_MbPipeFittingsUtils" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils" class="text-break">
-Class MbPipeFittingsUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
+Class MbPipeFittingsUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -101,7 +101,8 @@ Class MbPipeFittingsUtils  <a class="header-action link-secondary" title="View s
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class MbPipeFittingsUtils</code></pre>
+    <pre><code class="lang-csharp hljs">[LogAspect]
+public static class MbPipeFittingsUtils</code></pre>
   </div>
 
 
@@ -156,7 +157,7 @@ Class MbPipeFittingsUtils  <a class="header-action link-secondary" title="View s
 
   <h3 id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_FittingSizeIsEqual_Autodesk_Revit_DB_FamilyInstance_" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.FittingSizeIsEqual(Autodesk.Revit.DB.FamilyInstance)">
   FittingSizeIsEqual(FamilyInstance)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Checks if all connectors of a given fitting have equal sizes (radius).</div>
@@ -177,11 +178,10 @@ Class MbPipeFittingsUtils  <a class="header-action link-secondary" title="View s
     <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
     <dd>Returns an <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> where T is <code>bool</code>:
 <ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>
-            If <code>Value</code> is <code>true</code>, all connectors have equal sizes or there are fewer than two
-            connectors.
+            If <code>Value</code> is <code>true</code>, all connectors have equal sizes or there are fewer than two connectors.
         </li><li>If <code>Value</code> is <code>false</code>, connectors have different sizes.</li><li>
-            If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides
-            details.
+            If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides details:
+            <ul><li>"Instance is null."</li></ul>
         </li></ul></dd>
   </dl>
 
@@ -199,7 +199,7 @@ Class MbPipeFittingsUtils  <a class="header-action link-secondary" title="View s
 
   <h3 id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetAngleBetweenLargestRadiusConnectors_Autodesk_Revit_DB_FamilyInstance_" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetAngleBetweenLargestRadiusConnectors(Autodesk.Revit.DB.FamilyInstance)">
   GetAngleBetweenLargestRadiusConnectors(FamilyInstance)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Calculates the angle between the two connectors with the largest radius in the given FamilyInstance.</div>
@@ -223,8 +223,8 @@ Class MbPipeFittingsUtils  <a class="header-action link-secondary" title="View s
             If <code>Value</code> is a valid angle, it represents the computed angle between the two connectors
             with the largest radius.
         </li><li>
-            If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides
-            details.
+            If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides details:
+            <ul><li>"FamilyInstance is null."</li></ul>
         </li></ul></dd>
   </dl>
 
@@ -242,7 +242,7 @@ Class MbPipeFittingsUtils  <a class="header-action link-secondary" title="View s
 
   <h3 id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetAngleBetweenLargestRadiusConnectors_System_Collections_Generic_List_Autodesk_Revit_DB_Connector__" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetAngleBetweenLargestRadiusConnectors(System.Collections.Generic.List{Autodesk.Revit.DB.Connector})">
   GetAngleBetweenLargestRadiusConnectors(List&lt;Connector&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Calculates the angle between the two connectors with the largest radius in the given list of connectors.</div>
@@ -266,8 +266,8 @@ Class MbPipeFittingsUtils  <a class="header-action link-secondary" title="View s
             If <code>Value</code> is a valid angle, it represents the computed angle between the two connectors
             with the largest radius.
         </li><li>
-            If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides
-            details.
+            If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides details:
+            <ul><li>"At least two connectors are required."</li></ul>
         </li></ul></dd>
   </dl>
 
@@ -285,7 +285,7 @@ Class MbPipeFittingsUtils  <a class="header-action link-secondary" title="View s
 
   <h3 id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetElbowsFamilyInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element__" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetElbowsFamilyInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})">
   GetElbowsFamilyInstances(IEnumerable&lt;Element&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Filters the provided collection of Revit elements and retrieves all pipe fitting family instances
@@ -315,8 +315,7 @@ that are categorized as "Elbow" fittings.</div>
 
 
   <h4 class="section" id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetElbowsFamilyInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element___remarks">Remarks</h4>
-  <div class="markdown level1 remarks">This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting
-)
+  <div class="markdown level1 remarks">This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting)
 and specifically of type PartType.Elbow are returned.</div>
 
 
@@ -324,9 +323,9 @@ and specifically of type PartType.Elbow are returned.</div>
 
   <a id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetOrderedConnectorSizesInInch_" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch*"></a>
 
-  <h3 id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetOrderedConnectorSizesInInch_Autodesk_Revit_DB_Element_" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch(Autodesk.Revit.DB.Element)">
-  GetOrderedConnectorSizesInInch(Element)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <h3 id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetOrderedConnectorSizesInInch_Autodesk_Revit_DB_Element_System_Boolean_" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch(Autodesk.Revit.DB.Element,System.Boolean)">
+  GetOrderedConnectorSizesInInch(Element, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Retrieves a sorted list of connector sizes (diameters) in inches for a given <span class="xref">Element</span> that is an
@@ -334,22 +333,24 @@ and specifically of type PartType.Elbow are returned.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static MbResult&lt;List&lt;double&gt;&gt; GetOrderedConnectorSizesInInch(Element element)</code></pre>
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;List&lt;double&gt;&gt; GetOrderedConnectorSizesInInch(Element element, bool isAscending = true)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>element</code> <span class="xref">Element</span></dt>
     <dd>The <span class="xref">Element</span> representing an <span class="xref">Autodesk.Revit.DB.MEPCurve</span>.</dd>
+    <dt><code>isAscending</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd>Specifies whether to sort the sizes in ascending (true) or descending (false) order.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;&gt;</dt>
-    <dd>Returns an <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> where T is List&lt;double&gt;:
-<ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>The list contains the diameters of all connectors in inches, sorted in ascending order.</li><li>
-            If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides
-            details.
+    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> where <code>T</code> is <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a>:
+<ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>The list contains the diameters of all connectors in inches, sorted in the specified order.</li><li>
+            If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides details:
+            <ul><li>"Element is null."</li><li>"No connectors found."</li></ul>
         </li></ul></dd>
   </dl>
 
@@ -365,31 +366,33 @@ and specifically of type PartType.Elbow are returned.</div>
 
   <a id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetOrderedConnectorSizesInInch_" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch*"></a>
 
-  <h3 id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetOrderedConnectorSizesInInch_Autodesk_Revit_DB_FamilyInstance_" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch(Autodesk.Revit.DB.FamilyInstance)">
-  GetOrderedConnectorSizesInInch(FamilyInstance)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <h3 id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetOrderedConnectorSizesInInch_Autodesk_Revit_DB_FamilyInstance_System_Boolean_" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch(Autodesk.Revit.DB.FamilyInstance,System.Boolean)">
+  GetOrderedConnectorSizesInInch(FamilyInstance, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Retrieves a sorted list of connector sizes (diameters) for a given fitting.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static MbResult&lt;List&lt;double&gt;&gt; GetOrderedConnectorSizesInInch(FamilyInstance instance)</code></pre>
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;List&lt;double&gt;&gt; GetOrderedConnectorSizesInInch(FamilyInstance instance, bool isAscending = true)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>instance</code> <span class="xref">FamilyInstance</span></dt>
     <dd>The <span class="xref">Autodesk.Revit.DB.FamilyInstance</span> representing the fitting.</dd>
+    <dt><code>isAscending</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd>Specifies whether to sort the sizes in ascending (true) or descending (false) order.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;&gt;</dt>
     <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> where <code>T</code> is <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a>:
-<ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>The list contains the diameters of all connectors in ascending order.</li><li>
-            If <code>IsSuccess</code> is <code>false</code>, an error occurred and <code>ErrorMessage</code> provides
-            details.
+<ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>The list contains the diameters of all connectors in the specified order.</li><li>
+            If <code>IsSuccess</code> is <code>false</code>, an error occurred and <code>ErrorMessage</code> provides details:
+            <ul><li>"Instance is null."</li><li>"No connectors found."</li></ul>
         </li></ul></dd>
   </dl>
 
@@ -407,7 +410,7 @@ and specifically of type PartType.Elbow are returned.</div>
 
   <h3 id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetOtherFittingWhichIsNotElbowsOrTeesOrOutletsFamilyInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element__" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOtherFittingWhichIsNotElbowsOrTeesOrOutletsFamilyInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})">
   GetOtherFittingWhichIsNotElbowsOrTeesOrOutletsFamilyInstances(IEnumerable&lt;Element&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Filters the provided collection of Revit elements and retrieves all pipe fitting family instances
@@ -438,10 +441,49 @@ elbow, or outlet fittings.</dd>
 
 
   <h4 class="section" id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetOtherFittingWhichIsNotElbowsOrTeesOrOutletsFamilyInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element___remarks">Remarks</h4>
-  <div class="markdown level1 remarks">This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting
-)
+  <div class="markdown level1 remarks">This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting)
 and excluding types PartType.Tee, PartType.Elbow, or
 PartType.SpudAdjustable are returned.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetOutletDirectionCode_" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOutletDirectionCode*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetOutletDirectionCode_Autodesk_Revit_DB_Plumbing_Pipe_Autodesk_Revit_DB_FamilyInstance_" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOutletDirectionCode(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.FamilyInstance)">
+  GetOutletDirectionCode(Pipe, FamilyInstance)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Determines the outlet orientation code (e.g., 1 = Top, 2 = Right, etc.)
+relative to the pipe axis, based on job file standards.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetOutletDirectionCode(Pipe pipe, FamilyInstance outlet)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pipe</code> <span class="xref">Pipe</span></dt>
+    <dd>The host pipe.</dd>
+    <dt><code>outlet</code> <span class="xref">FamilyInstance</span></dt>
+    <dd>The outlet FamilyInstance.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd>Directional code (1.0 = Top, 1.5 = Top-Right 45°, etc.), or -1 if undetermined.
+<ul><li>-1: No matching direction found within tolerance or outlet connector not found.</li></ul></dd>
+  </dl>
+
+
+
+
+
+
+
 
 
 
@@ -450,7 +492,7 @@ PartType.SpudAdjustable are returned.</div>
 
   <h3 id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetOutletsFamilyInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element__" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOutletsFamilyInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})">
   GetOutletsFamilyInstances(IEnumerable&lt;Element&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Filters the provided collection of Revit elements and retrieves all pipe fitting family instances
@@ -480,9 +522,118 @@ that are categorized as "Outlets" (Spud Adjustable) fittings.</div>
 
 
   <h4 class="section" id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetOutletsFamilyInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element___remarks">Remarks</h4>
-  <div class="markdown level1 remarks">This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting
-)
+  <div class="markdown level1 remarks">This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting)
 and specifically of type PartType.SpudAdjustable (representing outlets) are returned.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetPerpendicularClockwise_" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetPerpendicularClockwise*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetPerpendicularClockwise_Autodesk_Revit_DB_XYZ_" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetPerpendicularClockwise(Autodesk.Revit.DB.XYZ)">
+  GetPerpendicularClockwise(XYZ)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Returns a vector perpendicular to the input vector in the clockwise direction, on the XY plane.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XYZ GetPerpendicularClockwise(this XYZ vector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector</code> <span class="xref">XYZ</span></dt>
+    <dd>Input vector.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">XYZ</span></dt>
+    <dd>Clockwise perpendicular vector on XY plane.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetPerpendicularCounterClockwise_" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetPerpendicularCounterClockwise*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetPerpendicularCounterClockwise_Autodesk_Revit_DB_XYZ_" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetPerpendicularCounterClockwise(Autodesk.Revit.DB.XYZ)">
+  GetPerpendicularCounterClockwise(XYZ)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Returns a vector perpendicular to the input vector in the counter-clockwise direction, on the XY plane.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XYZ GetPerpendicularCounterClockwise(this XYZ vector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector</code> <span class="xref">XYZ</span></dt>
+    <dd>Input vector.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">XYZ</span></dt>
+    <dd>Counter-clockwise perpendicular vector on XY plane.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetPerpendicularPlaneAxes_" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetPerpendicularPlaneAxes*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetPerpendicularPlaneAxes_Autodesk_Revit_DB_XYZ_" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetPerpendicularPlaneAxes(Autodesk.Revit.DB.XYZ)">
+  GetPerpendicularPlaneAxes(XYZ)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Returns a tuple of two orthogonal vectors that define a plane perpendicular to the input vector:
+- First: a stable perpendicular vector (clockwise or counter-clockwise).
+- Second: the cross-product (normal) to establish a consistent plane direction.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (XYZ Perpendicular, XYZ Normal) GetPerpendicularPlaneAxes(this XYZ pipeDirection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pipeDirection</code> <span class="xref">XYZ</span></dt>
+    <dd>The primary pipe direction vector.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<span class="xref">XYZ</span> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.revit.db.xyz,autodesk.revit.db.xyz-.perpendicular">Perpendicular</a>, <span class="xref">XYZ</span> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.revit.db.xyz,autodesk.revit.db.xyz-.normal">Normal</a>)</dt>
+    <dd>A tuple (perpendicular, normal) defining the orientation plane.</dd>
+  </dl>
+
+
+
+
+
+
+
 
 
 
@@ -491,7 +642,7 @@ and specifically of type PartType.SpudAdjustable (representing outlets) are retu
 
   <h3 id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetTeeFamilyInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element__" data-uid="MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetTeeFamilyInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})">
   GetTeeFamilyInstances(IEnumerable&lt;Element&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeFittingsUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Filters the provided collection of Revit elements and retrieves all pipe fitting family instances
@@ -521,8 +672,7 @@ that are categorized as "Tee" fittings.</div>
 
 
   <h4 class="section" id="MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetTeeFamilyInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element___remarks">Remarks</h4>
-  <div class="markdown level1 remarks">This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting
-)
+  <div class="markdown level1 remarks">This method ensures that only elements categorized as pipe fittings (BuiltInCategory.OST_PipeFitting)
 and specifically of type PartType.Tee are returned.</div>
 
 

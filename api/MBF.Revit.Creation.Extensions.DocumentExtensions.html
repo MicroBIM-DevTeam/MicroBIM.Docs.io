@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class DocumentExtensions | MIcroBIM Docs ">
       
-      <meta name="description" content="Provides extension methods for the Revit  class.">
+      <meta name="description" content="Provides extension methods for working with Revit documents, specifically for managing linked Revit models.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Creation_Extensions_DocumentExtensions" data-uid="MBF.Revit.Creation.Extensions.DocumentExtensions" class="text-break">
-Class DocumentExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/27d1e02b7abb348c765af5880e23fdddec47c5b8/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+Class DocumentExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/22ef2996bed182f19b56ebae0f88d7f8a22a4a8d/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,11 +97,12 @@ Class DocumentExtensions  <a class="header-action link-secondary" title="View so
   <dl><dt>Assembly</dt><dd>MBF.Revit.Creation.dll</dd></dl>
   </div>
 
-  <div class="markdown summary">Provides extension methods for the Revit <span class="xref">Autodesk.Revit.DB.Document</span> class.</div>
+  <div class="markdown summary">Provides extension methods for working with Revit documents, specifically for managing linked Revit models.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class DocumentExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">[LogAspect]
+public static class DocumentExtensions</code></pre>
   </div>
 
 
@@ -146,6 +147,10 @@ Class DocumentExtensions  <a class="header-action link-secondary" title="View so
 
 
 
+  <h2 id="MBF_Revit_Creation_Extensions_DocumentExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">This class includes methods to retrieve and manipulate linked Revit model instances within a
+            document. These methods are designed to simplify common tasks related to linked models, such as retrieving all valid
+            linked models or ensuring that linked models are set to be room bounding.</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -156,7 +161,7 @@ Class DocumentExtensions  <a class="header-action link-secondary" title="View so
 
   <h3 id="MBF_Revit_Creation_Extensions_DocumentExtensions_GetAllLinkedRevitModels_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Creation.Extensions.DocumentExtensions.GetAllLinkedRevitModels(Autodesk.Revit.DB.Document)">
   GetAllLinkedRevitModels(Document)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/27d1e02b7abb348c765af5880e23fdddec47c5b8/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/22ef2996bed182f19b56ebae0f88d7f8a22a4a8d/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Retrieves all valid linked Revit model instances in the document.</div>
@@ -192,7 +197,7 @@ Class DocumentExtensions  <a class="header-action link-secondary" title="View so
 
   <h3 id="MBF_Revit_Creation_Extensions_DocumentExtensions_MakeLinkedModelsRoomBounding_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Creation.Extensions.DocumentExtensions.MakeLinkedModelsRoomBounding(Autodesk.Revit.DB.Document)">
   MakeLinkedModelsRoomBounding(Document)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/27d1e02b7abb348c765af5880e23fdddec47c5b8/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/22ef2996bed182f19b56ebae0f88d7f8a22a4a8d/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Ensures that all linked Revit models in the document are set to be room bounding.</div>

@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Data_Utils_MbPipesUtils" data-uid="MBF.Revit.Data.Utils.MbPipesUtils" class="text-break">
-Class MbPipesUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+Class MbPipesUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -101,7 +101,8 @@ Class MbPipesUtils  <a class="header-action link-secondary" title="View source" 
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class MbPipesUtils</code></pre>
+    <pre><code class="lang-csharp hljs">[LogAspect]
+public static class MbPipesUtils</code></pre>
   </div>
 
 
@@ -152,33 +153,618 @@ Class MbPipesUtils  <a class="header-action link-secondary" title="View source" 
 </h2>
 
 
-  <a id="MBF_Revit_Data_Utils_MbPipesUtils_GetPipeInstances_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetPipeInstances*"></a>
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_ArePointsClose_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.ArePointsClose*"></a>
 
-  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_GetPipeInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element__" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetPipeInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})">
-  GetPipeInstances(IEnumerable&lt;Element&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_ArePointsClose_Autodesk_Revit_DB_FamilyInstance_Autodesk_Revit_DB_FamilyInstance_System_Double_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.ArePointsClose(Autodesk.Revit.DB.FamilyInstance,Autodesk.Revit.DB.FamilyInstance,System.Double)">
+  ArePointsClose(FamilyInstance, FamilyInstance, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Retrieves all <span class="xref">Autodesk.Revit.DB.Plumbing.Pipe</span> elements categorized as rigid pipes 
-from the provided collection of Revit elements.</div>
+  <div class="markdown level1 summary">Determines whether the locations of two <span class="xref">FamilyInstance</span> objects are within a specified distance
+threshold.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Pipe&gt; GetPipeInstances(IEnumerable&lt;Element&gt; selectedElements)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool ArePointsClose(FamilyInstance a, FamilyInstance b, double threshold)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>selectedElements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
-    <dd>A collection of <span class="xref">Element</span> objects to search within.</dd>
+    <dt><code>a</code> <span class="xref">FamilyInstance</span></dt>
+    <dd>The first <span class="xref">FamilyInstance</span>. Must not be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
+    <dt><code>b</code> <span class="xref">FamilyInstance</span></dt>
+    <dd>The second <span class="xref">FamilyInstance</span>. Must not be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
+    <dt><code>threshold</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd>The maximum distance, in the same units as the points' coordinates, within which the two instances are
+considered close.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the distance between the locations of <code class="paramref">a</code> and <code class="paramref">b</code> is
+less than <code class="paramref">threshold</code>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbPipesUtils_ArePointsClose_Autodesk_Revit_DB_FamilyInstance_Autodesk_Revit_DB_FamilyInstance_System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">If either <code class="paramref">a</code> or <code class="paramref">b</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, or if their
+locations cannot be determined, the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_ArePointsSame_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.ArePointsSame*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_ArePointsSame_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_XYZ_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.ArePointsSame(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.XYZ)">
+  ArePointsSame(XYZ, XYZ)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Determines whether two points in 3D space are considered the same based on a small tolerance.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ArePointsSame(XYZ point1, XYZ point2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point1</code> <span class="xref">XYZ</span></dt>
+    <dd>The first point to compare.</dd>
+    <dt><code>point2</code> <span class="xref">XYZ</span></dt>
+    <dd>The second point to compare.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the distance between <code class="paramref">point1</code> and <code class="paramref">point2</code>  is less
+            than 0.01; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbPipesUtils_ArePointsSame_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_XYZ__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method uses a fixed tolerance of 0.01 to account for minor differences in floating-point
+            calculations.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_FamilyIsOutsideLine_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.FamilyIsOutsideLine*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_FamilyIsOutsideLine_Autodesk_Revit_DB_FamilyInstance_Autodesk_Revit_DB_Line_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.FamilyIsOutsideLine(Autodesk.Revit.DB.FamilyInstance,Autodesk.Revit.DB.Line)">
+  FamilyIsOutsideLine(FamilyInstance, Line)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Determines whether the specified family instance is outside the given line.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FamilyIsOutsideLine(FamilyInstance familyInstance, Line line)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>familyInstance</code> <span class="xref">FamilyInstance</span></dt>
+    <dd>The family instance to evaluate. Must have a valid <span class="xref">Autodesk.Revit.DB.LocationPoint</span>.</dd>
+    <dt><code>line</code> <span class="xref">Line</span></dt>
+    <dd>The line against which the family instance's position is evaluated.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the family instance is projected onto one of the endpoints of the line; otherwise,
+            <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbPipesUtils_FamilyIsOutsideLine_Autodesk_Revit_DB_FamilyInstance_Autodesk_Revit_DB_Line__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method checks if the projection of the family instance's location point onto the
+            specified line coincides with either of the line's endpoints. If the family instance does not have a valid <span class="xref">Autodesk.Revit.DB.LocationPoint</span>, the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_FindNearbyUnconnectedConnector_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.FindNearbyUnconnectedConnector*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_FindNearbyUnconnectedConnector_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_Document_System_Collections_Generic_List_Autodesk_Revit_DB_ElementId__System_Collections_Generic_HashSet_System_Int32__System_String_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.FindNearbyUnconnectedConnector(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Document,System.Collections.Generic.List{Autodesk.Revit.DB.ElementId},System.Collections.Generic.HashSet{System.Int32},System.String)">
+  FindNearbyUnconnectedConnector(XYZ, Document, List&lt;ElementId&gt;, HashSet&lt;int&gt;, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Finds the nearest unconnected connector to a specified point within a given document.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Connector FindNearbyUnconnectedConnector(XYZ targetPoint, Document doc, List&lt;ElementId&gt; excludedElementIds, HashSet&lt;int&gt; discoveredElementIds = null, string caller = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetPoint</code> <span class="xref">XYZ</span></dt>
+    <dd>The target point in 3D space to search for nearby connectors.</dd>
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd>The Revit document containing the elements to search.</dd>
+    <dt><code>excludedElementIds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd>A list of element IDs to exclude from the search.</dd>
+    <dt><code>discoveredElementIds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd>An optional set of element IDs that have already been processed. These elements will be excluded from the
+            search.</dd>
+    <dt><code>caller</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd>The name of the calling method, automatically provided by the compiler. Used to adjust behavior for specific
+            callers.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Connector</span></dt>
+    <dd>The nearest unconnected <span class="xref">Connector</span> to the <code class="paramref">targetPoint</code>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>
+            if no suitable connector is found.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbPipesUtils_FindNearbyUnconnectedConnector_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_Document_System_Collections_Generic_List_Autodesk_Revit_DB_ElementId__System_Collections_Generic_HashSet_System_Int32__System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method searches for connectors within a bounding box centered on the <code class="paramref">targetPoint</code>. It filters out connectors belonging to elements that are excluded or already processed, as
+            well as connectors whose owners are subcomponents of other elements. The method prioritizes connectors based on
+            their proximity to the <code class="paramref">targetPoint</code> and returns the closest one within its connection
+            radius.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_GetConnectedFittingsBothSidesOfPipe_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetConnectedFittingsBothSidesOfPipe*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_GetConnectedFittingsBothSidesOfPipe_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Plumbing_Pipe_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetConnectedFittingsBothSidesOfPipe(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Plumbing.Pipe)">
+  GetConnectedFittingsBothSidesOfPipe(Document, Pipe)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves the connectors of fittings connected to both ends of a specified pipe.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Connector&gt; GetConnectedFittingsBothSidesOfPipe(Document doc, Pipe pipe)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd>The Revit document containing the pipe and its connected elements.</dd>
+    <dt><code>pipe</code> <span class="xref">Pipe</span></dt>
+    <dd>The pipe for which to find connected fittings on both ends.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Connector</span>&gt;</dt>
+    <dd>A list of <span class="xref">Connector</span> objects representing the connectors of fittings connected to both ends of the
+            specified pipe. The list will be empty if no fittings are connected.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbPipesUtils_GetConnectedFittingsBothSidesOfPipe_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Plumbing_Pipe__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method identifies fittings connected to the pipe's end connectors and includes only
+            those fittings that are spuds, tees, or elbows. If no fittings are found, the method attempts to locate
+            connectors based on the pipe's nearest endpoints.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_GetConnectedFittingsOnCurve_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetConnectedFittingsOnCurve*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_GetConnectedFittingsOnCurve_Autodesk_Revit_DB_Plumbing_Pipe_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetConnectedFittingsOnCurve(Autodesk.Revit.DB.Plumbing.Pipe)">
+  GetConnectedFittingsOnCurve(Pipe)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves a list of fittings connected to the specified pipe along its curve connectors.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;FamilyInstance&gt; GetConnectedFittingsOnCurve(this Pipe pipe)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pipe</code> <span class="xref">Pipe</span></dt>
+    <dd>The pipe for which to find connected fittings. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">FamilyInstance</span>&gt;</dt>
+    <dd>A list of <span class="xref">FamilyInstance</span> objects representing the fittings connected to the pipe.  The list will
+be empty if no fittings are connected.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbPipesUtils_GetConnectedFittingsOnCurve_Autodesk_Revit_DB_Plumbing_Pipe__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method examines the curve-type connectors of the specified pipe and identifies any
+connected fittings. Only fittings directly connected to the pipe's curve connectors are included in the
+result.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_GetConnectorsForElement_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetConnectorsForElement*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_GetConnectorsForElement_Autodesk_Revit_DB_Element_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetConnectorsForElement(Autodesk.Revit.DB.Element)">
+  GetConnectorsForElement(Element)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves a list of valid connectors associated with the specified element.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Connector&gt; GetConnectorsForElement(Element element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <span class="xref">Element</span></dt>
+    <dd>The element for which to retrieve the connectors. Must not be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Connector</span>&gt;</dt>
+    <dd>A list of <span class="xref">Connector</span> objects that are valid and associated with the specified element. If no valid
+            connectors are found, an empty list is returned.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_GetEndConnectors_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetEndConnectors*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_GetEndConnectors_Autodesk_Revit_DB_Plumbing_Pipe_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetEndConnectors(Autodesk.Revit.DB.Plumbing.Pipe)">
+  GetEndConnectors(Pipe)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Returns the end connectors of a pipe, excluding those owned by a <span class="xref">Autodesk.Revit.DB.Plumbing.PipingSystem</span>.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Connector&gt; GetEndConnectors(this Pipe pipe)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pipe</code> <span class="xref">Pipe</span></dt>
+    <dd>The pipe to evaluate.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Connector</span>&gt;</dt>
+    <dd>A list of end <span class="xref">Connector</span> objects not owned by a piping system.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_GetEndPoint_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetEndPoint*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_GetEndPoint_Autodesk_Revit_DB_Plumbing_Pipe_MBF_Revit_Data_Utils_PipePointType_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetEndPoint(Autodesk.Revit.DB.Plumbing.Pipe,MBF.Revit.Data.Utils.PipePointType)">
+  GetEndPoint(Pipe, PipePointType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves the specified endpoint of the pipe.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XYZ GetEndPoint(this Pipe pipe, PipePointType pipePointType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pipe</code> <span class="xref">Pipe</span></dt>
+    <dd>The pipe from which to retrieve the endpoint.</dd>
+    <dt><code>pipePointType</code> <a class="xref" href="MBF.Revit.Data.Utils.PipePointType.html">PipePointType</a></dt>
+    <dd>Specifies whether to retrieve the start or end point of the pipe.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">XYZ</span></dt>
+    <dd>The endpoint of the pipe as specified by <code class="paramref">pipePointType</code>.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_GetFarSideConnectedToFamilyInstance_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetFarSideConnectedToFamilyInstance*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_GetFarSideConnectedToFamilyInstance_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Plumbing_Pipe_Autodesk_Revit_DB_XYZ_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetFarSideConnectedToFamilyInstance(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.XYZ)">
+  GetFarSideConnectedToFamilyInstance(Document, Pipe, XYZ)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Gets the connector on the far end of the pipe (opposite to the reference point)
+that is connected to a <span class="xref">FamilyInstance</span>.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Connector GetFarSideConnectedToFamilyInstance(Document doc, Pipe pipe, XYZ referencePoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd>The Revit document.</dd>
+    <dt><code>pipe</code> <span class="xref">Pipe</span></dt>
+    <dd>The pipe to evaluate.</dd>
+    <dt><code>referencePoint</code> <span class="xref">XYZ</span></dt>
+    <dd>A point used to identify the far end of the pipe.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Connector</span></dt>
+    <dd>The connected <span class="xref">Connector</span> on the far side, or null if not found.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_GetFittingAtFarthestConnector_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetFittingAtFarthestConnector*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_GetFittingAtFarthestConnector_Autodesk_Revit_DB_Plumbing_Pipe_Autodesk_Revit_DB_XYZ_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetFittingAtFarthestConnector(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.XYZ)">
+  GetFittingAtFarthestConnector(Pipe, XYZ)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Finds the fitting connected to the farthest connector of a pipe from the given start point.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;Element&gt; GetFittingAtFarthestConnector(Pipe pipe, XYZ startPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pipe</code> <span class="xref">Pipe</span></dt>
+    <dd>The pipe element to inspect.</dd>
+    <dt><code>startPoint</code> <span class="xref">XYZ</span></dt>
+    <dd>The reference point to compare connector distances to.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd>A <pipee cref="T:MB.Common.Utils.Result.MbResult`1"></pipee> containing the connected fitting element,
+or a failure message if not found.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_GetFittingsOnPipe_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetFittingsOnPipe*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_GetFittingsOnPipe_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Plumbing_Pipe_Autodesk_Revit_DB_XYZ_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetFittingsOnPipe(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.XYZ)">
+  GetFittingsOnPipe(Document, Pipe, XYZ)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves a list of fitting element IDs that are associated with the specified pipe.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;ElementId&gt; GetFittingsOnPipe(Document doc, Pipe pipe, XYZ sortingPoint = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd>The Revit document containing the pipe and fittings.</dd>
+    <dt><code>pipe</code> <span class="xref">Pipe</span></dt>
+    <dd>The pipe for which to find associated fittings. Must be a valid pipe element.</dd>
+    <dt><code>sortingPoint</code> <span class="xref">XYZ</span></dt>
+    <dd>An optional point used to sort the fittings by proximity. If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, the fittings are not sorted.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd>A list of <span class="xref">ElementId</span> objects representing the fittings associated with the pipe. The list may be empty
+            if no fittings are found.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbPipesUtils_GetFittingsOnPipe_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Plumbing_Pipe_Autodesk_Revit_DB_XYZ__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method identifies fittings associated with the pipe based on several criteria, including: <ul><li>Fittings that intersect the pipe's solid geometry.</li><li>Fittings that are within a
+            proximity threshold of the pipe's centerline.</li><li>Fittings that are well-connected to the pipe's
+            curve.</li></ul> Duplicate fittings are removed, and fittings at the pipe's endpoints are excluded from the
+            result. If a <code class="paramref">sortingPoint</code> is provided, the fittings are sorted by their proximity to the
+            point.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_GetLineOfPipe_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetLineOfPipe*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_GetLineOfPipe_Autodesk_Revit_DB_Plumbing_Pipe_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetLineOfPipe(Autodesk.Revit.DB.Plumbing.Pipe)">
+  GetLineOfPipe(Pipe)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves the geometric line representation of the specified pipe.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Line GetLineOfPipe(this Pipe pipe)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pipe</code> <span class="xref">Pipe</span></dt>
+    <dd>The pipe for which to retrieve the line representation. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Line</span></dt>
+    <dd>A <span class="xref">Autodesk.Revit.DB.Line</span> object representing the pipe's geometry.  If the pipe has a stored start point, the line is
+            created using the start point and the nearest endpoint. Otherwise, the line is created using the pipe's start
+            and end points.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbPipesUtils_GetLineOfPipe_Autodesk_Revit_DB_Plumbing_Pipe__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method determines the line representation of a pipe based on its stored start point, if
+            available,  or its defined start and end points. The returned line can be used for geometric calculations or
+            visualization.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_GetPipeCurve_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetPipeCurve*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_GetPipeCurve_Autodesk_Revit_DB_Plumbing_Pipe_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetPipeCurve(Autodesk.Revit.DB.Plumbing.Pipe)">
+  GetPipeCurve(Pipe)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves the geometric curve that defines the center line of the specified pipe.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Curve GetPipeCurve(this Pipe pipe)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pipe</code> <span class="xref">Pipe</span></dt>
+    <dd>The pipe from which to retrieve the center line curve. Must not be <pipee langword="null"></pipee>.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Curve</span></dt>
+    <dd>The <pipee cref="T:Autodesk.Revit.DB.Curve"></pipee> representing the center line of the pipe, or <pipee langword="null"></pipee> if the pipe does
+not
+have a valid location curve.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbPipesUtils_GetPipeCurve_Autodesk_Revit_DB_Plumbing_Pipe__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method extracts the <pipee cref="T:Autodesk.Revit.DB.Curve"></pipee> form the <pipee cref="T:Autodesk.Revit.DB.LocationCurve"></pipee> of the
+pipe.  Ensure that the pipe has a valid location curve before calling this method.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_GetPipeInstances_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetPipeInstances*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_GetPipeInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element__" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetPipeInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})">
+  GetPipeInstances(IEnumerable&lt;Element&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves all pipe instances from the specified collection of Revit elements.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Pipe&gt; GetPipeInstances(IEnumerable&lt;Element&gt; pipeSelectedElements)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pipeSelectedElements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd>A collection of Revit elements to filter for pipe instances.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Pipe</span>&gt;</dt>
-    <dd>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> containing all elements from 
-<code class="paramref">selectedElements</code> that are categorized as 
-BuiltInCategory.OST_PipeCurves.</dd>
+    <dd>An enumerable collection of <span class="xref">Autodesk.Revit.DB.Plumbing.Pipe</span> objects representing the pipe instances found in the input
+            collection. If no pipe instances are found, the returned collection will be empty.</dd>
   </dl>
 
 
@@ -188,9 +774,332 @@ BuiltInCategory.OST_PipeCurves.</dd>
 
 
   <h4 class="section" id="MBF_Revit_Data_Utils_MbPipesUtils_GetPipeInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element___remarks">Remarks</h4>
-  <div class="markdown level1 remarks">This method filters the input collection to include only elements whose category is "Pipes",
-then casts those elements to <span class="xref">Autodesk.Revit.DB.Plumbing.Pipe</span> for further use.
-The filtering logic uses conditional compilation to support multiple Revit versions.</div>
+  <div class="markdown level1 remarks">This method filters the provided elements to include only those that belong to the "Pipe Curves"
+            category  and are of type <span class="xref">Autodesk.Revit.DB.Plumbing.Pipe</span>. The filtering logic adapts to the Revit version being used.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_GetValidSpudFittings_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetValidSpudFittings*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_GetValidSpudFittings_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.GetValidSpudFittings(Autodesk.Revit.DB.Document)">
+  GetValidSpudFittings(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves a list of valid spud fittings from the specified document.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;FamilyInstance&gt; GetValidSpudFittings(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd>The Revit document to search for spud fittings.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">FamilyInstance</span>&gt;</dt>
+    <dd>A list of <span class="xref">FamilyInstance</span> objects representing valid spud fittings  in the document. The list will
+be empty if no valid spud fittings are found.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbPipesUtils_GetValidSpudFittings_Autodesk_Revit_DB_Document__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method filters elements in the document to include only pipe fittings  that are
+instances of <span class="xref">FamilyInstance</span> and meet specific criteria  for validity. Elements that do not pass
+the validity check are excluded.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_IsPointOnPipeEndPoints_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.IsPointOnPipeEndPoints*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_IsPointOnPipeEndPoints_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_Plumbing_Pipe_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.IsPointOnPipeEndPoints(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Plumbing.Pipe)">
+  IsPointOnPipeEndPoints(XYZ, Pipe)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Determines whether the specified point is located on one of the endpoints of the given pipe.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPointOnPipeEndPoints(XYZ point, Pipe pipe)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <span class="xref">XYZ</span></dt>
+    <dd>The point to check.</dd>
+    <dt><code>pipe</code> <span class="xref">Pipe</span></dt>
+    <dd>The pipe whose endpoints are to be evaluated.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified point is on one of the pipe's endpoints; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_IsSpudAtEndPointsOfPipe_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.IsSpudAtEndPointsOfPipe*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_IsSpudAtEndPointsOfPipe_Autodesk_Revit_DB_Plumbing_Pipe_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.IsSpudAtEndPointsOfPipe(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.Document)">
+  IsSpudAtEndPointsOfPipe(Pipe, ElementId, Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Determines whether the specified element is located at either endpoint of the given pipe.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSpudAtEndPointsOfPipe(Pipe pipe, ElementId elementId, Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pipe</code> <span class="xref">Pipe</span></dt>
+    <dd>The pipe to check for endpoint connections.</dd>
+    <dt><code>elementId</code> <span class="xref">ElementId</span></dt>
+    <dd>The ID of the element to evaluate.</dd>
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd>The document containing the pipe and element.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the element is located at one of the endpoints of the pipe; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_IsSpudFitting_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.IsSpudFitting*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_IsSpudFitting_Autodesk_Revit_DB_FamilyInstance_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.IsSpudFitting(Autodesk.Revit.DB.FamilyInstance)">
+  IsSpudFitting(FamilyInstance)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Determines whether the specified <span class="xref">FamilyInstance</span> represents a spud fitting.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSpudFitting(FamilyInstance instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">FamilyInstance</span></dt>
+    <dd>The <span class="xref">FamilyInstance</span> to evaluate. Must not be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">instance</code> is a spud fitting; otherwise,
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbPipesUtils_IsSpudFitting_Autodesk_Revit_DB_FamilyInstance__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">A spud fitting is identified as a <span class="xref">FamilyInstance</span> with no
+FamilyInstance.SuperComponent
+and an <span class="xref">Autodesk.Revit.DB.MEPModel</span> of type <span class="xref">Autodesk.Revit.DB.Mechanical.MechanicalFitting</span>
+where the <span class="xref">Autodesk.Revit.DB.Mechanical.MechanicalFitting.PartType</span>  is either PartType.SpudAdjustable or
+PartType.SpudPerpendicular
+.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_IsTeeOrElbowFitting_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.IsTeeOrElbowFitting*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_IsTeeOrElbowFitting_Autodesk_Revit_DB_FamilyInstance_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.IsTeeOrElbowFitting(Autodesk.Revit.DB.FamilyInstance)">
+  IsTeeOrElbowFitting(FamilyInstance)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Determines whether the specified <span class="xref">FamilyInstance</span> represents a tee or elbow fitting.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsTeeOrElbowFitting(FamilyInstance instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">FamilyInstance</span></dt>
+    <dd>The <span class="xref">FamilyInstance</span> to evaluate. This parameter can be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">instance</code> is a mechanical fitting of type tee or elbow;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbPipesUtils_IsTeeOrElbowFitting_Autodesk_Revit_DB_FamilyInstance__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method checks if the <code class="paramref">instance</code> has an <span class="xref">Autodesk.Revit.DB.MEPModel</span> of type
+<span class="xref">Autodesk.Revit.DB.Mechanical.MechanicalFitting</span> and evaluates its <span class="xref">PartType</span> to determine if it is a tee or elbow
+fitting.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_IsWellConnected_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.IsWellConnected*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_IsWellConnected_Autodesk_Revit_DB_FamilyInstance_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.IsWellConnected(Autodesk.Revit.DB.FamilyInstance)">
+  IsWellConnected(FamilyInstance)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Determines whether the specified <span class="xref">FamilyInstance</span> is well-connected.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsWellConnected(FamilyInstance instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">FamilyInstance</span></dt>
+    <dd>The <span class="xref">FamilyInstance</span> to evaluate. This parameter cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if all connectors in the <code class="paramref">instance</code>'s MEP model are connected;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>. Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if the <code class="paramref">instance</code> or its
+MEP model is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_RemoveDuplicateFittings_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.RemoveDuplicateFittings*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_RemoveDuplicateFittings_System_Collections_Generic_List_Autodesk_Revit_DB_FamilyInstance___" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.RemoveDuplicateFittings(System.Collections.Generic.List{Autodesk.Revit.DB.FamilyInstance}@)">
+  RemoveDuplicateFittings(ref List&lt;FamilyInstance&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Removes duplicate fittings from the provided list based on proximity and connection criteria.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveDuplicateFittings(ref List&lt;FamilyInstance&gt; fittings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fittings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">FamilyInstance</span>&gt;</dt>
+    <dd>A reference to the list of <span class="xref">FamilyInstance</span> objects representing the fittings.  The list will be
+modified to contain only unique fittings after the method completes.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbPipesUtils_RemoveDuplicateFittings_System_Collections_Generic_List_Autodesk_Revit_DB_FamilyInstance____remarks">Remarks</h4>
+  <div class="markdown level1 remarks">Two fittings are considered duplicates if their positions are within a predefined threshold.
+When duplicates are found, the method retains the fitting with the most connected connectors,  or the first
+fitting in the group if no fitting is better connected.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbPipesUtils_SortFittingsByProximity_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.SortFittingsByProximity*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbPipesUtils_SortFittingsByProximity_Autodesk_Revit_DB_Document_System_Collections_Generic_List_Autodesk_Revit_DB_ElementId__Autodesk_Revit_DB_XYZ_" data-uid="MBF.Revit.Data.Utils.MbPipesUtils.SortFittingsByProximity(Autodesk.Revit.DB.Document,System.Collections.Generic.List{Autodesk.Revit.DB.ElementId},Autodesk.Revit.DB.XYZ)">
+  SortFittingsByProximity(Document, List&lt;ElementId&gt;, XYZ)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Groups and sorts a list of fitting elements by their proximity to a specified reference point.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;List&lt;ElementId&gt;&gt; SortFittingsByProximity(Document doc, List&lt;ElementId&gt; fittingIds, XYZ referencePoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd>The Revit document containing the fitting elements.</dd>
+    <dt><code>fittingIds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd>A list of <span class="xref">ElementId</span> objects representing the fittings to be sorted.</dd>
+    <dt><code>referencePoint</code> <span class="xref">XYZ</span></dt>
+    <dd>The reference point used to calculate the proximity of each fitting.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">ElementId</span>&gt;&gt;</dt>
+    <dd>A list of grouped lists of <span class="xref">ElementId</span> objects, where each inner list contains fittings that are within
+            a specified proximity tolerance of each other. The groups are sorted by the distance of their first element to the
+            reference point.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbPipesUtils_SortFittingsByProximity_Autodesk_Revit_DB_Document_System_Collections_Generic_List_Autodesk_Revit_DB_ElementId__Autodesk_Revit_DB_XYZ__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">The method groups fittings that are within 5 centimeters (0.164 feet) of each other and sorts the
+            groups based on the distance of the first fitting in each group to the reference point. This can be useful for
+            organizing fittings spatially in a Revit model.</div>
 
 
 

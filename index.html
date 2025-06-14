@@ -112,13 +112,6 @@ It provides technical references and documentation for the MicroBIM codebase and
 <li><code>ALL_CAPS</code> for constants.</li>
 </ul>
 </li>
-<li>❌ The use of <code>var</code> is strictly <strong>prohibited</strong>. All variables must be declared with <strong>explicit types</strong>.
-<ul>
-<li>✅ <code>int count = 0;</code></li>
-<li>❌ <code>var count = 0;</code></li>
-</ul>
-</li>
-<li>A <strong>custom analyzer</strong> is enforced to trigger a <strong>compilation error</strong> if <code>var</code> is used.</li>
 <li>Place <code>using</code> directives <strong>inside the namespace</strong>.</li>
 <li>Always include <strong>XML documentation</strong> for public members.</li>
 <li>Use <strong>expression-bodied members</strong> for simple one-liners when appropriate.</li>
@@ -286,6 +279,16 @@ public List&lt;User&gt; GetUsersByRole(string role) { ... }
 
 ⚠ Enforcement
 Any method that involves possible failure or data lookup must use MbResult&lt;T&gt; instead of returning raw types or throwing exceptions directly.
+
+
+
+## 📦 Download NuGet Package
+
+You can download the latest version of the `MicroBIM.Revit.Template` package below:
+
+[Download MicroBIM.Revit.Template.1.2.0.nupkg](downloads/MicroBIM.Revit.Template.1.2.0.nupkg)
+
+&gt; Place the `.nupkg` file inside your `downloads/` folder before building the docs.
 </code></pre>
 
 </article>

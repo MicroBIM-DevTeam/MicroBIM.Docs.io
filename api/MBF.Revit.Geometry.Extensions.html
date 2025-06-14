@@ -96,38 +96,45 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Geometry.Extensions.BoundingBoxExtensions.html">BoundingBoxExtensions</a></dt>
-      <dd>Provides extension methods for the <span class="xref">Autodesk.Revit.DB.BoundingBoxXYZ</span> class.</dd>
+      <dd>Provides extension methods for working with <span class="xref">Autodesk.Revit.DB.BoundingBoxXYZ</span> objects.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.html">BoundingBoxVisualizerExtensions</a></dt>
-      <dd>Extension methods for visualizing BoundingBoxXYZ objects as 2D outlines in the XY plane using DirectShape.</dd>
+      <dd>Provides extension methods for visualizing bounding boxes as 2D outlines in a Revit document.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Geometry.Extensions.ClipperExtensions.html">ClipperExtensions</a></dt>
-      <dd>Extension methods for working with Clipper2Lib's <span class="xref">Clipper2Lib.PathD</span> and <span class="xref">Clipper2Lib.PathsD</span> types
-in conjunction with Revit geometry.</dd>
+      <dd>Provides extension methods for working with <span class="xref">Clipper2Lib.PathsD</span> and <span class="xref">Clipper2Lib.PathD</span> collections, as well as
+converting <span class="xref">Clipper2Lib.PathD</span> objects to Revit <span class="xref">CurveLoop</span> instances.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Geometry.Extensions.CurveLoopExtensions.html">CurveLoopExtensions</a></dt>
-      <dd>Provides extension methods for converting <span class="xref">CurveLoop</span> and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> into Clipper2 <span class="xref">Clipper2Lib.PathD</span> and <span class="xref">Clipper2Lib.PathsD</span>.</dd>
+      <dd>Provides extension methods for converting <span class="xref">CurveLoop</span> objects into Clipper-compatible path
+representations, such as <span class="xref">Clipper2Lib.PathD</span> and <span class="xref">Clipper2Lib.PathsD</span>.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.html">CurveLoopVisualizerExtensions</a></dt>
-      <dd>Provides extension methods for visualizing <span class="xref">CurveLoop</span> instances as 2D geometry in Revit,
-either using <span class="xref">DirectShape</span> or <span class="xref">Autodesk.Revit.DB.DetailCurve</span> elements.</dd>
+      <dd>Provides extension methods for visualizing and creating Revit elements from <span class="xref">CurveLoop</span> objects.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.html">CurveVisualizerExtensions</a></dt>
       <dd>Provides extension methods for visualizing <span class="xref">Autodesk.Revit.DB.Curve</span> instances as 2D geometry in Revit,
-either using <span class="xref">DirectShape</span> elements in model views or <span class="xref">Autodesk.Revit.DB.DetailCurve</span> elements in drafting views.</dd>
+either using <span class="xref">DirectShape</span> elements in model views or <span class="xref">Autodesk.Revit.DB.DetailCurve</span> elements in drafting
+views.</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MBF.Revit.Geometry.Extensions.DirectShapeVisualization.html">DirectShapeVisualization</a></dt>
+      <dd>Provides methods for creating and managing <span class="xref">DirectShape</span> elements in a Revit document.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.html">PathDVisualizerExtensions</a></dt>
-      <dd>Extension methods for visualizing Clipper <span class="xref">Clipper2Lib.PathD</span> and <span class="xref">Clipper2Lib.PathsD</span> in 2D in the Revit XY plane.</dd>
+      <dd>Provides extension methods for visualizing <span class="xref">Clipper2Lib.PathD</span> and <span class="xref">Clipper2Lib.PathsD</span> objects as 2D outlines in
+a
+Revit document using <span class="xref">DirectShape</span> elements.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.html">XyzVisualizationsExtensions</a></dt>
-      <dd>Extension methods for visualizing <span class="xref">Autodesk.Revit.DB.XYZ</span> points in Revit using DirectShape.</dd>
+      <dd>Provides extension methods for visualizing <span class="xref">Autodesk.Revit.DB.XYZ</span> points as 3D objects in a Revit document.</dd>
     </dl>
 
 

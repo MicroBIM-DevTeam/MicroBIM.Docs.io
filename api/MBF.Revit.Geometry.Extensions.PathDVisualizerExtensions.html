@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class PathDVisualizerExtensions | MIcroBIM Docs ">
       
-      <meta name="description" content="Extension methods for visualizing Clipper  and  in 2D in the Revit XY plane.">
+      <meta name="description" content="Provides extension methods for visualizing  and  objects as 2D outlines in a Revit document using  elements.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Geometry_Extensions_PathDVisualizerExtensions" data-uid="MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions" class="text-break">
-Class PathDVisualizerExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/PathDVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
+Class PathDVisualizerExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/PathDVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,11 +97,14 @@ Class PathDVisualizerExtensions  <a class="header-action link-secondary" title="
   <dl><dt>Assembly</dt><dd>MBF.Revit.Geometry.dll</dd></dl>
   </div>
 
-  <div class="markdown summary">Extension methods for visualizing Clipper <span class="xref">Clipper2Lib.PathD</span> and <span class="xref">Clipper2Lib.PathsD</span> in 2D in the Revit XY plane.</div>
+  <div class="markdown summary">Provides extension methods for visualizing <span class="xref">Clipper2Lib.PathD</span> and <span class="xref">Clipper2Lib.PathsD</span> objects as 2D outlines in
+a
+Revit document using <span class="xref">DirectShape</span> elements.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class PathDVisualizerExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">[LogAspect]
+public static class PathDVisualizerExtensions</code></pre>
   </div>
 
 
@@ -146,6 +149,10 @@ Class PathDVisualizerExtensions  <a class="header-action link-secondary" title="
 
 
 
+  <h2 id="MBF_Revit_Geometry_Extensions_PathDVisualizerExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">These methods allow developers to create visual representations of 2D paths in the active view of a
+Revit document. The visualizations are rendered as outlines on the XY plane and can be customized with an optional
+color parameter.</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -156,10 +163,11 @@ Class PathDVisualizerExtensions  <a class="header-action link-secondary" title="
 
   <h3 id="MBF_Revit_Geometry_Extensions_PathDVisualizerExtensions_VisualizePathD2D_Clipper2Lib_PathD_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_" data-uid="MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D(Clipper2Lib.PathD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)">
   VisualizePathD2D(PathD, Document, Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/PathDVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/PathDVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Visualizes a single <span class="xref">Clipper2Lib.PathD</span> as a 2D outline using a <span class="xref">DirectShape</span> in the active view of the specified Revit document.</div>
+  <div class="markdown level1 summary">Visualizes a single <span class="xref">Clipper2Lib.PathD</span> as a 2D outline using a <span class="xref">DirectShape</span> in the active view of
+the specified Revit document.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -191,10 +199,11 @@ Class PathDVisualizerExtensions  <a class="header-action link-secondary" title="
 
   <h3 id="MBF_Revit_Geometry_Extensions_PathDVisualizerExtensions_VisualizePathsD2D_Clipper2Lib_PathsD_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_" data-uid="MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathsD2D(Clipper2Lib.PathsD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)">
   VisualizePathsD2D(PathsD, Document, Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/PathDVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/PathDVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Visualizes each <span class="xref">Clipper2Lib.PathD</span> in a <span class="xref">Clipper2Lib.PathsD</span> collection as a 2D outline using <span class="xref">DirectShape</span> elements.</div>
+  <div class="markdown level1 summary">Visualizes each <span class="xref">Clipper2Lib.PathD</span> in a <span class="xref">Clipper2Lib.PathsD</span> collection as a 2D outline using
+<span class="xref">DirectShape</span> elements.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

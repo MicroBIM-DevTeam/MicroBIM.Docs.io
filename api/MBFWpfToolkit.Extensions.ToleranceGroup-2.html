@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ToleranceGroup&lt;TKey, TElement&gt; | MIcroBIM Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ToleranceGroup&lt;TKey, TElement&gt; | MIcroBIM Docs ">
+      
+      <meta name="description" content="Represents a collection of elements that share a common key, with additional functionality for grouping and list operations.">
+      <link rel="icon" href="../images/logo.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/MicroBimLogo.png" alt="MicroBIM">
+            MicroBIM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MBFWpfToolkit.Extensions.ToleranceGroup`2">
+
+
+
+  <h1 id="MBFWpfToolkit_Extensions_ToleranceGroup_2" data-uid="MBFWpfToolkit.Extensions.ToleranceGroup`2" class="text-break">
+Class ToleranceGroup&lt;TKey, TElement&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Extensions/ToleranceGroup.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MBFWpfToolkit.html">MBFWpfToolkit</a>.<a class="xref" href="MBFWpfToolkit.Extensions.html">Extensions</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MBFWpfToolkit.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary">Represents a collection of elements that share a common key, with additional functionality for grouping and list
+operations.</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ToleranceGroup&lt;TKey, TElement&gt; : List&lt;TElement&gt;, IList&lt;TElement&gt;, ICollection&lt;TElement&gt;, IList, ICollection, IReadOnlyList&lt;TElement&gt;, IReadOnlyCollection&lt;TElement&gt;, IGrouping&lt;TKey, TElement&gt;, IEnumerable&lt;TElement&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TKey</code></dt>
+    <dd>The type of the key associated with the group.</dd>
+    <dt><code>TElement</code></dt>
+    <dd>The type of the elements in the group.</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;TElement&gt;</div>
+      <div><span class="xref">ToleranceGroup&lt;TKey, TElement&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;TElement&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;TElement&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;TElement&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;TElement&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.igrouping-2">IGrouping</a>&lt;TKey, TElement&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TElement&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.add">List&lt;TElement&gt;.Add(TElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.addrange">List&lt;TElement&gt;.AddRange(IEnumerable&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.asreadonly">List&lt;TElement&gt;.AsReadOnly()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#system-collections-generic-list-1-binarysearch(system-int32-system-int32-0-system-collections-generic-icomparer((-0)))">List&lt;TElement&gt;.BinarySearch(int, int, TElement, IComparer&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#system-collections-generic-list-1-binarysearch(-0)">List&lt;TElement&gt;.BinarySearch(TElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#system-collections-generic-list-1-binarysearch(-0-system-collections-generic-icomparer((-0)))">List&lt;TElement&gt;.BinarySearch(TElement, IComparer&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.clear">List&lt;TElement&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.contains">List&lt;TElement&gt;.Contains(TElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.convertall">List&lt;TElement&gt;.ConvertAll&lt;TOutput&gt;(Converter&lt;TElement, TOutput&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#system-collections-generic-list-1-copyto(-0())">List&lt;TElement&gt;.CopyTo(TElement[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#system-collections-generic-list-1-copyto(system-int32-0()-system-int32-system-int32)">List&lt;TElement&gt;.CopyTo(int, TElement[], int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#system-collections-generic-list-1-copyto(-0()-system-int32)">List&lt;TElement&gt;.CopyTo(TElement[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.exists">List&lt;TElement&gt;.Exists(Predicate&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.find">List&lt;TElement&gt;.Find(Predicate&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findall">List&lt;TElement&gt;.FindAll(Predicate&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#system-collections-generic-list-1-findindex(system-predicate((-0)))">List&lt;TElement&gt;.FindIndex(Predicate&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#system-collections-generic-list-1-findindex(system-int32-system-predicate((-0)))">List&lt;TElement&gt;.FindIndex(int, Predicate&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#system-collections-generic-list-1-findindex(system-int32-system-int32-system-predicate((-0)))">List&lt;TElement&gt;.FindIndex(int, int, Predicate&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlast">List&lt;TElement&gt;.FindLast(Predicate&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#system-collections-generic-list-1-findlastindex(system-predicate((-0)))">List&lt;TElement&gt;.FindLastIndex(Predicate&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#system-collections-generic-list-1-findlastindex(system-int32-system-predicate((-0)))">List&lt;TElement&gt;.FindLastIndex(int, Predicate&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#system-collections-generic-list-1-findlastindex(system-int32-system-int32-system-predicate((-0)))">List&lt;TElement&gt;.FindLastIndex(int, int, Predicate&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.foreach">List&lt;TElement&gt;.ForEach(Action&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.getenumerator">List&lt;TElement&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.getrange">List&lt;TElement&gt;.GetRange(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#system-collections-generic-list-1-indexof(-0)">List&lt;TElement&gt;.IndexOf(TElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#system-collections-generic-list-1-indexof(-0-system-int32)">List&lt;TElement&gt;.IndexOf(TElement, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#system-collections-generic-list-1-indexof(-0-system-int32-system-int32)">List&lt;TElement&gt;.IndexOf(TElement, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.insert">List&lt;TElement&gt;.Insert(int, TElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.insertrange">List&lt;TElement&gt;.InsertRange(int, IEnumerable&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#system-collections-generic-list-1-lastindexof(-0)">List&lt;TElement&gt;.LastIndexOf(TElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#system-collections-generic-list-1-lastindexof(-0-system-int32)">List&lt;TElement&gt;.LastIndexOf(TElement, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#system-collections-generic-list-1-lastindexof(-0-system-int32-system-int32)">List&lt;TElement&gt;.LastIndexOf(TElement, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.remove">List&lt;TElement&gt;.Remove(TElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.removeall">List&lt;TElement&gt;.RemoveAll(Predicate&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.removeat">List&lt;TElement&gt;.RemoveAt(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.removerange">List&lt;TElement&gt;.RemoveRange(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#system-collections-generic-list-1-reverse">List&lt;TElement&gt;.Reverse()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#system-collections-generic-list-1-reverse(system-int32-system-int32)">List&lt;TElement&gt;.Reverse(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort">List&lt;TElement&gt;.Sort()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort(system-collections-generic-icomparer((-0)))">List&lt;TElement&gt;.Sort(IComparer&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort(system-int32-system-int32-system-collections-generic-icomparer((-0)))">List&lt;TElement&gt;.Sort(int, int, IComparer&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort(system-comparison((-0)))">List&lt;TElement&gt;.Sort(Comparison&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.toarray">List&lt;TElement&gt;.ToArray()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.trimexcess">List&lt;TElement&gt;.TrimExcess()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.trueforall">List&lt;TElement&gt;.TrueForAll(Predicate&lt;TElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.capacity">List&lt;TElement&gt;.Capacity</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.count">List&lt;TElement&gt;.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">List&lt;TElement&gt;.this[int]</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MBFWpfToolkit.Extensions.CollectionExtensions.html#MBFWpfToolkit_Extensions_CollectionExtensions_GroupByWithTolerance__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Double__System_Double_">CollectionExtensions.GroupByWithTolerance&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, double&gt;, double)</a>
+  </div>
+  <div>
+      <a class="xref" href="MBFWpfToolkit.Extensions.CollectionExtensions.html#MBFWpfToolkit_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__">CollectionExtensions.ToObservableCollection&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="MBFWpfToolkit.Extensions.ListExtensions.html#MBFWpfToolkit_Extensions_ListExtensions_Move__1_System_Collections_Generic_List___0__System_Int32_System_Int32_">ListExtensions.Move&lt;T&gt;(List&lt;T&gt;, int, int)</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="MBFWpfToolkit_Extensions_ToleranceGroup_2_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">This class combines the functionality of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.igrouping-2">IGrouping&lt;TKey, TElement&gt;</a> and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a>,  allowing grouped elements to be accessed and manipulated as a list.</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MBFWpfToolkit_Extensions_ToleranceGroup_2__ctor_" data-uid="MBFWpfToolkit.Extensions.ToleranceGroup`2.#ctor*"></a>
+
+  <h3 id="MBFWpfToolkit_Extensions_ToleranceGroup_2__ctor__0_" data-uid="MBFWpfToolkit.Extensions.ToleranceGroup`2.#ctor(`0)">
+  ToleranceGroup(TKey)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Extensions/ToleranceGroup.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Represents a group of items that share a common key and are grouped based on a specified tolerance.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToleranceGroup(TKey key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <span class="xref">TKey</span></dt>
+    <dd>The key that identifies the group. Cannot be null.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MBFWpfToolkit_Extensions_ToleranceGroup_2__ctor__0__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This class is typically used in scenarios where items need to be grouped by a key with a
+            tolerance-based condition.</div>
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MBFWpfToolkit_Extensions_ToleranceGroup_2_Key_" data-uid="MBFWpfToolkit.Extensions.ToleranceGroup`2.Key*"></a>
+
+  <h3 id="MBFWpfToolkit_Extensions_ToleranceGroup_2_Key" data-uid="MBFWpfToolkit.Extensions.ToleranceGroup`2.Key">
+  Key
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Extensions/ToleranceGroup.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Gets the key associated with the current object.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TKey Key { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TKey</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2025 MicroBIM. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

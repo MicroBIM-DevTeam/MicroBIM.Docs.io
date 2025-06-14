@@ -159,7 +159,8 @@ Class MbResourceLoader
   
   </h3>
 
-  <div class="markdown level1 summary">Ensures that a file exists at the specified path. If it does not, the method creates it using the content from an embedded resource.</div>
+  <div class="markdown level1 summary">Ensures that a file exists at the specified path. If it does not, the method creates it using the content from an
+embedded resource.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -178,7 +179,13 @@ Class MbResourceLoader
   <dl class="parameters">
     <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
     <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> indicating the outcome:
-<ul><li><code>Success = true</code> — The file already exists or was created successfully from the embedded resource.</li><li><code>Success = false</code> — The resource was not found or an error occurred during file creation. The <code>ErrorMessage</code> will describe the issue.</li></ul></dd>
+<ul><li>
+            <code>Success = true</code> — The file already exists or was created successfully from the embedded
+            resource.
+        </li><li>
+            <code>Success = false</code> — The resource was not found or an error occurred during file creation.
+            The <code>ErrorMessage</code> will describe the issue.
+        </li></ul></dd>
   </dl>
 
 
@@ -201,7 +208,7 @@ It supports nested directory creation and uses the currently executing assembly 
   
   </h3>
 
-  <div class="markdown level1 summary">Loads an embedded JSON resource and deserializes it into a list of objects of type <code class="typeparamref">T</code>.</div>
+  <div class="markdown level1 summary">Loads a JSON list of objects from an embedded resource using Newtonsoft.Json.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -211,22 +218,21 @@ It supports nested directory creation and uses the currently executing assembly 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>resourceFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd>The name (or suffix) of the embedded resource file (e.g., "DefaultConfig.json").</dd>
+    <dd>The name of the embedded resource file.</dd>
     <dt><code>assembly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></dt>
-    <dd>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a> that contains the embedded resource.</dd>
+    <dd>The assembly containing the embedded resource.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;&gt;</dt>
-    <dd>A task that resolves to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a> containing the deserialized objects. If loading or deserialization fails,
-an empty list is returned and a message box will display the error.</dd>
+    <dd>A list of deserialized objects, or an empty list on failure.</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd>The type of the objects to deserialize.</dd>
+    <dd>The type of objects in the JSON list.</dd>
   </dl>
 
 
@@ -234,9 +240,6 @@ an empty list is returned and a message box will display the error.</dd>
 
 
 
-  <h4 class="section" id="MB_Common_Utils_Loaders_MbResourceLoader_LoadEmbeddedJsonAsync__1_System_String_System_Reflection_Assembly__remarks">Remarks</h4>
-  <div class="markdown level1 remarks">The method searches for an embedded resource name that ends with the specified <code class="paramref">resourceFileName</code>.
-It uses case-insensitive matching and supports resources embedded via project file settings.</div>
 
 
 

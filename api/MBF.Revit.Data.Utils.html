@@ -95,8 +95,13 @@
 Classes
 </h3>
     <dl class="jumplist">
+      <dt><a class="xref" href="MBF.Revit.Data.Utils.EntityUtils.html">EntityUtils</a></dt>
+      <dd>Provides utility methods for working with entities and their associated fields, enabling the retrieval and
+assignment of values such as <span class="xref">Autodesk.Revit.DB.XYZ</span> and <span class="xref">ElementId</span>.</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Data.Utils.MbFlexPipesUtils.html">MbFlexPipesUtils</a></dt>
-      <dd>Utility methods for working with <span class="xref">Autodesk.Revit.DB.Plumbing.FlexPipe</span> elements in Revit.</dd>
+      <dd>Filters the provided collection of Revit elements and retrieves all flex pipes.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Data.Utils.MbParameterUtils.html">MbParameterUtils</a></dt>
@@ -104,7 +109,7 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Data.Utils.MbPipeAccessoriesUtils.html">MbPipeAccessoriesUtils</a></dt>
-      <dd>Provides utility methods for working with pipe accessories in Revit.</dd>
+      <dd>Provides utility methods for working with pipe accessory elements in Revit.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Data.Utils.MbPipeFittingsUtils.html">MbPipeFittingsUtils</a></dt>
@@ -116,7 +121,7 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Data.Utils.MbSpaceUtils.html">MbSpaceUtils</a></dt>
-      <dd>Provides utility methods for working with <span class="xref">Autodesk.Revit.DB.Mechanical.Space</span> elements in Revit.</dd>
+      <dd>Provides utility methods for working with <span class="xref">Autodesk.Revit.DB.Mechanical.Space</span> elements in Autodesk Revit.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Data.Utils.MbSprinklersUtils.html">MbSprinklersUtils</a></dt>
@@ -124,11 +129,28 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Data.Utils.MbUnitUtils.html">MbUnitUtils</a></dt>
-      <dd>Provides utility methods for retrieving and converting Revit units to standard textual representations.</dd>
+      <dd>Provides utility methods for working with measurement units in Revit.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MBF.Revit.Data.Utils.MbViewUtils.html">MbViewUtils</a></dt>
-      <dd>Provides utility methods for interacting with Revit views, including view type checking and zooming to elements.</dd>
+      <dd>Provides utility methods for working with Revit views, including graphical view checks, zooming to elements,
+creating temporary 3D views, and managing view isolation.</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MBF.Revit.Data.Utils.RevitUnitUtils.html">RevitUnitUtils</a></dt>
+      <dd>Determines whether the units of the specified Revit document are metric.</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MBF.Revit.Data.Utils.XyzExtensibleStorage.html">XyzExtensibleStorage</a></dt>
+      <dd>Provides utilities for reading and writing <span class="xref">Autodesk.Revit.DB.XYZ</span> start point data
+for <span class="xref">Autodesk.Revit.DB.Plumbing.Pipe</span> elements using Revit's Extensible Storage API.</dd>
+    </dl>
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MBF.Revit.Data.Utils.PipePointType.html">PipePointType</a></dt>
+      <dd>Reprepipents a specific point along a pipe, either at the start or the end.</dd>
     </dl>
 
 

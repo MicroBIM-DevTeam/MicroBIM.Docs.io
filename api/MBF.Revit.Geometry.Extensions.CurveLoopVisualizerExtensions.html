@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class CurveLoopVisualizerExtensions | MIcroBIM Docs ">
       
-      <meta name="description" content="Provides extension methods for visualizing  instances as 2D geometry in Revit, either using  or  elements.">
+      <meta name="description" content="Provides extension methods for visualizing and creating Revit elements from  objects.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Geometry_Extensions_CurveLoopVisualizerExtensions" data-uid="MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions" class="text-break">
-Class CurveLoopVisualizerExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveLoopVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
+Class CurveLoopVisualizerExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveLoopVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,12 +97,12 @@ Class CurveLoopVisualizerExtensions  <a class="header-action link-secondary" tit
   <dl><dt>Assembly</dt><dd>MBF.Revit.Geometry.dll</dd></dl>
   </div>
 
-  <div class="markdown summary">Provides extension methods for visualizing <span class="xref">CurveLoop</span> instances as 2D geometry in Revit,
-either using <span class="xref">DirectShape</span> or <span class="xref">Autodesk.Revit.DB.DetailCurve</span> elements.</div>
+  <div class="markdown summary">Provides extension methods for visualizing and creating Revit elements from <span class="xref">CurveLoop</span> objects.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class CurveLoopVisualizerExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">[LogAspect]
+public static class CurveLoopVisualizerExtensions</code></pre>
   </div>
 
 
@@ -147,6 +147,11 @@ either using <span class="xref">DirectShape</span> or <span class="xref">Autodes
 
 
 
+  <h2 id="MBF_Revit_Geometry_Extensions_CurveLoopVisualizerExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">This class includes methods for creating 2D visualizations of <span class="xref">CurveLoop</span> objects using
+<span class="xref">DirectShape</span> elements and for generating <span class="xref">Autodesk.Revit.DB.DetailCurve</span> elements in drafting views. These
+methods are designed to work with the active view of a Revit document and provide optional customization, such as
+specifying outline colors.</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -157,10 +162,11 @@ either using <span class="xref">DirectShape</span> or <span class="xref">Autodes
 
   <h3 id="MBF_Revit_Geometry_Extensions_CurveLoopVisualizerExtensions_CreateCurveLoopWithDetailCurves_Autodesk_Revit_DB_CurveLoop_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ViewDrafting_Autodesk_Revit_DB_Color_" data-uid="MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.CreateCurveLoopWithDetailCurves(Autodesk.Revit.DB.CurveLoop,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ViewDrafting,Autodesk.Revit.DB.Color)">
   CreateCurveLoopWithDetailCurves(CurveLoop, Document, ViewDrafting, Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveLoopVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveLoopVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Creates <span class="xref">Autodesk.Revit.DB.DetailCurve</span> elements in a <span class="xref">Autodesk.Revit.DB.ViewDrafting</span> to represent the given <span class="xref">CurveLoop</span>.</div>
+  <div class="markdown level1 summary">Creates <span class="xref">Autodesk.Revit.DB.DetailCurve</span> elements in a <span class="xref">Autodesk.Revit.DB.ViewDrafting</span> to represent the given
+<span class="xref">CurveLoop</span>.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -182,7 +188,7 @@ either using <span class="xref">DirectShape</span> or <span class="xref">Autodes
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">DetailCurve</span>&gt;&gt;</dt>
-    <dd>An MbResult&lt;List&lt;DetailCurve&gt;&gt;:
+    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> where <code>T</code> is <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a>:
 <ul><li><b>Success:</b> Contains the created list of <span class="xref">Autodesk.Revit.DB.DetailCurve</span> elements.</li><li><b>Failure:</b> "CurveLoop is null."</li><li><b>Failure:</b> "Document or drafting view is null."</li><li><b>Failure:</b> "Failed to create detail curves: [exception message]"</li></ul></dd>
   </dl>
 
@@ -200,7 +206,7 @@ either using <span class="xref">DirectShape</span> or <span class="xref">Autodes
 
   <h3 id="MBF_Revit_Geometry_Extensions_CurveLoopVisualizerExtensions_VisualizeCurveLoop2D_Autodesk_Revit_DB_CurveLoop_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_" data-uid="MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoop2D(Autodesk.Revit.DB.CurveLoop,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)">
   VisualizeCurveLoop2D(CurveLoop, Document, Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveLoopVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveLoopVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Visualizes a single <span class="xref">CurveLoop</span> as a 2D outline using a <span class="xref">DirectShape</span> element
@@ -242,7 +248,7 @@ in the active view of the given Revit <code class="paramref">doc</code>.</div>
 
   <h3 id="MBF_Revit_Geometry_Extensions_CurveLoopVisualizerExtensions_VisualizeCurveLoops2D_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_CurveLoop__Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_" data-uid="MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoops2D(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.CurveLoop},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)">
   VisualizeCurveLoops2D(IEnumerable&lt;CurveLoop&gt;, Document, Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveLoopVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveLoopVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Visualizes a list of <span class="xref">CurveLoop</span> objects as 2D outlines using <span class="xref">DirectShape</span> elements
@@ -266,7 +272,7 @@ in the active view of the given Revit <code class="paramref">doc</code>.</div>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">DirectShape</span>&gt;&gt;</dt>
-    <dd>An MbResult&lt;List&lt;DirectShape&gt;&gt;:
+    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> where <code>T</code> is <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a>:
 <ul><li><b>Success:</b> Contains a list of created <span class="xref">DirectShape</span> elements.</li><li><b>Failure:</b> "CurveLoop collection is null."</li><li><b>Failure:</b> "Document or active view is null."</li><li><b>Failure:</b> "Failed to visualize multiple CurveLoops: [exception message]"</li></ul></dd>
   </dl>
 

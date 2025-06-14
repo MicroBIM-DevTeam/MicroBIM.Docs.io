@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Halfedge | MIcroBIM Docs ">
       
-      <meta name="description" content="Represents a half-edge in the Voronoi diagram.">
+      <meta name="description" content="Represents a half-edge in the Voronoi diagram, used primarily in Fortune&#39;s algorithm for managing the beach line and event queue.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Geometry_Voronoi_Models_Halfedge" data-uid="MBF.Revit.Geometry.Voronoi.Models.Halfedge" class="text-break">
-Class Halfedge  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs"><i class="bi bi-code-slash"></i></a>
+Class Halfedge  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class Halfedge  <a class="header-action link-secondary" title="View source" href
   <dl><dt>Assembly</dt><dd>MBF.Revit.Geometry.dll</dd></dl>
   </div>
 
-  <div class="markdown summary">Represents a half-edge in the Voronoi diagram.</div>
+  <div class="markdown summary">Represents a half-edge in the Voronoi diagram, used primarily in Fortune's algorithm for managing the beach line
+and event queue.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -156,10 +157,10 @@ Class Halfedge  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="MBF_Revit_Geometry_Voronoi_Models_Halfedge__ctor" data-uid="MBF.Revit.Geometry.Voronoi.Models.Halfedge.#ctor">
   Halfedge()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Initializes a new instance of the <a class="xref" href="MBF.Revit.Geometry.Voronoi.Models.Halfedge.html">Halfedge</a> class.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -185,10 +186,10 @@ Class Halfedge  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="MBF_Revit_Geometry_Voronoi_Models_Halfedge_ELedge" data-uid="MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELedge">
   ELedge
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">The edge associated with this half-edge.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -215,10 +216,10 @@ Class Halfedge  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="MBF_Revit_Geometry_Voronoi_Models_Halfedge_ELleft" data-uid="MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELleft">
   ELleft
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">The left neighboring half-edge in the edge list.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -245,10 +246,10 @@ Class Halfedge  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="MBF_Revit_Geometry_Voronoi_Models_Halfedge_ELpm" data-uid="MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELpm">
   ELpm
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Side indicator: 0 for left, 1 for right. Determines which region the half-edge belongs to.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -275,10 +276,10 @@ Class Halfedge  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="MBF_Revit_Geometry_Voronoi_Models_Halfedge_ELright" data-uid="MBF.Revit.Geometry.Voronoi.Models.Halfedge.ELright">
   ELright
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">The right neighboring half-edge in the edge list.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -305,10 +306,10 @@ Class Halfedge  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="MBF_Revit_Geometry_Voronoi_Models_Halfedge_PQnext" data-uid="MBF.Revit.Geometry.Voronoi.Models.Halfedge.PQnext">
   PQnext
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">The next half-edge in the priority queue.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -335,10 +336,10 @@ Class Halfedge  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="MBF_Revit_Geometry_Voronoi_Models_Halfedge_deleted" data-uid="MBF.Revit.Geometry.Voronoi.Models.Halfedge.deleted">
   deleted
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">Indicates whether this half-edge has been marked for deletion.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -365,10 +366,10 @@ Class Halfedge  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="MBF_Revit_Geometry_Voronoi_Models_Halfedge_vertex" data-uid="MBF.Revit.Geometry.Voronoi.Models.Halfedge.vertex">
   vertex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">The vertex where this half-edge ends (used in the priority queue for upcoming events).</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -395,10 +396,10 @@ Class Halfedge  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="MBF_Revit_Geometry_Voronoi_Models_Halfedge_ystar" data-uid="MBF.Revit.Geometry.Voronoi.Models.Halfedge.ystar">
   ystar
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Voronoi/Models/VoronoiElements.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Voronoi/Models/Halfedge.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary">The Y-coordinate of the event associated with this half-edge in the priority queue.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

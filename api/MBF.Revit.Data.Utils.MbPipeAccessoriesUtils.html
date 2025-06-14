@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MbPipeAccessoriesUtils | MIcroBIM Docs ">
       
-      <meta name="description" content="Provides utility methods for working with pipe accessories in Revit.">
+      <meta name="description" content="Provides utility methods for working with pipe accessory elements in Revit.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Data_Utils_MbPipeAccessoriesUtils" data-uid="MBF.Revit.Data.Utils.MbPipeAccessoriesUtils" class="text-break">
-Class MbPipeAccessoriesUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeAccessoriesUtils.cs"><i class="bi bi-code-slash"></i></a>
+Class MbPipeAccessoriesUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeAccessoriesUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,11 +97,12 @@ Class MbPipeAccessoriesUtils  <a class="header-action link-secondary" title="Vie
   <dl><dt>Assembly</dt><dd>MBF.Revit.Data.dll</dd></dl>
   </div>
 
-  <div class="markdown summary">Provides utility methods for working with pipe accessories in Revit.</div>
+  <div class="markdown summary">Provides utility methods for working with pipe accessory elements in Revit.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class MbPipeAccessoriesUtils</code></pre>
+    <pre><code class="lang-csharp hljs">[LogAspect]
+public static class MbPipeAccessoriesUtils</code></pre>
   </div>
 
 
@@ -146,6 +147,10 @@ Class MbPipeAccessoriesUtils  <a class="header-action link-secondary" title="Vie
 
 
 
+  <h2 id="MBF_Revit_Data_Utils_MbPipeAccessoriesUtils_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">This class contains methods to filter and retrieve Revit elements categorized as pipe accessories. It
+            is designed to work with collections of Revit elements and supports conditional compilation for compatibility with
+            different Revit versions.</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -156,10 +161,10 @@ Class MbPipeAccessoriesUtils  <a class="header-action link-secondary" title="Vie
 
   <h3 id="MBF_Revit_Data_Utils_MbPipeAccessoriesUtils_GetPipeAccessoriesInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element__" data-uid="MBF.Revit.Data.Utils.MbPipeAccessoriesUtils.GetPipeAccessoriesInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})">
   GetPipeAccessoriesInstances(IEnumerable&lt;Element&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbPipeAccessoriesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeAccessoriesUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Retrieves all <span class="xref">FamilyInstance</span> elements categorized as pipe accessories 
+  <div class="markdown level1 summary">Retrieves all <span class="xref">FamilyInstance</span> elements categorized as pipe accessories
 from the provided collection of Revit elements.</div>
   <div class="markdown level1 conceptual"></div>
 
@@ -176,8 +181,8 @@ from the provided collection of Revit elements.</div>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">FamilyInstance</span>&gt;</dt>
-    <dd>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> containing all elements from 
-<code class="paramref">selectedElements</code> that are instances of families and belong to 
+    <dd>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> containing all elements from
+<code class="paramref">selectedElements</code> that are instances of families and belong to
 the BuiltInCategory.OST_PipeAccessory category.</dd>
   </dl>
 
@@ -188,9 +193,17 @@ the BuiltInCategory.OST_PipeAccessory category.</dd>
 
 
   <h4 class="section" id="MBF_Revit_Data_Utils_MbPipeAccessoriesUtils_GetPipeAccessoriesInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element___remarks">Remarks</h4>
-  <div class="markdown level1 remarks">This method filters the input collection to include only elements whose category is 
-"Pipe Accessories", then casts those elements to <span class="xref">FamilyInstance</span> for further use.
-The filtering logic uses conditional compilation to support different Revit versions.</div>
+  <div class="markdown level1 remarks"><p>
+    This method filters the input collection to include only elements whose category is
+    "Pipe Accessories", then casts those elements to <span class="xref">FamilyInstance</span> for further use.
+    The filtering logic uses conditional compilation to support different Revit versions.
+</p>
+<p>Possible error messages:</p>
+<ul><li>
+            <b>ArgumentNullException</b>: Thrown if <code class="paramref">selectedElements</code> is null.
+        </li><li>
+            <b>InvalidCastException</b>: Thrown if an element cannot be cast to <span class="xref">FamilyInstance</span> (should not occur due to <code>OfType</code> usage).
+        </li></ul></div>
 
 
 

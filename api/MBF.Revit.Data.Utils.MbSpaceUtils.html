@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MbSpaceUtils | MIcroBIM Docs ">
       
-      <meta name="description" content="Provides utility methods for working with  elements in Revit.">
+      <meta name="description" content="Provides utility methods for working with  elements in Autodesk Revit.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Data_Utils_MbSpaceUtils" data-uid="MBF.Revit.Data.Utils.MbSpaceUtils" class="text-break">
-Class MbSpaceUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbSpaceUtils.cs"><i class="bi bi-code-slash"></i></a>
+Class MbSpaceUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbSpaceUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,11 +97,12 @@ Class MbSpaceUtils  <a class="header-action link-secondary" title="View source" 
   <dl><dt>Assembly</dt><dd>MBF.Revit.Data.dll</dd></dl>
   </div>
 
-  <div class="markdown summary">Provides utility methods for working with <span class="xref">Autodesk.Revit.DB.Mechanical.Space</span> elements in Revit.</div>
+  <div class="markdown summary">Provides utility methods for working with <span class="xref">Autodesk.Revit.DB.Mechanical.Space</span> elements in Autodesk Revit.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class MbSpaceUtils</code></pre>
+    <pre><code class="lang-csharp hljs">[LogAspect]
+public static class MbSpaceUtils</code></pre>
   </div>
 
 
@@ -146,6 +147,9 @@ Class MbSpaceUtils  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <h2 id="MBF_Revit_Data_Utils_MbSpaceUtils_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">This class contains static methods to assist in retrieving and manipulating <span class="xref">Autodesk.Revit.DB.Mechanical.Space</span>
+            elements from the Revit model, particularly from the user's current selection in the active view.</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -156,10 +160,10 @@ Class MbSpaceUtils  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="MBF_Revit_Data_Utils_MbSpaceUtils_GetSpacesFromSelection_Autodesk_Revit_UI_UIDocument_" data-uid="MBF.Revit.Data.Utils.MbSpaceUtils.GetSpacesFromSelection(Autodesk.Revit.UI.UIDocument)">
   GetSpacesFromSelection(UIDocument)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbSpaceUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbSpaceUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Retrieves all <span class="xref">Autodesk.Revit.DB.Mechanical.Space</span> elements from the current user selection in the active view.</div>
+  <div class="markdown level1 summary">Retrieves a list of <span class="xref">Autodesk.Revit.DB.Mechanical.Space</span> elements from the current selection in the Revit UI.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,13 +173,14 @@ Class MbSpaceUtils  <a class="header-action link-secondary" title="View source" 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>uiDoc</code> <span class="xref">UIDocument</span></dt>
-    <dd>The current Revit <span class="xref">UIDocument</span>.</dd>
+    <dd>The <span class="xref">UIDocument</span> representing the active Revit document and user interface context.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Space</span>&gt;</dt>
-    <dd>A list of selected <span class="xref">Autodesk.Revit.DB.Mechanical.Space</span> elements. If no spaces are selected, returns an empty list.</dd>
+    <dd>A list of <span class="xref">Autodesk.Revit.DB.Mechanical.Space</span> elements selected by the user. Returns an empty list if no valid <span class="xref">Autodesk.Revit.DB.Mechanical.Space</span>
+            elements are selected.</dd>
   </dl>
 
 
@@ -184,6 +189,9 @@ Class MbSpaceUtils  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbSpaceUtils_GetSpacesFromSelection_Autodesk_Revit_UI_UIDocument__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method filters the current selection to include only valid <span class="xref">Autodesk.Revit.DB.Mechanical.Space</span> elements. Invalid
+            or non-<span class="xref">Autodesk.Revit.DB.Mechanical.Space</span> elements in the selection are ignored.</div>
 
 
 

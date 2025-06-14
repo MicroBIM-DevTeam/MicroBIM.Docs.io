@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MbWindow | MIcroBIM Docs ">
       
-      <meta name="description" content="Represents a custom window with additional properties and functionalities.">
+      <meta name="description" content="Represents a customizable WPF window with extended properties and features, including theming, language selection, and plugin-related configurations.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MBFWpfToolkit_MbWindow" data-uid="MBFWpfToolkit.MbWindow" class="text-break">
-Class MbWindow  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+Class MbWindow  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,11 +97,12 @@ Class MbWindow  <a class="header-action link-secondary" title="View source" href
   <dl><dt>Assembly</dt><dd>MBFWpfToolkit.dll</dd></dl>
   </div>
 
-  <div class="markdown summary">Represents a custom window with additional properties and functionalities.</div>
+  <div class="markdown summary">Represents a customizable WPF window with extended properties and features,
+including theming, language selection, and plugin-related configurations.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MbWindow : Window</code></pre>
+    <pre><code class="lang-csharp hljs">public class MbWindow : Window, INotifyPropertyChanged</code></pre>
   </div>
 
 
@@ -115,6 +116,12 @@ Class MbWindow  <a class="header-action link-secondary" title="View source" href
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+    </dd>
+  </dl>
 
   <dl class="typelist derived">
     <dt>Derived</dt>
@@ -138,12 +145,10 @@ Class MbWindow  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="MBFWpfToolkit_MbWindow__ctor" data-uid="MBFWpfToolkit.MbWindow.#ctor">
   MbWindow()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Initializes a new instance of the <a class="xref" href="MBFWpfToolkit.MbWindow.html">MbWindow</a> class.
-Subscribes to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement.loaded">Loaded</a> and Window.Closed events
-to handle resource initialization and cleanup.</div>
+  <div class="markdown level1 summary">Initializes a new instance of the <a class="xref" href="MBFWpfToolkit.MbWindow.html">MbWindow</a> class.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -158,6 +163,9 @@ to handle resource initialization and cleanup.</div>
 
 
 
+  <h4 class="section" id="MBFWpfToolkit_MbWindow__ctor_remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This constructor sets up event handlers for the Loaded and Closed
+            events. It ensures that main resources are cached and reused across windows.</div>
 
 
 
@@ -169,10 +177,10 @@ to handle resource initialization and cleanup.</div>
 
   <h3 id="MBFWpfToolkit_MbWindow_IsThemeToggleVisibleProperty" data-uid="MBFWpfToolkit.MbWindow.IsThemeToggleVisibleProperty">
   IsThemeToggleVisibleProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Identifies the <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_IsThemeToggleVisible">IsThemeToggleVisible</a> dependency property.</div>
+  <div class="markdown level1 summary">Represents the dependency property that identifies whether the theme toggle is visible.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -199,7 +207,7 @@ to handle resource initialization and cleanup.</div>
 
   <h3 id="MBFWpfToolkit_MbWindow_PluginDescriptionProperty" data-uid="MBFWpfToolkit.MbWindow.PluginDescriptionProperty">
   PluginDescriptionProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Identifies the PluginDescription dependency property.</div>
@@ -229,7 +237,7 @@ to handle resource initialization and cleanup.</div>
 
   <h3 id="MBFWpfToolkit_MbWindow_PluginNameProperty" data-uid="MBFWpfToolkit.MbWindow.PluginNameProperty">
   PluginNameProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Identifies the PluginName dependency property.</div>
@@ -259,7 +267,7 @@ to handle resource initialization and cleanup.</div>
 
   <h3 id="MBFWpfToolkit_MbWindow_PluginVersionProperty" data-uid="MBFWpfToolkit.MbWindow.PluginVersionProperty">
   PluginVersionProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Identifies the PluginVersion dependency property.</div>
@@ -289,7 +297,7 @@ to handle resource initialization and cleanup.</div>
 
   <h3 id="MBFWpfToolkit_MbWindow_PrimaryBrushProperty" data-uid="MBFWpfToolkit.MbWindow.PrimaryBrushProperty">
   PrimaryBrushProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Identifies the PrimaryBrush dependency property.</div>
@@ -319,7 +327,7 @@ to handle resource initialization and cleanup.</div>
 
   <h3 id="MBFWpfToolkit_MbWindow_ShowLanguagesComboBoxProperty" data-uid="MBFWpfToolkit.MbWindow.ShowLanguagesComboBoxProperty">
   ShowLanguagesComboBoxProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Identifies the ShowLanguagesComboBox dependency property.</div>
@@ -349,7 +357,7 @@ to handle resource initialization and cleanup.</div>
 
   <h3 id="MBFWpfToolkit_MbWindow_ShowLogoProperty" data-uid="MBFWpfToolkit.MbWindow.ShowLogoProperty">
   ShowLogoProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Identifies the <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowLogo">ShowLogo</a> dependency property.</div>
@@ -379,7 +387,7 @@ to handle resource initialization and cleanup.</div>
 
   <h3 id="MBFWpfToolkit_MbWindow_ShowPluginNameProperty" data-uid="MBFWpfToolkit.MbWindow.ShowPluginNameProperty">
   ShowPluginNameProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Identifies the <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowPluginName">ShowPluginName</a> dependency property.</div>
@@ -409,7 +417,7 @@ to handle resource initialization and cleanup.</div>
 
   <h3 id="MBFWpfToolkit_MbWindow_ShowPluginVersionProperty" data-uid="MBFWpfToolkit.MbWindow.ShowPluginVersionProperty">
   ShowPluginVersionProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Identifies the <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowPluginVersion">ShowPluginVersion</a> dependency property.</div>
@@ -440,18 +448,18 @@ to handle resource initialization and cleanup.</div>
 </h2>
 
 
-  <a id="MBFWpfToolkit_MbWindow_IsThemeToggleVisible_" data-uid="MBFWpfToolkit.MbWindow.IsThemeToggleVisible*"></a>
+  <a id="MBFWpfToolkit_MbWindow_IsDark_" data-uid="MBFWpfToolkit.MbWindow.IsDark*"></a>
 
-  <h3 id="MBFWpfToolkit_MbWindow_IsThemeToggleVisible" data-uid="MBFWpfToolkit.MbWindow.IsThemeToggleVisible">
-  IsThemeToggleVisible
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <h3 id="MBFWpfToolkit_MbWindow_IsDark" data-uid="MBFWpfToolkit.MbWindow.IsDark">
+  IsDark
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Gets or sets a value indicating whether the theme toggle button (light/dark mode switch) is visible in the window's title bar.</div>
+  <div class="markdown level1 summary">Gets or sets a value indicating whether the window should use a dark theme or not.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsThemeToggleVisible { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsDark { get; set; }</code></pre>
   </div>
 
 
@@ -471,15 +479,87 @@ to handle resource initialization and cleanup.</div>
 
 
 
+  <a id="MBFWpfToolkit_MbWindow_IsThemeToggleVisible_" data-uid="MBFWpfToolkit.MbWindow.IsThemeToggleVisible*"></a>
+
+  <h3 id="MBFWpfToolkit_MbWindow_IsThemeToggleVisible" data-uid="MBFWpfToolkit.MbWindow.IsThemeToggleVisible">
+  IsThemeToggleVisible
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Gets or sets a value indicating whether the theme toggle control is visible.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsThemeToggleVisible { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MBFWpfToolkit_MbWindow_IsThemeToggleVisible_remarks">Remarks</h4>
+  <div class="markdown level1 remarks">By default, the theme toggle control is visible unless explicitly set to false.</div>
+
+
+
+
+  <a id="MBFWpfToolkit_MbWindow_Item_" data-uid="MBFWpfToolkit.MbWindow.Item*"></a>
+
+  <h3 id="MBFWpfToolkit_MbWindow_Item_System_String_" data-uid="MBFWpfToolkit.MbWindow.Item(System.String)">
+  this[string]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Represents the current instance of the class.
+Use 'this' to refer explicitly to the calling object in methods,
+constructors, or property accessors. It is useful to resolve naming
+conflicts between instance members and method or constructor arguments.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string this[string key] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MBFWpfToolkit_MbWindow_MainResources_" data-uid="MBFWpfToolkit.MbWindow.MainResources*"></a>
 
   <h3 id="MBFWpfToolkit_MbWindow_MainResources" data-uid="MBFWpfToolkit.MbWindow.MainResources">
   MainResources
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Gets or sets the main shared resource dictionary used across all <a class="xref" href="MBFWpfToolkit.MbWindow.html">MbWindow</a> instances.
-This allows consistent styling and resource reuse throughout the application.</div>
+  <div class="markdown level1 summary">Gets or sets the shared resource dictionary that can be used to cache and reuse resources
+across multiple instances of <a class="xref" href="MBFWpfToolkit.MbWindow.html">MbWindow</a>.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -507,10 +587,10 @@ This allows consistent styling and resource reuse throughout the application.</d
 
   <h3 id="MBFWpfToolkit_MbWindow_PluginDescription" data-uid="MBFWpfToolkit.MbWindow.PluginDescription">
   PluginDescription
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Gets or sets the description of the plugin.</div>
+  <div class="markdown level1 summary">Identifies the <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_PluginDescription">PluginDescription</a> dependency property.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -538,10 +618,10 @@ This allows consistent styling and resource reuse throughout the application.</d
 
   <h3 id="MBFWpfToolkit_MbWindow_PluginName" data-uid="MBFWpfToolkit.MbWindow.PluginName">
   PluginName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Gets or sets the name of the plugin.</div>
+  <div class="markdown level1 summary">Identifies the <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_PluginName">PluginName</a> dependency property.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -569,10 +649,10 @@ This allows consistent styling and resource reuse throughout the application.</d
 
   <h3 id="MBFWpfToolkit_MbWindow_PluginVersion" data-uid="MBFWpfToolkit.MbWindow.PluginVersion">
   PluginVersion
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Gets or sets the version of the plugin.</div>
+  <div class="markdown level1 summary">Identifies the <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_PluginVersion">PluginVersion</a> dependency property.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -600,10 +680,10 @@ This allows consistent styling and resource reuse throughout the application.</d
 
   <h3 id="MBFWpfToolkit_MbWindow_PrimaryBrush" data-uid="MBFWpfToolkit.MbWindow.PrimaryBrush">
   PrimaryBrush
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Gets or sets the primary brush as a Color.</div>
+  <div class="markdown level1 summary">Identifies the <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_PrimaryBrush">PrimaryBrush</a> dependency property.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -627,14 +707,45 @@ This allows consistent styling and resource reuse throughout the application.</d
 
 
 
+  <a id="MBFWpfToolkit_MbWindow_SelectedLanguage_" data-uid="MBFWpfToolkit.MbWindow.SelectedLanguage*"></a>
+
+  <h3 id="MBFWpfToolkit_MbWindow_SelectedLanguage" data-uid="MBFWpfToolkit.MbWindow.SelectedLanguage">
+  SelectedLanguage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Gets or sets the selected language for the window.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CultureInfo SelectedLanguage { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MBFWpfToolkit_MbWindow_ShowLanguagesComboBox_" data-uid="MBFWpfToolkit.MbWindow.ShowLanguagesComboBox*"></a>
 
   <h3 id="MBFWpfToolkit_MbWindow_ShowLanguagesComboBox" data-uid="MBFWpfToolkit.MbWindow.ShowLanguagesComboBox">
   ShowLanguagesComboBox
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Gets or sets a value indicating whether to show the ComboBox for languages.</div>
+  <div class="markdown level1 summary">Identifies the <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowLanguagesComboBox">ShowLanguagesComboBox</a> dependency property.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -662,10 +773,10 @@ This allows consistent styling and resource reuse throughout the application.</d
 
   <h3 id="MBFWpfToolkit_MbWindow_ShowLogo" data-uid="MBFWpfToolkit.MbWindow.ShowLogo">
   ShowLogo
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Gets or sets a value indicating whether the logo should be displayed in the window's header.</div>
+  <div class="markdown level1 summary">Identifies the <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowLogo">ShowLogo</a> dependency property.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -693,10 +804,10 @@ This allows consistent styling and resource reuse throughout the application.</d
 
   <h3 id="MBFWpfToolkit_MbWindow_ShowPluginName" data-uid="MBFWpfToolkit.MbWindow.ShowPluginName">
   ShowPluginName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Gets or sets a value indicating whether the plugin name should be displayed in the window's header.</div>
+  <div class="markdown level1 summary">Identifies the <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowPluginName">ShowPluginName</a> dependency property.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -724,10 +835,10 @@ This allows consistent styling and resource reuse throughout the application.</d
 
   <h3 id="MBFWpfToolkit_MbWindow_ShowPluginVersion" data-uid="MBFWpfToolkit.MbWindow.ShowPluginVersion">
   ShowPluginVersion
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Gets or sets a value indicating whether the plugin version should be displayed in the window's header.</div>
+  <div class="markdown level1 summary">Identifies the <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowPluginVersion">ShowPluginVersion</a> dependency property.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -751,15 +862,120 @@ This allows consistent styling and resource reuse throughout the application.</d
 
 
 
+  <a id="MBFWpfToolkit_MbWindow_SupportedLanguages_" data-uid="MBFWpfToolkit.MbWindow.SupportedLanguages*"></a>
+
+  <h3 id="MBFWpfToolkit_MbWindow_SupportedLanguages" data-uid="MBFWpfToolkit.MbWindow.SupportedLanguages">
+  SupportedLanguages
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Gets the collection of supported languages available for the application.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableCollection&lt;CultureInfo&gt; SupportedLanguages { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1">ObservableCollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
+
+
+  <a id="MBFWpfToolkit_MbWindow_ApplyThemeForElement_" data-uid="MBFWpfToolkit.MbWindow.ApplyThemeForElement*"></a>
+
+  <h3 id="MBFWpfToolkit_MbWindow_ApplyThemeForElement_System_Windows_FrameworkElement_System_String_" data-uid="MBFWpfToolkit.MbWindow.ApplyThemeForElement(System.Windows.FrameworkElement,System.String)">
+  ApplyThemeForElement(FrameworkElement, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Applies a theme to the specified framework element based on the provided theme name.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ApplyThemeForElement(FrameworkElement element, string darkOrLight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement">FrameworkElement</a></dt>
+    <dd>The framework element to which the theme will be applied.</dd>
+    <dt><code>darkOrLight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd>The name of the theme, typically indicating dark or light mode.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBFWpfToolkit_MbWindow_GetAllChildrenOfType_" data-uid="MBFWpfToolkit.MbWindow.GetAllChildrenOfType*"></a>
+
+  <h3 id="MBFWpfToolkit_MbWindow_GetAllChildrenOfType__1_System_Windows_DependencyObject_" data-uid="MBFWpfToolkit.MbWindow.GetAllChildrenOfType``1(System.Windows.DependencyObject)">
+  GetAllChildrenOfType&lt;T&gt;(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves all children of a specified type from a given dependency object in the visual tree.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; GetAllChildrenOfType&lt;T&gt;(DependencyObject parent) where T : DependencyObject</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject">DependencyObject</a></dt>
+    <dd>The parent dependency object to search within.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd>The type of children to find.</dd>
+  </dl>
+
+
+
+
+
+
+
+
 
 
   <a id="MBFWpfToolkit_MbWindow_GetPrimaryBrush_" data-uid="MBFWpfToolkit.MbWindow.GetPrimaryBrush*"></a>
 
   <h3 id="MBFWpfToolkit_MbWindow_GetPrimaryBrush" data-uid="MBFWpfToolkit.MbWindow.GetPrimaryBrush">
   GetPrimaryBrush()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Gets the primary brush color.</div>
@@ -790,7 +1006,7 @@ This allows consistent styling and resource reuse throughout the application.</d
 
   <h3 id="MBFWpfToolkit_MbWindow_InitializeWindow" data-uid="MBFWpfToolkit.MbWindow.InitializeWindow">
   InitializeWindow()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Performs static initialization for the <a class="xref" href="MBFWpfToolkit.MbWindow.html">MbWindow</a>.
@@ -814,15 +1030,92 @@ and ensures shared resources are loaded into <a class="xref" href="MBFWpfToolkit
 
 
 
+  <a id="MBFWpfToolkit_MbWindow_OnPropertyChanged_" data-uid="MBFWpfToolkit.MbWindow.OnPropertyChanged*"></a>
+
+  <h3 id="MBFWpfToolkit_MbWindow_OnPropertyChanged_System_String_" data-uid="MBFWpfToolkit.MbWindow.OnPropertyChanged(System.String)">
+  OnPropertyChanged(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Invoked when a property value changes.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnPropertyChanged(string? propertyName = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd>The name of the property that changed. Automatically set by the caller if not supplied.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBFWpfToolkit_MbWindow_SetField_" data-uid="MBFWpfToolkit.MbWindow.SetField*"></a>
+
+  <h3 id="MBFWpfToolkit_MbWindow_SetField__1___0____0_System_String_" data-uid="MBFWpfToolkit.MbWindow.SetField``1(``0@,``0,System.String)">
+  SetField&lt;T&gt;(ref T, T, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Updates the specified field with a new value and raises the PropertyChanged event if the value changes.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool SetField&lt;T&gt;(ref T field, T value, string? propertyName = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <span class="xref">T</span></dt>
+    <dd>A reference to the field being updated.</dd>
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd>The new value to assign to the field.</dd>
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd>The name of the property. This parameter is optional and is automatically supplied by the CallerMemberName attribute.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd>True if the field value was updated; otherwise, false.</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd>The type of the field and value.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="MBFWpfToolkit_MbWindow_ShowSprite_" data-uid="MBFWpfToolkit.MbWindow.ShowSprite*"></a>
 
   <h3 id="MBFWpfToolkit_MbWindow_ShowSprite" data-uid="MBFWpfToolkit.MbWindow.ShowSprite">
   ShowSprite()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Displays the <a class="xref" href="MBFWpfToolkit.Controls.MicroBimSprite.html">MicroBimSprite</a> overlay window (e.g., a floating mascot or animation).
-Stores the instance internally and calls its <code>Show()</code> method to render it on screen.</div>
+  <div class="markdown level1 summary">Displays the <a class="xref" href="MBFWpfToolkit.Controls.MicroBimSprite.html">MicroBimSprite</a> overlay window, which can act as a floating mascot
+or animation on the screen. Initializes an instance of the <a class="xref" href="MBFWpfToolkit.Controls.MicroBimSprite.html">MicroBimSprite</a>,
+stores it internally, and invokes its <code>Show()</code> method to render it.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -834,6 +1127,40 @@ Stores the instance internally and calls its <code>Show()</code> method to rende
 
 
 
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="MBFWpfToolkit_MbWindow_PropertyChanged" data-uid="MBFWpfToolkit.MbWindow.PropertyChanged">
+  PropertyChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Occurs when a property value changes.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PropertyChangedEventHandler PropertyChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventhandler">PropertyChangedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

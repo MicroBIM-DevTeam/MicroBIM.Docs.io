@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MbViewUtils | MIcroBIM Docs ">
       
-      <meta name="description" content="Provides utility methods for interacting with Revit views, including view type checking and zooming to elements.">
+      <meta name="description" content="Provides utility methods for working with Revit views, including graphical view checks, zooming to elements, creating temporary 3D views, and managing view isolation.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Data_Utils_MbViewUtils" data-uid="MBF.Revit.Data.Utils.MbViewUtils" class="text-break">
-Class MbViewUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
+Class MbViewUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,11 +97,13 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
   <dl><dt>Assembly</dt><dd>MBF.Revit.Data.dll</dd></dl>
   </div>
 
-  <div class="markdown summary">Provides utility methods for interacting with Revit views, including view type checking and zooming to elements.</div>
+  <div class="markdown summary">Provides utility methods for working with Revit views, including graphical view checks, zooming to elements,
+creating temporary 3D views, and managing view isolation.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MbViewUtils</code></pre>
+    <pre><code class="lang-csharp hljs">[LogAspect]
+public class MbViewUtils</code></pre>
   </div>
 
 
@@ -146,6 +148,11 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <h2 id="MBF_Revit_Data_Utils_MbViewUtils_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">This class contains static methods designed to simplify common operations related to Revit views. It
+            includes functionality for determining view types, manipulating graphical views, and creating or managing temporary
+            3D views. These utilities are intended to streamline workflows in Revit add-ins and enhance user interaction with
+            views.</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -156,7 +163,7 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="MBF_Revit_Data_Utils_MbViewUtils__ctor" data-uid="MBF.Revit.Data.Utils.MbViewUtils.#ctor">
   MbViewUtils()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -186,10 +193,10 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="MBF_Revit_Data_Utils_MbViewUtils_Create3DView_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Data.Utils.MbViewUtils.Create3DView(Autodesk.Revit.DB.Document)">
   Create3DView(Document)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Creates a new isometric 3D view named "Temp3DMBFire".</div>
+  <div class="markdown level1 summary">Creates a new isometric 3D view in the specified document.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -199,13 +206,20 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>doc</code> <span class="xref">Document</span></dt>
-    <dd>The Revit document.</dd>
+    <dd>The Revit document in which the 3D view will be created. Cannot be null.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<span class="xref">View3D</span>&gt;</dt>
-    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> indicating success or failure.</dd>
+    <dd><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing the result of the operation:
+<ul><li>
+            <b>Success:</b> Returns a successful <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing the newly created
+            <span class="xref">Autodesk.Revit.DB.View3D</span>.
+        </li><li>
+            <b>Failure:</b> Returns a failed <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> with an error message if:
+            <ul><li>No 3D view type is found to copy from.</li><li>The <span class="xref">Autodesk.Revit.DB.ViewFamilyType</span> could not be retrieved.</li><li>Failure to create the 3D view.</li></ul>
+        </li></ul></dd>
   </dl>
 
 
@@ -214,6 +228,10 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbViewUtils_Create3DView_Autodesk_Revit_DB_Document__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method attempts to create a new isometric 3D view by copying the settings from an existing
+non-template 3D view in the document. The new view is named "Temp3DMBFire" and has its detail level set to
+ViewDetailLevel.Fine.</div>
 
 
 
@@ -222,7 +240,7 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="MBF_Revit_Data_Utils_MbViewUtils_EnsureTemp3DViewIsOpen_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen(Autodesk.Revit.DB.Document)">
   EnsureTemp3DViewIsOpen(Document)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Creates and opens the temporary 3D view if it's not already opened in the UI.</div>
@@ -253,10 +271,10 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="MBF_Revit_Data_Utils_MbViewUtils_GetAllPlanViews_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews(Autodesk.Revit.DB.Document)">
   GetAllPlanViews(Document)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Gets all non-template plan views in the document.</div>
+  <div class="markdown level1 summary">Retrieves all non-template plan views from the specified Revit document.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -266,13 +284,14 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>doc</code> <span class="xref">Document</span></dt>
-    <dd>The Revit document.</dd>
+    <dd>The Revit document from which to retrieve the plan views. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">ViewPlan</span>&gt;</dt>
-    <dd>A list of plan views.</dd>
+    <dd>A list of <span class="xref">Autodesk.Revit.DB.ViewPlan</span> objects representing all non-template plan views in the document.  Returns an empty
+            list if no such views are found.</dd>
   </dl>
 
 
@@ -289,10 +308,10 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="MBF_Revit_Data_Utils_MbViewUtils_GetAllThreeDViews_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews(Autodesk.Revit.DB.Document)">
   GetAllThreeDViews(Document)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Gets all non-template 3D views in the document.</div>
+  <div class="markdown level1 summary">Retrieves all 3D views in the specified Revit document that are not templates.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -302,13 +321,14 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>doc</code> <span class="xref">Document</span></dt>
-    <dd>The Revit document.</dd>
+    <dd>The Revit document from which to retrieve the 3D views. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">View3D</span>&gt;</dt>
-    <dd>A list of 3D views.</dd>
+    <dd>A list of <span class="xref">Autodesk.Revit.DB.View3D</span> objects representing all non-template 3D views in the document. Returns an empty list
+            if no such views are found.</dd>
   </dl>
 
 
@@ -325,10 +345,11 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="MBF_Revit_Data_Utils_MbViewUtils_GetOrCreateTemp3D_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D(Autodesk.Revit.DB.Document)">
   GetOrCreateTemp3D(Document)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Retrieves a temporary 3D view named "Temp3DMBFire". If it doesn't exist, it will be created.</div>
+  <div class="markdown level1 summary">Retrieves an existing 3D view named "Temp3DMBFire" from the specified document,  or creates a new one if it does not
+exist.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -338,13 +359,14 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>doc</code> <span class="xref">Document</span></dt>
-    <dd>The current Revit document.</dd>
+    <dd>The <span class="xref">Autodesk.Revit.DB.Document</span> from which to retrieve or create the 3D view.  This parameter cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<span class="xref">View3D</span>&gt;</dt>
-    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing the view or error details.</dd>
+    <dd>A <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing the 3D view. If a view named "Temp3DMBFire" exists,  it is returned;
+            otherwise, a new 3D view is created and returned.</dd>
   </dl>
 
 
@@ -353,34 +375,39 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbViewUtils_GetOrCreateTemp3D_Autodesk_Revit_DB_Document__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method first searches for an existing 3D view with the name "Temp3DMBFire".  If found, it
+            returns the existing view wrapped in a successful <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a>.  If no such view exists, a new 3D view
+            is created and returned.</div>
 
 
 
 
-  <a id="MBF_Revit_Data_Utils_MbViewUtils_GetTemp3D_NoTransaction_" data-uid="MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction*"></a>
+  <a id="MBF_Revit_Data_Utils_MbViewUtils_GetTemp3DNoTransaction_" data-uid="MBF.Revit.Data.Utils.MbViewUtils.GetTemp3DNoTransaction*"></a>
 
-  <h3 id="MBF_Revit_Data_Utils_MbViewUtils_GetTemp3D_NoTransaction_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Data.Utils.MbViewUtils.GetTemp3D_NoTransaction(Autodesk.Revit.DB.Document)">
-  GetTemp3D_NoTransaction(Document)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <h3 id="MBF_Revit_Data_Utils_MbViewUtils_GetTemp3DNoTransaction_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Data.Utils.MbViewUtils.GetTemp3DNoTransaction(Autodesk.Revit.DB.Document)">
+  GetTemp3DNoTransaction(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Gets the temporary 3D view without opening or switching views.</div>
+  <div class="markdown level1 summary">Retrieves a temporary 3D view for the specified document without initiating a transaction.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static MbResult&lt;View3D&gt; GetTemp3D_NoTransaction(Document doc)</code></pre>
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;View3D&gt; GetTemp3DNoTransaction(Document doc)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>doc</code> <span class="xref">Document</span></dt>
-    <dd>The Revit document.</dd>
+    <dd>The document for which the temporary 3D view is to be retrieved or created. Cannot be null.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<span class="xref">View3D</span>&gt;</dt>
-    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing the view or an error message.</dd>
+    <dd>A <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing the temporary 3D view if successful, or an error result if the operation
+            fails.</dd>
   </dl>
 
 
@@ -397,10 +424,10 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="MBF_Revit_Data_Utils_MbViewUtils_IsGraphicalView_Autodesk_Revit_DB_View_" data-uid="MBF.Revit.Data.Utils.MbViewUtils.IsGraphicalView(Autodesk.Revit.DB.View)">
   IsGraphicalView(View)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Determines if a given view is a graphical view (e.g., plan, section, 3D).</div>
+  <div class="markdown level1 summary">Determines whether the specified <span class="xref">Autodesk.Revit.DB.View</span> represents a graphical view.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -410,13 +437,14 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>view</code> <span class="xref">View</span></dt>
-    <dd>The <span class="xref">Autodesk.Revit.DB.View</span> to check.</dd>
+    <dd>The <span class="xref">Autodesk.Revit.DB.View</span> to evaluate. Must not be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><code>true</code> if the view is a graphical type (e.g., FloorPlan, 3D, Section); otherwise, <code>false</code>.</dd>
+    <dd><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <code class="paramref">view</code> is a graphical view, such as a floor plan, section, or 3D
+            view; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</dd>
   </dl>
 
 
@@ -425,6 +453,80 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbViewUtils_IsGraphicalView_Autodesk_Revit_DB_View__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">Graphical views include types such as floor plans, ceiling plans, sections, elevations, 3D views,
+            drafting views, area plans, engineering plans, details, and legends. Non-graphical views include schedules, reports,
+            and undefined views.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbViewUtils_ResetTemporaryIsolate_" data-uid="MBF.Revit.Data.Utils.MbViewUtils.ResetTemporaryIsolate*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbViewUtils_ResetTemporaryIsolate" data-uid="MBF.Revit.Data.Utils.MbViewUtils.ResetTemporaryIsolate">
+  ResetTemporaryIsolate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Resets the temporary isolate mode for the active view, if it is currently enabled.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ResetTemporaryIsolate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbViewUtils_ResetTemporaryIsolate_remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method checks if the active view has temporary isolate mode enabled and, if so, disables it. If
+            no active view exists or temporary isolate mode is not active, the method performs no action.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbViewUtils_TemporarilyIsolateElement_" data-uid="MBF.Revit.Data.Utils.MbViewUtils.TemporarilyIsolateElement*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbViewUtils_TemporarilyIsolateElement_Autodesk_Revit_DB_Element_" data-uid="MBF.Revit.Data.Utils.MbViewUtils.TemporarilyIsolateElement(Autodesk.Revit.DB.Element)">
+  TemporarilyIsolateElement(Element)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Temporarily isolates the specified element in the active graphical view.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TemporarilyIsolateElement(Element element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <span class="xref">Element</span></dt>
+    <dd>The element to isolate. Must belong to the document of the active view.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the element was successfully isolated; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbViewUtils_TemporarilyIsolateElement_Autodesk_Revit_DB_Element__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method isolates the specified element temporarily in the active view of the document.  Isolation
+            is only supported in graphical views. If the active view is not graphical, the method  displays a warning message
+            and returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>. If an error occurs during the  isolation process, an error message is
+            displayed, and the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</div>
 
 
 
@@ -433,11 +535,10 @@ Class MbViewUtils  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="MBF_Revit_Data_Utils_MbViewUtils_ZoomToElement_Autodesk_Revit_DB_Element_" data-uid="MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.Element)">
   ZoomToElement(Element)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Zooms into a specified <span class="xref">Element</span> in the currently active view.
-Displays a message if the view is not graphical or the bounding box is invalid.</div>
+  <div class="markdown level1 summary">Zooms and centers the active view on the specified element's bounding box.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -447,7 +548,7 @@ Displays a message if the view is not graphical or the bounding box is invalid.<
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>element</code> <span class="xref">Element</span></dt>
-    <dd>The Revit element to zoom to.</dd>
+    <dd>The element to zoom to. Must belong to the active document and have a valid bounding box in the active view.</dd>
   </dl>
 
 
@@ -457,6 +558,46 @@ Displays a message if the view is not graphical or the bounding box is invalid.<
 
 
 
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbViewUtils_ZoomToElement_Autodesk_Revit_DB_Element__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method adjusts the active view to focus on the bounding box of the specified element.  If the
+            bounding box cannot be retrieved or the active view is not a graphical view (e.g., plan, 3D view, section, or
+            legend),  an error message is displayed, and no action is taken. The method also optionally selects the element in
+            the active view.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbViewUtils_ZoomToElement_" data-uid="MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbViewUtils_ZoomToElement_Autodesk_Revit_DB_ElementId_" data-uid="MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.ElementId)">
+  ZoomToElement(ElementId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Zooms and centers the active view on the specified element by its <span class="xref">ElementId</span>.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ZoomToElement(ElementId elementId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elementId</code> <span class="xref">ElementId</span></dt>
+    <dd>The <span class="xref">ElementId</span> of the element to zoom to. Must belong to the active document.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbViewUtils_ZoomToElement_Autodesk_Revit_DB_ElementId__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method adjusts the active view to focus on the bounding box of the specified element. If the bounding box 
+cannot be retrieved, an error message is displayed. The method works only in graphical views such as plan, 3D,
+section, or legend views. If the active view is not a supported graphical view, an error message is displayed.</div>
 
 
 
@@ -465,11 +606,10 @@ Displays a message if the view is not graphical or the bounding box is invalid.<
 
   <h3 id="MBF_Revit_Data_Utils_MbViewUtils_ZoomToElement_Autodesk_Revit_DB_FamilyInstance_" data-uid="MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.FamilyInstance)">
   ZoomToElement(FamilyInstance)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/8bd3dcbe83eb4bd0f9f991b91dc095ac3d5ca9f4/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbViewUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Zooms into a specified <span class="xref">FamilyInstance</span> element in the currently active view.
-Displays a message if the view is not graphical or the bounding box is invalid.</div>
+  <div class="markdown level1 summary">Zooms and centers the active view on the specified <span class="xref">FamilyInstance</span> element.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -479,7 +619,7 @@ Displays a message if the view is not graphical or the bounding box is invalid.<
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>instance</code> <span class="xref">FamilyInstance</span></dt>
-    <dd>The family instance to zoom to.</dd>
+    <dd>The <span class="xref">FamilyInstance</span> to zoom to. Must belong to the active document.</dd>
   </dl>
 
 
@@ -489,6 +629,11 @@ Displays a message if the view is not graphical or the bounding box is invalid.<
 
 
 
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbViewUtils_ZoomToElement_Autodesk_Revit_DB_FamilyInstance__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method adjusts the active view to focus on the bounding box of the specified element.  If
+            the bounding box cannot be retrieved, an error message is displayed. The method works  only in graphical views
+            such as plan, 3D, section, or legend views. If the active view is  not a supported graphical view, an error
+            message is displayed.</div>
 
 
 

@@ -89,7 +89,7 @@
 
 
   <h1 id="MBFWpfToolkit_Controls_Help_HelpWizard" data-uid="MBFWpfToolkit.Controls.Help.HelpWizard" class="text-break">
-Class HelpWizard  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Controls/Help/HelpWizard.xaml"><i class="bi bi-code-slash"></i></a>
+Class HelpWizard  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Controls/Help/HelpWizard.xaml"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -101,7 +101,7 @@ Class HelpWizard  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class HelpWizard : MbWindow, IComponentConnector</code></pre>
+    <pre><code class="lang-csharp hljs">public class HelpWizard : MbWindow, INotifyPropertyChanged, IComponentConnector</code></pre>
   </div>
 
 
@@ -119,6 +119,7 @@ Class HelpWizard  <a class="header-action link-secondary" title="View source" hr
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.markup.icomponentconnector">IComponentConnector</a></div>
     </dd>
   </dl>
@@ -155,6 +156,12 @@ Class HelpWizard  <a class="header-action link-secondary" title="View source" hr
       <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ShowPluginVersionProperty">MbWindow.ShowPluginVersionProperty</a>
     </div>
     <div>
+      <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_GetAllChildrenOfType__1_System_Windows_DependencyObject_">MbWindow.GetAllChildrenOfType&lt;T&gt;(DependencyObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_ApplyThemeForElement_System_Windows_FrameworkElement_System_String_">MbWindow.ApplyThemeForElement(FrameworkElement, string)</a>
+    </div>
+    <div>
       <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_InitializeWindow">MbWindow.InitializeWindow()</a>
     </div>
     <div>
@@ -162,6 +169,24 @@ Class HelpWizard  <a class="header-action link-secondary" title="View source" hr
     </div>
     <div>
       <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_GetPrimaryBrush">MbWindow.GetPrimaryBrush()</a>
+    </div>
+    <div>
+      <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_OnPropertyChanged_System_String_">MbWindow.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_SetField__1___0____0_System_String_">MbWindow.SetField&lt;T&gt;(ref T, T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_IsDark">MbWindow.IsDark</a>
+    </div>
+    <div>
+      <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_SelectedLanguage">MbWindow.SelectedLanguage</a>
+    </div>
+    <div>
+      <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_SupportedLanguages">MbWindow.SupportedLanguages</a>
+    </div>
+    <div>
+      <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_Item_System_String_">MbWindow.this[string]</a>
     </div>
     <div>
       <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_IsThemeToggleVisible">MbWindow.IsThemeToggleVisible</a>
@@ -193,6 +218,9 @@ Class HelpWizard  <a class="header-action link-secondary" title="View source" hr
     <div>
       <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_MainResources">MbWindow.MainResources</a>
     </div>
+    <div>
+      <a class="xref" href="MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_PropertyChanged">MbWindow.PropertyChanged</a>
+    </div>
   </dd></dl>
 
 
@@ -208,7 +236,7 @@ Class HelpWizard  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="MBFWpfToolkit_Controls_Help_HelpWizard__ctor_MBFWpfToolkit_MbWindow_" data-uid="MBFWpfToolkit.Controls.Help.HelpWizard.#ctor(MBFWpfToolkit.MbWindow)">
   HelpWizard(MbWindow)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Controls/Help/HelpWizard.xaml.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Controls/Help/HelpWizard.xaml.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Initializes a new instance of the <a class="xref" href="MBFWpfToolkit.Controls.Help.HelpWizard.html">HelpWizard</a> class.</div>
@@ -243,7 +271,7 @@ Class HelpWizard  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="MBFWpfToolkit_Controls_Help_HelpWizard_CurrentStep" data-uid="MBFWpfToolkit.Controls.Help.HelpWizard.CurrentStep">
   CurrentStep
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Controls/Help/HelpWizard.xaml.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Controls/Help/HelpWizard.xaml.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Gets or sets the index of the currently active help step.</div>
@@ -274,7 +302,7 @@ Class HelpWizard  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="MBFWpfToolkit_Controls_Help_HelpWizard_Steps" data-uid="MBFWpfToolkit.Controls.Help.HelpWizard.Steps">
   Steps
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Controls/Help/HelpWizard.xaml.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Controls/Help/HelpWizard.xaml.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Gets or sets the list of all help steps.</div>
@@ -309,7 +337,7 @@ Class HelpWizard  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="MBFWpfToolkit_Controls_Help_HelpWizard_InitializeComponent" data-uid="MBFWpfToolkit.Controls.Help.HelpWizard.InitializeComponent">
   InitializeComponent()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/2ea7ba20d5b315374ce2372493f840752a607030/Controls/Help/HelpWizard.xaml"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Controls/Help/HelpWizard.xaml"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">InitializeComponent</div>

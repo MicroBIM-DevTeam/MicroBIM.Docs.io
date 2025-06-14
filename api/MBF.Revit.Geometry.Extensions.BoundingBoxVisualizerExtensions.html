@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class BoundingBoxVisualizerExtensions | MIcroBIM Docs ">
       
-      <meta name="description" content="Extension methods for visualizing BoundingBoxXYZ objects as 2D outlines in the XY plane using DirectShape.">
+      <meta name="description" content="Provides extension methods for visualizing bounding boxes as 2D outlines in a Revit document.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Geometry_Extensions_BoundingBoxVisualizerExtensions" data-uid="MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions" class="text-break">
-Class BoundingBoxVisualizerExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/BoundingBoxVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
+Class BoundingBoxVisualizerExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/BoundingBoxVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,11 +97,12 @@ Class BoundingBoxVisualizerExtensions  <a class="header-action link-secondary" t
   <dl><dt>Assembly</dt><dd>MBF.Revit.Geometry.dll</dd></dl>
   </div>
 
-  <div class="markdown summary">Extension methods for visualizing BoundingBoxXYZ objects as 2D outlines in the XY plane using DirectShape.</div>
+  <div class="markdown summary">Provides extension methods for visualizing bounding boxes as 2D outlines in a Revit document.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class BoundingBoxVisualizerExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">[LogAspect]
+public static class BoundingBoxVisualizerExtensions</code></pre>
   </div>
 
 
@@ -146,6 +147,10 @@ Class BoundingBoxVisualizerExtensions  <a class="header-action link-secondary" t
 
 
 
+  <h2 id="MBF_Revit_Geometry_Extensions_BoundingBoxVisualizerExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">This class includes methods to visualize single or multiple bounding boxes as 2D shapes in the
+specified Revit document. The visualizations are created as red outlines by default, but an optional color can be
+specified.</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -156,10 +161,10 @@ Class BoundingBoxVisualizerExtensions  <a class="header-action link-secondary" t
 
   <h3 id="MBF_Revit_Geometry_Extensions_BoundingBoxVisualizerExtensions_VisualizeBoundingBox2D_Autodesk_Revit_DB_BoundingBoxXYZ_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_" data-uid="MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D(Autodesk.Revit.DB.BoundingBoxXYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)">
   VisualizeBoundingBox2D(BoundingBoxXYZ, Document, Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/BoundingBoxVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/BoundingBoxVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Visualizes a single bounding box as a 2D red outline in the specified Revit document.</div>
+  <div class="markdown level1 summary">Visualizes a 2D representation of the specified <span class="xref">Autodesk.Revit.DB.BoundingBoxXYZ</span> in the given Revit document.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,11 +174,12 @@ Class BoundingBoxVisualizerExtensions  <a class="header-action link-secondary" t
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>boundingBox</code> <span class="xref">BoundingBoxXYZ</span></dt>
-    <dd>The bounding box to visualize.</dd>
+    <dd>The 2D bounding box to visualize. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
     <dt><code>doc</code> <span class="xref">Document</span></dt>
-    <dd>The Revit document where the shape will be drawn.</dd>
+    <dd>The Revit document where the bounding box will be visualized. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
     <dt><code>color</code> <span class="xref">Color</span></dt>
-    <dd>Optional color; defaults to red if null.</dd>
+    <dd>The color to use for the visualization. If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, the default color is red (RGB:
+255, 0, 0).</dd>
   </dl>
 
 
@@ -183,6 +189,10 @@ Class BoundingBoxVisualizerExtensions  <a class="header-action link-secondary" t
 
 
 
+  <h4 class="section" id="MBF_Revit_Geometry_Extensions_BoundingBoxVisualizerExtensions_VisualizeBoundingBox2D_Autodesk_Revit_DB_BoundingBoxXYZ_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method creates a 2D visualization of the bounding box as a direct shape in the specified
+document.  The visualization is created within a transaction, which is started and committed by this
+method.</div>
 
 
 
@@ -191,10 +201,10 @@ Class BoundingBoxVisualizerExtensions  <a class="header-action link-secondary" t
 
   <h3 id="MBF_Revit_Geometry_Extensions_BoundingBoxVisualizerExtensions_VisualizeBoundingBoxes2D_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_BoundingBoxXYZ__Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_" data-uid="MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBoxes2D(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.BoundingBoxXYZ},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)">
   VisualizeBoundingBoxes2D(IEnumerable&lt;BoundingBoxXYZ&gt;, Document, Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/BoundingBoxVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/BoundingBoxVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Visualizes multiple bounding boxes as 2D red outlines in the specified Revit document.</div>
+  <div class="markdown level1 summary">Visualizes a collection of 2D bounding boxes in the specified Revit document.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -204,11 +214,14 @@ Class BoundingBoxVisualizerExtensions  <a class="header-action link-secondary" t
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>boundingBoxes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">BoundingBoxXYZ</span>&gt;</dt>
-    <dd>List of bounding boxes to visualize.</dd>
+    <dd>A collection of <span class="xref">Autodesk.Revit.DB.BoundingBoxXYZ</span> objects representing the 2D bounding boxes to
+visualize.</dd>
     <dt><code>doc</code> <span class="xref">Document</span></dt>
-    <dd>The Revit document where the shapes will be drawn.</dd>
+    <dd>The <span class="xref">Autodesk.Revit.DB.Document</span> in which the bounding boxes will be visualized. This cannot be
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
     <dt><code>color</code> <span class="xref">Color</span></dt>
-    <dd>Optional color; defaults to red if null.</dd>
+    <dd>An optional <span class="xref">Autodesk.Revit.DB.Color</span> to use for the bounding box visualization. If not specified, the default color is
+red (RGB: 255, 0, 0).</dd>
   </dl>
 
 
@@ -218,6 +231,9 @@ Class BoundingBoxVisualizerExtensions  <a class="header-action link-secondary" t
 
 
 
+  <h4 class="section" id="MBF_Revit_Geometry_Extensions_BoundingBoxVisualizerExtensions_VisualizeBoundingBoxes2D_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_BoundingBoxXYZ__Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method creates 2D visual representations of the provided bounding boxes as direct shapes in the
+Revit document. If a bounding box in the collection is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, it will be skipped.</div>
 
 
 

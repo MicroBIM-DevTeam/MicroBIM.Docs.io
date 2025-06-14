@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Geometry_Extensions_CurveVisualizerExtensions" data-uid="MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions" class="text-break">
-Class CurveVisualizerExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
+Class CurveVisualizerExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -98,11 +98,13 @@ Class CurveVisualizerExtensions  <a class="header-action link-secondary" title="
   </div>
 
   <div class="markdown summary">Provides extension methods for visualizing <span class="xref">Autodesk.Revit.DB.Curve</span> instances as 2D geometry in Revit,
-either using <span class="xref">DirectShape</span> elements in model views or <span class="xref">Autodesk.Revit.DB.DetailCurve</span> elements in drafting views.</div>
+either using <span class="xref">DirectShape</span> elements in model views or <span class="xref">Autodesk.Revit.DB.DetailCurve</span> elements in drafting
+views.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class CurveVisualizerExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">[LogAspect]
+public static class CurveVisualizerExtensions</code></pre>
   </div>
 
 
@@ -157,10 +159,11 @@ either using <span class="xref">DirectShape</span> elements in model views or <s
 
   <h3 id="MBF_Revit_Geometry_Extensions_CurveVisualizerExtensions_CreateCurveWithDetailCurve_Autodesk_Revit_DB_Curve_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ViewDrafting_Autodesk_Revit_DB_Color_" data-uid="MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.CreateCurveWithDetailCurve(Autodesk.Revit.DB.Curve,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ViewDrafting,Autodesk.Revit.DB.Color)">
   CreateCurveWithDetailCurve(Curve, Document, ViewDrafting, Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Creates a <span class="xref">Autodesk.Revit.DB.DetailCurve</span> element in a <span class="xref">Autodesk.Revit.DB.ViewDrafting</span> to represent the given <span class="xref">Autodesk.Revit.DB.Curve</span>.</div>
+  <div class="markdown level1 summary">Creates a <span class="xref">Autodesk.Revit.DB.DetailCurve</span> element in a <span class="xref">Autodesk.Revit.DB.ViewDrafting</span> to represent the given
+<span class="xref">Autodesk.Revit.DB.Curve</span>.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -200,7 +203,7 @@ either using <span class="xref">DirectShape</span> elements in model views or <s
 
   <h3 id="MBF_Revit_Geometry_Extensions_CurveVisualizerExtensions_VisualizeCurve2D_Autodesk_Revit_DB_Curve_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_" data-uid="MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurve2D(Autodesk.Revit.DB.Curve,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)">
   VisualizeCurve2D(Curve, Document, Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Visualizes a single <span class="xref">Autodesk.Revit.DB.Curve</span> as 2D geometry using a <span class="xref">DirectShape</span> element
@@ -242,7 +245,7 @@ in the active view of the given Revit <code class="paramref">doc</code>.</div>
 
   <h3 id="MBF_Revit_Geometry_Extensions_CurveVisualizerExtensions_VisualizeCurves2D_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Curve__Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Color_" data-uid="MBF.Revit.Geometry.Extensions.CurveVisualizerExtensions.VisualizeCurves2D(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)">
   VisualizeCurves2D(IEnumerable&lt;Curve&gt;, Document, Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/9c6b4a8721404aab638aa9efec35cf27d404856b/Extensions/CurveVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/d84ac7f6567e9f2003616229b2569f565050e4de/Extensions/CurveVisualizerExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Visualizes a list of <span class="xref">Autodesk.Revit.DB.Curve</span> instances as 2D outlines using <span class="xref">DirectShape</span> elements
@@ -266,7 +269,7 @@ in the active view of the given Revit <code class="paramref">doc</code>.</div>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">DirectShape</span>&gt;&gt;</dt>
-    <dd>An MbResult&lt;List&lt;DirectShape&gt;&gt;:
+    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> where T is <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a>:
 <ul><li><b>Success:</b> Contains a list of created <span class="xref">DirectShape</span> elements.</li><li><b>Failure:</b> "Curve collection is null."</li><li><b>Failure:</b> "Document or active view is null."</li><li><b>Failure:</b> "Failed to visualize curves: [exception message]"</li></ul></dd>
   </dl>
 
