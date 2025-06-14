@@ -54,7 +54,7 @@ This document outlines the coding standards and collaboration practices for our 
 - Always include **XML documentation** for public members.
 - Use **expression-bodied members** for simple one-liners when appropriate.
 
-**Tools**: All code must be auto-formatted using the IDE’s code formatting tools (e.g., Visual Studio or Rider). Consider using `.editorconfig` to enforce formatting.
+**Tools**: All code must be auto-formatted using the IDE's code formatting tools (e.g., Visual Studio or Rider). Consider using `.editorconfig` to enforce formatting.
 
 ---
 
@@ -208,13 +208,10 @@ public static MbResult<ObservableCollection<FamilySymbol>> GetFamilyTypesByCateg
       return MbResult<ObservableCollection<FamilySymbol>>.Failure($"An error occurred: {ex.Message}");
   }
 }
+```
 
-⚠ Enforcement
+### ⚠ Enforcement
 Any method that involves possible failure or data lookup must use MbResult<T> instead of returning raw types or throwing exceptions directly.
-
-
-
-
 
 ---
 
@@ -222,12 +219,6 @@ Any method that involves possible failure or data lookup must use MbResult<T> in
 
 You can download the latest release of the `MicroBIM.Revit.Template` package below:
 
-<div style="margin-top: 1rem; margin-bottom: 1rem;">
-
 [![Download Now](https://img.shields.io/badge/Download-v1.2.0-blue?style=for-the-badge&logo=nuget&logoColor=white)](downloads/MicroBIM.Revit.Template.1.2.0.nupkg)
 
-</div>
-
 > 📁 Make sure the `.nupkg` file is placed inside the `downloads/` folder before building the docs.
-
----
