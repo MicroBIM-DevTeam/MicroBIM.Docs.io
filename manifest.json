@@ -2475,10 +2475,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "downloads/MicroBIM.Revit.Template.1.5.0.nupkg",
+      "source_relative_path": "downloads/MicroBIM.Revit.Template.1.6.0.nupkg",
       "output": {
         "resource": {
-          "relative_path": "downloads/MicroBIM.Revit.Template.1.5.0.nupkg"
+          "relative_path": "downloads/MicroBIM.Revit.Template.1.6.0.nupkg"
         }
       },
       "version": ""
