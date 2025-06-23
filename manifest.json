@@ -918,7 +918,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Data.Extensions.SpaceExtensions",
-      "Summary": "Provides extension methods for working with <xref href=\"Autodesk.Revit.DB.Mechanical.Space\" data-throw-if-not-resolved=\"false\"></xref> objects,  including retrieving boundary segments and\nvalidating the space."
+      "Summary": "Provides extension methods for working with <xref href=\"Autodesk.Revit.DB.Mechanical.Space\" data-throw-if-not-resolved=\"false\"></xref> objects,  including retrieving boundary segments\nand\nvalidating the space."
     },
     {
       "type": "ManagedReference",
@@ -1198,7 +1198,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBF.Revit.Data.Utils.PipePointType",
-      "Summary": "Reprepipents a specific point along a pipe, either at the start or the end."
+      "Summary": "Represents a specific point along a pipe, either at the start or the end."
     },
     {
       "type": "ManagedReference",
@@ -2098,20 +2098,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MBFWpfToolkit.Properties.Langs.Lang.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MBFWpfToolkit.Properties.Langs.Lang.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MBFWpfToolkit.Properties.Langs.Lang",
-      "Summary": "A strongly-typed resource class, for looking up localized strings, etc."
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MBFWpfToolkit.Properties.Langs.Lang_en.yml",
       "output": {
         ".html": {
@@ -2276,188 +2262,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "OnMethodBoundaryAspectCompile",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Revit.Extensions.Elements.PipeExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Revit.Extensions.Elements.PipeExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Revit.Extensions.Elements.PipeExtensions",
-      "Summary": "Provides extension methods for Pipe elements in Revit."
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Revit.Extensions.Elements.SpaceExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Revit.Extensions.Elements.SpaceExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Revit.Extensions.Elements.SpaceExtensions",
-      "Summary": "Provides extension methods for Space elements in Revit."
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Revit.Extensions.Elements.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Revit.Extensions.Elements.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Revit.Extensions.Elements",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Revit.Extensions.Extensions.CollectionExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Revit.Extensions.Extensions.CollectionExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Revit.Extensions.Extensions.CollectionExtensions",
-      "Summary": "Provides extension methods for working with collections."
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Revit.Extensions.Extensions.DocumentExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Revit.Extensions.Extensions.DocumentExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Revit.Extensions.Extensions.DocumentExtensions",
-      "Summary": "Provides extension methods for the Autodesk Revit API with the result pattern for better error handling."
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Revit.Extensions.Extensions.PipeExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Revit.Extensions.Extensions.PipeExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Revit.Extensions.Extensions.PipeExtensions",
-      "Summary": "Provides extension methods for Pipe elements in Revit."
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Revit.Extensions.Extensions.SpaceExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Revit.Extensions.Extensions.SpaceExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Revit.Extensions.Extensions.SpaceExtensions",
-      "Summary": "Provides extension methods for Space elements in Revit."
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Revit.Extensions.Extensions.ViewExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Revit.Extensions.Extensions.ViewExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Revit.Extensions.Extensions.ViewExtensions",
-      "Summary": "Provides extension methods for Revit views."
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Revit.Extensions.Extensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Revit.Extensions.Extensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Revit.Extensions.Extensions",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Revit.Extensions.Selections.SelectionExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Revit.Extensions.Selections.SelectionExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Revit.Extensions.Selections.SelectionExtensions",
-      "Summary": "Provides extension methods for retrieving selected elements of specific types from a <xref href=\"UIDocument\" data-throw-if-not-resolved=\"false\"></xref>."
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Revit.Extensions.Selections.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Revit.Extensions.Selections.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Revit.Extensions.Selections",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Revit.Extensions.Unit.MbUnitExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Revit.Extensions.Unit.MbUnitExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Revit.Extensions.Unit.MbUnitExtensions",
-      "Summary": "Provides utility methods and properties for working with Revit units,\nincluding conversion to and from internal units and determining document unit type."
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Revit.Extensions.Unit.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Revit.Extensions.Unit.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Revit.Extensions.Unit",
       "Summary": null
     },
     {

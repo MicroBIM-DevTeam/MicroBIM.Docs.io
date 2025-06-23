@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Data_SelectionFilters_HostOrLinkedCategorySelectionFilter" data-uid="MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter" class="text-break">
-Class HostOrLinkedCategorySelectionFilter  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs"><i class="bi bi-code-slash"></i></a>
+Class HostOrLinkedCategorySelectionFilter  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -156,7 +156,10 @@ public class HostOrLinkedCategorySelectionFilter : ISelectionFilter</code></pre>
 
   <h2 id="MBF_Revit_Data_SelectionFilters_HostOrLinkedCategorySelectionFilter_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>Error messages:</p>
-<ul><li>If <code>categories</code> is <code>null</code> in the constructor, an empty list is used.</li><li>If <code>_revitLinkInstance</code> is <code>null</code> in <a class="xref" href="MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.html#MBF_Revit_Data_SelectionFilters_HostOrLinkedCategorySelectionFilter_AllowReference_Autodesk_Revit_DB_Reference_Autodesk_Revit_DB_XYZ_">AllowReference(Reference, XYZ)</a>, returns <code>false</code>.</li><li>If <code>linkedDoc</code> is <code>null</code> in <a class="xref" href="MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.html#MBF_Revit_Data_SelectionFilters_HostOrLinkedCategorySelectionFilter_AllowReference_Autodesk_Revit_DB_Reference_Autodesk_Revit_DB_XYZ_">AllowReference(Reference, XYZ)</a>, returns <code>false</code>.</li></ul></div>
+<ul><li>If <code>categories</code> is <code>null</code> in the constructor, an empty list is used.</li><li>
+            If <code>_revitLinkInstance</code> is <code>null</code> in <a class="xref" href="MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.html#MBF_Revit_Data_SelectionFilters_HostOrLinkedCategorySelectionFilter_AllowReference_Autodesk_Revit_DB_Reference_Autodesk_Revit_DB_XYZ_">AllowReference(Reference, XYZ)</a>, returns
+            <code>false</code>.
+        </li><li>If <code>linkedDoc</code> is <code>null</code> in <a class="xref" href="MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.html#MBF_Revit_Data_SelectionFilters_HostOrLinkedCategorySelectionFilter_AllowReference_Autodesk_Revit_DB_Reference_Autodesk_Revit_DB_XYZ_">AllowReference(Reference, XYZ)</a>, returns <code>false</code>.</li></ul></div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -167,7 +170,7 @@ public class HostOrLinkedCategorySelectionFilter : ISelectionFilter</code></pre>
 
   <h3 id="MBF_Revit_Data_SelectionFilters_HostOrLinkedCategorySelectionFilter__ctor_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Category__" data-uid="MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.#ctor(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Category})">
   HostOrLinkedCategorySelectionFilter(IEnumerable&lt;Category&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Initializes a new instance of the <a class="xref" href="MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.html">HostOrLinkedCategorySelectionFilter</a> class.</div>
@@ -204,7 +207,7 @@ public class HostOrLinkedCategorySelectionFilter : ISelectionFilter</code></pre>
 
   <h3 id="MBF_Revit_Data_SelectionFilters_HostOrLinkedCategorySelectionFilter_AllowElement_Autodesk_Revit_DB_Element_" data-uid="MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowElement(Autodesk.Revit.DB.Element)">
   AllowElement(Element)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Determines whether an element can be selected directly.</div>
@@ -223,7 +226,8 @@ public class HostOrLinkedCategorySelectionFilter : ISelectionFilter</code></pre>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><code>true</code> if it's a host element in the allowed categories or a <span class="xref">Autodesk.Revit.DB.RevitLinkInstance</span>; otherwise, <code>false</code>.</dd>
+    <dd><code>true</code> if it's a host element in the allowed categories or a <span class="xref">Autodesk.Revit.DB.RevitLinkInstance</span>; otherwise,
+<code>false</code>.</dd>
   </dl>
 
 
@@ -240,7 +244,7 @@ public class HostOrLinkedCategorySelectionFilter : ISelectionFilter</code></pre>
 
   <h3 id="MBF_Revit_Data_SelectionFilters_HostOrLinkedCategorySelectionFilter_AllowReference_Autodesk_Revit_DB_Reference_Autodesk_Revit_DB_XYZ_" data-uid="MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)">
   AllowReference(Reference, XYZ)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Determines whether a reference (e.g. in a linked file) is selectable.</div>

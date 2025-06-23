@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Data_Utils_EntityUtils" data-uid="MBF.Revit.Data.Utils.EntityUtils" class="text-break">
-Class EntityUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/EntityUtils.cs"><i class="bi bi-code-slash"></i></a>
+Class EntityUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/EntityUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -154,8 +154,8 @@ with varying unit systems. It includes methods for retrieving and setting field 
 <span class="xref">Autodesk.Revit.DB.XYZ</span> and <span class="xref">ElementId</span> types. This class is designed for use in scenarios where precise
 handling of units and field data is required.
 <p>
-<b>Error messages:</b>
-<ul><li>Entity or field cannot be null.</li><li>Value cannot be null.</li><li>Failed to retrieve or set the specified field value.</li></ul>
+    <b>Error messages:</b>
+    <ul><li>Entity or field cannot be null.</li><li>Value cannot be null.</li><li>Failed to retrieve or set the specified field value.</li></ul>
 </div>
 
 
@@ -167,7 +167,7 @@ handling of units and field data is required.
 
   <h3 id="MBF_Revit_Data_Utils_EntityUtils_GetElementId_Autodesk_Revit_DB_ExtensibleStorage_Entity_Autodesk_Revit_DB_ExtensibleStorage_Field_" data-uid="MBF.Revit.Data.Utils.EntityUtils.GetElementId(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field)">
   GetElementId(Entity, Field)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/EntityUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/EntityUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Retrieves the <span class="xref">ElementId</span> value associated with the specified <code class="paramref">field</code> in the given
@@ -181,7 +181,8 @@ handling of units and field data is required.
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>entity</code> <span class="xref">Entity</span></dt>
-    <dd>The <span class="xref">Autodesk.Revit.DB.ExtensibleStorage.Entity</span> from which to retrieve the <span class="xref">ElementId</span> value. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
+    <dd>The <span class="xref">Autodesk.Revit.DB.ExtensibleStorage.Entity</span> from which to retrieve the <span class="xref">ElementId</span> value. Cannot be
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
     <dt><code>field</code> <span class="xref">Field</span></dt>
     <dd>The <span class="xref">Autodesk.Revit.DB.ExtensibleStorage.Field</span> that identifies the data to retrieve. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
   </dl>
@@ -189,7 +190,8 @@ handling of units and field data is required.
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">ElementId</span></dt>
-    <dd>The <span class="xref">ElementId</span> value associated with the specified <code class="paramref">field</code> in the <code class="paramref">entity</code>.</dd>
+    <dd>The <span class="xref">ElementId</span> value associated with the specified <code class="paramref">field</code> in the
+<code class="paramref">entity</code>.</dd>
   </dl>
 
 
@@ -202,8 +204,8 @@ handling of units and field data is required.
   <div class="markdown level1 remarks">The method retrieves the <span class="xref">ElementId</span> value using the appropriate unit system based on the
 runtime environment.
 <p>
-<b>Error messages:</b>
-<ul><li>Entity or field cannot be null.</li><li>Failed to retrieve the ElementId value from the entity.</li></ul>
+    <b>Error messages:</b>
+    <ul><li>Entity or field cannot be null.</li><li>Failed to retrieve the ElementId value from the entity.</li></ul>
 </div>
 
 
@@ -213,7 +215,7 @@ runtime environment.
 
   <h3 id="MBF_Revit_Data_Utils_EntityUtils_GetXYZ_Autodesk_Revit_DB_ExtensibleStorage_Entity_Autodesk_Revit_DB_ExtensibleStorage_Field_" data-uid="MBF.Revit.Data.Utils.EntityUtils.GetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field)">
   GetXYZ(Entity, Field)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/EntityUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/EntityUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Retrieves the <span class="xref">Autodesk.Revit.DB.XYZ</span> value of the specified field from the given entity.</div>
@@ -228,7 +230,8 @@ runtime environment.
     <dt><code>entity</code> <span class="xref">Entity</span></dt>
     <dd>The entity from which to retrieve the <span class="xref">Autodesk.Revit.DB.XYZ</span> value. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
     <dt><code>field</code> <span class="xref">Field</span></dt>
-    <dd>The field that specifies which <span class="xref">Autodesk.Revit.DB.XYZ</span> value to retrieve. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
+    <dd>The field that specifies which <span class="xref">Autodesk.Revit.DB.XYZ</span> value to retrieve. Cannot be
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -246,8 +249,8 @@ runtime environment.
   <h4 class="section" id="MBF_Revit_Data_Utils_EntityUtils_GetXYZ_Autodesk_Revit_DB_ExtensibleStorage_Entity_Autodesk_Revit_DB_ExtensibleStorage_Field__remarks">Remarks</h4>
   <div class="markdown level1 remarks">The method adapts to different versions of the API to ensure compatibility.
 <p>
-<b>Error messages:</b>
-<ul><li>Entity or field cannot be null.</li><li>Failed to retrieve the XYZ value from the entity.</li></ul>
+    <b>Error messages:</b>
+    <ul><li>Entity or field cannot be null.</li><li>Failed to retrieve the XYZ value from the entity.</li></ul>
 </div>
 
 
@@ -257,7 +260,7 @@ runtime environment.
 
   <h3 id="MBF_Revit_Data_Utils_EntityUtils_SetElementId_Autodesk_Revit_DB_ExtensibleStorage_Entity_Autodesk_Revit_DB_ExtensibleStorage_Field_Autodesk_Revit_DB_ElementId_" data-uid="MBF.Revit.Data.Utils.EntityUtils.SetElementId(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field,Autodesk.Revit.DB.ElementId)">
   SetElementId(Entity, Field, ElementId)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/EntityUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/EntityUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Sets the specified <span class="xref">ElementId</span> value for the given <span class="xref">Autodesk.Revit.DB.ExtensibleStorage.Entity</span> and <span class="xref">Autodesk.Revit.DB.ExtensibleStorage.Field</span>.</div>
@@ -274,7 +277,8 @@ runtime environment.
     <dt><code>field</code> <span class="xref">Field</span></dt>
     <dd>The <span class="xref">Autodesk.Revit.DB.ExtensibleStorage.Field</span> that identifies the property to set. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
     <dt><code>value</code> <span class="xref">ElementId</span></dt>
-    <dd>The <span class="xref">ElementId</span> value to assign to the specified field. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
+    <dd>The <span class="xref">ElementId</span> value to assign to the specified field. Cannot be
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
   </dl>
 
 
@@ -288,8 +292,8 @@ runtime environment.
   <div class="markdown level1 remarks">The method ensures compatibility with different versions of the API by using the appropriate unit
 type when setting the value.
 <p>
-<b>Error messages:</b>
-<ul><li>Entity, field, or value cannot be null.</li><li>Failed to set the ElementId value for the specified field.</li></ul>
+    <b>Error messages:</b>
+    <ul><li>Entity, field, or value cannot be null.</li><li>Failed to set the ElementId value for the specified field.</li></ul>
 </div>
 
 
@@ -299,7 +303,7 @@ type when setting the value.
 
   <h3 id="MBF_Revit_Data_Utils_EntityUtils_SetXYZ_Autodesk_Revit_DB_ExtensibleStorage_Entity_Autodesk_Revit_DB_ExtensibleStorage_Field_Autodesk_Revit_DB_XYZ_" data-uid="MBF.Revit.Data.Utils.EntityUtils.SetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field,Autodesk.Revit.DB.XYZ)">
   SetXYZ(Entity, Field, XYZ)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/EntityUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/EntityUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Sets the specified field of the given entity to the provided XYZ value, using the appropriate unit system.</div>
@@ -330,8 +334,8 @@ type when setting the value.
   <div class="markdown level1 remarks">The method determines the appropriate unit system based on the runtime environment and applies it
 when setting the field.
 <p>
-<b>Error messages:</b>
-<ul><li>Entity, field, or value cannot be null.</li><li>Failed to set the XYZ value for the specified field.</li></ul>
+    <b>Error messages:</b>
+    <ul><li>Entity, field, or value cannot be null.</li><li>Failed to set the XYZ value for the specified field.</li></ul>
 </div>
 
 

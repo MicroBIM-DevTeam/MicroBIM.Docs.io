@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Data_Extensions_DocumentExtensions" data-uid="MBF.Revit.Data.Extensions.DocumentExtensions" class="text-break">
-Class DocumentExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+Class DocumentExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -153,12 +153,13 @@ public static class DocumentExtensions</code></pre>
 with Autodesk Revit's API. These methods include retrieving specific types of elements (e.g., family types, levels,
 rebar shapes), creating and managing views, and handling linked documents.
 <p>
-Each method in this class is implemented as an extension method for the <span class="xref">Autodesk.Revit.DB.Document</span> class,
-allowing them to be called directly on instances of <span class="xref">Autodesk.Revit.DB.Document</span>.
+    Each method in this class is implemented as an extension method for the <span class="xref">Autodesk.Revit.DB.Document</span> class,
+    allowing them to be called directly on instances of <span class="xref">Autodesk.Revit.DB.Document</span>.
 </p>
 <p>
-The methods in this class return results wrapped in <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> objects, which encapsulate both the
-operation's outcome and any error messages, ensuring robust error handling.
+    The methods in this class return results wrapped in <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> objects, which encapsulate both
+    the
+    operation's outcome and any error messages, ensuring robust error handling.
 </p></div>
 
 
@@ -170,7 +171,7 @@ operation's outcome and any error messages, ensuring robust error handling.
 
   <h3 id="MBF_Revit_Data_Extensions_DocumentExtensions_CreateAndPlaceColumnAtPoint_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_FamilySymbol_Autodesk_Revit_DB_Level_Autodesk_Revit_DB_Level_" data-uid="MBF.Revit.Data.Extensions.DocumentExtensions.CreateAndPlaceColumnAtPoint(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.FamilySymbol,Autodesk.Revit.DB.Level,Autodesk.Revit.DB.Level)">
   CreateAndPlaceColumnAtPoint(Document, XYZ, FamilySymbol, Level, Level)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Creates and places a column at a specified point in the Revit document.</div>
@@ -215,7 +216,7 @@ operation's outcome and any error messages, ensuring robust error handling.
 
   <h3 id="MBF_Revit_Data_Extensions_DocumentExtensions_GetAllRevitDocuments_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Data.Extensions.DocumentExtensions.GetAllRevitDocuments(Autodesk.Revit.DB.Document)">
   GetAllRevitDocuments(Document)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Retrieves the base document and all linked Revit documents.</div>
@@ -251,7 +252,7 @@ operation's outcome and any error messages, ensuring robust error handling.
 
   <h3 id="MBF_Revit_Data_Extensions_DocumentExtensions_GetFamilyTypesByCategoryOrderedByName_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_" data-uid="MBF.Revit.Data.Extensions.DocumentExtensions.GetFamilyTypesByCategoryOrderedByName(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)">
   GetFamilyTypesByCategoryOrderedByName(Document, BuiltInCategory)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Retrieves all family types in the specified category from the given Revit document, ordered by their names.</div>
@@ -286,8 +287,9 @@ ordered by name if the operation succeeds, or an error message in bullet points 
   <div class="markdown level1 remarks">This method uses a filtered element collector to retrieve family types of the specified
 category and orders them alphabetically by their names.
 <p>
-If an error occurs during the operation, the result will contain a failure message with details in bullet points:
-<ul><li>The Revit document cannot be null.</li><li>An error occurred: [error message]</li></ul>
+    If an error occurs during the operation, the result will contain a failure message with details in bullet
+    points:
+    <ul><li>The Revit document cannot be null.</li><li>An error occurred: [error message]</li></ul>
 </div>
 
 
@@ -297,10 +299,11 @@ If an error occurs during the operation, the result will contain a failure messa
 
   <h3 id="MBF_Revit_Data_Extensions_DocumentExtensions_GetLevelsOrderedByProperty__1_Autodesk_Revit_DB_Document_System_Func_Autodesk_Revit_DB_Level___0__System_Boolean_" data-uid="MBF.Revit.Data.Extensions.DocumentExtensions.GetLevelsOrderedByProperty``1(Autodesk.Revit.DB.Document,System.Func{Autodesk.Revit.DB.Level,``0},System.Boolean)">
   GetLevelsOrderedByProperty&lt;TKey&gt;(Document, Func&lt;Level, TKey&gt;, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Retrieves all levels from the specified Revit document as an ObservableCollection, ordered dynamically by a specified property.</div>
+  <div class="markdown level1 summary">Retrieves all levels from the specified Revit document as an ObservableCollection, ordered dynamically by a
+specified property.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -343,7 +346,7 @@ If an error occurs during the operation, the result will contain a failure messa
 
   <h3 id="MBF_Revit_Data_Extensions_DocumentExtensions_GetLinkedDocumentsOnly_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Data.Extensions.DocumentExtensions.GetLinkedDocumentsOnly(Autodesk.Revit.DB.Document)">
   GetLinkedDocumentsOnly(Document)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Retrieves only the linked Revit documents associated with the given base document.</div>
@@ -379,7 +382,7 @@ If an error occurs during the operation, the result will contain a failure messa
 
   <h3 id="MBF_Revit_Data_Extensions_DocumentExtensions_GetRebarBarTypes_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Data.Extensions.DocumentExtensions.GetRebarBarTypes(Autodesk.Revit.DB.Document)">
   GetRebarBarTypes(Document)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Retrieves all rebar bar types from the specified Revit document as an ObservableCollection.</div>
@@ -416,7 +419,7 @@ If an error occurs during the operation, the result will contain a failure messa
 
   <h3 id="MBF_Revit_Data_Extensions_DocumentExtensions_GetRebarShapes_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Data.Extensions.DocumentExtensions.GetRebarShapes(Autodesk.Revit.DB.Document)">
   GetRebarShapes(Document)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Retrieves all rebar shapes from the specified Revit document.</div>
@@ -453,10 +456,11 @@ If an error occurs during the operation, the result will contain a failure messa
 
   <h3 id="MBF_Revit_Data_Extensions_DocumentExtensions_SearchOrCreate3DView_Autodesk_Revit_DB_Document_System_String_System_Boolean_" data-uid="MBF.Revit.Data.Extensions.DocumentExtensions.SearchOrCreate3DView(Autodesk.Revit.DB.Document,System.String,System.Boolean)">
   SearchOrCreate3DView(Document, string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/DocumentExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Searches for a 3D view with the specified name. If it exists, returns it. Optionally, creates a new 3D view if specified.</div>
+  <div class="markdown level1 summary">Searches for a 3D view with the specified name. If it exists, returns it. Optionally, creates a new 3D view if
+specified.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
