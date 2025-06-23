@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Data_Utils_MbPipeAccessoriesUtils" data-uid="MBF.Revit.Data.Utils.MbPipeAccessoriesUtils" class="text-break">
-Class MbPipeAccessoriesUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeAccessoriesUtils.cs"><i class="bi bi-code-slash"></i></a>
+Class MbPipeAccessoriesUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeAccessoriesUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -149,8 +149,8 @@ public static class MbPipeAccessoriesUtils</code></pre>
 
   <h2 id="MBF_Revit_Data_Utils_MbPipeAccessoriesUtils_remarks">Remarks</h2>
   <div class="markdown level0 remarks">This class contains methods to filter and retrieve Revit elements categorized as pipe accessories. It
-            is designed to work with collections of Revit elements and supports conditional compilation for compatibility with
-            different Revit versions.</div>
+is designed to work with collections of Revit elements and supports conditional compilation for compatibility with
+different Revit versions.</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -161,7 +161,7 @@ public static class MbPipeAccessoriesUtils</code></pre>
 
   <h3 id="MBF_Revit_Data_Utils_MbPipeAccessoriesUtils_GetPipeAccessoriesInstances_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element__" data-uid="MBF.Revit.Data.Utils.MbPipeAccessoriesUtils.GetPipeAccessoriesInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})">
   GetPipeAccessoriesInstances(IEnumerable&lt;Element&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeAccessoriesUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeAccessoriesUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Retrieves all <span class="xref">FamilyInstance</span> elements categorized as pipe accessories
@@ -202,7 +202,8 @@ the BuiltInCategory.OST_PipeAccessory category.</dd>
 <ul><li>
             <b>ArgumentNullException</b>: Thrown if <code class="paramref">selectedElements</code> is null.
         </li><li>
-            <b>InvalidCastException</b>: Thrown if an element cannot be cast to <span class="xref">FamilyInstance</span> (should not occur due to <code>OfType</code> usage).
+            <b>InvalidCastException</b>: Thrown if an element cannot be cast to <span class="xref">FamilyInstance</span>
+            (should not occur due to <code>OfType</code> usage).
         </li></ul></div>
 
 

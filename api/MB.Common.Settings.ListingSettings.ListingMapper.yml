@@ -20,9 +20,15 @@ items:
   namespace: MB.Common.Settings.ListingSettings
   summary: Provides methods for mapping between <xref href="MB.Common.Settings.ListingSettings.ListingConfig" data-throw-if-not-resolved="false"></xref> and <xref href="MB.Common.Settings.ListingSettings.ListingDto" data-throw-if-not-resolved="false"></xref> objects.
   remarks: >-
-    This class contains static methods to facilitate the conversion of data between the <xref href="MB.Common.Settings.ListingSettings.ListingConfig" data-throw-if-not-resolved="false"></xref> and <xref href="MB.Common.Settings.ListingSettings.ListingDto" data-throw-if-not-resolved="false"></xref> types. These methods are useful for scenarios where data needs
-                to be transferred between different layers of an application, such as mapping configuration data to a data transfer
-                object (DTO) for use in APIs or other external systems.
+    This class contains static methods to facilitate the conversion of data between the
+
+    <xref href="MB.Common.Settings.ListingSettings.ListingConfig" data-throw-if-not-resolved="false"></xref>
+
+    and <xref href="MB.Common.Settings.ListingSettings.ListingDto" data-throw-if-not-resolved="false"></xref> types. These methods are useful for scenarios where data needs
+
+    to be transferred between different layers of an application, such as mapping configuration data to a data transfer
+
+    object (DTO) for use in APIs or other external systems.
   example: []
   syntax:
     content: public class ListingMapper

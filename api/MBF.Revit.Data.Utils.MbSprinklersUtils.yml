@@ -14,15 +14,17 @@ items:
   fullName: MBF.Revit.Data.Utils.MbSprinklersUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbSprinklersUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbSprinklersUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
   summary: Provides utility methods for working with sprinkler elements in Revit.
   remarks: >-
     This class contains methods to assist in identifying and working with Revit elements categorized as
-                sprinklers. It is designed to simplify common operations related to sprinkler elements, such as filtering and
-                casting.
+
+    sprinklers. It is designed to simplify common operations related to sprinkler elements, such as filtering and
+
+    casting.
   example: []
   syntax:
     content: >-
@@ -59,7 +61,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbSprinklersUtils.GetSprinklerInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbSprinklersUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbSprinklersUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils

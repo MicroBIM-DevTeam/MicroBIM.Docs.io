@@ -14,14 +14,19 @@ items:
   fullName: MBF.Revit.Data.Utils.MbFlexPipesUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbFlexPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbFlexPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
   summary: Filters the provided collection of Revit elements and retrieves all flex pipes.
   remarks: >-
-    This method ensures that only elements categorized as flex pipes  (BuiltInCategory.OST_FlexPipeCurves) are returned.  It uses the category information of each element to
-                perform the filtering.
+    This method ensures that only elements categorized as flex pipes  (
+
+    BuiltInCategory.OST_FlexPipeCurves
+
+    ) are returned.  It uses the category information of each element to
+
+    perform the filtering.
   example: []
   syntax:
     content: >-
@@ -58,7 +63,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbFlexPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbFlexPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils

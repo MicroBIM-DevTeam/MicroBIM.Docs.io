@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Data_Extensions_PipeExtensions" data-uid="MBF.Revit.Data.Extensions.PipeExtensions" class="text-break">
-Class PipeExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/PipeExtensions.cs"><i class="bi bi-code-slash"></i></a>
+Class PipeExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/PipeExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -149,8 +149,10 @@ public static class PipeExtensions</code></pre>
 
   <h2 id="MBF_Revit_Data_Extensions_PipeExtensions_remarks">Remarks</h2>
   <div class="markdown level0 remarks">This class includes utility methods for retrieving geometric and system-related information about
-            pipes, such as endpoints, connectors, curves, and associated piping system types. Each method returns an <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> to encapsulate the result or an error message, ensuring robust error handling for common issues
-            like null inputs or invalid pipe states.</div>
+pipes, such as endpoints, connectors, curves, and associated piping system types. Each method returns an
+<a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a>
+to encapsulate the result or an error message, ensuring robust error handling for common issues
+like null inputs or invalid pipe states.</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -161,7 +163,7 @@ public static class PipeExtensions</code></pre>
 
   <h3 id="MBF_Revit_Data_Extensions_PipeExtensions_GetEndPoints_Autodesk_Revit_DB_Plumbing_Pipe_" data-uid="MBF.Revit.Data.Extensions.PipeExtensions.GetEndPoints(Autodesk.Revit.DB.Plumbing.Pipe)">
   GetEndPoints(Pipe)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/PipeExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/PipeExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Retrieves the endpoints of a pipe as a list of XYZ points.</div>
@@ -198,52 +200,11 @@ Possible error messages:
 
 
 
-  <a id="MBF_Revit_Data_Extensions_PipeExtensions_GetLineOfPipe_" data-uid="MBF.Revit.Data.Extensions.PipeExtensions.GetLineOfPipe*"></a>
-
-  <h3 id="MBF_Revit_Data_Extensions_PipeExtensions_GetLineOfPipe_Autodesk_Revit_DB_Plumbing_Pipe_" data-uid="MBF.Revit.Data.Extensions.PipeExtensions.GetLineOfPipe(Autodesk.Revit.DB.Plumbing.Pipe)">
-  GetLineOfPipe(Pipe)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/PipeExtensions.cs"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary">Gets the line representing the pipe's geometry.</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static MbResult&lt;Line&gt; GetLineOfPipe(this Pipe pipe)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>pipe</code> <span class="xref">Pipe</span></dt>
-    <dd>The pipe to retrieve the line from.</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<span class="xref">Line</span>&gt;</dt>
-    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing the line or an error message.
-Possible error messages:
-<ul><li>"The pipe cannot be null." - Returned if the input pipe is null.</li><li>
-            "The pipe does not have a valid LocationCurve." - Returned if the pipe's location is not a
-            valid curve.
-        </li></ul></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="MBF_Revit_Data_Extensions_PipeExtensions_GetNearestEndPoints_" data-uid="MBF.Revit.Data.Extensions.PipeExtensions.GetNearestEndPoints*"></a>
 
   <h3 id="MBF_Revit_Data_Extensions_PipeExtensions_GetNearestEndPoints_Autodesk_Revit_DB_Plumbing_Pipe_Autodesk_Revit_DB_XYZ_" data-uid="MBF.Revit.Data.Extensions.PipeExtensions.GetNearestEndPoints(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.XYZ)">
   GetNearestEndPoints(Pipe, XYZ)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/PipeExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/PipeExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Finds the nearest and farthest endpoints of a pipe relative to a specified point.</div>
@@ -286,7 +247,7 @@ Possible error messages:
 
   <h3 id="MBF_Revit_Data_Extensions_PipeExtensions_GetNearestOneSideConnector_Autodesk_Revit_DB_Plumbing_Pipe_Autodesk_Revit_DB_XYZ_" data-uid="MBF.Revit.Data.Extensions.PipeExtensions.GetNearestOneSideConnector(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.XYZ)">
   GetNearestOneSideConnector(Pipe, XYZ)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/PipeExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/PipeExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Finds the nearest one-side connector on a pipe to a specified point.</div>
@@ -329,7 +290,7 @@ Possible error messages:
 
   <h3 id="MBF_Revit_Data_Extensions_PipeExtensions_GetPipeCurve_Autodesk_Revit_DB_Plumbing_Pipe_" data-uid="MBF.Revit.Data.Extensions.PipeExtensions.GetPipeCurve(Autodesk.Revit.DB.Plumbing.Pipe)">
   GetPipeCurve(Pipe)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/PipeExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/PipeExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Gets the curve representing the pipe's geometry.</div>
@@ -370,7 +331,7 @@ Possible error messages:
 
   <h3 id="MBF_Revit_Data_Extensions_PipeExtensions_GetPipingSystemType_Autodesk_Revit_DB_Plumbing_Pipe_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Data.Extensions.PipeExtensions.GetPipingSystemType(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.Document)">
   GetPipingSystemType(Pipe, Document)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/PipeExtensions.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/PipeExtensions.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Gets the piping system type associated with a pipe.</div>

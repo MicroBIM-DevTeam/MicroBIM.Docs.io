@@ -21,7 +21,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.DocumentExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -37,19 +37,14 @@ items:
     rebar shapes), creating and managing views, and handling linked documents.
 
     <p>
-
-    Each method in this class is implemented as an extension method for the <xref href="Autodesk.Revit.DB.Document" data-throw-if-not-resolved="false"></xref> class,
-
-    allowing them to be called directly on instances of <xref href="Autodesk.Revit.DB.Document" data-throw-if-not-resolved="false"></xref>.
-
+        Each method in this class is implemented as an extension method for the <xref href="Autodesk.Revit.DB.Document" data-throw-if-not-resolved="false"></xref> class,
+        allowing them to be called directly on instances of <xref href="Autodesk.Revit.DB.Document" data-throw-if-not-resolved="false"></xref>.
     </p>
 
     <p>
-
-    The methods in this class return results wrapped in <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> objects, which encapsulate both the
-
-    operation's outcome and any error messages, ensuring robust error handling.
-
+        The methods in this class return results wrapped in <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> objects, which encapsulate both
+        the
+        operation's outcome and any error messages, ensuring robust error handling.
     </p>
   example: []
   syntax:
@@ -88,7 +83,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.DocumentExtensions.GetFamilyTypesByCategoryOrderedByName(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.BuiltInCategory)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -99,11 +94,9 @@ items:
     category and orders them alphabetically by their names.
 
     <p>
-
-    If an error occurs during the operation, the result will contain a failure message with details in bullet points:
-
-    <ul><li>The Revit document cannot be null.</li><li>An error occurred: [error message]</li></ul>
-
+        If an error occurs during the operation, the result will contain a failure message with details in bullet
+        points:
+        <ul><li>The Revit document cannot be null.</li><li>An error occurred: [error message]</li></ul>
     </p>
   example: []
   syntax:
@@ -136,11 +129,14 @@ items:
   fullName: MBF.Revit.Data.Extensions.DocumentExtensions.GetLevelsOrderedByProperty<TKey>(Autodesk.Revit.DB.Document, System.Func<Autodesk.Revit.DB.Level, TKey>, bool)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
-  summary: Retrieves all levels from the specified Revit document as an ObservableCollection, ordered dynamically by a specified property.
+  summary: >-
+    Retrieves all levels from the specified Revit document as an ObservableCollection, ordered dynamically by a
+
+    specified property.
   example: []
   syntax:
     content: public static MbResult<ObservableCollection<Level>> GetLevelsOrderedByProperty<TKey>(this Document doc, Func<Level, TKey> keySelector, bool ascending = true)
@@ -181,7 +177,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.DocumentExtensions.GetRebarShapes(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -214,7 +210,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.DocumentExtensions.GetRebarBarTypes(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -247,7 +243,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.DocumentExtensions.CreateAndPlaceColumnAtPoint(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.FamilySymbol, Autodesk.Revit.DB.Level, Autodesk.Revit.DB.Level)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -292,11 +288,14 @@ items:
   fullName: MBF.Revit.Data.Extensions.DocumentExtensions.SearchOrCreate3DView(Autodesk.Revit.DB.Document, string, bool)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
-  summary: Searches for a 3D view with the specified name. If it exists, returns it. Optionally, creates a new 3D view if specified.
+  summary: >-
+    Searches for a 3D view with the specified name. If it exists, returns it. Optionally, creates a new 3D view if
+
+    specified.
   example: []
   syntax:
     content: public static MbResult<View3D> SearchOrCreate3DView(this Document doc, string viewName, bool createView = false)
@@ -334,7 +333,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.DocumentExtensions.GetAllRevitDocuments(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -364,7 +363,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.DocumentExtensions.GetLinkedDocumentsOnly(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions

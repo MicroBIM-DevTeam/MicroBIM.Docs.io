@@ -16,7 +16,7 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
@@ -27,7 +27,10 @@ items:
   remarks: >-
     <p>Error messages:</p>
 
-    <ul><li>If <code>categories</code> is <code>null</code> in the constructor, an empty list is used.</li><li>If <code>_revitLinkInstance</code> is <code>null</code> in <xref href="MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference%2cAutodesk.Revit.DB.XYZ)" data-throw-if-not-resolved="false"></xref>, returns <code>false</code>.</li><li>If <code>linkedDoc</code> is <code>null</code> in <xref href="MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference%2cAutodesk.Revit.DB.XYZ)" data-throw-if-not-resolved="false"></xref>, returns <code>false</code>.</li></ul>
+    <ul><li>If <code>categories</code> is <code>null</code> in the constructor, an empty list is used.</li><li>
+                If <code>_revitLinkInstance</code> is <code>null</code> in <xref href="MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference%2cAutodesk.Revit.DB.XYZ)" data-throw-if-not-resolved="false"></xref>, returns
+                <code>false</code>.
+            </li><li>If <code>linkedDoc</code> is <code>null</code> in <xref href="MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference%2cAutodesk.Revit.DB.XYZ)" data-throw-if-not-resolved="false"></xref>, returns <code>false</code>.</li></ul>
   example: []
   syntax:
     content: >-
@@ -66,7 +69,7 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.HostOrLinkedCategorySelectionFilter(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Category>)
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
@@ -96,7 +99,7 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
@@ -110,7 +113,10 @@ items:
       description: The element being evaluated.
     return:
       type: System.Boolean
-      description: <code>true</code> if it's a host element in the allowed categories or a <xref href="Autodesk.Revit.DB.RevitLinkInstance" data-throw-if-not-resolved="false"></xref>; otherwise, <code>false</code>.
+      description: >-
+        <code>true</code> if it's a host element in the allowed categories or a <xref href="Autodesk.Revit.DB.RevitLinkInstance" data-throw-if-not-resolved="false"></xref>; otherwise,
+
+        <code>false</code>.
     content.vb: Public Function AllowElement(elem As Element) As Boolean
   overload: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowElement*
 - uid: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference,Autodesk.Revit.DB.XYZ)
@@ -125,7 +131,7 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.HostOrLinkedCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/SelectionFilters/HostOrLinkedCategorySelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters

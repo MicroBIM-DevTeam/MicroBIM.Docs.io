@@ -15,18 +15,22 @@ items:
   fullName: MBF.Revit.Data.Extensions.SpaceExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/SpaceExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/SpaceExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
   summary: >-
-    Provides extension methods for working with <xref href="Autodesk.Revit.DB.Mechanical.Space" data-throw-if-not-resolved="false"></xref> objects,  including retrieving boundary segments and
+    Provides extension methods for working with <xref href="Autodesk.Revit.DB.Mechanical.Space" data-throw-if-not-resolved="false"></xref> objects,  including retrieving boundary segments
+
+    and
 
     validating the space.
   remarks: >-
-    This class contains methods to assist in common operations related to <xref href="Autodesk.Revit.DB.Mechanical.Space" data-throw-if-not-resolved="false"></xref> objects, 
-                such as extracting boundary curves and ensuring the validity of a space. These methods are designed  to simplify
-                working with spaces in spatial modeling scenarios.
+    This class contains methods to assist in common operations related to <xref href="Autodesk.Revit.DB.Mechanical.Space" data-throw-if-not-resolved="false"></xref> objects,
+
+    such as extracting boundary curves and ensuring the validity of a space. These methods are designed  to simplify
+
+    working with spaces in spatial modeling scenarios.
   example: []
   syntax:
     content: >-
@@ -64,7 +68,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.SpaceExtensions.GetBoundarySegment(Autodesk.Revit.DB.Mechanical.Space)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/SpaceExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/SpaceExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -97,7 +101,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.SpaceExtensions.Validate(Autodesk.Revit.DB.Mechanical.Space)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/SpaceExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/SpaceExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions

@@ -11,6 +11,9 @@ items:
   - MB.Common.SharedParameters.ToolsSharedParameter.CalculateSum
   - MB.Common.SharedParameters.ToolsSharedParameter.Color
   - MB.Common.SharedParameters.ToolsSharedParameter.DescriptionAndAbbreviationListNo
+  - MB.Common.SharedParameters.ToolsSharedParameter.DischargeDensity
+  - MB.Common.SharedParameters.ToolsSharedParameter.DischargeType
+  - MB.Common.SharedParameters.ToolsSharedParameter.DoNotNumber
   - MB.Common.SharedParameters.ToolsSharedParameter.EndPap
   - MB.Common.SharedParameters.ToolsSharedParameter.ExportedPackageName
   - MB.Common.SharedParameters.ToolsSharedParameter.ExportedPdfName
@@ -1248,8 +1251,13 @@ items:
   namespace: MB.Common.SharedParameters
   summary: Represents a shared parameter for specifying a pipe number listing in a Revit model.
   remarks: >-
-    This parameter is associated with Revit categories such as BuiltInCategory.OST_PipeCurves and BuiltInCategory.OST_PipeFitting. It is defined as a
-                text-based shared parameter and is identified by the GUID "a137e596-b255-494a-9c8a-1f32f4ec0a5f".
+    This parameter is associated with Revit categories such as
+
+    BuiltInCategory.OST_PipeCurves
+
+    and BuiltInCategory.OST_PipeFitting. It is defined as a
+
+    text-based shared parameter and is identified by the GUID "a137e596-b255-494a-9c8a-1f32f4ec0a5f".
   example: []
   syntax:
     content: >-
@@ -1300,8 +1308,13 @@ items:
   namespace: MB.Common.SharedParameters
   summary: Represents the "Start Pap" shared parameter, which is associated with pipe curves and pipe fittings in Revit.
   remarks: >-
-    This parameter is categorized under BuiltInCategory.OST_PipeCurves and BuiltInCategory.OST_PipeFitting. It is defined as a text-based shared parameter and is identified by the
-                GUID "ab1be1ed-1730-433c-b2c6-51edfafe84b5".
+    This parameter is categorized under BuiltInCategory.OST_PipeCurves and
+
+    BuiltInCategory.OST_PipeFitting
+
+    . It is defined as a text-based shared parameter and is identified by the
+
+    GUID "ab1be1ed-1730-433c-b2c6-51edfafe84b5".
   example: []
   syntax:
     content: >-
@@ -1353,7 +1366,8 @@ items:
   summary: Represents the end paper (EndPap) parameter for Revit elements, typically used in piping systems.
   remarks: >-
     This parameter is associated with Revit categories such as pipes and pipe fittings.  It is defined
-                as a shared parameter of type <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
+
+    as a shared parameter of type <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: >-
@@ -1403,7 +1417,12 @@ items:
   - MB.Common
   namespace: MB.Common.SharedParameters
   summary: Represents a shared parameter for specifying the dimension of a pipe run in Revit.
-  remarks: This parameter is associated with the "1_RUN DIM" description and is categorized under  BuiltInCategory.OST_PipeCurves. It is defined as a text-based shared parameter.
+  remarks: >-
+    This parameter is associated with the "1_RUN DIM" description and is categorized under
+
+    BuiltInCategory.OST_PipeCurves
+
+    . It is defined as a text-based shared parameter.
   example: []
   syntax:
     content: >-
@@ -1455,8 +1474,10 @@ items:
   summary: Represents a shared parameter type for Revit elements, specifically associated with pipe curves.
   remarks: >-
     This class is identified by the GUID "c0932a83-87c2-4286-9c28-d4eb4ae03ef8" and is categorized under
-                the Revit built-in category BuiltInCategory.OST_PipeCurves. It is intended for use with shared
-                parameters of type <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
+
+    the Revit built-in category BuiltInCategory.OST_PipeCurves. It is intended for use with shared
+
+    parameters of type <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: >-
@@ -1508,7 +1529,8 @@ items:
   summary: Represents a shared parameter for specifying the 2_RUN DIM value in Revit.
   remarks: >-
     This parameter is associated with pipe curves in Revit and is categorized as a text parameter. It is
-                identified by the GUID "28aba22e-1438-4608-b8ce-a85e52854267".
+
+    identified by the GUID "28aba22e-1438-4608-b8ce-a85e52854267".
   example: []
   syntax:
     content: >-
@@ -1560,8 +1582,10 @@ items:
   summary: Represents a shared parameter with the identifier "2_PAP" for use in Revit's pipe curves category.
   remarks: >-
     This parameter is associated with the BuiltInCategory.OST_PipeCurves category in
-                Revit and is defined as a text-based shared parameter. It is identified by the GUID
-                "64f2f492-72f6-4e92-9b54-4e6bd8845275".
+
+    Revit and is defined as a text-based shared parameter. It is identified by the GUID
+
+    "64f2f492-72f6-4e92-9b54-4e6bd8845275".
   example: []
   syntax:
     content: >-
@@ -1613,7 +1637,8 @@ items:
   summary: Represents a shared parameter for the "3_RUN DIM" property in Revit, associated with pipe curves.
   remarks: >-
     This parameter is identified by the GUID "47e8420e-dc38-47ce-9dbd-74358a69a28c" and is categorized
-                under BuiltInCategory.OST_PipeCurves. It is defined as a text-based shared parameter.
+
+    under BuiltInCategory.OST_PipeCurves. It is defined as a text-based shared parameter.
   example: []
   syntax:
     content: >-
@@ -1665,8 +1690,10 @@ items:
   summary: Represents a shared parameter with the identifier "3_PAP" for use in Revit's pipe curves category.
   remarks: >-
     This parameter is associated with the BuiltInCategory.OST_PipeCurves category in Revit
-                and is defined as a text-based shared parameter. It is identified by the GUID
-                "4acd2fa4-e8c4-4d00-89e6-bdeed126fb39".
+
+    and is defined as a text-based shared parameter. It is identified by the GUID
+
+    "4acd2fa4-e8c4-4d00-89e6-bdeed126fb39".
   example: []
   syntax:
     content: >-
@@ -1716,7 +1743,12 @@ items:
   - MB.Common
   namespace: MB.Common.SharedParameters
   summary: Represents a shared parameter for specifying the "4_RUN DIM" value in Revit pipe curves.
-  remarks: This parameter is associated with the "4_RUN DIM" description and is categorized under  BuiltInCategory.OST_PipeCurves. It is defined as a text-based shared parameter.
+  remarks: >-
+    This parameter is associated with the "4_RUN DIM" description and is categorized under
+
+    BuiltInCategory.OST_PipeCurves
+
+    . It is defined as a text-based shared parameter.
   example: []
   syntax:
     content: >-
@@ -1767,9 +1799,11 @@ items:
   namespace: MB.Common.SharedParameters
   summary: Represents a shared parameter type with the identifier "4_PAP" for use in Revit.
   remarks: >-
-    This parameter is associated with the Revit category BuiltInCategory.OST_PipeCurves 
-                and is defined as a text-based shared parameter. It is identified by the GUID 
-                "b710b589-43a3-4663-9f5d-c7c255095194".
+    This parameter is associated with the Revit category BuiltInCategory.OST_PipeCurves
+
+    and is defined as a text-based shared parameter. It is identified by the GUID
+
+    "b710b589-43a3-4663-9f5d-c7c255095194".
   example: []
   syntax:
     content: >-
@@ -1819,7 +1853,12 @@ items:
   - MB.Common
   namespace: MB.Common.SharedParameters
   summary: Represents a shared parameter for specifying the "5_RUN DIM" value in Revit.
-  remarks: This parameter is associated with the "PipeCurves" category in Revit and is of type <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>. It is identified by the GUID "236886e5-b9d9-4a7a-a456-27324bb33869".
+  remarks: >-
+    This parameter is associated with the "PipeCurves" category in Revit and is of type
+
+    <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>
+
+    . It is identified by the GUID "236886e5-b9d9-4a7a-a456-27324bb33869".
   example: []
   syntax:
     content: >-
@@ -1870,9 +1909,11 @@ items:
   namespace: MB.Common.SharedParameters
   summary: Represents a shared parameter with the identifier "5_PAP" for use in Revit projects.
   remarks: >-
-    This parameter is associated with the Revit category BuiltInCategory.OST_PipeCurves 
-                and is defined as a text-based shared parameter. It is identified by the GUID 
-                "2073ad09-f450-4369-b152-366f3c97f352".
+    This parameter is associated with the Revit category BuiltInCategory.OST_PipeCurves
+
+    and is defined as a text-based shared parameter. It is identified by the GUID
+
+    "2073ad09-f450-4369-b152-366f3c97f352".
   example: []
   syntax:
     content: >-
@@ -1923,8 +1964,13 @@ items:
   namespace: MB.Common.SharedParameters
   summary: Represents a shared parameter for specifying the "6_RUN DIM" value associated with pipe curves in Revit.
   remarks: >-
-    This parameter is categorized under the Revit built-in category BuiltInCategory.OST_PipeCurves  and is defined as a text-based shared parameter. It is identified by the
-                GUID "5914c51d-8028-48c3-bde0-98e21dca0d67".
+    This parameter is categorized under the Revit built-in category
+
+    BuiltInCategory.OST_PipeCurves
+
+    and is defined as a text-based shared parameter. It is identified by the
+
+    GUID "5914c51d-8028-48c3-bde0-98e21dca0d67".
   example: []
   syntax:
     content: >-
@@ -1975,9 +2021,11 @@ items:
   namespace: MB.Common.SharedParameters
   summary: Represents a shared parameter with the identifier "6_PAP" for use in Revit projects.
   remarks: >-
-    This parameter is associated with the Revit category BuiltInCategory.OST_PipeCurves 
-                and is defined as a text-based shared parameter. It is identified by the GUID 
-                "b25b7441-fe65-4a68-b5da-0195cf452a66".
+    This parameter is associated with the Revit category BuiltInCategory.OST_PipeCurves
+
+    and is defined as a text-based shared parameter. It is identified by the GUID
+
+    "b25b7441-fe65-4a68-b5da-0195cf452a66".
   example: []
   syntax:
     content: >-
@@ -2027,7 +2075,12 @@ items:
   - MB.Common
   namespace: MB.Common.SharedParameters
   summary: Represents a shared parameter for specifying the "7_RUN DIM" value in Revit.
-  remarks: This parameter is associated with the "PipeCurves" category in Revit and is of type <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>. It is identified by the GUID "fc237068-ae9a-45eb-81da-f4a3a7c00a38".
+  remarks: >-
+    This parameter is associated with the "PipeCurves" category in Revit and is of type
+
+    <xref href="MB.Common.SharedParameters.SharedParameterType.Text" data-throw-if-not-resolved="false"></xref>
+
+    . It is identified by the GUID "fc237068-ae9a-45eb-81da-f4a3a7c00a38".
   example: []
   syntax:
     content: >-
@@ -2078,9 +2131,11 @@ items:
   namespace: MB.Common.SharedParameters
   summary: Represents a shared parameter with the identifier "7_PAP" for use in Revit projects.
   remarks: >-
-    This parameter is associated with the Revit category BuiltInCategory.OST_PipeCurves 
-                and is defined as a text-based shared parameter. It is identified by the GUID 
-                "38005670-ec77-4a15-a561-ff65273fc09a".
+    This parameter is associated with the Revit category BuiltInCategory.OST_PipeCurves
+
+    and is defined as a text-based shared parameter. It is identified by the GUID
+
+    "38005670-ec77-4a15-a561-ff65273fc09a".
   example: []
   syntax:
     content: >-
@@ -2130,7 +2185,12 @@ items:
   - MB.Common
   namespace: MB.Common.SharedParameters
   summary: Represents a shared parameter for specifying the "8_RUN DIM" value in Revit pipe curves.
-  remarks: This parameter is associated with the "8_RUN DIM" description and is categorized under  BuiltInCategory.OST_PipeCurves. It is defined as a text-based shared parameter.
+  remarks: >-
+    This parameter is associated with the "8_RUN DIM" description and is categorized under
+
+    BuiltInCategory.OST_PipeCurves
+
+    . It is defined as a text-based shared parameter.
   example: []
   syntax:
     content: >-
@@ -2180,7 +2240,12 @@ items:
   - MB.Common
   namespace: MB.Common.SharedParameters
   summary: Represents a shared parameter with the identifier "8_PAP" for use in Revit projects.
-  remarks: This parameter is associated with pipe curves in Revit and is categorized under BuiltInCategory.OST_PipeCurves. It is defined as a text-based shared parameter.
+  remarks: >-
+    This parameter is associated with pipe curves in Revit and is categorized under
+
+    BuiltInCategory.OST_PipeCurves
+
+    . It is defined as a text-based shared parameter.
   example: []
   syntax:
     content: >-
@@ -2232,7 +2297,8 @@ items:
   summary: Represents a shared parameter for the "9_RUN DIM" dimension, associated with pipe curves in Revit.
   remarks: >-
     This parameter is categorized under the BuiltInCategory.OST_PipeCurves category  and is
-                defined as a length parameter. It is identified by the GUID "a5f94330-0a3b-4242-91be-8a66ddc62e56".
+
+    defined as a length parameter. It is identified by the GUID "a5f94330-0a3b-4242-91be-8a66ddc62e56".
   example: []
   syntax:
     content: >-
@@ -2283,9 +2349,11 @@ items:
   namespace: MB.Common.SharedParameters
   summary: Represents a shared parameter with the identifier "9_PAP" for use in Revit.
   remarks: >-
-    This parameter is associated with the Revit category BuiltInCategory.OST_PipeCurves 
-                and is defined as a text-based shared parameter. It is identified by the GUID 
-                "2b164db7-983f-455e-9b0a-ba77061456d6".
+    This parameter is associated with the Revit category BuiltInCategory.OST_PipeCurves
+
+    and is defined as a text-based shared parameter. It is identified by the GUID
+
+    "2b164db7-983f-455e-9b0a-ba77061456d6".
   example: []
   syntax:
     content: >-
@@ -2312,6 +2380,168 @@ items:
     arguments:
     - type: System.String
       value: 2b164db7-983f-455e-9b0a-ba77061456d6
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.DoNotNumber
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.DoNotNumber
+  id: DoNotNumber
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: DoNotNumber
+  nameWithType: ToolsSharedParameter.DoNotNumber
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.DoNotNumber
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents a shared parameter that determines whether numbering should be applied.
+  remarks: >-
+    This parameter is typically used in Revit to control whether elements such as pipes, pipe
+                fittings,  or pipe accessories are assigned numbers. It is associated with the categories  BuiltInCategory.OST_PipeCurves, BuiltInCategory.OST_PipeFitting,  and BuiltInCategory.OST_PipeAccessory.
+  example: []
+  syntax:
+    content: >-
+      [Guid("322979ea-68ed-4725-b563-2cc023159fa9")]
+
+      [SharedParameterType(SharedParameterType.YesOrNo)]
+
+      [RevitCategories]
+
+      DoNotNumber = 42
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("322979ea-68ed-4725-b563-2cc023159fa9")>
+
+      <SharedParameterType(SharedParameterType.YesOrNo)>
+
+      <RevitCategories>
+
+      DoNotNumber = 42
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 322979ea-68ed-4725-b563-2cc023159fa9
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 0
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.DischargeDensity
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.DischargeDensity
+  id: DischargeDensity
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: DischargeDensity
+  nameWithType: ToolsSharedParameter.DischargeDensity
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.DischargeDensity
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: >-
+    Represents the discharge density parameter used in Revit for various categories, such as pipes, fittings, and
+
+    mechanical equipment.
+  remarks: >-
+    This shared parameter is identified by the GUID <code>2e46e681-4255-4016-9e53-722cb8aaaf32</code>
+                and is categorized as text. It is applicable to multiple Revit categories, including pipe curves, pipe fittings,
+                pipe accessories, generic models, flexible pipe curves, sprinklers, and mechanical equipment.
+  example: []
+  syntax:
+    content: >-
+      [Guid("2e46e681-4255-4016-9e53-722cb8aaaf32")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      DischargeDensity = 43
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("2e46e681-4255-4016-9e53-722cb8aaaf32")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      DischargeDensity = 43
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 2e46e681-4255-4016-9e53-722cb8aaaf32
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.DischargeType
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.DischargeType
+  id: DischargeType
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: DischargeType
+  nameWithType: ToolsSharedParameter.DischargeType
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.DischargeType
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the discharge type for mechanical systems in Revit.
+  remarks: >-
+    This parameter is used to categorize and define the type of discharge in mechanical systems,
+                such as pipes, fittings, accessories, and other related components. It is associated with multiple Revit
+                categories, including pipes, pipe fittings, pipe accessories, generic models, flexible pipes, sprinklers, and
+                mechanical equipment.
+  example: []
+  syntax:
+    content: >-
+      [Guid("48b9c6f5-70b6-4f7f-bd23-5ae171a78a7f")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      DischargeType = 44
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("48b9c6f5-70b6-4f7f-bd23-5ae171a78a7f")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      DischargeType = 44
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 48b9c6f5-70b6-4f7f-bd23-5ae171a78a7f
   - type: MB.Common.Attributes.SharedParameterTypeAttribute
     ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
     arguments:

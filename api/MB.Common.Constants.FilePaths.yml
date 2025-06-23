@@ -256,8 +256,10 @@ items:
   summary: Gets the base directory path where log files are stored.
   remarks: >-
     The directory path is constructed by combining the local application data folder, a
-                subdirectory named "MicroBIM", and a "Logs" folder. This path is intended to provide a consistent location for
-                storing application log files.
+
+    subdirectory named "MicroBIM", and a "Logs" folder. This path is intended to provide a consistent location for
+
+    storing application log files.
   example: []
   syntax:
     content: public static readonly string LogBaseDirectory

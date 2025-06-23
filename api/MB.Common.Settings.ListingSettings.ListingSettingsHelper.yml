@@ -48,7 +48,10 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
-  summary: Retrieves the <xref href="MB.Common.Settings.ListingSettings.ListingDto" data-throw-if-not-resolved="false"></xref> that matches the specified family name and type from the user listing settings.
+  summary: >-
+    Retrieves the <xref href="MB.Common.Settings.ListingSettings.ListingDto" data-throw-if-not-resolved="false"></xref> that matches the specified family name and type from the user listing
+
+    settings.
   example: []
   syntax:
     content: public static ListingDto? GetSelectedListingDto(string familyNameAndType)
@@ -59,7 +62,9 @@ items:
     return:
       type: MB.Common.Settings.ListingSettings.ListingDto
       description: >-
-        The <xref href="MB.Common.Settings.ListingSettings.ListingDto" data-throw-if-not-resolved="false"></xref> that matches the specified <code class="paramref">familyNameAndType</code>, or <code>null</code> if no match is found
+        The <xref href="MB.Common.Settings.ListingSettings.ListingDto" data-throw-if-not-resolved="false"></xref> that matches the specified <code class="paramref">familyNameAndType</code>, or <code>null</code> if
+
+        no match is found
 
         or if the user listing settings could not be loaded.
     content.vb: Public Shared Function GetSelectedListingDto(familyNameAndType As String) As ListingDto

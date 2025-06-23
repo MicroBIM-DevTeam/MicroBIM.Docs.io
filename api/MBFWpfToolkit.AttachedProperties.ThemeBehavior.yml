@@ -16,7 +16,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.ThemeBehavior
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ThemeBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/AttachedProperties/ThemeBehavior.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -47,7 +47,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.ThemeBehavior.ApplyThemeOnLoadProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ThemeBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/AttachedProperties/ThemeBehavior.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -83,7 +83,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.ThemeBehavior.SetApplyThemeOnLoad(System.Windows.DependencyObject, bool)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ThemeBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/AttachedProperties/ThemeBehavior.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -114,7 +114,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.ThemeBehavior.GetApplyThemeOnLoad(System.Windows.DependencyObject)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/ThemeBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/AttachedProperties/ThemeBehavior.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties

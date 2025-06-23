@@ -6,7 +6,6 @@ items:
   parent: MBF.Revit.Data.Extensions
   children:
   - MBF.Revit.Data.Extensions.PipeExtensions.GetEndPoints(Autodesk.Revit.DB.Plumbing.Pipe)
-  - MBF.Revit.Data.Extensions.PipeExtensions.GetLineOfPipe(Autodesk.Revit.DB.Plumbing.Pipe)
   - MBF.Revit.Data.Extensions.PipeExtensions.GetNearestEndPoints(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.XYZ)
   - MBF.Revit.Data.Extensions.PipeExtensions.GetNearestOneSideConnector(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.XYZ)
   - MBF.Revit.Data.Extensions.PipeExtensions.GetPipeCurve(Autodesk.Revit.DB.Plumbing.Pipe)
@@ -19,15 +18,21 @@ items:
   fullName: MBF.Revit.Data.Extensions.PipeExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/PipeExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/PipeExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
   summary: Provides extension methods for working with <xref href="Autodesk.Revit.DB.Plumbing.Pipe" data-throw-if-not-resolved="false"></xref> objects in Revit.
   remarks: >-
     This class includes utility methods for retrieving geometric and system-related information about
-                pipes, such as endpoints, connectors, curves, and associated piping system types. Each method returns an <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> to encapsulate the result or an error message, ensuring robust error handling for common issues
-                like null inputs or invalid pipe states.
+
+    pipes, such as endpoints, connectors, curves, and associated piping system types. Each method returns an
+
+    <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref>
+
+    to encapsulate the result or an error message, ensuring robust error handling for common issues
+
+    like null inputs or invalid pipe states.
   example: []
   syntax:
     content: >-
@@ -65,7 +70,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.PipeExtensions.GetEndPoints(Autodesk.Revit.DB.Plumbing.Pipe)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/PipeExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/PipeExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -103,7 +108,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.PipeExtensions.GetNearestOneSideConnector(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/PipeExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/PipeExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -144,7 +149,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.PipeExtensions.GetNearestEndPoints(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/PipeExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/PipeExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -172,44 +177,6 @@ items:
                 </li></ul>
     content.vb: Public Shared Function GetNearestEndPoints(pipe As Pipe, point As XYZ) As MbResult(Of List(Of XYZ))
   overload: MBF.Revit.Data.Extensions.PipeExtensions.GetNearestEndPoints*
-- uid: MBF.Revit.Data.Extensions.PipeExtensions.GetLineOfPipe(Autodesk.Revit.DB.Plumbing.Pipe)
-  commentId: M:MBF.Revit.Data.Extensions.PipeExtensions.GetLineOfPipe(Autodesk.Revit.DB.Plumbing.Pipe)
-  id: GetLineOfPipe(Autodesk.Revit.DB.Plumbing.Pipe)
-  isExtensionMethod: true
-  parent: MBF.Revit.Data.Extensions.PipeExtensions
-  langs:
-  - csharp
-  - vb
-  name: GetLineOfPipe(Pipe)
-  nameWithType: PipeExtensions.GetLineOfPipe(Pipe)
-  fullName: MBF.Revit.Data.Extensions.PipeExtensions.GetLineOfPipe(Autodesk.Revit.DB.Plumbing.Pipe)
-  type: Method
-  source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/PipeExtensions.cs
-  assemblies:
-  - MBF.Revit.Data
-  namespace: MBF.Revit.Data.Extensions
-  summary: Gets the line representing the pipe's geometry.
-  example: []
-  syntax:
-    content: public static MbResult<Line> GetLineOfPipe(this Pipe pipe)
-    parameters:
-    - id: pipe
-      type: Autodesk.Revit.DB.Plumbing.Pipe
-      description: The pipe to retrieve the line from.
-    return:
-      type: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Line}
-      description: >-
-        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing the line or an error message.
-
-        Possible error messages:
-
-        <ul><li>"The pipe cannot be null." - Returned if the input pipe is null.</li><li>
-                    "The pipe does not have a valid LocationCurve." - Returned if the pipe's location is not a
-                    valid curve.
-                </li></ul>
-    content.vb: Public Shared Function GetLineOfPipe(pipe As Pipe) As MbResult(Of Line)
-  overload: MBF.Revit.Data.Extensions.PipeExtensions.GetLineOfPipe*
 - uid: MBF.Revit.Data.Extensions.PipeExtensions.GetPipeCurve(Autodesk.Revit.DB.Plumbing.Pipe)
   commentId: M:MBF.Revit.Data.Extensions.PipeExtensions.GetPipeCurve(Autodesk.Revit.DB.Plumbing.Pipe)
   id: GetPipeCurve(Autodesk.Revit.DB.Plumbing.Pipe)
@@ -223,7 +190,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.PipeExtensions.GetPipeCurve(Autodesk.Revit.DB.Plumbing.Pipe)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/PipeExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/PipeExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -261,7 +228,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.PipeExtensions.GetPipingSystemType(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/PipeExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/PipeExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -763,43 +730,6 @@ references:
   name: GetNearestEndPoints
   nameWithType: PipeExtensions.GetNearestEndPoints
   fullName: MBF.Revit.Data.Extensions.PipeExtensions.GetNearestEndPoints
-- uid: MBF.Revit.Data.Extensions.PipeExtensions.GetLineOfPipe*
-  commentId: Overload:MBF.Revit.Data.Extensions.PipeExtensions.GetLineOfPipe
-  isExternal: true
-  href: MBF.Revit.Data.Extensions.PipeExtensions.html#MBF_Revit_Data_Extensions_PipeExtensions_GetLineOfPipe_Autodesk_Revit_DB_Plumbing_Pipe_
-  name: GetLineOfPipe
-  nameWithType: PipeExtensions.GetLineOfPipe
-  fullName: MBF.Revit.Data.Extensions.PipeExtensions.GetLineOfPipe
-- uid: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Line}
-  commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Line}
-  parent: MB.Common.Utils.Result
-  definition: MB.Common.Utils.Result.MbResult`1
-  name: MbResult<Line>
-  nameWithType: MbResult<Line>
-  fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.Line>
-  nameWithType.vb: MbResult(Of Line)
-  fullName.vb: MB.Common.Utils.Result.MbResult(Of Autodesk.Revit.DB.Line)
-  name.vb: MbResult(Of Line)
-  spec.csharp:
-  - uid: MB.Common.Utils.Result.MbResult`1
-    name: MbResult
-    isExternal: true
-  - name: <
-  - uid: Autodesk.Revit.DB.Line
-    name: Line
-    isExternal: true
-  - name: '>'
-  spec.vb:
-  - uid: MB.Common.Utils.Result.MbResult`1
-    name: MbResult
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Autodesk.Revit.DB.Line
-    name: Line
-    isExternal: true
-  - name: )
 - uid: MBF.Revit.Data.Extensions.PipeExtensions.GetPipeCurve*
   commentId: Overload:MBF.Revit.Data.Extensions.PipeExtensions.GetPipeCurve
   isExternal: true

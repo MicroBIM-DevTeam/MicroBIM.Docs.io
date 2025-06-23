@@ -17,7 +17,7 @@ items:
   fullName: MBF.Revit.Data.Utils.EntityUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/EntityUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/EntityUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -35,11 +35,8 @@ items:
     handling of units and field data is required.
 
     <p>
-
-    <b>Error messages:</b>
-
-    <ul><li>Entity or field cannot be null.</li><li>Value cannot be null.</li><li>Failed to retrieve or set the specified field value.</li></ul>
-
+        <b>Error messages:</b>
+        <ul><li>Entity or field cannot be null.</li><li>Value cannot be null.</li><li>Failed to retrieve or set the specified field value.</li></ul>
     </p>
   example: []
   syntax:
@@ -77,7 +74,7 @@ items:
   fullName: MBF.Revit.Data.Utils.EntityUtils.GetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity, Autodesk.Revit.DB.ExtensibleStorage.Field)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/EntityUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/EntityUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -86,11 +83,8 @@ items:
     The method adapts to different versions of the API to ensure compatibility.
 
     <p>
-
-    <b>Error messages:</b>
-
-    <ul><li>Entity or field cannot be null.</li><li>Failed to retrieve the XYZ value from the entity.</li></ul>
-
+        <b>Error messages:</b>
+        <ul><li>Entity or field cannot be null.</li><li>Failed to retrieve the XYZ value from the entity.</li></ul>
     </p>
   example: []
   syntax:
@@ -101,7 +95,10 @@ items:
       description: The entity from which to retrieve the <xref href="Autodesk.Revit.DB.XYZ" data-throw-if-not-resolved="false"></xref> value. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
     - id: field
       type: Autodesk.Revit.DB.ExtensibleStorage.Field
-      description: The field that specifies which <xref href="Autodesk.Revit.DB.XYZ" data-throw-if-not-resolved="false"></xref> value to retrieve. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+      description: >-
+        The field that specifies which <xref href="Autodesk.Revit.DB.XYZ" data-throw-if-not-resolved="false"></xref> value to retrieve. Cannot be
+
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
     return:
       type: Autodesk.Revit.DB.XYZ
       description: The <xref href="Autodesk.Revit.DB.XYZ" data-throw-if-not-resolved="false"></xref> value associated with the specified field in the entity.
@@ -119,7 +116,7 @@ items:
   fullName: MBF.Revit.Data.Utils.EntityUtils.GetElementId(Autodesk.Revit.DB.ExtensibleStorage.Entity, Autodesk.Revit.DB.ExtensibleStorage.Field)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/EntityUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/EntityUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -133,11 +130,8 @@ items:
     runtime environment.
 
     <p>
-
-    <b>Error messages:</b>
-
-    <ul><li>Entity or field cannot be null.</li><li>Failed to retrieve the ElementId value from the entity.</li></ul>
-
+        <b>Error messages:</b>
+        <ul><li>Entity or field cannot be null.</li><li>Failed to retrieve the ElementId value from the entity.</li></ul>
     </p>
   example: []
   syntax:
@@ -145,13 +139,19 @@ items:
     parameters:
     - id: entity
       type: Autodesk.Revit.DB.ExtensibleStorage.Entity
-      description: The <xref href="Autodesk.Revit.DB.ExtensibleStorage.Entity" data-throw-if-not-resolved="false"></xref> from which to retrieve the <xref href="ElementId" data-throw-if-not-resolved="false"></xref> value. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+      description: >-
+        The <xref href="Autodesk.Revit.DB.ExtensibleStorage.Entity" data-throw-if-not-resolved="false"></xref> from which to retrieve the <xref href="ElementId" data-throw-if-not-resolved="false"></xref> value. Cannot be
+
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
     - id: field
       type: Autodesk.Revit.DB.ExtensibleStorage.Field
       description: The <xref href="Autodesk.Revit.DB.ExtensibleStorage.Field" data-throw-if-not-resolved="false"></xref> that identifies the data to retrieve. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
     return:
       type: Autodesk.Revit.DB.ElementId
-      description: The <xref href="ElementId" data-throw-if-not-resolved="false"></xref> value associated with the specified <code class="paramref">field</code> in the <code class="paramref">entity</code>.
+      description: >-
+        The <xref href="ElementId" data-throw-if-not-resolved="false"></xref> value associated with the specified <code class="paramref">field</code> in the
+
+        <code class="paramref">entity</code>.
     content.vb: Public Shared Function GetElementId(entity As Entity, field As Field) As ElementId
   overload: MBF.Revit.Data.Utils.EntityUtils.GetElementId*
 - uid: MBF.Revit.Data.Utils.EntityUtils.SetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field,Autodesk.Revit.DB.XYZ)
@@ -166,7 +166,7 @@ items:
   fullName: MBF.Revit.Data.Utils.EntityUtils.SetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity, Autodesk.Revit.DB.ExtensibleStorage.Field, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/EntityUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/EntityUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -177,11 +177,8 @@ items:
     when setting the field.
 
     <p>
-
-    <b>Error messages:</b>
-
-    <ul><li>Entity, field, or value cannot be null.</li><li>Failed to set the XYZ value for the specified field.</li></ul>
-
+        <b>Error messages:</b>
+        <ul><li>Entity, field, or value cannot be null.</li><li>Failed to set the XYZ value for the specified field.</li></ul>
     </p>
   example: []
   syntax:
@@ -210,7 +207,7 @@ items:
   fullName: MBF.Revit.Data.Utils.EntityUtils.SetElementId(Autodesk.Revit.DB.ExtensibleStorage.Entity, Autodesk.Revit.DB.ExtensibleStorage.Field, Autodesk.Revit.DB.ElementId)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/EntityUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/EntityUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -221,11 +218,8 @@ items:
     type when setting the value.
 
     <p>
-
-    <b>Error messages:</b>
-
-    <ul><li>Entity, field, or value cannot be null.</li><li>Failed to set the ElementId value for the specified field.</li></ul>
-
+        <b>Error messages:</b>
+        <ul><li>Entity, field, or value cannot be null.</li><li>Failed to set the ElementId value for the specified field.</li></ul>
     </p>
   example: []
   syntax:
@@ -239,7 +233,10 @@ items:
       description: The <xref href="Autodesk.Revit.DB.ExtensibleStorage.Field" data-throw-if-not-resolved="false"></xref> that identifies the property to set. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
     - id: value
       type: Autodesk.Revit.DB.ElementId
-      description: The <xref href="ElementId" data-throw-if-not-resolved="false"></xref> value to assign to the specified field. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+      description: >-
+        The <xref href="ElementId" data-throw-if-not-resolved="false"></xref> value to assign to the specified field. Cannot be
+
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
     content.vb: Public Shared Sub SetElementId(entity As Entity, field As Field, value As ElementId)
   overload: MBF.Revit.Data.Utils.EntityUtils.SetElementId*
 references:

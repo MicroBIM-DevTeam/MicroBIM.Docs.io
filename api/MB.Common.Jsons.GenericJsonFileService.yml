@@ -50,7 +50,8 @@ items:
   summary: Ensures that a file exists at the specified path, creating it if necessary.
   remarks: >-
     If the specified file does not exist, this method creates it along with any necessary
-                directories.  The created file will be initialized with an empty JSON array.
+
+    directories.  The created file will be initialized with an empty JSON array.
   example: []
   syntax:
     content: public static MbResult<bool> EnsureFileExists(string filePath)
@@ -61,8 +62,13 @@ items:
     return:
       type: MB.Common.Utils.Result.MbResult{System.Boolean}
       description: >-
-        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing a boolean value indicating success or failure.  Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the file exists or was successfully created; otherwise, returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>
-                    with an error message.
+        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing a boolean value indicating success or failure.  Returns
+
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>
+
+        if the file exists or was successfully created; otherwise, returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>
+
+        with an error message.
     content.vb: Public Shared Function EnsureFileExists(filePath As String) As MbResult(Of Boolean)
   overload: MB.Common.Jsons.GenericJsonFileService.EnsureFileExists*
   nameWithType.vb: GenericJsonFileService.EnsureFileExists(String)

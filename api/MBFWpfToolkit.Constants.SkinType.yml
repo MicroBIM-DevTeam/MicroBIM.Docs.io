@@ -16,7 +16,7 @@ items:
   fullName: MBFWpfToolkit.Constants.SkinType
   type: Enum
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Constants/SkinType.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Constants/SkinType.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants
@@ -37,7 +37,7 @@ items:
   fullName: MBFWpfToolkit.Constants.SkinType.Default
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Constants/SkinType.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Constants/SkinType.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants
@@ -59,7 +59,7 @@ items:
   fullName: MBFWpfToolkit.Constants.SkinType.Dark
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Constants/SkinType.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Constants/SkinType.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants
@@ -81,7 +81,7 @@ items:
   fullName: MBFWpfToolkit.Constants.SkinType.Violet
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Constants/SkinType.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Constants/SkinType.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Constants

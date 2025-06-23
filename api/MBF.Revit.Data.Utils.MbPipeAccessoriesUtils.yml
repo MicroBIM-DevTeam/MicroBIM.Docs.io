@@ -14,15 +14,17 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeAccessoriesUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeAccessoriesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeAccessoriesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
   summary: Provides utility methods for working with pipe accessory elements in Revit.
   remarks: >-
     This class contains methods to filter and retrieve Revit elements categorized as pipe accessories. It
-                is designed to work with collections of Revit elements and supports conditional compilation for compatibility with
-                different Revit versions.
+
+    is designed to work with collections of Revit elements and supports conditional compilation for compatibility with
+
+    different Revit versions.
   example: []
   syntax:
     content: >-
@@ -59,7 +61,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeAccessoriesUtils.GetPipeAccessoriesInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbPipeAccessoriesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeAccessoriesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -79,7 +81,8 @@ items:
     <ul><li>
                 <b>ArgumentNullException</b>: Thrown if <code class="paramref">selectedElements</code> is null.
             </li><li>
-                <b>InvalidCastException</b>: Thrown if an element cannot be cast to <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> (should not occur due to <code>OfType</code> usage).
+                <b>InvalidCastException</b>: Thrown if an element cannot be cast to <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref>
+                (should not occur due to <code>OfType</code> usage).
             </li></ul>
   example: []
   syntax:

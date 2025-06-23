@@ -45,7 +45,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -76,7 +76,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.IsThemeToggleVisibleProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -99,7 +99,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowLanguagesComboBoxProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -122,7 +122,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PluginNameProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -145,7 +145,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PluginDescriptionProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -168,7 +168,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PluginVersionProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -191,7 +191,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PrimaryBrushProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -214,7 +214,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowLogoProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -237,7 +237,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowPluginNameProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -260,7 +260,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowPluginVersionProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -283,7 +283,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.GetAllChildrenOfType<T>(System.Windows.DependencyObject)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -317,7 +317,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ApplyThemeForElement(System.Windows.FrameworkElement, string)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -349,7 +349,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.MbWindow()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -377,7 +377,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.InitializeWindow()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -404,7 +404,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowSprite()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -431,7 +431,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.GetPrimaryBrush()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -456,7 +456,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.OnPropertyChanged(string?)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -485,7 +485,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.SetField<T>(ref T, T, string?)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -526,7 +526,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.IsDark
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -551,7 +551,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.SelectedLanguage
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -576,7 +576,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.SupportedLanguages
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -601,7 +601,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.this[string]
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -638,7 +638,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.IsThemeToggleVisible
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -664,7 +664,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowLanguagesComboBox
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -689,7 +689,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PluginName
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -714,7 +714,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PluginDescription
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -739,7 +739,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PluginVersion
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -764,7 +764,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PrimaryBrush
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -789,7 +789,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowLogo
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -814,7 +814,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowPluginName
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -839,7 +839,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowPluginVersion
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -864,7 +864,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.MainResources
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -892,7 +892,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PropertyChanged
   type: Event
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit

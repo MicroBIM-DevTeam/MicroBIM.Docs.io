@@ -15,15 +15,17 @@ items:
   fullName: MBF.Revit.Data.Utils.MbUnitUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbUnitUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbUnitUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
   summary: Provides utility methods for working with measurement units in Revit.
   remarks: >-
     This class includes methods to retrieve and standardize unit symbols for length measurements in the
-                active Revit document. It supports both modern and legacy Revit versions by handling differences in unit type
-                representations.
+
+    active Revit document. It supports both modern and legacy Revit versions by handling differences in unit type
+
+    representations.
   example: []
   syntax:
     content: >-
@@ -60,7 +62,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbUnitUtils.GetLengthUnitSymbol()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbUnitUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbUnitUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -88,7 +90,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbUnitUtils.GetStandardUnitSymbol(object)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbUnitUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbUnitUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils

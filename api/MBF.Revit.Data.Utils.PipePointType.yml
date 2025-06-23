@@ -17,7 +17,7 @@ items:
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
-  summary: Reprepipents a specific point along a pipe, either at the start or the end.
+  summary: Represents a specific point along a pipe, either at the start or the end.
   example: []
   syntax:
     content: public enum PipePointType

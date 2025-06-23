@@ -15,7 +15,7 @@ items:
   fullName: MBFWpfToolkit.Extensions.CollectionExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Extensions/CollectionExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Extensions/CollectionExtensions.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Extensions
@@ -47,7 +47,7 @@ items:
   fullName: MBFWpfToolkit.Extensions.CollectionExtensions.ToObservableCollection<T>(System.Collections.Generic.IEnumerable<T>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Extensions/CollectionExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Extensions/CollectionExtensions.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Extensions
@@ -83,7 +83,7 @@ items:
   fullName: MBFWpfToolkit.Extensions.CollectionExtensions.GroupByWithTolerance<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, double>, double)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Extensions/CollectionExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Extensions/CollectionExtensions.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Extensions

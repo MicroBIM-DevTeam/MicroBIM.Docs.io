@@ -24,7 +24,8 @@
                     "files": [
                         "MBF.Revit.Creation.dll",
                         "MBF.Revit.Creation.xml"
-                    ]
+                    ],
+                    "dest": "api/MBF.Revit.Creation"
                 },
                 {
                     "src": "C:/Users/MB-KFatihy/source/repos/MicroBIM-DevTeam/MBF.Revit.Geometry/bin/Debug R23/net48",
@@ -32,14 +33,15 @@
                         "MBF.Revit.Geometry.dll",
                         "MBF.Revit.Geometry.xml"
                     ],
-                    "dest": "api/MB.Common"
+                    "dest": "api/MBF.Revit.Geometry"
                 },      
                 {
                     "src": "C:/Users/MB-KFatihy/source/repos/MicroBIM-DevTeam/MBFWpfToolkit/obj/Debug/net48",
                     "files": [
                         "MBFWpfToolkit.dll",
                         "MBFWpfToolkit.xml"
-                    ]
+                    ],
+                    "dest": "api/MBFWpfToolkit"
                 }
             ],
             "dest": "api",

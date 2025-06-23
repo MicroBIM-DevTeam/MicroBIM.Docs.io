@@ -14,14 +14,15 @@ items:
   fullName: MBF.Revit.Data.Utils.MbSpaceUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbSpaceUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbSpaceUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
   summary: Provides utility methods for working with <xref href="Autodesk.Revit.DB.Mechanical.Space" data-throw-if-not-resolved="false"></xref> elements in Autodesk Revit.
   remarks: >-
     This class contains static methods to assist in retrieving and manipulating <xref href="Autodesk.Revit.DB.Mechanical.Space" data-throw-if-not-resolved="false"></xref>
-                elements from the Revit model, particularly from the user's current selection in the active view.
+
+    elements from the Revit model, particularly from the user's current selection in the active view.
   example: []
   syntax:
     content: >-
@@ -58,14 +59,15 @@ items:
   fullName: MBF.Revit.Data.Utils.MbSpaceUtils.GetSpacesFromSelection(Autodesk.Revit.UI.UIDocument)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/MbSpaceUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbSpaceUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
   summary: Retrieves a list of <xref href="Autodesk.Revit.DB.Mechanical.Space" data-throw-if-not-resolved="false"></xref> elements from the current selection in the Revit UI.
   remarks: >-
     This method filters the current selection to include only valid <xref href="Autodesk.Revit.DB.Mechanical.Space" data-throw-if-not-resolved="false"></xref> elements. Invalid
-                or non-<xref href="Autodesk.Revit.DB.Mechanical.Space" data-throw-if-not-resolved="false"></xref> elements in the selection are ignored.
+
+    or non-<xref href="Autodesk.Revit.DB.Mechanical.Space" data-throw-if-not-resolved="false"></xref> elements in the selection are ignored.
   example: []
   syntax:
     content: public static List<Space> GetSpacesFromSelection(UIDocument uiDoc)
@@ -76,8 +78,11 @@ items:
     return:
       type: System.Collections.Generic.List{Autodesk.Revit.DB.Mechanical.Space}
       description: >-
-        A list of <xref href="Autodesk.Revit.DB.Mechanical.Space" data-throw-if-not-resolved="false"></xref> elements selected by the user. Returns an empty list if no valid <xref href="Autodesk.Revit.DB.Mechanical.Space" data-throw-if-not-resolved="false"></xref>
-                    elements are selected.
+        A list of <xref href="Autodesk.Revit.DB.Mechanical.Space" data-throw-if-not-resolved="false"></xref> elements selected by the user. Returns an empty list if no valid
+
+        <xref href="Autodesk.Revit.DB.Mechanical.Space" data-throw-if-not-resolved="false"></xref>
+
+        elements are selected.
     content.vb: Public Shared Function GetSpacesFromSelection(uiDoc As UIDocument) As List(Of Space)
   overload: MBF.Revit.Data.Utils.MbSpaceUtils.GetSpacesFromSelection*
 references:

@@ -18,7 +18,7 @@ items:
   fullName: MBF.Revit.Data.Utils.XyzExtensibleStorage
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/XyzExtensibleStorage.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/XyzExtensibleStorage.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -62,7 +62,7 @@ items:
   fullName: MBF.Revit.Data.Utils.XyzExtensibleStorage.ReadStartPoint(Autodesk.Revit.DB.Plumbing.Pipe)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/XyzExtensibleStorage.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/XyzExtensibleStorage.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -94,7 +94,7 @@ items:
   fullName: MBF.Revit.Data.Utils.XyzExtensibleStorage.SetStartPoint(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.XYZ, string)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/XyzExtensibleStorage.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/XyzExtensibleStorage.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -132,22 +132,27 @@ items:
   fullName: MBF.Revit.Data.Utils.XyzExtensibleStorage.GetEntityValue(Autodesk.Revit.DB.ExtensibleStorage.Entity, Autodesk.Revit.DB.ExtensibleStorage.Field)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/XyzExtensibleStorage.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/XyzExtensibleStorage.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
   summary: Retrieves the value of the specified field from the given entity as an <xref href="Autodesk.Revit.DB.XYZ" data-throw-if-not-resolved="false"></xref> object.
   remarks: >-
     The method retrieves the value using the appropriate unit system based on the Revit version. For
-                Revit 2021 or later, the method uses a unit system derived from the <xref href="Autodesk.Revit.DB.SpecTypeId.Length" data-throw-if-not-resolved="false"></xref> specification.
-                For earlier versions, it defaults to DisplayUnitType.DUT_FEET_FRACTIONAL_INCHES.
+
+    Revit 2021 or later, the method uses a unit system derived from the <xref href="Autodesk.Revit.DB.SpecTypeId.Length" data-throw-if-not-resolved="false"></xref> specification.
+
+    For earlier versions, it defaults to DisplayUnitType.DUT_FEET_FRACTIONAL_INCHES.
   example: []
   syntax:
     content: public static XYZ GetEntityValue(Entity entity, Field field)
     parameters:
     - id: entity
       type: Autodesk.Revit.DB.ExtensibleStorage.Entity
-      description: The <xref href="Autodesk.Revit.DB.ExtensibleStorage.Entity" data-throw-if-not-resolved="false"></xref> from which the field value is retrieved. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+      description: >-
+        The <xref href="Autodesk.Revit.DB.ExtensibleStorage.Entity" data-throw-if-not-resolved="false"></xref> from which the field value is retrieved. Cannot be
+
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
     - id: field
       type: Autodesk.Revit.DB.ExtensibleStorage.Field
       description: The <xref href="Autodesk.Revit.DB.ExtensibleStorage.Field" data-throw-if-not-resolved="false"></xref> that specifies the data to retrieve. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
@@ -169,14 +174,15 @@ items:
   fullName: MBF.Revit.Data.Utils.XyzExtensibleStorage.GetNearestEndPoints(Autodesk.Revit.DB.Plumbing.Pipe)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/XyzExtensibleStorage.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/XyzExtensibleStorage.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
   summary: Retrieves the endpoints of the specified pipe's location curve.
   remarks: >-
-    This method assumes the pipe's location is a <xref href="Autodesk.Revit.DB.LocationCurve" data-throw-if-not-resolved="false"></xref>. If the location is not a 
-                <xref href="Autodesk.Revit.DB.LocationCurve" data-throw-if-not-resolved="false"></xref>, the method will return an empty list without throwing an exception.
+    This method assumes the pipe's location is a <xref href="Autodesk.Revit.DB.LocationCurve" data-throw-if-not-resolved="false"></xref>. If the location is not a
+
+    <xref href="Autodesk.Revit.DB.LocationCurve" data-throw-if-not-resolved="false"></xref>, the method will return an empty list without throwing an exception.
   example: []
   syntax:
     content: public static List<XYZ> GetNearestEndPoints(this Pipe pipe)
@@ -187,8 +193,11 @@ items:
     return:
       type: System.Collections.Generic.List{Autodesk.Revit.DB.XYZ}
       description: >-
-        A list of <xref href="Autodesk.Revit.DB.XYZ" data-throw-if-not-resolved="false"></xref> objects representing the start and end points of the pipe's location curve. If the pipe
-                    does not have a location curve, an empty list is returned.
+        A list of <xref href="Autodesk.Revit.DB.XYZ" data-throw-if-not-resolved="false"></xref> objects representing the start and end points of the pipe's location curve. If the
+
+        pipe
+
+        does not have a location curve, an empty list is returned.
     content.vb: Public Shared Function GetNearestEndPoints(pipe As Pipe) As List(Of XYZ)
   overload: MBF.Revit.Data.Utils.XyzExtensibleStorage.GetNearestEndPoints*
 - uid: MBF.Revit.Data.Utils.XyzExtensibleStorage.GetNearestEndPoints(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.XYZ)
@@ -204,7 +213,7 @@ items:
   fullName: MBF.Revit.Data.Utils.XyzExtensibleStorage.GetNearestEndPoints(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Utils/XyzExtensibleStorage.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/XyzExtensibleStorage.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils

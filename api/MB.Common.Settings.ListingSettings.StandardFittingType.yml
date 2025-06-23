@@ -966,7 +966,10 @@ items:
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
-  summary: Represents a plug fitting type. This fitting is typically used to seal or close the end of a pipe or fitting, preventing fluid or gas flow.
+  summary: >-
+    Represents a plug fitting type. This fitting is typically used to seal or close the end of a pipe or fitting,
+
+    preventing fluid or gas flow.
   example: []
   syntax:
     content: Plug = 37
@@ -1036,7 +1039,9 @@ items:
   summary: >-
     Represents a generalized welded end fitting type.
 
-    This enumeration member is used to categorize fittings that utilize welded connections for establishing a secure link between piping systems and components.
+    This enumeration member is used to categorize fittings that utilize welded connections for establishing a secure
+
+    link between piping systems and components.
   example: []
   syntax:
     content: WeldedEndFittingGeneral = 40

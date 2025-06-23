@@ -16,7 +16,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.LocalizationHelper
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/LocalizationHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/AttachedProperties/LocalizationHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -52,7 +52,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.LocalizationHelper.LangKeyProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/LocalizationHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/AttachedProperties/LocalizationHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -78,7 +78,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.LocalizationHelper.GetLangKey(System.Windows.DependencyObject)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/LocalizationHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/AttachedProperties/LocalizationHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -105,7 +105,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.LocalizationHelper.SetLangKey(System.Windows.DependencyObject, string)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/AttachedProperties/LocalizationHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/AttachedProperties/LocalizationHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties

@@ -1870,6 +1870,24 @@ references:
   commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.DescriptionAndAbbreviationListNo
   fullName: MB.Common.SharedParameters.ToolsSharedParameter.DescriptionAndAbbreviationListNo
   nameWithType: ToolsSharedParameter.DescriptionAndAbbreviationListNo
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.DischargeDensity
+  name: DischargeDensity
+  href: api/MB.Common.SharedParameters.ToolsSharedParameter.html#MB_Common_SharedParameters_ToolsSharedParameter_DischargeDensity
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.DischargeDensity
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.DischargeDensity
+  nameWithType: ToolsSharedParameter.DischargeDensity
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.DischargeType
+  name: DischargeType
+  href: api/MB.Common.SharedParameters.ToolsSharedParameter.html#MB_Common_SharedParameters_ToolsSharedParameter_DischargeType
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.DischargeType
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.DischargeType
+  nameWithType: ToolsSharedParameter.DischargeType
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.DoNotNumber
+  name: DoNotNumber
+  href: api/MB.Common.SharedParameters.ToolsSharedParameter.html#MB_Common_SharedParameters_ToolsSharedParameter_DoNotNumber
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.DoNotNumber
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.DoNotNumber
+  nameWithType: ToolsSharedParameter.DoNotNumber
 - uid: MB.Common.SharedParameters.ToolsSharedParameter.EndPap
   name: EndPap
   href: api/MB.Common.SharedParameters.ToolsSharedParameter.html#MB_Common_SharedParameters_ToolsSharedParameter_EndPap
@@ -2632,18 +2650,6 @@ references:
   commentId: Overload:MBF.Revit.Data.Extensions.PipeExtensions.GetEndPoints
   fullName: MBF.Revit.Data.Extensions.PipeExtensions.GetEndPoints
   nameWithType: PipeExtensions.GetEndPoints
-- uid: MBF.Revit.Data.Extensions.PipeExtensions.GetLineOfPipe(Autodesk.Revit.DB.Plumbing.Pipe)
-  name: GetLineOfPipe(Pipe)
-  href: api/MBF.Revit.Data.Extensions.PipeExtensions.html#MBF_Revit_Data_Extensions_PipeExtensions_GetLineOfPipe_Autodesk_Revit_DB_Plumbing_Pipe_
-  commentId: M:MBF.Revit.Data.Extensions.PipeExtensions.GetLineOfPipe(Autodesk.Revit.DB.Plumbing.Pipe)
-  fullName: MBF.Revit.Data.Extensions.PipeExtensions.GetLineOfPipe(Autodesk.Revit.DB.Plumbing.Pipe)
-  nameWithType: PipeExtensions.GetLineOfPipe(Pipe)
-- uid: MBF.Revit.Data.Extensions.PipeExtensions.GetLineOfPipe*
-  name: GetLineOfPipe
-  href: api/MBF.Revit.Data.Extensions.PipeExtensions.html#MBF_Revit_Data_Extensions_PipeExtensions_GetLineOfPipe_
-  commentId: Overload:MBF.Revit.Data.Extensions.PipeExtensions.GetLineOfPipe
-  fullName: MBF.Revit.Data.Extensions.PipeExtensions.GetLineOfPipe
-  nameWithType: PipeExtensions.GetLineOfPipe
 - uid: MBF.Revit.Data.Extensions.PipeExtensions.GetNearestEndPoints(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.XYZ)
   name: GetNearestEndPoints(Pipe, XYZ)
   href: api/MBF.Revit.Data.Extensions.PipeExtensions.html#MBF_Revit_Data_Extensions_PipeExtensions_GetNearestEndPoints_Autodesk_Revit_DB_Plumbing_Pipe_Autodesk_Revit_DB_XYZ_
@@ -3313,6 +3319,18 @@ references:
   commentId: Overload:MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetElbowsFamilyInstances
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetElbowsFamilyInstances
   nameWithType: MbPipeFittingsUtils.GetElbowsFamilyInstances
+- uid: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetFarthestConnectorSize(Autodesk.Revit.DB.FamilyInstance,Autodesk.Revit.DB.Plumbing.Pipe)
+  name: GetFarthestConnectorSize(FamilyInstance, Pipe)
+  href: api/MBF.Revit.Data.Utils.MbPipeFittingsUtils.html#MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetFarthestConnectorSize_Autodesk_Revit_DB_FamilyInstance_Autodesk_Revit_DB_Plumbing_Pipe_
+  commentId: M:MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetFarthestConnectorSize(Autodesk.Revit.DB.FamilyInstance,Autodesk.Revit.DB.Plumbing.Pipe)
+  fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetFarthestConnectorSize(Autodesk.Revit.DB.FamilyInstance, Autodesk.Revit.DB.Plumbing.Pipe)
+  nameWithType: MbPipeFittingsUtils.GetFarthestConnectorSize(FamilyInstance, Pipe)
+- uid: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetFarthestConnectorSize*
+  name: GetFarthestConnectorSize
+  href: api/MBF.Revit.Data.Utils.MbPipeFittingsUtils.html#MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetFarthestConnectorSize_
+  commentId: Overload:MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetFarthestConnectorSize
+  fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetFarthestConnectorSize
+  nameWithType: MbPipeFittingsUtils.GetFarthestConnectorSize
 - uid: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch(Autodesk.Revit.DB.Element,System.Boolean)
   name: GetOrderedConnectorSizesInInch(Element, bool)
   href: api/MBF.Revit.Data.Utils.MbPipeFittingsUtils.html#MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetOrderedConnectorSizesInInch_Autodesk_Revit_DB_Element_System_Boolean_
@@ -3430,6 +3448,18 @@ references:
   commentId: Overload:MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetTeeFamilyInstances
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetTeeFamilyInstances
   nameWithType: MbPipeFittingsUtils.GetTeeFamilyInstances
+- uid: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetValidOutletConnectors(Autodesk.Revit.DB.FamilyInstance)
+  name: GetValidOutletConnectors(FamilyInstance)
+  href: api/MBF.Revit.Data.Utils.MbPipeFittingsUtils.html#MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetValidOutletConnectors_Autodesk_Revit_DB_FamilyInstance_
+  commentId: M:MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetValidOutletConnectors(Autodesk.Revit.DB.FamilyInstance)
+  fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetValidOutletConnectors(Autodesk.Revit.DB.FamilyInstance)
+  nameWithType: MbPipeFittingsUtils.GetValidOutletConnectors(FamilyInstance)
+- uid: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetValidOutletConnectors*
+  name: GetValidOutletConnectors
+  href: api/MBF.Revit.Data.Utils.MbPipeFittingsUtils.html#MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetValidOutletConnectors_
+  commentId: Overload:MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetValidOutletConnectors
+  fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetValidOutletConnectors
+  nameWithType: MbPipeFittingsUtils.GetValidOutletConnectors
 - uid: MBF.Revit.Data.Utils.MbPipesUtils
   name: MbPipesUtils
   href: api/MBF.Revit.Data.Utils.MbPipesUtils.html
@@ -3805,24 +3835,6 @@ references:
   commentId: T:MBF.Revit.Data.Utils.MbViewUtils
   fullName: MBF.Revit.Data.Utils.MbViewUtils
   nameWithType: MbViewUtils
-- uid: MBF.Revit.Data.Utils.MbViewUtils.#ctor
-  name: MbViewUtils()
-  href: api/MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils__ctor
-  commentId: M:MBF.Revit.Data.Utils.MbViewUtils.#ctor
-  name.vb: New()
-  fullName: MBF.Revit.Data.Utils.MbViewUtils.MbViewUtils()
-  fullName.vb: MBF.Revit.Data.Utils.MbViewUtils.New()
-  nameWithType: MbViewUtils.MbViewUtils()
-  nameWithType.vb: MbViewUtils.New()
-- uid: MBF.Revit.Data.Utils.MbViewUtils.#ctor*
-  name: MbViewUtils
-  href: api/MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils__ctor_
-  commentId: Overload:MBF.Revit.Data.Utils.MbViewUtils.#ctor
-  name.vb: New
-  fullName: MBF.Revit.Data.Utils.MbViewUtils.MbViewUtils
-  fullName.vb: MBF.Revit.Data.Utils.MbViewUtils.New
-  nameWithType: MbViewUtils.MbViewUtils
-  nameWithType.vb: MbViewUtils.New
 - uid: MBF.Revit.Data.Utils.MbViewUtils.Create3DView(Autodesk.Revit.DB.Document)
   name: Create3DView(Document)
   href: api/MBF.Revit.Data.Utils.MbViewUtils.html#MBF_Revit_Data_Utils_MbViewUtils_Create3DView_Autodesk_Revit_DB_Document_
@@ -6767,48 +6779,6 @@ references:
   commentId: N:MBFWpfToolkit.Properties.Langs
   fullName: MBFWpfToolkit.Properties.Langs
   nameWithType: MBFWpfToolkit.Properties.Langs
-- uid: MBFWpfToolkit.Properties.Langs.Lang
-  name: Lang
-  href: api/MBFWpfToolkit.Properties.Langs.Lang.html
-  commentId: T:MBFWpfToolkit.Properties.Langs.Lang
-  fullName: MBFWpfToolkit.Properties.Langs.Lang
-  nameWithType: Lang
-- uid: MBFWpfToolkit.Properties.Langs.Lang.About
-  name: About
-  href: api/MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_About
-  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.About
-  fullName: MBFWpfToolkit.Properties.Langs.Lang.About
-  nameWithType: Lang.About
-- uid: MBFWpfToolkit.Properties.Langs.Lang.About*
-  name: About
-  href: api/MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_About_
-  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.About
-  fullName: MBFWpfToolkit.Properties.Langs.Lang.About
-  nameWithType: Lang.About
-- uid: MBFWpfToolkit.Properties.Langs.Lang.Culture
-  name: Culture
-  href: api/MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Culture
-  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Culture
-  fullName: MBFWpfToolkit.Properties.Langs.Lang.Culture
-  nameWithType: Lang.Culture
-- uid: MBFWpfToolkit.Properties.Langs.Lang.Culture*
-  name: Culture
-  href: api/MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Culture_
-  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Culture
-  fullName: MBFWpfToolkit.Properties.Langs.Lang.Culture
-  nameWithType: Lang.Culture
-- uid: MBFWpfToolkit.Properties.Langs.Lang.ResourceManager
-  name: ResourceManager
-  href: api/MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_ResourceManager
-  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.ResourceManager
-  fullName: MBFWpfToolkit.Properties.Langs.Lang.ResourceManager
-  nameWithType: Lang.ResourceManager
-- uid: MBFWpfToolkit.Properties.Langs.Lang.ResourceManager*
-  name: ResourceManager
-  href: api/MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_ResourceManager_
-  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.ResourceManager
-  fullName: MBFWpfToolkit.Properties.Langs.Lang.ResourceManager
-  nameWithType: Lang.ResourceManager
 - uid: MBFWpfToolkit.Properties.Langs.Lang_en
   name: Lang_en
   href: api/MBFWpfToolkit.Properties.Langs.Lang_en.html
@@ -8336,6 +8306,12 @@ references:
   commentId: F:OnMethodBoundaryAspectCompile.MethodInfos._methodInfo_7531B87CE8ED69DC1BB447611EA4A36614956EF7028D4DF1332E7897935EAD7E
   fullName: OnMethodBoundaryAspectCompile.MethodInfos._methodInfo_7531B87CE8ED69DC1BB447611EA4A36614956EF7028D4DF1332E7897935EAD7E
   nameWithType: MethodInfos._methodInfo_7531B87CE8ED69DC1BB447611EA4A36614956EF7028D4DF1332E7897935EAD7E
+- uid: OnMethodBoundaryAspectCompile.MethodInfos._methodInfo_757D5500E5E06B210B2B251C9322659AE1445BF515BE04342DFEBF8BFD8BFE6F
+  name: _methodInfo_757D5500E5E06B210B2B251C9322659AE1445BF515BE04342DFEBF8BFD8BFE6F
+  href: api/OnMethodBoundaryAspectCompile.MethodInfos.html#OnMethodBoundaryAspectCompile_MethodInfos__methodInfo_757D5500E5E06B210B2B251C9322659AE1445BF515BE04342DFEBF8BFD8BFE6F
+  commentId: F:OnMethodBoundaryAspectCompile.MethodInfos._methodInfo_757D5500E5E06B210B2B251C9322659AE1445BF515BE04342DFEBF8BFD8BFE6F
+  fullName: OnMethodBoundaryAspectCompile.MethodInfos._methodInfo_757D5500E5E06B210B2B251C9322659AE1445BF515BE04342DFEBF8BFD8BFE6F
+  nameWithType: MethodInfos._methodInfo_757D5500E5E06B210B2B251C9322659AE1445BF515BE04342DFEBF8BFD8BFE6F
 - uid: OnMethodBoundaryAspectCompile.MethodInfos._methodInfo_77DEC956CB4EB58000E5D50ECB122B76B102228788B53FFCECB31E7CA7601C14
   name: _methodInfo_77DEC956CB4EB58000E5D50ECB122B76B102228788B53FFCECB31E7CA7601C14
   href: api/OnMethodBoundaryAspectCompile.MethodInfos.html#OnMethodBoundaryAspectCompile_MethodInfos__methodInfo_77DEC956CB4EB58000E5D50ECB122B76B102228788B53FFCECB31E7CA7601C14
@@ -8378,12 +8354,6 @@ references:
   commentId: F:OnMethodBoundaryAspectCompile.MethodInfos._methodInfo_8317B9CA16FA34298CBBFA3038FD1074CD829A5F7897F7055A8187675E80D75E
   fullName: OnMethodBoundaryAspectCompile.MethodInfos._methodInfo_8317B9CA16FA34298CBBFA3038FD1074CD829A5F7897F7055A8187675E80D75E
   nameWithType: MethodInfos._methodInfo_8317B9CA16FA34298CBBFA3038FD1074CD829A5F7897F7055A8187675E80D75E
-- uid: OnMethodBoundaryAspectCompile.MethodInfos._methodInfo_85DC12474FC10EC3B6EEB698C0725FAF9D3A4715D73A17F3F39CB07CE358D2EF
-  name: _methodInfo_85DC12474FC10EC3B6EEB698C0725FAF9D3A4715D73A17F3F39CB07CE358D2EF
-  href: api/OnMethodBoundaryAspectCompile.MethodInfos.html#OnMethodBoundaryAspectCompile_MethodInfos__methodInfo_85DC12474FC10EC3B6EEB698C0725FAF9D3A4715D73A17F3F39CB07CE358D2EF
-  commentId: F:OnMethodBoundaryAspectCompile.MethodInfos._methodInfo_85DC12474FC10EC3B6EEB698C0725FAF9D3A4715D73A17F3F39CB07CE358D2EF
-  fullName: OnMethodBoundaryAspectCompile.MethodInfos._methodInfo_85DC12474FC10EC3B6EEB698C0725FAF9D3A4715D73A17F3F39CB07CE358D2EF
-  nameWithType: MethodInfos._methodInfo_85DC12474FC10EC3B6EEB698C0725FAF9D3A4715D73A17F3F39CB07CE358D2EF
 - uid: OnMethodBoundaryAspectCompile.MethodInfos._methodInfo_85DE62FBC84DD2B8E17C545E5682709982CBE615A1616EBE70EDFE6B896B70F6
   name: _methodInfo_85DE62FBC84DD2B8E17C545E5682709982CBE615A1616EBE70EDFE6B896B70F6
   href: api/OnMethodBoundaryAspectCompile.MethodInfos.html#OnMethodBoundaryAspectCompile_MethodInfos__methodInfo_85DE62FBC84DD2B8E17C545E5682709982CBE615A1616EBE70EDFE6B896B70F6
@@ -8798,519 +8768,3 @@ references:
   commentId: F:OnMethodBoundaryAspectCompile.MethodInfos._methodInfo_FD69BAB8E1946BA5283192625983D8AE5332A9FE151C8C23E6EE655AFDB1C418
   fullName: OnMethodBoundaryAspectCompile.MethodInfos._methodInfo_FD69BAB8E1946BA5283192625983D8AE5332A9FE151C8C23E6EE655AFDB1C418
   nameWithType: MethodInfos._methodInfo_FD69BAB8E1946BA5283192625983D8AE5332A9FE151C8C23E6EE655AFDB1C418
-- uid: Revit.Extensions.Elements
-  name: Revit.Extensions.Elements
-  href: api/Revit.Extensions.Elements.html
-  commentId: N:Revit.Extensions.Elements
-  fullName: Revit.Extensions.Elements
-  nameWithType: Revit.Extensions.Elements
-- uid: Revit.Extensions.Elements.PipeExtensions
-  name: PipeExtensions
-  href: api/Revit.Extensions.Elements.PipeExtensions.html
-  commentId: T:Revit.Extensions.Elements.PipeExtensions
-  fullName: Revit.Extensions.Elements.PipeExtensions
-  nameWithType: PipeExtensions
-- uid: Revit.Extensions.Elements.PipeExtensions.GetEndPoints(Autodesk.Revit.DB.Plumbing.Pipe)
-  name: GetEndPoints(Pipe)
-  href: api/Revit.Extensions.Elements.PipeExtensions.html#Revit_Extensions_Elements_PipeExtensions_GetEndPoints_Autodesk_Revit_DB_Plumbing_Pipe_
-  commentId: M:Revit.Extensions.Elements.PipeExtensions.GetEndPoints(Autodesk.Revit.DB.Plumbing.Pipe)
-  fullName: Revit.Extensions.Elements.PipeExtensions.GetEndPoints(Autodesk.Revit.DB.Plumbing.Pipe)
-  nameWithType: PipeExtensions.GetEndPoints(Pipe)
-- uid: Revit.Extensions.Elements.PipeExtensions.GetEndPoints*
-  name: GetEndPoints
-  href: api/Revit.Extensions.Elements.PipeExtensions.html#Revit_Extensions_Elements_PipeExtensions_GetEndPoints_
-  commentId: Overload:Revit.Extensions.Elements.PipeExtensions.GetEndPoints
-  fullName: Revit.Extensions.Elements.PipeExtensions.GetEndPoints
-  nameWithType: PipeExtensions.GetEndPoints
-- uid: Revit.Extensions.Elements.PipeExtensions.GetLineOfPipe(Autodesk.Revit.DB.Plumbing.Pipe)
-  name: GetLineOfPipe(Pipe)
-  href: api/Revit.Extensions.Elements.PipeExtensions.html#Revit_Extensions_Elements_PipeExtensions_GetLineOfPipe_Autodesk_Revit_DB_Plumbing_Pipe_
-  commentId: M:Revit.Extensions.Elements.PipeExtensions.GetLineOfPipe(Autodesk.Revit.DB.Plumbing.Pipe)
-  fullName: Revit.Extensions.Elements.PipeExtensions.GetLineOfPipe(Autodesk.Revit.DB.Plumbing.Pipe)
-  nameWithType: PipeExtensions.GetLineOfPipe(Pipe)
-- uid: Revit.Extensions.Elements.PipeExtensions.GetLineOfPipe*
-  name: GetLineOfPipe
-  href: api/Revit.Extensions.Elements.PipeExtensions.html#Revit_Extensions_Elements_PipeExtensions_GetLineOfPipe_
-  commentId: Overload:Revit.Extensions.Elements.PipeExtensions.GetLineOfPipe
-  fullName: Revit.Extensions.Elements.PipeExtensions.GetLineOfPipe
-  nameWithType: PipeExtensions.GetLineOfPipe
-- uid: Revit.Extensions.Elements.PipeExtensions.GetNearestEndPoints(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.XYZ)
-  name: GetNearestEndPoints(Pipe, XYZ)
-  href: api/Revit.Extensions.Elements.PipeExtensions.html#Revit_Extensions_Elements_PipeExtensions_GetNearestEndPoints_Autodesk_Revit_DB_Plumbing_Pipe_Autodesk_Revit_DB_XYZ_
-  commentId: M:Revit.Extensions.Elements.PipeExtensions.GetNearestEndPoints(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.XYZ)
-  fullName: Revit.Extensions.Elements.PipeExtensions.GetNearestEndPoints(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.XYZ)
-  nameWithType: PipeExtensions.GetNearestEndPoints(Pipe, XYZ)
-- uid: Revit.Extensions.Elements.PipeExtensions.GetNearestEndPoints*
-  name: GetNearestEndPoints
-  href: api/Revit.Extensions.Elements.PipeExtensions.html#Revit_Extensions_Elements_PipeExtensions_GetNearestEndPoints_
-  commentId: Overload:Revit.Extensions.Elements.PipeExtensions.GetNearestEndPoints
-  fullName: Revit.Extensions.Elements.PipeExtensions.GetNearestEndPoints
-  nameWithType: PipeExtensions.GetNearestEndPoints
-- uid: Revit.Extensions.Elements.PipeExtensions.GetNearestOneSideConnector(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.XYZ)
-  name: GetNearestOneSideConnector(Pipe, XYZ)
-  href: api/Revit.Extensions.Elements.PipeExtensions.html#Revit_Extensions_Elements_PipeExtensions_GetNearestOneSideConnector_Autodesk_Revit_DB_Plumbing_Pipe_Autodesk_Revit_DB_XYZ_
-  commentId: M:Revit.Extensions.Elements.PipeExtensions.GetNearestOneSideConnector(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.XYZ)
-  fullName: Revit.Extensions.Elements.PipeExtensions.GetNearestOneSideConnector(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.XYZ)
-  nameWithType: PipeExtensions.GetNearestOneSideConnector(Pipe, XYZ)
-- uid: Revit.Extensions.Elements.PipeExtensions.GetNearestOneSideConnector*
-  name: GetNearestOneSideConnector
-  href: api/Revit.Extensions.Elements.PipeExtensions.html#Revit_Extensions_Elements_PipeExtensions_GetNearestOneSideConnector_
-  commentId: Overload:Revit.Extensions.Elements.PipeExtensions.GetNearestOneSideConnector
-  fullName: Revit.Extensions.Elements.PipeExtensions.GetNearestOneSideConnector
-  nameWithType: PipeExtensions.GetNearestOneSideConnector
-- uid: Revit.Extensions.Elements.PipeExtensions.GetPipeCurve(Autodesk.Revit.DB.Plumbing.Pipe)
-  name: GetPipeCurve(Pipe)
-  href: api/Revit.Extensions.Elements.PipeExtensions.html#Revit_Extensions_Elements_PipeExtensions_GetPipeCurve_Autodesk_Revit_DB_Plumbing_Pipe_
-  commentId: M:Revit.Extensions.Elements.PipeExtensions.GetPipeCurve(Autodesk.Revit.DB.Plumbing.Pipe)
-  fullName: Revit.Extensions.Elements.PipeExtensions.GetPipeCurve(Autodesk.Revit.DB.Plumbing.Pipe)
-  nameWithType: PipeExtensions.GetPipeCurve(Pipe)
-- uid: Revit.Extensions.Elements.PipeExtensions.GetPipeCurve*
-  name: GetPipeCurve
-  href: api/Revit.Extensions.Elements.PipeExtensions.html#Revit_Extensions_Elements_PipeExtensions_GetPipeCurve_
-  commentId: Overload:Revit.Extensions.Elements.PipeExtensions.GetPipeCurve
-  fullName: Revit.Extensions.Elements.PipeExtensions.GetPipeCurve
-  nameWithType: PipeExtensions.GetPipeCurve
-- uid: Revit.Extensions.Elements.PipeExtensions.GetPipingSystemType(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.Document)
-  name: GetPipingSystemType(Pipe, Document)
-  href: api/Revit.Extensions.Elements.PipeExtensions.html#Revit_Extensions_Elements_PipeExtensions_GetPipingSystemType_Autodesk_Revit_DB_Plumbing_Pipe_Autodesk_Revit_DB_Document_
-  commentId: M:Revit.Extensions.Elements.PipeExtensions.GetPipingSystemType(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.Document)
-  fullName: Revit.Extensions.Elements.PipeExtensions.GetPipingSystemType(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.Document)
-  nameWithType: PipeExtensions.GetPipingSystemType(Pipe, Document)
-- uid: Revit.Extensions.Elements.PipeExtensions.GetPipingSystemType*
-  name: GetPipingSystemType
-  href: api/Revit.Extensions.Elements.PipeExtensions.html#Revit_Extensions_Elements_PipeExtensions_GetPipingSystemType_
-  commentId: Overload:Revit.Extensions.Elements.PipeExtensions.GetPipingSystemType
-  fullName: Revit.Extensions.Elements.PipeExtensions.GetPipingSystemType
-  nameWithType: PipeExtensions.GetPipingSystemType
-- uid: Revit.Extensions.Elements.SpaceExtensions
-  name: SpaceExtensions
-  href: api/Revit.Extensions.Elements.SpaceExtensions.html
-  commentId: T:Revit.Extensions.Elements.SpaceExtensions
-  fullName: Revit.Extensions.Elements.SpaceExtensions
-  nameWithType: SpaceExtensions
-- uid: Revit.Extensions.Elements.SpaceExtensions.GetBoundarySegment(Autodesk.Revit.DB.Mechanical.Space)
-  name: GetBoundarySegment(Space)
-  href: api/Revit.Extensions.Elements.SpaceExtensions.html#Revit_Extensions_Elements_SpaceExtensions_GetBoundarySegment_Autodesk_Revit_DB_Mechanical_Space_
-  commentId: M:Revit.Extensions.Elements.SpaceExtensions.GetBoundarySegment(Autodesk.Revit.DB.Mechanical.Space)
-  fullName: Revit.Extensions.Elements.SpaceExtensions.GetBoundarySegment(Autodesk.Revit.DB.Mechanical.Space)
-  nameWithType: SpaceExtensions.GetBoundarySegment(Space)
-- uid: Revit.Extensions.Elements.SpaceExtensions.GetBoundarySegment*
-  name: GetBoundarySegment
-  href: api/Revit.Extensions.Elements.SpaceExtensions.html#Revit_Extensions_Elements_SpaceExtensions_GetBoundarySegment_
-  commentId: Overload:Revit.Extensions.Elements.SpaceExtensions.GetBoundarySegment
-  fullName: Revit.Extensions.Elements.SpaceExtensions.GetBoundarySegment
-  nameWithType: SpaceExtensions.GetBoundarySegment
-- uid: Revit.Extensions.Elements.SpaceExtensions.Validate(Autodesk.Revit.DB.Mechanical.Space)
-  name: Validate(Space)
-  href: api/Revit.Extensions.Elements.SpaceExtensions.html#Revit_Extensions_Elements_SpaceExtensions_Validate_Autodesk_Revit_DB_Mechanical_Space_
-  commentId: M:Revit.Extensions.Elements.SpaceExtensions.Validate(Autodesk.Revit.DB.Mechanical.Space)
-  fullName: Revit.Extensions.Elements.SpaceExtensions.Validate(Autodesk.Revit.DB.Mechanical.Space)
-  nameWithType: SpaceExtensions.Validate(Space)
-- uid: Revit.Extensions.Elements.SpaceExtensions.Validate*
-  name: Validate
-  href: api/Revit.Extensions.Elements.SpaceExtensions.html#Revit_Extensions_Elements_SpaceExtensions_Validate_
-  commentId: Overload:Revit.Extensions.Elements.SpaceExtensions.Validate
-  fullName: Revit.Extensions.Elements.SpaceExtensions.Validate
-  nameWithType: SpaceExtensions.Validate
-- uid: Revit.Extensions.Extensions
-  name: Revit.Extensions.Extensions
-  href: api/Revit.Extensions.Extensions.html
-  commentId: N:Revit.Extensions.Extensions
-  fullName: Revit.Extensions.Extensions
-  nameWithType: Revit.Extensions.Extensions
-- uid: Revit.Extensions.Extensions.CollectionExtensions
-  name: CollectionExtensions
-  href: api/Revit.Extensions.Extensions.CollectionExtensions.html
-  commentId: T:Revit.Extensions.Extensions.CollectionExtensions
-  fullName: Revit.Extensions.Extensions.CollectionExtensions
-  nameWithType: CollectionExtensions
-- uid: Revit.Extensions.Extensions.CollectionExtensions.ToObservableCollection*
-  name: ToObservableCollection
-  href: api/Revit.Extensions.Extensions.CollectionExtensions.html#Revit_Extensions_Extensions_CollectionExtensions_ToObservableCollection_
-  commentId: Overload:Revit.Extensions.Extensions.CollectionExtensions.ToObservableCollection
-  fullName: Revit.Extensions.Extensions.CollectionExtensions.ToObservableCollection
-  nameWithType: CollectionExtensions.ToObservableCollection
-- uid: Revit.Extensions.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
-  name: ToObservableCollection<T>(IEnumerable<T>)
-  href: api/Revit.Extensions.Extensions.CollectionExtensions.html#Revit_Extensions_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
-  commentId: M:Revit.Extensions.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
-  name.vb: ToObservableCollection(Of T)(IEnumerable(Of T))
-  fullName: Revit.Extensions.Extensions.CollectionExtensions.ToObservableCollection<T>(System.Collections.Generic.IEnumerable<T>)
-  fullName.vb: Revit.Extensions.Extensions.CollectionExtensions.ToObservableCollection(Of T)(System.Collections.Generic.IEnumerable(Of T))
-  nameWithType: CollectionExtensions.ToObservableCollection<T>(IEnumerable<T>)
-  nameWithType.vb: CollectionExtensions.ToObservableCollection(Of T)(IEnumerable(Of T))
-- uid: Revit.Extensions.Extensions.DocumentExtensions
-  name: DocumentExtensions
-  href: api/Revit.Extensions.Extensions.DocumentExtensions.html
-  commentId: T:Revit.Extensions.Extensions.DocumentExtensions
-  fullName: Revit.Extensions.Extensions.DocumentExtensions
-  nameWithType: DocumentExtensions
-- uid: Revit.Extensions.Extensions.DocumentExtensions.CreateAndPlaceColumnAtPoint(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.FamilySymbol,Autodesk.Revit.DB.Level,Autodesk.Revit.DB.Level)
-  name: CreateAndPlaceColumnAtPoint(Document, XYZ, FamilySymbol, Level, Level)
-  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_CreateAndPlaceColumnAtPoint_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_FamilySymbol_Autodesk_Revit_DB_Level_Autodesk_Revit_DB_Level_
-  commentId: M:Revit.Extensions.Extensions.DocumentExtensions.CreateAndPlaceColumnAtPoint(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.FamilySymbol,Autodesk.Revit.DB.Level,Autodesk.Revit.DB.Level)
-  fullName: Revit.Extensions.Extensions.DocumentExtensions.CreateAndPlaceColumnAtPoint(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.FamilySymbol, Autodesk.Revit.DB.Level, Autodesk.Revit.DB.Level)
-  nameWithType: DocumentExtensions.CreateAndPlaceColumnAtPoint(Document, XYZ, FamilySymbol, Level, Level)
-- uid: Revit.Extensions.Extensions.DocumentExtensions.CreateAndPlaceColumnAtPoint*
-  name: CreateAndPlaceColumnAtPoint
-  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_CreateAndPlaceColumnAtPoint_
-  commentId: Overload:Revit.Extensions.Extensions.DocumentExtensions.CreateAndPlaceColumnAtPoint
-  fullName: Revit.Extensions.Extensions.DocumentExtensions.CreateAndPlaceColumnAtPoint
-  nameWithType: DocumentExtensions.CreateAndPlaceColumnAtPoint
-- uid: Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments(Autodesk.Revit.DB.Document)
-  name: GetAllRevitDocuments(Document)
-  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetAllRevitDocuments_Autodesk_Revit_DB_Document_
-  commentId: M:Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments(Autodesk.Revit.DB.Document)
-  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments(Autodesk.Revit.DB.Document)
-  nameWithType: DocumentExtensions.GetAllRevitDocuments(Document)
-- uid: Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments*
-  name: GetAllRevitDocuments
-  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetAllRevitDocuments_
-  commentId: Overload:Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments
-  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetAllRevitDocuments
-  nameWithType: DocumentExtensions.GetAllRevitDocuments
-- uid: Revit.Extensions.Extensions.DocumentExtensions.GetFamilyTypesByCategoryOrderedByName(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)
-  name: GetFamilyTypesByCategoryOrderedByName(Document, BuiltInCategory)
-  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetFamilyTypesByCategoryOrderedByName_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_
-  commentId: M:Revit.Extensions.Extensions.DocumentExtensions.GetFamilyTypesByCategoryOrderedByName(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)
-  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetFamilyTypesByCategoryOrderedByName(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.BuiltInCategory)
-  nameWithType: DocumentExtensions.GetFamilyTypesByCategoryOrderedByName(Document, BuiltInCategory)
-- uid: Revit.Extensions.Extensions.DocumentExtensions.GetFamilyTypesByCategoryOrderedByName*
-  name: GetFamilyTypesByCategoryOrderedByName
-  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetFamilyTypesByCategoryOrderedByName_
-  commentId: Overload:Revit.Extensions.Extensions.DocumentExtensions.GetFamilyTypesByCategoryOrderedByName
-  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetFamilyTypesByCategoryOrderedByName
-  nameWithType: DocumentExtensions.GetFamilyTypesByCategoryOrderedByName
-- uid: Revit.Extensions.Extensions.DocumentExtensions.GetLevelsOrderedByProperty*
-  name: GetLevelsOrderedByProperty
-  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetLevelsOrderedByProperty_
-  commentId: Overload:Revit.Extensions.Extensions.DocumentExtensions.GetLevelsOrderedByProperty
-  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetLevelsOrderedByProperty
-  nameWithType: DocumentExtensions.GetLevelsOrderedByProperty
-- uid: Revit.Extensions.Extensions.DocumentExtensions.GetLevelsOrderedByProperty``1(Autodesk.Revit.DB.Document,System.Func{Autodesk.Revit.DB.Level,``0},System.Boolean)
-  name: GetLevelsOrderedByProperty<TKey>(Document, Func<Level, TKey>, bool)
-  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetLevelsOrderedByProperty__1_Autodesk_Revit_DB_Document_System_Func_Autodesk_Revit_DB_Level___0__System_Boolean_
-  commentId: M:Revit.Extensions.Extensions.DocumentExtensions.GetLevelsOrderedByProperty``1(Autodesk.Revit.DB.Document,System.Func{Autodesk.Revit.DB.Level,``0},System.Boolean)
-  name.vb: GetLevelsOrderedByProperty(Of TKey)(Document, Func(Of Level, TKey), Boolean)
-  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetLevelsOrderedByProperty<TKey>(Autodesk.Revit.DB.Document, System.Func<Autodesk.Revit.DB.Level, TKey>, bool)
-  fullName.vb: Revit.Extensions.Extensions.DocumentExtensions.GetLevelsOrderedByProperty(Of TKey)(Autodesk.Revit.DB.Document, System.Func(Of Autodesk.Revit.DB.Level, TKey), Boolean)
-  nameWithType: DocumentExtensions.GetLevelsOrderedByProperty<TKey>(Document, Func<Level, TKey>, bool)
-  nameWithType.vb: DocumentExtensions.GetLevelsOrderedByProperty(Of TKey)(Document, Func(Of Level, TKey), Boolean)
-- uid: Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly(Autodesk.Revit.DB.Document)
-  name: GetLinkedDocumentsOnly(Document)
-  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetLinkedDocumentsOnly_Autodesk_Revit_DB_Document_
-  commentId: M:Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly(Autodesk.Revit.DB.Document)
-  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly(Autodesk.Revit.DB.Document)
-  nameWithType: DocumentExtensions.GetLinkedDocumentsOnly(Document)
-- uid: Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly*
-  name: GetLinkedDocumentsOnly
-  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetLinkedDocumentsOnly_
-  commentId: Overload:Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly
-  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetLinkedDocumentsOnly
-  nameWithType: DocumentExtensions.GetLinkedDocumentsOnly
-- uid: Revit.Extensions.Extensions.DocumentExtensions.GetRebarBarTypes(Autodesk.Revit.DB.Document)
-  name: GetRebarBarTypes(Document)
-  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetRebarBarTypes_Autodesk_Revit_DB_Document_
-  commentId: M:Revit.Extensions.Extensions.DocumentExtensions.GetRebarBarTypes(Autodesk.Revit.DB.Document)
-  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetRebarBarTypes(Autodesk.Revit.DB.Document)
-  nameWithType: DocumentExtensions.GetRebarBarTypes(Document)
-- uid: Revit.Extensions.Extensions.DocumentExtensions.GetRebarBarTypes*
-  name: GetRebarBarTypes
-  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetRebarBarTypes_
-  commentId: Overload:Revit.Extensions.Extensions.DocumentExtensions.GetRebarBarTypes
-  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetRebarBarTypes
-  nameWithType: DocumentExtensions.GetRebarBarTypes
-- uid: Revit.Extensions.Extensions.DocumentExtensions.GetRebarShapes(Autodesk.Revit.DB.Document)
-  name: GetRebarShapes(Document)
-  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetRebarShapes_Autodesk_Revit_DB_Document_
-  commentId: M:Revit.Extensions.Extensions.DocumentExtensions.GetRebarShapes(Autodesk.Revit.DB.Document)
-  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetRebarShapes(Autodesk.Revit.DB.Document)
-  nameWithType: DocumentExtensions.GetRebarShapes(Document)
-- uid: Revit.Extensions.Extensions.DocumentExtensions.GetRebarShapes*
-  name: GetRebarShapes
-  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_GetRebarShapes_
-  commentId: Overload:Revit.Extensions.Extensions.DocumentExtensions.GetRebarShapes
-  fullName: Revit.Extensions.Extensions.DocumentExtensions.GetRebarShapes
-  nameWithType: DocumentExtensions.GetRebarShapes
-- uid: Revit.Extensions.Extensions.DocumentExtensions.SearchOrCreate3DView(Autodesk.Revit.DB.Document,System.String,System.Boolean)
-  name: SearchOrCreate3DView(Document, string, bool)
-  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_SearchOrCreate3DView_Autodesk_Revit_DB_Document_System_String_System_Boolean_
-  commentId: M:Revit.Extensions.Extensions.DocumentExtensions.SearchOrCreate3DView(Autodesk.Revit.DB.Document,System.String,System.Boolean)
-  name.vb: SearchOrCreate3DView(Document, String, Boolean)
-  fullName: Revit.Extensions.Extensions.DocumentExtensions.SearchOrCreate3DView(Autodesk.Revit.DB.Document, string, bool)
-  fullName.vb: Revit.Extensions.Extensions.DocumentExtensions.SearchOrCreate3DView(Autodesk.Revit.DB.Document, String, Boolean)
-  nameWithType: DocumentExtensions.SearchOrCreate3DView(Document, string, bool)
-  nameWithType.vb: DocumentExtensions.SearchOrCreate3DView(Document, String, Boolean)
-- uid: Revit.Extensions.Extensions.DocumentExtensions.SearchOrCreate3DView*
-  name: SearchOrCreate3DView
-  href: api/Revit.Extensions.Extensions.DocumentExtensions.html#Revit_Extensions_Extensions_DocumentExtensions_SearchOrCreate3DView_
-  commentId: Overload:Revit.Extensions.Extensions.DocumentExtensions.SearchOrCreate3DView
-  fullName: Revit.Extensions.Extensions.DocumentExtensions.SearchOrCreate3DView
-  nameWithType: DocumentExtensions.SearchOrCreate3DView
-- uid: Revit.Extensions.Extensions.PipeExtensions
-  name: PipeExtensions
-  href: api/Revit.Extensions.Extensions.PipeExtensions.html
-  commentId: T:Revit.Extensions.Extensions.PipeExtensions
-  fullName: Revit.Extensions.Extensions.PipeExtensions
-  nameWithType: PipeExtensions
-- uid: Revit.Extensions.Extensions.PipeExtensions.GetEndPoints(Autodesk.Revit.DB.Plumbing.Pipe)
-  name: GetEndPoints(Pipe)
-  href: api/Revit.Extensions.Extensions.PipeExtensions.html#Revit_Extensions_Extensions_PipeExtensions_GetEndPoints_Autodesk_Revit_DB_Plumbing_Pipe_
-  commentId: M:Revit.Extensions.Extensions.PipeExtensions.GetEndPoints(Autodesk.Revit.DB.Plumbing.Pipe)
-  fullName: Revit.Extensions.Extensions.PipeExtensions.GetEndPoints(Autodesk.Revit.DB.Plumbing.Pipe)
-  nameWithType: PipeExtensions.GetEndPoints(Pipe)
-- uid: Revit.Extensions.Extensions.PipeExtensions.GetEndPoints*
-  name: GetEndPoints
-  href: api/Revit.Extensions.Extensions.PipeExtensions.html#Revit_Extensions_Extensions_PipeExtensions_GetEndPoints_
-  commentId: Overload:Revit.Extensions.Extensions.PipeExtensions.GetEndPoints
-  fullName: Revit.Extensions.Extensions.PipeExtensions.GetEndPoints
-  nameWithType: PipeExtensions.GetEndPoints
-- uid: Revit.Extensions.Extensions.PipeExtensions.GetLineOfPipe(Autodesk.Revit.DB.Plumbing.Pipe)
-  name: GetLineOfPipe(Pipe)
-  href: api/Revit.Extensions.Extensions.PipeExtensions.html#Revit_Extensions_Extensions_PipeExtensions_GetLineOfPipe_Autodesk_Revit_DB_Plumbing_Pipe_
-  commentId: M:Revit.Extensions.Extensions.PipeExtensions.GetLineOfPipe(Autodesk.Revit.DB.Plumbing.Pipe)
-  fullName: Revit.Extensions.Extensions.PipeExtensions.GetLineOfPipe(Autodesk.Revit.DB.Plumbing.Pipe)
-  nameWithType: PipeExtensions.GetLineOfPipe(Pipe)
-- uid: Revit.Extensions.Extensions.PipeExtensions.GetLineOfPipe*
-  name: GetLineOfPipe
-  href: api/Revit.Extensions.Extensions.PipeExtensions.html#Revit_Extensions_Extensions_PipeExtensions_GetLineOfPipe_
-  commentId: Overload:Revit.Extensions.Extensions.PipeExtensions.GetLineOfPipe
-  fullName: Revit.Extensions.Extensions.PipeExtensions.GetLineOfPipe
-  nameWithType: PipeExtensions.GetLineOfPipe
-- uid: Revit.Extensions.Extensions.PipeExtensions.GetNearestEndPoints(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.XYZ)
-  name: GetNearestEndPoints(Pipe, XYZ)
-  href: api/Revit.Extensions.Extensions.PipeExtensions.html#Revit_Extensions_Extensions_PipeExtensions_GetNearestEndPoints_Autodesk_Revit_DB_Plumbing_Pipe_Autodesk_Revit_DB_XYZ_
-  commentId: M:Revit.Extensions.Extensions.PipeExtensions.GetNearestEndPoints(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.XYZ)
-  fullName: Revit.Extensions.Extensions.PipeExtensions.GetNearestEndPoints(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.XYZ)
-  nameWithType: PipeExtensions.GetNearestEndPoints(Pipe, XYZ)
-- uid: Revit.Extensions.Extensions.PipeExtensions.GetNearestEndPoints*
-  name: GetNearestEndPoints
-  href: api/Revit.Extensions.Extensions.PipeExtensions.html#Revit_Extensions_Extensions_PipeExtensions_GetNearestEndPoints_
-  commentId: Overload:Revit.Extensions.Extensions.PipeExtensions.GetNearestEndPoints
-  fullName: Revit.Extensions.Extensions.PipeExtensions.GetNearestEndPoints
-  nameWithType: PipeExtensions.GetNearestEndPoints
-- uid: Revit.Extensions.Extensions.PipeExtensions.GetNearestOneSideConnector(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.XYZ)
-  name: GetNearestOneSideConnector(Pipe, XYZ)
-  href: api/Revit.Extensions.Extensions.PipeExtensions.html#Revit_Extensions_Extensions_PipeExtensions_GetNearestOneSideConnector_Autodesk_Revit_DB_Plumbing_Pipe_Autodesk_Revit_DB_XYZ_
-  commentId: M:Revit.Extensions.Extensions.PipeExtensions.GetNearestOneSideConnector(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.XYZ)
-  fullName: Revit.Extensions.Extensions.PipeExtensions.GetNearestOneSideConnector(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.XYZ)
-  nameWithType: PipeExtensions.GetNearestOneSideConnector(Pipe, XYZ)
-- uid: Revit.Extensions.Extensions.PipeExtensions.GetNearestOneSideConnector*
-  name: GetNearestOneSideConnector
-  href: api/Revit.Extensions.Extensions.PipeExtensions.html#Revit_Extensions_Extensions_PipeExtensions_GetNearestOneSideConnector_
-  commentId: Overload:Revit.Extensions.Extensions.PipeExtensions.GetNearestOneSideConnector
-  fullName: Revit.Extensions.Extensions.PipeExtensions.GetNearestOneSideConnector
-  nameWithType: PipeExtensions.GetNearestOneSideConnector
-- uid: Revit.Extensions.Extensions.PipeExtensions.GetPipeCurve(Autodesk.Revit.DB.Plumbing.Pipe)
-  name: GetPipeCurve(Pipe)
-  href: api/Revit.Extensions.Extensions.PipeExtensions.html#Revit_Extensions_Extensions_PipeExtensions_GetPipeCurve_Autodesk_Revit_DB_Plumbing_Pipe_
-  commentId: M:Revit.Extensions.Extensions.PipeExtensions.GetPipeCurve(Autodesk.Revit.DB.Plumbing.Pipe)
-  fullName: Revit.Extensions.Extensions.PipeExtensions.GetPipeCurve(Autodesk.Revit.DB.Plumbing.Pipe)
-  nameWithType: PipeExtensions.GetPipeCurve(Pipe)
-- uid: Revit.Extensions.Extensions.PipeExtensions.GetPipeCurve*
-  name: GetPipeCurve
-  href: api/Revit.Extensions.Extensions.PipeExtensions.html#Revit_Extensions_Extensions_PipeExtensions_GetPipeCurve_
-  commentId: Overload:Revit.Extensions.Extensions.PipeExtensions.GetPipeCurve
-  fullName: Revit.Extensions.Extensions.PipeExtensions.GetPipeCurve
-  nameWithType: PipeExtensions.GetPipeCurve
-- uid: Revit.Extensions.Extensions.PipeExtensions.GetPipingSystemType(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.Document)
-  name: GetPipingSystemType(Pipe, Document)
-  href: api/Revit.Extensions.Extensions.PipeExtensions.html#Revit_Extensions_Extensions_PipeExtensions_GetPipingSystemType_Autodesk_Revit_DB_Plumbing_Pipe_Autodesk_Revit_DB_Document_
-  commentId: M:Revit.Extensions.Extensions.PipeExtensions.GetPipingSystemType(Autodesk.Revit.DB.Plumbing.Pipe,Autodesk.Revit.DB.Document)
-  fullName: Revit.Extensions.Extensions.PipeExtensions.GetPipingSystemType(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.Document)
-  nameWithType: PipeExtensions.GetPipingSystemType(Pipe, Document)
-- uid: Revit.Extensions.Extensions.PipeExtensions.GetPipingSystemType*
-  name: GetPipingSystemType
-  href: api/Revit.Extensions.Extensions.PipeExtensions.html#Revit_Extensions_Extensions_PipeExtensions_GetPipingSystemType_
-  commentId: Overload:Revit.Extensions.Extensions.PipeExtensions.GetPipingSystemType
-  fullName: Revit.Extensions.Extensions.PipeExtensions.GetPipingSystemType
-  nameWithType: PipeExtensions.GetPipingSystemType
-- uid: Revit.Extensions.Extensions.SpaceExtensions
-  name: SpaceExtensions
-  href: api/Revit.Extensions.Extensions.SpaceExtensions.html
-  commentId: T:Revit.Extensions.Extensions.SpaceExtensions
-  fullName: Revit.Extensions.Extensions.SpaceExtensions
-  nameWithType: SpaceExtensions
-- uid: Revit.Extensions.Extensions.SpaceExtensions.GetBoundarySegment(Autodesk.Revit.DB.Mechanical.Space)
-  name: GetBoundarySegment(Space)
-  href: api/Revit.Extensions.Extensions.SpaceExtensions.html#Revit_Extensions_Extensions_SpaceExtensions_GetBoundarySegment_Autodesk_Revit_DB_Mechanical_Space_
-  commentId: M:Revit.Extensions.Extensions.SpaceExtensions.GetBoundarySegment(Autodesk.Revit.DB.Mechanical.Space)
-  fullName: Revit.Extensions.Extensions.SpaceExtensions.GetBoundarySegment(Autodesk.Revit.DB.Mechanical.Space)
-  nameWithType: SpaceExtensions.GetBoundarySegment(Space)
-- uid: Revit.Extensions.Extensions.SpaceExtensions.GetBoundarySegment*
-  name: GetBoundarySegment
-  href: api/Revit.Extensions.Extensions.SpaceExtensions.html#Revit_Extensions_Extensions_SpaceExtensions_GetBoundarySegment_
-  commentId: Overload:Revit.Extensions.Extensions.SpaceExtensions.GetBoundarySegment
-  fullName: Revit.Extensions.Extensions.SpaceExtensions.GetBoundarySegment
-  nameWithType: SpaceExtensions.GetBoundarySegment
-- uid: Revit.Extensions.Extensions.SpaceExtensions.Validate(Autodesk.Revit.DB.Mechanical.Space)
-  name: Validate(Space)
-  href: api/Revit.Extensions.Extensions.SpaceExtensions.html#Revit_Extensions_Extensions_SpaceExtensions_Validate_Autodesk_Revit_DB_Mechanical_Space_
-  commentId: M:Revit.Extensions.Extensions.SpaceExtensions.Validate(Autodesk.Revit.DB.Mechanical.Space)
-  fullName: Revit.Extensions.Extensions.SpaceExtensions.Validate(Autodesk.Revit.DB.Mechanical.Space)
-  nameWithType: SpaceExtensions.Validate(Space)
-- uid: Revit.Extensions.Extensions.SpaceExtensions.Validate*
-  name: Validate
-  href: api/Revit.Extensions.Extensions.SpaceExtensions.html#Revit_Extensions_Extensions_SpaceExtensions_Validate_
-  commentId: Overload:Revit.Extensions.Extensions.SpaceExtensions.Validate
-  fullName: Revit.Extensions.Extensions.SpaceExtensions.Validate
-  nameWithType: SpaceExtensions.Validate
-- uid: Revit.Extensions.Extensions.ViewExtensions
-  name: ViewExtensions
-  href: api/Revit.Extensions.Extensions.ViewExtensions.html
-  commentId: T:Revit.Extensions.Extensions.ViewExtensions
-  fullName: Revit.Extensions.Extensions.ViewExtensions
-  nameWithType: ViewExtensions
-- uid: Revit.Extensions.Extensions.ViewExtensions.GetVisibleElements(Autodesk.Revit.DB.View,Autodesk.Revit.DB.Document)
-  name: GetVisibleElements(View, Document)
-  href: api/Revit.Extensions.Extensions.ViewExtensions.html#Revit_Extensions_Extensions_ViewExtensions_GetVisibleElements_Autodesk_Revit_DB_View_Autodesk_Revit_DB_Document_
-  commentId: M:Revit.Extensions.Extensions.ViewExtensions.GetVisibleElements(Autodesk.Revit.DB.View,Autodesk.Revit.DB.Document)
-  fullName: Revit.Extensions.Extensions.ViewExtensions.GetVisibleElements(Autodesk.Revit.DB.View, Autodesk.Revit.DB.Document)
-  nameWithType: ViewExtensions.GetVisibleElements(View, Document)
-- uid: Revit.Extensions.Extensions.ViewExtensions.GetVisibleElements*
-  name: GetVisibleElements
-  href: api/Revit.Extensions.Extensions.ViewExtensions.html#Revit_Extensions_Extensions_ViewExtensions_GetVisibleElements_
-  commentId: Overload:Revit.Extensions.Extensions.ViewExtensions.GetVisibleElements
-  fullName: Revit.Extensions.Extensions.ViewExtensions.GetVisibleElements
-  nameWithType: ViewExtensions.GetVisibleElements
-- uid: Revit.Extensions.Selections
-  name: Revit.Extensions.Selections
-  href: api/Revit.Extensions.Selections.html
-  commentId: N:Revit.Extensions.Selections
-  fullName: Revit.Extensions.Selections
-  nameWithType: Revit.Extensions.Selections
-- uid: Revit.Extensions.Selections.SelectionExtensions
-  name: SelectionExtensions
-  href: api/Revit.Extensions.Selections.SelectionExtensions.html
-  commentId: T:Revit.Extensions.Selections.SelectionExtensions
-  fullName: Revit.Extensions.Selections.SelectionExtensions
-  nameWithType: SelectionExtensions
-- uid: Revit.Extensions.Selections.SelectionExtensions.GetSelectedElements*
-  name: GetSelectedElements
-  href: api/Revit.Extensions.Selections.SelectionExtensions.html#Revit_Extensions_Selections_SelectionExtensions_GetSelectedElements_
-  commentId: Overload:Revit.Extensions.Selections.SelectionExtensions.GetSelectedElements
-  fullName: Revit.Extensions.Selections.SelectionExtensions.GetSelectedElements
-  nameWithType: SelectionExtensions.GetSelectedElements
-- uid: Revit.Extensions.Selections.SelectionExtensions.GetSelectedElements``1(Autodesk.Revit.UI.UIDocument)
-  name: GetSelectedElements<T>(UIDocument)
-  href: api/Revit.Extensions.Selections.SelectionExtensions.html#Revit_Extensions_Selections_SelectionExtensions_GetSelectedElements__1_Autodesk_Revit_UI_UIDocument_
-  commentId: M:Revit.Extensions.Selections.SelectionExtensions.GetSelectedElements``1(Autodesk.Revit.UI.UIDocument)
-  name.vb: GetSelectedElements(Of T)(UIDocument)
-  fullName: Revit.Extensions.Selections.SelectionExtensions.GetSelectedElements<T>(Autodesk.Revit.UI.UIDocument)
-  fullName.vb: Revit.Extensions.Selections.SelectionExtensions.GetSelectedElements(Of T)(Autodesk.Revit.UI.UIDocument)
-  nameWithType: SelectionExtensions.GetSelectedElements<T>(UIDocument)
-  nameWithType.vb: SelectionExtensions.GetSelectedElements(Of T)(UIDocument)
-- uid: Revit.Extensions.Selections.SelectionExtensions.GetSelectedFamilyInstances(Autodesk.Revit.UI.UIDocument)
-  name: GetSelectedFamilyInstances(UIDocument)
-  href: api/Revit.Extensions.Selections.SelectionExtensions.html#Revit_Extensions_Selections_SelectionExtensions_GetSelectedFamilyInstances_Autodesk_Revit_UI_UIDocument_
-  commentId: M:Revit.Extensions.Selections.SelectionExtensions.GetSelectedFamilyInstances(Autodesk.Revit.UI.UIDocument)
-  fullName: Revit.Extensions.Selections.SelectionExtensions.GetSelectedFamilyInstances(Autodesk.Revit.UI.UIDocument)
-  nameWithType: SelectionExtensions.GetSelectedFamilyInstances(UIDocument)
-- uid: Revit.Extensions.Selections.SelectionExtensions.GetSelectedFamilyInstances*
-  name: GetSelectedFamilyInstances
-  href: api/Revit.Extensions.Selections.SelectionExtensions.html#Revit_Extensions_Selections_SelectionExtensions_GetSelectedFamilyInstances_
-  commentId: Overload:Revit.Extensions.Selections.SelectionExtensions.GetSelectedFamilyInstances
-  fullName: Revit.Extensions.Selections.SelectionExtensions.GetSelectedFamilyInstances
-  nameWithType: SelectionExtensions.GetSelectedFamilyInstances
-- uid: Revit.Extensions.Selections.SelectionExtensions.GetSelectedPipes(Autodesk.Revit.UI.UIDocument)
-  name: GetSelectedPipes(UIDocument)
-  href: api/Revit.Extensions.Selections.SelectionExtensions.html#Revit_Extensions_Selections_SelectionExtensions_GetSelectedPipes_Autodesk_Revit_UI_UIDocument_
-  commentId: M:Revit.Extensions.Selections.SelectionExtensions.GetSelectedPipes(Autodesk.Revit.UI.UIDocument)
-  fullName: Revit.Extensions.Selections.SelectionExtensions.GetSelectedPipes(Autodesk.Revit.UI.UIDocument)
-  nameWithType: SelectionExtensions.GetSelectedPipes(UIDocument)
-- uid: Revit.Extensions.Selections.SelectionExtensions.GetSelectedPipes*
-  name: GetSelectedPipes
-  href: api/Revit.Extensions.Selections.SelectionExtensions.html#Revit_Extensions_Selections_SelectionExtensions_GetSelectedPipes_
-  commentId: Overload:Revit.Extensions.Selections.SelectionExtensions.GetSelectedPipes
-  fullName: Revit.Extensions.Selections.SelectionExtensions.GetSelectedPipes
-  nameWithType: SelectionExtensions.GetSelectedPipes
-- uid: Revit.Extensions.Selections.SelectionExtensions.GetSelectedSpaces(Autodesk.Revit.UI.UIDocument)
-  name: GetSelectedSpaces(UIDocument)
-  href: api/Revit.Extensions.Selections.SelectionExtensions.html#Revit_Extensions_Selections_SelectionExtensions_GetSelectedSpaces_Autodesk_Revit_UI_UIDocument_
-  commentId: M:Revit.Extensions.Selections.SelectionExtensions.GetSelectedSpaces(Autodesk.Revit.UI.UIDocument)
-  fullName: Revit.Extensions.Selections.SelectionExtensions.GetSelectedSpaces(Autodesk.Revit.UI.UIDocument)
-  nameWithType: SelectionExtensions.GetSelectedSpaces(UIDocument)
-- uid: Revit.Extensions.Selections.SelectionExtensions.GetSelectedSpaces*
-  name: GetSelectedSpaces
-  href: api/Revit.Extensions.Selections.SelectionExtensions.html#Revit_Extensions_Selections_SelectionExtensions_GetSelectedSpaces_
-  commentId: Overload:Revit.Extensions.Selections.SelectionExtensions.GetSelectedSpaces
-  fullName: Revit.Extensions.Selections.SelectionExtensions.GetSelectedSpaces
-  nameWithType: SelectionExtensions.GetSelectedSpaces
-- uid: Revit.Extensions.Selections.SelectionExtensions.GetSelectedSprinklers(Autodesk.Revit.UI.UIDocument)
-  name: GetSelectedSprinklers(UIDocument)
-  href: api/Revit.Extensions.Selections.SelectionExtensions.html#Revit_Extensions_Selections_SelectionExtensions_GetSelectedSprinklers_Autodesk_Revit_UI_UIDocument_
-  commentId: M:Revit.Extensions.Selections.SelectionExtensions.GetSelectedSprinklers(Autodesk.Revit.UI.UIDocument)
-  fullName: Revit.Extensions.Selections.SelectionExtensions.GetSelectedSprinklers(Autodesk.Revit.UI.UIDocument)
-  nameWithType: SelectionExtensions.GetSelectedSprinklers(UIDocument)
-- uid: Revit.Extensions.Selections.SelectionExtensions.GetSelectedSprinklers*
-  name: GetSelectedSprinklers
-  href: api/Revit.Extensions.Selections.SelectionExtensions.html#Revit_Extensions_Selections_SelectionExtensions_GetSelectedSprinklers_
-  commentId: Overload:Revit.Extensions.Selections.SelectionExtensions.GetSelectedSprinklers
-  fullName: Revit.Extensions.Selections.SelectionExtensions.GetSelectedSprinklers
-  nameWithType: SelectionExtensions.GetSelectedSprinklers
-- uid: Revit.Extensions.Unit
-  name: Revit.Extensions.Unit
-  href: api/Revit.Extensions.Unit.html
-  commentId: N:Revit.Extensions.Unit
-  fullName: Revit.Extensions.Unit
-  nameWithType: Revit.Extensions.Unit
-- uid: Revit.Extensions.Unit.MbUnitExtensions
-  name: MbUnitExtensions
-  href: api/Revit.Extensions.Unit.MbUnitExtensions.html
-  commentId: T:Revit.Extensions.Unit.MbUnitExtensions
-  fullName: Revit.Extensions.Unit.MbUnitExtensions
-  nameWithType: MbUnitExtensions
-- uid: Revit.Extensions.Unit.MbUnitExtensions.Accuracy
-  name: Accuracy
-  href: api/Revit.Extensions.Unit.MbUnitExtensions.html#Revit_Extensions_Unit_MbUnitExtensions_Accuracy
-  commentId: F:Revit.Extensions.Unit.MbUnitExtensions.Accuracy
-  fullName: Revit.Extensions.Unit.MbUnitExtensions.Accuracy
-  nameWithType: MbUnitExtensions.Accuracy
-- uid: Revit.Extensions.Unit.MbUnitExtensions.ConvertFromInternalUnits(System.Double)
-  name: ConvertFromInternalUnits(double)
-  href: api/Revit.Extensions.Unit.MbUnitExtensions.html#Revit_Extensions_Unit_MbUnitExtensions_ConvertFromInternalUnits_System_Double_
-  commentId: M:Revit.Extensions.Unit.MbUnitExtensions.ConvertFromInternalUnits(System.Double)
-  name.vb: ConvertFromInternalUnits(Double)
-  fullName: Revit.Extensions.Unit.MbUnitExtensions.ConvertFromInternalUnits(double)
-  fullName.vb: Revit.Extensions.Unit.MbUnitExtensions.ConvertFromInternalUnits(Double)
-  nameWithType: MbUnitExtensions.ConvertFromInternalUnits(double)
-  nameWithType.vb: MbUnitExtensions.ConvertFromInternalUnits(Double)
-- uid: Revit.Extensions.Unit.MbUnitExtensions.ConvertFromInternalUnits*
-  name: ConvertFromInternalUnits
-  href: api/Revit.Extensions.Unit.MbUnitExtensions.html#Revit_Extensions_Unit_MbUnitExtensions_ConvertFromInternalUnits_
-  commentId: Overload:Revit.Extensions.Unit.MbUnitExtensions.ConvertFromInternalUnits
-  fullName: Revit.Extensions.Unit.MbUnitExtensions.ConvertFromInternalUnits
-  nameWithType: MbUnitExtensions.ConvertFromInternalUnits
-- uid: Revit.Extensions.Unit.MbUnitExtensions.ConvertToInternalLength(System.Double)
-  name: ConvertToInternalLength(double)
-  href: api/Revit.Extensions.Unit.MbUnitExtensions.html#Revit_Extensions_Unit_MbUnitExtensions_ConvertToInternalLength_System_Double_
-  commentId: M:Revit.Extensions.Unit.MbUnitExtensions.ConvertToInternalLength(System.Double)
-  name.vb: ConvertToInternalLength(Double)
-  fullName: Revit.Extensions.Unit.MbUnitExtensions.ConvertToInternalLength(double)
-  fullName.vb: Revit.Extensions.Unit.MbUnitExtensions.ConvertToInternalLength(Double)
-  nameWithType: MbUnitExtensions.ConvertToInternalLength(double)
-  nameWithType.vb: MbUnitExtensions.ConvertToInternalLength(Double)
-- uid: Revit.Extensions.Unit.MbUnitExtensions.ConvertToInternalLength*
-  name: ConvertToInternalLength
-  href: api/Revit.Extensions.Unit.MbUnitExtensions.html#Revit_Extensions_Unit_MbUnitExtensions_ConvertToInternalLength_
-  commentId: Overload:Revit.Extensions.Unit.MbUnitExtensions.ConvertToInternalLength
-  fullName: Revit.Extensions.Unit.MbUnitExtensions.ConvertToInternalLength
-  nameWithType: MbUnitExtensions.ConvertToInternalLength
-- uid: Revit.Extensions.Unit.MbUnitExtensions.IdentifyDocument(Autodesk.Revit.DB.Document)
-  name: IdentifyDocument(Document)
-  href: api/Revit.Extensions.Unit.MbUnitExtensions.html#Revit_Extensions_Unit_MbUnitExtensions_IdentifyDocument_Autodesk_Revit_DB_Document_
-  commentId: M:Revit.Extensions.Unit.MbUnitExtensions.IdentifyDocument(Autodesk.Revit.DB.Document)
-  fullName: Revit.Extensions.Unit.MbUnitExtensions.IdentifyDocument(Autodesk.Revit.DB.Document)
-  nameWithType: MbUnitExtensions.IdentifyDocument(Document)
-- uid: Revit.Extensions.Unit.MbUnitExtensions.IdentifyDocument*
-  name: IdentifyDocument
-  href: api/Revit.Extensions.Unit.MbUnitExtensions.html#Revit_Extensions_Unit_MbUnitExtensions_IdentifyDocument_
-  commentId: Overload:Revit.Extensions.Unit.MbUnitExtensions.IdentifyDocument
-  fullName: Revit.Extensions.Unit.MbUnitExtensions.IdentifyDocument
-  nameWithType: MbUnitExtensions.IdentifyDocument
-- uid: Revit.Extensions.Unit.MbUnitExtensions.IsImperial
-  name: IsImperial
-  href: api/Revit.Extensions.Unit.MbUnitExtensions.html#Revit_Extensions_Unit_MbUnitExtensions_IsImperial
-  commentId: F:Revit.Extensions.Unit.MbUnitExtensions.IsImperial
-  fullName: Revit.Extensions.Unit.MbUnitExtensions.IsImperial
-  nameWithType: MbUnitExtensions.IsImperial

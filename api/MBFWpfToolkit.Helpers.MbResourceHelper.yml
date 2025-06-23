@@ -19,7 +19,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.MbResourceHelper
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbResourceHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Helpers/MbResourceHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -50,7 +50,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetResource<T>(string)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbResourceHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Helpers/MbResourceHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -88,7 +88,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin(System.Reflection.Assembly, string, MBFWpfToolkit.Constants.SkinType)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbResourceHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Helpers/MbResourceHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -126,7 +126,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetSkin(MBFWpfToolkit.Constants.SkinType)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbResourceHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Helpers/MbResourceHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -155,7 +155,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetTheme()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbResourceHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Helpers/MbResourceHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -180,7 +180,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.MbResourceHelper.GetStandaloneTheme()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbResourceHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Helpers/MbResourceHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -205,7 +205,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.MbResourceHelper.MbResourceHelper()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Helpers/MbResourceHelper.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Helpers/MbResourceHelper.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers

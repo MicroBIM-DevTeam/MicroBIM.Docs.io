@@ -14,7 +14,7 @@ items:
   fullName: MBFWpfToolkit.Controls.MbMessageBox
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Controls/MbMessageBox.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Controls/MbMessageBox.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls
@@ -72,7 +72,7 @@ items:
   fullName: MBFWpfToolkit.Controls.MbMessageBox.Show(string, System.Windows.MessageBoxButton, MBFWpfToolkit.Constants.MbMessageIcon)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/aa14e94707efdb5b6c55b0fb8134a1f3c34d62c0/Controls/MbMessageBox.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Controls/MbMessageBox.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls

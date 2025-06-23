@@ -14,14 +14,15 @@ items:
   fullName: MBF.Revit.Data.Extensions.ViewExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/ViewExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/ViewExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
   summary: Provides extension methods for working with Revit views.
   remarks: >-
     This class contains methods that extend the functionality of Revit views, enabling operations such as
-                retrieving visible elements.
+
+    retrieving visible elements.
   example: []
   syntax:
     content: >-
@@ -59,7 +60,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.ViewExtensions.GetVisibleElements(Autodesk.Revit.DB.View, Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/2755bed9f8185ba6b154bb00787e7934dd17c78c/Extensions/ViewExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/ViewExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
