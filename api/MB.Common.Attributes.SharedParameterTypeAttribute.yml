@@ -14,6 +14,8 @@ items:
   nameWithType: SharedParameterTypeAttribute
   fullName: MB.Common.Attributes.SharedParameterTypeAttribute
   type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Attributes/SharedParameterTypeAttribute.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes
@@ -97,6 +99,8 @@ items:
   nameWithType: SharedParameterTypeAttribute.SharedParameterTypeAttribute(SharedParameterType)
   fullName: MB.Common.Attributes.SharedParameterTypeAttribute.SharedParameterTypeAttribute(MB.Common.SharedParameters.SharedParameterType)
   type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Attributes/SharedParameterTypeAttribute.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes
@@ -128,6 +132,8 @@ items:
   nameWithType: SharedParameterTypeAttribute.Type
   fullName: MB.Common.Attributes.SharedParameterTypeAttribute.Type
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Attributes/SharedParameterTypeAttribute.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes

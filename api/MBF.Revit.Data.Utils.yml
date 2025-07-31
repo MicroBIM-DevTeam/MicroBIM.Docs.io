@@ -5,6 +5,8 @@ items:
   id: MBF.Revit.Data.Utils
   children:
   - MBF.Revit.Data.Utils.EntityUtils
+  - MBF.Revit.Data.Utils.MbConnectorUtilities
+  - MBF.Revit.Data.Utils.MbFamilyInstanceUtils
   - MBF.Revit.Data.Utils.MbFlexPipesUtils
   - MBF.Revit.Data.Utils.MbParameterUtils
   - MBF.Revit.Data.Utils.MbPipeAccessoriesUtils
@@ -34,6 +36,20 @@ references:
   name: EntityUtils
   nameWithType: EntityUtils
   fullName: MBF.Revit.Data.Utils.EntityUtils
+- uid: MBF.Revit.Data.Utils.MbConnectorUtilities
+  commentId: T:MBF.Revit.Data.Utils.MbConnectorUtilities
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbConnectorUtilities.html
+  name: MbConnectorUtilities
+  nameWithType: MbConnectorUtilities
+  fullName: MBF.Revit.Data.Utils.MbConnectorUtilities
+- uid: MBF.Revit.Data.Utils.MbFamilyInstanceUtils
+  commentId: T:MBF.Revit.Data.Utils.MbFamilyInstanceUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbFamilyInstanceUtils.html
+  name: MbFamilyInstanceUtils
+  nameWithType: MbFamilyInstanceUtils
+  fullName: MBF.Revit.Data.Utils.MbFamilyInstanceUtils
 - uid: MBF.Revit.Data.Utils.MbFlexPipesUtils
   commentId: T:MBF.Revit.Data.Utils.MbFlexPipesUtils
   isExternal: true

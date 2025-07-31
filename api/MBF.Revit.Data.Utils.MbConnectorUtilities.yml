@@ -1,0 +1,1022 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Data.Utils.MbConnectorUtilities
+  commentId: T:MBF.Revit.Data.Utils.MbConnectorUtilities
+  id: MbConnectorUtilities
+  parent: MBF.Revit.Data.Utils
+  children:
+  - MBF.Revit.Data.Utils.MbConnectorUtilities.BypassNonConnectorFittings(Autodesk.Revit.DB.FamilyInstance,System.Collections.Generic.List{Autodesk.Revit.DB.ElementId})
+  - MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectedElementsFromFitting(Autodesk.Revit.DB.FamilyInstance)
+  - MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFamilyInstance(Autodesk.Revit.DB.FamilyInstance)
+  - MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFlexPipe(Autodesk.Revit.DB.Plumbing.FlexPipe)
+  - MBF.Revit.Data.Utils.MbConnectorUtilities.GetDirectlyConnectedElement(Autodesk.Revit.DB.Connector)
+  - MBF.Revit.Data.Utils.MbConnectorUtilities.GetRoundConnectorsFromFitting(Autodesk.Revit.DB.FamilyInstance)
+  - MBF.Revit.Data.Utils.MbConnectorUtilities.IsMEPCategory(Autodesk.Revit.DB.FamilyInstance)
+  langs:
+  - csharp
+  - vb
+  name: MbConnectorUtilities
+  nameWithType: MbConnectorUtilities
+  fullName: MBF.Revit.Data.Utils.MbConnectorUtilities
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Provides utility methods for managing and interacting with MEP connectors in a Revit document.
+  remarks: >-
+    This class focuses on general MEP connector operations, fitting analysis, and connector traversal.
+                For pipe-specific operations, use <xref href="MBF.Revit.Data.Utils.MbPipesUtils" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static class MbConnectorUtilities
+    content.vb: Public Module MbConnectorUtilities
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectedElementsFromFitting(Autodesk.Revit.DB.FamilyInstance)
+  commentId: M:MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectedElementsFromFitting(Autodesk.Revit.DB.FamilyInstance)
+  id: GetConnectedElementsFromFitting(Autodesk.Revit.DB.FamilyInstance)
+  parent: MBF.Revit.Data.Utils.MbConnectorUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetConnectedElementsFromFitting(FamilyInstance)
+  nameWithType: MbConnectorUtilities.GetConnectedElementsFromFitting(FamilyInstance)
+  fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectedElementsFromFitting(Autodesk.Revit.DB.FamilyInstance)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Retrieves a list of elements that are directly or indirectly connected to the specified fitting.
+  remarks: >-
+    The method first attempts to find elements directly connected to the fitting's connectors. If
+                a connector is not directly connected to an element, the method searches for the nearest unconnected connector
+                in the document.
+  example: []
+  syntax:
+    content: public static MbResult<List<Element>> GetConnectedElementsFromFitting(FamilyInstance fitting)
+    parameters:
+    - id: fitting
+      type: Autodesk.Revit.DB.FamilyInstance
+      description: >-
+        The <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> representing the fitting from which to find connected elements. Must not be
+                    null and must have a valid MEP model.
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.Element}}
+      description: >-
+        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing a list of <xref href="Element" data-throw-if-not-resolved="false"></xref> objects that are connected to the
+                    fitting. Returns a failure result if the fitting or its MEP model is null or invalid, or if an error occurs
+                    while retrieving connectors.
+    content.vb: Public Shared Function GetConnectedElementsFromFitting(fitting As FamilyInstance) As MbResult(Of List(Of Element))
+  overload: MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectedElementsFromFitting*
+- uid: MBF.Revit.Data.Utils.MbConnectorUtilities.GetRoundConnectorsFromFitting(Autodesk.Revit.DB.FamilyInstance)
+  commentId: M:MBF.Revit.Data.Utils.MbConnectorUtilities.GetRoundConnectorsFromFitting(Autodesk.Revit.DB.FamilyInstance)
+  id: GetRoundConnectorsFromFitting(Autodesk.Revit.DB.FamilyInstance)
+  parent: MBF.Revit.Data.Utils.MbConnectorUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetRoundConnectorsFromFitting(FamilyInstance)
+  nameWithType: MbConnectorUtilities.GetRoundConnectorsFromFitting(FamilyInstance)
+  fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.GetRoundConnectorsFromFitting(Autodesk.Revit.DB.FamilyInstance)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Retrieves a list of round connectors from the specified fitting.
+  example: []
+  syntax:
+    content: public static MbResult<List<Connector>> GetRoundConnectorsFromFitting(FamilyInstance fitting)
+    parameters:
+    - id: fitting
+      type: Autodesk.Revit.DB.FamilyInstance
+      description: >-
+        The <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> representing the fitting from which to extract round connectors. Must not be null
+                    and must have valid connectors.
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.Connector}}
+      description: >-
+        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing a list of <xref href="Connector" data-throw-if-not-resolved="false"></xref> objects that are round and not part of a
+                    piping system. Returns a failure result if the fitting's connectors are null or invalid, or if no round connectors
+                    are found.
+    content.vb: Public Shared Function GetRoundConnectorsFromFitting(fitting As FamilyInstance) As MbResult(Of List(Of Connector))
+  overload: MBF.Revit.Data.Utils.MbConnectorUtilities.GetRoundConnectorsFromFitting*
+- uid: MBF.Revit.Data.Utils.MbConnectorUtilities.GetDirectlyConnectedElement(Autodesk.Revit.DB.Connector)
+  commentId: M:MBF.Revit.Data.Utils.MbConnectorUtilities.GetDirectlyConnectedElement(Autodesk.Revit.DB.Connector)
+  id: GetDirectlyConnectedElement(Autodesk.Revit.DB.Connector)
+  parent: MBF.Revit.Data.Utils.MbConnectorUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetDirectlyConnectedElement(Connector)
+  nameWithType: MbConnectorUtilities.GetDirectlyConnectedElement(Connector)
+  fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.GetDirectlyConnectedElement(Autodesk.Revit.DB.Connector)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Retrieves the first element directly connected to the specified connector, excluding piping systems.
+  example: []
+  syntax:
+    content: public static Element GetDirectlyConnectedElement(Connector connector)
+    parameters:
+    - id: connector
+      type: Autodesk.Revit.DB.Connector
+      description: The connector for which to find a directly connected element.
+    return:
+      type: Autodesk.Revit.DB.Element
+      description: The first directly connected <xref href="Element" data-throw-if-not-resolved="false"></xref> that is not a <xref href="Autodesk.Revit.DB.Plumbing.PipingSystem" data-throw-if-not-resolved="false"></xref>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no such element is found.
+    content.vb: Public Shared Function GetDirectlyConnectedElement(connector As Connector) As Element
+  overload: MBF.Revit.Data.Utils.MbConnectorUtilities.GetDirectlyConnectedElement*
+- uid: MBF.Revit.Data.Utils.MbConnectorUtilities.BypassNonConnectorFittings(Autodesk.Revit.DB.FamilyInstance,System.Collections.Generic.List{Autodesk.Revit.DB.ElementId})
+  commentId: M:MBF.Revit.Data.Utils.MbConnectorUtilities.BypassNonConnectorFittings(Autodesk.Revit.DB.FamilyInstance,System.Collections.Generic.List{Autodesk.Revit.DB.ElementId})
+  id: BypassNonConnectorFittings(Autodesk.Revit.DB.FamilyInstance,System.Collections.Generic.List{Autodesk.Revit.DB.ElementId})
+  parent: MBF.Revit.Data.Utils.MbConnectorUtilities
+  langs:
+  - csharp
+  - vb
+  name: BypassNonConnectorFittings(FamilyInstance, List<ElementId>)
+  nameWithType: MbConnectorUtilities.BypassNonConnectorFittings(FamilyInstance, List<ElementId>)
+  fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.BypassNonConnectorFittings(Autodesk.Revit.DB.FamilyInstance, System.Collections.Generic.List<Autodesk.Revit.DB.ElementId>)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: >-
+    Traverses a chain of connected fittings starting from the specified fitting, bypassing any fittings that are of
+
+    the type <xref href="MB.Common.Settings.ListingSettings.StandardFittingType.ModelingHelperNonConnector" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    The method will return a failure result if the <code class="paramref">startingFitting</code> is null, if
+                the <code class="paramref">excludedElementIds</code> list is null, or if no suitable fitting is found within the maximum
+                number of iterations. The traversal will also fail if any fitting in the chain cannot be processed due to
+                missing family information or connectivity issues.
+  example: []
+  syntax:
+    content: public static MbResult<FamilyInstance> BypassNonConnectorFittings(FamilyInstance startingFitting, List<ElementId> excludedElementIds)
+    parameters:
+    - id: startingFitting
+      type: Autodesk.Revit.DB.FamilyInstance
+      description: The initial fitting from which to start the traversal. Cannot be null.
+    - id: excludedElementIds
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.ElementId}
+      description: A list of element IDs to exclude from the traversal. Cannot be null.
+    return:
+      type: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.FamilyInstance}
+      description: A <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing the first fitting that is not of type <xref href="MB.Common.Settings.ListingSettings.StandardFittingType.ModelingHelperNonConnector" data-throw-if-not-resolved="false"></xref>, or an error message if the traversal fails.
+    content.vb: Public Shared Function BypassNonConnectorFittings(startingFitting As FamilyInstance, excludedElementIds As List(Of ElementId)) As MbResult(Of FamilyInstance)
+  overload: MBF.Revit.Data.Utils.MbConnectorUtilities.BypassNonConnectorFittings*
+  nameWithType.vb: MbConnectorUtilities.BypassNonConnectorFittings(FamilyInstance, List(Of ElementId))
+  fullName.vb: MBF.Revit.Data.Utils.MbConnectorUtilities.BypassNonConnectorFittings(Autodesk.Revit.DB.FamilyInstance, System.Collections.Generic.List(Of Autodesk.Revit.DB.ElementId))
+  name.vb: BypassNonConnectorFittings(FamilyInstance, List(Of ElementId))
+- uid: MBF.Revit.Data.Utils.MbConnectorUtilities.IsMEPCategory(Autodesk.Revit.DB.FamilyInstance)
+  commentId: M:MBF.Revit.Data.Utils.MbConnectorUtilities.IsMEPCategory(Autodesk.Revit.DB.FamilyInstance)
+  id: IsMEPCategory(Autodesk.Revit.DB.FamilyInstance)
+  parent: MBF.Revit.Data.Utils.MbConnectorUtilities
+  langs:
+  - csharp
+  - vb
+  name: IsMEPCategory(FamilyInstance)
+  nameWithType: MbConnectorUtilities.IsMEPCategory(FamilyInstance)
+  fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.IsMEPCategory(Autodesk.Revit.DB.FamilyInstance)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Determines whether the specified family instance belongs to an MEP category.
+  example: []
+  syntax:
+    content: public static bool IsMEPCategory(FamilyInstance familyInstance)
+    parameters:
+    - id: familyInstance
+      type: Autodesk.Revit.DB.FamilyInstance
+      description: The family instance to check.
+    return:
+      type: System.Boolean
+      description: True if the family instance belongs to an MEP category; otherwise, false.
+    content.vb: Public Shared Function IsMEPCategory(familyInstance As FamilyInstance) As Boolean
+  overload: MBF.Revit.Data.Utils.MbConnectorUtilities.IsMEPCategory*
+- uid: MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFamilyInstance(Autodesk.Revit.DB.FamilyInstance)
+  commentId: M:MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFamilyInstance(Autodesk.Revit.DB.FamilyInstance)
+  id: GetConnectorsFromFamilyInstance(Autodesk.Revit.DB.FamilyInstance)
+  parent: MBF.Revit.Data.Utils.MbConnectorUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetConnectorsFromFamilyInstance(FamilyInstance)
+  nameWithType: MbConnectorUtilities.GetConnectorsFromFamilyInstance(FamilyInstance)
+  fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFamilyInstance(Autodesk.Revit.DB.FamilyInstance)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Retrieves connectors from the specified family instance.
+  example: []
+  syntax:
+    content: public static IEnumerable<Connector> GetConnectorsFromFamilyInstance(FamilyInstance familyInstance)
+    parameters:
+    - id: familyInstance
+      type: Autodesk.Revit.DB.FamilyInstance
+      description: The family instance from which to extract connectors.
+    return:
+      type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Connector}
+      description: An enumerable collection of connectors.
+    content.vb: Public Shared Function GetConnectorsFromFamilyInstance(familyInstance As FamilyInstance) As IEnumerable(Of Connector)
+  overload: MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFamilyInstance*
+- uid: MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFlexPipe(Autodesk.Revit.DB.Plumbing.FlexPipe)
+  commentId: M:MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFlexPipe(Autodesk.Revit.DB.Plumbing.FlexPipe)
+  id: GetConnectorsFromFlexPipe(Autodesk.Revit.DB.Plumbing.FlexPipe)
+  parent: MBF.Revit.Data.Utils.MbConnectorUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetConnectorsFromFlexPipe(FlexPipe)
+  nameWithType: MbConnectorUtilities.GetConnectorsFromFlexPipe(FlexPipe)
+  fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFlexPipe(Autodesk.Revit.DB.Plumbing.FlexPipe)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Retrieves connectors from the specified flex pipe.
+  example: []
+  syntax:
+    content: public static IEnumerable<Connector> GetConnectorsFromFlexPipe(FlexPipe flexPipe)
+    parameters:
+    - id: flexPipe
+      type: Autodesk.Revit.DB.Plumbing.FlexPipe
+      description: The flex pipe from which to extract connectors.
+    return:
+      type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Connector}
+      description: An enumerable collection of connectors.
+    content.vb: Public Shared Function GetConnectorsFromFlexPipe(flexPipe As FlexPipe) As IEnumerable(Of Connector)
+  overload: MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFlexPipe*
+references:
+- uid: MBF.Revit.Data.Utils.MbPipesUtils
+  commentId: T:MBF.Revit.Data.Utils.MbPipesUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbPipesUtils.html
+  name: MbPipesUtils
+  nameWithType: MbPipesUtils
+  fullName: MBF.Revit.Data.Utils.MbPipesUtils
+- uid: MBF.Revit.Data.Utils
+  commentId: N:MBF.Revit.Data.Utils
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Data.Utils
+  nameWithType: MBF.Revit.Data.Utils
+  fullName: MBF.Revit.Data.Utils
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Utils
+    name: Utils
+    isExternal: true
+    href: MBF.Revit.Data.Utils.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Utils
+    name: Utils
+    isExternal: true
+    href: MBF.Revit.Data.Utils.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: FamilyInstance
+  commentId: T:FamilyInstance
+  isExternal: true
+- uid: MB.Common.Utils.Result.MbResult`1
+  commentId: T:MB.Common.Utils.Result.MbResult`1
+  parent: MB.Common.Utils.Result
+  isExternal: true
+  href: MB.Common.Utils.Result.MbResult-1.html
+  name: MbResult<T>
+  nameWithType: MbResult<T>
+  fullName: MB.Common.Utils.Result.MbResult<T>
+  nameWithType.vb: MbResult(Of T)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of T)
+  name.vb: MbResult(Of T)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Element
+  commentId: T:Element
+  isExternal: true
+- uid: MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectedElementsFromFitting*
+  commentId: Overload:MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectedElementsFromFitting
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbConnectorUtilities.html#MBF_Revit_Data_Utils_MbConnectorUtilities_GetConnectedElementsFromFitting_Autodesk_Revit_DB_FamilyInstance_
+  name: GetConnectedElementsFromFitting
+  nameWithType: MbConnectorUtilities.GetConnectedElementsFromFitting
+  fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectedElementsFromFitting
+- uid: Autodesk.Revit.DB.FamilyInstance
+  isExternal: true
+  name: FamilyInstance
+  nameWithType: FamilyInstance
+  fullName: Autodesk.Revit.DB.FamilyInstance
+- uid: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.Element}}
+  commentId: T:MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.Element}}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: MbResult<List<Element>>
+  nameWithType: MbResult<List<Element>>
+  fullName: MB.Common.Utils.Result.MbResult<System.Collections.Generic.List<Autodesk.Revit.DB.Element>>
+  nameWithType.vb: MbResult(Of List(Of Element))
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of System.Collections.Generic.List(Of Autodesk.Revit.DB.Element))
+  name.vb: MbResult(Of List(Of Element))
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: )
+  - name: )
+- uid: MB.Common.Utils.Result
+  commentId: N:MB.Common.Utils.Result
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Utils.Result
+  nameWithType: MB.Common.Utils.Result
+  fullName: MB.Common.Utils.Result
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+- uid: Connector
+  commentId: T:Connector
+  isExternal: true
+- uid: MBF.Revit.Data.Utils.MbConnectorUtilities.GetRoundConnectorsFromFitting*
+  commentId: Overload:MBF.Revit.Data.Utils.MbConnectorUtilities.GetRoundConnectorsFromFitting
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbConnectorUtilities.html#MBF_Revit_Data_Utils_MbConnectorUtilities_GetRoundConnectorsFromFitting_Autodesk_Revit_DB_FamilyInstance_
+  name: GetRoundConnectorsFromFitting
+  nameWithType: MbConnectorUtilities.GetRoundConnectorsFromFitting
+  fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.GetRoundConnectorsFromFitting
+- uid: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.Connector}}
+  commentId: T:MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.Connector}}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: MbResult<List<Connector>>
+  nameWithType: MbResult<List<Connector>>
+  fullName: MB.Common.Utils.Result.MbResult<System.Collections.Generic.List<Autodesk.Revit.DB.Connector>>
+  nameWithType.vb: MbResult(Of List(Of Connector))
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of System.Collections.Generic.List(Of Autodesk.Revit.DB.Connector))
+  name.vb: MbResult(Of List(Of Connector))
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Connector
+    name: Connector
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Connector
+    name: Connector
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Autodesk.Revit.DB.Plumbing.PipingSystem
+  commentId: T:Autodesk.Revit.DB.Plumbing.PipingSystem
+  isExternal: true
+- uid: MBF.Revit.Data.Utils.MbConnectorUtilities.GetDirectlyConnectedElement*
+  commentId: Overload:MBF.Revit.Data.Utils.MbConnectorUtilities.GetDirectlyConnectedElement
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbConnectorUtilities.html#MBF_Revit_Data_Utils_MbConnectorUtilities_GetDirectlyConnectedElement_Autodesk_Revit_DB_Connector_
+  name: GetDirectlyConnectedElement
+  nameWithType: MbConnectorUtilities.GetDirectlyConnectedElement
+  fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.GetDirectlyConnectedElement
+- uid: Autodesk.Revit.DB.Connector
+  isExternal: true
+  name: Connector
+  nameWithType: Connector
+  fullName: Autodesk.Revit.DB.Connector
+- uid: Autodesk.Revit.DB.Element
+  isExternal: true
+  name: Element
+  nameWithType: Element
+  fullName: Autodesk.Revit.DB.Element
+- uid: MB.Common.Settings.ListingSettings.StandardFittingType.ModelingHelperNonConnector
+  commentId: F:MB.Common.Settings.ListingSettings.StandardFittingType.ModelingHelperNonConnector
+  isExternal: true
+  name: ModelingHelperNonConnector
+  nameWithType: StandardFittingType.ModelingHelperNonConnector
+  fullName: MB.Common.Settings.ListingSettings.StandardFittingType.ModelingHelperNonConnector
+- uid: MBF.Revit.Data.Utils.MbConnectorUtilities.BypassNonConnectorFittings*
+  commentId: Overload:MBF.Revit.Data.Utils.MbConnectorUtilities.BypassNonConnectorFittings
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbConnectorUtilities.html#MBF_Revit_Data_Utils_MbConnectorUtilities_BypassNonConnectorFittings_Autodesk_Revit_DB_FamilyInstance_System_Collections_Generic_List_Autodesk_Revit_DB_ElementId__
+  name: BypassNonConnectorFittings
+  nameWithType: MbConnectorUtilities.BypassNonConnectorFittings
+  fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.BypassNonConnectorFittings
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.ElementId}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.ElementId}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ElementId>
+  nameWithType: List<ElementId>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.ElementId>
+  nameWithType.vb: List(Of ElementId)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.ElementId)
+  name.vb: List(Of ElementId)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.ElementId
+    name: ElementId
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.ElementId
+    name: ElementId
+    isExternal: true
+  - name: )
+- uid: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.FamilyInstance}
+  commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.FamilyInstance}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  name: MbResult<FamilyInstance>
+  nameWithType: MbResult<FamilyInstance>
+  fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.FamilyInstance>
+  nameWithType.vb: MbResult(Of FamilyInstance)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of Autodesk.Revit.DB.FamilyInstance)
+  name.vb: MbResult(Of FamilyInstance)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: Autodesk.Revit.DB.FamilyInstance
+    name: FamilyInstance
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.FamilyInstance
+    name: FamilyInstance
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MBF.Revit.Data.Utils.MbConnectorUtilities.IsMEPCategory*
+  commentId: Overload:MBF.Revit.Data.Utils.MbConnectorUtilities.IsMEPCategory
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbConnectorUtilities.html#MBF_Revit_Data_Utils_MbConnectorUtilities_IsMEPCategory_Autodesk_Revit_DB_FamilyInstance_
+  name: IsMEPCategory
+  nameWithType: MbConnectorUtilities.IsMEPCategory
+  fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.IsMEPCategory
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFamilyInstance*
+  commentId: Overload:MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFamilyInstance
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbConnectorUtilities.html#MBF_Revit_Data_Utils_MbConnectorUtilities_GetConnectorsFromFamilyInstance_Autodesk_Revit_DB_FamilyInstance_
+  name: GetConnectorsFromFamilyInstance
+  nameWithType: MbConnectorUtilities.GetConnectorsFromFamilyInstance
+  fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFamilyInstance
+- uid: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Connector}
+  commentId: T:System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Connector}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Connector>
+  nameWithType: IEnumerable<Connector>
+  fullName: System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Connector>
+  nameWithType.vb: IEnumerable(Of Connector)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.Connector)
+  name.vb: IEnumerable(Of Connector)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Connector
+    name: Connector
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Connector
+    name: Connector
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFlexPipe*
+  commentId: Overload:MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFlexPipe
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbConnectorUtilities.html#MBF_Revit_Data_Utils_MbConnectorUtilities_GetConnectorsFromFlexPipe_Autodesk_Revit_DB_Plumbing_FlexPipe_
+  name: GetConnectorsFromFlexPipe
+  nameWithType: MbConnectorUtilities.GetConnectorsFromFlexPipe
+  fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFlexPipe
+- uid: Autodesk.Revit.DB.Plumbing.FlexPipe
+  commentId: '!:Autodesk.Revit.DB.Plumbing.FlexPipe'
+  isExternal: true
+  name: FlexPipe
+  nameWithType: FlexPipe
+  fullName: Autodesk.Revit.DB.Plumbing.FlexPipe
+shouldSkipMarkup: true

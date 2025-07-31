@@ -16,7 +16,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Extensions/CurveLoopVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/CurveLoopVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -31,14 +31,8 @@ items:
     specifying outline colors.
   example: []
   syntax:
-    content: >-
-      [LogAspect]
-
-      public static class CurveLoopVisualizerExtensions
-    content.vb: >-
-      <LogAspect>
-
-      Public Module CurveLoopVisualizerExtensions
+    content: public static class CurveLoopVisualizerExtensions
+    content.vb: Public Module CurveLoopVisualizerExtensions
   inheritance:
   - System.Object
   inheritedMembers:
@@ -49,10 +43,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  attributes:
-  - type: MB.Common.Aspects.LogAspect
-    ctor: MB.Common.Aspects.LogAspect.#ctor
-    arguments: []
 - uid: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoop2D(Autodesk.Revit.DB.CurveLoop,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
   commentId: M:MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoop2D(Autodesk.Revit.DB.CurveLoop,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
   id: VisualizeCurveLoop2D(Autodesk.Revit.DB.CurveLoop,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
@@ -66,7 +56,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoop2D(Autodesk.Revit.DB.CurveLoop, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Extensions/CurveLoopVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/CurveLoopVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -108,7 +98,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.VisualizeCurveLoops2D(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.CurveLoop>, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Extensions/CurveLoopVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/CurveLoopVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -153,7 +143,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions.CreateCurveLoopWithDetailCurves(Autodesk.Revit.DB.CurveLoop, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.ViewDrafting, Autodesk.Revit.DB.Color)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Extensions/CurveLoopVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/CurveLoopVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -535,6 +525,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.DirectShape}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
+  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   name: MbResult<DirectShape>
   nameWithType: MbResult<DirectShape>
   fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.DirectShape>
@@ -545,6 +536,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: <
   - uid: Autodesk.Revit.DB.DirectShape
     name: DirectShape
@@ -554,6 +546,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "
@@ -680,7 +673,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.DirectShape}}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   name: MbResult<List<DirectShape>>
   nameWithType: MbResult<List<DirectShape>>
   fullName: MB.Common.Utils.Result.MbResult<System.Collections.Generic.List<Autodesk.Revit.DB.DirectShape>>
@@ -691,6 +684,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: <
   - uid: System.Collections.Generic.List`1
     name: List
@@ -706,6 +700,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "
@@ -803,7 +798,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.DetailCurve}}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   name: MbResult<List<DetailCurve>>
   nameWithType: MbResult<List<DetailCurve>>
   fullName: MB.Common.Utils.Result.MbResult<System.Collections.Generic.List<Autodesk.Revit.DB.DetailCurve>>
@@ -814,6 +809,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: <
   - uid: System.Collections.Generic.List`1
     name: List
@@ -829,6 +825,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "

@@ -15,7 +15,7 @@ items:
   fullName: MBF.Revit.Creation.Extensions.DocumentExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/72753883fd5aede7a92587a9509e95ae2a8f22c9/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/cde3d353a4b95014703bca5f512fa271713c2446/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Creation
   namespace: MBF.Revit.Creation.Extensions
@@ -30,14 +30,8 @@ items:
     linked models or ensuring that linked models are set to be room bounding.
   example: []
   syntax:
-    content: >-
-      [LogAspect]
-
-      public static class DocumentExtensions
-    content.vb: >-
-      <LogAspect>
-
-      Public Module DocumentExtensions
+    content: public static class DocumentExtensions
+    content.vb: Public Module DocumentExtensions
   inheritance:
   - System.Object
   inheritedMembers:
@@ -48,10 +42,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  attributes:
-  - type: MB.Common.Aspects.LogAspect
-    ctor: MB.Common.Aspects.LogAspect.#ctor
-    arguments: []
 - uid: MBF.Revit.Creation.Extensions.DocumentExtensions.GetAllLinkedRevitModels(Autodesk.Revit.DB.Document)
   commentId: M:MBF.Revit.Creation.Extensions.DocumentExtensions.GetAllLinkedRevitModels(Autodesk.Revit.DB.Document)
   id: GetAllLinkedRevitModels(Autodesk.Revit.DB.Document)
@@ -65,7 +55,7 @@ items:
   fullName: MBF.Revit.Creation.Extensions.DocumentExtensions.GetAllLinkedRevitModels(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/72753883fd5aede7a92587a9509e95ae2a8f22c9/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/cde3d353a4b95014703bca5f512fa271713c2446/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Creation
   namespace: MBF.Revit.Creation.Extensions
@@ -95,7 +85,7 @@ items:
   fullName: MBF.Revit.Creation.Extensions.DocumentExtensions.MakeLinkedModelsRoomBounding(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/72753883fd5aede7a92587a9509e95ae2a8f22c9/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/cde3d353a4b95014703bca5f512fa271713c2446/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Creation
   namespace: MBF.Revit.Creation.Extensions

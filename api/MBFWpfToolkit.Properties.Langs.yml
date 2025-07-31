@@ -4,7 +4,7 @@ items:
   commentId: N:MBFWpfToolkit.Properties.Langs
   id: MBFWpfToolkit.Properties.Langs
   children:
-  - MBFWpfToolkit.Properties.Langs.Lang_en
+  - MBFWpfToolkit.Properties.Langs.Lang
   langs:
   - csharp
   - vb
@@ -15,11 +15,11 @@ items:
   assemblies:
   - MBFWpfToolkit
 references:
-- uid: MBFWpfToolkit.Properties.Langs.Lang_en
-  commentId: T:MBFWpfToolkit.Properties.Langs.Lang_en
+- uid: MBFWpfToolkit.Properties.Langs.Lang
+  commentId: T:MBFWpfToolkit.Properties.Langs.Lang
   isExternal: true
-  href: MBFWpfToolkit.Properties.Langs.Lang_en.html
-  name: Lang_en
-  nameWithType: Lang_en
-  fullName: MBFWpfToolkit.Properties.Langs.Lang_en
+  href: MBFWpfToolkit.Properties.Langs.Lang.html
+  name: Lang
+  nameWithType: Lang
+  fullName: MBFWpfToolkit.Properties.Langs.Lang
 shouldSkipMarkup: true

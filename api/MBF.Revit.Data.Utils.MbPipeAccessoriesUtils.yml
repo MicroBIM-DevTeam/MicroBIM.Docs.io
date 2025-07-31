@@ -14,7 +14,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeAccessoriesUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeAccessoriesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeAccessoriesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -27,14 +27,8 @@ items:
     different Revit versions.
   example: []
   syntax:
-    content: >-
-      [LogAspect]
-
-      public static class MbPipeAccessoriesUtils
-    content.vb: >-
-      <LogAspect>
-
-      Public Module MbPipeAccessoriesUtils
+    content: public static class MbPipeAccessoriesUtils
+    content.vb: Public Module MbPipeAccessoriesUtils
   inheritance:
   - System.Object
   inheritedMembers:
@@ -45,10 +39,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  attributes:
-  - type: MB.Common.Aspects.LogAspect
-    ctor: MB.Common.Aspects.LogAspect.#ctor
-    arguments: []
 - uid: MBF.Revit.Data.Utils.MbPipeAccessoriesUtils.GetPipeAccessoriesInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
   commentId: M:MBF.Revit.Data.Utils.MbPipeAccessoriesUtils.GetPipeAccessoriesInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
   id: GetPipeAccessoriesInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
@@ -61,7 +51,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeAccessoriesUtils.GetPipeAccessoriesInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeAccessoriesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeAccessoriesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils

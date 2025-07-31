@@ -18,6 +18,8 @@ items:
   nameWithType: ListingDto
   fullName: MB.Common.Settings.ListingSettings.ListingDto
   type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/ListingDto.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -50,6 +52,8 @@ items:
   nameWithType: ListingDto.ListingDto(string, string, string, string, StandardFittingType)
   fullName: MB.Common.Settings.ListingSettings.ListingDto.ListingDto(string, string, string, string, MB.Common.Settings.ListingSettings.StandardFittingType)
   type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/ListingDto.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -89,6 +93,8 @@ items:
   nameWithType: ListingDto.FamilyName
   fullName: MB.Common.Settings.ListingSettings.ListingDto.FamilyName
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/ListingDto.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -112,6 +118,8 @@ items:
   nameWithType: ListingDto.Name
   fullName: MB.Common.Settings.ListingSettings.ListingDto.Name
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/ListingDto.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -135,6 +143,8 @@ items:
   nameWithType: ListingDto.SymbolName
   fullName: MB.Common.Settings.ListingSettings.ListingDto.SymbolName
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/ListingDto.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -158,6 +168,8 @@ items:
   nameWithType: ListingDto.CategoryName
   fullName: MB.Common.Settings.ListingSettings.ListingDto.CategoryName
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/ListingDto.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -181,6 +193,8 @@ items:
   nameWithType: ListingDto.SelectedFittingType
   fullName: MB.Common.Settings.ListingSettings.ListingDto.SelectedFittingType
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/ListingDto.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings

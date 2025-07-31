@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Geometry_Extensions_CurveLoopExtensions" data-uid="MBF.Revit.Geometry.Extensions.CurveLoopExtensions" class="text-break">
-Class CurveLoopExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Extensions/CurveLoopExtensions.cs"><i class="bi bi-code-slash"></i></a>
+Class CurveLoopExtensions  
   </h1>
 
   <div class="facts text-secondary">
@@ -102,8 +102,7 @@ representations, such as <span class="xref">Clipper2Lib.PathD</span> and <span c
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[LogAspect]
-public static class CurveLoopExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public static class CurveLoopExtensions</code></pre>
   </div>
 
 
@@ -153,128 +152,6 @@ public static class CurveLoopExtensions</code></pre>
 Clipper library, enabling operations such as polygon clipping and path manipulation. The methods handle common
 validation scenarios, such as ensuring the input is not null and that the geometry meets the minimum requirements
 for conversion.</div>
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="MBF_Revit_Geometry_Extensions_CurveLoopExtensions_ToClipperPathD_" data-uid="MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathD*"></a>
-
-  <h3 id="MBF_Revit_Geometry_Extensions_CurveLoopExtensions_ToClipperPathD_Autodesk_Revit_DB_CurveLoop_" data-uid="MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathD(Autodesk.Revit.DB.CurveLoop)">
-  ToClipperPathD(CurveLoop)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Extensions/CurveLoopExtensions.cs"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary">Converts a <span class="xref">CurveLoop</span> into a Clipper-compatible <span class="xref">Clipper2Lib.PathD</span> by collecting its curve
-endpoints.</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static MbResult&lt;PathD&gt; ToClipperPathD(this CurveLoop curveLoop)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>curveLoop</code> <span class="xref">CurveLoop</span></dt>
-    <dd>The <span class="xref">CurveLoop</span> to convert.</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<span class="xref">PathD</span>&gt;</dt>
-    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a>:
-<ul><li><b>Success:</b> Contains the converted <span class="xref">Clipper2Lib.PathD</span>.</li><li><b>Failure:</b> "CurveLoop is null."</li><li><b>Failure:</b> "The CurveLoop must have at least 3 points to form a polygon."</li><li><b>Failure:</b> "Failed to convert CurveLoop to PathD: [exception message]"</li></ul></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="MBF_Revit_Geometry_Extensions_CurveLoopExtensions_ToClipperPathsD_" data-uid="MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathsD*"></a>
-
-  <h3 id="MBF_Revit_Geometry_Extensions_CurveLoopExtensions_ToClipperPathsD_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_CurveLoop__" data-uid="MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToClipperPathsD(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.CurveLoop})">
-  ToClipperPathsD(IEnumerable&lt;CurveLoop&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Extensions/CurveLoopExtensions.cs"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary">Converts a collection of <span class="xref">CurveLoop</span> objects into a Clipper-compatible <span class="xref">Clipper2Lib.PathsD</span>.</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static MbResult&lt;PathsD&gt; ToClipperPathsD(this IEnumerable&lt;CurveLoop&gt; curveLoops)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>curveLoops</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">CurveLoop</span>&gt;</dt>
-    <dd>The <span class="xref">CurveLoop</span> collection to convert.</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<span class="xref">PathsD</span>&gt;</dt>
-    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a>:
-<ul><li><b>Success:</b> Contains the converted <span class="xref">Clipper2Lib.PathsD</span>.</li><li><b>Failure:</b> "CurveLoop collection is null."</li><li>
-            <b>Failure:</b> Any error from <a class="xref" href="MBF.Revit.Geometry.Extensions.CurveLoopExtensions.html#MBF_Revit_Geometry_Extensions_CurveLoopExtensions_ToClipperPathD_Autodesk_Revit_DB_CurveLoop_">ToClipperPathD(CurveLoop)</a> such as "CurveLoop is null." or
-            invalid geometry.
-        </li><li><b>Failure:</b> "Failed to convert CurveLoops to PathsD: [exception message]"</li></ul></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="MBF_Revit_Geometry_Extensions_CurveLoopExtensions_ToPathsD_" data-uid="MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToPathsD*"></a>
-
-  <h3 id="MBF_Revit_Geometry_Extensions_CurveLoopExtensions_ToPathsD_Autodesk_Revit_DB_CurveLoop_" data-uid="MBF.Revit.Geometry.Extensions.CurveLoopExtensions.ToPathsD(Autodesk.Revit.DB.CurveLoop)">
-  ToPathsD(CurveLoop)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Extensions/CurveLoopExtensions.cs"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary">Wraps a single <span class="xref">CurveLoop</span> into a <span class="xref">Clipper2Lib.PathsD</span> collection.</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static MbResult&lt;PathsD&gt; ToPathsD(this CurveLoop curveLoop)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>curveLoop</code> <span class="xref">CurveLoop</span></dt>
-    <dd>The <span class="xref">CurveLoop</span> to wrap.</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<span class="xref">PathsD</span>&gt;</dt>
-    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a>:
-<ul><li><b>Success:</b> Contains a <span class="xref">Clipper2Lib.PathsD</span> with one converted path.</li><li>
-            <b>Failure:</b> Any error from <a class="xref" href="MBF.Revit.Geometry.Extensions.CurveLoopExtensions.html#MBF_Revit_Geometry_Extensions_CurveLoopExtensions_ToClipperPathD_Autodesk_Revit_DB_CurveLoop_">ToClipperPathD(CurveLoop)</a>, such as null or invalid
-            geometry.
-        </li></ul></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
 
 
 

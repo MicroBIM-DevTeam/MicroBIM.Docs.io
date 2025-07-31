@@ -11,10 +11,12 @@ items:
   - MBFWpfToolkit.MbWindow.GetPrimaryBrush
   - MBFWpfToolkit.MbWindow.InitializeWindow
   - MBFWpfToolkit.MbWindow.IsDark
+  - MBFWpfToolkit.MbWindow.IsDarkChanged
   - MBFWpfToolkit.MbWindow.IsThemeToggleVisible
   - MBFWpfToolkit.MbWindow.IsThemeToggleVisibleProperty
   - MBFWpfToolkit.MbWindow.Item(System.String)
   - MBFWpfToolkit.MbWindow.MainResources
+  - MBFWpfToolkit.MbWindow.OnIsDarkChanged(System.Boolean,System.Boolean)
   - MBFWpfToolkit.MbWindow.OnPropertyChanged(System.String)
   - MBFWpfToolkit.MbWindow.PluginDescription
   - MBFWpfToolkit.MbWindow.PluginDescriptionProperty
@@ -45,7 +47,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -76,7 +78,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.IsThemeToggleVisibleProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -99,7 +101,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowLanguagesComboBoxProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -122,7 +124,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PluginNameProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -145,7 +147,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PluginDescriptionProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -168,7 +170,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PluginVersionProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -191,7 +193,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PrimaryBrushProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -214,7 +216,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowLogoProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -237,7 +239,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowPluginNameProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -260,7 +262,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowPluginVersionProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -271,6 +273,38 @@ items:
     return:
       type: System.Windows.DependencyProperty
     content.vb: Public Shared ReadOnly ShowPluginVersionProperty As DependencyProperty
+- uid: MBFWpfToolkit.MbWindow.OnIsDarkChanged(System.Boolean,System.Boolean)
+  commentId: M:MBFWpfToolkit.MbWindow.OnIsDarkChanged(System.Boolean,System.Boolean)
+  id: OnIsDarkChanged(System.Boolean,System.Boolean)
+  parent: MBFWpfToolkit.MbWindow
+  langs:
+  - csharp
+  - vb
+  name: OnIsDarkChanged(bool, bool)
+  nameWithType: MbWindow.OnIsDarkChanged(bool, bool)
+  fullName: MBFWpfToolkit.MbWindow.OnIsDarkChanged(bool, bool)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit
+  summary: Called when IsDark property changes
+  example: []
+  syntax:
+    content: protected virtual void OnIsDarkChanged(bool oldValue, bool newValue)
+    parameters:
+    - id: oldValue
+      type: System.Boolean
+      description: Previous value
+    - id: newValue
+      type: System.Boolean
+      description: New value
+    content.vb: Protected Overridable Sub OnIsDarkChanged(oldValue As Boolean, newValue As Boolean)
+  overload: MBFWpfToolkit.MbWindow.OnIsDarkChanged*
+  nameWithType.vb: MbWindow.OnIsDarkChanged(Boolean, Boolean)
+  fullName.vb: MBFWpfToolkit.MbWindow.OnIsDarkChanged(Boolean, Boolean)
+  name.vb: OnIsDarkChanged(Boolean, Boolean)
 - uid: MBFWpfToolkit.MbWindow.GetAllChildrenOfType``1(System.Windows.DependencyObject)
   commentId: M:MBFWpfToolkit.MbWindow.GetAllChildrenOfType``1(System.Windows.DependencyObject)
   id: GetAllChildrenOfType``1(System.Windows.DependencyObject)
@@ -283,7 +317,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.GetAllChildrenOfType<T>(System.Windows.DependencyObject)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -317,7 +351,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ApplyThemeForElement(System.Windows.FrameworkElement, string)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -349,7 +383,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.MbWindow()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -377,7 +411,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.InitializeWindow()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -404,7 +438,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowSprite()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -431,7 +465,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.GetPrimaryBrush()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -456,7 +490,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.OnPropertyChanged(string?)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -485,7 +519,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.SetField<T>(ref T, T, string?)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -526,7 +560,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.IsDark
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -551,7 +585,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.SelectedLanguage
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -576,7 +610,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.SupportedLanguages
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -601,7 +635,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.this[string]
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -638,7 +672,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.IsThemeToggleVisible
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -664,7 +698,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowLanguagesComboBox
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -689,7 +723,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PluginName
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -714,7 +748,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PluginDescription
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -739,7 +773,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PluginVersion
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -764,7 +798,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PrimaryBrush
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -789,7 +823,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowLogo
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -814,7 +848,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowPluginName
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -839,7 +873,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.ShowPluginVersion
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -864,7 +898,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.MainResources
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -880,6 +914,29 @@ items:
       type: System.Windows.ResourceDictionary
     content.vb: Public Shared Property MainResources As ResourceDictionary
   overload: MBFWpfToolkit.MbWindow.MainResources*
+- uid: MBFWpfToolkit.MbWindow.IsDarkChanged
+  commentId: E:MBFWpfToolkit.MbWindow.IsDarkChanged
+  id: IsDarkChanged
+  parent: MBFWpfToolkit.MbWindow
+  langs:
+  - csharp
+  - vb
+  name: IsDarkChanged
+  nameWithType: MbWindow.IsDarkChanged
+  fullName: MBFWpfToolkit.MbWindow.IsDarkChanged
+  type: Event
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit
+  summary: Event raised when IsDark property changes
+  example: []
+  syntax:
+    content: public event EventHandler<bool> IsDarkChanged
+    return:
+      type: System.EventHandler{System.Boolean}
+    content.vb: Public Event IsDarkChanged As EventHandler(Of Boolean)
 - uid: MBFWpfToolkit.MbWindow.PropertyChanged
   commentId: E:MBFWpfToolkit.MbWindow.PropertyChanged
   id: PropertyChanged
@@ -892,7 +949,7 @@ items:
   fullName: MBFWpfToolkit.MbWindow.PropertyChanged
   type: Event
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/MbWindow.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/MbWindow.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit
@@ -1033,6 +1090,24 @@ references:
   name: ShowPluginVersion
   nameWithType: MbWindow.ShowPluginVersion
   fullName: MBFWpfToolkit.MbWindow.ShowPluginVersion
+- uid: MBFWpfToolkit.MbWindow.OnIsDarkChanged*
+  commentId: Overload:MBFWpfToolkit.MbWindow.OnIsDarkChanged
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_OnIsDarkChanged_System_Boolean_System_Boolean_
+  name: OnIsDarkChanged
+  nameWithType: MbWindow.OnIsDarkChanged
+  fullName: MBFWpfToolkit.MbWindow.OnIsDarkChanged
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: MBFWpfToolkit.MbWindow.GetAllChildrenOfType*
   commentId: Overload:MBFWpfToolkit.MbWindow.GetAllChildrenOfType
   isExternal: true
@@ -1279,17 +1354,6 @@ references:
   name: T
   nameWithType: T
   fullName: T
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
 - uid: T
   name: T
   nameWithType: T
@@ -1578,6 +1642,69 @@ references:
   name: ResourceDictionary
   nameWithType: ResourceDictionary
   fullName: System.Windows.ResourceDictionary
+- uid: System.EventHandler{System.Boolean}
+  commentId: T:System.EventHandler{System.Boolean}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<bool>
+  nameWithType: EventHandler<bool>
+  fullName: System.EventHandler<bool>
+  nameWithType.vb: EventHandler(Of Boolean)
+  fullName.vb: System.EventHandler(Of Boolean)
+  name.vb: EventHandler(Of Boolean)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
 - uid: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
   commentId: E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged
   parent: System.ComponentModel.INotifyPropertyChanged

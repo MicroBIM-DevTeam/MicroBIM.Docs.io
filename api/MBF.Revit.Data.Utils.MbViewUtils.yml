@@ -25,7 +25,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -43,14 +43,8 @@ items:
     views.
   example: []
   syntax:
-    content: >-
-      [LogAspect]
-
-      public static class MbViewUtils
-    content.vb: >-
-      <LogAspect>
-
-      Public Module MbViewUtils
+    content: public static class MbViewUtils
+    content.vb: Public Module MbViewUtils
   inheritance:
   - System.Object
   inheritedMembers:
@@ -61,10 +55,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  attributes:
-  - type: MB.Common.Aspects.LogAspect
-    ctor: MB.Common.Aspects.LogAspect.#ctor
-    arguments: []
 - uid: MBF.Revit.Data.Utils.MbViewUtils.IsGraphicalView(Autodesk.Revit.DB.View)
   commentId: M:MBF.Revit.Data.Utils.MbViewUtils.IsGraphicalView(Autodesk.Revit.DB.View)
   id: IsGraphicalView(Autodesk.Revit.DB.View)
@@ -77,7 +67,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.IsGraphicalView(Autodesk.Revit.DB.View)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -117,7 +107,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -151,7 +141,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.ElementId)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -183,7 +173,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.GetOrCreateTemp3D(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -233,7 +223,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.Create3DView(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -277,7 +267,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.EnsureTemp3DViewIsOpen(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -303,7 +293,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.GetTemp3DNoTransaction(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -335,7 +325,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.GetAllPlanViews(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -369,7 +359,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.GetAllThreeDViews(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -403,7 +393,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement(Autodesk.Revit.DB.Element)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -440,7 +430,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.TemporarilyIsolateElement(Autodesk.Revit.DB.Element)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -477,7 +467,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbViewUtils.ResetTemporaryIsolate()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbViewUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbViewUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -810,7 +800,6 @@ references:
   nameWithType: MbViewUtils.ZoomToElement
   fullName: MBF.Revit.Data.Utils.MbViewUtils.ZoomToElement
 - uid: Autodesk.Revit.DB.FamilyInstance
-  commentId: T:Autodesk.Revit.DB.FamilyInstance
   isExternal: true
   name: FamilyInstance
   nameWithType: FamilyInstance

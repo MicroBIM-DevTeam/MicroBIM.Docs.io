@@ -1,0 +1,642 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Services.DialogService
+  commentId: T:MBFWpfToolkit.Services.DialogService
+  id: DialogService
+  parent: MBFWpfToolkit.Services
+  children:
+  - MBFWpfToolkit.Services.DialogService.#ctor
+  - MBFWpfToolkit.Services.DialogService.Close
+  - MBFWpfToolkit.Services.DialogService.CloseAll
+  - MBFWpfToolkit.Services.DialogService.Show``1(``0)
+  - MBFWpfToolkit.Services.DialogService.UpdateMessage(System.String)
+  langs:
+  - csharp
+  - vb
+  name: DialogService
+  nameWithType: DialogService
+  fullName: MBFWpfToolkit.Services.DialogService
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Services/DialogService.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Services
+  summary: Provides functionality for displaying, updating, and closing dialogs in an application.
+  remarks: >-
+    The <xref href="MBFWpfToolkit.Services.DialogService" data-throw-if-not-resolved="false"></xref> class manages the lifecycle of dialogs, including showing,
+                updating messages, and closing dialogs. It supports multiple nested dialogs.
+  example: []
+  syntax:
+    content: 'public class DialogService : IDialogService'
+    content.vb: Public Class DialogService Implements IDialogService
+  inheritance:
+  - System.Object
+  implements:
+  - MBFWpfToolkit.Services.IDialogService
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBFWpfToolkit.Services.DialogService.Show``1(``0)
+  commentId: M:MBFWpfToolkit.Services.DialogService.Show``1(``0)
+  id: Show``1(``0)
+  parent: MBFWpfToolkit.Services.DialogService
+  langs:
+  - csharp
+  - vb
+  name: Show<T>(T)
+  nameWithType: DialogService.Show<T>(T)
+  fullName: MBFWpfToolkit.Services.DialogService.Show<T>(T)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Services/DialogService.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Services
+  summary: Displays the specified content in a dialog.
+  example: []
+  syntax:
+    content: public void Show<T>(T content)
+    parameters:
+    - id: content
+      type: '{T}'
+      description: The content to display in the dialog. Cannot be null.
+    typeParameters:
+    - id: T
+      description: The type of the content to display in the dialog.
+    content.vb: Public Sub Show(Of T)(content As T)
+  overload: MBFWpfToolkit.Services.DialogService.Show*
+  implements:
+  - MBFWpfToolkit.Services.IDialogService.Show``1({T})
+  nameWithType.vb: DialogService.Show(Of T)(T)
+  fullName.vb: MBFWpfToolkit.Services.DialogService.Show(Of T)(T)
+  name.vb: Show(Of T)(T)
+- uid: MBFWpfToolkit.Services.DialogService.UpdateMessage(System.String)
+  commentId: M:MBFWpfToolkit.Services.DialogService.UpdateMessage(System.String)
+  id: UpdateMessage(System.String)
+  parent: MBFWpfToolkit.Services.DialogService
+  langs:
+  - csharp
+  - vb
+  name: UpdateMessage(string)
+  nameWithType: DialogService.UpdateMessage(string)
+  fullName: MBFWpfToolkit.Services.DialogService.UpdateMessage(string)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Services/DialogService.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Services
+  summary: Updates the message of the top-most open dialog.
+  example: []
+  syntax:
+    content: public void UpdateMessage(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The new message to display. Cannot be null.
+    content.vb: Public Sub UpdateMessage(message As String)
+  overload: MBFWpfToolkit.Services.DialogService.UpdateMessage*
+  implements:
+  - MBFWpfToolkit.Services.IDialogService.UpdateMessage(System.String)
+  nameWithType.vb: DialogService.UpdateMessage(String)
+  fullName.vb: MBFWpfToolkit.Services.DialogService.UpdateMessage(String)
+  name.vb: UpdateMessage(String)
+- uid: MBFWpfToolkit.Services.DialogService.Close
+  commentId: M:MBFWpfToolkit.Services.DialogService.Close
+  id: Close
+  parent: MBFWpfToolkit.Services.DialogService
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: DialogService.Close()
+  fullName: MBFWpfToolkit.Services.DialogService.Close()
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Services/DialogService.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Services
+  summary: Closes the top-most dialog if it is currently open.
+  example: []
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close()
+  overload: MBFWpfToolkit.Services.DialogService.Close*
+  implements:
+  - MBFWpfToolkit.Services.IDialogService.Close
+- uid: MBFWpfToolkit.Services.DialogService.CloseAll
+  commentId: M:MBFWpfToolkit.Services.DialogService.CloseAll
+  id: CloseAll
+  parent: MBFWpfToolkit.Services.DialogService
+  langs:
+  - csharp
+  - vb
+  name: CloseAll()
+  nameWithType: DialogService.CloseAll()
+  fullName: MBFWpfToolkit.Services.DialogService.CloseAll()
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Services/DialogService.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Services
+  summary: Closes all open dialogs.
+  example: []
+  syntax:
+    content: public void CloseAll()
+    content.vb: Public Sub CloseAll()
+  overload: MBFWpfToolkit.Services.DialogService.CloseAll*
+- uid: MBFWpfToolkit.Services.DialogService.#ctor
+  commentId: M:MBFWpfToolkit.Services.DialogService.#ctor
+  id: '#ctor'
+  parent: MBFWpfToolkit.Services.DialogService
+  langs:
+  - csharp
+  - vb
+  name: DialogService()
+  nameWithType: DialogService.DialogService()
+  fullName: MBFWpfToolkit.Services.DialogService.DialogService()
+  type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Services/DialogService.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Services
+  syntax:
+    content: public DialogService()
+    content.vb: Public Sub New()
+  overload: MBFWpfToolkit.Services.DialogService.#ctor*
+  nameWithType.vb: DialogService.New()
+  fullName.vb: MBFWpfToolkit.Services.DialogService.New()
+  name.vb: New()
+references:
+- uid: MBFWpfToolkit.Services.DialogService
+  commentId: T:MBFWpfToolkit.Services.DialogService
+  isExternal: true
+  href: MBFWpfToolkit.Services.DialogService.html
+  name: DialogService
+  nameWithType: DialogService
+  fullName: MBFWpfToolkit.Services.DialogService
+- uid: MBFWpfToolkit.Services
+  commentId: N:MBFWpfToolkit.Services
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit.Services
+  nameWithType: MBFWpfToolkit.Services
+  fullName: MBFWpfToolkit.Services
+  spec.csharp:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Services
+    name: Services
+    isExternal: true
+    href: MBFWpfToolkit.Services.html
+  spec.vb:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Services
+    name: Services
+    isExternal: true
+    href: MBFWpfToolkit.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MBFWpfToolkit.Services.IDialogService
+  commentId: T:MBFWpfToolkit.Services.IDialogService
+  parent: MBFWpfToolkit.Services
+  isExternal: true
+  href: MBFWpfToolkit.Services.IDialogService.html
+  name: IDialogService
+  nameWithType: IDialogService
+  fullName: MBFWpfToolkit.Services.IDialogService
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MBFWpfToolkit.Services.DialogService.Show*
+  commentId: Overload:MBFWpfToolkit.Services.DialogService.Show
+  isExternal: true
+  href: MBFWpfToolkit.Services.DialogService.html#MBFWpfToolkit_Services_DialogService_Show__1___0_
+  name: Show
+  nameWithType: DialogService.Show
+  fullName: MBFWpfToolkit.Services.DialogService.Show
+- uid: MBFWpfToolkit.Services.IDialogService.Show``1({T})
+  commentId: M:MBFWpfToolkit.Services.IDialogService.Show``1(``0)
+  parent: MBFWpfToolkit.Services.IDialogService
+  definition: MBFWpfToolkit.Services.IDialogService.Show``1(``0)
+  href: MBFWpfToolkit.Services.IDialogService.html#MBFWpfToolkit_Services_IDialogService_Show__1___0_
+  name: Show<T>(T)
+  nameWithType: IDialogService.Show<T>(T)
+  fullName: MBFWpfToolkit.Services.IDialogService.Show<T>(T)
+  nameWithType.vb: IDialogService.Show(Of T)(T)
+  fullName.vb: MBFWpfToolkit.Services.IDialogService.Show(Of T)(T)
+  name.vb: Show(Of T)(T)
+  spec.csharp:
+  - uid: MBFWpfToolkit.Services.IDialogService.Show``1(``0)
+    name: Show
+    isExternal: true
+    href: MBFWpfToolkit.Services.IDialogService.html#MBFWpfToolkit_Services_IDialogService_Show__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: MBFWpfToolkit.Services.IDialogService.Show``1(``0)
+    name: Show
+    isExternal: true
+    href: MBFWpfToolkit.Services.IDialogService.html#MBFWpfToolkit_Services_IDialogService_Show__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: MBFWpfToolkit.Services.IDialogService.Show``1(``0)
+  commentId: M:MBFWpfToolkit.Services.IDialogService.Show``1(``0)
+  isExternal: true
+  href: MBFWpfToolkit.Services.IDialogService.html#MBFWpfToolkit_Services_IDialogService_Show__1___0_
+  name: Show<T>(T)
+  nameWithType: IDialogService.Show<T>(T)
+  fullName: MBFWpfToolkit.Services.IDialogService.Show<T>(T)
+  nameWithType.vb: IDialogService.Show(Of T)(T)
+  fullName.vb: MBFWpfToolkit.Services.IDialogService.Show(Of T)(T)
+  name.vb: Show(Of T)(T)
+  spec.csharp:
+  - uid: MBFWpfToolkit.Services.IDialogService.Show``1(``0)
+    name: Show
+    isExternal: true
+    href: MBFWpfToolkit.Services.IDialogService.html#MBFWpfToolkit_Services_IDialogService_Show__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: MBFWpfToolkit.Services.IDialogService.Show``1(``0)
+    name: Show
+    isExternal: true
+    href: MBFWpfToolkit.Services.IDialogService.html#MBFWpfToolkit_Services_IDialogService_Show__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: MBFWpfToolkit.Services.DialogService.UpdateMessage*
+  commentId: Overload:MBFWpfToolkit.Services.DialogService.UpdateMessage
+  isExternal: true
+  href: MBFWpfToolkit.Services.DialogService.html#MBFWpfToolkit_Services_DialogService_UpdateMessage_System_String_
+  name: UpdateMessage
+  nameWithType: DialogService.UpdateMessage
+  fullName: MBFWpfToolkit.Services.DialogService.UpdateMessage
+- uid: MBFWpfToolkit.Services.IDialogService.UpdateMessage(System.String)
+  commentId: M:MBFWpfToolkit.Services.IDialogService.UpdateMessage(System.String)
+  parent: MBFWpfToolkit.Services.IDialogService
+  isExternal: true
+  href: MBFWpfToolkit.Services.IDialogService.html#MBFWpfToolkit_Services_IDialogService_UpdateMessage_System_String_
+  name: UpdateMessage(string)
+  nameWithType: IDialogService.UpdateMessage(string)
+  fullName: MBFWpfToolkit.Services.IDialogService.UpdateMessage(string)
+  nameWithType.vb: IDialogService.UpdateMessage(String)
+  fullName.vb: MBFWpfToolkit.Services.IDialogService.UpdateMessage(String)
+  name.vb: UpdateMessage(String)
+  spec.csharp:
+  - uid: MBFWpfToolkit.Services.IDialogService.UpdateMessage(System.String)
+    name: UpdateMessage
+    isExternal: true
+    href: MBFWpfToolkit.Services.IDialogService.html#MBFWpfToolkit_Services_IDialogService_UpdateMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MBFWpfToolkit.Services.IDialogService.UpdateMessage(System.String)
+    name: UpdateMessage
+    isExternal: true
+    href: MBFWpfToolkit.Services.IDialogService.html#MBFWpfToolkit_Services_IDialogService_UpdateMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MBFWpfToolkit.Services.DialogService.Close*
+  commentId: Overload:MBFWpfToolkit.Services.DialogService.Close
+  isExternal: true
+  href: MBFWpfToolkit.Services.DialogService.html#MBFWpfToolkit_Services_DialogService_Close
+  name: Close
+  nameWithType: DialogService.Close
+  fullName: MBFWpfToolkit.Services.DialogService.Close
+- uid: MBFWpfToolkit.Services.IDialogService.Close
+  commentId: M:MBFWpfToolkit.Services.IDialogService.Close
+  parent: MBFWpfToolkit.Services.IDialogService
+  isExternal: true
+  href: MBFWpfToolkit.Services.IDialogService.html#MBFWpfToolkit_Services_IDialogService_Close
+  name: Close()
+  nameWithType: IDialogService.Close()
+  fullName: MBFWpfToolkit.Services.IDialogService.Close()
+  spec.csharp:
+  - uid: MBFWpfToolkit.Services.IDialogService.Close
+    name: Close
+    isExternal: true
+    href: MBFWpfToolkit.Services.IDialogService.html#MBFWpfToolkit_Services_IDialogService_Close
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MBFWpfToolkit.Services.IDialogService.Close
+    name: Close
+    isExternal: true
+    href: MBFWpfToolkit.Services.IDialogService.html#MBFWpfToolkit_Services_IDialogService_Close
+  - name: (
+  - name: )
+- uid: MBFWpfToolkit.Services.DialogService.CloseAll*
+  commentId: Overload:MBFWpfToolkit.Services.DialogService.CloseAll
+  isExternal: true
+  href: MBFWpfToolkit.Services.DialogService.html#MBFWpfToolkit_Services_DialogService_CloseAll
+  name: CloseAll
+  nameWithType: DialogService.CloseAll
+  fullName: MBFWpfToolkit.Services.DialogService.CloseAll
+- uid: MBFWpfToolkit.Services.DialogService.#ctor*
+  commentId: Overload:MBFWpfToolkit.Services.DialogService.#ctor
+  isExternal: true
+  href: MBFWpfToolkit.Services.DialogService.html#MBFWpfToolkit_Services_DialogService__ctor
+  name: DialogService
+  nameWithType: DialogService.DialogService
+  fullName: MBFWpfToolkit.Services.DialogService.DialogService
+  nameWithType.vb: DialogService.New
+  fullName.vb: MBFWpfToolkit.Services.DialogService.New
+  name.vb: New
+shouldSkipMarkup: true

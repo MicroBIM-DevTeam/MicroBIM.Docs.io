@@ -1,0 +1,78 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Services
+  commentId: N:MBFWpfToolkit.Services
+  id: MBFWpfToolkit.Services
+  children:
+  - MBFWpfToolkit.Services.AspectServiceAccessor
+  - MBFWpfToolkit.Services.DialogService
+  - MBFWpfToolkit.Services.IDialogService
+  - MBFWpfToolkit.Services.IUpdatableDialogContent
+  langs:
+  - csharp
+  - vb
+  name: MBFWpfToolkit.Services
+  nameWithType: MBFWpfToolkit.Services
+  fullName: MBFWpfToolkit.Services
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MBFWpfToolkit.Services.AspectServiceAccessor
+  commentId: T:MBFWpfToolkit.Services.AspectServiceAccessor
+  isExternal: true
+  href: MBFWpfToolkit.Services.AspectServiceAccessor.html
+  name: AspectServiceAccessor
+  nameWithType: AspectServiceAccessor
+  fullName: MBFWpfToolkit.Services.AspectServiceAccessor
+- uid: MBFWpfToolkit.Services.DialogService
+  commentId: T:MBFWpfToolkit.Services.DialogService
+  isExternal: true
+  href: MBFWpfToolkit.Services.DialogService.html
+  name: DialogService
+  nameWithType: DialogService
+  fullName: MBFWpfToolkit.Services.DialogService
+- uid: MBFWpfToolkit.Services.IDialogService
+  commentId: T:MBFWpfToolkit.Services.IDialogService
+  parent: MBFWpfToolkit.Services
+  isExternal: true
+  href: MBFWpfToolkit.Services.IDialogService.html
+  name: IDialogService
+  nameWithType: IDialogService
+  fullName: MBFWpfToolkit.Services.IDialogService
+- uid: MBFWpfToolkit.Services.IUpdatableDialogContent
+  commentId: T:MBFWpfToolkit.Services.IUpdatableDialogContent
+  parent: MBFWpfToolkit.Services
+  isExternal: true
+  href: MBFWpfToolkit.Services.IUpdatableDialogContent.html
+  name: IUpdatableDialogContent
+  nameWithType: IUpdatableDialogContent
+  fullName: MBFWpfToolkit.Services.IUpdatableDialogContent
+- uid: MBFWpfToolkit.Services
+  commentId: N:MBFWpfToolkit.Services
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit.Services
+  nameWithType: MBFWpfToolkit.Services
+  fullName: MBFWpfToolkit.Services
+  spec.csharp:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Services
+    name: Services
+    isExternal: true
+    href: MBFWpfToolkit.Services.html
+  spec.vb:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Services
+    name: Services
+    isExternal: true
+    href: MBFWpfToolkit.Services.html
+shouldSkipMarkup: true

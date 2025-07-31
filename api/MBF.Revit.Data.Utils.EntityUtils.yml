@@ -17,7 +17,7 @@ items:
   fullName: MBF.Revit.Data.Utils.EntityUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/EntityUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/EntityUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -40,14 +40,8 @@ items:
     </p>
   example: []
   syntax:
-    content: >-
-      [LogAspect]
-
-      public static class EntityUtils
-    content.vb: >-
-      <LogAspect>
-
-      Public Module EntityUtils
+    content: public static class EntityUtils
+    content.vb: Public Module EntityUtils
   inheritance:
   - System.Object
   inheritedMembers:
@@ -58,10 +52,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  attributes:
-  - type: MB.Common.Aspects.LogAspect
-    ctor: MB.Common.Aspects.LogAspect.#ctor
-    arguments: []
 - uid: MBF.Revit.Data.Utils.EntityUtils.GetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field)
   commentId: M:MBF.Revit.Data.Utils.EntityUtils.GetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field)
   id: GetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity,Autodesk.Revit.DB.ExtensibleStorage.Field)
@@ -74,7 +64,7 @@ items:
   fullName: MBF.Revit.Data.Utils.EntityUtils.GetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity, Autodesk.Revit.DB.ExtensibleStorage.Field)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/EntityUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/EntityUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -116,7 +106,7 @@ items:
   fullName: MBF.Revit.Data.Utils.EntityUtils.GetElementId(Autodesk.Revit.DB.ExtensibleStorage.Entity, Autodesk.Revit.DB.ExtensibleStorage.Field)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/EntityUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/EntityUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -166,7 +156,7 @@ items:
   fullName: MBF.Revit.Data.Utils.EntityUtils.SetXYZ(Autodesk.Revit.DB.ExtensibleStorage.Entity, Autodesk.Revit.DB.ExtensibleStorage.Field, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/EntityUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/EntityUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -207,7 +197,7 @@ items:
   fullName: MBF.Revit.Data.Utils.EntityUtils.SetElementId(Autodesk.Revit.DB.ExtensibleStorage.Entity, Autodesk.Revit.DB.ExtensibleStorage.Field, Autodesk.Revit.DB.ElementId)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/EntityUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/EntityUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils

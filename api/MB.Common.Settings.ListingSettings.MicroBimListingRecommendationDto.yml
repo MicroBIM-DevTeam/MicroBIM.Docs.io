@@ -15,6 +15,8 @@ items:
   nameWithType: MicroBimListingRecommendationDto
   fullName: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto
   type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/MicroBimListingRecommendationDto.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -44,6 +46,8 @@ items:
   nameWithType: MicroBimListingRecommendationDto.MicroBimListingRecommendationDto()
   fullName: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.MicroBimListingRecommendationDto()
   type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/MicroBimListingRecommendationDto.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -65,6 +69,8 @@ items:
   nameWithType: MicroBimListingRecommendationDto.Name
   fullName: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.Name
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/MicroBimListingRecommendationDto.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -88,6 +94,8 @@ items:
   nameWithType: MicroBimListingRecommendationDto.SuggestedType
   fullName: MB.Common.Settings.ListingSettings.MicroBimListingRecommendationDto.SuggestedType
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/MicroBimListingRecommendationDto.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings

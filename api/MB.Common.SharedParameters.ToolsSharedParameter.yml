@@ -12,6 +12,7 @@ items:
   - MB.Common.SharedParameters.ToolsSharedParameter.Color
   - MB.Common.SharedParameters.ToolsSharedParameter.DescriptionAndAbbreviationListNo
   - MB.Common.SharedParameters.ToolsSharedParameter.DischargeDensity
+  - MB.Common.SharedParameters.ToolsSharedParameter.DischargeDiameter
   - MB.Common.SharedParameters.ToolsSharedParameter.DischargeType
   - MB.Common.SharedParameters.ToolsSharedParameter.DoNotNumber
   - MB.Common.SharedParameters.ToolsSharedParameter.EndPap
@@ -23,6 +24,7 @@ items:
   - MB.Common.SharedParameters.ToolsSharedParameter.IgnoreInCalculation
   - MB.Common.SharedParameters.ToolsSharedParameter.IncludeInCalculation
   - MB.Common.SharedParameters.ToolsSharedParameter.IsFitting
+  - MB.Common.SharedParameters.ToolsSharedParameter.KFactor
   - MB.Common.SharedParameters.ToolsSharedParameter.MinimumFlow
   - MB.Common.SharedParameters.ToolsSharedParameter.MinimumPressure
   - MB.Common.SharedParameters.ToolsSharedParameter.Pap1
@@ -48,6 +50,7 @@ items:
   - MB.Common.SharedParameters.ToolsSharedParameter.Run7Dim
   - MB.Common.SharedParameters.ToolsSharedParameter.Run8Dim
   - MB.Common.SharedParameters.ToolsSharedParameter.Run9Dim
+  - MB.Common.SharedParameters.ToolsSharedParameter.SprinklerGroupName
   - MB.Common.SharedParameters.ToolsSharedParameter.StartPap
   - MB.Common.SharedParameters.ToolsSharedParameter.SubType
   langs:
@@ -2542,6 +2545,168 @@ items:
     arguments:
     - type: System.String
       value: 48b9c6f5-70b6-4f7f-bd23-5ae171a78a7f
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.SprinklerGroupName
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.SprinklerGroupName
+  id: SprinklerGroupName
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: SprinklerGroupName
+  nameWithType: ToolsSharedParameter.SprinklerGroupName
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.SprinklerGroupName
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the discharge type for mechanical systems in Revit.
+  remarks: >-
+    This parameter is used to categorize and define the type of discharge in mechanical systems,
+                such as pipes, fittings, accessories, and other related components. It is associated with multiple Revit
+                categories, including pipes, pipe fittings, pipe accessories, generic models, flexible pipes, sprinklers, and
+                mechanical equipment.
+  example: []
+  syntax:
+    content: >-
+      [Guid("ab58b0c7-0375-4ead-a18f-27f84379fa19")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      SprinklerGroupName = 45
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("ab58b0c7-0375-4ead-a18f-27f84379fa19")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      SprinklerGroupName = 45
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ab58b0c7-0375-4ead-a18f-27f84379fa19
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.KFactor
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.KFactor
+  id: KFactor
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: KFactor
+  nameWithType: ToolsSharedParameter.KFactor
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.KFactor
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the K-factor parameter used in mechanical and fire protection systems.
+  remarks: >-
+    The K-factor is commonly used in hydraulic calculations for pipe fittings, accessories,
+                sprinklers,  and other mechanical equipment. This parameter is associated with various Revit categories,
+                including  pipe fittings, pipe accessories, sprinklers, generic models, flexible pipe curves, mechanical
+                equipment,  and fire alarm devices.
+  example: []
+  syntax:
+    content: >-
+      [Guid("a47d1d69-27e0-4012-bb42-64e149bf061a")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      KFactor = 46
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("a47d1d69-27e0-4012-bb42-64e149bf061a")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      KFactor = 46
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: a47d1d69-27e0-4012-bb42-64e149bf061a
+  - type: MB.Common.Attributes.SharedParameterTypeAttribute
+    ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
+    arguments:
+    - type: MB.Common.SharedParameters.SharedParameterType
+      value: 1
+  - type: MB.Common.Attributes.RevitCategoriesAttribute
+    ctor: MB.Common.Attributes.RevitCategoriesAttribute.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
+    arguments: []
+- uid: MB.Common.SharedParameters.ToolsSharedParameter.DischargeDiameter
+  commentId: F:MB.Common.SharedParameters.ToolsSharedParameter.DischargeDiameter
+  id: DischargeDiameter
+  parent: MB.Common.SharedParameters.ToolsSharedParameter
+  langs:
+  - csharp
+  - vb
+  name: DischargeDiameter
+  nameWithType: ToolsSharedParameter.DischargeDiameter
+  fullName: MB.Common.SharedParameters.ToolsSharedParameter.DischargeDiameter
+  type: Field
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.SharedParameters
+  summary: Represents the K-factor parameter used in mechanical and fire protection systems.
+  remarks: >-
+    The K-factor is commonly used in hydraulic calculations for pipe fittings, accessories,
+                sprinklers,  and other mechanical equipment. This parameter is associated with various Revit categories,
+                including  pipe fittings, pipe accessories, sprinklers, generic models, flexible pipe curves, mechanical
+                equipment,  and fire alarm devices.
+  example: []
+  syntax:
+    content: >-
+      [Guid("ed2a2b7d-0425-4ed2-a2e1-85bb3c602c9e")]
+
+      [SharedParameterType(SharedParameterType.Text)]
+
+      [RevitCategories]
+
+      DischargeDiameter = 47
+    return:
+      type: MB.Common.SharedParameters.ToolsSharedParameter
+    content.vb: >-
+      <Guid("ed2a2b7d-0425-4ed2-a2e1-85bb3c602c9e")>
+
+      <SharedParameterType(SharedParameterType.Text)>
+
+      <RevitCategories>
+
+      DischargeDiameter = 47
+  attributes:
+  - type: MB.Common.Attributes.GuidAttribute
+    ctor: MB.Common.Attributes.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ed2a2b7d-0425-4ed2-a2e1-85bb3c602c9e
   - type: MB.Common.Attributes.SharedParameterTypeAttribute
     ctor: MB.Common.Attributes.SharedParameterTypeAttribute.#ctor(MB.Common.SharedParameters.SharedParameterType)
     arguments:

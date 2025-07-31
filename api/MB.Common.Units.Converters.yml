@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Units.Converters
+  commentId: N:MB.Common.Units.Converters
+  id: MB.Common.Units.Converters
+  children:
+  - MB.Common.Units.Converters.RevitLengthValueConverter
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.Units.Converters
+  nameWithType: MB.Common.Units.Converters
+  fullName: MB.Common.Units.Converters
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.Units.Converters.RevitLengthValueConverter
+  commentId: T:MB.Common.Units.Converters.RevitLengthValueConverter
+  isExternal: true
+  href: MB.Common.Units.Converters.RevitLengthValueConverter.html
+  name: RevitLengthValueConverter
+  nameWithType: RevitLengthValueConverter
+  fullName: MB.Common.Units.Converters.RevitLengthValueConverter
+shouldSkipMarkup: true

@@ -16,7 +16,7 @@ items:
   fullName: MBFWpfToolkit.Converters.NullToVisibilityWithInverseConverter
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Converters/NullToVisibilityWithInverseConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Converters/NullToVisibilityWithInverseConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
@@ -56,7 +56,7 @@ items:
   fullName: MBFWpfToolkit.Converters.NullToVisibilityWithInverseConverter.Convert(object, System.Type, object, System.Globalization.CultureInfo)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Converters/NullToVisibilityWithInverseConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Converters/NullToVisibilityWithInverseConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
@@ -102,7 +102,7 @@ items:
   fullName: MBFWpfToolkit.Converters.NullToVisibilityWithInverseConverter.ConvertBack(object, System.Type, object, System.Globalization.CultureInfo)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Converters/NullToVisibilityWithInverseConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Converters/NullToVisibilityWithInverseConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
@@ -140,7 +140,7 @@ items:
   fullName: MBFWpfToolkit.Converters.NullToVisibilityWithInverseConverter.NullToVisibilityWithInverseConverter()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Converters/NullToVisibilityWithInverseConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Converters/NullToVisibilityWithInverseConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters

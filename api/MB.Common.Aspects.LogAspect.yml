@@ -6,9 +6,10 @@ items:
   parent: MB.Common.Aspects
   children:
   - MB.Common.Aspects.LogAspect.#ctor
-  - MB.Common.Aspects.LogAspect.OnEntry(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-  - MB.Common.Aspects.LogAspect.OnException(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-  - MB.Common.Aspects.LogAspect.OnExit(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
+  - MB.Common.Aspects.LogAspect.HandleExceptions(System.Func{System.Object[],System.Object},System.Object[],System.String,System.Type)
+  - MB.Common.Aspects.LogAspect.OnEntry(System.String,System.Type)
+  - MB.Common.Aspects.LogAspect.OnExit(System.String,System.Type)
+  - MB.Common.Aspects.LogAspect.__a$_instance
   langs:
   - csharp
   - vb
@@ -16,29 +17,35 @@ items:
   nameWithType: LogAspect
   fullName: MB.Common.Aspects.LogAspect
   type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/LogAspect.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects
-  summary: >-
-    An aspect that logs method entry, exit, and exceptions using Serilog.
-
-    This aspect can be applied to methods to automatically log their execution lifecycle.
+  summary: Provides logging functionality for methods using aspect-oriented programming.
+  remarks: >-
+    This attribute can be applied to methods to automatically log method entry, exit, and exceptions. It
+                uses aspect-oriented programming to inject logging behavior at runtime.
   example: []
   syntax:
-    content: 'public sealed class LogAspect : OnMethodBoundaryAspect, _Attribute'
-    content.vb: Public NotInheritable Class LogAspect Inherits OnMethodBoundaryAspect Implements _Attribute
+    content: >-
+      [Aspect(Scope.Global)]
+
+      [Injection(typeof(LogAspect))]
+
+      public class LogAspect : Attribute, _Attribute
+    content.vb: >-
+      <Aspect(Scope.Global)>
+
+      <Injection(GetType(LogAspect))>
+
+      Public Class LogAspect Inherits Attribute Implements _Attribute
   inheritance:
   - System.Object
   - System.Attribute
-  - MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect
   implements:
   - System.Runtime.InteropServices._Attribute
   inheritedMembers:
-  - MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.CompileTimeValidate(System.Reflection.MethodBase)
-  - MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.AttributeTargetMemberAttributes
-  - MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.NamespaceFilter
-  - MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.TypeNameFilter
-  - MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.MethodNameFilter
   - System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type)
   - System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type,System.Boolean)
   - System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo)
@@ -80,90 +87,251 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetType
-- uid: MB.Common.Aspects.LogAspect.OnEntry(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-  commentId: M:MB.Common.Aspects.LogAspect.OnEntry(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-  id: OnEntry(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: AspectInjector.Broker.Aspect
+    ctor: AspectInjector.Broker.Aspect.#ctor(AspectInjector.Broker.Scope)
+    arguments:
+    - type: AspectInjector.Broker.Scope
+      value: 1
+  - type: AspectInjector.Broker.Injection
+    ctor: AspectInjector.Broker.Injection.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: MB.Common.Aspects.LogAspect
+- uid: MB.Common.Aspects.LogAspect.__a$_instance
+  commentId: F:MB.Common.Aspects.LogAspect.__a$_instance
+  id: __a$_instance
   parent: MB.Common.Aspects.LogAspect
   langs:
   - csharp
   - vb
-  name: OnEntry(MethodExecutionArgs)
-  nameWithType: LogAspect.OnEntry(MethodExecutionArgs)
-  fullName: MB.Common.Aspects.LogAspect.OnEntry(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-  type: Method
+  name: __a$_instance
+  nameWithType: LogAspect.__a$_instance
+  fullName: MB.Common.Aspects.LogAspect.__a$_instance
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/LogAspect.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects
-  summary: >-
-    Called before the execution of the target method.
-
-    Logs the entry into the method with timestamp.
+  syntax:
+    content: public static readonly LogAspect __a$_instance
+    return:
+      type: MB.Common.Aspects.LogAspect
+    content.vb: Public Shared ReadOnly __a$_instance As LogAspect
+- uid: MB.Common.Aspects.LogAspect.OnEntry(System.String,System.Type)
+  commentId: M:MB.Common.Aspects.LogAspect.OnEntry(System.String,System.Type)
+  id: OnEntry(System.String,System.Type)
+  parent: MB.Common.Aspects.LogAspect
+  langs:
+  - csharp
+  - vb
+  name: OnEntry(string, Type)
+  nameWithType: LogAspect.OnEntry(string, Type)
+  fullName: MB.Common.Aspects.LogAspect.OnEntry(string, System.Type)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/LogAspect.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Aspects
+  summary: Logs an informational message when entering a method.
+  remarks: >-
+    This method is intended to be used as an aspect to log method entry points.  It captures the
+                method name and declaring type and logs them along with the current timestamp.
   example: []
   syntax:
-    content: public override void OnEntry(MethodExecutionArgs args)
+    content: >-
+      [Advice(Kind.Before, Targets = Target.Method)]
+
+      public void OnEntry(string methodName, Type declaringType)
     parameters:
-    - id: args
-      type: MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs
-      description: Provides context about the method being executed.
-    content.vb: Public Overrides Sub OnEntry(args As MethodExecutionArgs)
-  overridden: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnEntry(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
+    - id: methodName
+      type: System.String
+      description: The name of the method being entered.
+      attributes:
+      - type: AspectInjector.Broker.Argument
+        ctor: AspectInjector.Broker.Argument.#ctor(AspectInjector.Broker.Source)
+        arguments:
+        - type: AspectInjector.Broker.Source
+          value: 5
+    - id: declaringType
+      type: System.Type
+      description: The type that declares the method being entered.
+      attributes:
+      - type: AspectInjector.Broker.Argument
+        ctor: AspectInjector.Broker.Argument.#ctor(AspectInjector.Broker.Source)
+        arguments:
+        - type: AspectInjector.Broker.Source
+          value: 2
+    content.vb: >-
+      <Advice(Kind.Before, Targets:=Target.Method)>
+
+      Public Sub OnEntry(methodName As String, declaringType As Type)
   overload: MB.Common.Aspects.LogAspect.OnEntry*
-- uid: MB.Common.Aspects.LogAspect.OnExit(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-  commentId: M:MB.Common.Aspects.LogAspect.OnExit(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-  id: OnExit(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
+  attributes:
+  - type: AspectInjector.Broker.Advice
+    ctor: AspectInjector.Broker.Advice.#ctor(AspectInjector.Broker.Kind)
+    arguments:
+    - type: AspectInjector.Broker.Kind
+      value: 1
+    namedArguments:
+    - name: Targets
+      type: AspectInjector.Broker.Target
+      value: 512
+  nameWithType.vb: LogAspect.OnEntry(String, Type)
+  fullName.vb: MB.Common.Aspects.LogAspect.OnEntry(String, System.Type)
+  name.vb: OnEntry(String, Type)
+- uid: MB.Common.Aspects.LogAspect.OnExit(System.String,System.Type)
+  commentId: M:MB.Common.Aspects.LogAspect.OnExit(System.String,System.Type)
+  id: OnExit(System.String,System.Type)
   parent: MB.Common.Aspects.LogAspect
   langs:
   - csharp
   - vb
-  name: OnExit(MethodExecutionArgs)
-  nameWithType: LogAspect.OnExit(MethodExecutionArgs)
-  fullName: MB.Common.Aspects.LogAspect.OnExit(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
+  name: OnExit(string, Type)
+  nameWithType: LogAspect.OnExit(string, Type)
+  fullName: MB.Common.Aspects.LogAspect.OnExit(string, System.Type)
   type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/LogAspect.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects
-  summary: >-
-    Called after the successful execution of the target method.
-
-    Logs the exit of the method with timestamp.
+  summary: Logs information when a method exits, including the method name, declaring type, and timestamp.
+  remarks: >-
+    This method is intended to be used as an aspect to provide logging functionality for method
+                exit events. It captures the method name and declaring type dynamically and logs the information along with the
+                current timestamp.
   example: []
   syntax:
-    content: public override void OnExit(MethodExecutionArgs args)
+    content: >-
+      [Advice(Kind.After, Targets = Target.Method)]
+
+      public void OnExit(string methodName, Type declaringType)
     parameters:
-    - id: args
-      type: MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs
-      description: Provides context about the method that was executed.
-    content.vb: Public Overrides Sub OnExit(args As MethodExecutionArgs)
-  overridden: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnExit(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
+    - id: methodName
+      type: System.String
+      description: The name of the method that is exiting.
+      attributes:
+      - type: AspectInjector.Broker.Argument
+        ctor: AspectInjector.Broker.Argument.#ctor(AspectInjector.Broker.Source)
+        arguments:
+        - type: AspectInjector.Broker.Source
+          value: 5
+    - id: declaringType
+      type: System.Type
+      description: The type that declares the method being exited.
+      attributes:
+      - type: AspectInjector.Broker.Argument
+        ctor: AspectInjector.Broker.Argument.#ctor(AspectInjector.Broker.Source)
+        arguments:
+        - type: AspectInjector.Broker.Source
+          value: 2
+    content.vb: >-
+      <Advice(Kind.After, Targets:=Target.Method)>
+
+      Public Sub OnExit(methodName As String, declaringType As Type)
   overload: MB.Common.Aspects.LogAspect.OnExit*
-- uid: MB.Common.Aspects.LogAspect.OnException(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-  commentId: M:MB.Common.Aspects.LogAspect.OnException(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-  id: OnException(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
+  attributes:
+  - type: AspectInjector.Broker.Advice
+    ctor: AspectInjector.Broker.Advice.#ctor(AspectInjector.Broker.Kind)
+    arguments:
+    - type: AspectInjector.Broker.Kind
+      value: 2
+    namedArguments:
+    - name: Targets
+      type: AspectInjector.Broker.Target
+      value: 512
+  nameWithType.vb: LogAspect.OnExit(String, Type)
+  fullName.vb: MB.Common.Aspects.LogAspect.OnExit(String, System.Type)
+  name.vb: OnExit(String, Type)
+- uid: MB.Common.Aspects.LogAspect.HandleExceptions(System.Func{System.Object[],System.Object},System.Object[],System.String,System.Type)
+  commentId: M:MB.Common.Aspects.LogAspect.HandleExceptions(System.Func{System.Object[],System.Object},System.Object[],System.String,System.Type)
+  id: HandleExceptions(System.Func{System.Object[],System.Object},System.Object[],System.String,System.Type)
   parent: MB.Common.Aspects.LogAspect
   langs:
   - csharp
   - vb
-  name: OnException(MethodExecutionArgs)
-  nameWithType: LogAspect.OnException(MethodExecutionArgs)
-  fullName: MB.Common.Aspects.LogAspect.OnException(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
+  name: HandleExceptions(Func<object[], object>, object[], string, Type)
+  nameWithType: LogAspect.HandleExceptions(Func<object[], object>, object[], string, Type)
+  fullName: MB.Common.Aspects.LogAspect.HandleExceptions(System.Func<object[], object>, object[], string, System.Type)
   type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/LogAspect.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects
-  summary: >-
-    Called when an exception is thrown during method execution.
-
-    Logs the exception details.
+  summary: Executes the specified method and handles any exceptions that occur during its execution.
+  remarks: >-
+    This method wraps the execution of a target method, logging any exceptions that are thrown.
+                If an exception occurs, it is logged with details about the method name, declaring type, and the exception
+                message, and then rethrown for further handling by the caller.
   example: []
   syntax:
-    content: public override void OnException(MethodExecutionArgs args)
+    content: >-
+      [Advice(Kind.Around, Targets = Target.Method)]
+
+      public object HandleExceptions(Func<object[], object> method, object[] arguments, string methodName, Type declaringType)
     parameters:
-    - id: args
-      type: MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs
-      description: Provides context about the method and the thrown exception.
-    content.vb: Public Overrides Sub OnException(args As MethodExecutionArgs)
-  overridden: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnException(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-  overload: MB.Common.Aspects.LogAspect.OnException*
+    - id: method
+      type: System.Func{System.Object[],System.Object}
+      description: The delegate representing the target method to be executed.
+      attributes:
+      - type: AspectInjector.Broker.Argument
+        ctor: AspectInjector.Broker.Argument.#ctor(AspectInjector.Broker.Source)
+        arguments:
+        - type: AspectInjector.Broker.Source
+          value: 4
+    - id: arguments
+      type: System.Object[]
+      description: An array of arguments to be passed to the target method.
+      attributes:
+      - type: AspectInjector.Broker.Argument
+        ctor: AspectInjector.Broker.Argument.#ctor(AspectInjector.Broker.Source)
+        arguments:
+        - type: AspectInjector.Broker.Source
+          value: 6
+    - id: methodName
+      type: System.String
+      description: The name of the target method being executed.
+      attributes:
+      - type: AspectInjector.Broker.Argument
+        ctor: AspectInjector.Broker.Argument.#ctor(AspectInjector.Broker.Source)
+        arguments:
+        - type: AspectInjector.Broker.Source
+          value: 5
+    - id: declaringType
+      type: System.Type
+      description: The type that declares the target method.
+      attributes:
+      - type: AspectInjector.Broker.Argument
+        ctor: AspectInjector.Broker.Argument.#ctor(AspectInjector.Broker.Source)
+        arguments:
+        - type: AspectInjector.Broker.Source
+          value: 2
+    return:
+      type: System.Object
+      description: The result of the target method execution.
+    content.vb: >-
+      <Advice(Kind.Around, Targets:=Target.Method)>
+
+      Public Function HandleExceptions(method As Func(Of Object(), Object), arguments As Object(), methodName As String, declaringType As Type) As Object
+  overload: MB.Common.Aspects.LogAspect.HandleExceptions*
+  attributes:
+  - type: AspectInjector.Broker.Advice
+    ctor: AspectInjector.Broker.Advice.#ctor(AspectInjector.Broker.Kind)
+    arguments:
+    - type: AspectInjector.Broker.Kind
+      value: 4
+    namedArguments:
+    - name: Targets
+      type: AspectInjector.Broker.Target
+      value: 512
+  nameWithType.vb: LogAspect.HandleExceptions(Func(Of Object(), Object), Object(), String, Type)
+  fullName.vb: MB.Common.Aspects.LogAspect.HandleExceptions(System.Func(Of Object(), Object), Object(), String, System.Type)
+  name.vb: HandleExceptions(Func(Of Object(), Object), Object(), String, Type)
 - uid: MB.Common.Aspects.LogAspect.#ctor
   commentId: M:MB.Common.Aspects.LogAspect.#ctor
   id: '#ctor'
@@ -175,6 +343,8 @@ items:
   nameWithType: LogAspect.LogAspect()
   fullName: MB.Common.Aspects.LogAspect.LogAspect()
   type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/LogAspect.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects
@@ -242,13 +412,6 @@ references:
   name: Attribute
   nameWithType: Attribute
   fullName: System.Attribute
-- uid: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect
-  commentId: T:MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect
-  parent: MethodBoundaryAspect.Fody.Attributes
-  isExternal: true
-  name: OnMethodBoundaryAspect
-  nameWithType: OnMethodBoundaryAspect
-  fullName: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect
 - uid: System.Runtime.InteropServices._Attribute
   commentId: T:System.Runtime.InteropServices._Attribute
   parent: System.Runtime.InteropServices
@@ -257,62 +420,6 @@ references:
   name: _Attribute
   nameWithType: _Attribute
   fullName: System.Runtime.InteropServices._Attribute
-- uid: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.CompileTimeValidate(System.Reflection.MethodBase)
-  commentId: M:MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.CompileTimeValidate(System.Reflection.MethodBase)
-  parent: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase
-  name: CompileTimeValidate(MethodBase)
-  nameWithType: OnMethodBoundaryAspect.CompileTimeValidate(MethodBase)
-  fullName: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.CompileTimeValidate(System.Reflection.MethodBase)
-  spec.csharp:
-  - uid: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.CompileTimeValidate(System.Reflection.MethodBase)
-    name: CompileTimeValidate
-    isExternal: true
-  - name: (
-  - uid: System.Reflection.MethodBase
-    name: MethodBase
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase
-  - name: )
-  spec.vb:
-  - uid: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.CompileTimeValidate(System.Reflection.MethodBase)
-    name: CompileTimeValidate
-    isExternal: true
-  - name: (
-  - uid: System.Reflection.MethodBase
-    name: MethodBase
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase
-  - name: )
-- uid: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.AttributeTargetMemberAttributes
-  commentId: P:MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.AttributeTargetMemberAttributes
-  parent: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect
-  isExternal: true
-  name: AttributeTargetMemberAttributes
-  nameWithType: OnMethodBoundaryAspect.AttributeTargetMemberAttributes
-  fullName: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.AttributeTargetMemberAttributes
-- uid: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.NamespaceFilter
-  commentId: P:MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.NamespaceFilter
-  parent: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect
-  isExternal: true
-  name: NamespaceFilter
-  nameWithType: OnMethodBoundaryAspect.NamespaceFilter
-  fullName: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.NamespaceFilter
-- uid: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.TypeNameFilter
-  commentId: P:MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.TypeNameFilter
-  parent: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect
-  isExternal: true
-  name: TypeNameFilter
-  nameWithType: OnMethodBoundaryAspect.TypeNameFilter
-  fullName: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.TypeNameFilter
-- uid: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.MethodNameFilter
-  commentId: P:MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.MethodNameFilter
-  parent: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect
-  isExternal: true
-  name: MethodNameFilter
-  nameWithType: OnMethodBoundaryAspect.MethodNameFilter
-  fullName: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.MethodNameFilter
 - uid: System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type)
   commentId: M:System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type)
   parent: System.Attribute
@@ -2057,6 +2164,30 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.gettype
   - name: (
   - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -2064,36 +2195,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: MethodBoundaryAspect.Fody.Attributes
-  commentId: N:MethodBoundaryAspect.Fody.Attributes
-  isExternal: true
-  name: MethodBoundaryAspect.Fody.Attributes
-  nameWithType: MethodBoundaryAspect.Fody.Attributes
-  fullName: MethodBoundaryAspect.Fody.Attributes
-  spec.csharp:
-  - uid: MethodBoundaryAspect
-    name: MethodBoundaryAspect
-    isExternal: true
-  - name: .
-  - uid: MethodBoundaryAspect.Fody
-    name: Fody
-    isExternal: true
-  - name: .
-  - uid: MethodBoundaryAspect.Fody.Attributes
-    name: Attributes
-    isExternal: true
-  spec.vb:
-  - uid: MethodBoundaryAspect
-    name: MethodBoundaryAspect
-    isExternal: true
-  - name: .
-  - uid: MethodBoundaryAspect.Fody
-    name: Fody
-    isExternal: true
-  - name: .
-  - uid: MethodBoundaryAspect.Fody.Attributes
-    name: Attributes
-    isExternal: true
 - uid: System.Runtime.InteropServices
   commentId: N:System.Runtime.InteropServices
   isExternal: true
@@ -2131,109 +2232,162 @@ references:
     name: InteropServices
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
-- uid: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnEntry(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-  commentId: M:MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnEntry(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-  parent: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect
+- uid: MB.Common.Aspects.LogAspect
+  commentId: T:MB.Common.Aspects.LogAspect
+  parent: MB.Common.Aspects
   isExternal: true
-  name: OnEntry(MethodExecutionArgs)
-  nameWithType: OnMethodBoundaryAspect.OnEntry(MethodExecutionArgs)
-  fullName: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnEntry(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-  spec.csharp:
-  - uid: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnEntry(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-    name: OnEntry
-    isExternal: true
-  - name: (
-  - uid: MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs
-    name: MethodExecutionArgs
-    isExternal: true
-  - name: )
-  spec.vb:
-  - uid: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnEntry(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-    name: OnEntry
-    isExternal: true
-  - name: (
-  - uid: MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs
-    name: MethodExecutionArgs
-    isExternal: true
-  - name: )
+  href: MB.Common.Aspects.LogAspect.html
+  name: LogAspect
+  nameWithType: LogAspect
+  fullName: MB.Common.Aspects.LogAspect
 - uid: MB.Common.Aspects.LogAspect.OnEntry*
   commentId: Overload:MB.Common.Aspects.LogAspect.OnEntry
   isExternal: true
-  href: MB.Common.Aspects.LogAspect.html#MB_Common_Aspects_LogAspect_OnEntry_MethodBoundaryAspect_Fody_Attributes_MethodExecutionArgs_
+  href: MB.Common.Aspects.LogAspect.html#MB_Common_Aspects_LogAspect_OnEntry_System_String_System_Type_
   name: OnEntry
   nameWithType: LogAspect.OnEntry
   fullName: MB.Common.Aspects.LogAspect.OnEntry
-- uid: MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs
-  commentId: T:MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs
-  parent: MethodBoundaryAspect.Fody.Attributes
+- uid: System.String
+  commentId: T:System.String
+  parent: System
   isExternal: true
-  name: MethodExecutionArgs
-  nameWithType: MethodExecutionArgs
-  fullName: MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs
-- uid: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnExit(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-  commentId: M:MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnExit(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-  parent: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
   isExternal: true
-  name: OnExit(MethodExecutionArgs)
-  nameWithType: OnMethodBoundaryAspect.OnExit(MethodExecutionArgs)
-  fullName: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnExit(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-  spec.csharp:
-  - uid: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnExit(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-    name: OnExit
-    isExternal: true
-  - name: (
-  - uid: MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs
-    name: MethodExecutionArgs
-    isExternal: true
-  - name: )
-  spec.vb:
-  - uid: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnExit(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-    name: OnExit
-    isExternal: true
-  - name: (
-  - uid: MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs
-    name: MethodExecutionArgs
-    isExternal: true
-  - name: )
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
 - uid: MB.Common.Aspects.LogAspect.OnExit*
   commentId: Overload:MB.Common.Aspects.LogAspect.OnExit
   isExternal: true
-  href: MB.Common.Aspects.LogAspect.html#MB_Common_Aspects_LogAspect_OnExit_MethodBoundaryAspect_Fody_Attributes_MethodExecutionArgs_
+  href: MB.Common.Aspects.LogAspect.html#MB_Common_Aspects_LogAspect_OnExit_System_String_System_Type_
   name: OnExit
   nameWithType: LogAspect.OnExit
   fullName: MB.Common.Aspects.LogAspect.OnExit
-- uid: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnException(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-  commentId: M:MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnException(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-  parent: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect
+- uid: MB.Common.Aspects.LogAspect.HandleExceptions*
+  commentId: Overload:MB.Common.Aspects.LogAspect.HandleExceptions
   isExternal: true
-  name: OnException(MethodExecutionArgs)
-  nameWithType: OnMethodBoundaryAspect.OnException(MethodExecutionArgs)
-  fullName: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnException(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
+  href: MB.Common.Aspects.LogAspect.html#MB_Common_Aspects_LogAspect_HandleExceptions_System_Func_System_Object___System_Object__System_Object___System_String_System_Type_
+  name: HandleExceptions
+  nameWithType: LogAspect.HandleExceptions
+  fullName: MB.Common.Aspects.LogAspect.HandleExceptions
+- uid: System.Func{System.Object[],System.Object}
+  commentId: T:System.Func{System.Object[],System.Object}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<object[], object>
+  nameWithType: Func<object[], object>
+  fullName: System.Func<object[], object>
+  nameWithType.vb: Func(Of Object(), Object)
+  fullName.vb: System.Func(Of Object(), Object)
+  name.vb: Func(Of Object(), Object)
   spec.csharp:
-  - uid: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnException(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-    name: OnException
+  - uid: System.Func`2
+    name: Func
     isExternal: true
-  - name: (
-  - uid: MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs
-    name: MethodExecutionArgs
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Object
+    name: object
     isExternal: true
-  - name: )
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
   spec.vb:
-  - uid: MethodBoundaryAspect.Fody.Attributes.OnMethodBoundaryAspect.OnException(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)
-    name: OnException
+  - uid: System.Func`2
+    name: Func
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
   - name: (
-  - uid: MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs
-    name: MethodExecutionArgs
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
   - name: )
-- uid: MB.Common.Aspects.LogAspect.OnException*
-  commentId: Overload:MB.Common.Aspects.LogAspect.OnException
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object[]
   isExternal: true
-  href: MB.Common.Aspects.LogAspect.html#MB_Common_Aspects_LogAspect_OnException_MethodBoundaryAspect_Fody_Attributes_MethodExecutionArgs_
-  name: OnException
-  nameWithType: LogAspect.OnException
-  fullName: MB.Common.Aspects.LogAspect.OnException
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
 - uid: MB.Common.Aspects.LogAspect.#ctor*
   commentId: Overload:MB.Common.Aspects.LogAspect.#ctor
   isExternal: true

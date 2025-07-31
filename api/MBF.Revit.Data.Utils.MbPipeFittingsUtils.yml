@@ -10,6 +10,7 @@ items:
   - MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetAngleBetweenLargestRadiusConnectors(System.Collections.Generic.List{Autodesk.Revit.DB.Connector})
   - MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetElbowsFamilyInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
   - MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetFarthestConnectorSize(Autodesk.Revit.DB.FamilyInstance,Autodesk.Revit.DB.Plumbing.Pipe)
+  - MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetInlineAndBullNoseConnectors(System.Collections.Generic.List{Autodesk.Revit.DB.Connector})
   - MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch(Autodesk.Revit.DB.Element,System.Boolean)
   - MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch(Autodesk.Revit.DB.FamilyInstance,System.Boolean)
   - MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOtherFittingWhichIsNotElbowsOrTeesOrOutletsFamilyInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
@@ -28,21 +29,15 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
   summary: Provides utility methods for working with pipe fittings in Revit.
   example: []
   syntax:
-    content: >-
-      [LogAspect]
-
-      public static class MbPipeFittingsUtils
-    content.vb: >-
-      <LogAspect>
-
-      Public Module MbPipeFittingsUtils
+    content: public static class MbPipeFittingsUtils
+    content.vb: Public Module MbPipeFittingsUtils
   inheritance:
   - System.Object
   inheritedMembers:
@@ -53,10 +48,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  attributes:
-  - type: MB.Common.Aspects.LogAspect
-    ctor: MB.Common.Aspects.LogAspect.#ctor
-    arguments: []
 - uid: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetTeeFamilyInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
   commentId: M:MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetTeeFamilyInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
   id: GetTeeFamilyInstances(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
@@ -69,7 +60,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetTeeFamilyInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -110,7 +101,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetElbowsFamilyInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -151,7 +142,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOutletsFamilyInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -192,7 +183,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch(Autodesk.Revit.DB.FamilyInstance, bool)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -221,6 +212,44 @@ items:
   nameWithType.vb: MbPipeFittingsUtils.GetOrderedConnectorSizesInInch(FamilyInstance, Boolean)
   fullName.vb: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch(Autodesk.Revit.DB.FamilyInstance, Boolean)
   name.vb: GetOrderedConnectorSizesInInch(FamilyInstance, Boolean)
+- uid: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetInlineAndBullNoseConnectors(System.Collections.Generic.List{Autodesk.Revit.DB.Connector})
+  commentId: M:MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetInlineAndBullNoseConnectors(System.Collections.Generic.List{Autodesk.Revit.DB.Connector})
+  id: GetInlineAndBullNoseConnectors(System.Collections.Generic.List{Autodesk.Revit.DB.Connector})
+  parent: MBF.Revit.Data.Utils.MbPipeFittingsUtils
+  langs:
+  - csharp
+  - vb
+  name: GetInlineAndBullNoseConnectors(List<Connector>)
+  nameWithType: MbPipeFittingsUtils.GetInlineAndBullNoseConnectors(List<Connector>)
+  fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetInlineAndBullNoseConnectors(System.Collections.Generic.List<Autodesk.Revit.DB.Connector>)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Identifies and returns a tuple containing two connectors that are opposite in direction and a third connector.
+  remarks: >-
+    The method assumes that the list contains at least three connectors and that there is exactly one
+                pair of connectors with opposite directions. The third connector in the tuple is considered the "bull nose"
+                connector.
+  example: []
+  syntax:
+    content: public static (Connector, Connector, Connector) GetInlineAndBullNoseConnectors(List<Connector> connectors)
+    parameters:
+    - id: connectors
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Connector}
+      description: A list of connectors to be evaluated. The list must contain at least three connectors.
+    return:
+      type: System.ValueTuple{Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector}
+      description: >-
+        A tuple containing two connectors that are opposite in direction and a third connector, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if
+                    no such pair is found.
+    content.vb: Public Shared Function GetInlineAndBullNoseConnectors(connectors As List(Of Connector)) As (Connector, Connector, Connector)
+  overload: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetInlineAndBullNoseConnectors*
+  nameWithType.vb: MbPipeFittingsUtils.GetInlineAndBullNoseConnectors(List(Of Connector))
+  fullName.vb: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetInlineAndBullNoseConnectors(System.Collections.Generic.List(Of Autodesk.Revit.DB.Connector))
+  name.vb: GetInlineAndBullNoseConnectors(List(Of Connector))
 - uid: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch(Autodesk.Revit.DB.Element,System.Boolean)
   commentId: M:MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch(Autodesk.Revit.DB.Element,System.Boolean)
   id: GetOrderedConnectorSizesInInch(Autodesk.Revit.DB.Element,System.Boolean)
@@ -233,21 +262,21 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch(Autodesk.Revit.DB.Element, bool)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
   summary: >-
-    Retrieves a sorted list of connector sizes (diameters) in inches for a given <xref href="Element" data-throw-if-not-resolved="false"></xref> that is an
+    Retrieves a sorted list of connector sizes (diameters) in inches for a given <xref href="Element" data-throw-if-not-resolved="false"></xref> that can be
 
-    <xref href="Autodesk.Revit.DB.MEPCurve" data-throw-if-not-resolved="false"></xref>.
+    either an <xref href="Autodesk.Revit.DB.MEPCurve" data-throw-if-not-resolved="false"></xref> or <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public static MbResult<List<double>> GetOrderedConnectorSizesInInch(Element element, bool isAscending = true)
     parameters:
     - id: element
       type: Autodesk.Revit.DB.Element
-      description: The <xref href="Element" data-throw-if-not-resolved="false"></xref> representing an <xref href="Autodesk.Revit.DB.MEPCurve" data-throw-if-not-resolved="false"></xref>.
+      description: The <xref href="Element" data-throw-if-not-resolved="false"></xref> representing an <xref href="Autodesk.Revit.DB.MEPCurve" data-throw-if-not-resolved="false"></xref> or <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref>.
     - id: isAscending
       type: System.Boolean
       description: Specifies whether to sort the sizes in ascending (true) or descending (false) order.
@@ -258,7 +287,7 @@ items:
 
         <ul><li>If <code>IsSuccess</code> is <code>true</code>, the operation completed successfully.</li><li>The list contains the diameters of all connectors in inches, sorted in the specified order.</li><li>
                     If <code>IsSuccess</code> is <code>false</code>, an error occurred, and <code>ErrorMessage</code> provides details:
-                    <ul><li>"Element is null."</li><li>"No connectors found."</li></ul>
+                    <ul><li>"Element is null."</li><li>"No connectors found."</li><li>"Connector list must contain exactly 3 items for a tee fitting."</li></ul>
                 </li></ul>
     content.vb: Public Shared Function GetOrderedConnectorSizesInInch(element As Element, isAscending As Boolean = True) As MbResult(Of List(Of Double))
   overload: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch*
@@ -277,7 +306,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.FittingSizeIsEqual(Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -314,7 +343,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOtherFittingWhichIsNotElbowsOrTeesOrOutletsFamilyInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -360,7 +389,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetAngleBetweenLargestRadiusConnectors(System.Collections.Generic.List<Autodesk.Revit.DB.Connector>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -401,7 +430,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetAngleBetweenLargestRadiusConnectors(Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -439,7 +468,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOutletDirectionCode(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -477,7 +506,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetValidOutletConnectors(Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -506,7 +535,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetFarthestConnectorSize(Autodesk.Revit.DB.FamilyInstance, Autodesk.Revit.DB.Plumbing.Pipe)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -539,7 +568,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetPerpendicularPlaneAxes(Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -574,7 +603,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetPerpendicularClockwise(Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -604,7 +633,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetPerpendicularCounterClockwise(Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -1062,7 +1091,6 @@ references:
   nameWithType: MbPipeFittingsUtils.GetOutletsFamilyInstances
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOutletsFamilyInstances
 - uid: Autodesk.Revit.DB.FamilyInstance
-  commentId: T:Autodesk.Revit.DB.FamilyInstance
   isExternal: true
   name: FamilyInstance
   nameWithType: FamilyInstance
@@ -1236,6 +1264,110 @@ references:
     name: Result
     isExternal: true
     href: MB.Common.Utils.Result.html
+- uid: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetInlineAndBullNoseConnectors*
+  commentId: Overload:MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetInlineAndBullNoseConnectors
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbPipeFittingsUtils.html#MBF_Revit_Data_Utils_MbPipeFittingsUtils_GetInlineAndBullNoseConnectors_System_Collections_Generic_List_Autodesk_Revit_DB_Connector__
+  name: GetInlineAndBullNoseConnectors
+  nameWithType: MbPipeFittingsUtils.GetInlineAndBullNoseConnectors
+  fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetInlineAndBullNoseConnectors
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.Connector}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.Connector}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Connector>
+  nameWithType: List<Connector>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.Connector>
+  nameWithType.vb: List(Of Connector)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.Connector)
+  name.vb: List(Of Connector)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Connector
+    name: Connector
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Connector
+    name: Connector
+    isExternal: true
+  - name: )
+- uid: System.ValueTuple{Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector}
+  commentId: T:System.ValueTuple{Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector}
+  parent: System
+  definition: System.ValueTuple`3
+  name: (Connector, Connector, Connector)
+  nameWithType: (Connector, Connector, Connector)
+  fullName: (Autodesk.Revit.DB.Connector, Autodesk.Revit.DB.Connector, Autodesk.Revit.DB.Connector)
+  spec.csharp:
+  - name: (
+  - uid: Autodesk.Revit.DB.Connector
+    name: Connector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.Connector
+    name: Connector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.Connector
+    name: Connector
+    isExternal: true
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: Autodesk.Revit.DB.Connector
+    name: Connector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.Connector
+    name: Connector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.Connector
+    name: Connector
+    isExternal: true
+  - name: )
+- uid: System.ValueTuple`3
+  commentId: T:System.ValueTuple`3
+  name: (T1, T2, T3)
+  nameWithType: (T1, T2, T3)
+  fullName: (T1, T2, T3)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: )
 - uid: Element
   commentId: T:Element
   isExternal: true
@@ -1303,39 +1435,6 @@ references:
   name: GetAngleBetweenLargestRadiusConnectors
   nameWithType: MbPipeFittingsUtils.GetAngleBetweenLargestRadiusConnectors
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetAngleBetweenLargestRadiusConnectors
-- uid: System.Collections.Generic.List{Autodesk.Revit.DB.Connector}
-  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.Connector}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.List`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<Connector>
-  nameWithType: List<Connector>
-  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.Connector>
-  nameWithType.vb: List(Of Connector)
-  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.Connector)
-  name.vb: List(Of Connector)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: <
-  - uid: Autodesk.Revit.DB.Connector
-    name: Connector
-    isExternal: true
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Autodesk.Revit.DB.Connector
-    name: Connector
-    isExternal: true
-  - name: )
 - uid: MB.Common.Utils.Result.MbResult{System.Double}
   commentId: T:MB.Common.Utils.Result.MbResult{System.Double}
   parent: MB.Common.Utils.Result

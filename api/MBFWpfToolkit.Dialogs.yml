@@ -1,0 +1,33 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Dialogs
+  commentId: N:MBFWpfToolkit.Dialogs
+  id: MBFWpfToolkit.Dialogs
+  children:
+  - MBFWpfToolkit.Dialogs.LoadingDialog
+  - MBFWpfToolkit.Dialogs.ProgressDialog
+  langs:
+  - csharp
+  - vb
+  name: MBFWpfToolkit.Dialogs
+  nameWithType: MBFWpfToolkit.Dialogs
+  fullName: MBFWpfToolkit.Dialogs
+  type: Namespace
+  assemblies:
+  - MBFWpfToolkit
+references:
+- uid: MBFWpfToolkit.Dialogs.LoadingDialog
+  commentId: T:MBFWpfToolkit.Dialogs.LoadingDialog
+  isExternal: true
+  href: MBFWpfToolkit.Dialogs.LoadingDialog.html
+  name: LoadingDialog
+  nameWithType: LoadingDialog
+  fullName: MBFWpfToolkit.Dialogs.LoadingDialog
+- uid: MBFWpfToolkit.Dialogs.ProgressDialog
+  commentId: T:MBFWpfToolkit.Dialogs.ProgressDialog
+  isExternal: true
+  href: MBFWpfToolkit.Dialogs.ProgressDialog.html
+  name: ProgressDialog
+  nameWithType: ProgressDialog
+  fullName: MBFWpfToolkit.Dialogs.ProgressDialog
+shouldSkipMarkup: true

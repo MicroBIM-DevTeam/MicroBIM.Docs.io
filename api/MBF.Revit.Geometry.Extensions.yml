@@ -6,6 +6,7 @@ items:
   children:
   - MBF.Revit.Geometry.Extensions.BoundingBoxExtensions
   - MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions
+  - MBF.Revit.Geometry.Extensions.ClipperConversionExtensions
   - MBF.Revit.Geometry.Extensions.ClipperExtensions
   - MBF.Revit.Geometry.Extensions.CurveLoopExtensions
   - MBF.Revit.Geometry.Extensions.CurveLoopVisualizerExtensions
@@ -37,6 +38,13 @@ references:
   name: BoundingBoxVisualizerExtensions
   nameWithType: BoundingBoxVisualizerExtensions
   fullName: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions
+- uid: MBF.Revit.Geometry.Extensions.ClipperConversionExtensions
+  commentId: T:MBF.Revit.Geometry.Extensions.ClipperConversionExtensions
+  isExternal: true
+  href: MBF.Revit.Geometry.Extensions.ClipperConversionExtensions.html
+  name: ClipperConversionExtensions
+  nameWithType: ClipperConversionExtensions
+  fullName: MBF.Revit.Geometry.Extensions.ClipperConversionExtensions
 - uid: MBF.Revit.Geometry.Extensions.ClipperExtensions
   commentId: T:MBF.Revit.Geometry.Extensions.ClipperExtensions
   isExternal: true

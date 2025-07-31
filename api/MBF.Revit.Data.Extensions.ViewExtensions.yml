@@ -14,7 +14,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.ViewExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/ViewExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/ViewExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -25,14 +25,8 @@ items:
     retrieving visible elements.
   example: []
   syntax:
-    content: >-
-      [LogAspect]
-
-      public static class ViewExtensions
-    content.vb: >-
-      <LogAspect>
-
-      Public Module ViewExtensions
+    content: public static class ViewExtensions
+    content.vb: Public Module ViewExtensions
   inheritance:
   - System.Object
   inheritedMembers:
@@ -43,10 +37,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  attributes:
-  - type: MB.Common.Aspects.LogAspect
-    ctor: MB.Common.Aspects.LogAspect.#ctor
-    arguments: []
 - uid: MBF.Revit.Data.Extensions.ViewExtensions.GetVisibleElements(Autodesk.Revit.DB.View,Autodesk.Revit.DB.Document)
   commentId: M:MBF.Revit.Data.Extensions.ViewExtensions.GetVisibleElements(Autodesk.Revit.DB.View,Autodesk.Revit.DB.Document)
   id: GetVisibleElements(Autodesk.Revit.DB.View,Autodesk.Revit.DB.Document)
@@ -60,7 +50,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.ViewExtensions.GetVisibleElements(Autodesk.Revit.DB.View, Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/ViewExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/ViewExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions

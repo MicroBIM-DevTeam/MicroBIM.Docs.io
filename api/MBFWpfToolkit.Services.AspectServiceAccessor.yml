@@ -1,0 +1,487 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Services.AspectServiceAccessor
+  commentId: T:MBFWpfToolkit.Services.AspectServiceAccessor
+  id: AspectServiceAccessor
+  parent: MBFWpfToolkit.Services
+  children:
+  - MBFWpfToolkit.Services.AspectServiceAccessor.GetService``1
+  - MBFWpfToolkit.Services.AspectServiceAccessor.ServiceResolver
+  langs:
+  - csharp
+  - vb
+  name: AspectServiceAccessor
+  nameWithType: AspectServiceAccessor
+  fullName: MBFWpfToolkit.Services.AspectServiceAccessor
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/AspectServiceAccessor.cs
+  assemblies:
+  - MB.Common
+  namespace: MBFWpfToolkit.Services
+  summary: Retrieves a service of the specified type using the configured resolver function.
+  remarks: >-
+    This method uses the <xref href="MBFWpfToolkit.Services.AspectServiceAccessor.ServiceResolver" data-throw-if-not-resolved="false"></xref> delegate to resolve the requested service.
+                Ensure that the resolver function is properly configured to handle the requested type.
+  example: []
+  syntax:
+    content: public static class AspectServiceAccessor
+    content.vb: Public Module AspectServiceAccessor
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBFWpfToolkit.Services.AspectServiceAccessor.GetService``1
+  commentId: M:MBFWpfToolkit.Services.AspectServiceAccessor.GetService``1
+  id: GetService``1
+  parent: MBFWpfToolkit.Services.AspectServiceAccessor
+  langs:
+  - csharp
+  - vb
+  name: GetService<T>()
+  nameWithType: AspectServiceAccessor.GetService<T>()
+  fullName: MBFWpfToolkit.Services.AspectServiceAccessor.GetService<T>()
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/AspectServiceAccessor.cs
+  assemblies:
+  - MB.Common
+  namespace: MBFWpfToolkit.Services
+  summary: Retrieves an instance of the specified service type.
+  remarks: >-
+    This method uses a service resolver delegate to resolve the requested service. Ensure
+                that <code>AspectServiceAccessor.ServiceResolver</code> is properly set before calling this method.
+  example: []
+  syntax:
+    content: 'public static T GetService<T>() where T : class'
+    typeParameters:
+    - id: T
+      description: The type of the service to retrieve. Must be a reference type.
+    return:
+      type: '{T}'
+      description: An instance of the requested service type <code class="typeparamref">T</code>.
+    content.vb: Public Shared Function GetService(Of T As Class)() As T
+  overload: MBFWpfToolkit.Services.AspectServiceAccessor.GetService*
+  exceptions:
+  - type: InvalidOperationException
+    commentId: T:InvalidOperationException
+    description: Thrown if the service resolver is not configured.
+  nameWithType.vb: AspectServiceAccessor.GetService(Of T)()
+  fullName.vb: MBFWpfToolkit.Services.AspectServiceAccessor.GetService(Of T)()
+  name.vb: GetService(Of T)()
+- uid: MBFWpfToolkit.Services.AspectServiceAccessor.ServiceResolver
+  commentId: P:MBFWpfToolkit.Services.AspectServiceAccessor.ServiceResolver
+  id: ServiceResolver
+  parent: MBFWpfToolkit.Services.AspectServiceAccessor
+  langs:
+  - csharp
+  - vb
+  name: ServiceResolver
+  nameWithType: AspectServiceAccessor.ServiceResolver
+  fullName: MBFWpfToolkit.Services.AspectServiceAccessor.ServiceResolver
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/AspectServiceAccessor.cs
+  assemblies:
+  - MB.Common
+  namespace: MBFWpfToolkit.Services
+  summary: Gets or sets the function used to resolve services by type.
+  remarks: >-
+    This property is typically used to provide a custom service resolution mechanism,
+                such as dependency injection. The delegate should return an instance of the requested service type or throw
+                an exception if the service cannot be resolved.
+  example: []
+  syntax:
+    content: public static Func<Type, object>? ServiceResolver { get; set; }
+    parameters: []
+    return:
+      type: System.Func{System.Type,System.Object}
+    content.vb: Public Shared Property ServiceResolver As Func(Of Type, Object)
+  overload: MBFWpfToolkit.Services.AspectServiceAccessor.ServiceResolver*
+references:
+- uid: MBFWpfToolkit.Services.AspectServiceAccessor.ServiceResolver
+  commentId: P:MBFWpfToolkit.Services.AspectServiceAccessor.ServiceResolver
+  isExternal: true
+  href: MBFWpfToolkit.Services.AspectServiceAccessor.html#MBFWpfToolkit_Services_AspectServiceAccessor_ServiceResolver
+  name: ServiceResolver
+  nameWithType: AspectServiceAccessor.ServiceResolver
+  fullName: MBFWpfToolkit.Services.AspectServiceAccessor.ServiceResolver
+- uid: MBFWpfToolkit.Services
+  commentId: N:MBFWpfToolkit.Services
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit.Services
+  nameWithType: MBFWpfToolkit.Services
+  fullName: MBFWpfToolkit.Services
+  spec.csharp:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Services
+    name: Services
+    isExternal: true
+    href: MBFWpfToolkit.Services.html
+  spec.vb:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Services
+    name: Services
+    isExternal: true
+    href: MBFWpfToolkit.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: InvalidOperationException
+  commentId: T:InvalidOperationException
+  isExternal: true
+- uid: MBFWpfToolkit.Services.AspectServiceAccessor.GetService*
+  commentId: Overload:MBFWpfToolkit.Services.AspectServiceAccessor.GetService
+  isExternal: true
+  href: MBFWpfToolkit.Services.AspectServiceAccessor.html#MBFWpfToolkit_Services_AspectServiceAccessor_GetService__1
+  name: GetService
+  nameWithType: AspectServiceAccessor.GetService
+  fullName: MBFWpfToolkit.Services.AspectServiceAccessor.GetService
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: MBFWpfToolkit.Services.AspectServiceAccessor.ServiceResolver*
+  commentId: Overload:MBFWpfToolkit.Services.AspectServiceAccessor.ServiceResolver
+  isExternal: true
+  href: MBFWpfToolkit.Services.AspectServiceAccessor.html#MBFWpfToolkit_Services_AspectServiceAccessor_ServiceResolver
+  name: ServiceResolver
+  nameWithType: AspectServiceAccessor.ServiceResolver
+  fullName: MBFWpfToolkit.Services.AspectServiceAccessor.ServiceResolver
+- uid: System.Func{System.Type,System.Object}
+  commentId: T:System.Func{System.Type,System.Object}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<Type, object>
+  nameWithType: Func<Type, object>
+  fullName: System.Func<System.Type, object>
+  nameWithType.vb: Func(Of Type, Object)
+  fullName.vb: System.Func(Of System.Type, Object)
+  name.vb: Func(Of Type, Object)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+shouldSkipMarkup: true

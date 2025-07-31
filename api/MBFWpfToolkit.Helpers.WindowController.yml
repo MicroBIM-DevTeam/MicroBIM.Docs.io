@@ -21,7 +21,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.WindowController
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Helpers/WindowController.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Helpers/WindowController.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -55,7 +55,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.WindowController.Focus<T>()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Helpers/WindowController.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Helpers/WindowController.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -89,7 +89,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.WindowController.Show(MicroBIM.UI.Controls.Window)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Helpers/WindowController.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Helpers/WindowController.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -115,7 +115,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.WindowController.Show(MicroBIM.UI.Controls.Window, System.IntPtr)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Helpers/WindowController.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Helpers/WindowController.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -144,7 +144,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.WindowController.ShowDialog(MicroBIM.UI.Controls.Window)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Helpers/WindowController.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Helpers/WindowController.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -173,7 +173,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.WindowController.ShowDialog(MicroBIM.UI.Controls.Window, System.IntPtr)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Helpers/WindowController.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Helpers/WindowController.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -211,7 +211,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.WindowController.Show<T>()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Helpers/WindowController.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Helpers/WindowController.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -239,7 +239,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.WindowController.Hide<T>()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Helpers/WindowController.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Helpers/WindowController.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers
@@ -267,7 +267,7 @@ items:
   fullName: MBFWpfToolkit.Helpers.WindowController.Close<T>()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Helpers/WindowController.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Helpers/WindowController.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Helpers

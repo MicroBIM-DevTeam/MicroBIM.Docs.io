@@ -1,0 +1,198 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Services.IDialogService
+  commentId: T:MBFWpfToolkit.Services.IDialogService
+  id: IDialogService
+  parent: MBFWpfToolkit.Services
+  children:
+  - MBFWpfToolkit.Services.IDialogService.Close
+  - MBFWpfToolkit.Services.IDialogService.Show``1(``0)
+  - MBFWpfToolkit.Services.IDialogService.UpdateMessage(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IDialogService
+  nameWithType: IDialogService
+  fullName: MBFWpfToolkit.Services.IDialogService
+  type: Interface
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Services/IDialogService.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Services
+  summary: Provides methods for displaying, updating, and closing dialog windows.
+  remarks: >-
+    This interface defines a contract for managing dialog windows, including showing content, 
+                updating messages, and closing dialogs. Implementations of this interface can be used to  interact with user
+                interface dialogs in a consistent manner.
+  example: []
+  syntax:
+    content: public interface IDialogService
+    content.vb: Public Interface IDialogService
+- uid: MBFWpfToolkit.Services.IDialogService.Show``1(``0)
+  commentId: M:MBFWpfToolkit.Services.IDialogService.Show``1(``0)
+  id: Show``1(``0)
+  parent: MBFWpfToolkit.Services.IDialogService
+  langs:
+  - csharp
+  - vb
+  name: Show<T>(T)
+  nameWithType: IDialogService.Show<T>(T)
+  fullName: MBFWpfToolkit.Services.IDialogService.Show<T>(T)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Services/IDialogService.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Services
+  summary: Displays the specified content.
+  example: []
+  syntax:
+    content: void Show<T>(T content)
+    parameters:
+    - id: content
+      type: '{T}'
+      description: The content to be displayed. Cannot be null.
+    typeParameters:
+    - id: T
+      description: The type of the content to display.
+    content.vb: Sub Show(Of T)(content As T)
+  overload: MBFWpfToolkit.Services.IDialogService.Show*
+  nameWithType.vb: IDialogService.Show(Of T)(T)
+  fullName.vb: MBFWpfToolkit.Services.IDialogService.Show(Of T)(T)
+  name.vb: Show(Of T)(T)
+- uid: MBFWpfToolkit.Services.IDialogService.UpdateMessage(System.String)
+  commentId: M:MBFWpfToolkit.Services.IDialogService.UpdateMessage(System.String)
+  id: UpdateMessage(System.String)
+  parent: MBFWpfToolkit.Services.IDialogService
+  langs:
+  - csharp
+  - vb
+  name: UpdateMessage(string)
+  nameWithType: IDialogService.UpdateMessage(string)
+  fullName: MBFWpfToolkit.Services.IDialogService.UpdateMessage(string)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Services/IDialogService.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Services
+  summary: Updates the current message with the specified value.
+  remarks: >-
+    This method replaces the existing message with the provided value. Ensure that
+                <code class="paramref">message</code> is a valid, non-empty string before calling this method.
+  example: []
+  syntax:
+    content: void UpdateMessage(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The new message to set. Cannot be null or empty.
+    content.vb: Sub UpdateMessage(message As String)
+  overload: MBFWpfToolkit.Services.IDialogService.UpdateMessage*
+  nameWithType.vb: IDialogService.UpdateMessage(String)
+  fullName.vb: MBFWpfToolkit.Services.IDialogService.UpdateMessage(String)
+  name.vb: UpdateMessage(String)
+- uid: MBFWpfToolkit.Services.IDialogService.Close
+  commentId: M:MBFWpfToolkit.Services.IDialogService.Close
+  id: Close
+  parent: MBFWpfToolkit.Services.IDialogService
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: IDialogService.Close()
+  fullName: MBFWpfToolkit.Services.IDialogService.Close()
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Services/IDialogService.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Services
+  summary: Closes the current connection or resource, releasing any associated resources.
+  remarks: >-
+    Once the connection or resource is closed, it cannot be reused. Ensure that all
+                necessary operations  are completed before calling this method.
+  example: []
+  syntax:
+    content: void Close()
+    content.vb: Sub Close()
+  overload: MBFWpfToolkit.Services.IDialogService.Close*
+references:
+- uid: MBFWpfToolkit.Services
+  commentId: N:MBFWpfToolkit.Services
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit.Services
+  nameWithType: MBFWpfToolkit.Services
+  fullName: MBFWpfToolkit.Services
+  spec.csharp:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Services
+    name: Services
+    isExternal: true
+    href: MBFWpfToolkit.Services.html
+  spec.vb:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Services
+    name: Services
+    isExternal: true
+    href: MBFWpfToolkit.Services.html
+- uid: MBFWpfToolkit.Services.IDialogService.Show*
+  commentId: Overload:MBFWpfToolkit.Services.IDialogService.Show
+  isExternal: true
+  href: MBFWpfToolkit.Services.IDialogService.html#MBFWpfToolkit_Services_IDialogService_Show__1___0_
+  name: Show
+  nameWithType: IDialogService.Show
+  fullName: MBFWpfToolkit.Services.IDialogService.Show
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: MBFWpfToolkit.Services.IDialogService.UpdateMessage*
+  commentId: Overload:MBFWpfToolkit.Services.IDialogService.UpdateMessage
+  isExternal: true
+  href: MBFWpfToolkit.Services.IDialogService.html#MBFWpfToolkit_Services_IDialogService_UpdateMessage_System_String_
+  name: UpdateMessage
+  nameWithType: IDialogService.UpdateMessage
+  fullName: MBFWpfToolkit.Services.IDialogService.UpdateMessage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MBFWpfToolkit.Services.IDialogService.Close*
+  commentId: Overload:MBFWpfToolkit.Services.IDialogService.Close
+  isExternal: true
+  href: MBFWpfToolkit.Services.IDialogService.html#MBFWpfToolkit_Services_IDialogService_Close
+  name: Close
+  nameWithType: IDialogService.Close
+  fullName: MBFWpfToolkit.Services.IDialogService.Close
+shouldSkipMarkup: true

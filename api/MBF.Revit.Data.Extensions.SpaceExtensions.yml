@@ -15,7 +15,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.SpaceExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/SpaceExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/SpaceExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -33,14 +33,8 @@ items:
     working with spaces in spatial modeling scenarios.
   example: []
   syntax:
-    content: >-
-      [LogAspect]
-
-      public static class SpaceExtensions
-    content.vb: >-
-      <LogAspect>
-
-      Public Module SpaceExtensions
+    content: public static class SpaceExtensions
+    content.vb: Public Module SpaceExtensions
   inheritance:
   - System.Object
   inheritedMembers:
@@ -51,10 +45,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  attributes:
-  - type: MB.Common.Aspects.LogAspect
-    ctor: MB.Common.Aspects.LogAspect.#ctor
-    arguments: []
 - uid: MBF.Revit.Data.Extensions.SpaceExtensions.GetBoundarySegment(Autodesk.Revit.DB.Mechanical.Space)
   commentId: M:MBF.Revit.Data.Extensions.SpaceExtensions.GetBoundarySegment(Autodesk.Revit.DB.Mechanical.Space)
   id: GetBoundarySegment(Autodesk.Revit.DB.Mechanical.Space)
@@ -68,7 +58,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.SpaceExtensions.GetBoundarySegment(Autodesk.Revit.DB.Mechanical.Space)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/SpaceExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/SpaceExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -101,7 +91,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.SpaceExtensions.Validate(Autodesk.Revit.DB.Mechanical.Space)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/SpaceExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/SpaceExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions

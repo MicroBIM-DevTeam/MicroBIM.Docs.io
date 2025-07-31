@@ -17,6 +17,8 @@ items:
   nameWithType: MbResult<T>
   fullName: MB.Common.Utils.Result.MbResult<T>
   type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Utils/Result/MbResult.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Result
@@ -52,6 +54,8 @@ items:
   nameWithType: MbResult<T>.Success(T)
   fullName: MB.Common.Utils.Result.MbResult<T>.Success(T)
   type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Utils/Result/MbResult.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Result
@@ -81,6 +85,8 @@ items:
   nameWithType: MbResult<T>.Failure(string)
   fullName: MB.Common.Utils.Result.MbResult<T>.Failure(string)
   type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Utils/Result/MbResult.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Result
@@ -111,6 +117,8 @@ items:
   nameWithType: MbResult<T>.IsSuccess
   fullName: MB.Common.Utils.Result.MbResult<T>.IsSuccess
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Utils/Result/MbResult.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Result
@@ -136,6 +144,8 @@ items:
   nameWithType: MbResult<T>.Value
   fullName: MB.Common.Utils.Result.MbResult<T>.Value
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Utils/Result/MbResult.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Result
@@ -161,6 +171,8 @@ items:
   nameWithType: MbResult<T>.ErrorMessage
   fullName: MB.Common.Utils.Result.MbResult<T>.ErrorMessage
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Utils/Result/MbResult.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Result

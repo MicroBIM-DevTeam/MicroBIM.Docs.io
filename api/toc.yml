@@ -4,6 +4,9 @@ items:
   name: MB.Common.Aspects
   type: Namespace
   items:
+  - uid: MB.Common.Aspects.LoadingDialogAspect
+    name: LoadingDialogAspect
+    type: Class
   - uid: MB.Common.Aspects.LogAspect
     name: LogAspect
     type: Class
@@ -154,6 +157,27 @@ items:
   - uid: MB.Common.Tools.MbfToolExtensions
     name: MbfToolExtensions
     type: Class
+- uid: MB.Common.Units.Behaviours
+  name: MB.Common.Units.Behaviours
+  type: Namespace
+  items:
+  - uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior
+    name: TextBoxUnitLenghtConversionBehavior
+    type: Class
+- uid: MB.Common.Units.Converters
+  name: MB.Common.Units.Converters
+  type: Namespace
+  items:
+  - uid: MB.Common.Units.Converters.RevitLengthValueConverter
+    name: RevitLengthValueConverter
+    type: Class
+- uid: MB.Common.Units.Helpers
+  name: MB.Common.Units.Helpers
+  type: Namespace
+  items:
+  - uid: MB.Common.Units.Helpers.TextBoxLengthConversionHelper
+    name: TextBoxLengthConversionHelper
+    type: Class
 - uid: MB.Common.Utils.Attributes
   name: MB.Common.Utils.Attributes
   type: Namespace
@@ -252,6 +276,12 @@ items:
   - uid: MBF.Revit.Data.Utils.EntityUtils
     name: EntityUtils
     type: Class
+  - uid: MBF.Revit.Data.Utils.MbConnectorUtilities
+    name: MbConnectorUtilities
+    type: Class
+  - uid: MBF.Revit.Data.Utils.MbFamilyInstanceUtils
+    name: MbFamilyInstanceUtils
+    type: Class
   - uid: MBF.Revit.Data.Utils.MbFlexPipesUtils
     name: MbFlexPipesUtils
     type: Class
@@ -297,6 +327,9 @@ items:
     type: Class
   - uid: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions
     name: BoundingBoxVisualizerExtensions
+    type: Class
+  - uid: MBF.Revit.Geometry.Extensions.ClipperConversionExtensions
+    name: ClipperConversionExtensions
     type: Class
   - uid: MBF.Revit.Geometry.Extensions.ClipperExtensions
     name: ClipperExtensions
@@ -445,6 +478,16 @@ items:
   - uid: MBFWpfToolkit.Converters.ValidationMultiConverter
     name: ValidationMultiConverter
     type: Class
+- uid: MBFWpfToolkit.Dialogs
+  name: MBFWpfToolkit.Dialogs
+  type: Namespace
+  items:
+  - uid: MBFWpfToolkit.Dialogs.LoadingDialog
+    name: LoadingDialog
+    type: Class
+  - uid: MBFWpfToolkit.Dialogs.ProgressDialog
+    name: ProgressDialog
+    type: Class
 - uid: MBFWpfToolkit.Extensions
   name: MBFWpfToolkit.Extensions
   type: Namespace
@@ -492,9 +535,25 @@ items:
   name: MBFWpfToolkit.Properties.Langs
   type: Namespace
   items:
-  - uid: MBFWpfToolkit.Properties.Langs.Lang_en
-    name: Lang_en
+  - uid: MBFWpfToolkit.Properties.Langs.Lang
+    name: Lang
     type: Class
+- uid: MBFWpfToolkit.Services
+  name: MBFWpfToolkit.Services
+  type: Namespace
+  items:
+  - uid: MBFWpfToolkit.Services.AspectServiceAccessor
+    name: AspectServiceAccessor
+    type: Class
+  - uid: MBFWpfToolkit.Services.DialogService
+    name: DialogService
+    type: Class
+  - uid: MBFWpfToolkit.Services.IDialogService
+    name: IDialogService
+    type: Interface
+  - uid: MBFWpfToolkit.Services.IUpdatableDialogContent
+    name: IUpdatableDialogContent
+    type: Interface
 - uid: MBFWpfToolkit.Utils
   name: MBFWpfToolkit.Utils
   type: Namespace
@@ -517,12 +576,5 @@ items:
     type: Class
   - uid: MBFWpfToolkit.ValidationRules.StringValidationRule
     name: StringValidationRule
-    type: Class
-- uid: OnMethodBoundaryAspectCompile
-  name: OnMethodBoundaryAspectCompile
-  type: Namespace
-  items:
-  - uid: OnMethodBoundaryAspectCompile.MethodInfos
-    name: MethodInfos
     type: Class
 memberLayout: SamePage

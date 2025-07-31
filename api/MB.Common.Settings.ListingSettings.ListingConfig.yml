@@ -24,6 +24,8 @@ items:
   nameWithType: ListingConfig
   fullName: MB.Common.Settings.ListingSettings.ListingConfig
   type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/ListingConfig.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -78,6 +80,8 @@ items:
   nameWithType: ListingConfig.ListingConfig(List<FamilyInstance>, StandardFittingType)
   fullName: MB.Common.Settings.ListingSettings.ListingConfig.ListingConfig(System.Collections.Generic.List<Autodesk.Revit.DB.FamilyInstance>, MB.Common.Settings.ListingSettings.StandardFittingType)
   type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/ListingConfig.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -113,6 +117,8 @@ items:
   nameWithType: ListingConfig.ListingConfig(ListingDto)
   fullName: MB.Common.Settings.ListingSettings.ListingConfig.ListingConfig(MB.Common.Settings.ListingSettings.ListingDto)
   type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/ListingConfig.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -139,6 +145,8 @@ items:
   nameWithType: ListingConfig.ListingConfig(string, StandardFittingType)
   fullName: MB.Common.Settings.ListingSettings.ListingConfig.ListingConfig(string, MB.Common.Settings.ListingSettings.StandardFittingType)
   type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/ListingConfig.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -176,6 +184,8 @@ items:
   nameWithType: ListingConfig.Elements
   fullName: MB.Common.Settings.ListingSettings.ListingConfig.Elements
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/ListingConfig.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -205,6 +215,8 @@ items:
   nameWithType: ListingConfig.CategoryName
   fullName: MB.Common.Settings.ListingSettings.ListingConfig.CategoryName
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/obj/Debug%20R23/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MB.Common.Settings.ListingSettings.ListingConfig.g.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -227,6 +239,8 @@ items:
   nameWithType: ListingConfig.Count
   fullName: MB.Common.Settings.ListingSettings.ListingConfig.Count
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/obj/Debug%20R23/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MB.Common.Settings.ListingSettings.ListingConfig.g.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -249,6 +263,8 @@ items:
   nameWithType: ListingConfig.FamilyName
   fullName: MB.Common.Settings.ListingSettings.ListingConfig.FamilyName
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/obj/Debug%20R23/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MB.Common.Settings.ListingSettings.ListingConfig.g.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -271,6 +287,8 @@ items:
   nameWithType: ListingConfig.HasValue
   fullName: MB.Common.Settings.ListingSettings.ListingConfig.HasValue
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/obj/Debug%20R23/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MB.Common.Settings.ListingSettings.ListingConfig.g.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -293,6 +311,8 @@ items:
   nameWithType: ListingConfig.Name
   fullName: MB.Common.Settings.ListingSettings.ListingConfig.Name
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/obj/Debug%20R23/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MB.Common.Settings.ListingSettings.ListingConfig.g.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -315,6 +335,8 @@ items:
   nameWithType: ListingConfig.SelectedFittingType
   fullName: MB.Common.Settings.ListingSettings.ListingConfig.SelectedFittingType
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/obj/Debug%20R23/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MB.Common.Settings.ListingSettings.ListingConfig.g.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -337,6 +359,8 @@ items:
   nameWithType: ListingConfig.SuggestedValues
   fullName: MB.Common.Settings.ListingSettings.ListingConfig.SuggestedValues
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/obj/Debug%20R23/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MB.Common.Settings.ListingSettings.ListingConfig.g.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -359,6 +383,8 @@ items:
   nameWithType: ListingConfig.SymbolName
   fullName: MB.Common.Settings.ListingSettings.ListingConfig.SymbolName
   type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/obj/Debug%20R23/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MB.Common.Settings.ListingSettings.ListingConfig.g.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings

@@ -13,6 +13,8 @@ items:
   nameWithType: FittingGroupHelper
   fullName: MB.Common.Settings.ListingSettings.FittingGroupHelper
   type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/FittingGroupHelper.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -45,6 +47,8 @@ items:
   nameWithType: FittingGroupHelper.GetPdfGroupName(StandardFittingType)
   fullName: MB.Common.Settings.ListingSettings.FittingGroupHelper.GetPdfGroupName(MB.Common.Settings.ListingSettings.StandardFittingType)
   type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/FittingGroupHelper.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings

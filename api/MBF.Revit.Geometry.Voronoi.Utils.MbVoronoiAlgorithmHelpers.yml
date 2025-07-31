@@ -14,7 +14,7 @@ items:
   fullName: MBF.Revit.Geometry.Voronoi.Utils.MbVoronoiAlgorithmHelpers
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Voronoi/Utils/MbVoronoiAlgorithmHelpers.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Voronoi/Utils/MbVoronoiAlgorithmHelpers.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Utils
@@ -61,7 +61,7 @@ items:
   fullName: MBF.Revit.Geometry.Voronoi.Utils.MbVoronoiAlgorithmHelpers.CreateVoronoiDiagramAsync(System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>, System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Voronoi/Utils/MbVoronoiAlgorithmHelpers.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Voronoi/Utils/MbVoronoiAlgorithmHelpers.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Voronoi.Utils

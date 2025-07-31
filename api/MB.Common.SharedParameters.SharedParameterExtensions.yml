@@ -17,6 +17,8 @@ items:
   nameWithType: SharedParameterExtensions
   fullName: MB.Common.SharedParameters.SharedParameterExtensions
   type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/SharedParameters/SharedParameterExtensions.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.SharedParameters
@@ -47,6 +49,8 @@ items:
   nameWithType: SharedParameterExtensions.GetGuid(ToolsSharedParameter)
   fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetGuid(MB.Common.SharedParameters.ToolsSharedParameter)
   type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/SharedParameters/SharedParameterExtensions.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.SharedParameters
@@ -75,6 +79,8 @@ items:
   nameWithType: SharedParameterExtensions.GetDisplayName(ToolsSharedParameter)
   fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetDisplayName(MB.Common.SharedParameters.ToolsSharedParameter)
   type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/SharedParameters/SharedParameterExtensions.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.SharedParameters
@@ -103,6 +109,8 @@ items:
   nameWithType: SharedParameterExtensions.GetIncludedCategories(ToolsSharedParameter)
   fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetIncludedCategories(MB.Common.SharedParameters.ToolsSharedParameter)
   type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/SharedParameters/SharedParameterExtensions.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.SharedParameters
@@ -131,6 +139,8 @@ items:
   nameWithType: SharedParameterExtensions.GetSharedParameterType(ToolsSharedParameter)
   fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetSharedParameterType(MB.Common.SharedParameters.ToolsSharedParameter)
   type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/SharedParameters/SharedParameterExtensions.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.SharedParameters
@@ -159,6 +169,8 @@ items:
   nameWithType: SharedParameterExtensions.GetCreationOptions(ToolsSharedParameter)
   fullName: MB.Common.SharedParameters.SharedParameterExtensions.GetCreationOptions(MB.Common.SharedParameters.ToolsSharedParameter)
   type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/SharedParameters/SharedParameterExtensions.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.SharedParameters

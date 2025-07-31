@@ -15,7 +15,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Extensions/XYZVisualizationsExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/XYZVisualizationsExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -28,14 +28,8 @@ items:
     optional color customization.
   example: []
   syntax:
-    content: >-
-      [LogAspect]
-
-      public static class XyzVisualizationsExtensions
-    content.vb: >-
-      <LogAspect>
-
-      Public Module XyzVisualizationsExtensions
+    content: public static class XyzVisualizationsExtensions
+    content.vb: Public Module XyzVisualizationsExtensions
   inheritance:
   - System.Object
   inheritedMembers:
@@ -46,10 +40,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  attributes:
-  - type: MB.Common.Aspects.LogAspect
-    ctor: MB.Common.Aspects.LogAspect.#ctor
-    arguments: []
 - uid: MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.VisualizePoint(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
   commentId: M:MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.VisualizePoint(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
   id: VisualizePoint(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
@@ -63,7 +53,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.VisualizePoint(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Extensions/XYZVisualizationsExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/XYZVisualizationsExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -96,7 +86,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.XyzVisualizationsExtensions.VisualizePointAsElement(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Extensions/XYZVisualizationsExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/XYZVisualizationsExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -476,6 +466,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Element}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
+  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   name: MbResult<Element>
   nameWithType: MbResult<Element>
   fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.Element>
@@ -486,6 +477,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: <
   - uid: Autodesk.Revit.DB.Element
     name: Element
@@ -495,6 +487,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "

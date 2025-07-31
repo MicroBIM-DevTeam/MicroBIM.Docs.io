@@ -1,0 +1,2440 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Properties.Langs.Lang
+  commentId: T:MBFWpfToolkit.Properties.Langs.Lang
+  id: Lang
+  parent: MBFWpfToolkit.Properties.Langs
+  children:
+  - MBFWpfToolkit.Properties.Langs.Lang.About
+  - MBFWpfToolkit.Properties.Langs.Lang.And
+  - MBFWpfToolkit.Properties.Langs.Lang.BIMAssets
+  - MBFWpfToolkit.Properties.Langs.Lang.BookMode
+  - MBFWpfToolkit.Properties.Langs.Lang.Cancel
+  - MBFWpfToolkit.Properties.Langs.Lang.ClosePDF
+  - MBFWpfToolkit.Properties.Langs.Lang.Confirm
+  - MBFWpfToolkit.Properties.Langs.Lang.ContinuousPagesMode
+  - MBFWpfToolkit.Properties.Langs.Lang.Culture
+  - MBFWpfToolkit.Properties.Langs.Lang.DPI_
+  - MBFWpfToolkit.Properties.Langs.Lang.DecimalValue
+  - MBFWpfToolkit.Properties.Langs.Lang.Delete
+  - MBFWpfToolkit.Properties.Langs.Lang.DoubleValue
+  - MBFWpfToolkit.Properties.Langs.Lang.Download
+  - MBFWpfToolkit.Properties.Langs.Lang.DownloadSelected
+  - MBFWpfToolkit.Properties.Langs.Lang.Edit
+  - MBFWpfToolkit.Properties.Langs.Lang.FileType
+  - MBFWpfToolkit.Properties.Langs.Lang.FileURL
+  - MBFWpfToolkit.Properties.Langs.Lang.Findindocument
+  - MBFWpfToolkit.Properties.Langs.Lang.FitHeight
+  - MBFWpfToolkit.Properties.Langs.Lang.FitWidth
+  - MBFWpfToolkit.Properties.Langs.Lang.From
+  - MBFWpfToolkit.Properties.Langs.Lang.GetPageText
+  - MBFWpfToolkit.Properties.Langs.Lang.HandTool
+  - MBFWpfToolkit.Properties.Langs.Lang.Installers
+  - MBFWpfToolkit.Properties.Langs.Lang.IntValue
+  - MBFWpfToolkit.Properties.Langs.Lang.InvalidFormat
+  - MBFWpfToolkit.Properties.Langs.Lang.Islefttorightdocument
+  - MBFWpfToolkit.Properties.Langs.Lang.Isrighttoleftdocument
+  - MBFWpfToolkit.Properties.Langs.Lang.Light_DarkMode
+  - MBFWpfToolkit.Properties.Langs.Lang.Miscellaneous
+  - MBFWpfToolkit.Properties.Langs.Lang.NextPage
+  - MBFWpfToolkit.Properties.Langs.Lang.No
+  - MBFWpfToolkit.Properties.Langs.Lang.NumberRange
+  - MBFWpfToolkit.Properties.Langs.Lang.OpenPdf
+  - MBFWpfToolkit.Properties.Langs.Lang.PdfInformation
+  - MBFWpfToolkit.Properties.Langs.Lang.PreviousPage
+  - MBFWpfToolkit.Properties.Langs.Lang.Renderallpages
+  - MBFWpfToolkit.Properties.Langs.Lang.Required
+  - MBFWpfToolkit.Properties.Langs.Lang.ResourceManager
+  - MBFWpfToolkit.Properties.Langs.Lang.RotateLeft
+  - MBFWpfToolkit.Properties.Langs.Lang.RotateRight
+  - MBFWpfToolkit.Properties.Langs.Lang.Save
+  - MBFWpfToolkit.Properties.Langs.Lang.SaveasImages
+  - MBFWpfToolkit.Properties.Langs.Lang.Searchforinstallers
+  - MBFWpfToolkit.Properties.Langs.Lang.Searchterm
+  - MBFWpfToolkit.Properties.Langs.Lang.SelectLanguage
+  - MBFWpfToolkit.Properties.Langs.Lang.ShowBookmarks
+  - MBFWpfToolkit.Properties.Langs.Lang.SinglePageMode
+  - MBFWpfToolkit.Properties.Langs.Lang.SwapToDarkMode
+  - MBFWpfToolkit.Properties.Langs.Lang.SwapToLightMode
+  - MBFWpfToolkit.Properties.Langs.Lang.To
+  - MBFWpfToolkit.Properties.Langs.Lang.TransparentPage
+  - MBFWpfToolkit.Properties.Langs.Lang.Upload
+  - MBFWpfToolkit.Properties.Langs.Lang.UploadedDate
+  - MBFWpfToolkit.Properties.Langs.Lang.Url
+  - MBFWpfToolkit.Properties.Langs.Lang.Version
+  - MBFWpfToolkit.Properties.Langs.Lang.Yes
+  - MBFWpfToolkit.Properties.Langs.Lang.Zoomin
+  - MBFWpfToolkit.Properties.Langs.Lang.Zoomout
+  - MBFWpfToolkit.Properties.Langs.Lang.contact_us
+  - MBFWpfToolkit.Properties.Langs.Lang.of
+  langs:
+  - csharp
+  - vb
+  name: Lang
+  nameWithType: Lang
+  fullName: MBFWpfToolkit.Properties.Langs.Lang
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: A strongly-typed resource class, for looking up localized strings, etc.
+  example: []
+  syntax:
+    content: public class Lang
+    content.vb: Public Class Lang
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBFWpfToolkit.Properties.Langs.Lang.ResourceManager
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.ResourceManager
+  id: ResourceManager
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: ResourceManager
+  nameWithType: Lang.ResourceManager
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.ResourceManager
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Returns the cached ResourceManager instance used by this class.
+  example: []
+  syntax:
+    content: public static ResourceManager ResourceManager { get; }
+    parameters: []
+    return:
+      type: System.Resources.ResourceManager
+    content.vb: Public Shared ReadOnly Property ResourceManager As ResourceManager
+  overload: MBFWpfToolkit.Properties.Langs.Lang.ResourceManager*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Culture
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Culture
+  id: Culture
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Culture
+  nameWithType: Lang.Culture
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Culture
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: >-
+    Overrides the current thread's CurrentUICulture property for all
+
+    resource lookups using this strongly typed resource class.
+  example: []
+  syntax:
+    content: public static CultureInfo Culture { get; set; }
+    parameters: []
+    return:
+      type: System.Globalization.CultureInfo
+    content.vb: Public Shared Property Culture As CultureInfo
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Culture*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.About
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.About
+  id: About
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: About
+  nameWithType: Lang.About
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.About
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to About.
+  example: []
+  syntax:
+    content: public static string About { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property About As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.About*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.And
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.And
+  id: And
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: And
+  nameWithType: Lang.And
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.And
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to and.
+  example: []
+  syntax:
+    content: public static string And { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property [And] As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.And*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.BIMAssets
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.BIMAssets
+  id: BIMAssets
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: BIMAssets
+  nameWithType: Lang.BIMAssets
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.BIMAssets
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to BIMAssets.
+  example: []
+  syntax:
+    content: public static string BIMAssets { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property BIMAssets As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.BIMAssets*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.BookMode
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.BookMode
+  id: BookMode
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: BookMode
+  nameWithType: Lang.BookMode
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.BookMode
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Book Mode.
+  example: []
+  syntax:
+    content: public static string BookMode { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property BookMode As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.BookMode*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Cancel
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Cancel
+  id: Cancel
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Cancel
+  nameWithType: Lang.Cancel
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Cancel
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Cancel.
+  example: []
+  syntax:
+    content: public static string Cancel { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Cancel As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Cancel*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.ClosePDF
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.ClosePDF
+  id: ClosePDF
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: ClosePDF
+  nameWithType: Lang.ClosePDF
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.ClosePDF
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Close PDF.
+  example: []
+  syntax:
+    content: public static string ClosePDF { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property ClosePDF As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.ClosePDF*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Confirm
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Confirm
+  id: Confirm
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Confirm
+  nameWithType: Lang.Confirm
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Confirm
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Confirm.
+  example: []
+  syntax:
+    content: public static string Confirm { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Confirm As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Confirm*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.contact_us
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.contact_us
+  id: contact_us
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: contact_us
+  nameWithType: Lang.contact_us
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.contact_us
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Contact us.
+  example: []
+  syntax:
+    content: public static string contact_us { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property contact_us As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.contact_us*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.ContinuousPagesMode
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.ContinuousPagesMode
+  id: ContinuousPagesMode
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: ContinuousPagesMode
+  nameWithType: Lang.ContinuousPagesMode
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.ContinuousPagesMode
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Continuous Pages Mode.
+  example: []
+  syntax:
+    content: public static string ContinuousPagesMode { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property ContinuousPagesMode As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.ContinuousPagesMode*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.DecimalValue
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.DecimalValue
+  id: DecimalValue
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: DecimalValue
+  nameWithType: Lang.DecimalValue
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.DecimalValue
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Value must be a valid decimal..
+  example: []
+  syntax:
+    content: public static string DecimalValue { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DecimalValue As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.DecimalValue*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Delete
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Delete
+  id: Delete
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Delete
+  nameWithType: Lang.Delete
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Delete
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Delete.
+  example: []
+  syntax:
+    content: public static string Delete { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Delete As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Delete*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.DoubleValue
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.DoubleValue
+  id: DoubleValue
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: DoubleValue
+  nameWithType: Lang.DoubleValue
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.DoubleValue
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Value must be a valid double..
+  example: []
+  syntax:
+    content: public static string DoubleValue { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DoubleValue As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.DoubleValue*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Download
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Download
+  id: Download
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Download
+  nameWithType: Lang.Download
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Download
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Download.
+  example: []
+  syntax:
+    content: public static string Download { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Download As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Download*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.DownloadSelected
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.DownloadSelected
+  id: DownloadSelected
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: DownloadSelected
+  nameWithType: Lang.DownloadSelected
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.DownloadSelected
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to DownloadSelected.
+  example: []
+  syntax:
+    content: public static string DownloadSelected { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DownloadSelected As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.DownloadSelected*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.DPI_
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.DPI_
+  id: DPI_
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: DPI_
+  nameWithType: Lang.DPI_
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.DPI_
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to DPI:.
+  example: []
+  syntax:
+    content: public static string DPI_ { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DPI_ As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.DPI_*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Edit
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Edit
+  id: Edit
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Edit
+  nameWithType: Lang.Edit
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Edit
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Edit.
+  example: []
+  syntax:
+    content: public static string Edit { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Edit As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Edit*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.FileType
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.FileType
+  id: FileType
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: FileType
+  nameWithType: Lang.FileType
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.FileType
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to File Type.
+  example: []
+  syntax:
+    content: public static string FileType { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property FileType As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.FileType*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.FileURL
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.FileURL
+  id: FileURL
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: FileURL
+  nameWithType: Lang.FileURL
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.FileURL
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to File URL.
+  example: []
+  syntax:
+    content: public static string FileURL { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property FileURL As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.FileURL*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Findindocument
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Findindocument
+  id: Findindocument
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Findindocument
+  nameWithType: Lang.Findindocument
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Findindocument
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Find in document....
+  example: []
+  syntax:
+    content: public static string Findindocument { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Findindocument As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Findindocument*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.FitHeight
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.FitHeight
+  id: FitHeight
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: FitHeight
+  nameWithType: Lang.FitHeight
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.FitHeight
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Fit Height.
+  example: []
+  syntax:
+    content: public static string FitHeight { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property FitHeight As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.FitHeight*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.FitWidth
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.FitWidth
+  id: FitWidth
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: FitWidth
+  nameWithType: Lang.FitWidth
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.FitWidth
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Fit Width.
+  example: []
+  syntax:
+    content: public static string FitWidth { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property FitWidth As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.FitWidth*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.From
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.From
+  id: From
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: From
+  nameWithType: Lang.From
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.From
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to From.
+  example: []
+  syntax:
+    content: public static string From { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property From As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.From*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.GetPageText
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.GetPageText
+  id: GetPageText
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: GetPageText
+  nameWithType: Lang.GetPageText
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.GetPageText
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Get Page Text.
+  example: []
+  syntax:
+    content: public static string GetPageText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property GetPageText As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.GetPageText*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.HandTool
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.HandTool
+  id: HandTool
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: HandTool
+  nameWithType: Lang.HandTool
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.HandTool
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Hand Tool.
+  example: []
+  syntax:
+    content: public static string HandTool { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property HandTool As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.HandTool*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Installers
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Installers
+  id: Installers
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Installers
+  nameWithType: Lang.Installers
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Installers
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Installers.
+  example: []
+  syntax:
+    content: public static string Installers { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Installers As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Installers*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.IntValue
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.IntValue
+  id: IntValue
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: IntValue
+  nameWithType: Lang.IntValue
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.IntValue
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Value must be a valid integer..
+  example: []
+  syntax:
+    content: public static string IntValue { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property IntValue As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.IntValue*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.InvalidFormat
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.InvalidFormat
+  id: InvalidFormat
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: InvalidFormat
+  nameWithType: Lang.InvalidFormat
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.InvalidFormat
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to InvalidFormat!.
+  example: []
+  syntax:
+    content: public static string InvalidFormat { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property InvalidFormat As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.InvalidFormat*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Islefttorightdocument
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Islefttorightdocument
+  id: Islefttorightdocument
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Islefttorightdocument
+  nameWithType: Lang.Islefttorightdocument
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Islefttorightdocument
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Is left to right document.
+  example: []
+  syntax:
+    content: public static string Islefttorightdocument { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Islefttorightdocument As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Islefttorightdocument*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Isrighttoleftdocument
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Isrighttoleftdocument
+  id: Isrighttoleftdocument
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Isrighttoleftdocument
+  nameWithType: Lang.Isrighttoleftdocument
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Isrighttoleftdocument
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Is right to left document.
+  example: []
+  syntax:
+    content: public static string Isrighttoleftdocument { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Isrighttoleftdocument As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Isrighttoleftdocument*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Light_DarkMode
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Light_DarkMode
+  id: Light_DarkMode
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Light_DarkMode
+  nameWithType: Lang.Light_DarkMode
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Light_DarkMode
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Light/Dark Mode.
+  example: []
+  syntax:
+    content: public static string Light_DarkMode { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Light_DarkMode As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Light_DarkMode*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Miscellaneous
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Miscellaneous
+  id: Miscellaneous
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Miscellaneous
+  nameWithType: Lang.Miscellaneous
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Miscellaneous
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Miscellaneous.
+  example: []
+  syntax:
+    content: public static string Miscellaneous { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Miscellaneous As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Miscellaneous*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.NextPage
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.NextPage
+  id: NextPage
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: NextPage
+  nameWithType: Lang.NextPage
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.NextPage
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Next Page.
+  example: []
+  syntax:
+    content: public static string NextPage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property NextPage As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.NextPage*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.No
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.No
+  id: No
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: No
+  nameWithType: Lang.No
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.No
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to No.
+  example: []
+  syntax:
+    content: public static string No { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property No As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.No*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.NumberRange
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.NumberRange
+  id: NumberRange
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: NumberRange
+  nameWithType: Lang.NumberRange
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.NumberRange
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Value must be between.
+  example: []
+  syntax:
+    content: public static string NumberRange { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property NumberRange As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.NumberRange*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.of
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.of
+  id: of
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: of
+  nameWithType: Lang.of
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.of
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to of.
+  example: []
+  syntax:
+    content: public static string of { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property [of] As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.of*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.OpenPdf
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.OpenPdf
+  id: OpenPdf
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: OpenPdf
+  nameWithType: Lang.OpenPdf
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.OpenPdf
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Open Pdf.
+  example: []
+  syntax:
+    content: public static string OpenPdf { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property OpenPdf As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.OpenPdf*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.PdfInformation
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.PdfInformation
+  id: PdfInformation
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: PdfInformation
+  nameWithType: Lang.PdfInformation
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.PdfInformation
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Pdf Information.
+  example: []
+  syntax:
+    content: public static string PdfInformation { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property PdfInformation As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.PdfInformation*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.PreviousPage
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.PreviousPage
+  id: PreviousPage
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: PreviousPage
+  nameWithType: Lang.PreviousPage
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.PreviousPage
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Previous Page.
+  example: []
+  syntax:
+    content: public static string PreviousPage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property PreviousPage As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.PreviousPage*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Renderallpages
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Renderallpages
+  id: Renderallpages
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Renderallpages
+  nameWithType: Lang.Renderallpages
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Renderallpages
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Render all pages.
+  example: []
+  syntax:
+    content: public static string Renderallpages { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Renderallpages As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Renderallpages*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Required
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Required
+  id: Required
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Required
+  nameWithType: Lang.Required
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Required
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Value cannot be empty..
+  example: []
+  syntax:
+    content: public static string Required { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Required As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Required*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.RotateLeft
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.RotateLeft
+  id: RotateLeft
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: RotateLeft
+  nameWithType: Lang.RotateLeft
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.RotateLeft
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Rotate Left.
+  example: []
+  syntax:
+    content: public static string RotateLeft { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property RotateLeft As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.RotateLeft*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.RotateRight
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.RotateRight
+  id: RotateRight
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: RotateRight
+  nameWithType: Lang.RotateRight
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.RotateRight
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Rotate Right.
+  example: []
+  syntax:
+    content: public static string RotateRight { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property RotateRight As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.RotateRight*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Save
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Save
+  id: Save
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Save
+  nameWithType: Lang.Save
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Save
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Save.
+  example: []
+  syntax:
+    content: public static string Save { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Save As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Save*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.SaveasImages
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.SaveasImages
+  id: SaveasImages
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: SaveasImages
+  nameWithType: Lang.SaveasImages
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.SaveasImages
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Save as Images.
+  example: []
+  syntax:
+    content: public static string SaveasImages { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property SaveasImages As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.SaveasImages*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Searchforinstallers
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Searchforinstallers
+  id: Searchforinstallers
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Searchforinstallers
+  nameWithType: Lang.Searchforinstallers
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Searchforinstallers
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Search for installers....
+  example: []
+  syntax:
+    content: public static string Searchforinstallers { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Searchforinstallers As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Searchforinstallers*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Searchterm
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Searchterm
+  id: Searchterm
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Searchterm
+  nameWithType: Lang.Searchterm
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Searchterm
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Search term.
+  example: []
+  syntax:
+    content: public static string Searchterm { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Searchterm As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Searchterm*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.SelectLanguage
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.SelectLanguage
+  id: SelectLanguage
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: SelectLanguage
+  nameWithType: Lang.SelectLanguage
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.SelectLanguage
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Select Language.
+  example: []
+  syntax:
+    content: public static string SelectLanguage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property SelectLanguage As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.SelectLanguage*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.ShowBookmarks
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.ShowBookmarks
+  id: ShowBookmarks
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: ShowBookmarks
+  nameWithType: Lang.ShowBookmarks
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.ShowBookmarks
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Show Bookmarks.
+  example: []
+  syntax:
+    content: public static string ShowBookmarks { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property ShowBookmarks As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.ShowBookmarks*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.SinglePageMode
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.SinglePageMode
+  id: SinglePageMode
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: SinglePageMode
+  nameWithType: Lang.SinglePageMode
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.SinglePageMode
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Single Page Mode.
+  example: []
+  syntax:
+    content: public static string SinglePageMode { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property SinglePageMode As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.SinglePageMode*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.SwapToDarkMode
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.SwapToDarkMode
+  id: SwapToDarkMode
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: SwapToDarkMode
+  nameWithType: Lang.SwapToDarkMode
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.SwapToDarkMode
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Swap to dark mode.
+  example: []
+  syntax:
+    content: public static string SwapToDarkMode { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property SwapToDarkMode As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.SwapToDarkMode*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.SwapToLightMode
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.SwapToLightMode
+  id: SwapToLightMode
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: SwapToLightMode
+  nameWithType: Lang.SwapToLightMode
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.SwapToLightMode
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Swap to light mode.
+  example: []
+  syntax:
+    content: public static string SwapToLightMode { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property SwapToLightMode As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.SwapToLightMode*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.To
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.To
+  id: To
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: To
+  nameWithType: Lang.To
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.To
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to To.
+  example: []
+  syntax:
+    content: public static string To { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property [To] As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.To*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.TransparentPage
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.TransparentPage
+  id: TransparentPage
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: TransparentPage
+  nameWithType: Lang.TransparentPage
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.TransparentPage
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Transparent Page.
+  example: []
+  syntax:
+    content: public static string TransparentPage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property TransparentPage As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.TransparentPage*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Upload
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Upload
+  id: Upload
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Upload
+  nameWithType: Lang.Upload
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Upload
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Upload.
+  example: []
+  syntax:
+    content: public static string Upload { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Upload As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Upload*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.UploadedDate
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.UploadedDate
+  id: UploadedDate
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: UploadedDate
+  nameWithType: Lang.UploadedDate
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.UploadedDate
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Uploaded Date.
+  example: []
+  syntax:
+    content: public static string UploadedDate { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property UploadedDate As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.UploadedDate*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Url
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Url
+  id: Url
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Url
+  nameWithType: Lang.Url
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Url
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to URL.
+  example: []
+  syntax:
+    content: public static string Url { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Url As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Url*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Version
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Version
+  id: Version
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: Lang.Version
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Version
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Version.
+  example: []
+  syntax:
+    content: public static string Version { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Version As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Version*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Yes
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Yes
+  id: Yes
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Yes
+  nameWithType: Lang.Yes
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Yes
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Yes.
+  example: []
+  syntax:
+    content: public static string Yes { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Yes As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Yes*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Zoomin
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Zoomin
+  id: Zoomin
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Zoomin
+  nameWithType: Lang.Zoomin
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Zoomin
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Zoom in.
+  example: []
+  syntax:
+    content: public static string Zoomin { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Zoomin As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Zoomin*
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Zoomout
+  commentId: P:MBFWpfToolkit.Properties.Langs.Lang.Zoomout
+  id: Zoomout
+  parent: MBFWpfToolkit.Properties.Langs.Lang
+  langs:
+  - csharp
+  - vb
+  name: Zoomout
+  nameWithType: Lang.Zoomout
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Zoomout
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Properties.Langs
+  summary: Looks up a localized string similar to Zoom out.
+  example: []
+  syntax:
+    content: public static string Zoomout { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Zoomout As String
+  overload: MBFWpfToolkit.Properties.Langs.Lang.Zoomout*
+references:
+- uid: MBFWpfToolkit.Properties.Langs
+  commentId: N:MBFWpfToolkit.Properties.Langs
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit.Properties.Langs
+  nameWithType: MBFWpfToolkit.Properties.Langs
+  fullName: MBFWpfToolkit.Properties.Langs
+  spec.csharp:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Properties
+    name: Properties
+    isExternal: true
+    href: MBFWpfToolkit.Properties.html
+  - name: .
+  - uid: MBFWpfToolkit.Properties.Langs
+    name: Langs
+    isExternal: true
+    href: MBFWpfToolkit.Properties.Langs.html
+  spec.vb:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Properties
+    name: Properties
+    isExternal: true
+    href: MBFWpfToolkit.Properties.html
+  - name: .
+  - uid: MBFWpfToolkit.Properties.Langs
+    name: Langs
+    isExternal: true
+    href: MBFWpfToolkit.Properties.Langs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MBFWpfToolkit.Properties.Langs.Lang.ResourceManager*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.ResourceManager
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_ResourceManager
+  name: ResourceManager
+  nameWithType: Lang.ResourceManager
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.ResourceManager
+- uid: System.Resources.ResourceManager
+  commentId: T:System.Resources.ResourceManager
+  parent: System.Resources
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.resources.resourcemanager
+  name: ResourceManager
+  nameWithType: ResourceManager
+  fullName: System.Resources.ResourceManager
+- uid: System.Resources
+  commentId: N:System.Resources
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Resources
+  nameWithType: System.Resources
+  fullName: System.Resources
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Resources
+    name: Resources
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.resources
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Resources
+    name: Resources
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.resources
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Culture*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Culture
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Culture
+  name: Culture
+  nameWithType: Lang.Culture
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Culture
+- uid: System.Globalization.CultureInfo
+  commentId: T:System.Globalization.CultureInfo
+  parent: System.Globalization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  name: CultureInfo
+  nameWithType: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: System.Globalization
+  commentId: N:System.Globalization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Globalization
+  nameWithType: System.Globalization
+  fullName: System.Globalization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Globalization
+    name: Globalization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Globalization
+    name: Globalization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization
+- uid: MBFWpfToolkit.Properties.Langs.Lang.About*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.About
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_About
+  name: About
+  nameWithType: Lang.About
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.About
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MBFWpfToolkit.Properties.Langs.Lang.And*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.And
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_And
+  name: And
+  nameWithType: Lang.And
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.And
+- uid: MBFWpfToolkit.Properties.Langs.Lang.BIMAssets*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.BIMAssets
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_BIMAssets
+  name: BIMAssets
+  nameWithType: Lang.BIMAssets
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.BIMAssets
+- uid: MBFWpfToolkit.Properties.Langs.Lang.BookMode*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.BookMode
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_BookMode
+  name: BookMode
+  nameWithType: Lang.BookMode
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.BookMode
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Cancel*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Cancel
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Cancel
+  name: Cancel
+  nameWithType: Lang.Cancel
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Cancel
+- uid: MBFWpfToolkit.Properties.Langs.Lang.ClosePDF*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.ClosePDF
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_ClosePDF
+  name: ClosePDF
+  nameWithType: Lang.ClosePDF
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.ClosePDF
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Confirm*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Confirm
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Confirm
+  name: Confirm
+  nameWithType: Lang.Confirm
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Confirm
+- uid: MBFWpfToolkit.Properties.Langs.Lang.contact_us*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.contact_us
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_contact_us
+  name: contact_us
+  nameWithType: Lang.contact_us
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.contact_us
+- uid: MBFWpfToolkit.Properties.Langs.Lang.ContinuousPagesMode*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.ContinuousPagesMode
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_ContinuousPagesMode
+  name: ContinuousPagesMode
+  nameWithType: Lang.ContinuousPagesMode
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.ContinuousPagesMode
+- uid: MBFWpfToolkit.Properties.Langs.Lang.DecimalValue*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.DecimalValue
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_DecimalValue
+  name: DecimalValue
+  nameWithType: Lang.DecimalValue
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.DecimalValue
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Delete*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Delete
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Delete
+  name: Delete
+  nameWithType: Lang.Delete
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Delete
+- uid: MBFWpfToolkit.Properties.Langs.Lang.DoubleValue*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.DoubleValue
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_DoubleValue
+  name: DoubleValue
+  nameWithType: Lang.DoubleValue
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.DoubleValue
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Download*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Download
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Download
+  name: Download
+  nameWithType: Lang.Download
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Download
+- uid: MBFWpfToolkit.Properties.Langs.Lang.DownloadSelected*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.DownloadSelected
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_DownloadSelected
+  name: DownloadSelected
+  nameWithType: Lang.DownloadSelected
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.DownloadSelected
+- uid: MBFWpfToolkit.Properties.Langs.Lang.DPI_*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.DPI_
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_DPI_
+  name: DPI_
+  nameWithType: Lang.DPI_
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.DPI_
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Edit*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Edit
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Edit
+  name: Edit
+  nameWithType: Lang.Edit
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Edit
+- uid: MBFWpfToolkit.Properties.Langs.Lang.FileType*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.FileType
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_FileType
+  name: FileType
+  nameWithType: Lang.FileType
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.FileType
+- uid: MBFWpfToolkit.Properties.Langs.Lang.FileURL*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.FileURL
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_FileURL
+  name: FileURL
+  nameWithType: Lang.FileURL
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.FileURL
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Findindocument*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Findindocument
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Findindocument
+  name: Findindocument
+  nameWithType: Lang.Findindocument
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Findindocument
+- uid: MBFWpfToolkit.Properties.Langs.Lang.FitHeight*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.FitHeight
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_FitHeight
+  name: FitHeight
+  nameWithType: Lang.FitHeight
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.FitHeight
+- uid: MBFWpfToolkit.Properties.Langs.Lang.FitWidth*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.FitWidth
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_FitWidth
+  name: FitWidth
+  nameWithType: Lang.FitWidth
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.FitWidth
+- uid: MBFWpfToolkit.Properties.Langs.Lang.From*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.From
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_From
+  name: From
+  nameWithType: Lang.From
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.From
+- uid: MBFWpfToolkit.Properties.Langs.Lang.GetPageText*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.GetPageText
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_GetPageText
+  name: GetPageText
+  nameWithType: Lang.GetPageText
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.GetPageText
+- uid: MBFWpfToolkit.Properties.Langs.Lang.HandTool*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.HandTool
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_HandTool
+  name: HandTool
+  nameWithType: Lang.HandTool
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.HandTool
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Installers*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Installers
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Installers
+  name: Installers
+  nameWithType: Lang.Installers
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Installers
+- uid: MBFWpfToolkit.Properties.Langs.Lang.IntValue*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.IntValue
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_IntValue
+  name: IntValue
+  nameWithType: Lang.IntValue
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.IntValue
+- uid: MBFWpfToolkit.Properties.Langs.Lang.InvalidFormat*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.InvalidFormat
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_InvalidFormat
+  name: InvalidFormat
+  nameWithType: Lang.InvalidFormat
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.InvalidFormat
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Islefttorightdocument*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Islefttorightdocument
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Islefttorightdocument
+  name: Islefttorightdocument
+  nameWithType: Lang.Islefttorightdocument
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Islefttorightdocument
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Isrighttoleftdocument*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Isrighttoleftdocument
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Isrighttoleftdocument
+  name: Isrighttoleftdocument
+  nameWithType: Lang.Isrighttoleftdocument
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Isrighttoleftdocument
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Light_DarkMode*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Light_DarkMode
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Light_DarkMode
+  name: Light_DarkMode
+  nameWithType: Lang.Light_DarkMode
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Light_DarkMode
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Miscellaneous*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Miscellaneous
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Miscellaneous
+  name: Miscellaneous
+  nameWithType: Lang.Miscellaneous
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Miscellaneous
+- uid: MBFWpfToolkit.Properties.Langs.Lang.NextPage*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.NextPage
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_NextPage
+  name: NextPage
+  nameWithType: Lang.NextPage
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.NextPage
+- uid: MBFWpfToolkit.Properties.Langs.Lang.No*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.No
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_No
+  name: No
+  nameWithType: Lang.No
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.No
+- uid: MBFWpfToolkit.Properties.Langs.Lang.NumberRange*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.NumberRange
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_NumberRange
+  name: NumberRange
+  nameWithType: Lang.NumberRange
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.NumberRange
+- uid: MBFWpfToolkit.Properties.Langs.Lang.of*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.of
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_of
+  name: of
+  nameWithType: Lang.of
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.of
+- uid: MBFWpfToolkit.Properties.Langs.Lang.OpenPdf*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.OpenPdf
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_OpenPdf
+  name: OpenPdf
+  nameWithType: Lang.OpenPdf
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.OpenPdf
+- uid: MBFWpfToolkit.Properties.Langs.Lang.PdfInformation*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.PdfInformation
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_PdfInformation
+  name: PdfInformation
+  nameWithType: Lang.PdfInformation
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.PdfInformation
+- uid: MBFWpfToolkit.Properties.Langs.Lang.PreviousPage*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.PreviousPage
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_PreviousPage
+  name: PreviousPage
+  nameWithType: Lang.PreviousPage
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.PreviousPage
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Renderallpages*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Renderallpages
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Renderallpages
+  name: Renderallpages
+  nameWithType: Lang.Renderallpages
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Renderallpages
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Required*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Required
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Required
+  name: Required
+  nameWithType: Lang.Required
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Required
+- uid: MBFWpfToolkit.Properties.Langs.Lang.RotateLeft*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.RotateLeft
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_RotateLeft
+  name: RotateLeft
+  nameWithType: Lang.RotateLeft
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.RotateLeft
+- uid: MBFWpfToolkit.Properties.Langs.Lang.RotateRight*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.RotateRight
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_RotateRight
+  name: RotateRight
+  nameWithType: Lang.RotateRight
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.RotateRight
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Save*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Save
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Save
+  name: Save
+  nameWithType: Lang.Save
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Save
+- uid: MBFWpfToolkit.Properties.Langs.Lang.SaveasImages*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.SaveasImages
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_SaveasImages
+  name: SaveasImages
+  nameWithType: Lang.SaveasImages
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.SaveasImages
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Searchforinstallers*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Searchforinstallers
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Searchforinstallers
+  name: Searchforinstallers
+  nameWithType: Lang.Searchforinstallers
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Searchforinstallers
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Searchterm*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Searchterm
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Searchterm
+  name: Searchterm
+  nameWithType: Lang.Searchterm
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Searchterm
+- uid: MBFWpfToolkit.Properties.Langs.Lang.SelectLanguage*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.SelectLanguage
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_SelectLanguage
+  name: SelectLanguage
+  nameWithType: Lang.SelectLanguage
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.SelectLanguage
+- uid: MBFWpfToolkit.Properties.Langs.Lang.ShowBookmarks*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.ShowBookmarks
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_ShowBookmarks
+  name: ShowBookmarks
+  nameWithType: Lang.ShowBookmarks
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.ShowBookmarks
+- uid: MBFWpfToolkit.Properties.Langs.Lang.SinglePageMode*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.SinglePageMode
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_SinglePageMode
+  name: SinglePageMode
+  nameWithType: Lang.SinglePageMode
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.SinglePageMode
+- uid: MBFWpfToolkit.Properties.Langs.Lang.SwapToDarkMode*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.SwapToDarkMode
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_SwapToDarkMode
+  name: SwapToDarkMode
+  nameWithType: Lang.SwapToDarkMode
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.SwapToDarkMode
+- uid: MBFWpfToolkit.Properties.Langs.Lang.SwapToLightMode*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.SwapToLightMode
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_SwapToLightMode
+  name: SwapToLightMode
+  nameWithType: Lang.SwapToLightMode
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.SwapToLightMode
+- uid: MBFWpfToolkit.Properties.Langs.Lang.To*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.To
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_To
+  name: To
+  nameWithType: Lang.To
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.To
+- uid: MBFWpfToolkit.Properties.Langs.Lang.TransparentPage*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.TransparentPage
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_TransparentPage
+  name: TransparentPage
+  nameWithType: Lang.TransparentPage
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.TransparentPage
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Upload*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Upload
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Upload
+  name: Upload
+  nameWithType: Lang.Upload
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Upload
+- uid: MBFWpfToolkit.Properties.Langs.Lang.UploadedDate*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.UploadedDate
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_UploadedDate
+  name: UploadedDate
+  nameWithType: Lang.UploadedDate
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.UploadedDate
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Url*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Url
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Url
+  name: Url
+  nameWithType: Lang.Url
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Url
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Version*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Version
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Version
+  name: Version
+  nameWithType: Lang.Version
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Version
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Yes*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Yes
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Yes
+  name: Yes
+  nameWithType: Lang.Yes
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Yes
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Zoomin*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Zoomin
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Zoomin
+  name: Zoomin
+  nameWithType: Lang.Zoomin
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Zoomin
+- uid: MBFWpfToolkit.Properties.Langs.Lang.Zoomout*
+  commentId: Overload:MBFWpfToolkit.Properties.Langs.Lang.Zoomout
+  isExternal: true
+  href: MBFWpfToolkit.Properties.Langs.Lang.html#MBFWpfToolkit_Properties_Langs_Lang_Zoomout
+  name: Zoomout
+  nameWithType: Lang.Zoomout
+  fullName: MBFWpfToolkit.Properties.Langs.Lang.Zoomout
+shouldSkipMarkup: true

@@ -14,7 +14,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.BoundingBoxExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Extensions/BoundingBoxExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/BoundingBoxExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -27,14 +27,8 @@ items:
     operations.
   example: []
   syntax:
-    content: >-
-      [LogAspect]
-
-      public static class BoundingBoxExtensions
-    content.vb: >-
-      <LogAspect>
-
-      Public Module BoundingBoxExtensions
+    content: public static class BoundingBoxExtensions
+    content.vb: Public Module BoundingBoxExtensions
   inheritance:
   - System.Object
   inheritedMembers:
@@ -45,10 +39,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  attributes:
-  - type: MB.Common.Aspects.LogAspect
-    ctor: MB.Common.Aspects.LogAspect.#ctor
-    arguments: []
 - uid: MBF.Revit.Geometry.Extensions.BoundingBoxExtensions.ToCurveLoop(Autodesk.Revit.DB.BoundingBoxXYZ)
   commentId: M:MBF.Revit.Geometry.Extensions.BoundingBoxExtensions.ToCurveLoop(Autodesk.Revit.DB.BoundingBoxXYZ)
   id: ToCurveLoop(Autodesk.Revit.DB.BoundingBoxXYZ)
@@ -62,7 +52,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.BoundingBoxExtensions.ToCurveLoop(Autodesk.Revit.DB.BoundingBoxXYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Extensions/BoundingBoxExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/BoundingBoxExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -416,6 +406,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.CurveLoop}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
+  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   name: MbResult<CurveLoop>
   nameWithType: MbResult<CurveLoop>
   fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.CurveLoop>
@@ -426,6 +417,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: <
   - uid: Autodesk.Revit.DB.CurveLoop
     name: CurveLoop
@@ -435,6 +427,7 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "

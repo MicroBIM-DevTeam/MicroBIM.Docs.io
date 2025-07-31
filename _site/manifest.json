@@ -12,6 +12,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Aspects.LoadingDialogAspect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Aspects.LoadingDialogAspect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Aspects.LoadingDialogAspect",
+      "Summary": "Provides an aspect that displays a loading dialog while a target method is executing."
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MB.Common.Aspects.LogAspect.yml",
       "output": {
         ".html": {
@@ -22,7 +36,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MB.Common.Aspects.LogAspect",
-      "Summary": "An aspect that logs method entry, exit, and exceptions using Serilog.\nThis aspect can be applied to methods to automatically log their execution lifecycle."
+      "Summary": "Provides logging functionality for methods using aspect-oriented programming."
     },
     {
       "type": "ManagedReference",
@@ -670,6 +684,90 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior",
+      "Summary": "Represents a behavior that can be attached to a <xref href=\"MicroBIM.UI.Controls.TextBox\" data-throw-if-not-resolved=\"false\"></xref> to enable or disable unit length conversion\nfunctionality when a specific key is pressed."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Units.Behaviours.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Units.Behaviours.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Units.Behaviours",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Units.Converters.RevitLengthValueConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Units.Converters.RevitLengthValueConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Units.Converters.RevitLengthValueConverter",
+      "Summary": "Provides methods to convert length values between internal units and formatted strings suitable for display in a\nRevit application."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Units.Converters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Units.Converters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Units.Converters",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Units.Helpers.TextBoxLengthConversionHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Units.Helpers.TextBoxLengthConversionHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Units.Helpers.TextBoxLengthConversionHelper",
+      "Summary": "Provides utility methods for converting and formatting text box input values related to length measurements."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MB.Common.Units.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MB.Common.Units.Helpers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MB.Common.Units.Helpers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MB.Common.Utils.Attributes.AttributeUtils.yml",
       "output": {
         ".html": {
@@ -1062,6 +1160,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.MbConnectorUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.MbConnectorUtilities.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.MbConnectorUtilities",
+      "Summary": "Provides utility methods for managing and interacting with MEP connectors in a Revit document."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.MbFamilyInstanceUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.MbFamilyInstanceUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.MbFamilyInstanceUtils",
+      "Summary": "Provides utility methods for working with family instances in a Revit model."
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MBF.Revit.Data.Utils.MbFlexPipesUtils.yml",
       "output": {
         ".html": {
@@ -1269,6 +1395,20 @@
       "IsMRef": true,
       "Title": "MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions",
       "Summary": "Provides extension methods for visualizing bounding boxes as 2D outlines in a Revit document."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Geometry.Extensions.ClipperConversionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Geometry.Extensions.ClipperConversionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Geometry.Extensions.ClipperConversionExtensions",
+      "Summary": "Provides extension methods for converting <xref href=\"CurveLoop\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Autodesk.Revit.DB.Curve\" data-throw-if-not-resolved=\"false\"></xref> objects into\nClipper-compatible path representations."
     },
     {
       "type": "ManagedReference",
@@ -1902,6 +2042,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Dialogs.LoadingDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Dialogs.LoadingDialog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Dialogs.LoadingDialog",
+      "Summary": "Represents a dialog that displays a loading indicator to the user."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Dialogs.ProgressDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Dialogs.ProgressDialog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Dialogs.ProgressDialog",
+      "Summary": "Represents a dialog that displays progress information and allows updating its message dynamically."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Dialogs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Dialogs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Dialogs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MBFWpfToolkit.Extensions.CollectionExtensions.yml",
       "output": {
         ".html": {
@@ -2098,16 +2280,16 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MBFWpfToolkit.Properties.Langs.Lang_en.yml",
+      "source_relative_path": "api/MBFWpfToolkit.Properties.Langs.Lang.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MBFWpfToolkit.Properties.Langs.Lang_en.html"
+          "relative_path": "api/MBFWpfToolkit.Properties.Langs.Lang.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "MBFWpfToolkit.Properties.Langs.Lang_en",
+      "Title": "MBFWpfToolkit.Properties.Langs.Lang",
       "Summary": "A strongly-typed resource class, for looking up localized strings, etc."
     },
     {
@@ -2122,6 +2304,76 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Properties.Langs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Services.AspectServiceAccessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Services.AspectServiceAccessor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Services.AspectServiceAccessor",
+      "Summary": "Retrieves a service of the specified type using the configured resolver function."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Services.DialogService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Services.DialogService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Services.DialogService",
+      "Summary": "Provides functionality for displaying, updating, and closing dialogs in an application."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Services.IDialogService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Services.IDialogService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Services.IDialogService",
+      "Summary": "Provides methods for displaying, updating, and closing dialog windows."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Services.IUpdatableDialogContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Services.IUpdatableDialogContent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Services.IUpdatableDialogContent",
+      "Summary": "Represents a dialog content that can be updated dynamically with a new message."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Services.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Services",
       "Summary": null
     },
     {
@@ -2234,34 +2486,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MBFWpfToolkit",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OnMethodBoundaryAspectCompile.MethodInfos.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OnMethodBoundaryAspectCompile.MethodInfos.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "OnMethodBoundaryAspectCompile.MethodInfos",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OnMethodBoundaryAspectCompile.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OnMethodBoundaryAspectCompile.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "OnMethodBoundaryAspectCompile",
       "Summary": null
     },
     {

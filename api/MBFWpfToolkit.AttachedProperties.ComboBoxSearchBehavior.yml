@@ -18,7 +18,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/AttachedProperties/ComboBoxSearchBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/AttachedProperties/ComboBoxSearchBehavior.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -52,7 +52,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.IsSearchEnabledProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/AttachedProperties/ComboBoxSearchBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/AttachedProperties/ComboBoxSearchBehavior.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -90,7 +90,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetIsSearchEnabled(System.Windows.DependencyObject, bool)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/AttachedProperties/ComboBoxSearchBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/AttachedProperties/ComboBoxSearchBehavior.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -125,7 +125,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetIsSearchEnabled(System.Windows.DependencyObject)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/AttachedProperties/ComboBoxSearchBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/AttachedProperties/ComboBoxSearchBehavior.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -154,7 +154,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.GetFilteredItems(System.Windows.DependencyObject)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/AttachedProperties/ComboBoxSearchBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/AttachedProperties/ComboBoxSearchBehavior.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -186,7 +186,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.ComboBoxSearchBehavior.SetFilteredItems(System.Windows.DependencyObject, System.Collections.ObjectModel.ObservableCollection<string>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/AttachedProperties/ComboBoxSearchBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/AttachedProperties/ComboBoxSearchBehavior.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties

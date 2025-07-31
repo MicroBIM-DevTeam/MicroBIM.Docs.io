@@ -14,7 +14,7 @@ items:
   fullName: MBF.Revit.Geometry.Utils.PolygonUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Utils/PolygonUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Utils/PolygonUtils.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Utils
@@ -27,14 +27,8 @@ items:
     input points are ignored.
   example: []
   syntax:
-    content: >-
-      [LogAspect]
-
-      public static class PolygonUtils
-    content.vb: >-
-      <LogAspect>
-
-      Public Module PolygonUtils
+    content: public static class PolygonUtils
+    content.vb: Public Module PolygonUtils
   inheritance:
   - System.Object
   inheritedMembers:
@@ -45,10 +39,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  attributes:
-  - type: MB.Common.Aspects.LogAspect
-    ctor: MB.Common.Aspects.LogAspect.#ctor
-    arguments: []
 - uid: MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ)
   commentId: M:MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ)
   id: IsPointInsidePolygon(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ)
@@ -61,7 +51,7 @@ items:
   fullName: MBF.Revit.Geometry.Utils.PolygonUtils.IsPointInsidePolygon(System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Utils/PolygonUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Utils/PolygonUtils.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Utils

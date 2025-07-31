@@ -1,0 +1,510 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Units.Helpers.TextBoxLengthConversionHelper
+  commentId: T:MB.Common.Units.Helpers.TextBoxLengthConversionHelper
+  id: TextBoxLengthConversionHelper
+  parent: MB.Common.Units.Helpers
+  children:
+  - MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ApplyGroupSizeConversion(MicroBIM.UI.Controls.TextBox)
+  - MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertTextBoxGroupSize(System.String)
+  - MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertToCurrentUnits(System.Double)
+  langs:
+  - csharp
+  - vb
+  name: TextBoxLengthConversionHelper
+  nameWithType: TextBoxLengthConversionHelper
+  fullName: MB.Common.Units.Helpers.TextBoxLengthConversionHelper
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Units/Helpers/TextBoxLengthConversionHelper.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Units.Helpers
+  summary: Provides utility methods for converting and formatting text box input values related to length measurements.
+  remarks: >-
+    This helper class includes methods to apply group size conversions to text box inputs and to convert
+                numeric values to the current unit system with appropriate formatting. It is designed to work with different
+                versions of the API, handling unit specifications and formatting options accordingly.
+  example: []
+  syntax:
+    content: public static class TextBoxLengthConversionHelper
+    content.vb: Public Module TextBoxLengthConversionHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ApplyGroupSizeConversion(MicroBIM.UI.Controls.TextBox)
+  commentId: M:MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ApplyGroupSizeConversion(MicroBIM.UI.Controls.TextBox)
+  id: ApplyGroupSizeConversion(MicroBIM.UI.Controls.TextBox)
+  parent: MB.Common.Units.Helpers.TextBoxLengthConversionHelper
+  langs:
+  - csharp
+  - vb
+  name: ApplyGroupSizeConversion(TextBox)
+  nameWithType: TextBoxLengthConversionHelper.ApplyGroupSizeConversion(TextBox)
+  fullName: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ApplyGroupSizeConversion(MicroBIM.UI.Controls.TextBox)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Units/Helpers/TextBoxLengthConversionHelper.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Units.Helpers
+  summary: Converts the text in the specified <xref href="MicroBIM.UI.Controls.TextBox" data-throw-if-not-resolved="false"></xref> to a standardized group size format.
+  remarks: >-
+    This method updates the text of the provided <xref href="MicroBIM.UI.Controls.TextBox" data-throw-if-not-resolved="false"></xref> by applying a conversion
+                to ensure the text represents a valid group size format. The conversion logic is defined within the method and
+                affects the text directly.
+  example: []
+  syntax:
+    content: public static void ApplyGroupSizeConversion(TextBox textBox)
+    parameters:
+    - id: textBox
+      type: MicroBIM.UI.Controls.TextBox
+      description: The <xref href="MicroBIM.UI.Controls.TextBox" data-throw-if-not-resolved="false"></xref> whose text will be converted.
+    content.vb: Public Shared Sub ApplyGroupSizeConversion(textBox As TextBox)
+  overload: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ApplyGroupSizeConversion*
+- uid: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertTextBoxGroupSize(System.String)
+  commentId: M:MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertTextBoxGroupSize(System.String)
+  id: ConvertTextBoxGroupSize(System.String)
+  parent: MB.Common.Units.Helpers.TextBoxLengthConversionHelper
+  langs:
+  - csharp
+  - vb
+  name: ConvertTextBoxGroupSize(string)
+  nameWithType: TextBoxLengthConversionHelper.ConvertTextBoxGroupSize(string)
+  fullName: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertTextBoxGroupSize(string)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Units/Helpers/TextBoxLengthConversionHelper.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Units.Helpers
+  summary: Converts a string representation of a length value into a formatted string with unit symbols.
+  remarks: >-
+    The method uses the active document's unit settings to parse and format the length value. It
+                ensures that the formatted output includes unit symbols and suppresses trailing zeros.
+  example: []
+  syntax:
+    content: public static string ConvertTextBoxGroupSize(string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string representation of the length value to convert.
+    return:
+      type: System.String
+      description: A formatted string that includes the length value with unit symbols appended.
+    content.vb: Public Shared Function ConvertTextBoxGroupSize(value As String) As String
+  overload: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertTextBoxGroupSize*
+  nameWithType.vb: TextBoxLengthConversionHelper.ConvertTextBoxGroupSize(String)
+  fullName.vb: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertTextBoxGroupSize(String)
+  name.vb: ConvertTextBoxGroupSize(String)
+- uid: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertToCurrentUnits(System.Double)
+  commentId: M:MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertToCurrentUnits(System.Double)
+  id: ConvertToCurrentUnits(System.Double)
+  parent: MB.Common.Units.Helpers.TextBoxLengthConversionHelper
+  langs:
+  - csharp
+  - vb
+  name: ConvertToCurrentUnits(double)
+  nameWithType: TextBoxLengthConversionHelper.ConvertToCurrentUnits(double)
+  fullName: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertToCurrentUnits(double)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Units/Helpers/TextBoxLengthConversionHelper.cs
+  assemblies:
+  - MB.Common
+  namespace: MB.Common.Units.Helpers
+  summary: Converts a numeric value to a string representation in the current document's units.
+  remarks: >-
+    The method adapts to different versions of the API, ensuring compatibility with both older
+                and newer versions. It applies formatting options such as suppressing trailing and leading zeros and appending
+                unit symbols to the formatted string.
+  example: []
+  syntax:
+    content: public static string ConvertToCurrentUnits(double value)
+    parameters:
+    - id: value
+      type: System.Double
+      description: The numeric value to convert.
+    return:
+      type: System.String
+      description: >-
+        A string representing the value formatted according to the current document's unit settings, including unit
+                    symbols. If the document's units are not available, returns the value formatted to two decimal places.
+    content.vb: Public Shared Function ConvertToCurrentUnits(value As Double) As String
+  overload: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertToCurrentUnits*
+  nameWithType.vb: TextBoxLengthConversionHelper.ConvertToCurrentUnits(Double)
+  fullName.vb: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertToCurrentUnits(Double)
+  name.vb: ConvertToCurrentUnits(Double)
+references:
+- uid: MB.Common.Units.Helpers
+  commentId: N:MB.Common.Units.Helpers
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Units.Helpers
+  nameWithType: MB.Common.Units.Helpers
+  fullName: MB.Common.Units.Helpers
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Units
+    name: Units
+    isExternal: true
+    href: MB.Common.Units.html
+  - name: .
+  - uid: MB.Common.Units.Helpers
+    name: Helpers
+    isExternal: true
+    href: MB.Common.Units.Helpers.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Units
+    name: Units
+    isExternal: true
+    href: MB.Common.Units.html
+  - name: .
+  - uid: MB.Common.Units.Helpers
+    name: Helpers
+    isExternal: true
+    href: MB.Common.Units.Helpers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MicroBIM.UI.Controls.TextBox
+  commentId: T:MicroBIM.UI.Controls.TextBox
+  parent: MicroBIM.UI.Controls
+  isExternal: true
+  name: TextBox
+  nameWithType: TextBox
+  fullName: MicroBIM.UI.Controls.TextBox
+- uid: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ApplyGroupSizeConversion*
+  commentId: Overload:MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ApplyGroupSizeConversion
+  isExternal: true
+  href: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.html#MB_Common_Units_Helpers_TextBoxLengthConversionHelper_ApplyGroupSizeConversion_MicroBIM_UI_Controls_TextBox_
+  name: ApplyGroupSizeConversion
+  nameWithType: TextBoxLengthConversionHelper.ApplyGroupSizeConversion
+  fullName: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ApplyGroupSizeConversion
+- uid: MicroBIM.UI.Controls
+  commentId: N:MicroBIM.UI.Controls
+  isExternal: true
+  name: MicroBIM.UI.Controls
+  nameWithType: MicroBIM.UI.Controls
+  fullName: MicroBIM.UI.Controls
+  spec.csharp:
+  - uid: MicroBIM
+    name: MicroBIM
+    isExternal: true
+  - name: .
+  - uid: MicroBIM.UI
+    name: UI
+    isExternal: true
+  - name: .
+  - uid: MicroBIM.UI.Controls
+    name: Controls
+    isExternal: true
+  spec.vb:
+  - uid: MicroBIM
+    name: MicroBIM
+    isExternal: true
+  - name: .
+  - uid: MicroBIM.UI
+    name: UI
+    isExternal: true
+  - name: .
+  - uid: MicroBIM.UI.Controls
+    name: Controls
+    isExternal: true
+- uid: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertTextBoxGroupSize*
+  commentId: Overload:MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertTextBoxGroupSize
+  isExternal: true
+  href: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.html#MB_Common_Units_Helpers_TextBoxLengthConversionHelper_ConvertTextBoxGroupSize_System_String_
+  name: ConvertTextBoxGroupSize
+  nameWithType: TextBoxLengthConversionHelper.ConvertTextBoxGroupSize
+  fullName: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertTextBoxGroupSize
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertToCurrentUnits*
+  commentId: Overload:MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertToCurrentUnits
+  isExternal: true
+  href: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.html#MB_Common_Units_Helpers_TextBoxLengthConversionHelper_ConvertToCurrentUnits_System_Double_
+  name: ConvertToCurrentUnits
+  nameWithType: TextBoxLengthConversionHelper.ConvertToCurrentUnits
+  fullName: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertToCurrentUnits
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+shouldSkipMarkup: true

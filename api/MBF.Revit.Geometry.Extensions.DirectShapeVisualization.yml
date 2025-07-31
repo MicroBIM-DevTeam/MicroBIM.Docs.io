@@ -14,7 +14,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.DirectShapeVisualization
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Extensions/DirectShapeVisualization.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/DirectShapeVisualization.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -27,14 +27,8 @@ items:
     shape types and instances, leveraging Revit's geometry creation utilities.
   example: []
   syntax:
-    content: >-
-      [LogAspect]
-
-      public static class DirectShapeVisualization
-    content.vb: >-
-      <LogAspect>
-
-      Public Module DirectShapeVisualization
+    content: public static class DirectShapeVisualization
+    content.vb: Public Module DirectShapeVisualization
   inheritance:
   - System.Object
   inheritedMembers:
@@ -45,10 +39,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  attributes:
-  - type: MB.Common.Aspects.LogAspect
-    ctor: MB.Common.Aspects.LogAspect.#ctor
-    arguments: []
 - uid: MBF.Revit.Geometry.Extensions.DirectShapeVisualization.CreateSphere(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.XYZ,System.Double)
   commentId: M:MBF.Revit.Geometry.Extensions.DirectShapeVisualization.CreateSphere(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.XYZ,System.Double)
   id: CreateSphere(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.XYZ,System.Double)
@@ -61,7 +51,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.DirectShapeVisualization.CreateSphere(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.XYZ, double)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Extensions/DirectShapeVisualization.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/DirectShapeVisualization.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions

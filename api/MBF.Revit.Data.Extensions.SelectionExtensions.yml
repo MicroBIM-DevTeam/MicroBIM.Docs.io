@@ -18,21 +18,15 @@ items:
   fullName: MBF.Revit.Data.Extensions.SelectionExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/SelectionExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/SelectionExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
   summary: Provides extension methods for retrieving selected elements of specific types from a <xref href="UIDocument" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: >-
-      [LogAspect]
-
-      public static class SelectionExtensions
-    content.vb: >-
-      <LogAspect>
-
-      Public Module SelectionExtensions
+    content: public static class SelectionExtensions
+    content.vb: Public Module SelectionExtensions
   inheritance:
   - System.Object
   inheritedMembers:
@@ -43,10 +37,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  attributes:
-  - type: MB.Common.Aspects.LogAspect
-    ctor: MB.Common.Aspects.LogAspect.#ctor
-    arguments: []
 - uid: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedElements``1(Autodesk.Revit.UI.UIDocument)
   commentId: M:MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedElements``1(Autodesk.Revit.UI.UIDocument)
   id: GetSelectedElements``1(Autodesk.Revit.UI.UIDocument)
@@ -60,7 +50,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedElements<T>(Autodesk.Revit.UI.UIDocument)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/SelectionExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/SelectionExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -100,7 +90,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedSpaces(Autodesk.Revit.UI.UIDocument)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/SelectionExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/SelectionExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -134,7 +124,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedFamilyInstances(Autodesk.Revit.UI.UIDocument)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/SelectionExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/SelectionExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -168,7 +158,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedPipes(Autodesk.Revit.UI.UIDocument)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/SelectionExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/SelectionExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -202,7 +192,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.SelectionExtensions.GetSelectedSprinklers(Autodesk.Revit.UI.UIDocument)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Extensions/SelectionExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/SelectionExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions

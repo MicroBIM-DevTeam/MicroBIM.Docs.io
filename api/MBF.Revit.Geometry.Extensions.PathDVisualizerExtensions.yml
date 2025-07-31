@@ -15,7 +15,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Extensions/PathDVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/PathDVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -33,14 +33,8 @@ items:
     color parameter.
   example: []
   syntax:
-    content: >-
-      [LogAspect]
-
-      public static class PathDVisualizerExtensions
-    content.vb: >-
-      <LogAspect>
-
-      Public Module PathDVisualizerExtensions
+    content: public static class PathDVisualizerExtensions
+    content.vb: Public Module PathDVisualizerExtensions
   inheritance:
   - System.Object
   inheritedMembers:
@@ -51,10 +45,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  attributes:
-  - type: MB.Common.Aspects.LogAspect
-    ctor: MB.Common.Aspects.LogAspect.#ctor
-    arguments: []
 - uid: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D(Clipper2Lib.PathD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
   commentId: M:MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D(Clipper2Lib.PathD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
   id: VisualizePathD2D(Clipper2Lib.PathD,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Color)
@@ -68,7 +58,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathD2D(Clipper2Lib.PathD, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Extensions/PathDVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/PathDVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -104,7 +94,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.PathDVisualizerExtensions.VisualizePathsD2D(Clipper2Lib.PathsD, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/92ee7b3d952c912142fec1d83709948a7d00945f/Extensions/PathDVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/PathDVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions

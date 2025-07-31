@@ -15,6 +15,8 @@ items:
   nameWithType: GenericJsonFileService
   fullName: MB.Common.Jsons.GenericJsonFileService
   type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Jsons/GenericJsonFileService.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Jsons
@@ -44,6 +46,8 @@ items:
   nameWithType: GenericJsonFileService.EnsureFileExists(string)
   fullName: MB.Common.Jsons.GenericJsonFileService.EnsureFileExists(string)
   type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Jsons/GenericJsonFileService.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Jsons
@@ -85,6 +89,8 @@ items:
   nameWithType: GenericJsonFileService.Save<T>(T, string)
   fullName: MB.Common.Jsons.GenericJsonFileService.Save<T>(T, string)
   type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Jsons/GenericJsonFileService.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Jsons
@@ -122,6 +128,8 @@ items:
   nameWithType: GenericJsonFileService.Load<T>(string)
   fullName: MB.Common.Jsons.GenericJsonFileService.Load<T>(string)
   type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Jsons/GenericJsonFileService.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Jsons

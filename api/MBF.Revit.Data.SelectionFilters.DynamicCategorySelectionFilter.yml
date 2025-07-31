@@ -16,7 +16,7 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/SelectionFilters/DynamicCategorySelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/SelectionFilters/DynamicCategorySelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
@@ -27,14 +27,8 @@ items:
     supports both Revit 2024+ (long-based ElementId) and earlier versions (int-based ElementId).
   example: []
   syntax:
-    content: >-
-      [LogAspect]
-
-      public class DynamicCategorySelectionFilter : ISelectionFilter
-    content.vb: >-
-      <LogAspect>
-
-      Public Class DynamicCategorySelectionFilter Implements ISelectionFilter
+    content: 'public class DynamicCategorySelectionFilter : ISelectionFilter'
+    content.vb: Public Class DynamicCategorySelectionFilter Implements ISelectionFilter
   inheritance:
   - System.Object
   implements:
@@ -47,10 +41,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  attributes:
-  - type: MB.Common.Aspects.LogAspect
-    ctor: MB.Common.Aspects.LogAspect.#ctor
-    arguments: []
 - uid: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
   commentId: M:MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.#ctor(Autodesk.Revit.DB.BuiltInCategory[])
   id: '#ctor(Autodesk.Revit.DB.BuiltInCategory[])'
@@ -63,7 +53,7 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.DynamicCategorySelectionFilter(params Autodesk.Revit.DB.BuiltInCategory[])
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/SelectionFilters/DynamicCategorySelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/SelectionFilters/DynamicCategorySelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
@@ -95,7 +85,7 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.AllowElement(Autodesk.Revit.DB.Element)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/SelectionFilters/DynamicCategorySelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/SelectionFilters/DynamicCategorySelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters
@@ -124,7 +114,7 @@ items:
   fullName: MBF.Revit.Data.SelectionFilters.DynamicCategorySelectionFilter.AllowReference(Autodesk.Revit.DB.Reference, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/SelectionFilters/DynamicCategorySelectionFilter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/SelectionFilters/DynamicCategorySelectionFilter.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.SelectionFilters

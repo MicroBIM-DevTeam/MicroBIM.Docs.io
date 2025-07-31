@@ -13,6 +13,8 @@ items:
   nameWithType: EmbeddedResourceService
   fullName: MB.Common.Services.EmbeddedResourceService
   type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Services/EmbeddedResourceService.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Services
@@ -42,6 +44,8 @@ items:
   nameWithType: EmbeddedResourceService.LoadEmbeddedResourceAsync<T>(string, Assembly)
   fullName: MB.Common.Services.EmbeddedResourceService.LoadEmbeddedResourceAsync<T>(string, System.Reflection.Assembly)
   type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Services/EmbeddedResourceService.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Services

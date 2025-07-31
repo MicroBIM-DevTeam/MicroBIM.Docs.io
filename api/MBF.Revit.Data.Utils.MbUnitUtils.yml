@@ -15,7 +15,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbUnitUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbUnitUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbUnitUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -28,14 +28,8 @@ items:
     representations.
   example: []
   syntax:
-    content: >-
-      [LogAspect]
-
-      public static class MbUnitUtils
-    content.vb: >-
-      <LogAspect>
-
-      Public Module MbUnitUtils
+    content: public static class MbUnitUtils
+    content.vb: Public Module MbUnitUtils
   inheritance:
   - System.Object
   inheritedMembers:
@@ -46,10 +40,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  attributes:
-  - type: MB.Common.Aspects.LogAspect
-    ctor: MB.Common.Aspects.LogAspect.#ctor
-    arguments: []
 - uid: MBF.Revit.Data.Utils.MbUnitUtils.GetLengthUnitSymbol
   commentId: M:MBF.Revit.Data.Utils.MbUnitUtils.GetLengthUnitSymbol
   id: GetLengthUnitSymbol
@@ -62,7 +52,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbUnitUtils.GetLengthUnitSymbol()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbUnitUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbUnitUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -90,7 +80,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbUnitUtils.GetStandardUnitSymbol(object)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/cfba204597a69abbdd76b80cca92b1c3295bdc29/Utils/MbUnitUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbUnitUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils

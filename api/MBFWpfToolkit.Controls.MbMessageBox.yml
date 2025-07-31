@@ -5,7 +5,9 @@ items:
   id: MbMessageBox
   parent: MBFWpfToolkit.Controls
   children:
+  - MBFWpfToolkit.Controls.MbMessageBox.OnClosed(System.EventArgs)
   - MBFWpfToolkit.Controls.MbMessageBox.Show(System.String,System.Windows.MessageBoxButton,MBFWpfToolkit.Constants.MbMessageIcon)
+  - MBFWpfToolkit.Controls.MbMessageBox._parentWindow
   langs:
   - csharp
   - vb
@@ -14,7 +16,7 @@ items:
   fullName: MBFWpfToolkit.Controls.MbMessageBox
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Controls/MbMessageBox.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Controls/MbMessageBox.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls
@@ -38,6 +40,7 @@ items:
   - MBFWpfToolkit.MbWindow.ShowLogoProperty
   - MBFWpfToolkit.MbWindow.ShowPluginNameProperty
   - MBFWpfToolkit.MbWindow.ShowPluginVersionProperty
+  - MBFWpfToolkit.MbWindow.OnIsDarkChanged(System.Boolean,System.Boolean)
   - MBFWpfToolkit.MbWindow.GetAllChildrenOfType``1(System.Windows.DependencyObject)
   - MBFWpfToolkit.MbWindow.ApplyThemeForElement(System.Windows.FrameworkElement,System.String)
   - MBFWpfToolkit.MbWindow.InitializeWindow
@@ -59,7 +62,54 @@ items:
   - MBFWpfToolkit.MbWindow.ShowPluginName
   - MBFWpfToolkit.MbWindow.ShowPluginVersion
   - MBFWpfToolkit.MbWindow.MainResources
+  - MBFWpfToolkit.MbWindow.IsDarkChanged
   - MBFWpfToolkit.MbWindow.PropertyChanged
+- uid: MBFWpfToolkit.Controls.MbMessageBox._parentWindow
+  commentId: F:MBFWpfToolkit.Controls.MbMessageBox._parentWindow
+  id: _parentWindow
+  parent: MBFWpfToolkit.Controls.MbMessageBox
+  langs:
+  - csharp
+  - vb
+  name: _parentWindow
+  nameWithType: MbMessageBox._parentWindow
+  fullName: MBFWpfToolkit.Controls.MbMessageBox._parentWindow
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Controls/MbMessageBox.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Controls
+  syntax:
+    content: public static MbWindow _parentWindow
+    return:
+      type: MBFWpfToolkit.MbWindow
+    content.vb: Public Shared _parentWindow As MbWindow
+- uid: MBFWpfToolkit.Controls.MbMessageBox.OnClosed(System.EventArgs)
+  commentId: M:MBFWpfToolkit.Controls.MbMessageBox.OnClosed(System.EventArgs)
+  id: OnClosed(System.EventArgs)
+  parent: MBFWpfToolkit.Controls.MbMessageBox
+  langs:
+  - csharp
+  - vb
+  name: OnClosed(EventArgs)
+  nameWithType: MbMessageBox.OnClosed(EventArgs)
+  fullName: MBFWpfToolkit.Controls.MbMessageBox.OnClosed(System.EventArgs)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Controls/MbMessageBox.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Controls
+  summary: Cleanup when window is closed
+  example: []
+  syntax:
+    content: protected override void OnClosed(EventArgs e)
+    parameters:
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Overrides Sub OnClosed(e As EventArgs)
+  overload: MBFWpfToolkit.Controls.MbMessageBox.OnClosed*
 - uid: MBFWpfToolkit.Controls.MbMessageBox.Show(System.String,System.Windows.MessageBoxButton,MBFWpfToolkit.Constants.MbMessageIcon)
   commentId: M:MBFWpfToolkit.Controls.MbMessageBox.Show(System.String,System.Windows.MessageBoxButton,MBFWpfToolkit.Constants.MbMessageIcon)
   id: Show(System.String,System.Windows.MessageBoxButton,MBFWpfToolkit.Constants.MbMessageIcon)
@@ -72,7 +122,7 @@ items:
   fullName: MBFWpfToolkit.Controls.MbMessageBox.Show(string, System.Windows.MessageBoxButton, MBFWpfToolkit.Constants.MbMessageIcon)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/66b8ee6c7ec79e6a04b04230636c12cf4b385ed7/Controls/MbMessageBox.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Controls/MbMessageBox.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls
@@ -225,6 +275,51 @@ references:
   name: ShowPluginVersionProperty
   nameWithType: MbWindow.ShowPluginVersionProperty
   fullName: MBFWpfToolkit.MbWindow.ShowPluginVersionProperty
+- uid: MBFWpfToolkit.MbWindow.OnIsDarkChanged(System.Boolean,System.Boolean)
+  commentId: M:MBFWpfToolkit.MbWindow.OnIsDarkChanged(System.Boolean,System.Boolean)
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_OnIsDarkChanged_System_Boolean_System_Boolean_
+  name: OnIsDarkChanged(bool, bool)
+  nameWithType: MbWindow.OnIsDarkChanged(bool, bool)
+  fullName: MBFWpfToolkit.MbWindow.OnIsDarkChanged(bool, bool)
+  nameWithType.vb: MbWindow.OnIsDarkChanged(Boolean, Boolean)
+  fullName.vb: MBFWpfToolkit.MbWindow.OnIsDarkChanged(Boolean, Boolean)
+  name.vb: OnIsDarkChanged(Boolean, Boolean)
+  spec.csharp:
+  - uid: MBFWpfToolkit.MbWindow.OnIsDarkChanged(System.Boolean,System.Boolean)
+    name: OnIsDarkChanged
+    isExternal: true
+    href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_OnIsDarkChanged_System_Boolean_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: MBFWpfToolkit.MbWindow.OnIsDarkChanged(System.Boolean,System.Boolean)
+    name: OnIsDarkChanged
+    isExternal: true
+    href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_OnIsDarkChanged_System_Boolean_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
 - uid: MBFWpfToolkit.MbWindow.GetAllChildrenOfType``1(System.Windows.DependencyObject)
   commentId: M:MBFWpfToolkit.MbWindow.GetAllChildrenOfType``1(System.Windows.DependencyObject)
   parent: MBFWpfToolkit.MbWindow
@@ -599,6 +694,14 @@ references:
   name: MainResources
   nameWithType: MbWindow.MainResources
   fullName: MBFWpfToolkit.MbWindow.MainResources
+- uid: MBFWpfToolkit.MbWindow.IsDarkChanged
+  commentId: E:MBFWpfToolkit.MbWindow.IsDarkChanged
+  parent: MBFWpfToolkit.MbWindow
+  isExternal: true
+  href: MBFWpfToolkit.MbWindow.html#MBFWpfToolkit_MbWindow_IsDarkChanged
+  name: IsDarkChanged
+  nameWithType: MbWindow.IsDarkChanged
+  fullName: MBFWpfToolkit.MbWindow.IsDarkChanged
 - uid: MBFWpfToolkit.MbWindow.PropertyChanged
   commentId: E:MBFWpfToolkit.MbWindow.PropertyChanged
   parent: MBFWpfToolkit.MbWindow
@@ -702,6 +805,21 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
+- uid: MBFWpfToolkit.Controls.MbMessageBox.OnClosed*
+  commentId: Overload:MBFWpfToolkit.Controls.MbMessageBox.OnClosed
+  isExternal: true
+  href: MBFWpfToolkit.Controls.MbMessageBox.html#MBFWpfToolkit_Controls_MbMessageBox_OnClosed_System_EventArgs_
+  name: OnClosed
+  nameWithType: MbMessageBox.OnClosed
+  fullName: MBFWpfToolkit.Controls.MbMessageBox.OnClosed
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
 - uid: MBFWpfToolkit.Controls.MbMessageBox.Show*
   commentId: Overload:MBFWpfToolkit.Controls.MbMessageBox.Show
   isExternal: true

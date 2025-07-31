@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MB.Common.Units.Helpers
+  commentId: N:MB.Common.Units.Helpers
+  id: MB.Common.Units.Helpers
+  children:
+  - MB.Common.Units.Helpers.TextBoxLengthConversionHelper
+  langs:
+  - csharp
+  - vb
+  name: MB.Common.Units.Helpers
+  nameWithType: MB.Common.Units.Helpers
+  fullName: MB.Common.Units.Helpers
+  type: Namespace
+  assemblies:
+  - MB.Common
+references:
+- uid: MB.Common.Units.Helpers.TextBoxLengthConversionHelper
+  commentId: T:MB.Common.Units.Helpers.TextBoxLengthConversionHelper
+  isExternal: true
+  href: MB.Common.Units.Helpers.TextBoxLengthConversionHelper.html
+  name: TextBoxLengthConversionHelper
+  nameWithType: TextBoxLengthConversionHelper
+  fullName: MB.Common.Units.Helpers.TextBoxLengthConversionHelper
+shouldSkipMarkup: true
