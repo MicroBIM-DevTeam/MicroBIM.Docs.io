@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MbConnectorUtilities | MIcroBIM Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MbConnectorUtilities | MIcroBIM Docs ">
+      
+      <meta name="description" content="Provides utility methods for managing and interacting with MEP connectors in a Revit document.">
+      <link rel="icon" href="../images/logo.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/MicroBimLogo.png" alt="MicroBIM">
+            MicroBIM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MBF.Revit.Data.Utils.MbConnectorUtilities">
+
+
+
+  <h1 id="MBF_Revit_Data_Utils_MbConnectorUtilities" data-uid="MBF.Revit.Data.Utils.MbConnectorUtilities" class="text-break">
+Class MbConnectorUtilities  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MBF.html">MBF</a>.<a class="xref" href="MBF.Revit.html">Revit</a>.<a class="xref" href="MBF.Revit.Data.html">Data</a>.<a class="xref" href="MBF.Revit.Data.Utils.html">Utils</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MBF.Revit.Data.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary">Provides utility methods for managing and interacting with MEP connectors in a Revit document.</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class MbConnectorUtilities</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MbConnectorUtilities</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="MBF_Revit_Data_Utils_MbConnectorUtilities_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">This class focuses on general MEP connector operations, fitting analysis, and connector traversal.
+            For pipe-specific operations, use <a class="xref" href="MBF.Revit.Data.Utils.MbPipesUtils.html">MbPipesUtils</a>.</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MBF_Revit_Data_Utils_MbConnectorUtilities_BypassNonConnectorFittings_" data-uid="MBF.Revit.Data.Utils.MbConnectorUtilities.BypassNonConnectorFittings*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbConnectorUtilities_BypassNonConnectorFittings_Autodesk_Revit_DB_FamilyInstance_System_Collections_Generic_List_Autodesk_Revit_DB_ElementId__" data-uid="MBF.Revit.Data.Utils.MbConnectorUtilities.BypassNonConnectorFittings(Autodesk.Revit.DB.FamilyInstance,System.Collections.Generic.List{Autodesk.Revit.DB.ElementId})">
+  BypassNonConnectorFittings(FamilyInstance, List&lt;ElementId&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Traverses a chain of connected fittings starting from the specified fitting, bypassing any fittings that are of
+the type <a class="xref" href="MB.Common.Settings.ListingSettings.StandardFittingType.html#MB_Common_Settings_ListingSettings_StandardFittingType_ModelingHelperNonConnector">ModelingHelperNonConnector</a>.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;FamilyInstance&gt; BypassNonConnectorFittings(FamilyInstance startingFitting, List&lt;ElementId&gt; excludedElementIds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startingFitting</code> <span class="xref">FamilyInstance</span></dt>
+    <dd>The initial fitting from which to start the traversal. Cannot be null.</dd>
+    <dt><code>excludedElementIds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd>A list of element IDs to exclude from the traversal. Cannot be null.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<span class="xref">FamilyInstance</span>&gt;</dt>
+    <dd>A <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing the first fitting that is not of type <a class="xref" href="MB.Common.Settings.ListingSettings.StandardFittingType.html#MB_Common_Settings_ListingSettings_StandardFittingType_ModelingHelperNonConnector">ModelingHelperNonConnector</a>, or an error message if the traversal fails.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbConnectorUtilities_BypassNonConnectorFittings_Autodesk_Revit_DB_FamilyInstance_System_Collections_Generic_List_Autodesk_Revit_DB_ElementId___remarks">Remarks</h4>
+  <div class="markdown level1 remarks">The method will return a failure result if the <code class="paramref">startingFitting</code> is null, if
+            the <code class="paramref">excludedElementIds</code> list is null, or if no suitable fitting is found within the maximum
+            number of iterations. The traversal will also fail if any fitting in the chain cannot be processed due to
+            missing family information or connectivity issues.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbConnectorUtilities_GetConnectedElementsFromFitting_" data-uid="MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectedElementsFromFitting*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbConnectorUtilities_GetConnectedElementsFromFitting_Autodesk_Revit_DB_FamilyInstance_" data-uid="MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectedElementsFromFitting(Autodesk.Revit.DB.FamilyInstance)">
+  GetConnectedElementsFromFitting(FamilyInstance)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves a list of elements that are directly or indirectly connected to the specified fitting.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;List&lt;Element&gt;&gt; GetConnectedElementsFromFitting(FamilyInstance fitting)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fitting</code> <span class="xref">FamilyInstance</span></dt>
+    <dd>The <span class="xref">FamilyInstance</span> representing the fitting from which to find connected elements. Must not be
+            null and must have a valid MEP model.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Element</span>&gt;&gt;</dt>
+    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing a list of <span class="xref">Element</span> objects that are connected to the
+            fitting. Returns a failure result if the fitting or its MEP model is null or invalid, or if an error occurs
+            while retrieving connectors.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbConnectorUtilities_GetConnectedElementsFromFitting_Autodesk_Revit_DB_FamilyInstance__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">The method first attempts to find elements directly connected to the fitting's connectors. If
+            a connector is not directly connected to an element, the method searches for the nearest unconnected connector
+            in the document.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbConnectorUtilities_GetConnectorsFromFamilyInstance_" data-uid="MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFamilyInstance*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbConnectorUtilities_GetConnectorsFromFamilyInstance_Autodesk_Revit_DB_FamilyInstance_" data-uid="MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFamilyInstance(Autodesk.Revit.DB.FamilyInstance)">
+  GetConnectorsFromFamilyInstance(FamilyInstance)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves connectors from the specified family instance.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Connector&gt; GetConnectorsFromFamilyInstance(FamilyInstance familyInstance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>familyInstance</code> <span class="xref">FamilyInstance</span></dt>
+    <dd>The family instance from which to extract connectors.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Connector</span>&gt;</dt>
+    <dd>An enumerable collection of connectors.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbConnectorUtilities_GetConnectorsFromFlexPipe_" data-uid="MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFlexPipe*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbConnectorUtilities_GetConnectorsFromFlexPipe_Autodesk_Revit_DB_Plumbing_FlexPipe_" data-uid="MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFlexPipe(Autodesk.Revit.DB.Plumbing.FlexPipe)">
+  GetConnectorsFromFlexPipe(FlexPipe)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves connectors from the specified flex pipe.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Connector&gt; GetConnectorsFromFlexPipe(FlexPipe flexPipe)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flexPipe</code> <span class="xref">FlexPipe</span></dt>
+    <dd>The flex pipe from which to extract connectors.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Connector</span>&gt;</dt>
+    <dd>An enumerable collection of connectors.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbConnectorUtilities_GetDirectlyConnectedElement_" data-uid="MBF.Revit.Data.Utils.MbConnectorUtilities.GetDirectlyConnectedElement*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbConnectorUtilities_GetDirectlyConnectedElement_Autodesk_Revit_DB_Connector_" data-uid="MBF.Revit.Data.Utils.MbConnectorUtilities.GetDirectlyConnectedElement(Autodesk.Revit.DB.Connector)">
+  GetDirectlyConnectedElement(Connector)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves the first element directly connected to the specified connector, excluding piping systems.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Element GetDirectlyConnectedElement(Connector connector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connector</code> <span class="xref">Connector</span></dt>
+    <dd>The connector for which to find a directly connected element.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Element</span></dt>
+    <dd>The first directly connected <span class="xref">Element</span> that is not a <span class="xref">Autodesk.Revit.DB.Plumbing.PipingSystem</span>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no such element is found.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbConnectorUtilities_GetRoundConnectorsFromFitting_" data-uid="MBF.Revit.Data.Utils.MbConnectorUtilities.GetRoundConnectorsFromFitting*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbConnectorUtilities_GetRoundConnectorsFromFitting_Autodesk_Revit_DB_FamilyInstance_" data-uid="MBF.Revit.Data.Utils.MbConnectorUtilities.GetRoundConnectorsFromFitting(Autodesk.Revit.DB.FamilyInstance)">
+  GetRoundConnectorsFromFitting(FamilyInstance)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves a list of round connectors from the specified fitting.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;List&lt;Connector&gt;&gt; GetRoundConnectorsFromFitting(FamilyInstance fitting)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fitting</code> <span class="xref">FamilyInstance</span></dt>
+    <dd>The <span class="xref">FamilyInstance</span> representing the fitting from which to extract round connectors. Must not be null
+            and must have valid connectors.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Connector</span>&gt;&gt;</dt>
+    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing a list of <span class="xref">Connector</span> objects that are round and not part of a
+            piping system. Returns a failure result if the fitting's connectors are null or invalid, or if no round connectors
+            are found.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbConnectorUtilities_IsMEPCategory_" data-uid="MBF.Revit.Data.Utils.MbConnectorUtilities.IsMEPCategory*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbConnectorUtilities_IsMEPCategory_Autodesk_Revit_DB_FamilyInstance_" data-uid="MBF.Revit.Data.Utils.MbConnectorUtilities.IsMEPCategory(Autodesk.Revit.DB.FamilyInstance)">
+  IsMEPCategory(FamilyInstance)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Determines whether the specified family instance belongs to an MEP category.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsMEPCategory(FamilyInstance familyInstance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>familyInstance</code> <span class="xref">FamilyInstance</span></dt>
+    <dd>The family instance to check.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd>True if the family instance belongs to an MEP category; otherwise, false.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2025 MicroBIM. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

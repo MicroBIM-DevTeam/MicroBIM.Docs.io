@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TextBoxLengthConversionHelper | MIcroBIM Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TextBoxLengthConversionHelper | MIcroBIM Docs ">
+      
+      <meta name="description" content="Provides utility methods for converting and formatting text box input values related to length measurements.">
+      <link rel="icon" href="../images/logo.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/MicroBimLogo.png" alt="MicroBIM">
+            MicroBIM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MB.Common.Units.Helpers.TextBoxLengthConversionHelper">
+
+
+
+  <h1 id="MB_Common_Units_Helpers_TextBoxLengthConversionHelper" data-uid="MB.Common.Units.Helpers.TextBoxLengthConversionHelper" class="text-break">
+Class TextBoxLengthConversionHelper  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Units/Helpers/TextBoxLengthConversionHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MB.html">MB</a>.<a class="xref" href="MB.Common.html">Common</a>.<a class="xref" href="MB.Common.Units.html">Units</a>.<a class="xref" href="MB.Common.Units.Helpers.html">Helpers</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MB.Common.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary">Provides utility methods for converting and formatting text box input values related to length measurements.</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class TextBoxLengthConversionHelper</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TextBoxLengthConversionHelper</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="MB_Common_Units_Helpers_TextBoxLengthConversionHelper_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">This helper class includes methods to apply group size conversions to text box inputs and to convert
+            numeric values to the current unit system with appropriate formatting. It is designed to work with different
+            versions of the API, handling unit specifications and formatting options accordingly.</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MB_Common_Units_Helpers_TextBoxLengthConversionHelper_ApplyGroupSizeConversion_" data-uid="MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ApplyGroupSizeConversion*"></a>
+
+  <h3 id="MB_Common_Units_Helpers_TextBoxLengthConversionHelper_ApplyGroupSizeConversion_MicroBIM_UI_Controls_TextBox_" data-uid="MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ApplyGroupSizeConversion(MicroBIM.UI.Controls.TextBox)">
+  ApplyGroupSizeConversion(TextBox)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Units/Helpers/TextBoxLengthConversionHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Converts the text in the specified <span class="xref">MicroBIM.UI.Controls.TextBox</span> to a standardized group size format.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ApplyGroupSizeConversion(TextBox textBox)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>textBox</code> <span class="xref">TextBox</span></dt>
+    <dd>The <span class="xref">MicroBIM.UI.Controls.TextBox</span> whose text will be converted.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MB_Common_Units_Helpers_TextBoxLengthConversionHelper_ApplyGroupSizeConversion_MicroBIM_UI_Controls_TextBox__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method updates the text of the provided <span class="xref">MicroBIM.UI.Controls.TextBox</span> by applying a conversion
+            to ensure the text represents a valid group size format. The conversion logic is defined within the method and
+            affects the text directly.</div>
+
+
+
+
+  <a id="MB_Common_Units_Helpers_TextBoxLengthConversionHelper_ConvertTextBoxGroupSize_" data-uid="MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertTextBoxGroupSize*"></a>
+
+  <h3 id="MB_Common_Units_Helpers_TextBoxLengthConversionHelper_ConvertTextBoxGroupSize_System_String_" data-uid="MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertTextBoxGroupSize(System.String)">
+  ConvertTextBoxGroupSize(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Units/Helpers/TextBoxLengthConversionHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Converts a string representation of a length value into a formatted string with unit symbols.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ConvertTextBoxGroupSize(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd>The string representation of the length value to convert.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd>A formatted string that includes the length value with unit symbols appended.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MB_Common_Units_Helpers_TextBoxLengthConversionHelper_ConvertTextBoxGroupSize_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">The method uses the active document's unit settings to parse and format the length value. It
+            ensures that the formatted output includes unit symbols and suppresses trailing zeros.</div>
+
+
+
+
+  <a id="MB_Common_Units_Helpers_TextBoxLengthConversionHelper_ConvertToCurrentUnits_" data-uid="MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertToCurrentUnits*"></a>
+
+  <h3 id="MB_Common_Units_Helpers_TextBoxLengthConversionHelper_ConvertToCurrentUnits_System_Double_" data-uid="MB.Common.Units.Helpers.TextBoxLengthConversionHelper.ConvertToCurrentUnits(System.Double)">
+  ConvertToCurrentUnits(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Units/Helpers/TextBoxLengthConversionHelper.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Converts a numeric value to a string representation in the current document's units.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ConvertToCurrentUnits(double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd>The numeric value to convert.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd>A string representing the value formatted according to the current document's unit settings, including unit
+            symbols. If the document's units are not available, returns the value formatted to two decimal places.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MB_Common_Units_Helpers_TextBoxLengthConversionHelper_ConvertToCurrentUnits_System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">The method adapts to different versions of the API, ensuring compatibility with both older
+            and newer versions. It applies formatting options such as suppressing trailing and leading zeros and appending
+            unit symbols to the formatted string.</div>
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2025 MicroBIM. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

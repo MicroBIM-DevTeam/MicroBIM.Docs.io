@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class LogAspect | MIcroBIM Docs ">
       
-      <meta name="description" content="An aspect that logs method entry, exit, and exceptions using Serilog. This aspect can be applied to methods to automatically log their execution lifecycle.">
+      <meta name="description" content="Provides logging functionality for methods using aspect-oriented programming.">
       <link rel="icon" href="../images/logo.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MB_Common_Aspects_LogAspect" data-uid="MB.Common.Aspects.LogAspect" class="text-break">
-Class LogAspect  
+Class LogAspect  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/LogAspect.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,12 +97,13 @@ Class LogAspect
   <dl><dt>Assembly</dt><dd>MB.Common.dll</dd></dl>
   </div>
 
-  <div class="markdown summary">An aspect that logs method entry, exit, and exceptions using Serilog.
-This aspect can be applied to methods to automatically log their execution lifecycle.</div>
+  <div class="markdown summary">Provides logging functionality for methods using aspect-oriented programming.</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class LogAspect : OnMethodBoundaryAspect, _Attribute</code></pre>
+    <pre><code class="lang-csharp hljs">[Aspect(Scope.Global)]
+[Injection(typeof(LogAspect))]
+public class LogAspect : Attribute, _Attribute</code></pre>
   </div>
 
 
@@ -113,7 +114,6 @@ This aspect can be applied to methods to automatically log their execution lifec
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute">Attribute</a></div>
-      <div><span class="xref">OnMethodBoundaryAspect</span></div>
       <div><span class="xref">LogAspect</span></div>
     </dd>
   </dl>
@@ -129,21 +129,6 @@ This aspect can be applied to methods to automatically log their execution lifec
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodbase">OnMethodBoundaryAspect.CompileTimeValidate(MethodBase)</a>
-    </div>
-    <div>
-      <span class="xref">OnMethodBoundaryAspect.AttributeTargetMemberAttributes</span>
-    </div>
-    <div>
-      <span class="xref">OnMethodBoundaryAspect.NamespaceFilter</span>
-    </div>
-    <div>
-      <span class="xref">OnMethodBoundaryAspect.TypeNameFilter</span>
-    </div>
-    <div>
-      <span class="xref">OnMethodBoundaryAspect.MethodNameFilter</span>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-memberinfo-system-type)">Attribute.GetCustomAttributes(MemberInfo, Type)</a>
     </div>
@@ -267,11 +252,17 @@ This aspect can be applied to methods to automatically log their execution lifec
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
   </dd></dl>
 
 
 
 
+  <h2 id="MB_Common_Aspects_LogAspect_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">This attribute can be applied to methods to automatically log method entry, exit, and exceptions. It
+            uses aspect-oriented programming to inject logging behavior at runtime.</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -282,7 +273,7 @@ This aspect can be applied to methods to automatically log their execution lifec
 
   <h3 id="MB_Common_Aspects_LogAspect__ctor" data-uid="MB.Common.Aspects.LogAspect.#ctor">
   LogAspect()
-  
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/LogAspect.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -304,29 +295,112 @@ This aspect can be applied to methods to automatically log their execution lifec
 
 
 
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MB_Common_Aspects_LogAspect___a__instance" data-uid="MB.Common.Aspects.LogAspect.__a$_instance">
+  __a$_instance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/LogAspect.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly LogAspect __a$_instance</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Aspects.LogAspect.html">LogAspect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
 
+  <a id="MB_Common_Aspects_LogAspect_HandleExceptions_" data-uid="MB.Common.Aspects.LogAspect.HandleExceptions*"></a>
+
+  <h3 id="MB_Common_Aspects_LogAspect_HandleExceptions_System_Func_System_Object___System_Object__System_Object___System_String_System_Type_" data-uid="MB.Common.Aspects.LogAspect.HandleExceptions(System.Func{System.Object[],System.Object},System.Object[],System.String,System.Type)">
+  HandleExceptions(Func&lt;object[], object&gt;, object[], string, Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/LogAspect.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Executes the specified method and handles any exceptions that occur during its execution.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Advice(Kind.Around, Targets = Target.Method)]
+public object HandleExceptions(Func&lt;object[], object&gt; method, object[] arguments, string methodName, Type declaringType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[], <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd>The delegate representing the target method to be executed.</dd>
+    <dt><code>arguments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd>An array of arguments to be passed to the target method.</dd>
+    <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd>The name of the target method being executed.</dd>
+    <dt><code>declaringType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd>The type that declares the target method.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd>The result of the target method execution.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MB_Common_Aspects_LogAspect_HandleExceptions_System_Func_System_Object___System_Object__System_Object___System_String_System_Type__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method wraps the execution of a target method, logging any exceptions that are thrown.
+            If an exception occurs, it is logged with details about the method name, declaring type, and the exception
+            message, and then rethrown for further handling by the caller.</div>
+
+
+
+
   <a id="MB_Common_Aspects_LogAspect_OnEntry_" data-uid="MB.Common.Aspects.LogAspect.OnEntry*"></a>
 
-  <h3 id="MB_Common_Aspects_LogAspect_OnEntry_MethodBoundaryAspect_Fody_Attributes_MethodExecutionArgs_" data-uid="MB.Common.Aspects.LogAspect.OnEntry(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)">
-  OnEntry(MethodExecutionArgs)
-  
+  <h3 id="MB_Common_Aspects_LogAspect_OnEntry_System_String_System_Type_" data-uid="MB.Common.Aspects.LogAspect.OnEntry(System.String,System.Type)">
+  OnEntry(string, Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/LogAspect.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Called before the execution of the target method.
-Logs the entry into the method with timestamp.</div>
+  <div class="markdown level1 summary">Logs an informational message when entering a method.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void OnEntry(MethodExecutionArgs args)</code></pre>
+    <pre><code class="lang-csharp hljs">[Advice(Kind.Before, Targets = Target.Method)]
+public void OnEntry(string methodName, Type declaringType)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>args</code> <span class="xref">MethodExecutionArgs</span></dt>
-    <dd>Provides context about the method being executed.</dd>
+    <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd>The name of the method being entered.</dd>
+    <dt><code>declaringType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd>The type that declares the method being entered.</dd>
   </dl>
 
 
@@ -336,61 +410,34 @@ Logs the entry into the method with timestamp.</div>
 
 
 
-
-
-
-
-  <a id="MB_Common_Aspects_LogAspect_OnException_" data-uid="MB.Common.Aspects.LogAspect.OnException*"></a>
-
-  <h3 id="MB_Common_Aspects_LogAspect_OnException_MethodBoundaryAspect_Fody_Attributes_MethodExecutionArgs_" data-uid="MB.Common.Aspects.LogAspect.OnException(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)">
-  OnException(MethodExecutionArgs)
-  
-  </h3>
-
-  <div class="markdown level1 summary">Called when an exception is thrown during method execution.
-Logs the exception details.</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void OnException(MethodExecutionArgs args)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>args</code> <span class="xref">MethodExecutionArgs</span></dt>
-    <dd>Provides context about the method and the thrown exception.</dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h4 class="section" id="MB_Common_Aspects_LogAspect_OnEntry_System_String_System_Type__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method is intended to be used as an aspect to log method entry points.  It captures the
+            method name and declaring type and logs them along with the current timestamp.</div>
 
 
 
 
   <a id="MB_Common_Aspects_LogAspect_OnExit_" data-uid="MB.Common.Aspects.LogAspect.OnExit*"></a>
 
-  <h3 id="MB_Common_Aspects_LogAspect_OnExit_MethodBoundaryAspect_Fody_Attributes_MethodExecutionArgs_" data-uid="MB.Common.Aspects.LogAspect.OnExit(MethodBoundaryAspect.Fody.Attributes.MethodExecutionArgs)">
-  OnExit(MethodExecutionArgs)
-  
+  <h3 id="MB_Common_Aspects_LogAspect_OnExit_System_String_System_Type_" data-uid="MB.Common.Aspects.LogAspect.OnExit(System.String,System.Type)">
+  OnExit(string, Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/LogAspect.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary">Called after the successful execution of the target method.
-Logs the exit of the method with timestamp.</div>
+  <div class="markdown level1 summary">Logs information when a method exits, including the method name, declaring type, and timestamp.</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void OnExit(MethodExecutionArgs args)</code></pre>
+    <pre><code class="lang-csharp hljs">[Advice(Kind.After, Targets = Target.Method)]
+public void OnExit(string methodName, Type declaringType)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>args</code> <span class="xref">MethodExecutionArgs</span></dt>
-    <dd>Provides context about the method that was executed.</dd>
+    <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd>The name of the method that is exiting.</dd>
+    <dt><code>declaringType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd>The type that declares the method being exited.</dd>
   </dl>
 
 
@@ -400,6 +447,10 @@ Logs the exit of the method with timestamp.</div>
 
 
 
+  <h4 class="section" id="MB_Common_Aspects_LogAspect_OnExit_System_String_System_Type__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method is intended to be used as an aspect to provide logging functionality for method
+            exit events. It captures the method name and declaring type dynamically and logs the information along with the
+            current timestamp.</div>
 
 
 
