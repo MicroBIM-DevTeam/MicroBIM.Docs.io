@@ -219,7 +219,7 @@ Any method that involves possible failure or data lookup must use MbResult<T> in
 
 You can download the latest release of the `MicroBIM.Revit.Template` package below:
 
-[![Download Now](https://img.shields.io/badge/Download-v1.6.0-blue?style=for-the-badge&logo=nuget&logoColor=white)](downloads/MicroBIM.Revit.Template.1.6.0.nupkg)
+[![Download Now](https://img.shields.io/badge/Download-v1.7.0-blue?style=for-the-badge&logo=nuget&logoColor=white)](downloads/MicroBIM.Revit.Template.1.7.0.nupkg)
 
 ## 📥 How to Install
 
@@ -229,5 +229,5 @@ To install the MicroBIM.Revit.Template package, follow these steps:
 dotnet new uninstall MicroBIM.Revit.Template
 ```
 ```bash
-dotnet new install MicroBIM.Revit.Template.1.6.0.nupkg
+dotnet new install MicroBIM.Revit.Template.1.7.0.nupkg
 ```
