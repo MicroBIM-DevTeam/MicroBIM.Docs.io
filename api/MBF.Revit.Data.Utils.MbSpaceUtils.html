@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Data_Utils_MbSpaceUtils" data-uid="MBF.Revit.Data.Utils.MbSpaceUtils" class="text-break">
-Class MbSpaceUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbSpaceUtils.cs"><i class="bi bi-code-slash"></i></a>
+Class MbSpaceUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbSpaceUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -155,11 +155,250 @@ elements from the Revit model, particularly from the user's current selection in
 </h2>
 
 
+  <a id="MBF_Revit_Data_Utils_MbSpaceUtils_AnalyzeAboveCeilingGeometryAndGrid_" data-uid="MBF.Revit.Data.Utils.MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbSpaceUtils_AnalyzeAboveCeilingGeometryAndGrid_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Mechanical_Space_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_View3D_System_Double_System_Boolean_CeilingFaceGridParameters_System_Double_System_Boolean_" data-uid="MBF.Revit.Data.Utils.MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Mechanical.Space,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.View3D,System.Double,System.Boolean,CeilingFaceGridParameters,System.Double,System.Boolean)">
+  AnalyzeAboveCeilingGeometryAndGrid(Document, Space, RevitLinkInstance, View3D, double, bool, CeilingFaceGridParameters, double, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbSpaceUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Analyzes the geometry of ceilings above a given <span class="xref">Autodesk.Revit.DB.Mechanical.Space</span> and generates a grid for sprinkler placement.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;(List&lt;Ceiling&gt; Ceilings, Ceiling MajorCeiling, MbCeilingType MbCeilingType, Face MajorFace, XYZ PointInCeiling, double CeilingHeight, CeilingFaceGrid CeilingGrid)&gt; AnalyzeAboveCeilingGeometryAndGrid(Document doc, Space space, RevitLinkInstance ceilingsLinkInstance, View3D analysisView, double sprinklerOffset = 0, bool drawCurvesInRevit = true, CeilingFaceGridParameters gridParameters = null, double ceilingElementsDetectionRange = 6, bool sharedPositioningEnabled = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd>The active Revit <span class="xref">Autodesk.Revit.DB.Document</span>. Must not be <code>null</code>.</dd>
+    <dt><code>space</code> <span class="xref">Space</span></dt>
+    <dd>The <span class="xref">Autodesk.Revit.DB.Mechanical.Space</span> to analyze. Must not be <code>null</code>.</dd>
+    <dt><code>ceilingsLinkInstance</code> <span class="xref">RevitLinkInstance</span></dt>
+    <dd>The <span class="xref">Autodesk.Revit.DB.RevitLinkInstance</span> containing ceiling elements. Must not be <code>null</code>.</dd>
+    <dt><code>analysisView</code> <span class="xref">View3D</span></dt>
+    <dd>The <span class="xref">Autodesk.Revit.DB.View3D</span> used for geometric analysis. Must not be <code>null</code>.</dd>
+    <dt><code>sprinklerOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd>Optional offset to subtract from ceiling height for sprinkler placement.</dd>
+    <dt><code>drawCurvesInRevit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd>If <code>true</code>, draws boundary curves in Revit for debugging.</dd>
+    <dt><code>gridParameters</code> <a class="xref" href="CeilingFaceGridParameters.html">CeilingFaceGridParameters</a></dt>
+    <dd>Optional <a class="xref" href="CeilingFaceGridParameters.html">CeilingFaceGridParameters</a> for grid configuration. If <code>null</code>, defaults are used.</dd>
+    <dt><code>ceilingElementsDetectionRange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd>Detection range (in feet) for ceiling elements above the space. Must be greater than zero.</dd>
+    <dt><code>sharedPositioningEnabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Ceiling</span>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.ceilings">Ceilings</a>, <span class="xref">Ceiling</span> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.majorceiling">MajorCeiling</a>, <a class="xref" href="MBF.Revit.Data.Constants.MbCeilingType.html">MbCeilingType</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.mbceilingtype">MbCeilingType</a>, <span class="xref">Face</span> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.majorface">MajorFace</a>, <span class="xref">XYZ</span> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.pointinceiling">PointInCeiling</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.ceilingheight">CeilingHeight</a>, <a class="xref" href="MBF.Revit.Data.Models.CeilingFaceGrid.html">CeilingFaceGrid</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.ceilinggrid">CeilingGrid</a>)&gt;</dt>
+    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing a tuple with:
+<ul><li><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a>: All detected ceilings above the space.</li><li><span class="xref">Ceiling</span>: The major ceiling used for grid generation.</li><li><a class="xref" href="MBF.Revit.Data.Constants.MbCeilingType.html">MbCeilingType</a>: The type of the major ceiling (e.g., TiledMajor, PlasterBoard, Exposed).</li><li><span class="xref">Face</span>: The major face of the ceiling.</li><li><span class="xref">Autodesk.Revit.DB.XYZ</span>: A representative point in the ceiling face.</li><li><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>: The calculated ceiling height (Z coordinate).</li><li><a class="xref" href="MBF.Revit.Data.Models.CeilingFaceGrid.html">CeilingFaceGrid</a>: The generated grid for sprinkler placement.</li></ul>
+If the operation fails, the result contains an error message describing the reason. Possible errors include:
+<ul><li>"Document is null."</li><li>"Space is null."</li><li>"Ceilings link instance is null."</li><li>"Analysis view (View3D) is null."</li><li>Errors from <a class="xref" href="MBF.Revit.Data.Clipper.CurveLoopProcessor.html#MBF_Revit_Data_Clipper_CurveLoopProcessor_GetChainedLoops_Autodesk_Revit_DB_Document_System_Collections_Generic_List_System_Collections_Generic_List_Autodesk_Revit_DB_Curve___System_Boolean_System_Double_">GetChainedLoops(Document, List&lt;List&lt;Curve&gt;&gt;, bool, double)</a> (e.g., invalid boundary geometry).</li><li>Errors from <a class="xref" href="MBF.Revit.Data.Utils.MbSpaceUtils.html#MBF_Revit_Data_Utils_MbSpaceUtils_GetAboveCeilingOfSpace_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_RevitLinkInstance_System_Collections_Generic_List_Autodesk_Revit_DB_Curve__Autodesk_Revit_DB_Transform_System_Collections_Generic_List_Autodesk_Revit_DB_BuiltInCategory__System_Double_System_Boolean_">GetAboveCeilingOfSpace(XYZ, Document, RevitLinkInstance, List&lt;Curve&gt;, Transform, List&lt;BuiltInCategory&gt;, double, bool)</a> (e.g., failed solid creation, no ceilings found).</li><li>Errors from <span class="xref">MBF.Revit.Data.Utils.MbSpaceUtils.DetermineCeilingType(System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.RevitLinkInstance)</span> (e.g., link document is null, no valid ceiling face).</li><li>Errors from <span class="xref">MBF.Revit.Data.Utils.MbSpaceUtils.GetMinAboveFloorElevation(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View3D)</span> (e.g., failed raycast, transformation errors).</li><li>Errors from <a class="xref" href="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetSpaceBoundaryPoints_Autodesk_Revit_DB_Mechanical_Space_">GetSpaceBoundaryPoints(Space)</a> (e.g., failed to extract boundary points).</li><li>Errors from <a class="xref" href="MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_Create_Autodesk_Revit_DB_Ceiling_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_Mechanical_Space_CeilingFaceGridParameters_System_Double_System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__System_Double_">Create(Ceiling, Document, RevitLinkInstance, Space, CeilingFaceGridParameters, double, List&lt;XYZ&gt;, double)</a> (e.g., grid generation failure).</li></ul></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbSpaceUtils_ClosestDistanceToFramingElement_" data-uid="MBF.Revit.Data.Utils.MbSpaceUtils.ClosestDistanceToFramingElement*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbSpaceUtils_ClosestDistanceToFramingElement_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_View3D_Autodesk_Revit_DB_XYZ_" data-uid="MBF.Revit.Data.Utils.MbSpaceUtils.ClosestDistanceToFramingElement(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View3D,Autodesk.Revit.DB.XYZ)">
+  ClosestDistanceToFramingElement(Document, View3D, XYZ)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbSpaceUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;(double Distance, XYZ IntersectionPoint)&gt; ClosestDistanceToFramingElement(Document doc, View3D view3D, XYZ originPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>view3D</code> <span class="xref">View3D</span></dt>
+    <dd></dd>
+    <dt><code>originPoint</code> <span class="xref">XYZ</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,autodesk.revit.db.xyz-.distance">Distance</a>, <span class="xref">XYZ</span> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,autodesk.revit.db.xyz-.intersectionpoint">IntersectionPoint</a>)&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbSpaceUtils_GetAboveCeilingOfSpace_" data-uid="MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbSpaceUtils_GetAboveCeilingOfSpace_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_RevitLinkInstance_System_Collections_Generic_List_Autodesk_Revit_DB_Curve__Autodesk_Revit_DB_Transform_System_Collections_Generic_List_Autodesk_Revit_DB_BuiltInCategory__System_Double_System_Boolean_" data-uid="MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,System.Collections.Generic.List{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Transform,System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory},System.Double,System.Boolean)">
+  GetAboveCeilingOfSpace(XYZ, Document, RevitLinkInstance, List&lt;Curve&gt;, Transform, List&lt;BuiltInCategory&gt;, double, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbSpaceUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves a list of ceilings located above a specified point within a given range in a Revit model.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;List&lt;Ceiling&gt;&gt; GetAboveCeilingOfSpace(XYZ point, Document parentDocument, RevitLinkInstance linkInstance, List&lt;Curve&gt; segments, Transform originalElementTransform, List&lt;BuiltInCategory&gt; builtinCategories, double ceilingElementsRange, bool sharedPositioningEnabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <span class="xref">XYZ</span></dt>
+    <dd>The point in space from which to search for ceilings. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
+    <dt><code>parentDocument</code> <span class="xref">Document</span></dt>
+    <dd>The parent Revit document containing the space. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
+    <dt><code>linkInstance</code> <span class="xref">RevitLinkInstance</span></dt>
+    <dd>The Revit link instance to search within. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
+    <dt><code>segments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Curve</span>&gt;</dt>
+    <dd>A list of curves representing the boundaries of the space. Must contain at least one curve.</dd>
+    <dt><code>originalElementTransform</code> <span class="xref">Transform</span></dt>
+    <dd>The transform of the original element defining the space. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
+    <dt><code>builtinCategories</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">BuiltInCategory</span>&gt;</dt>
+    <dd>A list of built-in categories to filter ceiling elements. Must contain at least one category.</dd>
+    <dt><code>ceilingElementsRange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd>The maximum range, in Revit units, to search for ceiling elements above the point. Must be greater than zero.</dd>
+    <dt><code>sharedPositioningEnabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd>A value indicating whether shared positioning is enabled for the link instance.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Ceiling</span>&gt;&gt;</dt>
+    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing a list of <span class="xref">Ceiling</span> objects if the operation succeeds, or an
+            error message if it fails.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbSpaceUtils_GetAboveCeilingOfSpace_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_RevitLinkInstance_System_Collections_Generic_List_Autodesk_Revit_DB_Curve__Autodesk_Revit_DB_Transform_System_Collections_Generic_List_Autodesk_Revit_DB_BuiltInCategory__System_Double_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method identifies ceilings above the specified point by analyzing the geometry of the
+            space and applying filters to detect intersecting ceiling elements. It supports both linked Revit models and
+            shared positioning configurations.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbSpaceUtils_GetCeilingsFromLinkByView_" data-uid="MBF.Revit.Data.Utils.MbSpaceUtils.GetCeilingsFromLinkByView*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbSpaceUtils_GetCeilingsFromLinkByView_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_ElementIntersectsSolidFilter_" data-uid="MBF.Revit.Data.Utils.MbSpaceUtils.GetCeilingsFromLinkByView(Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.ElementIntersectsSolidFilter)">
+  GetCeilingsFromLinkByView(RevitLinkInstance, ElementIntersectsSolidFilter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbSpaceUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves a list of ceilings from a linked Revit document that intersect with the specified solid filter.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;List&lt;Ceiling&gt;&gt; GetCeilingsFromLinkByView(RevitLinkInstance linkInstance, ElementIntersectsSolidFilter solidFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>linkInstance</code> <span class="xref">RevitLinkInstance</span></dt>
+    <dd>The <span class="xref">Autodesk.Revit.DB.RevitLinkInstance</span> representing the linked Revit document. Must not be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
+    <dt><code>solidFilter</code> <span class="xref">ElementIntersectsSolidFilter</span></dt>
+    <dd>The <span class="xref">Autodesk.Revit.DB.ElementIntersectsSolidFilter</span> used to filter ceilings based on intersection criteria. Must not
+            be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Ceiling</span>&gt;&gt;</dt>
+    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing a list of <span class="xref">Ceiling</span> elements that match the filter criteria.
+            If the operation fails, the result contains an error message describing the failure.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Utils_MbSpaceUtils_GetCeilingsFromLinkByView_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_ElementIntersectsSolidFilter__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method uses the <span class="xref">FilteredElementCollector</span> to retrieve ceilings from the
+            linked document. Ensure that the linked document is loaded and accessible before calling this method.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbSpaceUtils_GetSolidInLinkFromSpace_" data-uid="MBF.Revit.Data.Utils.MbSpaceUtils.GetSolidInLinkFromSpace*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbSpaceUtils_GetSolidInLinkFromSpace_System_Collections_Generic_List_Autodesk_Revit_DB_Curve__Autodesk_Revit_DB_Transform_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_RevitLinkInstance_System_Double_System_Boolean_" data-uid="MBF.Revit.Data.Utils.MbSpaceUtils.GetSolidInLinkFromSpace(System.Collections.Generic.List{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Transform,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,System.Double,System.Boolean)">
+  GetSolidInLinkFromSpace(List&lt;Curve&gt;, Transform, Document, RevitLinkInstance, double, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbSpaceUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;Solid&gt; GetSolidInLinkFromSpace(List&lt;Curve&gt; segments, Transform originalElementTransform, Document parentDoc, RevitLinkInstance linkInstance, double detectionRange, bool sharedPositioningEnabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>segments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Curve</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>originalElementTransform</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>parentDoc</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>linkInstance</code> <span class="xref">RevitLinkInstance</span></dt>
+    <dd></dd>
+    <dt><code>detectionRange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>sharedPositioningEnabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<span class="xref">Solid</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="MBF_Revit_Data_Utils_MbSpaceUtils_GetSpacesFromSelection_" data-uid="MBF.Revit.Data.Utils.MbSpaceUtils.GetSpacesFromSelection*"></a>
 
   <h3 id="MBF_Revit_Data_Utils_MbSpaceUtils_GetSpacesFromSelection_Autodesk_Revit_UI_UIDocument_" data-uid="MBF.Revit.Data.Utils.MbSpaceUtils.GetSpacesFromSelection(Autodesk.Revit.UI.UIDocument)">
   GetSpacesFromSelection(UIDocument)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbSpaceUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbSpaceUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Retrieves a list of <span class="xref">Autodesk.Revit.DB.Mechanical.Space</span> elements from the current selection in the Revit UI.</div>

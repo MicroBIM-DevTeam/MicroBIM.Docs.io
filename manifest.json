@@ -684,16 +684,16 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.yml",
+      "source_relative_path": "api/MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.html"
+          "relative_path": "api/MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior",
+      "Title": "MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior",
       "Summary": "Represents a behavior that can be attached to a <xref href=\"MicroBIM.UI.Controls.TextBox\" data-throw-if-not-resolved=\"false\"></xref> to enable or disable unit length conversion\nfunctionality when a specific key is pressed."
     },
     {
@@ -936,6 +936,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Creation.Constants.SpecialReferenceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Creation.Constants.SpecialReferenceType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Creation.Constants.SpecialReferenceType",
+      "Summary": "Defines a set of reference types that represent various alignment, directional, positional, and layout options."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Creation.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Creation.Constants.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Creation.Constants",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MBF.Revit.Creation.Extensions.DocumentExtensions.yml",
       "output": {
         ".html": {
@@ -961,6 +989,132 @@
       "IsMRef": true,
       "Title": "MBF.Revit.Creation.Extensions",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Creation.Models.CategorizedReferences.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Creation.Models.CategorizedReferences.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Creation.Models.CategorizedReferences",
+      "Summary": "Data structure to hold categorized references."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Creation.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Creation.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Creation.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Creation.Utils.MbDimensionUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Creation.Utils.MbDimensionUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Creation.Utils.MbDimensionUtils",
+      "Summary": "Provides utility methods for working with special references in Revit family instances."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Creation.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Creation.Utils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Creation.Utils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Clipper.CurveLoopProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Clipper.CurveLoopProcessor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Clipper.CurveLoopProcessor",
+      "Summary": "Processes curve loops and returns chained loops sorted by area. Optionally, the resulting curves can be drawn in the\nactive Revit document."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Clipper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Clipper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Clipper",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Constants.MbCeilingType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Constants.MbCeilingType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Constants.MbCeilingType",
+      "Summary": "Represents the type of ceiling used in a building or structure."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Constants.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Constants",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Extensions.DirectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Extensions.DirectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Extensions.DirectionExtensions",
+      "Summary": "Provides extension methods for working with <xref href=\"Autodesk.Revit.DB.XYZ\" data-throw-if-not-resolved=\"false\"></xref> vectors."
     },
     {
       "type": "ManagedReference",
@@ -1045,6 +1199,160 @@
       "IsMRef": true,
       "Title": "MBF.Revit.Data.Extensions",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Models.BeamProcessingResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Models.BeamProcessingResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Models.BeamProcessingResult",
+      "Summary": "Result of beam processing operations"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Models.BoundaryLines.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Models.BoundaryLines.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Models.BoundaryLines",
+      "Summary": "Represents boundary lines for the grid system"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Models.CeilingAnalysisResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Models.CeilingAnalysisResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Models.CeilingAnalysisResult",
+      "Summary": "Result of ceiling analysis operations"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Models.CeilingData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Models.CeilingData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Models.CeilingData",
+      "Summary": "Data about a single ceiling element"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Models.CeilingFaceGrid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Models.CeilingFaceGrid.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Models.CeilingFaceGrid",
+      "Summary": "Represents a grid system for placing sprinklers on ceiling faces"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Models.CeilingPattern.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Models.CeilingPattern.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Models.CeilingPattern",
+      "Summary": "Represents the pattern extracted from a ceiling"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Models.CeilingPatternExtractor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Models.CeilingPatternExtractor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Models.CeilingPatternExtractor",
+      "Summary": "Extracts ceiling pattern information"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Models.GridLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Models.GridLine.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Models.GridLine",
+      "Summary": "Represents a line in the grid system with its type classification"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Models.GridLineGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Models.GridLineGenerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Models.GridLineGenerator",
+      "Summary": "Generates grid lines for the ceiling grid system"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Models.GridPointInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Models.GridPointInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Models.GridPointInfo",
+      "Summary": "Represents information about a grid point"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Models.GridValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Models.GridValidationResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Models.GridValidationResult",
+      "Summary": "Represents the result of grid validation"
     },
     {
       "type": "ManagedReference",
@@ -1146,6 +1454,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.CeilingPatternDeducer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.CeilingPatternDeducer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.CeilingPatternDeducer",
+      "Summary": "Provides functionality to deduce the ceiling grid pattern for a given space based on its area, boundary points,\nand a primary direction."
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MBF.Revit.Data.Utils.EntityUtils.yml",
       "output": {
         ".html": {
@@ -1160,6 +1482,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.GeometryUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.GeometryUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.GeometryUtils",
+      "Summary": "Utility methods for geometry operations"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.MbCeilingUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.MbCeilingUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.MbCeilingUtils",
+      "Summary": "Provides utility methods for working with Revit ceiling elements."
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MBF.Revit.Data.Utils.MbConnectorUtilities.yml",
       "output": {
         ".html": {
@@ -1171,6 +1521,34 @@
       "IsMRef": true,
       "Title": "MBF.Revit.Data.Utils.MbConnectorUtilities",
       "Summary": "Provides utility methods for managing and interacting with MEP connectors in a Revit document."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.MbCurveUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.MbCurveUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.MbCurveUtils",
+      "Summary": "Utility methods for working with curves in Revit."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.MbFaceUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.MbFaceUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.MbFaceUtils",
+      "Summary": "Retrieves the fill pattern associated with the surface material of the specified face."
     },
     {
       "type": "ManagedReference",
@@ -1199,6 +1577,20 @@
       "IsMRef": true,
       "Title": "MBF.Revit.Data.Utils.MbFlexPipesUtils",
       "Summary": "Filters the provided collection of Revit elements and retrieves all flex pipes."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.MbLinkedElementUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.MbLinkedElementUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.MbLinkedElementUtils",
+      "Summary": "Provides utility methods for working with linked elements in Revit documents,\nincluding coordinate transformations between parent and linked files."
     },
     {
       "type": "ManagedReference",
@@ -1258,6 +1650,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.MbProjectLocationUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.MbProjectLocationUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.MbProjectLocationUtils",
+      "Summary": "Provides utility methods for working with project location transformations in Revit."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils",
+      "Summary": "Utility class for space operations and calculations using only Revit Space objects"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.MbSelectionUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.MbSelectionUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.MbSelectionUtils",
+      "Summary": "Provides utility methods for working with family instances in Revit documents."
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MBF.Revit.Data.Utils.MbSpaceUtils.yml",
       "output": {
         ".html": {
@@ -1283,6 +1717,20 @@
       "IsMRef": true,
       "Title": "MBF.Revit.Data.Utils.MbSprinklersUtils",
       "Summary": "Provides utility methods for working with sprinkler elements in Revit."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBF.Revit.Data.Utils.MbSurveyPointUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBF.Revit.Data.Utils.MbSurveyPointUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBF.Revit.Data.Utils.MbSurveyPointUtils",
+      "Summary": "Provides utility methods for working with survey points in Revit documents."
     },
     {
       "type": "ManagedReference",
@@ -2042,6 +2490,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Dialogs.LoadingControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Dialogs.LoadingControl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Dialogs.LoadingControl",
+      "Summary": "Represents a user control that displays a loading indicator."
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MBFWpfToolkit.Dialogs.LoadingDialog.yml",
       "output": {
         ".html": {
@@ -2154,6 +2616,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Helpers.MbObservableCollection-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Helpers.MbObservableCollection-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Helpers.MbObservableCollection<T>",
+      "Summary": "Represents a collection of objects that supports data binding, notifications, and extended behaviors such as adding\nor removing multiple items at once."
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MBFWpfToolkit.Helpers.MbResourceHelper.yml",
       "output": {
         ".html": {
@@ -2179,6 +2655,20 @@
       "IsMRef": true,
       "Title": "MBFWpfToolkit.Helpers.PasswordHelper",
       "Summary": "Provides attached properties and helper methods to enable binding for the Password property of PasswordBox\ncontrols."
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MBFWpfToolkit.Helpers.SilentValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MBFWpfToolkit.Helpers.SilentValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MBFWpfToolkit.Helpers.SilentValidator",
+      "Summary": ""
     },
     {
       "type": "ManagedReference",

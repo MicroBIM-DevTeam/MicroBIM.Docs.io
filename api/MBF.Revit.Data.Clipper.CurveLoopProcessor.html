@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CurveLoopProcessor | MIcroBIM Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CurveLoopProcessor | MIcroBIM Docs ">
+      
+      <meta name="description" content="Processes curve loops and returns chained loops sorted by area. Optionally, the resulting curves can be drawn in the active Revit document.">
+      <link rel="icon" href="../images/logo.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/MicroBimLogo.png" alt="MicroBIM">
+            MicroBIM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MBF.Revit.Data.Clipper.CurveLoopProcessor">
+
+
+
+  <h1 id="MBF_Revit_Data_Clipper_CurveLoopProcessor" data-uid="MBF.Revit.Data.Clipper.CurveLoopProcessor" class="text-break">
+Class CurveLoopProcessor  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Clipper/CurveLoopProcessor.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MBF.html">MBF</a>.<a class="xref" href="MBF.Revit.html">Revit</a>.<a class="xref" href="MBF.Revit.Data.html">Data</a>.<a class="xref" href="MBF.Revit.Data.Clipper.html">Clipper</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MBF.Revit.Data.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary">Processes curve loops and returns chained loops sorted by area. Optionally, the resulting curves can be drawn in the
+active Revit document.</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class CurveLoopProcessor</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CurveLoopProcessor</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="MBF_Revit_Data_Clipper_CurveLoopProcessor_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">This method takes a collection of curve loops, filters them based on a minimum area threshold, and
+            sorts them by area in descending order. The resulting loops are returned as a list of chained curves. If <code class="paramref">drawCurvesInRevit</code> is set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, the processed curves are drawn in the active Revit
+            view.</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MBF_Revit_Data_Clipper_CurveLoopProcessor_GetChainedLoops_" data-uid="MBF.Revit.Data.Clipper.CurveLoopProcessor.GetChainedLoops*"></a>
+
+  <h3 id="MBF_Revit_Data_Clipper_CurveLoopProcessor_GetChainedLoops_Autodesk_Revit_DB_Document_System_Collections_Generic_List_System_Collections_Generic_List_Autodesk_Revit_DB_Curve___System_Boolean_System_Double_" data-uid="MBF.Revit.Data.Clipper.CurveLoopProcessor.GetChainedLoops(Autodesk.Revit.DB.Document,System.Collections.Generic.List{System.Collections.Generic.List{Autodesk.Revit.DB.Curve}},System.Boolean,System.Double)">
+  GetChainedLoops(Document, List&lt;List&lt;Curve&gt;&gt;, bool, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Clipper/CurveLoopProcessor.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Processes a collection of curve loops to identify and return chained loops that meet specified criteria.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;List&lt;List&lt;Curve&gt;&gt;&gt; GetChainedLoops(Document doc, List&lt;List&lt;Curve&gt;&gt; inputCurves, bool drawCurvesInRevit = true, double minArea = 22500)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd>The Revit document in which the curves may be drawn if <code class="paramref">drawCurvesInRevit</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</dd>
+    <dt><code>inputCurves</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Curve</span>&gt;&gt;</dt>
+    <dd>A list of curve loops, where each loop is represented as a list of <span class="xref">Autodesk.Revit.DB.Curve</span> objects. Each loop must
+            contain at least two curves.</dd>
+    <dt><code>drawCurvesInRevit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd>A value indicating whether the resulting chained loops should be drawn in the Revit document. <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>
+            to draw the curves in Revit; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</dd>
+    <dt><code>minArea</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd>The minimum area threshold for a loop to be included in the result. Loops with an area smaller than this value are
+            excluded. The default value is 150.0 * 150.0.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Curve</span>&gt;&gt;&gt;</dt>
+    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing a list of chained curve loops that meet the specified criteria. If the
+            operation fails, the result contains an error message.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Clipper_CurveLoopProcessor_GetChainedLoops_Autodesk_Revit_DB_Document_System_Collections_Generic_List_System_Collections_Generic_List_Autodesk_Revit_DB_Curve___System_Boolean_System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method performs the following operations: <ul><li>Validates the input curve
+            loops to ensure they are non-null and contain at least two curves per loop.</li><li>Uses the Clipper library to
+            compute the union of the input loops and filter them by the specified minimum area.</li><li>Converts the
+            resulting loops back to Revit curves and ensures the curves are properly chained.</li><li>If <code class="paramref">drawCurvesInRevit</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, the resulting loops are drawn in the Revit document.</li></ul> If an error occurs during processing, the method returns a failure result with an appropriate error
+            message.</div>
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2025 MicroBIM. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
