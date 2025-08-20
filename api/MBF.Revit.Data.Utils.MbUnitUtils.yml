@@ -7,6 +7,7 @@ items:
   children:
   - MBF.Revit.Data.Utils.MbUnitUtils.GetLengthUnitSymbol
   - MBF.Revit.Data.Utils.MbUnitUtils.GetStandardUnitSymbol(System.Object)
+  - MBF.Revit.Data.Utils.MbUnitUtils.ToInternalUnits(System.Double)
   langs:
   - csharp
   - vb
@@ -15,7 +16,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbUnitUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbUnitUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbUnitUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -52,7 +53,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbUnitUtils.GetLengthUnitSymbol()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbUnitUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbUnitUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -80,7 +81,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbUnitUtils.GetStandardUnitSymbol(object)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbUnitUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbUnitUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -108,6 +109,39 @@ items:
   nameWithType.vb: MbUnitUtils.GetStandardUnitSymbol(Object)
   fullName.vb: MBF.Revit.Data.Utils.MbUnitUtils.GetStandardUnitSymbol(Object)
   name.vb: GetStandardUnitSymbol(Object)
+- uid: MBF.Revit.Data.Utils.MbUnitUtils.ToInternalUnits(System.Double)
+  commentId: M:MBF.Revit.Data.Utils.MbUnitUtils.ToInternalUnits(System.Double)
+  id: ToInternalUnits(System.Double)
+  isExtensionMethod: true
+  parent: MBF.Revit.Data.Utils.MbUnitUtils
+  langs:
+  - csharp
+  - vb
+  name: ToInternalUnits(double)
+  nameWithType: MbUnitUtils.ToInternalUnits(double)
+  fullName: MBF.Revit.Data.Utils.MbUnitUtils.ToInternalUnits(double)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbUnitUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Converts millimeters to Revit internal units (feet)
+  example: []
+  syntax:
+    content: public static double ToInternalUnits(this double millimeters)
+    parameters:
+    - id: millimeters
+      type: System.Double
+      description: Value in millimeters
+    return:
+      type: System.Double
+      description: Value in Revit internal units
+    content.vb: Public Shared Function ToInternalUnits(millimeters As Double) As Double
+  overload: MBF.Revit.Data.Utils.MbUnitUtils.ToInternalUnits*
+  nameWithType.vb: MbUnitUtils.ToInternalUnits(Double)
+  fullName.vb: MBF.Revit.Data.Utils.MbUnitUtils.ToInternalUnits(Double)
+  name.vb: ToInternalUnits(Double)
 references:
 - uid: MBF.Revit.Data.Utils
   commentId: N:MBF.Revit.Data.Utils
@@ -427,4 +461,22 @@ references:
   name: GetStandardUnitSymbol
   nameWithType: MbUnitUtils.GetStandardUnitSymbol
   fullName: MBF.Revit.Data.Utils.MbUnitUtils.GetStandardUnitSymbol
+- uid: MBF.Revit.Data.Utils.MbUnitUtils.ToInternalUnits*
+  commentId: Overload:MBF.Revit.Data.Utils.MbUnitUtils.ToInternalUnits
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbUnitUtils.html#MBF_Revit_Data_Utils_MbUnitUtils_ToInternalUnits_System_Double_
+  name: ToInternalUnits
+  nameWithType: MbUnitUtils.ToInternalUnits
+  fullName: MBF.Revit.Data.Utils.MbUnitUtils.ToInternalUnits
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
 shouldSkipMarkup: true

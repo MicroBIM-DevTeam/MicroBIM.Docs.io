@@ -18,7 +18,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.PipeExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/PipeExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Extensions/PipeExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -60,7 +60,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.PipeExtensions.GetEndPoints(Autodesk.Revit.DB.Plumbing.Pipe)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/PipeExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Extensions/PipeExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -98,7 +98,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.PipeExtensions.GetNearestOneSideConnector(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/PipeExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Extensions/PipeExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -139,7 +139,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.PipeExtensions.GetNearestEndPoints(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/PipeExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Extensions/PipeExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -180,7 +180,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.PipeExtensions.GetPipeCurve(Autodesk.Revit.DB.Plumbing.Pipe)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/PipeExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Extensions/PipeExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -218,7 +218,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.PipeExtensions.GetPipingSystemType(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/PipeExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Extensions/PipeExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -679,6 +679,7 @@ references:
   nameWithType: PipeExtensions.GetNearestOneSideConnector
   fullName: MBF.Revit.Data.Extensions.PipeExtensions.GetNearestOneSideConnector
 - uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
   isExternal: true
   name: XYZ
   nameWithType: XYZ
@@ -765,7 +766,6 @@ references:
   nameWithType: PipeExtensions.GetPipingSystemType
   fullName: MBF.Revit.Data.Extensions.PipeExtensions.GetPipingSystemType
 - uid: Autodesk.Revit.DB.Document
-  commentId: T:Autodesk.Revit.DB.Document
   isExternal: true
   name: Document
   nameWithType: Document

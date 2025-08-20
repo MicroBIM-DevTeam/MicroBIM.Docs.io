@@ -1,0 +1,739 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Creation.Utils.MbDimensionUtils
+  commentId: T:MBF.Revit.Creation.Utils.MbDimensionUtils
+  id: MbDimensionUtils
+  parent: MBF.Revit.Creation.Utils
+  children:
+  - MBF.Revit.Creation.Utils.MbDimensionUtils.GetAllSpecialFamilyReferences(Autodesk.Revit.DB.FamilyInstance)
+  - MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference(Autodesk.Revit.DB.FamilyInstance,MBF.Revit.Creation.Constants.SpecialReferenceType)
+  - MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference(Autodesk.Revit.DB.FamilyInstance,System.String)
+  - MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReferenceBySearch(Autodesk.Revit.DB.FamilyInstance,MBF.Revit.Creation.Constants.SpecialReferenceType,System.String)
+  langs:
+  - csharp
+  - vb
+  name: MbDimensionUtils
+  nameWithType: MbDimensionUtils
+  fullName: MBF.Revit.Creation.Utils.MbDimensionUtils
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Utils/MbDimensionUtils.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Utils
+  summary: Provides utility methods for working with special references in Revit family instances.
+  remarks: >-
+    This class includes methods for generating, searching, and categorizing stable references within
+                Revit family instances. These utilities are designed to handle complex scenarios such as nested geometry, custom
+                reference tokens, and categorized reference collections.
+  example: []
+  syntax:
+    content: public static class MbDimensionUtils
+    content.vb: Public Module MbDimensionUtils
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference(Autodesk.Revit.DB.FamilyInstance,MBF.Revit.Creation.Constants.SpecialReferenceType)
+  commentId: M:MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference(Autodesk.Revit.DB.FamilyInstance,MBF.Revit.Creation.Constants.SpecialReferenceType)
+  id: GetSpecialFamilyReference(Autodesk.Revit.DB.FamilyInstance,MBF.Revit.Creation.Constants.SpecialReferenceType)
+  parent: MBF.Revit.Creation.Utils.MbDimensionUtils
+  langs:
+  - csharp
+  - vb
+  name: GetSpecialFamilyReference(FamilyInstance, SpecialReferenceType)
+  nameWithType: MbDimensionUtils.GetSpecialFamilyReference(FamilyInstance, SpecialReferenceType)
+  fullName: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference(Autodesk.Revit.DB.FamilyInstance, MBF.Revit.Creation.Constants.SpecialReferenceType)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Utils/MbDimensionUtils.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Utils
+  summary: Retrieves a specific reference from a given <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> based on the specified <xref href="MBF.Revit.Creation.Constants.SpecialReferenceType" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    This method processes the geometry of the provided <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> to construct and
+                resolve a stable reference based on the specified <code class="paramref">refType</code>. The method ensures that the
+                reference is valid and can be used to access the corresponding geometry object. If any step in the process fails,
+                an error message is returned in the result.
+  example: []
+  syntax:
+    content: public static MbResult<Reference> GetSpecialFamilyReference(FamilyInstance familyInstance, SpecialReferenceType refType)
+    parameters:
+    - id: familyInstance
+      type: Autodesk.Revit.DB.FamilyInstance
+      description: The <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> from which to extract the reference. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    - id: refType
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+      description: The type of special reference to retrieve, represented by the <xref href="MBF.Revit.Creation.Constants.SpecialReferenceType" data-throw-if-not-resolved="false"></xref> enumeration.
+    return:
+      type: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Reference}
+      description: >-
+        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing the resolved <xref href="Autodesk.Revit.DB.Reference" data-throw-if-not-resolved="false"></xref> if successful, or an error message if
+                    the operation fails.
+    content.vb: Public Shared Function GetSpecialFamilyReference(familyInstance As FamilyInstance, refType As SpecialReferenceType) As MbResult(Of Reference)
+  overload: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference*
+- uid: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference(Autodesk.Revit.DB.FamilyInstance,System.String)
+  commentId: M:MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference(Autodesk.Revit.DB.FamilyInstance,System.String)
+  id: GetSpecialFamilyReference(Autodesk.Revit.DB.FamilyInstance,System.String)
+  parent: MBF.Revit.Creation.Utils.MbDimensionUtils
+  langs:
+  - csharp
+  - vb
+  name: GetSpecialFamilyReference(FamilyInstance, string)
+  nameWithType: MbDimensionUtils.GetSpecialFamilyReference(FamilyInstance, string)
+  fullName: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference(Autodesk.Revit.DB.FamilyInstance, string)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Utils/MbDimensionUtils.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Utils
+  summary: Retrieves a reference to a specific family instance in the document, based on a custom identifier.
+  remarks: >-
+    This method performs a series of validation and processing steps to generate a stable reference  for
+                the specified family instance. If any step fails, the method returns a failure result with  an appropriate error
+                message.
+  example: []
+  syntax:
+    content: public static MbResult<Reference> GetSpecialFamilyReference(FamilyInstance familyInstance, string customId)
+    parameters:
+    - id: familyInstance
+      type: Autodesk.Revit.DB.FamilyInstance
+      description: The <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> from which the reference is to be retrieved.  This parameter cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    - id: customId
+      type: System.String
+      description: >-
+        A custom identifier used to build the reference.  This parameter cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, empty, or consist
+                    only of whitespace.
+    return:
+      type: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Reference}
+      description: >-
+        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing the <xref href="Autodesk.Revit.DB.Reference" data-throw-if-not-resolved="false"></xref> if the operation succeeds,  or an error message
+                    if the operation fails.
+    content.vb: Public Shared Function GetSpecialFamilyReference(familyInstance As FamilyInstance, customId As String) As MbResult(Of Reference)
+  overload: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference*
+  nameWithType.vb: MbDimensionUtils.GetSpecialFamilyReference(FamilyInstance, String)
+  fullName.vb: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference(Autodesk.Revit.DB.FamilyInstance, String)
+  name.vb: GetSpecialFamilyReference(FamilyInstance, String)
+- uid: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReferenceBySearch(Autodesk.Revit.DB.FamilyInstance,MBF.Revit.Creation.Constants.SpecialReferenceType,System.String)
+  commentId: M:MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReferenceBySearch(Autodesk.Revit.DB.FamilyInstance,MBF.Revit.Creation.Constants.SpecialReferenceType,System.String)
+  id: GetSpecialFamilyReferenceBySearch(Autodesk.Revit.DB.FamilyInstance,MBF.Revit.Creation.Constants.SpecialReferenceType,System.String)
+  parent: MBF.Revit.Creation.Utils.MbDimensionUtils
+  langs:
+  - csharp
+  - vb
+  name: GetSpecialFamilyReferenceBySearch(FamilyInstance, SpecialReferenceType, string)
+  nameWithType: MbDimensionUtils.GetSpecialFamilyReferenceBySearch(FamilyInstance, SpecialReferenceType, string)
+  fullName: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReferenceBySearch(Autodesk.Revit.DB.FamilyInstance, MBF.Revit.Creation.Constants.SpecialReferenceType, string)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Utils/MbDimensionUtils.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Utils
+  summary: >-
+    Searches for a specific geometry reference within a family instance based on the provided search string and
+
+    reference type.
+  remarks: >-
+    This method searches both the symbol and instance geometry of the family instance, including nested
+                geometry instances. If no matching reference is found, the method returns a failure result with a descriptive error
+                message.
+  example: []
+  syntax:
+    content: public static MbResult<Reference> GetSpecialFamilyReferenceBySearch(FamilyInstance familyInstance, SpecialReferenceType refType, string searchString)
+    parameters:
+    - id: familyInstance
+      type: Autodesk.Revit.DB.FamilyInstance
+      description: The family instance to search within. Must not be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    - id: refType
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+      description: The type of reference to search for, such as a specific geometry or element type.
+    - id: searchString
+      type: System.String
+      description: The string to match against the geometry or element names. Must not be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
+    return:
+      type: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Reference}
+      description: >-
+        A <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing the found <xref href="Autodesk.Revit.DB.Reference" data-throw-if-not-resolved="false"></xref> if the search is successful; otherwise, a
+                    failure result with an appropriate error message.
+    content.vb: Public Shared Function GetSpecialFamilyReferenceBySearch(familyInstance As FamilyInstance, refType As SpecialReferenceType, searchString As String) As MbResult(Of Reference)
+  overload: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReferenceBySearch*
+  nameWithType.vb: MbDimensionUtils.GetSpecialFamilyReferenceBySearch(FamilyInstance, SpecialReferenceType, String)
+  fullName.vb: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReferenceBySearch(Autodesk.Revit.DB.FamilyInstance, MBF.Revit.Creation.Constants.SpecialReferenceType, String)
+  name.vb: GetSpecialFamilyReferenceBySearch(FamilyInstance, SpecialReferenceType, String)
+- uid: MBF.Revit.Creation.Utils.MbDimensionUtils.GetAllSpecialFamilyReferences(Autodesk.Revit.DB.FamilyInstance)
+  commentId: M:MBF.Revit.Creation.Utils.MbDimensionUtils.GetAllSpecialFamilyReferences(Autodesk.Revit.DB.FamilyInstance)
+  id: GetAllSpecialFamilyReferences(Autodesk.Revit.DB.FamilyInstance)
+  parent: MBF.Revit.Creation.Utils.MbDimensionUtils
+  langs:
+  - csharp
+  - vb
+  name: GetAllSpecialFamilyReferences(FamilyInstance)
+  nameWithType: MbDimensionUtils.GetAllSpecialFamilyReferences(FamilyInstance)
+  fullName: MBF.Revit.Creation.Utils.MbDimensionUtils.GetAllSpecialFamilyReferences(Autodesk.Revit.DB.FamilyInstance)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Utils/MbDimensionUtils.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Utils
+  summary: Retrieves all special references (plane, line, and point references) from the specified family instance.
+  remarks: >-
+    This method categorizes the references into planes, lines, and points by analyzing the geometry of
+                the provided family instance. The method will fail if the family instance is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, if its
+                associated document is unavailable, or if no geometry or valid references are found.
+  example: []
+  syntax:
+    content: public static MbResult<CategorizedReferences> GetAllSpecialFamilyReferences(FamilyInstance familyInstance)
+    parameters:
+    - id: familyInstance
+      type: Autodesk.Revit.DB.FamilyInstance
+      description: The <xref href="FamilyInstance" data-throw-if-not-resolved="false"></xref> from which to extract references. Must not be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    return:
+      type: MB.Common.Utils.Result.MbResult{MBF.Revit.Creation.Models.CategorizedReferences}
+      description: >-
+        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing a <xref href="MBF.Revit.Creation.Models.CategorizedReferences" data-throw-if-not-resolved="false"></xref> object with the extracted references
+                    if successful; otherwise, a failure result with an error message.
+    content.vb: Public Shared Function GetAllSpecialFamilyReferences(familyInstance As FamilyInstance) As MbResult(Of CategorizedReferences)
+  overload: MBF.Revit.Creation.Utils.MbDimensionUtils.GetAllSpecialFamilyReferences*
+references:
+- uid: MBF.Revit.Creation.Utils
+  commentId: N:MBF.Revit.Creation.Utils
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Creation.Utils
+  nameWithType: MBF.Revit.Creation.Utils
+  fullName: MBF.Revit.Creation.Utils
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Creation
+    name: Creation
+    isExternal: true
+    href: MBF.Revit.Creation.html
+  - name: .
+  - uid: MBF.Revit.Creation.Utils
+    name: Utils
+    isExternal: true
+    href: MBF.Revit.Creation.Utils.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Creation
+    name: Creation
+    isExternal: true
+    href: MBF.Revit.Creation.html
+  - name: .
+  - uid: MBF.Revit.Creation.Utils
+    name: Utils
+    isExternal: true
+    href: MBF.Revit.Creation.Utils.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: FamilyInstance
+  commentId: T:FamilyInstance
+  isExternal: true
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType
+  commentId: T:MBF.Revit.Creation.Constants.SpecialReferenceType
+  parent: MBF.Revit.Creation.Constants
+  isExternal: true
+  href: MBF.Revit.Creation.Constants.SpecialReferenceType.html
+  name: SpecialReferenceType
+  nameWithType: SpecialReferenceType
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MB.Common.Utils.Result.MbResult`1
+  commentId: T:MB.Common.Utils.Result.MbResult`1
+  parent: MB.Common.Utils.Result
+  isExternal: true
+  href: MB.Common.Utils.Result.MbResult-1.html
+  name: MbResult<T>
+  nameWithType: MbResult<T>
+  fullName: MB.Common.Utils.Result.MbResult<T>
+  nameWithType.vb: MbResult(Of T)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of T)
+  name.vb: MbResult(Of T)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Autodesk.Revit.DB.Reference
+  commentId: T:Autodesk.Revit.DB.Reference
+  isExternal: true
+  name: Reference
+  nameWithType: Reference
+  fullName: Autodesk.Revit.DB.Reference
+- uid: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference*
+  commentId: Overload:MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference
+  isExternal: true
+  href: MBF.Revit.Creation.Utils.MbDimensionUtils.html#MBF_Revit_Creation_Utils_MbDimensionUtils_GetSpecialFamilyReference_Autodesk_Revit_DB_FamilyInstance_MBF_Revit_Creation_Constants_SpecialReferenceType_
+  name: GetSpecialFamilyReference
+  nameWithType: MbDimensionUtils.GetSpecialFamilyReference
+  fullName: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference
+- uid: Autodesk.Revit.DB.FamilyInstance
+  isExternal: true
+  name: FamilyInstance
+  nameWithType: FamilyInstance
+  fullName: Autodesk.Revit.DB.FamilyInstance
+- uid: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Reference}
+  commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Reference}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  name: MbResult<Reference>
+  nameWithType: MbResult<Reference>
+  fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.Reference>
+  nameWithType.vb: MbResult(Of Reference)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of Autodesk.Revit.DB.Reference)
+  name.vb: MbResult(Of Reference)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: Autodesk.Revit.DB.Reference
+    name: Reference
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Reference
+    name: Reference
+    isExternal: true
+  - name: )
+- uid: MBF.Revit.Creation.Constants
+  commentId: N:MBF.Revit.Creation.Constants
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Creation.Constants
+  nameWithType: MBF.Revit.Creation.Constants
+  fullName: MBF.Revit.Creation.Constants
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Creation
+    name: Creation
+    isExternal: true
+    href: MBF.Revit.Creation.html
+  - name: .
+  - uid: MBF.Revit.Creation.Constants
+    name: Constants
+    isExternal: true
+    href: MBF.Revit.Creation.Constants.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Creation
+    name: Creation
+    isExternal: true
+    href: MBF.Revit.Creation.html
+  - name: .
+  - uid: MBF.Revit.Creation.Constants
+    name: Constants
+    isExternal: true
+    href: MBF.Revit.Creation.Constants.html
+- uid: MB.Common.Utils.Result
+  commentId: N:MB.Common.Utils.Result
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Utils.Result
+  nameWithType: MB.Common.Utils.Result
+  fullName: MB.Common.Utils.Result
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReferenceBySearch*
+  commentId: Overload:MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReferenceBySearch
+  isExternal: true
+  href: MBF.Revit.Creation.Utils.MbDimensionUtils.html#MBF_Revit_Creation_Utils_MbDimensionUtils_GetSpecialFamilyReferenceBySearch_Autodesk_Revit_DB_FamilyInstance_MBF_Revit_Creation_Constants_SpecialReferenceType_System_String_
+  name: GetSpecialFamilyReferenceBySearch
+  nameWithType: MbDimensionUtils.GetSpecialFamilyReferenceBySearch
+  fullName: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReferenceBySearch
+- uid: MBF.Revit.Creation.Models.CategorizedReferences
+  commentId: T:MBF.Revit.Creation.Models.CategorizedReferences
+  isExternal: true
+  href: MBF.Revit.Creation.Models.CategorizedReferences.html
+  name: CategorizedReferences
+  nameWithType: CategorizedReferences
+  fullName: MBF.Revit.Creation.Models.CategorizedReferences
+- uid: MBF.Revit.Creation.Utils.MbDimensionUtils.GetAllSpecialFamilyReferences*
+  commentId: Overload:MBF.Revit.Creation.Utils.MbDimensionUtils.GetAllSpecialFamilyReferences
+  isExternal: true
+  href: MBF.Revit.Creation.Utils.MbDimensionUtils.html#MBF_Revit_Creation_Utils_MbDimensionUtils_GetAllSpecialFamilyReferences_Autodesk_Revit_DB_FamilyInstance_
+  name: GetAllSpecialFamilyReferences
+  nameWithType: MbDimensionUtils.GetAllSpecialFamilyReferences
+  fullName: MBF.Revit.Creation.Utils.MbDimensionUtils.GetAllSpecialFamilyReferences
+- uid: MB.Common.Utils.Result.MbResult{MBF.Revit.Creation.Models.CategorizedReferences}
+  commentId: T:MB.Common.Utils.Result.MbResult{MBF.Revit.Creation.Models.CategorizedReferences}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: MBF.Revit.Creation.Models.CategorizedReferences.html
+  name: MbResult<CategorizedReferences>
+  nameWithType: MbResult<CategorizedReferences>
+  fullName: MB.Common.Utils.Result.MbResult<MBF.Revit.Creation.Models.CategorizedReferences>
+  nameWithType.vb: MbResult(Of CategorizedReferences)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of MBF.Revit.Creation.Models.CategorizedReferences)
+  name.vb: MbResult(Of CategorizedReferences)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: MBF.Revit.Creation.Models.CategorizedReferences
+    name: CategorizedReferences
+    isExternal: true
+    href: MBF.Revit.Creation.Models.CategorizedReferences.html
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MBF.Revit.Creation.Models.CategorizedReferences
+    name: CategorizedReferences
+    isExternal: true
+    href: MBF.Revit.Creation.Models.CategorizedReferences.html
+  - name: )
+shouldSkipMarkup: true

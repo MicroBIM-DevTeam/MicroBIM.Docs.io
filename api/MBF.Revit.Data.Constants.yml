@@ -1,0 +1,73 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Data.Constants
+  commentId: N:MBF.Revit.Data.Constants
+  id: MBF.Revit.Data.Constants
+  children:
+  - MBF.Revit.Data.Constants.MbCeilingType
+  langs:
+  - csharp
+  - vb
+  name: MBF.Revit.Data.Constants
+  nameWithType: MBF.Revit.Data.Constants
+  fullName: MBF.Revit.Data.Constants
+  type: Namespace
+  assemblies:
+  - MBF.Revit.Data
+references:
+- uid: MBF.Revit.Data.Constants.MbCeilingType
+  commentId: T:MBF.Revit.Data.Constants.MbCeilingType
+  parent: MBF.Revit.Data.Constants
+  isExternal: true
+  href: MBF.Revit.Data.Constants.MbCeilingType.html
+  name: MbCeilingType
+  nameWithType: MbCeilingType
+  fullName: MBF.Revit.Data.Constants.MbCeilingType
+- uid: MBF.Revit.Data.Constants
+  commentId: N:MBF.Revit.Data.Constants
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Data.Constants
+  nameWithType: MBF.Revit.Data.Constants
+  fullName: MBF.Revit.Data.Constants
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Constants
+    name: Constants
+    isExternal: true
+    href: MBF.Revit.Data.Constants.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Constants
+    name: Constants
+    isExternal: true
+    href: MBF.Revit.Data.Constants.html
+shouldSkipMarkup: true

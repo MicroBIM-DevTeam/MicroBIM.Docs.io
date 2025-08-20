@@ -39,7 +39,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -70,7 +70,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.GetPipeInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -109,7 +109,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.GetFittingAtFarthestConnector(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -144,7 +144,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.GetFittingsOnPipe(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -202,7 +202,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.GetFittingsOnPipeByStation(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.XYZ, double)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -252,7 +252,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.GetFittingStation(Autodesk.Revit.DB.FamilyInstance, Autodesk.Revit.DB.Line, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -292,7 +292,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.GetFittingProjectedPoint(Autodesk.Revit.DB.FamilyInstance, Autodesk.Revit.DB.Line)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -325,7 +325,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.GetValidSpudFittings(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -363,7 +363,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.IsSpudAtEndPointsOfPipe(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.ElementId, Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -403,7 +403,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.GetConnectorsForElement(Autodesk.Revit.DB.Element)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -435,7 +435,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.ArePointsSame(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -474,7 +474,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.IsPointOnPipeEndPoints(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.Plumbing.Pipe)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -511,7 +511,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.IsSpudFitting(Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -556,7 +556,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.GetLineOfPipe(Autodesk.Revit.DB.Plumbing.Pipe)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -597,7 +597,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.GetPipeCurve(Autodesk.Revit.DB.Plumbing.Pipe)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -636,7 +636,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.GetEndPoint(Autodesk.Revit.DB.Plumbing.Pipe, MBF.Revit.Data.Utils.PipePointType)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -668,7 +668,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.FamilyIsOutsideLine(Autodesk.Revit.DB.FamilyInstance, Autodesk.Revit.DB.Line)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -712,7 +712,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.GetConnectedFittingsOnCurve(Autodesk.Revit.DB.Plumbing.Pipe)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -750,7 +750,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.RemoveDuplicateFittings(ref System.Collections.Generic.List<Autodesk.Revit.DB.FamilyInstance>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -788,7 +788,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.ArePointsClose(Autodesk.Revit.DB.FamilyInstance, Autodesk.Revit.DB.FamilyInstance, double)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -839,7 +839,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.IsWellConnected(Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -873,7 +873,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.GetConnectedFittingsBothSidesOfPipe(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Plumbing.Pipe)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -914,7 +914,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.IsTeeOrElbowFitting(Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -952,7 +952,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.GetFarSideConnectedToFamilyInstance(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -991,7 +991,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.GetEndConnectors(Autodesk.Revit.DB.Plumbing.Pipe)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -1020,7 +1020,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.FindNearbyUnconnectedConnector(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.Document, System.Collections.Generic.List<Autodesk.Revit.DB.ElementId>, System.Collections.Generic.HashSet<int>, string)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -1085,7 +1085,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.SortFittingsByProximity(Autodesk.Revit.DB.Document, System.Collections.Generic.List<Autodesk.Revit.DB.ElementId>, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipesUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipesUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -1561,6 +1561,7 @@ references:
   nameWithType: MbPipesUtils.GetFittingAtFarthestConnector
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.GetFittingAtFarthestConnector
 - uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
   isExternal: true
   name: XYZ
   nameWithType: XYZ
@@ -1569,7 +1570,6 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Element}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   name: MbResult<Element>
   nameWithType: MbResult<Element>
   fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.Element>
@@ -1580,7 +1580,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: <
   - uid: Autodesk.Revit.DB.Element
     name: Element
@@ -1590,7 +1589,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "
@@ -1685,7 +1683,6 @@ references:
   nameWithType: MbPipesUtils.GetFittingsOnPipe
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.GetFittingsOnPipe
 - uid: Autodesk.Revit.DB.Document
-  commentId: T:Autodesk.Revit.DB.Document
   isExternal: true
   name: Document
   nameWithType: Document

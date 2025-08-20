@@ -75,7 +75,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -106,7 +106,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.ResourceManager
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -131,7 +131,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Culture
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -159,7 +159,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.About
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -184,7 +184,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.And
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -209,7 +209,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.BIMAssets
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -234,7 +234,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.BookMode
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -259,7 +259,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Cancel
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -284,7 +284,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.ClosePDF
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -309,7 +309,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Confirm
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -334,7 +334,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.contact_us
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -359,7 +359,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.ContinuousPagesMode
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -384,7 +384,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.DecimalValue
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -409,7 +409,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Delete
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -434,7 +434,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.DoubleValue
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -459,7 +459,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Download
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -484,7 +484,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.DownloadSelected
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -509,7 +509,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.DPI_
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -534,7 +534,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Edit
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -559,7 +559,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.FileType
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -584,7 +584,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.FileURL
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -609,7 +609,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Findindocument
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -634,7 +634,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.FitHeight
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -659,7 +659,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.FitWidth
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -684,7 +684,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.From
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -709,7 +709,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.GetPageText
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -734,7 +734,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.HandTool
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -759,7 +759,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Installers
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -784,7 +784,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.IntValue
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -809,7 +809,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.InvalidFormat
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -834,7 +834,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Islefttorightdocument
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -859,7 +859,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Isrighttoleftdocument
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -884,7 +884,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Light_DarkMode
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -909,7 +909,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Miscellaneous
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -934,7 +934,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.NextPage
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -959,7 +959,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.No
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -984,7 +984,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.NumberRange
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1009,7 +1009,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.of
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1034,7 +1034,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.OpenPdf
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1059,7 +1059,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.PdfInformation
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1084,7 +1084,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.PreviousPage
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1109,7 +1109,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Renderallpages
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1134,7 +1134,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Required
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1159,7 +1159,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.RotateLeft
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1184,7 +1184,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.RotateRight
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1209,7 +1209,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Save
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1234,7 +1234,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.SaveasImages
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1259,7 +1259,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Searchforinstallers
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1284,7 +1284,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Searchterm
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1309,7 +1309,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.SelectLanguage
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1334,7 +1334,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.ShowBookmarks
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1359,7 +1359,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.SinglePageMode
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1384,7 +1384,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.SwapToDarkMode
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1409,7 +1409,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.SwapToLightMode
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1434,7 +1434,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.To
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1459,7 +1459,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.TransparentPage
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1484,7 +1484,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Upload
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1509,7 +1509,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.UploadedDate
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1534,7 +1534,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Url
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1559,7 +1559,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Version
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1584,7 +1584,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Yes
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1609,7 +1609,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Zoomin
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs
@@ -1634,7 +1634,7 @@ items:
   fullName: MBFWpfToolkit.Properties.Langs.Lang.Zoomout
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Properties/Langs/Lang.Designer.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Properties/Langs/Lang.Designer.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Properties.Langs

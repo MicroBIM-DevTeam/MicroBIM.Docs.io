@@ -4,7 +4,7 @@ items:
   commentId: N:MB.Common.Units.Behaviours
   id: MB.Common.Units.Behaviours
   children:
-  - MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior
+  - MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior
   langs:
   - csharp
   - vb
@@ -15,11 +15,11 @@ items:
   assemblies:
   - MB.Common
 references:
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior
-  commentId: T:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior
+  commentId: T:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior
   isExternal: true
-  href: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.html
-  name: TextBoxUnitLenghtConversionBehavior
-  nameWithType: TextBoxUnitLenghtConversionBehavior
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior
+  href: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html
+  name: TextBoxUnitLengthConversionBehavior
+  nameWithType: TextBoxUnitLengthConversionBehavior
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior
 shouldSkipMarkup: true

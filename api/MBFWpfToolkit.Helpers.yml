@@ -5,8 +5,10 @@ items:
   id: MBFWpfToolkit.Helpers
   children:
   - MBFWpfToolkit.Helpers.MbNotification
+  - MBFWpfToolkit.Helpers.MbObservableCollection`1
   - MBFWpfToolkit.Helpers.MbResourceHelper
   - MBFWpfToolkit.Helpers.PasswordHelper
+  - MBFWpfToolkit.Helpers.SilentValidator
   - MBFWpfToolkit.Helpers.WindowController
   langs:
   - csharp
@@ -25,6 +27,34 @@ references:
   name: MbNotification
   nameWithType: MbNotification
   fullName: MBFWpfToolkit.Helpers.MbNotification
+- uid: MBFWpfToolkit.Helpers.MbObservableCollection`1
+  commentId: T:MBFWpfToolkit.Helpers.MbObservableCollection`1
+  isExternal: true
+  href: MBFWpfToolkit.Helpers.MbObservableCollection-1.html
+  name: MbObservableCollection<T>
+  nameWithType: MbObservableCollection<T>
+  fullName: MBFWpfToolkit.Helpers.MbObservableCollection<T>
+  nameWithType.vb: MbObservableCollection(Of T)
+  fullName.vb: MBFWpfToolkit.Helpers.MbObservableCollection(Of T)
+  name.vb: MbObservableCollection(Of T)
+  spec.csharp:
+  - uid: MBFWpfToolkit.Helpers.MbObservableCollection`1
+    name: MbObservableCollection
+    isExternal: true
+    href: MBFWpfToolkit.Helpers.MbObservableCollection-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MBFWpfToolkit.Helpers.MbObservableCollection`1
+    name: MbObservableCollection
+    isExternal: true
+    href: MBFWpfToolkit.Helpers.MbObservableCollection-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: MBFWpfToolkit.Helpers.MbResourceHelper
   commentId: T:MBFWpfToolkit.Helpers.MbResourceHelper
   isExternal: true
@@ -39,6 +69,13 @@ references:
   name: PasswordHelper
   nameWithType: PasswordHelper
   fullName: MBFWpfToolkit.Helpers.PasswordHelper
+- uid: MBFWpfToolkit.Helpers.SilentValidator
+  commentId: T:MBFWpfToolkit.Helpers.SilentValidator
+  isExternal: true
+  href: MBFWpfToolkit.Helpers.SilentValidator.html
+  name: SilentValidator
+  nameWithType: SilentValidator
+  fullName: MBFWpfToolkit.Helpers.SilentValidator
 - uid: MBFWpfToolkit.Helpers.WindowController
   commentId: T:MBFWpfToolkit.Helpers.WindowController
   isExternal: true

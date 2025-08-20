@@ -18,7 +18,7 @@ items:
   fullName: MB.Common.Aspects.LogAspect
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/LogAspect.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Aspects/LogAspect.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects
@@ -111,7 +111,7 @@ items:
   fullName: MB.Common.Aspects.LogAspect.__a$_instance
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/LogAspect.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Aspects/LogAspect.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects
@@ -132,7 +132,7 @@ items:
   fullName: MB.Common.Aspects.LogAspect.OnEntry(string, System.Type)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/LogAspect.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Aspects/LogAspect.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects
@@ -195,7 +195,7 @@ items:
   fullName: MB.Common.Aspects.LogAspect.OnExit(string, System.Type)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/LogAspect.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Aspects/LogAspect.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects
@@ -259,7 +259,7 @@ items:
   fullName: MB.Common.Aspects.LogAspect.HandleExceptions(System.Func<object[], object>, object[], string, System.Type)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/LogAspect.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Aspects/LogAspect.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects
@@ -344,7 +344,7 @@ items:
   fullName: MB.Common.Aspects.LogAspect.LogAspect()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Aspects/LogAspect.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Aspects/LogAspect.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Aspects

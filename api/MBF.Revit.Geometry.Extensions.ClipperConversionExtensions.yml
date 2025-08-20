@@ -19,7 +19,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.ClipperConversionExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/ClipperConversionExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Extensions/ClipperConversionExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -58,7 +58,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.ClipperConversionExtensions.ToClipperPathD(Autodesk.Revit.DB.CurveLoop)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/ClipperConversionExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Extensions/ClipperConversionExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -94,7 +94,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.ClipperConversionExtensions.ToClipperPathsD(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.CurveLoop>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/ClipperConversionExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Extensions/ClipperConversionExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -133,7 +133,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.ClipperConversionExtensions.ToPathsD(Autodesk.Revit.DB.CurveLoop)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/ClipperConversionExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Extensions/ClipperConversionExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -169,7 +169,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.ClipperConversionExtensions.ToClipperPathD(System.Collections.Generic.List<Autodesk.Revit.DB.Curve>, bool, bool)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/ClipperConversionExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Extensions/ClipperConversionExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -217,7 +217,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.ClipperConversionExtensions.ToClipperPoints(Autodesk.Revit.DB.Curve, bool)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/ClipperConversionExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Extensions/ClipperConversionExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -258,7 +258,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.ClipperConversionExtensions.ToClipperPathsD(System.Collections.Generic.IEnumerable<System.Collections.Generic.List<Autodesk.Revit.DB.Curve>>, bool, bool)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/ClipperConversionExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Extensions/ClipperConversionExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -653,7 +653,6 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{Clipper2Lib.PathD}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   name: MbResult<PathD>
   nameWithType: MbResult<PathD>
   fullName: MB.Common.Utils.Result.MbResult<Clipper2Lib.PathD>
@@ -664,7 +663,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: <
   - uid: Clipper2Lib.PathD
     name: PathD
@@ -674,7 +672,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "
@@ -776,7 +773,6 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{Clipper2Lib.PathsD}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   name: MbResult<PathsD>
   nameWithType: MbResult<PathsD>
   fullName: MB.Common.Utils.Result.MbResult<Clipper2Lib.PathsD>
@@ -787,7 +783,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: <
   - uid: Clipper2Lib.PathsD
     name: PathsD
@@ -797,7 +792,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "
@@ -966,7 +960,7 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Clipper2Lib.PointD}}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   name: MbResult<List<PointD>>
   nameWithType: MbResult<List<PointD>>
   fullName: MB.Common.Utils.Result.MbResult<System.Collections.Generic.List<Clipper2Lib.PointD>>
@@ -977,7 +971,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: <
   - uid: System.Collections.Generic.List`1
     name: List
@@ -993,7 +986,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "

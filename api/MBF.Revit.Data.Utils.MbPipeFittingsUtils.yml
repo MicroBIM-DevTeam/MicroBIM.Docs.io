@@ -29,7 +29,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -60,7 +60,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetTeeFamilyInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -101,7 +101,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetElbowsFamilyInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -142,7 +142,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOutletsFamilyInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -183,7 +183,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch(Autodesk.Revit.DB.FamilyInstance, bool)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -224,7 +224,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetInlineAndBullNoseConnectors(System.Collections.Generic.List<Autodesk.Revit.DB.Connector>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -262,7 +262,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOrderedConnectorSizesInInch(Autodesk.Revit.DB.Element, bool)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -306,7 +306,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.FittingSizeIsEqual(Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -343,7 +343,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOtherFittingWhichIsNotElbowsOrTeesOrOutletsFamilyInstances(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -389,7 +389,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetAngleBetweenLargestRadiusConnectors(System.Collections.Generic.List<Autodesk.Revit.DB.Connector>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -430,7 +430,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetAngleBetweenLargestRadiusConnectors(Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -468,7 +468,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetOutletDirectionCode(Autodesk.Revit.DB.Plumbing.Pipe, Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -506,7 +506,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetValidOutletConnectors(Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -535,7 +535,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetFarthestConnectorSize(Autodesk.Revit.DB.FamilyInstance, Autodesk.Revit.DB.Plumbing.Pipe)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -568,7 +568,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetPerpendicularPlaneAxes(Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -603,7 +603,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetPerpendicularClockwise(Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -633,7 +633,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetPerpendicularCounterClockwise(Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbPipeFittingsUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbPipeFittingsUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -1568,6 +1568,7 @@ references:
   nameWithType: MbPipeFittingsUtils.GetPerpendicularPlaneAxes
   fullName: MBF.Revit.Data.Utils.MbPipeFittingsUtils.GetPerpendicularPlaneAxes
 - uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
   isExternal: true
   name: XYZ
   nameWithType: XYZ

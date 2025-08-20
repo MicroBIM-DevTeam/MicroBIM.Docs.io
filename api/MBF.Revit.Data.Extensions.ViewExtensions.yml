@@ -14,7 +14,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.ViewExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/ViewExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Extensions/ViewExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -50,7 +50,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.ViewExtensions.GetVisibleElements(Autodesk.Revit.DB.View, Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/ViewExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Extensions/ViewExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -403,7 +403,6 @@ references:
   nameWithType: View
   fullName: Autodesk.Revit.DB.View
 - uid: Autodesk.Revit.DB.Document
-  commentId: T:Autodesk.Revit.DB.Document
   isExternal: true
   name: Document
   nameWithType: Document

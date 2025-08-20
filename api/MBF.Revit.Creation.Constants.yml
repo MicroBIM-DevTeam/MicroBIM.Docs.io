@@ -1,0 +1,73 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Creation.Constants
+  commentId: N:MBF.Revit.Creation.Constants
+  id: MBF.Revit.Creation.Constants
+  children:
+  - MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: MBF.Revit.Creation.Constants
+  nameWithType: MBF.Revit.Creation.Constants
+  fullName: MBF.Revit.Creation.Constants
+  type: Namespace
+  assemblies:
+  - MBF.Revit.Creation
+references:
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType
+  commentId: T:MBF.Revit.Creation.Constants.SpecialReferenceType
+  parent: MBF.Revit.Creation.Constants
+  isExternal: true
+  href: MBF.Revit.Creation.Constants.SpecialReferenceType.html
+  name: SpecialReferenceType
+  nameWithType: SpecialReferenceType
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants
+  commentId: N:MBF.Revit.Creation.Constants
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Creation.Constants
+  nameWithType: MBF.Revit.Creation.Constants
+  fullName: MBF.Revit.Creation.Constants
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Creation
+    name: Creation
+    isExternal: true
+    href: MBF.Revit.Creation.html
+  - name: .
+  - uid: MBF.Revit.Creation.Constants
+    name: Constants
+    isExternal: true
+    href: MBF.Revit.Creation.Constants.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Creation
+    name: Creation
+    isExternal: true
+    href: MBF.Revit.Creation.html
+  - name: .
+  - uid: MBF.Revit.Creation.Constants
+    name: Constants
+    isExternal: true
+    href: MBF.Revit.Creation.Constants.html
+shouldSkipMarkup: true

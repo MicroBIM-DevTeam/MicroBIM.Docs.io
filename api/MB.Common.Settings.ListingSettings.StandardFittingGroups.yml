@@ -17,7 +17,7 @@ items:
   fullName: MB.Common.Settings.ListingSettings.StandardFittingGroups
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/StandardFittingGroups.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Settings/ListingSettings/StandardFittingGroups.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -48,7 +48,7 @@ items:
   fullName: MB.Common.Settings.ListingSettings.StandardFittingGroups.ElbowFittings
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/StandardFittingGroups.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Settings/ListingSettings/StandardFittingGroups.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -71,7 +71,7 @@ items:
   fullName: MB.Common.Settings.ListingSettings.StandardFittingGroups.TeeFittings
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/StandardFittingGroups.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Settings/ListingSettings/StandardFittingGroups.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -94,7 +94,7 @@ items:
   fullName: MB.Common.Settings.ListingSettings.StandardFittingGroups.SpudFittings
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/StandardFittingGroups.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Settings/ListingSettings/StandardFittingGroups.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -117,7 +117,7 @@ items:
   fullName: MB.Common.Settings.ListingSettings.StandardFittingGroups.RemainingFittings
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/StandardFittingGroups.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Settings/ListingSettings/StandardFittingGroups.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings

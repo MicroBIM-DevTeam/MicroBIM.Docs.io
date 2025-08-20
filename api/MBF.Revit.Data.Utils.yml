@@ -4,16 +4,26 @@ items:
   commentId: N:MBF.Revit.Data.Utils
   id: MBF.Revit.Data.Utils
   children:
+  - MBF.Revit.Data.Utils.CeilingPatternDeducer
   - MBF.Revit.Data.Utils.EntityUtils
+  - MBF.Revit.Data.Utils.GeometryUtils
+  - MBF.Revit.Data.Utils.MbCeilingUtils
   - MBF.Revit.Data.Utils.MbConnectorUtilities
+  - MBF.Revit.Data.Utils.MbCurveUtils
+  - MBF.Revit.Data.Utils.MbFaceUtils
   - MBF.Revit.Data.Utils.MbFamilyInstanceUtils
   - MBF.Revit.Data.Utils.MbFlexPipesUtils
+  - MBF.Revit.Data.Utils.MbLinkedElementUtils
   - MBF.Revit.Data.Utils.MbParameterUtils
   - MBF.Revit.Data.Utils.MbPipeAccessoriesUtils
   - MBF.Revit.Data.Utils.MbPipeFittingsUtils
   - MBF.Revit.Data.Utils.MbPipesUtils
+  - MBF.Revit.Data.Utils.MbProjectLocationUtils
+  - MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  - MBF.Revit.Data.Utils.MbSelectionUtils
   - MBF.Revit.Data.Utils.MbSpaceUtils
   - MBF.Revit.Data.Utils.MbSprinklersUtils
+  - MBF.Revit.Data.Utils.MbSurveyPointUtils
   - MBF.Revit.Data.Utils.MbUnitUtils
   - MBF.Revit.Data.Utils.MbViewUtils
   - MBF.Revit.Data.Utils.PipePointType
@@ -29,6 +39,13 @@ items:
   assemblies:
   - MBF.Revit.Data
 references:
+- uid: MBF.Revit.Data.Utils.CeilingPatternDeducer
+  commentId: T:MBF.Revit.Data.Utils.CeilingPatternDeducer
+  isExternal: true
+  href: MBF.Revit.Data.Utils.CeilingPatternDeducer.html
+  name: CeilingPatternDeducer
+  nameWithType: CeilingPatternDeducer
+  fullName: MBF.Revit.Data.Utils.CeilingPatternDeducer
 - uid: MBF.Revit.Data.Utils.EntityUtils
   commentId: T:MBF.Revit.Data.Utils.EntityUtils
   isExternal: true
@@ -36,6 +53,20 @@ references:
   name: EntityUtils
   nameWithType: EntityUtils
   fullName: MBF.Revit.Data.Utils.EntityUtils
+- uid: MBF.Revit.Data.Utils.GeometryUtils
+  commentId: T:MBF.Revit.Data.Utils.GeometryUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.GeometryUtils.html
+  name: GeometryUtils
+  nameWithType: GeometryUtils
+  fullName: MBF.Revit.Data.Utils.GeometryUtils
+- uid: MBF.Revit.Data.Utils.MbCeilingUtils
+  commentId: T:MBF.Revit.Data.Utils.MbCeilingUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbCeilingUtils.html
+  name: MbCeilingUtils
+  nameWithType: MbCeilingUtils
+  fullName: MBF.Revit.Data.Utils.MbCeilingUtils
 - uid: MBF.Revit.Data.Utils.MbConnectorUtilities
   commentId: T:MBF.Revit.Data.Utils.MbConnectorUtilities
   isExternal: true
@@ -43,6 +74,20 @@ references:
   name: MbConnectorUtilities
   nameWithType: MbConnectorUtilities
   fullName: MBF.Revit.Data.Utils.MbConnectorUtilities
+- uid: MBF.Revit.Data.Utils.MbCurveUtils
+  commentId: T:MBF.Revit.Data.Utils.MbCurveUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbCurveUtils.html
+  name: MbCurveUtils
+  nameWithType: MbCurveUtils
+  fullName: MBF.Revit.Data.Utils.MbCurveUtils
+- uid: MBF.Revit.Data.Utils.MbFaceUtils
+  commentId: T:MBF.Revit.Data.Utils.MbFaceUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbFaceUtils.html
+  name: MbFaceUtils
+  nameWithType: MbFaceUtils
+  fullName: MBF.Revit.Data.Utils.MbFaceUtils
 - uid: MBF.Revit.Data.Utils.MbFamilyInstanceUtils
   commentId: T:MBF.Revit.Data.Utils.MbFamilyInstanceUtils
   isExternal: true
@@ -57,6 +102,13 @@ references:
   name: MbFlexPipesUtils
   nameWithType: MbFlexPipesUtils
   fullName: MBF.Revit.Data.Utils.MbFlexPipesUtils
+- uid: MBF.Revit.Data.Utils.MbLinkedElementUtils
+  commentId: T:MBF.Revit.Data.Utils.MbLinkedElementUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbLinkedElementUtils.html
+  name: MbLinkedElementUtils
+  nameWithType: MbLinkedElementUtils
+  fullName: MBF.Revit.Data.Utils.MbLinkedElementUtils
 - uid: MBF.Revit.Data.Utils.MbParameterUtils
   commentId: T:MBF.Revit.Data.Utils.MbParameterUtils
   isExternal: true
@@ -93,6 +145,20 @@ references:
   name: PipePointType
   nameWithType: PipePointType
   fullName: MBF.Revit.Data.Utils.PipePointType
+- uid: MBF.Revit.Data.Utils.MbProjectLocationUtils
+  commentId: T:MBF.Revit.Data.Utils.MbProjectLocationUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbProjectLocationUtils.html
+  name: MbProjectLocationUtils
+  nameWithType: MbProjectLocationUtils
+  fullName: MBF.Revit.Data.Utils.MbProjectLocationUtils
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  commentId: T:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html
+  name: MbRevitSpaceOldRepoUtils
+  nameWithType: MbRevitSpaceOldRepoUtils
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
 - uid: MBF.Revit.Data.Utils.RevitUnitUtils
   commentId: T:MBF.Revit.Data.Utils.RevitUnitUtils
   isExternal: true
@@ -100,6 +166,13 @@ references:
   name: RevitUnitUtils
   nameWithType: RevitUnitUtils
   fullName: MBF.Revit.Data.Utils.RevitUnitUtils
+- uid: MBF.Revit.Data.Utils.MbSelectionUtils
+  commentId: T:MBF.Revit.Data.Utils.MbSelectionUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbSelectionUtils.html
+  name: MbSelectionUtils
+  nameWithType: MbSelectionUtils
+  fullName: MBF.Revit.Data.Utils.MbSelectionUtils
 - uid: MBF.Revit.Data.Utils.MbSpaceUtils
   commentId: T:MBF.Revit.Data.Utils.MbSpaceUtils
   isExternal: true
@@ -114,6 +187,13 @@ references:
   name: MbSprinklersUtils
   nameWithType: MbSprinklersUtils
   fullName: MBF.Revit.Data.Utils.MbSprinklersUtils
+- uid: MBF.Revit.Data.Utils.MbSurveyPointUtils
+  commentId: T:MBF.Revit.Data.Utils.MbSurveyPointUtils
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbSurveyPointUtils.html
+  name: MbSurveyPointUtils
+  nameWithType: MbSurveyPointUtils
+  fullName: MBF.Revit.Data.Utils.MbSurveyPointUtils
 - uid: MBF.Revit.Data.Utils.MbUnitUtils
   commentId: T:MBF.Revit.Data.Utils.MbUnitUtils
   isExternal: true

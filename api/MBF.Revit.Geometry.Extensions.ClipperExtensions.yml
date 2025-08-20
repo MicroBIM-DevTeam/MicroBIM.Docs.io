@@ -15,7 +15,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.ClipperExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/ClipperExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Extensions/ClipperExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -54,7 +54,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.ClipperExtensions.AddPathDToPathsD(Clipper2Lib.PathsD, Clipper2Lib.PathD)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/ClipperExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Extensions/ClipperExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -87,7 +87,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.ClipperExtensions.ToCurveLoop(Clipper2Lib.PathD)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/ClipperExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Extensions/ClipperExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -462,7 +462,6 @@ references:
   commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.CurveLoop}
   parent: MB.Common.Utils.Result
   definition: MB.Common.Utils.Result.MbResult`1
-  href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   name: MbResult<CurveLoop>
   nameWithType: MbResult<CurveLoop>
   fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.CurveLoop>
@@ -473,7 +472,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: <
   - uid: Autodesk.Revit.DB.CurveLoop
     name: CurveLoop
@@ -483,7 +481,6 @@ references:
   - uid: MB.Common.Utils.Result.MbResult`1
     name: MbResult
     isExternal: true
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/db53c258ebe265434a780081a3378c2fd0c7ccf6/Utils/Result/MbResult.cs
   - name: (
   - name: Of
   - name: " "

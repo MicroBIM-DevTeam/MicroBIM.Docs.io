@@ -15,7 +15,7 @@ items:
   fullName: MB.Common.Constants.MbfFiles
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Constants/MbfFiles.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Constants/MbfFiles.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
@@ -46,7 +46,7 @@ items:
   fullName: MB.Common.Constants.MbfFiles.AddinDirectory
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Constants/MbfFiles.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Constants/MbfFiles.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants
@@ -72,7 +72,7 @@ items:
   fullName: MB.Common.Constants.MbfFiles.ToolsSharedParameter
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Constants/MbfFiles.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Constants/MbfFiles.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Constants

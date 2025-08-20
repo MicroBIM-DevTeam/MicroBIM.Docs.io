@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MbRevitSpaceOldRepoUtils | MIcroBIM Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MbRevitSpaceOldRepoUtils | MIcroBIM Docs ">
+      
+      <meta name="description" content="Utility class for space operations and calculations using only Revit Space objects">
+      <link rel="icon" href="../images/logo.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/MicroBimLogo.png" alt="MicroBIM">
+            MicroBIM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils">
+
+
+
+  <h1 id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils" class="text-break">
+Class MbRevitSpaceOldRepoUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MBF.html">MBF</a>.<a class="xref" href="MBF.Revit.html">Revit</a>.<a class="xref" href="MBF.Revit.Data.html">Data</a>.<a class="xref" href="MBF.Revit.Data.Utils.html">Utils</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MBF.Revit.Data.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary">Utility class for space operations and calculations using only Revit Space objects</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class MbRevitSpaceOldRepoUtils</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MbRevitSpaceOldRepoUtils</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_ServiceCategories" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ServiceCategories">
+  ServiceCategories
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly List&lt;BuiltInCategory&gt; ServiceCategories</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">BuiltInCategory</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_AnalyzeCeilings_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.AnalyzeCeilings*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_AnalyzeCeilings_System_Collections_Generic_List_Autodesk_Revit_DB_Ceiling__Autodesk_Revit_DB_RevitLinkInstance_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.AnalyzeCeilings(System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.RevitLinkInstance)">
+  AnalyzeCeilings(List&lt;Ceiling&gt;, RevitLinkInstance)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Determines the ceiling type for a space based on available ceilings</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;CeilingAnalysisResult&gt; AnalyzeCeilings(List&lt;Ceiling&gt; ceilings, RevitLinkInstance linkInstance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ceilings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Ceiling</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>linkInstance</code> <span class="xref">RevitLinkInstance</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="MBF.Revit.Data.Models.CeilingAnalysisResult.html">CeilingAnalysisResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_CalculatePolygonArea_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CalculatePolygonArea*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_CalculatePolygonArea_System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CalculatePolygonArea(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ})">
+  CalculatePolygonArea(List&lt;XYZ&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Calculates the area enclosed by a set of points using the shoelace formula</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;double&gt; CalculatePolygonArea(List&lt;XYZ&gt; boundaryPoints)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>boundaryPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">XYZ</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_CheckPointClashWithServices_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CheckPointClashWithServices*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_CheckPointClashWithServices_Autodesk_Revit_DB_XYZ_System_Collections_Generic_List_Autodesk_Revit_DB_Element__Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CheckPointClashWithServices(Autodesk.Revit.DB.XYZ,System.Collections.Generic.List{Autodesk.Revit.DB.Element},Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)">
+  CheckPointClashWithServices(XYZ, List&lt;Element&gt;, RevitLinkInstance, Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Checks for clashes between a point and service elements</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;bool&gt; CheckPointClashWithServices(XYZ gridPoint, List&lt;Element&gt; serviceElements, RevitLinkInstance linkInstance, Document document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gridPoint</code> <span class="xref">XYZ</span></dt>
+    <dd></dd>
+    <dt><code>serviceElements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>linkInstance</code> <span class="xref">RevitLinkInstance</span></dt>
+    <dd></dd>
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_CreateSpaceFromRoom_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_CreateSpaceFromRoom_Autodesk_Revit_DB_Architecture_Room_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom(Autodesk.Revit.DB.Architecture.Room,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)">
+  CreateSpaceFromRoom(Room, RevitLinkInstance, Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Creates a space from a room with proper coordinate transformation</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;Space&gt; CreateSpaceFromRoom(Room room, RevitLinkInstance linkInstance, Document document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>room</code> <span class="xref">Room</span></dt>
+    <dd></dd>
+    <dt><code>linkInstance</code> <span class="xref">RevitLinkInstance</span></dt>
+    <dd></dd>
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<span class="xref">Space</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_DetermineCeilingHeight_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.DetermineCeilingHeight*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_DetermineCeilingHeight_Autodesk_Revit_DB_Mechanical_Space_MBF_Revit_Data_Models_CeilingAnalysisResult_System_Double_System_Double_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.DetermineCeilingHeight(Autodesk.Revit.DB.Mechanical.Space,MBF.Revit.Data.Models.CeilingAnalysisResult,System.Double,System.Double)">
+  DetermineCeilingHeight(Space, CeilingAnalysisResult, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Determines ceiling height for a space based on ceiling analysis</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;double&gt; DetermineCeilingHeight(Space space, CeilingAnalysisResult ceilingAnalysis, double minAboveFloorElevation = 0, double exposedSprinklerOffset = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>space</code> <span class="xref">Space</span></dt>
+    <dd></dd>
+    <dt><code>ceilingAnalysis</code> <a class="xref" href="MBF.Revit.Data.Models.CeilingAnalysisResult.html">CeilingAnalysisResult</a></dt>
+    <dd></dd>
+    <dt><code>minAboveFloorElevation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>exposedSprinklerOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetCeilingData_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetCeilingData*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetCeilingData_Autodesk_Revit_DB_Ceiling_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetCeilingData(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.Document)">
+  GetCeilingData(Ceiling, Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Gets ceiling data including type and face information</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;CeilingData&gt; GetCeilingData(Ceiling ceiling, Document linkDocument)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ceiling</code> <span class="xref">Ceiling</span></dt>
+    <dd></dd>
+    <dt><code>linkDocument</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="MBF.Revit.Data.Models.CeilingData.html">CeilingData</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetSpaceBoundaryPoints_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetSpaceBoundaryPoints_Autodesk_Revit_DB_Mechanical_Space_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints(Autodesk.Revit.DB.Mechanical.Space)">
+  GetSpaceBoundaryPoints(Space)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Extracts boundary points from space boundary segments</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;List&lt;XYZ&gt;&gt; GetSpaceBoundaryPoints(Space space)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>space</code> <span class="xref">Space</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">XYZ</span>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetSpaceBoundarySegments_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetSpaceBoundarySegments_Autodesk_Revit_DB_Mechanical_Space_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments(Autodesk.Revit.DB.Mechanical.Space)">
+  GetSpaceBoundarySegments(Space)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Gets boundary segments from a space with proper error handling</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;List&lt;List&lt;Curve&gt;&gt;&gt; GetSpaceBoundarySegments(Space space)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>space</code> <span class="xref">Space</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Curve</span>&gt;&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetSpaceCenterPoint_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetSpaceCenterPoint_Autodesk_Revit_DB_Mechanical_Space_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint(Autodesk.Revit.DB.Mechanical.Space)">
+  GetSpaceCenterPoint(Space)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Gets the center point of a space</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;XYZ&gt; GetSpaceCenterPoint(Space space)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>space</code> <span class="xref">Space</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<span class="xref">XYZ</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_IsPointInPolygon_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInPolygon*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_IsPointInPolygon_System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__Autodesk_Revit_DB_XYZ_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInPolygon(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ)">
+  IsPointInPolygon(List&lt;XYZ&gt;, XYZ)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Checks if a point is inside a polygon using ray casting algorithm</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;bool&gt; IsPointInPolygon(List&lt;XYZ&gt; polygonPoints, XYZ testPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>polygonPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">XYZ</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>testPoint</code> <span class="xref">XYZ</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_IsPointInSpace_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInSpace*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_IsPointInSpace_Autodesk_Revit_DB_Mechanical_Space_Autodesk_Revit_DB_XYZ_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInSpace(Autodesk.Revit.DB.Mechanical.Space,Autodesk.Revit.DB.XYZ)">
+  IsPointInSpace(Space, XYZ)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Checks if a point is inside a space using polygon containment</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;bool&gt; IsPointInSpace(Space space, XYZ testPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>space</code> <span class="xref">Space</span></dt>
+    <dd></dd>
+    <dt><code>testPoint</code> <span class="xref">XYZ</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_ProcessStructuralBeams_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ProcessStructuralBeams*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_ProcessStructuralBeams_System_Collections_Generic_List_System_Tuple_Autodesk_Revit_DB_Line_System_Double_System_Double___System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__System_Double_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ProcessStructuralBeams(System.Collections.Generic.List{System.Tuple{Autodesk.Revit.DB.Line,System.Double,System.Double}},System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},System.Double)">
+  ProcessStructuralBeams(List&lt;Tuple&lt;Line, double, double&gt;&gt;, List&lt;XYZ&gt;, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Processes and filters structural beams for grid calculations</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;BeamProcessingResult&gt; ProcessStructuralBeams(List&lt;Tuple&lt;Line, double, double&gt;&gt; beamCenterLines, List&lt;XYZ&gt; spaceBoundaryPoints, double ceilingHeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>beamCenterLines</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.tuple-3">Tuple</a>&lt;<span class="xref">Line</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>spaceBoundaryPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">XYZ</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>ceilingHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="MBF.Revit.Data.Models.BeamProcessingResult.html">BeamProcessingResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_UpdateSpaceHeight_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.UpdateSpaceHeight*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_UpdateSpaceHeight_Autodesk_Revit_DB_Mechanical_Space_System_Double_Autodesk_Revit_DB_Document_" data-uid="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.UpdateSpaceHeight(Autodesk.Revit.DB.Mechanical.Space,System.Double,Autodesk.Revit.DB.Document)">
+  UpdateSpaceHeight(Space, double, Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Updates space height based on detected slab elevation</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;bool&gt; UpdateSpaceHeight(Space space, double aboveFloorElevation, Document document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>space</code> <span class="xref">Space</span></dt>
+    <dd></dd>
+    <dt><code>aboveFloorElevation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2025 MicroBIM. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

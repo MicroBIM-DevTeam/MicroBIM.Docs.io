@@ -16,7 +16,7 @@ items:
   fullName: MBFWpfToolkit.Controls.MbMessageBox
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Controls/MbMessageBox.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Controls/MbMessageBox.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls
@@ -76,7 +76,7 @@ items:
   fullName: MBFWpfToolkit.Controls.MbMessageBox._parentWindow
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Controls/MbMessageBox.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Controls/MbMessageBox.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls
@@ -97,7 +97,7 @@ items:
   fullName: MBFWpfToolkit.Controls.MbMessageBox.OnClosed(System.EventArgs)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Controls/MbMessageBox.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Controls/MbMessageBox.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls
@@ -122,7 +122,7 @@ items:
   fullName: MBFWpfToolkit.Controls.MbMessageBox.Show(string, System.Windows.MessageBoxButton, MBFWpfToolkit.Constants.MbMessageIcon)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Controls/MbMessageBox.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Controls/MbMessageBox.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Controls

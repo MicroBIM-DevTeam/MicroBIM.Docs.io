@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TextBoxUnitLengthConversionBehavior | MIcroBIM Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TextBoxUnitLengthConversionBehavior | MIcroBIM Docs ">
+      
+      <meta name="description" content="Represents a behavior that can be attached to a  to enable or disable unit length conversion functionality when a specific key is pressed.">
+      <link rel="icon" href="../images/logo.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/MicroBimLogo.png" alt="MicroBIM">
+            MicroBIM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior">
+
+
+
+  <h1 id="MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior" data-uid="MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior" class="text-break">
+Class TextBoxUnitLengthConversionBehavior  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Units/Behaviours/TextBoxUnitLenghtConversionBehavior.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MB.html">MB</a>.<a class="xref" href="MB.Common.html">Common</a>.<a class="xref" href="MB.Common.Units.html">Units</a>.<a class="xref" href="MB.Common.Units.Behaviours.html">Behaviours</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MB.Common.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary">Represents a behavior that can be attached to a <span class="xref">MicroBIM.UI.Controls.TextBox</span> to enable or disable unit length conversion
+functionality when a specific key is pressed.</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TextBoxUnitLengthConversionBehavior : Behavior&lt;TextBox&gt;, IAnimatable, IAttachedObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.threading.dispatcherobject">DispatcherObject</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject">DependencyObject</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable">Freezable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable">Animatable</a></div>
+      <div><span class="xref">Behavior</span></div>
+      <div><span class="xref">Behavior</span>&lt;<span class="xref">TextBox</span>&gt;</div>
+      <div><span class="xref">TextBoxUnitLengthConversionBehavior</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.animation.ianimatable">IAnimatable</a></div>
+      <div><span class="xref">IAttachedObject</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <span class="xref">Behavior&lt;TextBox&gt;.AssociatedObject</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject">Behavior.Attach(DependencyObject)</a>
+    </div>
+    <div>
+      <span class="xref">Behavior.Detach()</span>
+    </div>
+    <div>
+      <span class="xref">Behavior.CreateInstanceCore()</span>
+    </div>
+    <div>
+      <span class="xref">Behavior.AssociatedType</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.clone">Animatable.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.freezecore">Animatable.FreezeCore(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.applyanimationclock#system-windows-media-animation-animatable-applyanimationclock(system-windows-dependencyproperty-system-windows-media-animation-animationclock)">Animatable.ApplyAnimationClock(DependencyProperty, AnimationClock)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.applyanimationclock#system-windows-media-animation-animatable-applyanimationclock(system-windows-dependencyproperty-system-windows-media-animation-animationclock-system-windows-media-animation-handoffbehavior)">Animatable.ApplyAnimationClock(DependencyProperty, AnimationClock, HandoffBehavior)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.beginanimation#system-windows-media-animation-animatable-beginanimation(system-windows-dependencyproperty-system-windows-media-animation-animationtimeline)">Animatable.BeginAnimation(DependencyProperty, AnimationTimeline)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.beginanimation#system-windows-media-animation-animatable-beginanimation(system-windows-dependencyproperty-system-windows-media-animation-animationtimeline-system-windows-media-animation-handoffbehavior)">Animatable.BeginAnimation(DependencyProperty, AnimationTimeline, HandoffBehavior)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.getanimationbasevalue">Animatable.GetAnimationBaseValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.hasanimatedproperties">Animatable.HasAnimatedProperties</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.clonecurrentvalue">Freezable.CloneCurrentValue()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.getasfrozen">Freezable.GetAsFrozen()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.getcurrentvalueasfrozen">Freezable.GetCurrentValueAsFrozen()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.freeze#system-windows-freezable-freeze">Freezable.Freeze()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.onpropertychanged">Freezable.OnPropertyChanged(DependencyPropertyChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.createinstance">Freezable.CreateInstance()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.clonecore">Freezable.CloneCore(Freezable)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.clonecurrentvaluecore">Freezable.CloneCurrentValueCore(Freezable)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.getasfrozencore">Freezable.GetAsFrozenCore(Freezable)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.getcurrentvalueasfrozencore">Freezable.GetCurrentValueAsFrozenCore(Freezable)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.onchanged">Freezable.OnChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.readpreamble">Freezable.ReadPreamble()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.writepreamble">Freezable.WritePreamble()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.writepostscript">Freezable.WritePostscript()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.onfreezablepropertychanged#system-windows-freezable-onfreezablepropertychanged(system-windows-dependencyobject-system-windows-dependencyobject)">Freezable.OnFreezablePropertyChanged(DependencyObject, DependencyObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.onfreezablepropertychanged#system-windows-freezable-onfreezablepropertychanged(system-windows-dependencyobject-system-windows-dependencyobject-system-windows-dependencyproperty)">Freezable.OnFreezablePropertyChanged(DependencyObject, DependencyObject, DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.freeze#system-windows-freezable-freeze(system-windows-freezable-system-boolean)">Freezable.Freeze(Freezable, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.canfreeze">Freezable.CanFreeze</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.isfrozen">Freezable.IsFrozen</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.freezable.changed">Freezable.Changed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.equals">DependencyObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.gethashcode">DependencyObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.getvalue">DependencyObject.GetValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.setvalue#system-windows-dependencyobject-setvalue(system-windows-dependencyproperty-system-object)">DependencyObject.SetValue(DependencyProperty, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.setcurrentvalue">DependencyObject.SetCurrentValue(DependencyProperty, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.setvalue#system-windows-dependencyobject-setvalue(system-windows-dependencypropertykey-system-object)">DependencyObject.SetValue(DependencyPropertyKey, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.clearvalue#system-windows-dependencyobject-clearvalue(system-windows-dependencyproperty)">DependencyObject.ClearValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.clearvalue#system-windows-dependencyobject-clearvalue(system-windows-dependencypropertykey)">DependencyObject.ClearValue(DependencyPropertyKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.coercevalue">DependencyObject.CoerceValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.invalidateproperty">DependencyObject.InvalidateProperty(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.shouldserializeproperty">DependencyObject.ShouldSerializeProperty(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.readlocalvalue">DependencyObject.ReadLocalValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.getlocalvalueenumerator">DependencyObject.GetLocalValueEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.dependencyobjecttype">DependencyObject.DependencyObjectType</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject.issealed">DependencyObject.IsSealed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.threading.dispatcherobject.dispatcher">DispatcherObject.Dispatcher</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_remarks">Remarks</h2>
+  <div class="markdown level0 remarks">This behavior listens for key events on the associated <span class="xref">MicroBIM.UI.Controls.TextBox</span> and applies a group size
+            conversion when the Enter key is pressed, provided that the <a class="xref" href="MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_EnableGroupSizeConversion">EnableGroupSizeConversion</a> property is set
+            to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior__ctor_" data-uid="MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.#ctor*"></a>
+
+  <h3 id="MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior__ctor" data-uid="MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.#ctor">
+  TextBoxUnitLengthConversionBehavior()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Units/Behaviours/TextBoxUnitLenghtConversionBehavior.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextBoxUnitLengthConversionBehavior()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_EnableGroupSizeConversionProperty" data-uid="MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversionProperty">
+  EnableGroupSizeConversionProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Units/Behaviours/TextBoxUnitLenghtConversionBehavior.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Identifies the <a class="xref" href="MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_EnableGroupSizeConversion">EnableGroupSizeConversion</a> dependency property.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty EnableGroupSizeConversionProperty</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyproperty">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_EnableGroupSizeConversionProperty_remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This property determines whether the group size conversion feature is enabled for the
+            associated TextBoxUnitLenghtConversionBehavior. The default value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</div>
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_EnableGroupSizeConversion_" data-uid="MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion*"></a>
+
+  <h3 id="MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_EnableGroupSizeConversion" data-uid="MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion">
+  EnableGroupSizeConversion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Units/Behaviours/TextBoxUnitLenghtConversionBehavior.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Gets or sets a value indicating whether group size conversion is enabled.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableGroupSizeConversion { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_OnAttached_" data-uid="MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnAttached*"></a>
+
+  <h3 id="MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_OnAttached" data-uid="MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnAttached">
+  OnAttached()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Units/Behaviours/TextBoxUnitLenghtConversionBehavior.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Attaches event handlers and initializes behavior when the behavior is attached to an object.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnAttached()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_OnAttached_remarks">Remarks</h4>
+  <div class="markdown level1 remarks">If <a class="xref" href="MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_EnableGroupSizeConversion">EnableGroupSizeConversion</a> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, subscribes to the  <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.uielement.keydown">KeyDown</a> event of the associated object to handle key press events.</div>
+
+
+
+
+  <a id="MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_OnDetaching_" data-uid="MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnDetaching*"></a>
+
+  <h3 id="MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_OnDetaching" data-uid="MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnDetaching">
+  OnDetaching()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Units/Behaviours/TextBoxUnitLenghtConversionBehavior.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Detaches the behavior from the associated object, removing any event handlers.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDetaching()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_OnDetaching_remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method is called when the behavior is being detached from its associated object. It
+            removes the <span class="xref">MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnKeyDown(System.Object,System.Windows.Input.KeyEventArgs)</span> event handler from the AssociatedObject.</div>
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2025 MicroBIM. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

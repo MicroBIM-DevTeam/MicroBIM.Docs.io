@@ -5,6 +5,11 @@ items:
   id: MbSpaceUtils
   parent: MBF.Revit.Data.Utils
   children:
+  - MBF.Revit.Data.Utils.MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Mechanical.Space,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.View3D,System.Double,System.Boolean,CeilingFaceGridParameters,System.Double,System.Boolean)
+  - MBF.Revit.Data.Utils.MbSpaceUtils.ClosestDistanceToFramingElement(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View3D,Autodesk.Revit.DB.XYZ)
+  - MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,System.Collections.Generic.List{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Transform,System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory},System.Double,System.Boolean)
+  - MBF.Revit.Data.Utils.MbSpaceUtils.GetCeilingsFromLinkByView(Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.ElementIntersectsSolidFilter)
+  - MBF.Revit.Data.Utils.MbSpaceUtils.GetSolidInLinkFromSpace(System.Collections.Generic.List{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Transform,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,System.Double,System.Boolean)
   - MBF.Revit.Data.Utils.MbSpaceUtils.GetSpacesFromSelection(Autodesk.Revit.UI.UIDocument)
   langs:
   - csharp
@@ -14,7 +19,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbSpaceUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbSpaceUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbSpaceUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -37,6 +42,233 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Mechanical.Space,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.View3D,System.Double,System.Boolean,CeilingFaceGridParameters,System.Double,System.Boolean)
+  commentId: M:MBF.Revit.Data.Utils.MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Mechanical.Space,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.View3D,System.Double,System.Boolean,CeilingFaceGridParameters,System.Double,System.Boolean)
+  id: AnalyzeAboveCeilingGeometryAndGrid(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Mechanical.Space,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.View3D,System.Double,System.Boolean,CeilingFaceGridParameters,System.Double,System.Boolean)
+  parent: MBF.Revit.Data.Utils.MbSpaceUtils
+  langs:
+  - csharp
+  - vb
+  name: AnalyzeAboveCeilingGeometryAndGrid(Document, Space, RevitLinkInstance, View3D, double, bool, CeilingFaceGridParameters, double, bool)
+  nameWithType: MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid(Document, Space, RevitLinkInstance, View3D, double, bool, CeilingFaceGridParameters, double, bool)
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Mechanical.Space, Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.View3D, double, bool, CeilingFaceGridParameters, double, bool)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbSpaceUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Analyzes the geometry of ceilings above a given <xref href="Autodesk.Revit.DB.Mechanical.Space" data-throw-if-not-resolved="false"></xref> and generates a grid for sprinkler placement.
+  example: []
+  syntax:
+    content: public static MbResult<(List<Ceiling> Ceilings, Ceiling MajorCeiling, MbCeilingType MbCeilingType, Face MajorFace, XYZ PointInCeiling, double CeilingHeight, CeilingFaceGrid CeilingGrid)> AnalyzeAboveCeilingGeometryAndGrid(Document doc, Space space, RevitLinkInstance ceilingsLinkInstance, View3D analysisView, double sprinklerOffset = 0, bool drawCurvesInRevit = true, CeilingFaceGridParameters gridParameters = null, double ceilingElementsDetectionRange = 6, bool sharedPositioningEnabled = false)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The active Revit <xref href="Autodesk.Revit.DB.Document" data-throw-if-not-resolved="false"></xref>. Must not be <code>null</code>.
+    - id: space
+      type: Autodesk.Revit.DB.Mechanical.Space
+      description: The <xref href="Autodesk.Revit.DB.Mechanical.Space" data-throw-if-not-resolved="false"></xref> to analyze. Must not be <code>null</code>.
+    - id: ceilingsLinkInstance
+      type: Autodesk.Revit.DB.RevitLinkInstance
+      description: The <xref href="Autodesk.Revit.DB.RevitLinkInstance" data-throw-if-not-resolved="false"></xref> containing ceiling elements. Must not be <code>null</code>.
+    - id: analysisView
+      type: Autodesk.Revit.DB.View3D
+      description: The <xref href="Autodesk.Revit.DB.View3D" data-throw-if-not-resolved="false"></xref> used for geometric analysis. Must not be <code>null</code>.
+    - id: sprinklerOffset
+      type: System.Double
+      description: Optional offset to subtract from ceiling height for sprinkler placement.
+    - id: drawCurvesInRevit
+      type: System.Boolean
+      description: If <code>true</code>, draws boundary curves in Revit for debugging.
+    - id: gridParameters
+      type: CeilingFaceGridParameters
+      description: Optional <xref href="CeilingFaceGridParameters" data-throw-if-not-resolved="false"></xref> for grid configuration. If <code>null</code>, defaults are used.
+    - id: ceilingElementsDetectionRange
+      type: System.Double
+      description: Detection range (in feet) for ceiling elements above the space. Must be greater than zero.
+    - id: sharedPositioningEnabled
+      type: System.Boolean
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.ValueTuple{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.Ceiling,MBF.Revit.Data.Constants.MbCeilingType,Autodesk.Revit.DB.Face,Autodesk.Revit.DB.XYZ,System.Double,MBF.Revit.Data.Models.CeilingFaceGrid}}
+      description: >-
+        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing a tuple with:
+
+        <ul><li><xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref>: All detected ceilings above the space.</li><li><xref href="Ceiling" data-throw-if-not-resolved="false"></xref>: The major ceiling used for grid generation.</li><li><xref href="MBF.Revit.Data.Constants.MbCeilingType" data-throw-if-not-resolved="false"></xref>: The type of the major ceiling (e.g., TiledMajor, PlasterBoard, Exposed).</li><li><xref href="Face" data-throw-if-not-resolved="false"></xref>: The major face of the ceiling.</li><li><xref href="Autodesk.Revit.DB.XYZ" data-throw-if-not-resolved="false"></xref>: A representative point in the ceiling face.</li><li><xref href="System.Double" data-throw-if-not-resolved="false"></xref>: The calculated ceiling height (Z coordinate).</li><li><xref href="MBF.Revit.Data.Models.CeilingFaceGrid" data-throw-if-not-resolved="false"></xref>: The generated grid for sprinkler placement.</li></ul>
+
+        If the operation fails, the result contains an error message describing the reason. Possible errors include:
+
+        <ul><li>"Document is null."</li><li>"Space is null."</li><li>"Ceilings link instance is null."</li><li>"Analysis view (View3D) is null."</li><li>Errors from <xref href="MBF.Revit.Data.Clipper.CurveLoopProcessor.GetChainedLoops(Autodesk.Revit.DB.Document%2cSystem.Collections.Generic.List%7bSystem.Collections.Generic.List%7bAutodesk.Revit.DB.Curve%7d%7d%2cSystem.Boolean%2cSystem.Double)" data-throw-if-not-resolved="false"></xref> (e.g., invalid boundary geometry).</li><li>Errors from <xref href="MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace(Autodesk.Revit.DB.XYZ%2cAutodesk.Revit.DB.Document%2cAutodesk.Revit.DB.RevitLinkInstance%2cSystem.Collections.Generic.List%7bAutodesk.Revit.DB.Curve%7d%2cAutodesk.Revit.DB.Transform%2cSystem.Collections.Generic.List%7bAutodesk.Revit.DB.BuiltInCategory%7d%2cSystem.Double%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref> (e.g., failed solid creation, no ceilings found).</li><li>Errors from <xref href="MBF.Revit.Data.Utils.MbSpaceUtils.DetermineCeilingType(System.Collections.Generic.List%7bAutodesk.Revit.DB.Ceiling%7d%2cAutodesk.Revit.DB.RevitLinkInstance)" data-throw-if-not-resolved="false"></xref> (e.g., link document is null, no valid ceiling face).</li><li>Errors from <xref href="MBF.Revit.Data.Utils.MbSpaceUtils.GetMinAboveFloorElevation(Autodesk.Revit.DB.XYZ%2cAutodesk.Revit.DB.RevitLinkInstance%2cAutodesk.Revit.DB.Document%2cAutodesk.Revit.DB.View3D)" data-throw-if-not-resolved="false"></xref> (e.g., failed raycast, transformation errors).</li><li>Errors from <xref href="MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints(Autodesk.Revit.DB.Mechanical.Space)" data-throw-if-not-resolved="false"></xref> (e.g., failed to extract boundary points).</li><li>Errors from <xref href="MBF.Revit.Data.Models.CeilingFaceGrid.Create(Autodesk.Revit.DB.Ceiling%2cAutodesk.Revit.DB.Document%2cAutodesk.Revit.DB.RevitLinkInstance%2cAutodesk.Revit.DB.Mechanical.Space%2cCeilingFaceGridParameters%2cSystem.Double%2cSystem.Collections.Generic.List%7bAutodesk.Revit.DB.XYZ%7d%2cSystem.Double)" data-throw-if-not-resolved="false"></xref> (e.g., grid generation failure).</li></ul>
+    content.vb: Public Shared Function AnalyzeAboveCeilingGeometryAndGrid(doc As Document, space As Space, ceilingsLinkInstance As RevitLinkInstance, analysisView As View3D, sprinklerOffset As Double = 0, drawCurvesInRevit As Boolean = True, gridParameters As CeilingFaceGridParameters = Nothing, ceilingElementsDetectionRange As Double = 6, sharedPositioningEnabled As Boolean = False) As MbResult(Of (Ceilings As List(Of Ceiling), MajorCeiling As Ceiling, MbCeilingType As MbCeilingType, MajorFace As Face, PointInCeiling As XYZ, CeilingHeight As Double, CeilingGrid As CeilingFaceGrid))
+  overload: MBF.Revit.Data.Utils.MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid*
+  nameWithType.vb: MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid(Document, Space, RevitLinkInstance, View3D, Double, Boolean, CeilingFaceGridParameters, Double, Boolean)
+  fullName.vb: MBF.Revit.Data.Utils.MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Mechanical.Space, Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.View3D, Double, Boolean, CeilingFaceGridParameters, Double, Boolean)
+  name.vb: AnalyzeAboveCeilingGeometryAndGrid(Document, Space, RevitLinkInstance, View3D, Double, Boolean, CeilingFaceGridParameters, Double, Boolean)
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.ClosestDistanceToFramingElement(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View3D,Autodesk.Revit.DB.XYZ)
+  commentId: M:MBF.Revit.Data.Utils.MbSpaceUtils.ClosestDistanceToFramingElement(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View3D,Autodesk.Revit.DB.XYZ)
+  id: ClosestDistanceToFramingElement(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View3D,Autodesk.Revit.DB.XYZ)
+  parent: MBF.Revit.Data.Utils.MbSpaceUtils
+  langs:
+  - csharp
+  - vb
+  name: ClosestDistanceToFramingElement(Document, View3D, XYZ)
+  nameWithType: MbSpaceUtils.ClosestDistanceToFramingElement(Document, View3D, XYZ)
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.ClosestDistanceToFramingElement(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.View3D, Autodesk.Revit.DB.XYZ)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbSpaceUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  syntax:
+    content: public static MbResult<(double Distance, XYZ IntersectionPoint)> ClosestDistanceToFramingElement(Document doc, View3D view3D, XYZ originPoint)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+    - id: view3D
+      type: Autodesk.Revit.DB.View3D
+    - id: originPoint
+      type: Autodesk.Revit.DB.XYZ
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.ValueTuple{System.Double,Autodesk.Revit.DB.XYZ}}
+    content.vb: Public Shared Function ClosestDistanceToFramingElement(doc As Document, view3D As View3D, originPoint As XYZ) As MbResult(Of (Distance As Double, IntersectionPoint As XYZ))
+  overload: MBF.Revit.Data.Utils.MbSpaceUtils.ClosestDistanceToFramingElement*
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,System.Collections.Generic.List{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Transform,System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory},System.Double,System.Boolean)
+  commentId: M:MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,System.Collections.Generic.List{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Transform,System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory},System.Double,System.Boolean)
+  id: GetAboveCeilingOfSpace(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,System.Collections.Generic.List{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Transform,System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory},System.Double,System.Boolean)
+  parent: MBF.Revit.Data.Utils.MbSpaceUtils
+  langs:
+  - csharp
+  - vb
+  name: GetAboveCeilingOfSpace(XYZ, Document, RevitLinkInstance, List<Curve>, Transform, List<BuiltInCategory>, double, bool)
+  nameWithType: MbSpaceUtils.GetAboveCeilingOfSpace(XYZ, Document, RevitLinkInstance, List<Curve>, Transform, List<BuiltInCategory>, double, bool)
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.RevitLinkInstance, System.Collections.Generic.List<Autodesk.Revit.DB.Curve>, Autodesk.Revit.DB.Transform, System.Collections.Generic.List<Autodesk.Revit.DB.BuiltInCategory>, double, bool)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbSpaceUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Retrieves a list of ceilings located above a specified point within a given range in a Revit model.
+  remarks: >-
+    This method identifies ceilings above the specified point by analyzing the geometry of the
+                space and applying filters to detect intersecting ceiling elements. It supports both linked Revit models and
+                shared positioning configurations.
+  example: []
+  syntax:
+    content: public static MbResult<List<Ceiling>> GetAboveCeilingOfSpace(XYZ point, Document parentDocument, RevitLinkInstance linkInstance, List<Curve> segments, Transform originalElementTransform, List<BuiltInCategory> builtinCategories, double ceilingElementsRange, bool sharedPositioningEnabled)
+    parameters:
+    - id: point
+      type: Autodesk.Revit.DB.XYZ
+      description: The point in space from which to search for ceilings. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    - id: parentDocument
+      type: Autodesk.Revit.DB.Document
+      description: The parent Revit document containing the space. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    - id: linkInstance
+      type: Autodesk.Revit.DB.RevitLinkInstance
+      description: The Revit link instance to search within. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    - id: segments
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Curve}
+      description: A list of curves representing the boundaries of the space. Must contain at least one curve.
+    - id: originalElementTransform
+      type: Autodesk.Revit.DB.Transform
+      description: The transform of the original element defining the space. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    - id: builtinCategories
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory}
+      description: A list of built-in categories to filter ceiling elements. Must contain at least one category.
+    - id: ceilingElementsRange
+      type: System.Double
+      description: The maximum range, in Revit units, to search for ceiling elements above the point. Must be greater than zero.
+    - id: sharedPositioningEnabled
+      type: System.Boolean
+      description: A value indicating whether shared positioning is enabled for the link instance.
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling}}
+      description: >-
+        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing a list of <xref href="Ceiling" data-throw-if-not-resolved="false"></xref> objects if the operation succeeds, or an
+                    error message if it fails.
+    content.vb: Public Shared Function GetAboveCeilingOfSpace(point As XYZ, parentDocument As Document, linkInstance As RevitLinkInstance, segments As List(Of Curve), originalElementTransform As Transform, builtinCategories As List(Of BuiltInCategory), ceilingElementsRange As Double, sharedPositioningEnabled As Boolean) As MbResult(Of List(Of Ceiling))
+  overload: MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace*
+  nameWithType.vb: MbSpaceUtils.GetAboveCeilingOfSpace(XYZ, Document, RevitLinkInstance, List(Of Curve), Transform, List(Of BuiltInCategory), Double, Boolean)
+  fullName.vb: MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.RevitLinkInstance, System.Collections.Generic.List(Of Autodesk.Revit.DB.Curve), Autodesk.Revit.DB.Transform, System.Collections.Generic.List(Of Autodesk.Revit.DB.BuiltInCategory), Double, Boolean)
+  name.vb: GetAboveCeilingOfSpace(XYZ, Document, RevitLinkInstance, List(Of Curve), Transform, List(Of BuiltInCategory), Double, Boolean)
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.GetCeilingsFromLinkByView(Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.ElementIntersectsSolidFilter)
+  commentId: M:MBF.Revit.Data.Utils.MbSpaceUtils.GetCeilingsFromLinkByView(Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.ElementIntersectsSolidFilter)
+  id: GetCeilingsFromLinkByView(Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.ElementIntersectsSolidFilter)
+  parent: MBF.Revit.Data.Utils.MbSpaceUtils
+  langs:
+  - csharp
+  - vb
+  name: GetCeilingsFromLinkByView(RevitLinkInstance, ElementIntersectsSolidFilter)
+  nameWithType: MbSpaceUtils.GetCeilingsFromLinkByView(RevitLinkInstance, ElementIntersectsSolidFilter)
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.GetCeilingsFromLinkByView(Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.ElementIntersectsSolidFilter)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbSpaceUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Retrieves a list of ceilings from a linked Revit document that intersect with the specified solid filter.
+  remarks: >-
+    This method uses the <xref href="FilteredElementCollector" data-throw-if-not-resolved="false"></xref> to retrieve ceilings from the
+                linked document. Ensure that the linked document is loaded and accessible before calling this method.
+  example: []
+  syntax:
+    content: public static MbResult<List<Ceiling>> GetCeilingsFromLinkByView(RevitLinkInstance linkInstance, ElementIntersectsSolidFilter solidFilter)
+    parameters:
+    - id: linkInstance
+      type: Autodesk.Revit.DB.RevitLinkInstance
+      description: The <xref href="Autodesk.Revit.DB.RevitLinkInstance" data-throw-if-not-resolved="false"></xref> representing the linked Revit document. Must not be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    - id: solidFilter
+      type: Autodesk.Revit.DB.ElementIntersectsSolidFilter
+      description: >-
+        The <xref href="Autodesk.Revit.DB.ElementIntersectsSolidFilter" data-throw-if-not-resolved="false"></xref> used to filter ceilings based on intersection criteria. Must not
+                    be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling}}
+      description: >-
+        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing a list of <xref href="Ceiling" data-throw-if-not-resolved="false"></xref> elements that match the filter criteria.
+                    If the operation fails, the result contains an error message describing the failure.
+    content.vb: Public Shared Function GetCeilingsFromLinkByView(linkInstance As RevitLinkInstance, solidFilter As ElementIntersectsSolidFilter) As MbResult(Of List(Of Ceiling))
+  overload: MBF.Revit.Data.Utils.MbSpaceUtils.GetCeilingsFromLinkByView*
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.GetSolidInLinkFromSpace(System.Collections.Generic.List{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Transform,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,System.Double,System.Boolean)
+  commentId: M:MBF.Revit.Data.Utils.MbSpaceUtils.GetSolidInLinkFromSpace(System.Collections.Generic.List{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Transform,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,System.Double,System.Boolean)
+  id: GetSolidInLinkFromSpace(System.Collections.Generic.List{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Transform,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,System.Double,System.Boolean)
+  parent: MBF.Revit.Data.Utils.MbSpaceUtils
+  langs:
+  - csharp
+  - vb
+  name: GetSolidInLinkFromSpace(List<Curve>, Transform, Document, RevitLinkInstance, double, bool)
+  nameWithType: MbSpaceUtils.GetSolidInLinkFromSpace(List<Curve>, Transform, Document, RevitLinkInstance, double, bool)
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.GetSolidInLinkFromSpace(System.Collections.Generic.List<Autodesk.Revit.DB.Curve>, Autodesk.Revit.DB.Transform, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.RevitLinkInstance, double, bool)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbSpaceUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  syntax:
+    content: public static MbResult<Solid> GetSolidInLinkFromSpace(List<Curve> segments, Transform originalElementTransform, Document parentDoc, RevitLinkInstance linkInstance, double detectionRange, bool sharedPositioningEnabled)
+    parameters:
+    - id: segments
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Curve}
+    - id: originalElementTransform
+      type: Autodesk.Revit.DB.Transform
+    - id: parentDoc
+      type: Autodesk.Revit.DB.Document
+    - id: linkInstance
+      type: Autodesk.Revit.DB.RevitLinkInstance
+    - id: detectionRange
+      type: System.Double
+    - id: sharedPositioningEnabled
+      type: System.Boolean
+    return:
+      type: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Solid}
+    content.vb: Public Shared Function GetSolidInLinkFromSpace(segments As List(Of Curve), originalElementTransform As Transform, parentDoc As Document, linkInstance As RevitLinkInstance, detectionRange As Double, sharedPositioningEnabled As Boolean) As MbResult(Of Solid)
+  overload: MBF.Revit.Data.Utils.MbSpaceUtils.GetSolidInLinkFromSpace*
+  nameWithType.vb: MbSpaceUtils.GetSolidInLinkFromSpace(List(Of Curve), Transform, Document, RevitLinkInstance, Double, Boolean)
+  fullName.vb: MBF.Revit.Data.Utils.MbSpaceUtils.GetSolidInLinkFromSpace(System.Collections.Generic.List(Of Autodesk.Revit.DB.Curve), Autodesk.Revit.DB.Transform, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.RevitLinkInstance, Double, Boolean)
+  name.vb: GetSolidInLinkFromSpace(List(Of Curve), Transform, Document, RevitLinkInstance, Double, Boolean)
 - uid: MBF.Revit.Data.Utils.MbSpaceUtils.GetSpacesFromSelection(Autodesk.Revit.UI.UIDocument)
   commentId: M:MBF.Revit.Data.Utils.MbSpaceUtils.GetSpacesFromSelection(Autodesk.Revit.UI.UIDocument)
   id: GetSpacesFromSelection(Autodesk.Revit.UI.UIDocument)
@@ -49,7 +281,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbSpaceUtils.GetSpacesFromSelection(Autodesk.Revit.UI.UIDocument)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbSpaceUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbSpaceUtils.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -366,6 +598,745 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Autodesk.Revit.DB.Document
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
+- uid: Autodesk.Revit.DB.RevitLinkInstance
+  commentId: T:Autodesk.Revit.DB.RevitLinkInstance
+  isExternal: true
+  name: RevitLinkInstance
+  nameWithType: RevitLinkInstance
+  fullName: Autodesk.Revit.DB.RevitLinkInstance
+- uid: Autodesk.Revit.DB.View3D
+  commentId: T:Autodesk.Revit.DB.View3D
+  isExternal: true
+  name: View3D
+  nameWithType: View3D
+  fullName: Autodesk.Revit.DB.View3D
+- uid: CeilingFaceGridParameters
+  commentId: T:CeilingFaceGridParameters
+  isExternal: true
+  href: CeilingFaceGridParameters.html
+  name: CeilingFaceGridParameters
+  nameWithType: CeilingFaceGridParameters
+  fullName: CeilingFaceGridParameters
+- uid: MB.Common.Utils.Result.MbResult`1
+  commentId: T:MB.Common.Utils.Result.MbResult`1
+  parent: MB.Common.Utils.Result
+  isExternal: true
+  href: MB.Common.Utils.Result.MbResult-1.html
+  name: MbResult<T>
+  nameWithType: MbResult<T>
+  fullName: MB.Common.Utils.Result.MbResult<T>
+  nameWithType.vb: MbResult(Of T)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of T)
+  name.vb: MbResult(Of T)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Ceiling
+  commentId: T:Ceiling
+  isExternal: true
+- uid: MBF.Revit.Data.Constants.MbCeilingType
+  commentId: T:MBF.Revit.Data.Constants.MbCeilingType
+  parent: MBF.Revit.Data.Constants
+  isExternal: true
+  href: MBF.Revit.Data.Constants.MbCeilingType.html
+  name: MbCeilingType
+  nameWithType: MbCeilingType
+  fullName: MBF.Revit.Data.Constants.MbCeilingType
+- uid: Face
+  commentId: T:Face
+  isExternal: true
+- uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
+  isExternal: true
+  name: XYZ
+  nameWithType: XYZ
+  fullName: Autodesk.Revit.DB.XYZ
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid
+  commentId: T:MBF.Revit.Data.Models.CeilingFaceGrid
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingFaceGrid.html
+  name: CeilingFaceGrid
+  nameWithType: CeilingFaceGrid
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid
+- uid: MBF.Revit.Data.Clipper.CurveLoopProcessor.GetChainedLoops(Autodesk.Revit.DB.Document,System.Collections.Generic.List{System.Collections.Generic.List{Autodesk.Revit.DB.Curve}},System.Boolean,System.Double)
+  commentId: M:MBF.Revit.Data.Clipper.CurveLoopProcessor.GetChainedLoops(Autodesk.Revit.DB.Document,System.Collections.Generic.List{System.Collections.Generic.List{Autodesk.Revit.DB.Curve}},System.Boolean,System.Double)
+  isExternal: true
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,System.Collections.Generic.List{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Transform,System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory},System.Double,System.Boolean)
+  commentId: M:MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,System.Collections.Generic.List{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Transform,System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory},System.Double,System.Boolean)
+  isExternal: true
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.DetermineCeilingType(System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.RevitLinkInstance)
+  commentId: M:MBF.Revit.Data.Utils.MbSpaceUtils.DetermineCeilingType(System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.RevitLinkInstance)
+  isExternal: true
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.GetMinAboveFloorElevation(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View3D)
+  commentId: M:MBF.Revit.Data.Utils.MbSpaceUtils.GetMinAboveFloorElevation(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View3D)
+  isExternal: true
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints(Autodesk.Revit.DB.Mechanical.Space)
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints(Autodesk.Revit.DB.Mechanical.Space)
+  isExternal: true
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.Create(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Mechanical.Space,CeilingFaceGridParameters,System.Double,System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},System.Double)
+  commentId: M:MBF.Revit.Data.Models.CeilingFaceGrid.Create(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Mechanical.Space,CeilingFaceGridParameters,System.Double,System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},System.Double)
+  isExternal: true
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid*
+  commentId: Overload:MBF.Revit.Data.Utils.MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbSpaceUtils.html#MBF_Revit_Data_Utils_MbSpaceUtils_AnalyzeAboveCeilingGeometryAndGrid_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Mechanical_Space_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_View3D_System_Double_System_Boolean_CeilingFaceGridParameters_System_Double_System_Boolean_
+  name: AnalyzeAboveCeilingGeometryAndGrid
+  nameWithType: MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MB.Common.Utils.Result.MbResult{System.ValueTuple{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.Ceiling,MBF.Revit.Data.Constants.MbCeilingType,Autodesk.Revit.DB.Face,Autodesk.Revit.DB.XYZ,System.Double,MBF.Revit.Data.Models.CeilingFaceGrid}}
+  commentId: T:MB.Common.Utils.Result.MbResult{System.ValueTuple{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.Ceiling,MBF.Revit.Data.Constants.MbCeilingType,Autodesk.Revit.DB.Face,Autodesk.Revit.DB.XYZ,System.Double,MBF.Revit.Data.Models.CeilingFaceGrid}}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: MbResult<(List<Ceiling> Ceilings, Ceiling MajorCeiling, MbCeilingType MbCeilingType, Face MajorFace, XYZ PointInCeiling, double CeilingHeight, CeilingFaceGrid CeilingGrid)>
+  nameWithType: MbResult<(List<Ceiling> Ceilings, Ceiling MajorCeiling, MbCeilingType MbCeilingType, Face MajorFace, XYZ PointInCeiling, double CeilingHeight, CeilingFaceGrid CeilingGrid)>
+  fullName: MB.Common.Utils.Result.MbResult<(System.Collections.Generic.List<Autodesk.Revit.DB.Ceiling> Ceilings, Autodesk.Revit.DB.Ceiling MajorCeiling, MBF.Revit.Data.Constants.MbCeilingType MbCeilingType, Autodesk.Revit.DB.Face MajorFace, Autodesk.Revit.DB.XYZ PointInCeiling, double CeilingHeight, MBF.Revit.Data.Models.CeilingFaceGrid CeilingGrid)>
+  nameWithType.vb: MbResult(Of (Ceilings As List(Of Ceiling), MajorCeiling As Ceiling, MbCeilingType As MbCeilingType, MajorFace As Face, PointInCeiling As XYZ, CeilingHeight As Double, CeilingGrid As CeilingFaceGrid))
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of (Ceilings As System.Collections.Generic.List(Of Autodesk.Revit.DB.Ceiling), MajorCeiling As Autodesk.Revit.DB.Ceiling, MbCeilingType As MBF.Revit.Data.Constants.MbCeilingType, MajorFace As Autodesk.Revit.DB.Face, PointInCeiling As Autodesk.Revit.DB.XYZ, CeilingHeight As Double, CeilingGrid As MBF.Revit.Data.Models.CeilingFaceGrid))
+  name.vb: MbResult(Of (Ceilings As List(Of Ceiling), MajorCeiling As Ceiling, MbCeilingType As MbCeilingType, MajorFace As Face, PointInCeiling As XYZ, CeilingHeight As Double, CeilingGrid As CeilingFaceGrid))
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Ceiling
+    name: Ceiling
+    isExternal: true
+  - name: '>'
+  - name: " "
+  - uid: System.ValueTuple{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.Ceiling,MBF.Revit.Data.Constants.MbCeilingType,Autodesk.Revit.DB.Face,Autodesk.Revit.DB.XYZ,System.Double,MBF.Revit.Data.Models.CeilingFaceGrid}.Ceilings
+    name: Ceilings
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.ceilings
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.Ceiling
+    name: Ceiling
+    isExternal: true
+  - name: " "
+  - uid: System.ValueTuple{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.Ceiling,MBF.Revit.Data.Constants.MbCeilingType,Autodesk.Revit.DB.Face,Autodesk.Revit.DB.XYZ,System.Double,MBF.Revit.Data.Models.CeilingFaceGrid}.MajorCeiling
+    name: MajorCeiling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.majorceiling
+  - name: ','
+  - name: " "
+  - uid: MBF.Revit.Data.Constants.MbCeilingType
+    name: MbCeilingType
+    isExternal: true
+    href: MBF.Revit.Data.Constants.MbCeilingType.html
+  - name: " "
+  - uid: System.ValueTuple{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.Ceiling,MBF.Revit.Data.Constants.MbCeilingType,Autodesk.Revit.DB.Face,Autodesk.Revit.DB.XYZ,System.Double,MBF.Revit.Data.Models.CeilingFaceGrid}.MbCeilingType
+    name: MbCeilingType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.mbceilingtype
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.Face
+    name: Face
+    isExternal: true
+  - name: " "
+  - uid: System.ValueTuple{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.Ceiling,MBF.Revit.Data.Constants.MbCeilingType,Autodesk.Revit.DB.Face,Autodesk.Revit.DB.XYZ,System.Double,MBF.Revit.Data.Models.CeilingFaceGrid}.MajorFace
+    name: MajorFace
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.majorface
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: " "
+  - uid: System.ValueTuple{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.Ceiling,MBF.Revit.Data.Constants.MbCeilingType,Autodesk.Revit.DB.Face,Autodesk.Revit.DB.XYZ,System.Double,MBF.Revit.Data.Models.CeilingFaceGrid}.PointInCeiling
+    name: PointInCeiling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.pointinceiling
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.Ceiling,MBF.Revit.Data.Constants.MbCeilingType,Autodesk.Revit.DB.Face,Autodesk.Revit.DB.XYZ,System.Double,MBF.Revit.Data.Models.CeilingFaceGrid}.CeilingHeight
+    name: CeilingHeight
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.ceilingheight
+  - name: ','
+  - name: " "
+  - uid: MBF.Revit.Data.Models.CeilingFaceGrid
+    name: CeilingFaceGrid
+    isExternal: true
+    href: MBF.Revit.Data.Models.CeilingFaceGrid.html
+  - name: " "
+  - uid: System.ValueTuple{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.Ceiling,MBF.Revit.Data.Constants.MbCeilingType,Autodesk.Revit.DB.Face,Autodesk.Revit.DB.XYZ,System.Double,MBF.Revit.Data.Models.CeilingFaceGrid}.CeilingGrid
+    name: CeilingGrid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.ceilinggrid
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.Ceiling,MBF.Revit.Data.Constants.MbCeilingType,Autodesk.Revit.DB.Face,Autodesk.Revit.DB.XYZ,System.Double,MBF.Revit.Data.Models.CeilingFaceGrid}.Ceilings
+    name: Ceilings
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.ceilings
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Ceiling
+    name: Ceiling
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.Ceiling,MBF.Revit.Data.Constants.MbCeilingType,Autodesk.Revit.DB.Face,Autodesk.Revit.DB.XYZ,System.Double,MBF.Revit.Data.Models.CeilingFaceGrid}.MajorCeiling
+    name: MajorCeiling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.majorceiling
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: Autodesk.Revit.DB.Ceiling
+    name: Ceiling
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.Ceiling,MBF.Revit.Data.Constants.MbCeilingType,Autodesk.Revit.DB.Face,Autodesk.Revit.DB.XYZ,System.Double,MBF.Revit.Data.Models.CeilingFaceGrid}.MbCeilingType
+    name: MbCeilingType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.mbceilingtype
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: MBF.Revit.Data.Constants.MbCeilingType
+    name: MbCeilingType
+    isExternal: true
+    href: MBF.Revit.Data.Constants.MbCeilingType.html
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.Ceiling,MBF.Revit.Data.Constants.MbCeilingType,Autodesk.Revit.DB.Face,Autodesk.Revit.DB.XYZ,System.Double,MBF.Revit.Data.Models.CeilingFaceGrid}.MajorFace
+    name: MajorFace
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.majorface
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: Autodesk.Revit.DB.Face
+    name: Face
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.Ceiling,MBF.Revit.Data.Constants.MbCeilingType,Autodesk.Revit.DB.Face,Autodesk.Revit.DB.XYZ,System.Double,MBF.Revit.Data.Models.CeilingFaceGrid}.PointInCeiling
+    name: PointInCeiling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.pointinceiling
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.Ceiling,MBF.Revit.Data.Constants.MbCeilingType,Autodesk.Revit.DB.Face,Autodesk.Revit.DB.XYZ,System.Double,MBF.Revit.Data.Models.CeilingFaceGrid}.CeilingHeight
+    name: CeilingHeight
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.ceilingheight
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.Ceiling,MBF.Revit.Data.Constants.MbCeilingType,Autodesk.Revit.DB.Face,Autodesk.Revit.DB.XYZ,System.Double,MBF.Revit.Data.Models.CeilingFaceGrid}.CeilingGrid
+    name: CeilingGrid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.list-autodesk.revit.db.ceiling-,autodesk.revit.db.ceiling,mbf.revit.data.constants.mbceilingtype,autodesk.revit.db.face,autodesk.revit.db.xyz,system.double,mbf.revit.data.models.ceilingfacegrid-.ceilinggrid
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: MBF.Revit.Data.Models.CeilingFaceGrid
+    name: CeilingFaceGrid
+    isExternal: true
+    href: MBF.Revit.Data.Models.CeilingFaceGrid.html
+  - name: )
+  - name: )
+- uid: MB.Common.Utils.Result
+  commentId: N:MB.Common.Utils.Result
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Utils.Result
+  nameWithType: MB.Common.Utils.Result
+  fullName: MB.Common.Utils.Result
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+- uid: MBF.Revit.Data.Constants
+  commentId: N:MBF.Revit.Data.Constants
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Data.Constants
+  nameWithType: MBF.Revit.Data.Constants
+  fullName: MBF.Revit.Data.Constants
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Constants
+    name: Constants
+    isExternal: true
+    href: MBF.Revit.Data.Constants.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Constants
+    name: Constants
+    isExternal: true
+    href: MBF.Revit.Data.Constants.html
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.ClosestDistanceToFramingElement*
+  commentId: Overload:MBF.Revit.Data.Utils.MbSpaceUtils.ClosestDistanceToFramingElement
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbSpaceUtils.html#MBF_Revit_Data_Utils_MbSpaceUtils_ClosestDistanceToFramingElement_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_View3D_Autodesk_Revit_DB_XYZ_
+  name: ClosestDistanceToFramingElement
+  nameWithType: MbSpaceUtils.ClosestDistanceToFramingElement
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.ClosestDistanceToFramingElement
+- uid: MB.Common.Utils.Result.MbResult{System.ValueTuple{System.Double,Autodesk.Revit.DB.XYZ}}
+  commentId: T:MB.Common.Utils.Result.MbResult{System.ValueTuple{System.Double,Autodesk.Revit.DB.XYZ}}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: MbResult<(double Distance, XYZ IntersectionPoint)>
+  nameWithType: MbResult<(double Distance, XYZ IntersectionPoint)>
+  fullName: MB.Common.Utils.Result.MbResult<(double Distance, Autodesk.Revit.DB.XYZ IntersectionPoint)>
+  nameWithType.vb: MbResult(Of (Distance As Double, IntersectionPoint As XYZ))
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of (Distance As Double, IntersectionPoint As Autodesk.Revit.DB.XYZ))
+  name.vb: MbResult(Of (Distance As Double, IntersectionPoint As XYZ))
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,Autodesk.Revit.DB.XYZ}.Distance
+    name: Distance
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,autodesk.revit.db.xyz-.distance
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: " "
+  - uid: System.ValueTuple{System.Double,Autodesk.Revit.DB.XYZ}.IntersectionPoint
+    name: IntersectionPoint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,autodesk.revit.db.xyz-.intersectionpoint
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.Double,Autodesk.Revit.DB.XYZ}.Distance
+    name: Distance
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,autodesk.revit.db.xyz-.distance
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,Autodesk.Revit.DB.XYZ}.IntersectionPoint
+    name: IntersectionPoint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,autodesk.revit.db.xyz-.intersectionpoint
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: )
+  - name: )
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace*
+  commentId: Overload:MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbSpaceUtils.html#MBF_Revit_Data_Utils_MbSpaceUtils_GetAboveCeilingOfSpace_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_RevitLinkInstance_System_Collections_Generic_List_Autodesk_Revit_DB_Curve__Autodesk_Revit_DB_Transform_System_Collections_Generic_List_Autodesk_Revit_DB_BuiltInCategory__System_Double_System_Boolean_
+  name: GetAboveCeilingOfSpace
+  nameWithType: MbSpaceUtils.GetAboveCeilingOfSpace
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.Curve}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.Curve}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Curve>
+  nameWithType: List<Curve>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.Curve>
+  nameWithType.vb: List(Of Curve)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.Curve)
+  name.vb: List(Of Curve)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Curve
+    name: Curve
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Curve
+    name: Curve
+    isExternal: true
+  - name: )
+- uid: Autodesk.Revit.DB.Transform
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: Autodesk.Revit.DB.Transform
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<BuiltInCategory>
+  nameWithType: List<BuiltInCategory>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.BuiltInCategory>
+  nameWithType.vb: List(Of BuiltInCategory)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.BuiltInCategory)
+  name.vb: List(Of BuiltInCategory)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.BuiltInCategory
+    name: BuiltInCategory
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.BuiltInCategory
+    name: BuiltInCategory
+    isExternal: true
+  - name: )
+- uid: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling}}
+  commentId: T:MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling}}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: MbResult<List<Ceiling>>
+  nameWithType: MbResult<List<Ceiling>>
+  fullName: MB.Common.Utils.Result.MbResult<System.Collections.Generic.List<Autodesk.Revit.DB.Ceiling>>
+  nameWithType.vb: MbResult(Of List(Of Ceiling))
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of System.Collections.Generic.List(Of Autodesk.Revit.DB.Ceiling))
+  name.vb: MbResult(Of List(Of Ceiling))
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Ceiling
+    name: Ceiling
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Ceiling
+    name: Ceiling
+    isExternal: true
+  - name: )
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: FilteredElementCollector
+  commentId: T:FilteredElementCollector
+  isExternal: true
+- uid: Autodesk.Revit.DB.ElementIntersectsSolidFilter
+  commentId: T:Autodesk.Revit.DB.ElementIntersectsSolidFilter
+  isExternal: true
+  name: ElementIntersectsSolidFilter
+  nameWithType: ElementIntersectsSolidFilter
+  fullName: Autodesk.Revit.DB.ElementIntersectsSolidFilter
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.GetCeilingsFromLinkByView*
+  commentId: Overload:MBF.Revit.Data.Utils.MbSpaceUtils.GetCeilingsFromLinkByView
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbSpaceUtils.html#MBF_Revit_Data_Utils_MbSpaceUtils_GetCeilingsFromLinkByView_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_ElementIntersectsSolidFilter_
+  name: GetCeilingsFromLinkByView
+  nameWithType: MbSpaceUtils.GetCeilingsFromLinkByView
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.GetCeilingsFromLinkByView
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.GetSolidInLinkFromSpace*
+  commentId: Overload:MBF.Revit.Data.Utils.MbSpaceUtils.GetSolidInLinkFromSpace
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbSpaceUtils.html#MBF_Revit_Data_Utils_MbSpaceUtils_GetSolidInLinkFromSpace_System_Collections_Generic_List_Autodesk_Revit_DB_Curve__Autodesk_Revit_DB_Transform_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_RevitLinkInstance_System_Double_System_Boolean_
+  name: GetSolidInLinkFromSpace
+  nameWithType: MbSpaceUtils.GetSolidInLinkFromSpace
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.GetSolidInLinkFromSpace
+- uid: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Solid}
+  commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Solid}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  name: MbResult<Solid>
+  nameWithType: MbResult<Solid>
+  fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.Solid>
+  nameWithType.vb: MbResult(Of Solid)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of Autodesk.Revit.DB.Solid)
+  name.vb: MbResult(Of Solid)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: Autodesk.Revit.DB.Solid
+    name: Solid
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Solid
+    name: Solid
+    isExternal: true
+  - name: )
 - uid: UIDocument
   commentId: T:UIDocument
   isExternal: true
@@ -414,69 +1385,4 @@ references:
     name: Space
     isExternal: true
   - name: )
-- uid: System.Collections.Generic.List`1
-  commentId: T:System.Collections.Generic.List`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 shouldSkipMarkup: true

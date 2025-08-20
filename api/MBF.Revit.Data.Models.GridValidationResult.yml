@@ -1,0 +1,704 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Data.Models.GridValidationResult
+  commentId: T:MBF.Revit.Data.Models.GridValidationResult
+  id: GridValidationResult
+  parent: MBF.Revit.Data.Models
+  children:
+  - MBF.Revit.Data.Models.GridValidationResult.#ctor
+  - MBF.Revit.Data.Models.GridValidationResult.ErrorMessages
+  - MBF.Revit.Data.Models.GridValidationResult.InvalidPoints
+  - MBF.Revit.Data.Models.GridValidationResult.IsValid
+  - MBF.Revit.Data.Models.GridValidationResult.TotalPoints
+  - MBF.Revit.Data.Models.GridValidationResult.ValidPoints
+  - MBF.Revit.Data.Models.GridValidationResult.ValidPointsPercentage
+  - MBF.Revit.Data.Models.GridValidationResult.WarningMessages
+  langs:
+  - csharp
+  - vb
+  name: GridValidationResult
+  nameWithType: GridValidationResult
+  fullName: MBF.Revit.Data.Models.GridValidationResult
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/GridValidationResult.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Represents the result of grid validation
+  example: []
+  syntax:
+    content: public class GridValidationResult
+    content.vb: Public Class GridValidationResult
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBF.Revit.Data.Models.GridValidationResult.#ctor
+  commentId: M:MBF.Revit.Data.Models.GridValidationResult.#ctor
+  id: '#ctor'
+  parent: MBF.Revit.Data.Models.GridValidationResult
+  langs:
+  - csharp
+  - vb
+  name: GridValidationResult()
+  nameWithType: GridValidationResult.GridValidationResult()
+  fullName: MBF.Revit.Data.Models.GridValidationResult.GridValidationResult()
+  type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/GridValidationResult.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public GridValidationResult()
+    content.vb: Public Sub New()
+  overload: MBF.Revit.Data.Models.GridValidationResult.#ctor*
+  nameWithType.vb: GridValidationResult.New()
+  fullName.vb: MBF.Revit.Data.Models.GridValidationResult.New()
+  name.vb: New()
+- uid: MBF.Revit.Data.Models.GridValidationResult.IsValid
+  commentId: P:MBF.Revit.Data.Models.GridValidationResult.IsValid
+  id: IsValid
+  parent: MBF.Revit.Data.Models.GridValidationResult
+  langs:
+  - csharp
+  - vb
+  name: IsValid
+  nameWithType: GridValidationResult.IsValid
+  fullName: MBF.Revit.Data.Models.GridValidationResult.IsValid
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/GridValidationResult.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public bool IsValid { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsValid As Boolean
+  overload: MBF.Revit.Data.Models.GridValidationResult.IsValid*
+- uid: MBF.Revit.Data.Models.GridValidationResult.TotalPoints
+  commentId: P:MBF.Revit.Data.Models.GridValidationResult.TotalPoints
+  id: TotalPoints
+  parent: MBF.Revit.Data.Models.GridValidationResult
+  langs:
+  - csharp
+  - vb
+  name: TotalPoints
+  nameWithType: GridValidationResult.TotalPoints
+  fullName: MBF.Revit.Data.Models.GridValidationResult.TotalPoints
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/GridValidationResult.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public int TotalPoints { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TotalPoints As Integer
+  overload: MBF.Revit.Data.Models.GridValidationResult.TotalPoints*
+- uid: MBF.Revit.Data.Models.GridValidationResult.ValidPoints
+  commentId: P:MBF.Revit.Data.Models.GridValidationResult.ValidPoints
+  id: ValidPoints
+  parent: MBF.Revit.Data.Models.GridValidationResult
+  langs:
+  - csharp
+  - vb
+  name: ValidPoints
+  nameWithType: GridValidationResult.ValidPoints
+  fullName: MBF.Revit.Data.Models.GridValidationResult.ValidPoints
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/GridValidationResult.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public int ValidPoints { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ValidPoints As Integer
+  overload: MBF.Revit.Data.Models.GridValidationResult.ValidPoints*
+- uid: MBF.Revit.Data.Models.GridValidationResult.InvalidPoints
+  commentId: P:MBF.Revit.Data.Models.GridValidationResult.InvalidPoints
+  id: InvalidPoints
+  parent: MBF.Revit.Data.Models.GridValidationResult
+  langs:
+  - csharp
+  - vb
+  name: InvalidPoints
+  nameWithType: GridValidationResult.InvalidPoints
+  fullName: MBF.Revit.Data.Models.GridValidationResult.InvalidPoints
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/GridValidationResult.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public int InvalidPoints { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property InvalidPoints As Integer
+  overload: MBF.Revit.Data.Models.GridValidationResult.InvalidPoints*
+- uid: MBF.Revit.Data.Models.GridValidationResult.ValidPointsPercentage
+  commentId: P:MBF.Revit.Data.Models.GridValidationResult.ValidPointsPercentage
+  id: ValidPointsPercentage
+  parent: MBF.Revit.Data.Models.GridValidationResult
+  langs:
+  - csharp
+  - vb
+  name: ValidPointsPercentage
+  nameWithType: GridValidationResult.ValidPointsPercentage
+  fullName: MBF.Revit.Data.Models.GridValidationResult.ValidPointsPercentage
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/GridValidationResult.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public double ValidPointsPercentage { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ValidPointsPercentage As Double
+  overload: MBF.Revit.Data.Models.GridValidationResult.ValidPointsPercentage*
+- uid: MBF.Revit.Data.Models.GridValidationResult.ErrorMessages
+  commentId: P:MBF.Revit.Data.Models.GridValidationResult.ErrorMessages
+  id: ErrorMessages
+  parent: MBF.Revit.Data.Models.GridValidationResult
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessages
+  nameWithType: GridValidationResult.ErrorMessages
+  fullName: MBF.Revit.Data.Models.GridValidationResult.ErrorMessages
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/GridValidationResult.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public List<string> ErrorMessages { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly Property ErrorMessages As List(Of String)
+  overload: MBF.Revit.Data.Models.GridValidationResult.ErrorMessages*
+- uid: MBF.Revit.Data.Models.GridValidationResult.WarningMessages
+  commentId: P:MBF.Revit.Data.Models.GridValidationResult.WarningMessages
+  id: WarningMessages
+  parent: MBF.Revit.Data.Models.GridValidationResult
+  langs:
+  - csharp
+  - vb
+  name: WarningMessages
+  nameWithType: GridValidationResult.WarningMessages
+  fullName: MBF.Revit.Data.Models.GridValidationResult.WarningMessages
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/GridValidationResult.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public List<string> WarningMessages { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly Property WarningMessages As List(Of String)
+  overload: MBF.Revit.Data.Models.GridValidationResult.WarningMessages*
+references:
+- uid: MBF.Revit.Data.Models
+  commentId: N:MBF.Revit.Data.Models
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Data.Models
+  nameWithType: MBF.Revit.Data.Models
+  fullName: MBF.Revit.Data.Models
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Data.Models.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Data.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MBF.Revit.Data.Models.GridValidationResult.#ctor*
+  commentId: Overload:MBF.Revit.Data.Models.GridValidationResult.#ctor
+  isExternal: true
+  href: MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult__ctor
+  name: GridValidationResult
+  nameWithType: GridValidationResult.GridValidationResult
+  fullName: MBF.Revit.Data.Models.GridValidationResult.GridValidationResult
+  nameWithType.vb: GridValidationResult.New
+  fullName.vb: MBF.Revit.Data.Models.GridValidationResult.New
+  name.vb: New
+- uid: MBF.Revit.Data.Models.GridValidationResult.IsValid*
+  commentId: Overload:MBF.Revit.Data.Models.GridValidationResult.IsValid
+  isExternal: true
+  href: MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_IsValid
+  name: IsValid
+  nameWithType: GridValidationResult.IsValid
+  fullName: MBF.Revit.Data.Models.GridValidationResult.IsValid
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MBF.Revit.Data.Models.GridValidationResult.TotalPoints*
+  commentId: Overload:MBF.Revit.Data.Models.GridValidationResult.TotalPoints
+  isExternal: true
+  href: MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_TotalPoints
+  name: TotalPoints
+  nameWithType: GridValidationResult.TotalPoints
+  fullName: MBF.Revit.Data.Models.GridValidationResult.TotalPoints
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MBF.Revit.Data.Models.GridValidationResult.ValidPoints*
+  commentId: Overload:MBF.Revit.Data.Models.GridValidationResult.ValidPoints
+  isExternal: true
+  href: MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_ValidPoints
+  name: ValidPoints
+  nameWithType: GridValidationResult.ValidPoints
+  fullName: MBF.Revit.Data.Models.GridValidationResult.ValidPoints
+- uid: MBF.Revit.Data.Models.GridValidationResult.InvalidPoints*
+  commentId: Overload:MBF.Revit.Data.Models.GridValidationResult.InvalidPoints
+  isExternal: true
+  href: MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_InvalidPoints
+  name: InvalidPoints
+  nameWithType: GridValidationResult.InvalidPoints
+  fullName: MBF.Revit.Data.Models.GridValidationResult.InvalidPoints
+- uid: MBF.Revit.Data.Models.GridValidationResult.ValidPointsPercentage*
+  commentId: Overload:MBF.Revit.Data.Models.GridValidationResult.ValidPointsPercentage
+  isExternal: true
+  href: MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_ValidPointsPercentage
+  name: ValidPointsPercentage
+  nameWithType: GridValidationResult.ValidPointsPercentage
+  fullName: MBF.Revit.Data.Models.GridValidationResult.ValidPointsPercentage
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MBF.Revit.Data.Models.GridValidationResult.ErrorMessages*
+  commentId: Overload:MBF.Revit.Data.Models.GridValidationResult.ErrorMessages
+  isExternal: true
+  href: MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_ErrorMessages
+  name: ErrorMessages
+  nameWithType: GridValidationResult.ErrorMessages
+  fullName: MBF.Revit.Data.Models.GridValidationResult.ErrorMessages
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MBF.Revit.Data.Models.GridValidationResult.WarningMessages*
+  commentId: Overload:MBF.Revit.Data.Models.GridValidationResult.WarningMessages
+  isExternal: true
+  href: MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_WarningMessages
+  name: WarningMessages
+  nameWithType: GridValidationResult.WarningMessages
+  fullName: MBF.Revit.Data.Models.GridValidationResult.WarningMessages
+shouldSkipMarkup: true

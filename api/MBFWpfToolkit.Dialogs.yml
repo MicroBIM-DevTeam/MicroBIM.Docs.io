@@ -4,6 +4,7 @@ items:
   commentId: N:MBFWpfToolkit.Dialogs
   id: MBFWpfToolkit.Dialogs
   children:
+  - MBFWpfToolkit.Dialogs.LoadingControl
   - MBFWpfToolkit.Dialogs.LoadingDialog
   - MBFWpfToolkit.Dialogs.ProgressDialog
   langs:
@@ -16,6 +17,13 @@ items:
   assemblies:
   - MBFWpfToolkit
 references:
+- uid: MBFWpfToolkit.Dialogs.LoadingControl
+  commentId: T:MBFWpfToolkit.Dialogs.LoadingControl
+  isExternal: true
+  href: MBFWpfToolkit.Dialogs.LoadingControl.html
+  name: LoadingControl
+  nameWithType: LoadingControl
+  fullName: MBFWpfToolkit.Dialogs.LoadingControl
 - uid: MBFWpfToolkit.Dialogs.LoadingDialog
   commentId: T:MBFWpfToolkit.Dialogs.LoadingDialog
   isExternal: true

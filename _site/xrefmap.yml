@@ -2278,72 +2278,72 @@ references:
   commentId: N:MB.Common.Units.Behaviours
   fullName: MB.Common.Units.Behaviours
   nameWithType: MB.Common.Units.Behaviours
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior
-  name: TextBoxUnitLenghtConversionBehavior
-  href: api/MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.html
-  commentId: T:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior
-  nameWithType: TextBoxUnitLenghtConversionBehavior
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.#ctor
-  name: TextBoxUnitLenghtConversionBehavior()
-  href: api/MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLenghtConversionBehavior__ctor
-  commentId: M:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.#ctor
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior
+  name: TextBoxUnitLengthConversionBehavior
+  href: api/MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html
+  commentId: T:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior
+  nameWithType: TextBoxUnitLengthConversionBehavior
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.#ctor
+  name: TextBoxUnitLengthConversionBehavior()
+  href: api/MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior__ctor
+  commentId: M:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.#ctor
   name.vb: New()
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.TextBoxUnitLenghtConversionBehavior()
-  fullName.vb: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.New()
-  nameWithType: TextBoxUnitLenghtConversionBehavior.TextBoxUnitLenghtConversionBehavior()
-  nameWithType.vb: TextBoxUnitLenghtConversionBehavior.New()
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.#ctor*
-  name: TextBoxUnitLenghtConversionBehavior
-  href: api/MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLenghtConversionBehavior__ctor_
-  commentId: Overload:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.#ctor
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.TextBoxUnitLengthConversionBehavior()
+  fullName.vb: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.New()
+  nameWithType: TextBoxUnitLengthConversionBehavior.TextBoxUnitLengthConversionBehavior()
+  nameWithType.vb: TextBoxUnitLengthConversionBehavior.New()
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.#ctor*
+  name: TextBoxUnitLengthConversionBehavior
+  href: api/MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior__ctor_
+  commentId: Overload:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.#ctor
   name.vb: New
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.TextBoxUnitLenghtConversionBehavior
-  fullName.vb: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.New
-  nameWithType: TextBoxUnitLenghtConversionBehavior.TextBoxUnitLenghtConversionBehavior
-  nameWithType.vb: TextBoxUnitLenghtConversionBehavior.New
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.TextBoxUnitLengthConversionBehavior
+  fullName.vb: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.New
+  nameWithType: TextBoxUnitLengthConversionBehavior.TextBoxUnitLengthConversionBehavior
+  nameWithType.vb: TextBoxUnitLengthConversionBehavior.New
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion
   name: EnableGroupSizeConversion
-  href: api/MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLenghtConversionBehavior_EnableGroupSizeConversion
-  commentId: P:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion
-  nameWithType: TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion*
+  href: api/MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_EnableGroupSizeConversion
+  commentId: P:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion
+  nameWithType: TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion*
   name: EnableGroupSizeConversion
-  href: api/MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLenghtConversionBehavior_EnableGroupSizeConversion_
-  commentId: Overload:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion
-  nameWithType: TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversionProperty
+  href: api/MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_EnableGroupSizeConversion_
+  commentId: Overload:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion
+  nameWithType: TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversionProperty
   name: EnableGroupSizeConversionProperty
-  href: api/MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLenghtConversionBehavior_EnableGroupSizeConversionProperty
-  commentId: F:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversionProperty
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversionProperty
-  nameWithType: TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversionProperty
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnAttached
+  href: api/MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_EnableGroupSizeConversionProperty
+  commentId: F:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversionProperty
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversionProperty
+  nameWithType: TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversionProperty
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnAttached
   name: OnAttached()
-  href: api/MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLenghtConversionBehavior_OnAttached
-  commentId: M:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnAttached
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnAttached()
-  nameWithType: TextBoxUnitLenghtConversionBehavior.OnAttached()
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnAttached*
+  href: api/MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_OnAttached
+  commentId: M:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnAttached
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnAttached()
+  nameWithType: TextBoxUnitLengthConversionBehavior.OnAttached()
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnAttached*
   name: OnAttached
-  href: api/MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLenghtConversionBehavior_OnAttached_
-  commentId: Overload:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnAttached
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnAttached
-  nameWithType: TextBoxUnitLenghtConversionBehavior.OnAttached
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnDetaching
+  href: api/MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_OnAttached_
+  commentId: Overload:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnAttached
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnAttached
+  nameWithType: TextBoxUnitLengthConversionBehavior.OnAttached
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnDetaching
   name: OnDetaching()
-  href: api/MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLenghtConversionBehavior_OnDetaching
-  commentId: M:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnDetaching
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnDetaching()
-  nameWithType: TextBoxUnitLenghtConversionBehavior.OnDetaching()
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnDetaching*
+  href: api/MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_OnDetaching
+  commentId: M:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnDetaching
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnDetaching()
+  nameWithType: TextBoxUnitLengthConversionBehavior.OnDetaching()
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnDetaching*
   name: OnDetaching
-  href: api/MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLenghtConversionBehavior_OnDetaching_
-  commentId: Overload:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnDetaching
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnDetaching
-  nameWithType: TextBoxUnitLenghtConversionBehavior.OnDetaching
+  href: api/MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_OnDetaching_
+  commentId: Overload:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnDetaching
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnDetaching
+  nameWithType: TextBoxUnitLengthConversionBehavior.OnDetaching
 - uid: MB.Common.Units.Converters
   name: MB.Common.Units.Converters
   href: api/MB.Common.Units.Converters.html
@@ -2785,6 +2785,144 @@ references:
   fullName.vb: MB.Common.ViewLoader.IsolatedViewLoader.LoadView(Of T)(T)
   nameWithType: IsolatedViewLoader.LoadView<T>(T)
   nameWithType.vb: IsolatedViewLoader.LoadView(Of T)(T)
+- uid: MBF.Revit.Creation.Constants
+  name: MBF.Revit.Creation.Constants
+  href: api/MBF.Revit.Creation.Constants.html
+  commentId: N:MBF.Revit.Creation.Constants
+  fullName: MBF.Revit.Creation.Constants
+  nameWithType: MBF.Revit.Creation.Constants
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType
+  name: SpecialReferenceType
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html
+  commentId: T:MBF.Revit.Creation.Constants.SpecialReferenceType
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType
+  nameWithType: SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.Back
+  name: Back
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_Back
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.Back
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.Back
+  nameWithType: SpecialReferenceType.Back
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.Bottom
+  name: Bottom
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_Bottom
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.Bottom
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.Bottom
+  nameWithType: SpecialReferenceType.Bottom
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.CenterElevation
+  name: CenterElevation
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_CenterElevation
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.CenterElevation
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.CenterElevation
+  nameWithType: SpecialReferenceType.CenterElevation
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.CenterLeftOrRight
+  name: CenterLeftOrRight
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_CenterLeftOrRight
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.CenterLeftOrRight
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.CenterLeftOrRight
+  nameWithType: SpecialReferenceType.CenterLeftOrRight
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.CentreFrontOrBack
+  name: CentreFrontOrBack
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_CentreFrontOrBack
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.CentreFrontOrBack
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.CentreFrontOrBack
+  nameWithType: SpecialReferenceType.CentreFrontOrBack
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.ConnectorPoint
+  name: ConnectorPoint
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_ConnectorPoint
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.ConnectorPoint
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.ConnectorPoint
+  nameWithType: SpecialReferenceType.ConnectorPoint
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.Front
+  name: Front
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_Front
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.Front
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.Front
+  nameWithType: SpecialReferenceType.Front
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.HorizontalTop
+  name: HorizontalTop
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_HorizontalTop
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.HorizontalTop
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.HorizontalTop
+  nameWithType: SpecialReferenceType.HorizontalTop
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.Inclined
+  name: Inclined
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_Inclined
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.Inclined
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.Inclined
+  nameWithType: SpecialReferenceType.Inclined
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.Left
+  name: Left
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_Left
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.Left
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.Left
+  nameWithType: SpecialReferenceType.Left
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef1
+  name: NewRef1
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_NewRef1
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef1
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef1
+  nameWithType: SpecialReferenceType.NewRef1
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef2
+  name: NewRef2
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_NewRef2
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef2
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef2
+  nameWithType: SpecialReferenceType.NewRef2
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef3
+  name: NewRef3
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_NewRef3
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef3
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef3
+  nameWithType: SpecialReferenceType.NewRef3
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef4
+  name: NewRef4
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_NewRef4
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef4
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef4
+  nameWithType: SpecialReferenceType.NewRef4
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef5
+  name: NewRef5
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_NewRef5
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef5
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef5
+  nameWithType: SpecialReferenceType.NewRef5
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef6
+  name: NewRef6
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_NewRef6
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef6
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef6
+  nameWithType: SpecialReferenceType.NewRef6
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.Right
+  name: Right
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_Right
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.Right
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.Right
+  nameWithType: SpecialReferenceType.Right
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.Top
+  name: Top
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_Top
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.Top
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.Top
+  nameWithType: SpecialReferenceType.Top
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack1
+  name: VerticalStack1
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_VerticalStack1
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack1
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack1
+  nameWithType: SpecialReferenceType.VerticalStack1
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack3
+  name: VerticalStack3
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_VerticalStack3
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack3
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack3
+  nameWithType: SpecialReferenceType.VerticalStack3
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack4
+  name: VerticalStack4
+  href: api/MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_VerticalStack4
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack4
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack4
+  nameWithType: SpecialReferenceType.VerticalStack4
 - uid: MBF.Revit.Creation.Extensions
   name: MBF.Revit.Creation.Extensions
   href: api/MBF.Revit.Creation.Extensions.html
@@ -2821,12 +2959,213 @@ references:
   commentId: Overload:MBF.Revit.Creation.Extensions.DocumentExtensions.MakeLinkedModelsRoomBounding
   fullName: MBF.Revit.Creation.Extensions.DocumentExtensions.MakeLinkedModelsRoomBounding
   nameWithType: DocumentExtensions.MakeLinkedModelsRoomBounding
+- uid: MBF.Revit.Creation.Models
+  name: MBF.Revit.Creation.Models
+  href: api/MBF.Revit.Creation.Models.html
+  commentId: N:MBF.Revit.Creation.Models
+  fullName: MBF.Revit.Creation.Models
+  nameWithType: MBF.Revit.Creation.Models
+- uid: MBF.Revit.Creation.Models.CategorizedReferences
+  name: CategorizedReferences
+  href: api/MBF.Revit.Creation.Models.CategorizedReferences.html
+  commentId: T:MBF.Revit.Creation.Models.CategorizedReferences
+  fullName: MBF.Revit.Creation.Models.CategorizedReferences
+  nameWithType: CategorizedReferences
+- uid: MBF.Revit.Creation.Models.CategorizedReferences.#ctor
+  name: CategorizedReferences()
+  href: api/MBF.Revit.Creation.Models.CategorizedReferences.html#MBF_Revit_Creation_Models_CategorizedReferences__ctor
+  commentId: M:MBF.Revit.Creation.Models.CategorizedReferences.#ctor
+  name.vb: New()
+  fullName: MBF.Revit.Creation.Models.CategorizedReferences.CategorizedReferences()
+  fullName.vb: MBF.Revit.Creation.Models.CategorizedReferences.New()
+  nameWithType: CategorizedReferences.CategorizedReferences()
+  nameWithType.vb: CategorizedReferences.New()
+- uid: MBF.Revit.Creation.Models.CategorizedReferences.#ctor*
+  name: CategorizedReferences
+  href: api/MBF.Revit.Creation.Models.CategorizedReferences.html#MBF_Revit_Creation_Models_CategorizedReferences__ctor_
+  commentId: Overload:MBF.Revit.Creation.Models.CategorizedReferences.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Creation.Models.CategorizedReferences.CategorizedReferences
+  fullName.vb: MBF.Revit.Creation.Models.CategorizedReferences.New
+  nameWithType: CategorizedReferences.CategorizedReferences
+  nameWithType.vb: CategorizedReferences.New
+- uid: MBF.Revit.Creation.Models.CategorizedReferences.LineReferences
+  name: LineReferences
+  href: api/MBF.Revit.Creation.Models.CategorizedReferences.html#MBF_Revit_Creation_Models_CategorizedReferences_LineReferences
+  commentId: P:MBF.Revit.Creation.Models.CategorizedReferences.LineReferences
+  fullName: MBF.Revit.Creation.Models.CategorizedReferences.LineReferences
+  nameWithType: CategorizedReferences.LineReferences
+- uid: MBF.Revit.Creation.Models.CategorizedReferences.LineReferences*
+  name: LineReferences
+  href: api/MBF.Revit.Creation.Models.CategorizedReferences.html#MBF_Revit_Creation_Models_CategorizedReferences_LineReferences_
+  commentId: Overload:MBF.Revit.Creation.Models.CategorizedReferences.LineReferences
+  fullName: MBF.Revit.Creation.Models.CategorizedReferences.LineReferences
+  nameWithType: CategorizedReferences.LineReferences
+- uid: MBF.Revit.Creation.Models.CategorizedReferences.PlaneReferences
+  name: PlaneReferences
+  href: api/MBF.Revit.Creation.Models.CategorizedReferences.html#MBF_Revit_Creation_Models_CategorizedReferences_PlaneReferences
+  commentId: P:MBF.Revit.Creation.Models.CategorizedReferences.PlaneReferences
+  fullName: MBF.Revit.Creation.Models.CategorizedReferences.PlaneReferences
+  nameWithType: CategorizedReferences.PlaneReferences
+- uid: MBF.Revit.Creation.Models.CategorizedReferences.PlaneReferences*
+  name: PlaneReferences
+  href: api/MBF.Revit.Creation.Models.CategorizedReferences.html#MBF_Revit_Creation_Models_CategorizedReferences_PlaneReferences_
+  commentId: Overload:MBF.Revit.Creation.Models.CategorizedReferences.PlaneReferences
+  fullName: MBF.Revit.Creation.Models.CategorizedReferences.PlaneReferences
+  nameWithType: CategorizedReferences.PlaneReferences
+- uid: MBF.Revit.Creation.Models.CategorizedReferences.PointReferences
+  name: PointReferences
+  href: api/MBF.Revit.Creation.Models.CategorizedReferences.html#MBF_Revit_Creation_Models_CategorizedReferences_PointReferences
+  commentId: P:MBF.Revit.Creation.Models.CategorizedReferences.PointReferences
+  fullName: MBF.Revit.Creation.Models.CategorizedReferences.PointReferences
+  nameWithType: CategorizedReferences.PointReferences
+- uid: MBF.Revit.Creation.Models.CategorizedReferences.PointReferences*
+  name: PointReferences
+  href: api/MBF.Revit.Creation.Models.CategorizedReferences.html#MBF_Revit_Creation_Models_CategorizedReferences_PointReferences_
+  commentId: Overload:MBF.Revit.Creation.Models.CategorizedReferences.PointReferences
+  fullName: MBF.Revit.Creation.Models.CategorizedReferences.PointReferences
+  nameWithType: CategorizedReferences.PointReferences
+- uid: MBF.Revit.Creation.Utils
+  name: MBF.Revit.Creation.Utils
+  href: api/MBF.Revit.Creation.Utils.html
+  commentId: N:MBF.Revit.Creation.Utils
+  fullName: MBF.Revit.Creation.Utils
+  nameWithType: MBF.Revit.Creation.Utils
+- uid: MBF.Revit.Creation.Utils.MbDimensionUtils
+  name: MbDimensionUtils
+  href: api/MBF.Revit.Creation.Utils.MbDimensionUtils.html
+  commentId: T:MBF.Revit.Creation.Utils.MbDimensionUtils
+  fullName: MBF.Revit.Creation.Utils.MbDimensionUtils
+  nameWithType: MbDimensionUtils
+- uid: MBF.Revit.Creation.Utils.MbDimensionUtils.GetAllSpecialFamilyReferences(Autodesk.Revit.DB.FamilyInstance)
+  name: GetAllSpecialFamilyReferences(FamilyInstance)
+  href: api/MBF.Revit.Creation.Utils.MbDimensionUtils.html#MBF_Revit_Creation_Utils_MbDimensionUtils_GetAllSpecialFamilyReferences_Autodesk_Revit_DB_FamilyInstance_
+  commentId: M:MBF.Revit.Creation.Utils.MbDimensionUtils.GetAllSpecialFamilyReferences(Autodesk.Revit.DB.FamilyInstance)
+  fullName: MBF.Revit.Creation.Utils.MbDimensionUtils.GetAllSpecialFamilyReferences(Autodesk.Revit.DB.FamilyInstance)
+  nameWithType: MbDimensionUtils.GetAllSpecialFamilyReferences(FamilyInstance)
+- uid: MBF.Revit.Creation.Utils.MbDimensionUtils.GetAllSpecialFamilyReferences*
+  name: GetAllSpecialFamilyReferences
+  href: api/MBF.Revit.Creation.Utils.MbDimensionUtils.html#MBF_Revit_Creation_Utils_MbDimensionUtils_GetAllSpecialFamilyReferences_
+  commentId: Overload:MBF.Revit.Creation.Utils.MbDimensionUtils.GetAllSpecialFamilyReferences
+  fullName: MBF.Revit.Creation.Utils.MbDimensionUtils.GetAllSpecialFamilyReferences
+  nameWithType: MbDimensionUtils.GetAllSpecialFamilyReferences
+- uid: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference(Autodesk.Revit.DB.FamilyInstance,MBF.Revit.Creation.Constants.SpecialReferenceType)
+  name: GetSpecialFamilyReference(FamilyInstance, SpecialReferenceType)
+  href: api/MBF.Revit.Creation.Utils.MbDimensionUtils.html#MBF_Revit_Creation_Utils_MbDimensionUtils_GetSpecialFamilyReference_Autodesk_Revit_DB_FamilyInstance_MBF_Revit_Creation_Constants_SpecialReferenceType_
+  commentId: M:MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference(Autodesk.Revit.DB.FamilyInstance,MBF.Revit.Creation.Constants.SpecialReferenceType)
+  fullName: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference(Autodesk.Revit.DB.FamilyInstance, MBF.Revit.Creation.Constants.SpecialReferenceType)
+  nameWithType: MbDimensionUtils.GetSpecialFamilyReference(FamilyInstance, SpecialReferenceType)
+- uid: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference(Autodesk.Revit.DB.FamilyInstance,System.String)
+  name: GetSpecialFamilyReference(FamilyInstance, string)
+  href: api/MBF.Revit.Creation.Utils.MbDimensionUtils.html#MBF_Revit_Creation_Utils_MbDimensionUtils_GetSpecialFamilyReference_Autodesk_Revit_DB_FamilyInstance_System_String_
+  commentId: M:MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference(Autodesk.Revit.DB.FamilyInstance,System.String)
+  name.vb: GetSpecialFamilyReference(FamilyInstance, String)
+  fullName: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference(Autodesk.Revit.DB.FamilyInstance, string)
+  fullName.vb: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference(Autodesk.Revit.DB.FamilyInstance, String)
+  nameWithType: MbDimensionUtils.GetSpecialFamilyReference(FamilyInstance, string)
+  nameWithType.vb: MbDimensionUtils.GetSpecialFamilyReference(FamilyInstance, String)
+- uid: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference*
+  name: GetSpecialFamilyReference
+  href: api/MBF.Revit.Creation.Utils.MbDimensionUtils.html#MBF_Revit_Creation_Utils_MbDimensionUtils_GetSpecialFamilyReference_
+  commentId: Overload:MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference
+  fullName: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReference
+  nameWithType: MbDimensionUtils.GetSpecialFamilyReference
+- uid: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReferenceBySearch(Autodesk.Revit.DB.FamilyInstance,MBF.Revit.Creation.Constants.SpecialReferenceType,System.String)
+  name: GetSpecialFamilyReferenceBySearch(FamilyInstance, SpecialReferenceType, string)
+  href: api/MBF.Revit.Creation.Utils.MbDimensionUtils.html#MBF_Revit_Creation_Utils_MbDimensionUtils_GetSpecialFamilyReferenceBySearch_Autodesk_Revit_DB_FamilyInstance_MBF_Revit_Creation_Constants_SpecialReferenceType_System_String_
+  commentId: M:MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReferenceBySearch(Autodesk.Revit.DB.FamilyInstance,MBF.Revit.Creation.Constants.SpecialReferenceType,System.String)
+  name.vb: GetSpecialFamilyReferenceBySearch(FamilyInstance, SpecialReferenceType, String)
+  fullName: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReferenceBySearch(Autodesk.Revit.DB.FamilyInstance, MBF.Revit.Creation.Constants.SpecialReferenceType, string)
+  fullName.vb: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReferenceBySearch(Autodesk.Revit.DB.FamilyInstance, MBF.Revit.Creation.Constants.SpecialReferenceType, String)
+  nameWithType: MbDimensionUtils.GetSpecialFamilyReferenceBySearch(FamilyInstance, SpecialReferenceType, string)
+  nameWithType.vb: MbDimensionUtils.GetSpecialFamilyReferenceBySearch(FamilyInstance, SpecialReferenceType, String)
+- uid: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReferenceBySearch*
+  name: GetSpecialFamilyReferenceBySearch
+  href: api/MBF.Revit.Creation.Utils.MbDimensionUtils.html#MBF_Revit_Creation_Utils_MbDimensionUtils_GetSpecialFamilyReferenceBySearch_
+  commentId: Overload:MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReferenceBySearch
+  fullName: MBF.Revit.Creation.Utils.MbDimensionUtils.GetSpecialFamilyReferenceBySearch
+  nameWithType: MbDimensionUtils.GetSpecialFamilyReferenceBySearch
+- uid: MBF.Revit.Data.Clipper
+  name: MBF.Revit.Data.Clipper
+  href: api/MBF.Revit.Data.Clipper.html
+  commentId: N:MBF.Revit.Data.Clipper
+  fullName: MBF.Revit.Data.Clipper
+  nameWithType: MBF.Revit.Data.Clipper
+- uid: MBF.Revit.Data.Clipper.CurveLoopProcessor
+  name: CurveLoopProcessor
+  href: api/MBF.Revit.Data.Clipper.CurveLoopProcessor.html
+  commentId: T:MBF.Revit.Data.Clipper.CurveLoopProcessor
+  fullName: MBF.Revit.Data.Clipper.CurveLoopProcessor
+  nameWithType: CurveLoopProcessor
+- uid: MBF.Revit.Data.Clipper.CurveLoopProcessor.GetChainedLoops(Autodesk.Revit.DB.Document,System.Collections.Generic.List{System.Collections.Generic.List{Autodesk.Revit.DB.Curve}},System.Boolean,System.Double)
+  name: GetChainedLoops(Document, List<List<Curve>>, bool, double)
+  href: api/MBF.Revit.Data.Clipper.CurveLoopProcessor.html#MBF_Revit_Data_Clipper_CurveLoopProcessor_GetChainedLoops_Autodesk_Revit_DB_Document_System_Collections_Generic_List_System_Collections_Generic_List_Autodesk_Revit_DB_Curve___System_Boolean_System_Double_
+  commentId: M:MBF.Revit.Data.Clipper.CurveLoopProcessor.GetChainedLoops(Autodesk.Revit.DB.Document,System.Collections.Generic.List{System.Collections.Generic.List{Autodesk.Revit.DB.Curve}},System.Boolean,System.Double)
+  name.vb: GetChainedLoops(Document, List(Of List(Of Curve)), Boolean, Double)
+  fullName: MBF.Revit.Data.Clipper.CurveLoopProcessor.GetChainedLoops(Autodesk.Revit.DB.Document, System.Collections.Generic.List<System.Collections.Generic.List<Autodesk.Revit.DB.Curve>>, bool, double)
+  fullName.vb: MBF.Revit.Data.Clipper.CurveLoopProcessor.GetChainedLoops(Autodesk.Revit.DB.Document, System.Collections.Generic.List(Of System.Collections.Generic.List(Of Autodesk.Revit.DB.Curve)), Boolean, Double)
+  nameWithType: CurveLoopProcessor.GetChainedLoops(Document, List<List<Curve>>, bool, double)
+  nameWithType.vb: CurveLoopProcessor.GetChainedLoops(Document, List(Of List(Of Curve)), Boolean, Double)
+- uid: MBF.Revit.Data.Clipper.CurveLoopProcessor.GetChainedLoops*
+  name: GetChainedLoops
+  href: api/MBF.Revit.Data.Clipper.CurveLoopProcessor.html#MBF_Revit_Data_Clipper_CurveLoopProcessor_GetChainedLoops_
+  commentId: Overload:MBF.Revit.Data.Clipper.CurveLoopProcessor.GetChainedLoops
+  fullName: MBF.Revit.Data.Clipper.CurveLoopProcessor.GetChainedLoops
+  nameWithType: CurveLoopProcessor.GetChainedLoops
+- uid: MBF.Revit.Data.Constants
+  name: MBF.Revit.Data.Constants
+  href: api/MBF.Revit.Data.Constants.html
+  commentId: N:MBF.Revit.Data.Constants
+  fullName: MBF.Revit.Data.Constants
+  nameWithType: MBF.Revit.Data.Constants
+- uid: MBF.Revit.Data.Constants.MbCeilingType
+  name: MbCeilingType
+  href: api/MBF.Revit.Data.Constants.MbCeilingType.html
+  commentId: T:MBF.Revit.Data.Constants.MbCeilingType
+  fullName: MBF.Revit.Data.Constants.MbCeilingType
+  nameWithType: MbCeilingType
+- uid: MBF.Revit.Data.Constants.MbCeilingType.Exposed
+  name: Exposed
+  href: api/MBF.Revit.Data.Constants.MbCeilingType.html#MBF_Revit_Data_Constants_MbCeilingType_Exposed
+  commentId: F:MBF.Revit.Data.Constants.MbCeilingType.Exposed
+  fullName: MBF.Revit.Data.Constants.MbCeilingType.Exposed
+  nameWithType: MbCeilingType.Exposed
+- uid: MBF.Revit.Data.Constants.MbCeilingType.PlasterBoard
+  name: PlasterBoard
+  href: api/MBF.Revit.Data.Constants.MbCeilingType.html#MBF_Revit_Data_Constants_MbCeilingType_PlasterBoard
+  commentId: F:MBF.Revit.Data.Constants.MbCeilingType.PlasterBoard
+  fullName: MBF.Revit.Data.Constants.MbCeilingType.PlasterBoard
+  nameWithType: MbCeilingType.PlasterBoard
+- uid: MBF.Revit.Data.Constants.MbCeilingType.TiledMajor
+  name: TiledMajor
+  href: api/MBF.Revit.Data.Constants.MbCeilingType.html#MBF_Revit_Data_Constants_MbCeilingType_TiledMajor
+  commentId: F:MBF.Revit.Data.Constants.MbCeilingType.TiledMajor
+  fullName: MBF.Revit.Data.Constants.MbCeilingType.TiledMajor
+  nameWithType: MbCeilingType.TiledMajor
 - uid: MBF.Revit.Data.Extensions
   name: MBF.Revit.Data.Extensions
   href: api/MBF.Revit.Data.Extensions.html
   commentId: N:MBF.Revit.Data.Extensions
   fullName: MBF.Revit.Data.Extensions
   nameWithType: MBF.Revit.Data.Extensions
+- uid: MBF.Revit.Data.Extensions.DirectionExtensions
+  name: DirectionExtensions
+  href: api/MBF.Revit.Data.Extensions.DirectionExtensions.html
+  commentId: T:MBF.Revit.Data.Extensions.DirectionExtensions
+  fullName: MBF.Revit.Data.Extensions.DirectionExtensions
+  nameWithType: DirectionExtensions
+- uid: MBF.Revit.Data.Extensions.DirectionExtensions.PerpendicularClockwise(Autodesk.Revit.DB.XYZ)
+  name: PerpendicularClockwise(XYZ)
+  href: api/MBF.Revit.Data.Extensions.DirectionExtensions.html#MBF_Revit_Data_Extensions_DirectionExtensions_PerpendicularClockwise_Autodesk_Revit_DB_XYZ_
+  commentId: M:MBF.Revit.Data.Extensions.DirectionExtensions.PerpendicularClockwise(Autodesk.Revit.DB.XYZ)
+  fullName: MBF.Revit.Data.Extensions.DirectionExtensions.PerpendicularClockwise(Autodesk.Revit.DB.XYZ)
+  nameWithType: DirectionExtensions.PerpendicularClockwise(XYZ)
+- uid: MBF.Revit.Data.Extensions.DirectionExtensions.PerpendicularClockwise*
+  name: PerpendicularClockwise
+  href: api/MBF.Revit.Data.Extensions.DirectionExtensions.html#MBF_Revit_Data_Extensions_DirectionExtensions_PerpendicularClockwise_
+  commentId: Overload:MBF.Revit.Data.Extensions.DirectionExtensions.PerpendicularClockwise
+  fullName: MBF.Revit.Data.Extensions.DirectionExtensions.PerpendicularClockwise
+  nameWithType: DirectionExtensions.PerpendicularClockwise
 - uid: MBF.Revit.Data.Extensions.DocumentExtensions
   name: DocumentExtensions
   href: api/MBF.Revit.Data.Extensions.DocumentExtensions.html
@@ -3124,6 +3463,720 @@ references:
   commentId: N:MBF.Revit.Data.Models
   fullName: MBF.Revit.Data.Models
   nameWithType: MBF.Revit.Data.Models
+- uid: MBF.Revit.Data.Models.BeamProcessingResult
+  name: BeamProcessingResult
+  href: api/MBF.Revit.Data.Models.BeamProcessingResult.html
+  commentId: T:MBF.Revit.Data.Models.BeamProcessingResult
+  fullName: MBF.Revit.Data.Models.BeamProcessingResult
+  nameWithType: BeamProcessingResult
+- uid: MBF.Revit.Data.Models.BeamProcessingResult.#ctor
+  name: BeamProcessingResult()
+  href: api/MBF.Revit.Data.Models.BeamProcessingResult.html#MBF_Revit_Data_Models_BeamProcessingResult__ctor
+  commentId: M:MBF.Revit.Data.Models.BeamProcessingResult.#ctor
+  name.vb: New()
+  fullName: MBF.Revit.Data.Models.BeamProcessingResult.BeamProcessingResult()
+  fullName.vb: MBF.Revit.Data.Models.BeamProcessingResult.New()
+  nameWithType: BeamProcessingResult.BeamProcessingResult()
+  nameWithType.vb: BeamProcessingResult.New()
+- uid: MBF.Revit.Data.Models.BeamProcessingResult.#ctor*
+  name: BeamProcessingResult
+  href: api/MBF.Revit.Data.Models.BeamProcessingResult.html#MBF_Revit_Data_Models_BeamProcessingResult__ctor_
+  commentId: Overload:MBF.Revit.Data.Models.BeamProcessingResult.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Data.Models.BeamProcessingResult.BeamProcessingResult
+  fullName.vb: MBF.Revit.Data.Models.BeamProcessingResult.New
+  nameWithType: BeamProcessingResult.BeamProcessingResult
+  nameWithType.vb: BeamProcessingResult.New
+- uid: MBF.Revit.Data.Models.BeamProcessingResult.BeamSortingPoint
+  name: BeamSortingPoint
+  href: api/MBF.Revit.Data.Models.BeamProcessingResult.html#MBF_Revit_Data_Models_BeamProcessingResult_BeamSortingPoint
+  commentId: P:MBF.Revit.Data.Models.BeamProcessingResult.BeamSortingPoint
+  fullName: MBF.Revit.Data.Models.BeamProcessingResult.BeamSortingPoint
+  nameWithType: BeamProcessingResult.BeamSortingPoint
+- uid: MBF.Revit.Data.Models.BeamProcessingResult.BeamSortingPoint*
+  name: BeamSortingPoint
+  href: api/MBF.Revit.Data.Models.BeamProcessingResult.html#MBF_Revit_Data_Models_BeamProcessingResult_BeamSortingPoint_
+  commentId: Overload:MBF.Revit.Data.Models.BeamProcessingResult.BeamSortingPoint
+  fullName: MBF.Revit.Data.Models.BeamProcessingResult.BeamSortingPoint
+  nameWithType: BeamProcessingResult.BeamSortingPoint
+- uid: MBF.Revit.Data.Models.BeamProcessingResult.CrossBeams
+  name: CrossBeams
+  href: api/MBF.Revit.Data.Models.BeamProcessingResult.html#MBF_Revit_Data_Models_BeamProcessingResult_CrossBeams
+  commentId: P:MBF.Revit.Data.Models.BeamProcessingResult.CrossBeams
+  fullName: MBF.Revit.Data.Models.BeamProcessingResult.CrossBeams
+  nameWithType: BeamProcessingResult.CrossBeams
+- uid: MBF.Revit.Data.Models.BeamProcessingResult.CrossBeams*
+  name: CrossBeams
+  href: api/MBF.Revit.Data.Models.BeamProcessingResult.html#MBF_Revit_Data_Models_BeamProcessingResult_CrossBeams_
+  commentId: Overload:MBF.Revit.Data.Models.BeamProcessingResult.CrossBeams
+  fullName: MBF.Revit.Data.Models.BeamProcessingResult.CrossBeams
+  nameWithType: BeamProcessingResult.CrossBeams
+- uid: MBF.Revit.Data.Models.BeamProcessingResult.MainBeams
+  name: MainBeams
+  href: api/MBF.Revit.Data.Models.BeamProcessingResult.html#MBF_Revit_Data_Models_BeamProcessingResult_MainBeams
+  commentId: P:MBF.Revit.Data.Models.BeamProcessingResult.MainBeams
+  fullName: MBF.Revit.Data.Models.BeamProcessingResult.MainBeams
+  nameWithType: BeamProcessingResult.MainBeams
+- uid: MBF.Revit.Data.Models.BeamProcessingResult.MainBeams*
+  name: MainBeams
+  href: api/MBF.Revit.Data.Models.BeamProcessingResult.html#MBF_Revit_Data_Models_BeamProcessingResult_MainBeams_
+  commentId: Overload:MBF.Revit.Data.Models.BeamProcessingResult.MainBeams
+  fullName: MBF.Revit.Data.Models.BeamProcessingResult.MainBeams
+  nameWithType: BeamProcessingResult.MainBeams
+- uid: MBF.Revit.Data.Models.BoundaryLines
+  name: BoundaryLines
+  href: api/MBF.Revit.Data.Models.BoundaryLines.html
+  commentId: T:MBF.Revit.Data.Models.BoundaryLines
+  fullName: MBF.Revit.Data.Models.BoundaryLines
+  nameWithType: BoundaryLines
+- uid: MBF.Revit.Data.Models.BoundaryLines.#ctor(Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line)
+  name: BoundaryLines(Line, Line, Line, Line)
+  href: api/MBF.Revit.Data.Models.BoundaryLines.html#MBF_Revit_Data_Models_BoundaryLines__ctor_Autodesk_Revit_DB_Line_Autodesk_Revit_DB_Line_Autodesk_Revit_DB_Line_Autodesk_Revit_DB_Line_
+  commentId: M:MBF.Revit.Data.Models.BoundaryLines.#ctor(Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line)
+  name.vb: New(Line, Line, Line, Line)
+  fullName: MBF.Revit.Data.Models.BoundaryLines.BoundaryLines(Autodesk.Revit.DB.Line, Autodesk.Revit.DB.Line, Autodesk.Revit.DB.Line, Autodesk.Revit.DB.Line)
+  fullName.vb: MBF.Revit.Data.Models.BoundaryLines.New(Autodesk.Revit.DB.Line, Autodesk.Revit.DB.Line, Autodesk.Revit.DB.Line, Autodesk.Revit.DB.Line)
+  nameWithType: BoundaryLines.BoundaryLines(Line, Line, Line, Line)
+  nameWithType.vb: BoundaryLines.New(Line, Line, Line, Line)
+- uid: MBF.Revit.Data.Models.BoundaryLines.#ctor*
+  name: BoundaryLines
+  href: api/MBF.Revit.Data.Models.BoundaryLines.html#MBF_Revit_Data_Models_BoundaryLines__ctor_
+  commentId: Overload:MBF.Revit.Data.Models.BoundaryLines.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Data.Models.BoundaryLines.BoundaryLines
+  fullName.vb: MBF.Revit.Data.Models.BoundaryLines.New
+  nameWithType: BoundaryLines.BoundaryLines
+  nameWithType.vb: BoundaryLines.New
+- uid: MBF.Revit.Data.Models.BoundaryLines.MaxBoundary
+  name: MaxBoundary
+  href: api/MBF.Revit.Data.Models.BoundaryLines.html#MBF_Revit_Data_Models_BoundaryLines_MaxBoundary
+  commentId: P:MBF.Revit.Data.Models.BoundaryLines.MaxBoundary
+  fullName: MBF.Revit.Data.Models.BoundaryLines.MaxBoundary
+  nameWithType: BoundaryLines.MaxBoundary
+- uid: MBF.Revit.Data.Models.BoundaryLines.MaxBoundary*
+  name: MaxBoundary
+  href: api/MBF.Revit.Data.Models.BoundaryLines.html#MBF_Revit_Data_Models_BoundaryLines_MaxBoundary_
+  commentId: Overload:MBF.Revit.Data.Models.BoundaryLines.MaxBoundary
+  fullName: MBF.Revit.Data.Models.BoundaryLines.MaxBoundary
+  nameWithType: BoundaryLines.MaxBoundary
+- uid: MBF.Revit.Data.Models.BoundaryLines.MaxSecondaryBoundary
+  name: MaxSecondaryBoundary
+  href: api/MBF.Revit.Data.Models.BoundaryLines.html#MBF_Revit_Data_Models_BoundaryLines_MaxSecondaryBoundary
+  commentId: P:MBF.Revit.Data.Models.BoundaryLines.MaxSecondaryBoundary
+  fullName: MBF.Revit.Data.Models.BoundaryLines.MaxSecondaryBoundary
+  nameWithType: BoundaryLines.MaxSecondaryBoundary
+- uid: MBF.Revit.Data.Models.BoundaryLines.MaxSecondaryBoundary*
+  name: MaxSecondaryBoundary
+  href: api/MBF.Revit.Data.Models.BoundaryLines.html#MBF_Revit_Data_Models_BoundaryLines_MaxSecondaryBoundary_
+  commentId: Overload:MBF.Revit.Data.Models.BoundaryLines.MaxSecondaryBoundary
+  fullName: MBF.Revit.Data.Models.BoundaryLines.MaxSecondaryBoundary
+  nameWithType: BoundaryLines.MaxSecondaryBoundary
+- uid: MBF.Revit.Data.Models.BoundaryLines.MinBoundary
+  name: MinBoundary
+  href: api/MBF.Revit.Data.Models.BoundaryLines.html#MBF_Revit_Data_Models_BoundaryLines_MinBoundary
+  commentId: P:MBF.Revit.Data.Models.BoundaryLines.MinBoundary
+  fullName: MBF.Revit.Data.Models.BoundaryLines.MinBoundary
+  nameWithType: BoundaryLines.MinBoundary
+- uid: MBF.Revit.Data.Models.BoundaryLines.MinBoundary*
+  name: MinBoundary
+  href: api/MBF.Revit.Data.Models.BoundaryLines.html#MBF_Revit_Data_Models_BoundaryLines_MinBoundary_
+  commentId: Overload:MBF.Revit.Data.Models.BoundaryLines.MinBoundary
+  fullName: MBF.Revit.Data.Models.BoundaryLines.MinBoundary
+  nameWithType: BoundaryLines.MinBoundary
+- uid: MBF.Revit.Data.Models.BoundaryLines.MinSecondaryBoundary
+  name: MinSecondaryBoundary
+  href: api/MBF.Revit.Data.Models.BoundaryLines.html#MBF_Revit_Data_Models_BoundaryLines_MinSecondaryBoundary
+  commentId: P:MBF.Revit.Data.Models.BoundaryLines.MinSecondaryBoundary
+  fullName: MBF.Revit.Data.Models.BoundaryLines.MinSecondaryBoundary
+  nameWithType: BoundaryLines.MinSecondaryBoundary
+- uid: MBF.Revit.Data.Models.BoundaryLines.MinSecondaryBoundary*
+  name: MinSecondaryBoundary
+  href: api/MBF.Revit.Data.Models.BoundaryLines.html#MBF_Revit_Data_Models_BoundaryLines_MinSecondaryBoundary_
+  commentId: Overload:MBF.Revit.Data.Models.BoundaryLines.MinSecondaryBoundary
+  fullName: MBF.Revit.Data.Models.BoundaryLines.MinSecondaryBoundary
+  nameWithType: BoundaryLines.MinSecondaryBoundary
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult
+  name: CeilingAnalysisResult
+  href: api/MBF.Revit.Data.Models.CeilingAnalysisResult.html
+  commentId: T:MBF.Revit.Data.Models.CeilingAnalysisResult
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult
+  nameWithType: CeilingAnalysisResult
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.#ctor
+  name: CeilingAnalysisResult()
+  href: api/MBF.Revit.Data.Models.CeilingAnalysisResult.html#MBF_Revit_Data_Models_CeilingAnalysisResult__ctor
+  commentId: M:MBF.Revit.Data.Models.CeilingAnalysisResult.#ctor
+  name.vb: New()
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.CeilingAnalysisResult()
+  fullName.vb: MBF.Revit.Data.Models.CeilingAnalysisResult.New()
+  nameWithType: CeilingAnalysisResult.CeilingAnalysisResult()
+  nameWithType.vb: CeilingAnalysisResult.New()
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.#ctor*
+  name: CeilingAnalysisResult
+  href: api/MBF.Revit.Data.Models.CeilingAnalysisResult.html#MBF_Revit_Data_Models_CeilingAnalysisResult__ctor_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingAnalysisResult.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.CeilingAnalysisResult
+  fullName.vb: MBF.Revit.Data.Models.CeilingAnalysisResult.New
+  nameWithType: CeilingAnalysisResult.CeilingAnalysisResult
+  nameWithType.vb: CeilingAnalysisResult.New
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.CeilingType
+  name: CeilingType
+  href: api/MBF.Revit.Data.Models.CeilingAnalysisResult.html#MBF_Revit_Data_Models_CeilingAnalysisResult_CeilingType
+  commentId: P:MBF.Revit.Data.Models.CeilingAnalysisResult.CeilingType
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.CeilingType
+  nameWithType: CeilingAnalysisResult.CeilingType
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.CeilingType*
+  name: CeilingType
+  href: api/MBF.Revit.Data.Models.CeilingAnalysisResult.html#MBF_Revit_Data_Models_CeilingAnalysisResult_CeilingType_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingAnalysisResult.CeilingType
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.CeilingType
+  nameWithType: CeilingAnalysisResult.CeilingType
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.ElevationPoint
+  name: ElevationPoint
+  href: api/MBF.Revit.Data.Models.CeilingAnalysisResult.html#MBF_Revit_Data_Models_CeilingAnalysisResult_ElevationPoint
+  commentId: P:MBF.Revit.Data.Models.CeilingAnalysisResult.ElevationPoint
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.ElevationPoint
+  nameWithType: CeilingAnalysisResult.ElevationPoint
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.ElevationPoint*
+  name: ElevationPoint
+  href: api/MBF.Revit.Data.Models.CeilingAnalysisResult.html#MBF_Revit_Data_Models_CeilingAnalysisResult_ElevationPoint_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingAnalysisResult.ElevationPoint
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.ElevationPoint
+  nameWithType: CeilingAnalysisResult.ElevationPoint
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.MajorCeiling
+  name: MajorCeiling
+  href: api/MBF.Revit.Data.Models.CeilingAnalysisResult.html#MBF_Revit_Data_Models_CeilingAnalysisResult_MajorCeiling
+  commentId: P:MBF.Revit.Data.Models.CeilingAnalysisResult.MajorCeiling
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.MajorCeiling
+  nameWithType: CeilingAnalysisResult.MajorCeiling
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.MajorCeiling*
+  name: MajorCeiling
+  href: api/MBF.Revit.Data.Models.CeilingAnalysisResult.html#MBF_Revit_Data_Models_CeilingAnalysisResult_MajorCeiling_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingAnalysisResult.MajorCeiling
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.MajorCeiling
+  nameWithType: CeilingAnalysisResult.MajorCeiling
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.MajorFace
+  name: MajorFace
+  href: api/MBF.Revit.Data.Models.CeilingAnalysisResult.html#MBF_Revit_Data_Models_CeilingAnalysisResult_MajorFace
+  commentId: P:MBF.Revit.Data.Models.CeilingAnalysisResult.MajorFace
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.MajorFace
+  nameWithType: CeilingAnalysisResult.MajorFace
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.MajorFace*
+  name: MajorFace
+  href: api/MBF.Revit.Data.Models.CeilingAnalysisResult.html#MBF_Revit_Data_Models_CeilingAnalysisResult_MajorFace_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingAnalysisResult.MajorFace
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.MajorFace
+  nameWithType: CeilingAnalysisResult.MajorFace
+- uid: MBF.Revit.Data.Models.CeilingData
+  name: CeilingData
+  href: api/MBF.Revit.Data.Models.CeilingData.html
+  commentId: T:MBF.Revit.Data.Models.CeilingData
+  fullName: MBF.Revit.Data.Models.CeilingData
+  nameWithType: CeilingData
+- uid: MBF.Revit.Data.Models.CeilingData.#ctor
+  name: CeilingData()
+  href: api/MBF.Revit.Data.Models.CeilingData.html#MBF_Revit_Data_Models_CeilingData__ctor
+  commentId: M:MBF.Revit.Data.Models.CeilingData.#ctor
+  name.vb: New()
+  fullName: MBF.Revit.Data.Models.CeilingData.CeilingData()
+  fullName.vb: MBF.Revit.Data.Models.CeilingData.New()
+  nameWithType: CeilingData.CeilingData()
+  nameWithType.vb: CeilingData.New()
+- uid: MBF.Revit.Data.Models.CeilingData.#ctor*
+  name: CeilingData
+  href: api/MBF.Revit.Data.Models.CeilingData.html#MBF_Revit_Data_Models_CeilingData__ctor_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingData.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Data.Models.CeilingData.CeilingData
+  fullName.vb: MBF.Revit.Data.Models.CeilingData.New
+  nameWithType: CeilingData.CeilingData
+  nameWithType.vb: CeilingData.New
+- uid: MBF.Revit.Data.Models.CeilingData.Ceiling
+  name: Ceiling
+  href: api/MBF.Revit.Data.Models.CeilingData.html#MBF_Revit_Data_Models_CeilingData_Ceiling
+  commentId: P:MBF.Revit.Data.Models.CeilingData.Ceiling
+  fullName: MBF.Revit.Data.Models.CeilingData.Ceiling
+  nameWithType: CeilingData.Ceiling
+- uid: MBF.Revit.Data.Models.CeilingData.Ceiling*
+  name: Ceiling
+  href: api/MBF.Revit.Data.Models.CeilingData.html#MBF_Revit_Data_Models_CeilingData_Ceiling_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingData.Ceiling
+  fullName: MBF.Revit.Data.Models.CeilingData.Ceiling
+  nameWithType: CeilingData.Ceiling
+- uid: MBF.Revit.Data.Models.CeilingData.Face
+  name: Face
+  href: api/MBF.Revit.Data.Models.CeilingData.html#MBF_Revit_Data_Models_CeilingData_Face
+  commentId: P:MBF.Revit.Data.Models.CeilingData.Face
+  fullName: MBF.Revit.Data.Models.CeilingData.Face
+  nameWithType: CeilingData.Face
+- uid: MBF.Revit.Data.Models.CeilingData.Face*
+  name: Face
+  href: api/MBF.Revit.Data.Models.CeilingData.html#MBF_Revit_Data_Models_CeilingData_Face_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingData.Face
+  fullName: MBF.Revit.Data.Models.CeilingData.Face
+  nameWithType: CeilingData.Face
+- uid: MBF.Revit.Data.Models.CeilingData.Type
+  name: Type
+  href: api/MBF.Revit.Data.Models.CeilingData.html#MBF_Revit_Data_Models_CeilingData_Type
+  commentId: P:MBF.Revit.Data.Models.CeilingData.Type
+  fullName: MBF.Revit.Data.Models.CeilingData.Type
+  nameWithType: CeilingData.Type
+- uid: MBF.Revit.Data.Models.CeilingData.Type*
+  name: Type
+  href: api/MBF.Revit.Data.Models.CeilingData.html#MBF_Revit_Data_Models_CeilingData_Type_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingData.Type
+  fullName: MBF.Revit.Data.Models.CeilingData.Type
+  nameWithType: CeilingData.Type
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid
+  name: CeilingFaceGrid
+  href: api/MBF.Revit.Data.Models.CeilingFaceGrid.html
+  commentId: T:MBF.Revit.Data.Models.CeilingFaceGrid
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid
+  nameWithType: CeilingFaceGrid
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.Create(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Mechanical.Space,CeilingFaceGridParameters,System.Double,System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},System.Double)
+  name: Create(Ceiling, Document, RevitLinkInstance, Space, CeilingFaceGridParameters, double, List<XYZ>, double)
+  href: api/MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_Create_Autodesk_Revit_DB_Ceiling_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_Mechanical_Space_CeilingFaceGridParameters_System_Double_System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__System_Double_
+  commentId: M:MBF.Revit.Data.Models.CeilingFaceGrid.Create(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Mechanical.Space,CeilingFaceGridParameters,System.Double,System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},System.Double)
+  name.vb: Create(Ceiling, Document, RevitLinkInstance, Space, CeilingFaceGridParameters, Double, List(Of XYZ), Double)
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.Create(Autodesk.Revit.DB.Ceiling, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Mechanical.Space, CeilingFaceGridParameters, double, System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>, double)
+  fullName.vb: MBF.Revit.Data.Models.CeilingFaceGrid.Create(Autodesk.Revit.DB.Ceiling, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Mechanical.Space, CeilingFaceGridParameters, Double, System.Collections.Generic.List(Of Autodesk.Revit.DB.XYZ), Double)
+  nameWithType: CeilingFaceGrid.Create(Ceiling, Document, RevitLinkInstance, Space, CeilingFaceGridParameters, double, List<XYZ>, double)
+  nameWithType.vb: CeilingFaceGrid.Create(Ceiling, Document, RevitLinkInstance, Space, CeilingFaceGridParameters, Double, List(Of XYZ), Double)
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.Create*
+  name: Create
+  href: api/MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_Create_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingFaceGrid.Create
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.Create
+  nameWithType: CeilingFaceGrid.Create
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPoint(System.Int32,System.Int32)
+  name: GetGridPoint(int, int)
+  href: api/MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_GetGridPoint_System_Int32_System_Int32_
+  commentId: M:MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPoint(System.Int32,System.Int32)
+  name.vb: GetGridPoint(Integer, Integer)
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPoint(int, int)
+  fullName.vb: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPoint(Integer, Integer)
+  nameWithType: CeilingFaceGrid.GetGridPoint(int, int)
+  nameWithType.vb: CeilingFaceGrid.GetGridPoint(Integer, Integer)
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPoint*
+  name: GetGridPoint
+  href: api/MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_GetGridPoint_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPoint
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPoint
+  nameWithType: CeilingFaceGrid.GetGridPoint
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPointDescription(System.Int32,System.Int32)
+  name: GetGridPointDescription(int, int)
+  href: api/MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_GetGridPointDescription_System_Int32_System_Int32_
+  commentId: M:MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPointDescription(System.Int32,System.Int32)
+  name.vb: GetGridPointDescription(Integer, Integer)
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPointDescription(int, int)
+  fullName.vb: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPointDescription(Integer, Integer)
+  nameWithType: CeilingFaceGrid.GetGridPointDescription(int, int)
+  nameWithType.vb: CeilingFaceGrid.GetGridPointDescription(Integer, Integer)
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPointDescription*
+  name: GetGridPointDescription
+  href: api/MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_GetGridPointDescription_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPointDescription
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPointDescription
+  nameWithType: CeilingFaceGrid.GetGridPointDescription
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.GetValidGridPoints
+  name: GetValidGridPoints()
+  href: api/MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_GetValidGridPoints
+  commentId: M:MBF.Revit.Data.Models.CeilingFaceGrid.GetValidGridPoints
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.GetValidGridPoints()
+  nameWithType: CeilingFaceGrid.GetValidGridPoints()
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.GetValidGridPoints*
+  name: GetValidGridPoints
+  href: api/MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_GetValidGridPoints_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingFaceGrid.GetValidGridPoints
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.GetValidGridPoints
+  nameWithType: CeilingFaceGrid.GetValidGridPoints
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.MaxDimensionLines
+  name: MaxDimensionLines
+  href: api/MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_MaxDimensionLines
+  commentId: P:MBF.Revit.Data.Models.CeilingFaceGrid.MaxDimensionLines
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.MaxDimensionLines
+  nameWithType: CeilingFaceGrid.MaxDimensionLines
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.MaxDimensionLines*
+  name: MaxDimensionLines
+  href: api/MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_MaxDimensionLines_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingFaceGrid.MaxDimensionLines
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.MaxDimensionLines
+  nameWithType: CeilingFaceGrid.MaxDimensionLines
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.MinDimensionLines
+  name: MinDimensionLines
+  href: api/MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_MinDimensionLines
+  commentId: P:MBF.Revit.Data.Models.CeilingFaceGrid.MinDimensionLines
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.MinDimensionLines
+  nameWithType: CeilingFaceGrid.MinDimensionLines
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.MinDimensionLines*
+  name: MinDimensionLines
+  href: api/MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_MinDimensionLines_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingFaceGrid.MinDimensionLines
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.MinDimensionLines
+  nameWithType: CeilingFaceGrid.MinDimensionLines
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.ValidateGrid
+  name: ValidateGrid()
+  href: api/MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_ValidateGrid
+  commentId: M:MBF.Revit.Data.Models.CeilingFaceGrid.ValidateGrid
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.ValidateGrid()
+  nameWithType: CeilingFaceGrid.ValidateGrid()
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.ValidateGrid*
+  name: ValidateGrid
+  href: api/MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_ValidateGrid_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingFaceGrid.ValidateGrid
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.ValidateGrid
+  nameWithType: CeilingFaceGrid.ValidateGrid
+- uid: MBF.Revit.Data.Models.CeilingPattern
+  name: CeilingPattern
+  href: api/MBF.Revit.Data.Models.CeilingPattern.html
+  commentId: T:MBF.Revit.Data.Models.CeilingPattern
+  fullName: MBF.Revit.Data.Models.CeilingPattern
+  nameWithType: CeilingPattern
+- uid: MBF.Revit.Data.Models.CeilingPattern.#ctor(Autodesk.Revit.DB.Line,System.Double,Autodesk.Revit.DB.Line,System.Double,Autodesk.Revit.DB.Face)
+  name: CeilingPattern(Line, double, Line, double, Face)
+  href: api/MBF.Revit.Data.Models.CeilingPattern.html#MBF_Revit_Data_Models_CeilingPattern__ctor_Autodesk_Revit_DB_Line_System_Double_Autodesk_Revit_DB_Line_System_Double_Autodesk_Revit_DB_Face_
+  commentId: M:MBF.Revit.Data.Models.CeilingPattern.#ctor(Autodesk.Revit.DB.Line,System.Double,Autodesk.Revit.DB.Line,System.Double,Autodesk.Revit.DB.Face)
+  name.vb: New(Line, Double, Line, Double, Face)
+  fullName: MBF.Revit.Data.Models.CeilingPattern.CeilingPattern(Autodesk.Revit.DB.Line, double, Autodesk.Revit.DB.Line, double, Autodesk.Revit.DB.Face)
+  fullName.vb: MBF.Revit.Data.Models.CeilingPattern.New(Autodesk.Revit.DB.Line, Double, Autodesk.Revit.DB.Line, Double, Autodesk.Revit.DB.Face)
+  nameWithType: CeilingPattern.CeilingPattern(Line, double, Line, double, Face)
+  nameWithType.vb: CeilingPattern.New(Line, Double, Line, Double, Face)
+- uid: MBF.Revit.Data.Models.CeilingPattern.#ctor*
+  name: CeilingPattern
+  href: api/MBF.Revit.Data.Models.CeilingPattern.html#MBF_Revit_Data_Models_CeilingPattern__ctor_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingPattern.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Data.Models.CeilingPattern.CeilingPattern
+  fullName.vb: MBF.Revit.Data.Models.CeilingPattern.New
+  nameWithType: CeilingPattern.CeilingPattern
+  nameWithType.vb: CeilingPattern.New
+- uid: MBF.Revit.Data.Models.CeilingPattern.Face
+  name: Face
+  href: api/MBF.Revit.Data.Models.CeilingPattern.html#MBF_Revit_Data_Models_CeilingPattern_Face
+  commentId: P:MBF.Revit.Data.Models.CeilingPattern.Face
+  fullName: MBF.Revit.Data.Models.CeilingPattern.Face
+  nameWithType: CeilingPattern.Face
+- uid: MBF.Revit.Data.Models.CeilingPattern.Face*
+  name: Face
+  href: api/MBF.Revit.Data.Models.CeilingPattern.html#MBF_Revit_Data_Models_CeilingPattern_Face_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingPattern.Face
+  fullName: MBF.Revit.Data.Models.CeilingPattern.Face
+  nameWithType: CeilingPattern.Face
+- uid: MBF.Revit.Data.Models.CeilingPattern.PrimaryLine
+  name: PrimaryLine
+  href: api/MBF.Revit.Data.Models.CeilingPattern.html#MBF_Revit_Data_Models_CeilingPattern_PrimaryLine
+  commentId: P:MBF.Revit.Data.Models.CeilingPattern.PrimaryLine
+  fullName: MBF.Revit.Data.Models.CeilingPattern.PrimaryLine
+  nameWithType: CeilingPattern.PrimaryLine
+- uid: MBF.Revit.Data.Models.CeilingPattern.PrimaryLine*
+  name: PrimaryLine
+  href: api/MBF.Revit.Data.Models.CeilingPattern.html#MBF_Revit_Data_Models_CeilingPattern_PrimaryLine_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingPattern.PrimaryLine
+  fullName: MBF.Revit.Data.Models.CeilingPattern.PrimaryLine
+  nameWithType: CeilingPattern.PrimaryLine
+- uid: MBF.Revit.Data.Models.CeilingPattern.PrimarySpacing
+  name: PrimarySpacing
+  href: api/MBF.Revit.Data.Models.CeilingPattern.html#MBF_Revit_Data_Models_CeilingPattern_PrimarySpacing
+  commentId: P:MBF.Revit.Data.Models.CeilingPattern.PrimarySpacing
+  fullName: MBF.Revit.Data.Models.CeilingPattern.PrimarySpacing
+  nameWithType: CeilingPattern.PrimarySpacing
+- uid: MBF.Revit.Data.Models.CeilingPattern.PrimarySpacing*
+  name: PrimarySpacing
+  href: api/MBF.Revit.Data.Models.CeilingPattern.html#MBF_Revit_Data_Models_CeilingPattern_PrimarySpacing_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingPattern.PrimarySpacing
+  fullName: MBF.Revit.Data.Models.CeilingPattern.PrimarySpacing
+  nameWithType: CeilingPattern.PrimarySpacing
+- uid: MBF.Revit.Data.Models.CeilingPattern.SecondaryLine
+  name: SecondaryLine
+  href: api/MBF.Revit.Data.Models.CeilingPattern.html#MBF_Revit_Data_Models_CeilingPattern_SecondaryLine
+  commentId: P:MBF.Revit.Data.Models.CeilingPattern.SecondaryLine
+  fullName: MBF.Revit.Data.Models.CeilingPattern.SecondaryLine
+  nameWithType: CeilingPattern.SecondaryLine
+- uid: MBF.Revit.Data.Models.CeilingPattern.SecondaryLine*
+  name: SecondaryLine
+  href: api/MBF.Revit.Data.Models.CeilingPattern.html#MBF_Revit_Data_Models_CeilingPattern_SecondaryLine_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingPattern.SecondaryLine
+  fullName: MBF.Revit.Data.Models.CeilingPattern.SecondaryLine
+  nameWithType: CeilingPattern.SecondaryLine
+- uid: MBF.Revit.Data.Models.CeilingPattern.SecondarySpacing
+  name: SecondarySpacing
+  href: api/MBF.Revit.Data.Models.CeilingPattern.html#MBF_Revit_Data_Models_CeilingPattern_SecondarySpacing
+  commentId: P:MBF.Revit.Data.Models.CeilingPattern.SecondarySpacing
+  fullName: MBF.Revit.Data.Models.CeilingPattern.SecondarySpacing
+  nameWithType: CeilingPattern.SecondarySpacing
+- uid: MBF.Revit.Data.Models.CeilingPattern.SecondarySpacing*
+  name: SecondarySpacing
+  href: api/MBF.Revit.Data.Models.CeilingPattern.html#MBF_Revit_Data_Models_CeilingPattern_SecondarySpacing_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingPattern.SecondarySpacing
+  fullName: MBF.Revit.Data.Models.CeilingPattern.SecondarySpacing
+  nameWithType: CeilingPattern.SecondarySpacing
+- uid: MBF.Revit.Data.Models.CeilingPatternExtractor
+  name: CeilingPatternExtractor
+  href: api/MBF.Revit.Data.Models.CeilingPatternExtractor.html
+  commentId: T:MBF.Revit.Data.Models.CeilingPatternExtractor
+  fullName: MBF.Revit.Data.Models.CeilingPatternExtractor
+  nameWithType: CeilingPatternExtractor
+- uid: MBF.Revit.Data.Models.CeilingPatternExtractor.GetCeilingPattern(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance)
+  name: GetCeilingPattern(Ceiling, Document, RevitLinkInstance)
+  href: api/MBF.Revit.Data.Models.CeilingPatternExtractor.html#MBF_Revit_Data_Models_CeilingPatternExtractor_GetCeilingPattern_Autodesk_Revit_DB_Ceiling_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_RevitLinkInstance_
+  commentId: M:MBF.Revit.Data.Models.CeilingPatternExtractor.GetCeilingPattern(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance)
+  fullName: MBF.Revit.Data.Models.CeilingPatternExtractor.GetCeilingPattern(Autodesk.Revit.DB.Ceiling, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.RevitLinkInstance)
+  nameWithType: CeilingPatternExtractor.GetCeilingPattern(Ceiling, Document, RevitLinkInstance)
+- uid: MBF.Revit.Data.Models.CeilingPatternExtractor.GetCeilingPattern*
+  name: GetCeilingPattern
+  href: api/MBF.Revit.Data.Models.CeilingPatternExtractor.html#MBF_Revit_Data_Models_CeilingPatternExtractor_GetCeilingPattern_
+  commentId: Overload:MBF.Revit.Data.Models.CeilingPatternExtractor.GetCeilingPattern
+  fullName: MBF.Revit.Data.Models.CeilingPatternExtractor.GetCeilingPattern
+  nameWithType: CeilingPatternExtractor.GetCeilingPattern
+- uid: MBF.Revit.Data.Models.GridLine
+  name: GridLine
+  href: api/MBF.Revit.Data.Models.GridLine.html
+  commentId: T:MBF.Revit.Data.Models.GridLine
+  fullName: MBF.Revit.Data.Models.GridLine
+  nameWithType: GridLine
+- uid: MBF.Revit.Data.Models.GridLine.#ctor(System.String,Autodesk.Revit.DB.Line)
+  name: GridLine(string, Line)
+  href: api/MBF.Revit.Data.Models.GridLine.html#MBF_Revit_Data_Models_GridLine__ctor_System_String_Autodesk_Revit_DB_Line_
+  commentId: M:MBF.Revit.Data.Models.GridLine.#ctor(System.String,Autodesk.Revit.DB.Line)
+  name.vb: New(String, Line)
+  fullName: MBF.Revit.Data.Models.GridLine.GridLine(string, Autodesk.Revit.DB.Line)
+  fullName.vb: MBF.Revit.Data.Models.GridLine.New(String, Autodesk.Revit.DB.Line)
+  nameWithType: GridLine.GridLine(string, Line)
+  nameWithType.vb: GridLine.New(String, Line)
+- uid: MBF.Revit.Data.Models.GridLine.#ctor*
+  name: GridLine
+  href: api/MBF.Revit.Data.Models.GridLine.html#MBF_Revit_Data_Models_GridLine__ctor_
+  commentId: Overload:MBF.Revit.Data.Models.GridLine.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Data.Models.GridLine.GridLine
+  fullName.vb: MBF.Revit.Data.Models.GridLine.New
+  nameWithType: GridLine.GridLine
+  nameWithType.vb: GridLine.New
+- uid: MBF.Revit.Data.Models.GridLine.Line
+  name: Line
+  href: api/MBF.Revit.Data.Models.GridLine.html#MBF_Revit_Data_Models_GridLine_Line
+  commentId: P:MBF.Revit.Data.Models.GridLine.Line
+  fullName: MBF.Revit.Data.Models.GridLine.Line
+  nameWithType: GridLine.Line
+- uid: MBF.Revit.Data.Models.GridLine.Line*
+  name: Line
+  href: api/MBF.Revit.Data.Models.GridLine.html#MBF_Revit_Data_Models_GridLine_Line_
+  commentId: Overload:MBF.Revit.Data.Models.GridLine.Line
+  fullName: MBF.Revit.Data.Models.GridLine.Line
+  nameWithType: GridLine.Line
+- uid: MBF.Revit.Data.Models.GridLine.Type
+  name: Type
+  href: api/MBF.Revit.Data.Models.GridLine.html#MBF_Revit_Data_Models_GridLine_Type
+  commentId: P:MBF.Revit.Data.Models.GridLine.Type
+  fullName: MBF.Revit.Data.Models.GridLine.Type
+  nameWithType: GridLine.Type
+- uid: MBF.Revit.Data.Models.GridLine.Type*
+  name: Type
+  href: api/MBF.Revit.Data.Models.GridLine.html#MBF_Revit_Data_Models_GridLine_Type_
+  commentId: Overload:MBF.Revit.Data.Models.GridLine.Type
+  fullName: MBF.Revit.Data.Models.GridLine.Type
+  nameWithType: GridLine.Type
+- uid: MBF.Revit.Data.Models.GridLineGenerator
+  name: GridLineGenerator
+  href: api/MBF.Revit.Data.Models.GridLineGenerator.html
+  commentId: T:MBF.Revit.Data.Models.GridLineGenerator
+  fullName: MBF.Revit.Data.Models.GridLineGenerator
+  nameWithType: GridLineGenerator
+- uid: MBF.Revit.Data.Models.GridLineGenerator.GenerateDimensionLines(Autodesk.Revit.DB.Line,System.Double,Autodesk.Revit.DB.XYZ,System.Collections.Generic.List{Autodesk.Revit.DB.Line})
+  name: GenerateDimensionLines(Line, double, XYZ, List<Line>)
+  href: api/MBF.Revit.Data.Models.GridLineGenerator.html#MBF_Revit_Data_Models_GridLineGenerator_GenerateDimensionLines_Autodesk_Revit_DB_Line_System_Double_Autodesk_Revit_DB_XYZ_System_Collections_Generic_List_Autodesk_Revit_DB_Line__
+  commentId: M:MBF.Revit.Data.Models.GridLineGenerator.GenerateDimensionLines(Autodesk.Revit.DB.Line,System.Double,Autodesk.Revit.DB.XYZ,System.Collections.Generic.List{Autodesk.Revit.DB.Line})
+  name.vb: GenerateDimensionLines(Line, Double, XYZ, List(Of Line))
+  fullName: MBF.Revit.Data.Models.GridLineGenerator.GenerateDimensionLines(Autodesk.Revit.DB.Line, double, Autodesk.Revit.DB.XYZ, System.Collections.Generic.List<Autodesk.Revit.DB.Line>)
+  fullName.vb: MBF.Revit.Data.Models.GridLineGenerator.GenerateDimensionLines(Autodesk.Revit.DB.Line, Double, Autodesk.Revit.DB.XYZ, System.Collections.Generic.List(Of Autodesk.Revit.DB.Line))
+  nameWithType: GridLineGenerator.GenerateDimensionLines(Line, double, XYZ, List<Line>)
+  nameWithType.vb: GridLineGenerator.GenerateDimensionLines(Line, Double, XYZ, List(Of Line))
+- uid: MBF.Revit.Data.Models.GridLineGenerator.GenerateDimensionLines*
+  name: GenerateDimensionLines
+  href: api/MBF.Revit.Data.Models.GridLineGenerator.html#MBF_Revit_Data_Models_GridLineGenerator_GenerateDimensionLines_
+  commentId: Overload:MBF.Revit.Data.Models.GridLineGenerator.GenerateDimensionLines
+  fullName: MBF.Revit.Data.Models.GridLineGenerator.GenerateDimensionLines
+  nameWithType: GridLineGenerator.GenerateDimensionLines
+- uid: MBF.Revit.Data.Models.GridPointInfo
+  name: GridPointInfo
+  href: api/MBF.Revit.Data.Models.GridPointInfo.html
+  commentId: T:MBF.Revit.Data.Models.GridPointInfo
+  fullName: MBF.Revit.Data.Models.GridPointInfo
+  nameWithType: GridPointInfo
+- uid: MBF.Revit.Data.Models.GridPointInfo.#ctor(System.Int32,System.Int32,Autodesk.Revit.DB.XYZ,System.String)
+  name: GridPointInfo(int, int, XYZ, string)
+  href: api/MBF.Revit.Data.Models.GridPointInfo.html#MBF_Revit_Data_Models_GridPointInfo__ctor_System_Int32_System_Int32_Autodesk_Revit_DB_XYZ_System_String_
+  commentId: M:MBF.Revit.Data.Models.GridPointInfo.#ctor(System.Int32,System.Int32,Autodesk.Revit.DB.XYZ,System.String)
+  name.vb: New(Integer, Integer, XYZ, String)
+  fullName: MBF.Revit.Data.Models.GridPointInfo.GridPointInfo(int, int, Autodesk.Revit.DB.XYZ, string)
+  fullName.vb: MBF.Revit.Data.Models.GridPointInfo.New(Integer, Integer, Autodesk.Revit.DB.XYZ, String)
+  nameWithType: GridPointInfo.GridPointInfo(int, int, XYZ, string)
+  nameWithType.vb: GridPointInfo.New(Integer, Integer, XYZ, String)
+- uid: MBF.Revit.Data.Models.GridPointInfo.#ctor*
+  name: GridPointInfo
+  href: api/MBF.Revit.Data.Models.GridPointInfo.html#MBF_Revit_Data_Models_GridPointInfo__ctor_
+  commentId: Overload:MBF.Revit.Data.Models.GridPointInfo.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Data.Models.GridPointInfo.GridPointInfo
+  fullName.vb: MBF.Revit.Data.Models.GridPointInfo.New
+  nameWithType: GridPointInfo.GridPointInfo
+  nameWithType.vb: GridPointInfo.New
+- uid: MBF.Revit.Data.Models.GridPointInfo.Description
+  name: Description
+  href: api/MBF.Revit.Data.Models.GridPointInfo.html#MBF_Revit_Data_Models_GridPointInfo_Description
+  commentId: P:MBF.Revit.Data.Models.GridPointInfo.Description
+  fullName: MBF.Revit.Data.Models.GridPointInfo.Description
+  nameWithType: GridPointInfo.Description
+- uid: MBF.Revit.Data.Models.GridPointInfo.Description*
+  name: Description
+  href: api/MBF.Revit.Data.Models.GridPointInfo.html#MBF_Revit_Data_Models_GridPointInfo_Description_
+  commentId: Overload:MBF.Revit.Data.Models.GridPointInfo.Description
+  fullName: MBF.Revit.Data.Models.GridPointInfo.Description
+  nameWithType: GridPointInfo.Description
+- uid: MBF.Revit.Data.Models.GridPointInfo.MaxIndex
+  name: MaxIndex
+  href: api/MBF.Revit.Data.Models.GridPointInfo.html#MBF_Revit_Data_Models_GridPointInfo_MaxIndex
+  commentId: P:MBF.Revit.Data.Models.GridPointInfo.MaxIndex
+  fullName: MBF.Revit.Data.Models.GridPointInfo.MaxIndex
+  nameWithType: GridPointInfo.MaxIndex
+- uid: MBF.Revit.Data.Models.GridPointInfo.MaxIndex*
+  name: MaxIndex
+  href: api/MBF.Revit.Data.Models.GridPointInfo.html#MBF_Revit_Data_Models_GridPointInfo_MaxIndex_
+  commentId: Overload:MBF.Revit.Data.Models.GridPointInfo.MaxIndex
+  fullName: MBF.Revit.Data.Models.GridPointInfo.MaxIndex
+  nameWithType: GridPointInfo.MaxIndex
+- uid: MBF.Revit.Data.Models.GridPointInfo.MinIndex
+  name: MinIndex
+  href: api/MBF.Revit.Data.Models.GridPointInfo.html#MBF_Revit_Data_Models_GridPointInfo_MinIndex
+  commentId: P:MBF.Revit.Data.Models.GridPointInfo.MinIndex
+  fullName: MBF.Revit.Data.Models.GridPointInfo.MinIndex
+  nameWithType: GridPointInfo.MinIndex
+- uid: MBF.Revit.Data.Models.GridPointInfo.MinIndex*
+  name: MinIndex
+  href: api/MBF.Revit.Data.Models.GridPointInfo.html#MBF_Revit_Data_Models_GridPointInfo_MinIndex_
+  commentId: Overload:MBF.Revit.Data.Models.GridPointInfo.MinIndex
+  fullName: MBF.Revit.Data.Models.GridPointInfo.MinIndex
+  nameWithType: GridPointInfo.MinIndex
+- uid: MBF.Revit.Data.Models.GridPointInfo.Point
+  name: Point
+  href: api/MBF.Revit.Data.Models.GridPointInfo.html#MBF_Revit_Data_Models_GridPointInfo_Point
+  commentId: P:MBF.Revit.Data.Models.GridPointInfo.Point
+  fullName: MBF.Revit.Data.Models.GridPointInfo.Point
+  nameWithType: GridPointInfo.Point
+- uid: MBF.Revit.Data.Models.GridPointInfo.Point*
+  name: Point
+  href: api/MBF.Revit.Data.Models.GridPointInfo.html#MBF_Revit_Data_Models_GridPointInfo_Point_
+  commentId: Overload:MBF.Revit.Data.Models.GridPointInfo.Point
+  fullName: MBF.Revit.Data.Models.GridPointInfo.Point
+  nameWithType: GridPointInfo.Point
+- uid: MBF.Revit.Data.Models.GridValidationResult
+  name: GridValidationResult
+  href: api/MBF.Revit.Data.Models.GridValidationResult.html
+  commentId: T:MBF.Revit.Data.Models.GridValidationResult
+  fullName: MBF.Revit.Data.Models.GridValidationResult
+  nameWithType: GridValidationResult
+- uid: MBF.Revit.Data.Models.GridValidationResult.#ctor
+  name: GridValidationResult()
+  href: api/MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult__ctor
+  commentId: M:MBF.Revit.Data.Models.GridValidationResult.#ctor
+  name.vb: New()
+  fullName: MBF.Revit.Data.Models.GridValidationResult.GridValidationResult()
+  fullName.vb: MBF.Revit.Data.Models.GridValidationResult.New()
+  nameWithType: GridValidationResult.GridValidationResult()
+  nameWithType.vb: GridValidationResult.New()
+- uid: MBF.Revit.Data.Models.GridValidationResult.#ctor*
+  name: GridValidationResult
+  href: api/MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult__ctor_
+  commentId: Overload:MBF.Revit.Data.Models.GridValidationResult.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Data.Models.GridValidationResult.GridValidationResult
+  fullName.vb: MBF.Revit.Data.Models.GridValidationResult.New
+  nameWithType: GridValidationResult.GridValidationResult
+  nameWithType.vb: GridValidationResult.New
+- uid: MBF.Revit.Data.Models.GridValidationResult.ErrorMessages
+  name: ErrorMessages
+  href: api/MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_ErrorMessages
+  commentId: P:MBF.Revit.Data.Models.GridValidationResult.ErrorMessages
+  fullName: MBF.Revit.Data.Models.GridValidationResult.ErrorMessages
+  nameWithType: GridValidationResult.ErrorMessages
+- uid: MBF.Revit.Data.Models.GridValidationResult.ErrorMessages*
+  name: ErrorMessages
+  href: api/MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_ErrorMessages_
+  commentId: Overload:MBF.Revit.Data.Models.GridValidationResult.ErrorMessages
+  fullName: MBF.Revit.Data.Models.GridValidationResult.ErrorMessages
+  nameWithType: GridValidationResult.ErrorMessages
+- uid: MBF.Revit.Data.Models.GridValidationResult.InvalidPoints
+  name: InvalidPoints
+  href: api/MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_InvalidPoints
+  commentId: P:MBF.Revit.Data.Models.GridValidationResult.InvalidPoints
+  fullName: MBF.Revit.Data.Models.GridValidationResult.InvalidPoints
+  nameWithType: GridValidationResult.InvalidPoints
+- uid: MBF.Revit.Data.Models.GridValidationResult.InvalidPoints*
+  name: InvalidPoints
+  href: api/MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_InvalidPoints_
+  commentId: Overload:MBF.Revit.Data.Models.GridValidationResult.InvalidPoints
+  fullName: MBF.Revit.Data.Models.GridValidationResult.InvalidPoints
+  nameWithType: GridValidationResult.InvalidPoints
+- uid: MBF.Revit.Data.Models.GridValidationResult.IsValid
+  name: IsValid
+  href: api/MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_IsValid
+  commentId: P:MBF.Revit.Data.Models.GridValidationResult.IsValid
+  fullName: MBF.Revit.Data.Models.GridValidationResult.IsValid
+  nameWithType: GridValidationResult.IsValid
+- uid: MBF.Revit.Data.Models.GridValidationResult.IsValid*
+  name: IsValid
+  href: api/MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_IsValid_
+  commentId: Overload:MBF.Revit.Data.Models.GridValidationResult.IsValid
+  fullName: MBF.Revit.Data.Models.GridValidationResult.IsValid
+  nameWithType: GridValidationResult.IsValid
+- uid: MBF.Revit.Data.Models.GridValidationResult.TotalPoints
+  name: TotalPoints
+  href: api/MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_TotalPoints
+  commentId: P:MBF.Revit.Data.Models.GridValidationResult.TotalPoints
+  fullName: MBF.Revit.Data.Models.GridValidationResult.TotalPoints
+  nameWithType: GridValidationResult.TotalPoints
+- uid: MBF.Revit.Data.Models.GridValidationResult.TotalPoints*
+  name: TotalPoints
+  href: api/MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_TotalPoints_
+  commentId: Overload:MBF.Revit.Data.Models.GridValidationResult.TotalPoints
+  fullName: MBF.Revit.Data.Models.GridValidationResult.TotalPoints
+  nameWithType: GridValidationResult.TotalPoints
+- uid: MBF.Revit.Data.Models.GridValidationResult.ValidPoints
+  name: ValidPoints
+  href: api/MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_ValidPoints
+  commentId: P:MBF.Revit.Data.Models.GridValidationResult.ValidPoints
+  fullName: MBF.Revit.Data.Models.GridValidationResult.ValidPoints
+  nameWithType: GridValidationResult.ValidPoints
+- uid: MBF.Revit.Data.Models.GridValidationResult.ValidPoints*
+  name: ValidPoints
+  href: api/MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_ValidPoints_
+  commentId: Overload:MBF.Revit.Data.Models.GridValidationResult.ValidPoints
+  fullName: MBF.Revit.Data.Models.GridValidationResult.ValidPoints
+  nameWithType: GridValidationResult.ValidPoints
+- uid: MBF.Revit.Data.Models.GridValidationResult.ValidPointsPercentage
+  name: ValidPointsPercentage
+  href: api/MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_ValidPointsPercentage
+  commentId: P:MBF.Revit.Data.Models.GridValidationResult.ValidPointsPercentage
+  fullName: MBF.Revit.Data.Models.GridValidationResult.ValidPointsPercentage
+  nameWithType: GridValidationResult.ValidPointsPercentage
+- uid: MBF.Revit.Data.Models.GridValidationResult.ValidPointsPercentage*
+  name: ValidPointsPercentage
+  href: api/MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_ValidPointsPercentage_
+  commentId: Overload:MBF.Revit.Data.Models.GridValidationResult.ValidPointsPercentage
+  fullName: MBF.Revit.Data.Models.GridValidationResult.ValidPointsPercentage
+  nameWithType: GridValidationResult.ValidPointsPercentage
+- uid: MBF.Revit.Data.Models.GridValidationResult.WarningMessages
+  name: WarningMessages
+  href: api/MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_WarningMessages
+  commentId: P:MBF.Revit.Data.Models.GridValidationResult.WarningMessages
+  fullName: MBF.Revit.Data.Models.GridValidationResult.WarningMessages
+  nameWithType: GridValidationResult.WarningMessages
+- uid: MBF.Revit.Data.Models.GridValidationResult.WarningMessages*
+  name: WarningMessages
+  href: api/MBF.Revit.Data.Models.GridValidationResult.html#MBF_Revit_Data_Models_GridValidationResult_WarningMessages_
+  commentId: Overload:MBF.Revit.Data.Models.GridValidationResult.WarningMessages
+  fullName: MBF.Revit.Data.Models.GridValidationResult.WarningMessages
+  nameWithType: GridValidationResult.WarningMessages
 - uid: MBF.Revit.Data.Models.MbDocument
   name: MbDocument
   href: api/MBF.Revit.Data.Models.MbDocument.html
@@ -3454,6 +4507,27 @@ references:
   commentId: N:MBF.Revit.Data.Utils
   fullName: MBF.Revit.Data.Utils
   nameWithType: MBF.Revit.Data.Utils
+- uid: MBF.Revit.Data.Utils.CeilingPatternDeducer
+  name: CeilingPatternDeducer
+  href: api/MBF.Revit.Data.Utils.CeilingPatternDeducer.html
+  commentId: T:MBF.Revit.Data.Utils.CeilingPatternDeducer
+  fullName: MBF.Revit.Data.Utils.CeilingPatternDeducer
+  nameWithType: CeilingPatternDeducer
+- uid: MBF.Revit.Data.Utils.CeilingPatternDeducer.DeduceCeilingPatternForSpace(System.Double,System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ,System.Double,System.Double,System.Double)
+  name: DeduceCeilingPatternForSpace(double, List<XYZ>, XYZ, double, double, double)
+  href: api/MBF.Revit.Data.Utils.CeilingPatternDeducer.html#MBF_Revit_Data_Utils_CeilingPatternDeducer_DeduceCeilingPatternForSpace_System_Double_System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__Autodesk_Revit_DB_XYZ_System_Double_System_Double_System_Double_
+  commentId: M:MBF.Revit.Data.Utils.CeilingPatternDeducer.DeduceCeilingPatternForSpace(System.Double,System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ,System.Double,System.Double,System.Double)
+  name.vb: DeduceCeilingPatternForSpace(Double, List(Of XYZ), XYZ, Double, Double, Double)
+  fullName: MBF.Revit.Data.Utils.CeilingPatternDeducer.DeduceCeilingPatternForSpace(double, System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>, Autodesk.Revit.DB.XYZ, double, double, double)
+  fullName.vb: MBF.Revit.Data.Utils.CeilingPatternDeducer.DeduceCeilingPatternForSpace(Double, System.Collections.Generic.List(Of Autodesk.Revit.DB.XYZ), Autodesk.Revit.DB.XYZ, Double, Double, Double)
+  nameWithType: CeilingPatternDeducer.DeduceCeilingPatternForSpace(double, List<XYZ>, XYZ, double, double, double)
+  nameWithType.vb: CeilingPatternDeducer.DeduceCeilingPatternForSpace(Double, List(Of XYZ), XYZ, Double, Double, Double)
+- uid: MBF.Revit.Data.Utils.CeilingPatternDeducer.DeduceCeilingPatternForSpace*
+  name: DeduceCeilingPatternForSpace
+  href: api/MBF.Revit.Data.Utils.CeilingPatternDeducer.html#MBF_Revit_Data_Utils_CeilingPatternDeducer_DeduceCeilingPatternForSpace_
+  commentId: Overload:MBF.Revit.Data.Utils.CeilingPatternDeducer.DeduceCeilingPatternForSpace
+  fullName: MBF.Revit.Data.Utils.CeilingPatternDeducer.DeduceCeilingPatternForSpace
+  nameWithType: CeilingPatternDeducer.DeduceCeilingPatternForSpace
 - uid: MBF.Revit.Data.Utils.EntityUtils
   name: EntityUtils
   href: api/MBF.Revit.Data.Utils.EntityUtils.html
@@ -3508,6 +4582,60 @@ references:
   commentId: Overload:MBF.Revit.Data.Utils.EntityUtils.SetXYZ
   fullName: MBF.Revit.Data.Utils.EntityUtils.SetXYZ
   nameWithType: EntityUtils.SetXYZ
+- uid: MBF.Revit.Data.Utils.GeometryUtils
+  name: GeometryUtils
+  href: api/MBF.Revit.Data.Utils.GeometryUtils.html
+  commentId: T:MBF.Revit.Data.Utils.GeometryUtils
+  fullName: MBF.Revit.Data.Utils.GeometryUtils
+  nameWithType: GeometryUtils
+- uid: MBF.Revit.Data.Utils.GeometryUtils.CheckLineIntersectsCurves(System.Collections.Generic.List{Autodesk.Revit.DB.Line},Autodesk.Revit.DB.Line)
+  name: CheckLineIntersectsCurves(List<Line>, Line)
+  href: api/MBF.Revit.Data.Utils.GeometryUtils.html#MBF_Revit_Data_Utils_GeometryUtils_CheckLineIntersectsCurves_System_Collections_Generic_List_Autodesk_Revit_DB_Line__Autodesk_Revit_DB_Line_
+  commentId: M:MBF.Revit.Data.Utils.GeometryUtils.CheckLineIntersectsCurves(System.Collections.Generic.List{Autodesk.Revit.DB.Line},Autodesk.Revit.DB.Line)
+  name.vb: CheckLineIntersectsCurves(List(Of Line), Line)
+  fullName: MBF.Revit.Data.Utils.GeometryUtils.CheckLineIntersectsCurves(System.Collections.Generic.List<Autodesk.Revit.DB.Line>, Autodesk.Revit.DB.Line)
+  fullName.vb: MBF.Revit.Data.Utils.GeometryUtils.CheckLineIntersectsCurves(System.Collections.Generic.List(Of Autodesk.Revit.DB.Line), Autodesk.Revit.DB.Line)
+  nameWithType: GeometryUtils.CheckLineIntersectsCurves(List<Line>, Line)
+  nameWithType.vb: GeometryUtils.CheckLineIntersectsCurves(List(Of Line), Line)
+- uid: MBF.Revit.Data.Utils.GeometryUtils.CheckLineIntersectsCurves*
+  name: CheckLineIntersectsCurves
+  href: api/MBF.Revit.Data.Utils.GeometryUtils.html#MBF_Revit_Data_Utils_GeometryUtils_CheckLineIntersectsCurves_
+  commentId: Overload:MBF.Revit.Data.Utils.GeometryUtils.CheckLineIntersectsCurves
+  fullName: MBF.Revit.Data.Utils.GeometryUtils.CheckLineIntersectsCurves
+  nameWithType: GeometryUtils.CheckLineIntersectsCurves
+- uid: MBF.Revit.Data.Utils.GeometryUtils.CreateOffsetLine(Autodesk.Revit.DB.Line,Autodesk.Revit.DB.XYZ,System.Double)
+  name: CreateOffsetLine(Line, XYZ, double)
+  href: api/MBF.Revit.Data.Utils.GeometryUtils.html#MBF_Revit_Data_Utils_GeometryUtils_CreateOffsetLine_Autodesk_Revit_DB_Line_Autodesk_Revit_DB_XYZ_System_Double_
+  commentId: M:MBF.Revit.Data.Utils.GeometryUtils.CreateOffsetLine(Autodesk.Revit.DB.Line,Autodesk.Revit.DB.XYZ,System.Double)
+  name.vb: CreateOffsetLine(Line, XYZ, Double)
+  fullName: MBF.Revit.Data.Utils.GeometryUtils.CreateOffsetLine(Autodesk.Revit.DB.Line, Autodesk.Revit.DB.XYZ, double)
+  fullName.vb: MBF.Revit.Data.Utils.GeometryUtils.CreateOffsetLine(Autodesk.Revit.DB.Line, Autodesk.Revit.DB.XYZ, Double)
+  nameWithType: GeometryUtils.CreateOffsetLine(Line, XYZ, double)
+  nameWithType.vb: GeometryUtils.CreateOffsetLine(Line, XYZ, Double)
+- uid: MBF.Revit.Data.Utils.GeometryUtils.CreateOffsetLine*
+  name: CreateOffsetLine
+  href: api/MBF.Revit.Data.Utils.GeometryUtils.html#MBF_Revit_Data_Utils_GeometryUtils_CreateOffsetLine_
+  commentId: Overload:MBF.Revit.Data.Utils.GeometryUtils.CreateOffsetLine
+  fullName: MBF.Revit.Data.Utils.GeometryUtils.CreateOffsetLine
+  nameWithType: GeometryUtils.CreateOffsetLine
+- uid: MBF.Revit.Data.Utils.MbCeilingUtils
+  name: MbCeilingUtils
+  href: api/MBF.Revit.Data.Utils.MbCeilingUtils.html
+  commentId: T:MBF.Revit.Data.Utils.MbCeilingUtils
+  fullName: MBF.Revit.Data.Utils.MbCeilingUtils
+  nameWithType: MbCeilingUtils
+- uid: MBF.Revit.Data.Utils.MbCeilingUtils.IsPointOnCeiling(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.XYZ)
+  name: IsPointOnCeiling(Ceiling, XYZ)
+  href: api/MBF.Revit.Data.Utils.MbCeilingUtils.html#MBF_Revit_Data_Utils_MbCeilingUtils_IsPointOnCeiling_Autodesk_Revit_DB_Ceiling_Autodesk_Revit_DB_XYZ_
+  commentId: M:MBF.Revit.Data.Utils.MbCeilingUtils.IsPointOnCeiling(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.XYZ)
+  fullName: MBF.Revit.Data.Utils.MbCeilingUtils.IsPointOnCeiling(Autodesk.Revit.DB.Ceiling, Autodesk.Revit.DB.XYZ)
+  nameWithType: MbCeilingUtils.IsPointOnCeiling(Ceiling, XYZ)
+- uid: MBF.Revit.Data.Utils.MbCeilingUtils.IsPointOnCeiling*
+  name: IsPointOnCeiling
+  href: api/MBF.Revit.Data.Utils.MbCeilingUtils.html#MBF_Revit_Data_Utils_MbCeilingUtils_IsPointOnCeiling_
+  commentId: Overload:MBF.Revit.Data.Utils.MbCeilingUtils.IsPointOnCeiling
+  fullName: MBF.Revit.Data.Utils.MbCeilingUtils.IsPointOnCeiling
+  nameWithType: MbCeilingUtils.IsPointOnCeiling
 - uid: MBF.Revit.Data.Utils.MbConnectorUtilities
   name: MbConnectorUtilities
   href: api/MBF.Revit.Data.Utils.MbConnectorUtilities.html
@@ -3601,6 +4729,45 @@ references:
   commentId: Overload:MBF.Revit.Data.Utils.MbConnectorUtilities.IsMEPCategory
   fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.IsMEPCategory
   nameWithType: MbConnectorUtilities.IsMEPCategory
+- uid: MBF.Revit.Data.Utils.MbCurveUtils
+  name: MbCurveUtils
+  href: api/MBF.Revit.Data.Utils.MbCurveUtils.html
+  commentId: T:MBF.Revit.Data.Utils.MbCurveUtils
+  fullName: MBF.Revit.Data.Utils.MbCurveUtils
+  nameWithType: MbCurveUtils
+- uid: MBF.Revit.Data.Utils.MbCurveUtils.EnforceChainForCurves(System.Collections.Generic.List{Autodesk.Revit.DB.Curve})
+  name: EnforceChainForCurves(List<Curve>)
+  href: api/MBF.Revit.Data.Utils.MbCurveUtils.html#MBF_Revit_Data_Utils_MbCurveUtils_EnforceChainForCurves_System_Collections_Generic_List_Autodesk_Revit_DB_Curve__
+  commentId: M:MBF.Revit.Data.Utils.MbCurveUtils.EnforceChainForCurves(System.Collections.Generic.List{Autodesk.Revit.DB.Curve})
+  name.vb: EnforceChainForCurves(List(Of Curve))
+  fullName: MBF.Revit.Data.Utils.MbCurveUtils.EnforceChainForCurves(System.Collections.Generic.List<Autodesk.Revit.DB.Curve>)
+  fullName.vb: MBF.Revit.Data.Utils.MbCurveUtils.EnforceChainForCurves(System.Collections.Generic.List(Of Autodesk.Revit.DB.Curve))
+  nameWithType: MbCurveUtils.EnforceChainForCurves(List<Curve>)
+  nameWithType.vb: MbCurveUtils.EnforceChainForCurves(List(Of Curve))
+- uid: MBF.Revit.Data.Utils.MbCurveUtils.EnforceChainForCurves*
+  name: EnforceChainForCurves
+  href: api/MBF.Revit.Data.Utils.MbCurveUtils.html#MBF_Revit_Data_Utils_MbCurveUtils_EnforceChainForCurves_
+  commentId: Overload:MBF.Revit.Data.Utils.MbCurveUtils.EnforceChainForCurves
+  fullName: MBF.Revit.Data.Utils.MbCurveUtils.EnforceChainForCurves
+  nameWithType: MbCurveUtils.EnforceChainForCurves
+- uid: MBF.Revit.Data.Utils.MbFaceUtils
+  name: MbFaceUtils
+  href: api/MBF.Revit.Data.Utils.MbFaceUtils.html
+  commentId: T:MBF.Revit.Data.Utils.MbFaceUtils
+  fullName: MBF.Revit.Data.Utils.MbFaceUtils
+  nameWithType: MbFaceUtils
+- uid: MBF.Revit.Data.Utils.MbFaceUtils.GetFillPattern(Autodesk.Revit.DB.Face,Autodesk.Revit.DB.Document)
+  name: GetFillPattern(Face, Document)
+  href: api/MBF.Revit.Data.Utils.MbFaceUtils.html#MBF_Revit_Data_Utils_MbFaceUtils_GetFillPattern_Autodesk_Revit_DB_Face_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Data.Utils.MbFaceUtils.GetFillPattern(Autodesk.Revit.DB.Face,Autodesk.Revit.DB.Document)
+  fullName: MBF.Revit.Data.Utils.MbFaceUtils.GetFillPattern(Autodesk.Revit.DB.Face, Autodesk.Revit.DB.Document)
+  nameWithType: MbFaceUtils.GetFillPattern(Face, Document)
+- uid: MBF.Revit.Data.Utils.MbFaceUtils.GetFillPattern*
+  name: GetFillPattern
+  href: api/MBF.Revit.Data.Utils.MbFaceUtils.html#MBF_Revit_Data_Utils_MbFaceUtils_GetFillPattern_
+  commentId: Overload:MBF.Revit.Data.Utils.MbFaceUtils.GetFillPattern
+  fullName: MBF.Revit.Data.Utils.MbFaceUtils.GetFillPattern
+  nameWithType: MbFaceUtils.GetFillPattern
 - uid: MBF.Revit.Data.Utils.MbFamilyInstanceUtils
   name: MbFamilyInstanceUtils
   href: api/MBF.Revit.Data.Utils.MbFamilyInstanceUtils.html
@@ -3676,6 +4843,42 @@ references:
   commentId: Overload:MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeInstances
   fullName: MBF.Revit.Data.Utils.MbFlexPipesUtils.GetFlexPipeInstances
   nameWithType: MbFlexPipesUtils.GetFlexPipeInstances
+- uid: MBF.Revit.Data.Utils.MbLinkedElementUtils
+  name: MbLinkedElementUtils
+  href: api/MBF.Revit.Data.Utils.MbLinkedElementUtils.html
+  commentId: T:MBF.Revit.Data.Utils.MbLinkedElementUtils
+  fullName: MBF.Revit.Data.Utils.MbLinkedElementUtils
+  nameWithType: MbLinkedElementUtils
+- uid: MBF.Revit.Data.Utils.MbLinkedElementUtils.GetPointInLinkFileFromParentFile(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document,System.Boolean)
+  name: GetPointInLinkFileFromParentFile(XYZ, RevitLinkInstance, Document, bool)
+  href: api/MBF.Revit.Data.Utils.MbLinkedElementUtils.html#MBF_Revit_Data_Utils_MbLinkedElementUtils_GetPointInLinkFileFromParentFile_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_Document_System_Boolean_
+  commentId: M:MBF.Revit.Data.Utils.MbLinkedElementUtils.GetPointInLinkFileFromParentFile(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document,System.Boolean)
+  name.vb: GetPointInLinkFileFromParentFile(XYZ, RevitLinkInstance, Document, Boolean)
+  fullName: MBF.Revit.Data.Utils.MbLinkedElementUtils.GetPointInLinkFileFromParentFile(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Document, bool)
+  fullName.vb: MBF.Revit.Data.Utils.MbLinkedElementUtils.GetPointInLinkFileFromParentFile(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Document, Boolean)
+  nameWithType: MbLinkedElementUtils.GetPointInLinkFileFromParentFile(XYZ, RevitLinkInstance, Document, bool)
+  nameWithType.vb: MbLinkedElementUtils.GetPointInLinkFileFromParentFile(XYZ, RevitLinkInstance, Document, Boolean)
+- uid: MBF.Revit.Data.Utils.MbLinkedElementUtils.GetPointInLinkFileFromParentFile*
+  name: GetPointInLinkFileFromParentFile
+  href: api/MBF.Revit.Data.Utils.MbLinkedElementUtils.html#MBF_Revit_Data_Utils_MbLinkedElementUtils_GetPointInLinkFileFromParentFile_
+  commentId: Overload:MBF.Revit.Data.Utils.MbLinkedElementUtils.GetPointInLinkFileFromParentFile
+  fullName: MBF.Revit.Data.Utils.MbLinkedElementUtils.GetPointInLinkFileFromParentFile
+  nameWithType: MbLinkedElementUtils.GetPointInLinkFileFromParentFile
+- uid: MBF.Revit.Data.Utils.MbLinkedElementUtils.GetPointInParentFileFromLink(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document,System.Boolean)
+  name: GetPointInParentFileFromLink(XYZ, RevitLinkInstance, Document, bool)
+  href: api/MBF.Revit.Data.Utils.MbLinkedElementUtils.html#MBF_Revit_Data_Utils_MbLinkedElementUtils_GetPointInParentFileFromLink_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_Document_System_Boolean_
+  commentId: M:MBF.Revit.Data.Utils.MbLinkedElementUtils.GetPointInParentFileFromLink(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document,System.Boolean)
+  name.vb: GetPointInParentFileFromLink(XYZ, RevitLinkInstance, Document, Boolean)
+  fullName: MBF.Revit.Data.Utils.MbLinkedElementUtils.GetPointInParentFileFromLink(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Document, bool)
+  fullName.vb: MBF.Revit.Data.Utils.MbLinkedElementUtils.GetPointInParentFileFromLink(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Document, Boolean)
+  nameWithType: MbLinkedElementUtils.GetPointInParentFileFromLink(XYZ, RevitLinkInstance, Document, bool)
+  nameWithType.vb: MbLinkedElementUtils.GetPointInParentFileFromLink(XYZ, RevitLinkInstance, Document, Boolean)
+- uid: MBF.Revit.Data.Utils.MbLinkedElementUtils.GetPointInParentFileFromLink*
+  name: GetPointInParentFileFromLink
+  href: api/MBF.Revit.Data.Utils.MbLinkedElementUtils.html#MBF_Revit_Data_Utils_MbLinkedElementUtils_GetPointInParentFileFromLink_
+  commentId: Overload:MBF.Revit.Data.Utils.MbLinkedElementUtils.GetPointInParentFileFromLink
+  fullName: MBF.Revit.Data.Utils.MbLinkedElementUtils.GetPointInParentFileFromLink
+  nameWithType: MbLinkedElementUtils.GetPointInParentFileFromLink
 - uid: MBF.Revit.Data.Utils.MbParameterUtils
   name: MbParameterUtils
   href: api/MBF.Revit.Data.Utils.MbParameterUtils.html
@@ -4261,12 +5464,339 @@ references:
   commentId: Overload:MBF.Revit.Data.Utils.MbPipesUtils.SortFittingsByProximity
   fullName: MBF.Revit.Data.Utils.MbPipesUtils.SortFittingsByProximity
   nameWithType: MbPipesUtils.SortFittingsByProximity
+- uid: MBF.Revit.Data.Utils.MbProjectLocationUtils
+  name: MbProjectLocationUtils
+  href: api/MBF.Revit.Data.Utils.MbProjectLocationUtils.html
+  commentId: T:MBF.Revit.Data.Utils.MbProjectLocationUtils
+  fullName: MBF.Revit.Data.Utils.MbProjectLocationUtils
+  nameWithType: MbProjectLocationUtils
+- uid: MBF.Revit.Data.Utils.MbProjectLocationUtils.GetProjectLocationTransform(Autodesk.Revit.DB.Document)
+  name: GetProjectLocationTransform(Document)
+  href: api/MBF.Revit.Data.Utils.MbProjectLocationUtils.html#MBF_Revit_Data_Utils_MbProjectLocationUtils_GetProjectLocationTransform_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Data.Utils.MbProjectLocationUtils.GetProjectLocationTransform(Autodesk.Revit.DB.Document)
+  fullName: MBF.Revit.Data.Utils.MbProjectLocationUtils.GetProjectLocationTransform(Autodesk.Revit.DB.Document)
+  nameWithType: MbProjectLocationUtils.GetProjectLocationTransform(Document)
+- uid: MBF.Revit.Data.Utils.MbProjectLocationUtils.GetProjectLocationTransform*
+  name: GetProjectLocationTransform
+  href: api/MBF.Revit.Data.Utils.MbProjectLocationUtils.html#MBF_Revit_Data_Utils_MbProjectLocationUtils_GetProjectLocationTransform_
+  commentId: Overload:MBF.Revit.Data.Utils.MbProjectLocationUtils.GetProjectLocationTransform
+  fullName: MBF.Revit.Data.Utils.MbProjectLocationUtils.GetProjectLocationTransform
+  nameWithType: MbProjectLocationUtils.GetProjectLocationTransform
+- uid: MBF.Revit.Data.Utils.MbProjectLocationUtils.GetProjectPosition(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.XYZ)
+  name: GetProjectPosition(Document, XYZ)
+  href: api/MBF.Revit.Data.Utils.MbProjectLocationUtils.html#MBF_Revit_Data_Utils_MbProjectLocationUtils_GetProjectPosition_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_XYZ_
+  commentId: M:MBF.Revit.Data.Utils.MbProjectLocationUtils.GetProjectPosition(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.XYZ)
+  fullName: MBF.Revit.Data.Utils.MbProjectLocationUtils.GetProjectPosition(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.XYZ)
+  nameWithType: MbProjectLocationUtils.GetProjectPosition(Document, XYZ)
+- uid: MBF.Revit.Data.Utils.MbProjectLocationUtils.GetProjectPosition*
+  name: GetProjectPosition
+  href: api/MBF.Revit.Data.Utils.MbProjectLocationUtils.html#MBF_Revit_Data_Utils_MbProjectLocationUtils_GetProjectPosition_
+  commentId: Overload:MBF.Revit.Data.Utils.MbProjectLocationUtils.GetProjectPosition
+  fullName: MBF.Revit.Data.Utils.MbProjectLocationUtils.GetProjectPosition
+  nameWithType: MbProjectLocationUtils.GetProjectPosition
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  name: MbRevitSpaceOldRepoUtils
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html
+  commentId: T:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  nameWithType: MbRevitSpaceOldRepoUtils
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.AnalyzeCeilings(System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.RevitLinkInstance)
+  name: AnalyzeCeilings(List<Ceiling>, RevitLinkInstance)
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_AnalyzeCeilings_System_Collections_Generic_List_Autodesk_Revit_DB_Ceiling__Autodesk_Revit_DB_RevitLinkInstance_
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.AnalyzeCeilings(System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.RevitLinkInstance)
+  name.vb: AnalyzeCeilings(List(Of Ceiling), RevitLinkInstance)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.AnalyzeCeilings(System.Collections.Generic.List<Autodesk.Revit.DB.Ceiling>, Autodesk.Revit.DB.RevitLinkInstance)
+  fullName.vb: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.AnalyzeCeilings(System.Collections.Generic.List(Of Autodesk.Revit.DB.Ceiling), Autodesk.Revit.DB.RevitLinkInstance)
+  nameWithType: MbRevitSpaceOldRepoUtils.AnalyzeCeilings(List<Ceiling>, RevitLinkInstance)
+  nameWithType.vb: MbRevitSpaceOldRepoUtils.AnalyzeCeilings(List(Of Ceiling), RevitLinkInstance)
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.AnalyzeCeilings*
+  name: AnalyzeCeilings
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_AnalyzeCeilings_
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.AnalyzeCeilings
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.AnalyzeCeilings
+  nameWithType: MbRevitSpaceOldRepoUtils.AnalyzeCeilings
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CalculatePolygonArea(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ})
+  name: CalculatePolygonArea(List<XYZ>)
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_CalculatePolygonArea_System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CalculatePolygonArea(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ})
+  name.vb: CalculatePolygonArea(List(Of XYZ))
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CalculatePolygonArea(System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>)
+  fullName.vb: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CalculatePolygonArea(System.Collections.Generic.List(Of Autodesk.Revit.DB.XYZ))
+  nameWithType: MbRevitSpaceOldRepoUtils.CalculatePolygonArea(List<XYZ>)
+  nameWithType.vb: MbRevitSpaceOldRepoUtils.CalculatePolygonArea(List(Of XYZ))
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CalculatePolygonArea*
+  name: CalculatePolygonArea
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_CalculatePolygonArea_
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CalculatePolygonArea
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CalculatePolygonArea
+  nameWithType: MbRevitSpaceOldRepoUtils.CalculatePolygonArea
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CheckPointClashWithServices(Autodesk.Revit.DB.XYZ,System.Collections.Generic.List{Autodesk.Revit.DB.Element},Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)
+  name: CheckPointClashWithServices(XYZ, List<Element>, RevitLinkInstance, Document)
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_CheckPointClashWithServices_Autodesk_Revit_DB_XYZ_System_Collections_Generic_List_Autodesk_Revit_DB_Element__Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CheckPointClashWithServices(Autodesk.Revit.DB.XYZ,System.Collections.Generic.List{Autodesk.Revit.DB.Element},Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)
+  name.vb: CheckPointClashWithServices(XYZ, List(Of Element), RevitLinkInstance, Document)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CheckPointClashWithServices(Autodesk.Revit.DB.XYZ, System.Collections.Generic.List<Autodesk.Revit.DB.Element>, Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Document)
+  fullName.vb: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CheckPointClashWithServices(Autodesk.Revit.DB.XYZ, System.Collections.Generic.List(Of Autodesk.Revit.DB.Element), Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Document)
+  nameWithType: MbRevitSpaceOldRepoUtils.CheckPointClashWithServices(XYZ, List<Element>, RevitLinkInstance, Document)
+  nameWithType.vb: MbRevitSpaceOldRepoUtils.CheckPointClashWithServices(XYZ, List(Of Element), RevitLinkInstance, Document)
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CheckPointClashWithServices*
+  name: CheckPointClashWithServices
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_CheckPointClashWithServices_
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CheckPointClashWithServices
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CheckPointClashWithServices
+  nameWithType: MbRevitSpaceOldRepoUtils.CheckPointClashWithServices
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom(Autodesk.Revit.DB.Architecture.Room,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)
+  name: CreateSpaceFromRoom(Room, RevitLinkInstance, Document)
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_CreateSpaceFromRoom_Autodesk_Revit_DB_Architecture_Room_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom(Autodesk.Revit.DB.Architecture.Room,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom(Autodesk.Revit.DB.Architecture.Room, Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Document)
+  nameWithType: MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom(Room, RevitLinkInstance, Document)
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom*
+  name: CreateSpaceFromRoom
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_CreateSpaceFromRoom_
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom
+  nameWithType: MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.DetermineCeilingHeight(Autodesk.Revit.DB.Mechanical.Space,MBF.Revit.Data.Models.CeilingAnalysisResult,System.Double,System.Double)
+  name: DetermineCeilingHeight(Space, CeilingAnalysisResult, double, double)
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_DetermineCeilingHeight_Autodesk_Revit_DB_Mechanical_Space_MBF_Revit_Data_Models_CeilingAnalysisResult_System_Double_System_Double_
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.DetermineCeilingHeight(Autodesk.Revit.DB.Mechanical.Space,MBF.Revit.Data.Models.CeilingAnalysisResult,System.Double,System.Double)
+  name.vb: DetermineCeilingHeight(Space, CeilingAnalysisResult, Double, Double)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.DetermineCeilingHeight(Autodesk.Revit.DB.Mechanical.Space, MBF.Revit.Data.Models.CeilingAnalysisResult, double, double)
+  fullName.vb: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.DetermineCeilingHeight(Autodesk.Revit.DB.Mechanical.Space, MBF.Revit.Data.Models.CeilingAnalysisResult, Double, Double)
+  nameWithType: MbRevitSpaceOldRepoUtils.DetermineCeilingHeight(Space, CeilingAnalysisResult, double, double)
+  nameWithType.vb: MbRevitSpaceOldRepoUtils.DetermineCeilingHeight(Space, CeilingAnalysisResult, Double, Double)
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.DetermineCeilingHeight*
+  name: DetermineCeilingHeight
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_DetermineCeilingHeight_
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.DetermineCeilingHeight
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.DetermineCeilingHeight
+  nameWithType: MbRevitSpaceOldRepoUtils.DetermineCeilingHeight
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetCeilingData(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.Document)
+  name: GetCeilingData(Ceiling, Document)
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetCeilingData_Autodesk_Revit_DB_Ceiling_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetCeilingData(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.Document)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetCeilingData(Autodesk.Revit.DB.Ceiling, Autodesk.Revit.DB.Document)
+  nameWithType: MbRevitSpaceOldRepoUtils.GetCeilingData(Ceiling, Document)
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetCeilingData*
+  name: GetCeilingData
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetCeilingData_
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetCeilingData
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetCeilingData
+  nameWithType: MbRevitSpaceOldRepoUtils.GetCeilingData
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints(Autodesk.Revit.DB.Mechanical.Space)
+  name: GetSpaceBoundaryPoints(Space)
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetSpaceBoundaryPoints_Autodesk_Revit_DB_Mechanical_Space_
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints(Autodesk.Revit.DB.Mechanical.Space)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints(Autodesk.Revit.DB.Mechanical.Space)
+  nameWithType: MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints(Space)
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints*
+  name: GetSpaceBoundaryPoints
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetSpaceBoundaryPoints_
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints
+  nameWithType: MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments(Autodesk.Revit.DB.Mechanical.Space)
+  name: GetSpaceBoundarySegments(Space)
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetSpaceBoundarySegments_Autodesk_Revit_DB_Mechanical_Space_
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments(Autodesk.Revit.DB.Mechanical.Space)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments(Autodesk.Revit.DB.Mechanical.Space)
+  nameWithType: MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments(Space)
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments*
+  name: GetSpaceBoundarySegments
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetSpaceBoundarySegments_
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments
+  nameWithType: MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint(Autodesk.Revit.DB.Mechanical.Space)
+  name: GetSpaceCenterPoint(Space)
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetSpaceCenterPoint_Autodesk_Revit_DB_Mechanical_Space_
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint(Autodesk.Revit.DB.Mechanical.Space)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint(Autodesk.Revit.DB.Mechanical.Space)
+  nameWithType: MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint(Space)
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint*
+  name: GetSpaceCenterPoint
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetSpaceCenterPoint_
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint
+  nameWithType: MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInPolygon(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ)
+  name: IsPointInPolygon(List<XYZ>, XYZ)
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_IsPointInPolygon_System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__Autodesk_Revit_DB_XYZ_
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInPolygon(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ)
+  name.vb: IsPointInPolygon(List(Of XYZ), XYZ)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInPolygon(System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>, Autodesk.Revit.DB.XYZ)
+  fullName.vb: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInPolygon(System.Collections.Generic.List(Of Autodesk.Revit.DB.XYZ), Autodesk.Revit.DB.XYZ)
+  nameWithType: MbRevitSpaceOldRepoUtils.IsPointInPolygon(List<XYZ>, XYZ)
+  nameWithType.vb: MbRevitSpaceOldRepoUtils.IsPointInPolygon(List(Of XYZ), XYZ)
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInPolygon*
+  name: IsPointInPolygon
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_IsPointInPolygon_
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInPolygon
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInPolygon
+  nameWithType: MbRevitSpaceOldRepoUtils.IsPointInPolygon
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInSpace(Autodesk.Revit.DB.Mechanical.Space,Autodesk.Revit.DB.XYZ)
+  name: IsPointInSpace(Space, XYZ)
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_IsPointInSpace_Autodesk_Revit_DB_Mechanical_Space_Autodesk_Revit_DB_XYZ_
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInSpace(Autodesk.Revit.DB.Mechanical.Space,Autodesk.Revit.DB.XYZ)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInSpace(Autodesk.Revit.DB.Mechanical.Space, Autodesk.Revit.DB.XYZ)
+  nameWithType: MbRevitSpaceOldRepoUtils.IsPointInSpace(Space, XYZ)
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInSpace*
+  name: IsPointInSpace
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_IsPointInSpace_
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInSpace
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInSpace
+  nameWithType: MbRevitSpaceOldRepoUtils.IsPointInSpace
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ProcessStructuralBeams(System.Collections.Generic.List{System.Tuple{Autodesk.Revit.DB.Line,System.Double,System.Double}},System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},System.Double)
+  name: ProcessStructuralBeams(List<Tuple<Line, double, double>>, List<XYZ>, double)
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_ProcessStructuralBeams_System_Collections_Generic_List_System_Tuple_Autodesk_Revit_DB_Line_System_Double_System_Double___System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__System_Double_
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ProcessStructuralBeams(System.Collections.Generic.List{System.Tuple{Autodesk.Revit.DB.Line,System.Double,System.Double}},System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},System.Double)
+  name.vb: ProcessStructuralBeams(List(Of Tuple(Of Line, Double, Double)), List(Of XYZ), Double)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ProcessStructuralBeams(System.Collections.Generic.List<System.Tuple<Autodesk.Revit.DB.Line, double, double>>, System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>, double)
+  fullName.vb: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ProcessStructuralBeams(System.Collections.Generic.List(Of System.Tuple(Of Autodesk.Revit.DB.Line, Double, Double)), System.Collections.Generic.List(Of Autodesk.Revit.DB.XYZ), Double)
+  nameWithType: MbRevitSpaceOldRepoUtils.ProcessStructuralBeams(List<Tuple<Line, double, double>>, List<XYZ>, double)
+  nameWithType.vb: MbRevitSpaceOldRepoUtils.ProcessStructuralBeams(List(Of Tuple(Of Line, Double, Double)), List(Of XYZ), Double)
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ProcessStructuralBeams*
+  name: ProcessStructuralBeams
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_ProcessStructuralBeams_
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ProcessStructuralBeams
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ProcessStructuralBeams
+  nameWithType: MbRevitSpaceOldRepoUtils.ProcessStructuralBeams
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ServiceCategories
+  name: ServiceCategories
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_ServiceCategories
+  commentId: F:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ServiceCategories
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ServiceCategories
+  nameWithType: MbRevitSpaceOldRepoUtils.ServiceCategories
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.UpdateSpaceHeight(Autodesk.Revit.DB.Mechanical.Space,System.Double,Autodesk.Revit.DB.Document)
+  name: UpdateSpaceHeight(Space, double, Document)
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_UpdateSpaceHeight_Autodesk_Revit_DB_Mechanical_Space_System_Double_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.UpdateSpaceHeight(Autodesk.Revit.DB.Mechanical.Space,System.Double,Autodesk.Revit.DB.Document)
+  name.vb: UpdateSpaceHeight(Space, Double, Document)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.UpdateSpaceHeight(Autodesk.Revit.DB.Mechanical.Space, double, Autodesk.Revit.DB.Document)
+  fullName.vb: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.UpdateSpaceHeight(Autodesk.Revit.DB.Mechanical.Space, Double, Autodesk.Revit.DB.Document)
+  nameWithType: MbRevitSpaceOldRepoUtils.UpdateSpaceHeight(Space, double, Document)
+  nameWithType.vb: MbRevitSpaceOldRepoUtils.UpdateSpaceHeight(Space, Double, Document)
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.UpdateSpaceHeight*
+  name: UpdateSpaceHeight
+  href: api/MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_UpdateSpaceHeight_
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.UpdateSpaceHeight
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.UpdateSpaceHeight
+  nameWithType: MbRevitSpaceOldRepoUtils.UpdateSpaceHeight
+- uid: MBF.Revit.Data.Utils.MbSelectionUtils
+  name: MbSelectionUtils
+  href: api/MBF.Revit.Data.Utils.MbSelectionUtils.html
+  commentId: T:MBF.Revit.Data.Utils.MbSelectionUtils
+  fullName: MBF.Revit.Data.Utils.MbSelectionUtils
+  nameWithType: MbSelectionUtils
+- uid: MBF.Revit.Data.Utils.MbSelectionUtils.#ctor
+  name: MbSelectionUtils()
+  href: api/MBF.Revit.Data.Utils.MbSelectionUtils.html#MBF_Revit_Data_Utils_MbSelectionUtils__ctor
+  commentId: M:MBF.Revit.Data.Utils.MbSelectionUtils.#ctor
+  name.vb: New()
+  fullName: MBF.Revit.Data.Utils.MbSelectionUtils.MbSelectionUtils()
+  fullName.vb: MBF.Revit.Data.Utils.MbSelectionUtils.New()
+  nameWithType: MbSelectionUtils.MbSelectionUtils()
+  nameWithType.vb: MbSelectionUtils.New()
+- uid: MBF.Revit.Data.Utils.MbSelectionUtils.#ctor*
+  name: MbSelectionUtils
+  href: api/MBF.Revit.Data.Utils.MbSelectionUtils.html#MBF_Revit_Data_Utils_MbSelectionUtils__ctor_
+  commentId: Overload:MBF.Revit.Data.Utils.MbSelectionUtils.#ctor
+  name.vb: New
+  fullName: MBF.Revit.Data.Utils.MbSelectionUtils.MbSelectionUtils
+  fullName.vb: MBF.Revit.Data.Utils.MbSelectionUtils.New
+  nameWithType: MbSelectionUtils.MbSelectionUtils
+  nameWithType.vb: MbSelectionUtils.New
+- uid: MBF.Revit.Data.Utils.MbSelectionUtils.GetAllFamiliesByBuiltinCategories(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.BuiltInCategory},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId)
+  name: GetAllFamiliesByBuiltinCategories(IEnumerable<BuiltInCategory>, Document, ElementId)
+  href: api/MBF.Revit.Data.Utils.MbSelectionUtils.html#MBF_Revit_Data_Utils_MbSelectionUtils_GetAllFamiliesByBuiltinCategories_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_BuiltInCategory__Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_
+  commentId: M:MBF.Revit.Data.Utils.MbSelectionUtils.GetAllFamiliesByBuiltinCategories(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.BuiltInCategory},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId)
+  name.vb: GetAllFamiliesByBuiltinCategories(IEnumerable(Of BuiltInCategory), Document, ElementId)
+  fullName: MBF.Revit.Data.Utils.MbSelectionUtils.GetAllFamiliesByBuiltinCategories(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.BuiltInCategory>, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.ElementId)
+  fullName.vb: MBF.Revit.Data.Utils.MbSelectionUtils.GetAllFamiliesByBuiltinCategories(System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.BuiltInCategory), Autodesk.Revit.DB.Document, Autodesk.Revit.DB.ElementId)
+  nameWithType: MbSelectionUtils.GetAllFamiliesByBuiltinCategories(IEnumerable<BuiltInCategory>, Document, ElementId)
+  nameWithType.vb: MbSelectionUtils.GetAllFamiliesByBuiltinCategories(IEnumerable(Of BuiltInCategory), Document, ElementId)
+- uid: MBF.Revit.Data.Utils.MbSelectionUtils.GetAllFamiliesByBuiltinCategories*
+  name: GetAllFamiliesByBuiltinCategories
+  href: api/MBF.Revit.Data.Utils.MbSelectionUtils.html#MBF_Revit_Data_Utils_MbSelectionUtils_GetAllFamiliesByBuiltinCategories_
+  commentId: Overload:MBF.Revit.Data.Utils.MbSelectionUtils.GetAllFamiliesByBuiltinCategories
+  fullName: MBF.Revit.Data.Utils.MbSelectionUtils.GetAllFamiliesByBuiltinCategories
+  nameWithType: MbSelectionUtils.GetAllFamiliesByBuiltinCategories
 - uid: MBF.Revit.Data.Utils.MbSpaceUtils
   name: MbSpaceUtils
   href: api/MBF.Revit.Data.Utils.MbSpaceUtils.html
   commentId: T:MBF.Revit.Data.Utils.MbSpaceUtils
   fullName: MBF.Revit.Data.Utils.MbSpaceUtils
   nameWithType: MbSpaceUtils
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Mechanical.Space,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.View3D,System.Double,System.Boolean,CeilingFaceGridParameters,System.Double,System.Boolean)
+  name: AnalyzeAboveCeilingGeometryAndGrid(Document, Space, RevitLinkInstance, View3D, double, bool, CeilingFaceGridParameters, double, bool)
+  href: api/MBF.Revit.Data.Utils.MbSpaceUtils.html#MBF_Revit_Data_Utils_MbSpaceUtils_AnalyzeAboveCeilingGeometryAndGrid_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Mechanical_Space_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_View3D_System_Double_System_Boolean_CeilingFaceGridParameters_System_Double_System_Boolean_
+  commentId: M:MBF.Revit.Data.Utils.MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Mechanical.Space,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.View3D,System.Double,System.Boolean,CeilingFaceGridParameters,System.Double,System.Boolean)
+  name.vb: AnalyzeAboveCeilingGeometryAndGrid(Document, Space, RevitLinkInstance, View3D, Double, Boolean, CeilingFaceGridParameters, Double, Boolean)
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Mechanical.Space, Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.View3D, double, bool, CeilingFaceGridParameters, double, bool)
+  fullName.vb: MBF.Revit.Data.Utils.MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Mechanical.Space, Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.View3D, Double, Boolean, CeilingFaceGridParameters, Double, Boolean)
+  nameWithType: MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid(Document, Space, RevitLinkInstance, View3D, double, bool, CeilingFaceGridParameters, double, bool)
+  nameWithType.vb: MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid(Document, Space, RevitLinkInstance, View3D, Double, Boolean, CeilingFaceGridParameters, Double, Boolean)
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid*
+  name: AnalyzeAboveCeilingGeometryAndGrid
+  href: api/MBF.Revit.Data.Utils.MbSpaceUtils.html#MBF_Revit_Data_Utils_MbSpaceUtils_AnalyzeAboveCeilingGeometryAndGrid_
+  commentId: Overload:MBF.Revit.Data.Utils.MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid
+  nameWithType: MbSpaceUtils.AnalyzeAboveCeilingGeometryAndGrid
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.ClosestDistanceToFramingElement(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View3D,Autodesk.Revit.DB.XYZ)
+  name: ClosestDistanceToFramingElement(Document, View3D, XYZ)
+  href: api/MBF.Revit.Data.Utils.MbSpaceUtils.html#MBF_Revit_Data_Utils_MbSpaceUtils_ClosestDistanceToFramingElement_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_View3D_Autodesk_Revit_DB_XYZ_
+  commentId: M:MBF.Revit.Data.Utils.MbSpaceUtils.ClosestDistanceToFramingElement(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View3D,Autodesk.Revit.DB.XYZ)
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.ClosestDistanceToFramingElement(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.View3D, Autodesk.Revit.DB.XYZ)
+  nameWithType: MbSpaceUtils.ClosestDistanceToFramingElement(Document, View3D, XYZ)
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.ClosestDistanceToFramingElement*
+  name: ClosestDistanceToFramingElement
+  href: api/MBF.Revit.Data.Utils.MbSpaceUtils.html#MBF_Revit_Data_Utils_MbSpaceUtils_ClosestDistanceToFramingElement_
+  commentId: Overload:MBF.Revit.Data.Utils.MbSpaceUtils.ClosestDistanceToFramingElement
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.ClosestDistanceToFramingElement
+  nameWithType: MbSpaceUtils.ClosestDistanceToFramingElement
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,System.Collections.Generic.List{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Transform,System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory},System.Double,System.Boolean)
+  name: GetAboveCeilingOfSpace(XYZ, Document, RevitLinkInstance, List<Curve>, Transform, List<BuiltInCategory>, double, bool)
+  href: api/MBF.Revit.Data.Utils.MbSpaceUtils.html#MBF_Revit_Data_Utils_MbSpaceUtils_GetAboveCeilingOfSpace_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_RevitLinkInstance_System_Collections_Generic_List_Autodesk_Revit_DB_Curve__Autodesk_Revit_DB_Transform_System_Collections_Generic_List_Autodesk_Revit_DB_BuiltInCategory__System_Double_System_Boolean_
+  commentId: M:MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace(Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,System.Collections.Generic.List{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Transform,System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory},System.Double,System.Boolean)
+  name.vb: GetAboveCeilingOfSpace(XYZ, Document, RevitLinkInstance, List(Of Curve), Transform, List(Of BuiltInCategory), Double, Boolean)
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.RevitLinkInstance, System.Collections.Generic.List<Autodesk.Revit.DB.Curve>, Autodesk.Revit.DB.Transform, System.Collections.Generic.List<Autodesk.Revit.DB.BuiltInCategory>, double, bool)
+  fullName.vb: MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.RevitLinkInstance, System.Collections.Generic.List(Of Autodesk.Revit.DB.Curve), Autodesk.Revit.DB.Transform, System.Collections.Generic.List(Of Autodesk.Revit.DB.BuiltInCategory), Double, Boolean)
+  nameWithType: MbSpaceUtils.GetAboveCeilingOfSpace(XYZ, Document, RevitLinkInstance, List<Curve>, Transform, List<BuiltInCategory>, double, bool)
+  nameWithType.vb: MbSpaceUtils.GetAboveCeilingOfSpace(XYZ, Document, RevitLinkInstance, List(Of Curve), Transform, List(Of BuiltInCategory), Double, Boolean)
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace*
+  name: GetAboveCeilingOfSpace
+  href: api/MBF.Revit.Data.Utils.MbSpaceUtils.html#MBF_Revit_Data_Utils_MbSpaceUtils_GetAboveCeilingOfSpace_
+  commentId: Overload:MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.GetAboveCeilingOfSpace
+  nameWithType: MbSpaceUtils.GetAboveCeilingOfSpace
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.GetCeilingsFromLinkByView(Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.ElementIntersectsSolidFilter)
+  name: GetCeilingsFromLinkByView(RevitLinkInstance, ElementIntersectsSolidFilter)
+  href: api/MBF.Revit.Data.Utils.MbSpaceUtils.html#MBF_Revit_Data_Utils_MbSpaceUtils_GetCeilingsFromLinkByView_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_ElementIntersectsSolidFilter_
+  commentId: M:MBF.Revit.Data.Utils.MbSpaceUtils.GetCeilingsFromLinkByView(Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.ElementIntersectsSolidFilter)
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.GetCeilingsFromLinkByView(Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.ElementIntersectsSolidFilter)
+  nameWithType: MbSpaceUtils.GetCeilingsFromLinkByView(RevitLinkInstance, ElementIntersectsSolidFilter)
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.GetCeilingsFromLinkByView*
+  name: GetCeilingsFromLinkByView
+  href: api/MBF.Revit.Data.Utils.MbSpaceUtils.html#MBF_Revit_Data_Utils_MbSpaceUtils_GetCeilingsFromLinkByView_
+  commentId: Overload:MBF.Revit.Data.Utils.MbSpaceUtils.GetCeilingsFromLinkByView
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.GetCeilingsFromLinkByView
+  nameWithType: MbSpaceUtils.GetCeilingsFromLinkByView
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.GetSolidInLinkFromSpace(System.Collections.Generic.List{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Transform,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,System.Double,System.Boolean)
+  name: GetSolidInLinkFromSpace(List<Curve>, Transform, Document, RevitLinkInstance, double, bool)
+  href: api/MBF.Revit.Data.Utils.MbSpaceUtils.html#MBF_Revit_Data_Utils_MbSpaceUtils_GetSolidInLinkFromSpace_System_Collections_Generic_List_Autodesk_Revit_DB_Curve__Autodesk_Revit_DB_Transform_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_RevitLinkInstance_System_Double_System_Boolean_
+  commentId: M:MBF.Revit.Data.Utils.MbSpaceUtils.GetSolidInLinkFromSpace(System.Collections.Generic.List{Autodesk.Revit.DB.Curve},Autodesk.Revit.DB.Transform,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,System.Double,System.Boolean)
+  name.vb: GetSolidInLinkFromSpace(List(Of Curve), Transform, Document, RevitLinkInstance, Double, Boolean)
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.GetSolidInLinkFromSpace(System.Collections.Generic.List<Autodesk.Revit.DB.Curve>, Autodesk.Revit.DB.Transform, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.RevitLinkInstance, double, bool)
+  fullName.vb: MBF.Revit.Data.Utils.MbSpaceUtils.GetSolidInLinkFromSpace(System.Collections.Generic.List(Of Autodesk.Revit.DB.Curve), Autodesk.Revit.DB.Transform, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.RevitLinkInstance, Double, Boolean)
+  nameWithType: MbSpaceUtils.GetSolidInLinkFromSpace(List<Curve>, Transform, Document, RevitLinkInstance, double, bool)
+  nameWithType.vb: MbSpaceUtils.GetSolidInLinkFromSpace(List(Of Curve), Transform, Document, RevitLinkInstance, Double, Boolean)
+- uid: MBF.Revit.Data.Utils.MbSpaceUtils.GetSolidInLinkFromSpace*
+  name: GetSolidInLinkFromSpace
+  href: api/MBF.Revit.Data.Utils.MbSpaceUtils.html#MBF_Revit_Data_Utils_MbSpaceUtils_GetSolidInLinkFromSpace_
+  commentId: Overload:MBF.Revit.Data.Utils.MbSpaceUtils.GetSolidInLinkFromSpace
+  fullName: MBF.Revit.Data.Utils.MbSpaceUtils.GetSolidInLinkFromSpace
+  nameWithType: MbSpaceUtils.GetSolidInLinkFromSpace
 - uid: MBF.Revit.Data.Utils.MbSpaceUtils.GetSpacesFromSelection(Autodesk.Revit.UI.UIDocument)
   name: GetSpacesFromSelection(UIDocument)
   href: api/MBF.Revit.Data.Utils.MbSpaceUtils.html#MBF_Revit_Data_Utils_MbSpaceUtils_GetSpacesFromSelection_Autodesk_Revit_UI_UIDocument_
@@ -4300,6 +5830,24 @@ references:
   commentId: Overload:MBF.Revit.Data.Utils.MbSprinklersUtils.GetSprinklerInstances
   fullName: MBF.Revit.Data.Utils.MbSprinklersUtils.GetSprinklerInstances
   nameWithType: MbSprinklersUtils.GetSprinklerInstances
+- uid: MBF.Revit.Data.Utils.MbSurveyPointUtils
+  name: MbSurveyPointUtils
+  href: api/MBF.Revit.Data.Utils.MbSurveyPointUtils.html
+  commentId: T:MBF.Revit.Data.Utils.MbSurveyPointUtils
+  fullName: MBF.Revit.Data.Utils.MbSurveyPointUtils
+  nameWithType: MbSurveyPointUtils
+- uid: MBF.Revit.Data.Utils.MbSurveyPointUtils.GetSharedSurveyPointCoordinates(Autodesk.Revit.DB.Document)
+  name: GetSharedSurveyPointCoordinates(Document)
+  href: api/MBF.Revit.Data.Utils.MbSurveyPointUtils.html#MBF_Revit_Data_Utils_MbSurveyPointUtils_GetSharedSurveyPointCoordinates_Autodesk_Revit_DB_Document_
+  commentId: M:MBF.Revit.Data.Utils.MbSurveyPointUtils.GetSharedSurveyPointCoordinates(Autodesk.Revit.DB.Document)
+  fullName: MBF.Revit.Data.Utils.MbSurveyPointUtils.GetSharedSurveyPointCoordinates(Autodesk.Revit.DB.Document)
+  nameWithType: MbSurveyPointUtils.GetSharedSurveyPointCoordinates(Document)
+- uid: MBF.Revit.Data.Utils.MbSurveyPointUtils.GetSharedSurveyPointCoordinates*
+  name: GetSharedSurveyPointCoordinates
+  href: api/MBF.Revit.Data.Utils.MbSurveyPointUtils.html#MBF_Revit_Data_Utils_MbSurveyPointUtils_GetSharedSurveyPointCoordinates_
+  commentId: Overload:MBF.Revit.Data.Utils.MbSurveyPointUtils.GetSharedSurveyPointCoordinates
+  fullName: MBF.Revit.Data.Utils.MbSurveyPointUtils.GetSharedSurveyPointCoordinates
+  nameWithType: MbSurveyPointUtils.GetSharedSurveyPointCoordinates
 - uid: MBF.Revit.Data.Utils.MbUnitUtils
   name: MbUnitUtils
   href: api/MBF.Revit.Data.Utils.MbUnitUtils.html
@@ -4333,6 +5881,21 @@ references:
   commentId: Overload:MBF.Revit.Data.Utils.MbUnitUtils.GetStandardUnitSymbol
   fullName: MBF.Revit.Data.Utils.MbUnitUtils.GetStandardUnitSymbol
   nameWithType: MbUnitUtils.GetStandardUnitSymbol
+- uid: MBF.Revit.Data.Utils.MbUnitUtils.ToInternalUnits(System.Double)
+  name: ToInternalUnits(double)
+  href: api/MBF.Revit.Data.Utils.MbUnitUtils.html#MBF_Revit_Data_Utils_MbUnitUtils_ToInternalUnits_System_Double_
+  commentId: M:MBF.Revit.Data.Utils.MbUnitUtils.ToInternalUnits(System.Double)
+  name.vb: ToInternalUnits(Double)
+  fullName: MBF.Revit.Data.Utils.MbUnitUtils.ToInternalUnits(double)
+  fullName.vb: MBF.Revit.Data.Utils.MbUnitUtils.ToInternalUnits(Double)
+  nameWithType: MbUnitUtils.ToInternalUnits(double)
+  nameWithType.vb: MbUnitUtils.ToInternalUnits(Double)
+- uid: MBF.Revit.Data.Utils.MbUnitUtils.ToInternalUnits*
+  name: ToInternalUnits
+  href: api/MBF.Revit.Data.Utils.MbUnitUtils.html#MBF_Revit_Data_Utils_MbUnitUtils_ToInternalUnits_
+  commentId: Overload:MBF.Revit.Data.Utils.MbUnitUtils.ToInternalUnits
+  fullName: MBF.Revit.Data.Utils.MbUnitUtils.ToInternalUnits
+  nameWithType: MbUnitUtils.ToInternalUnits
 - uid: MBF.Revit.Data.Utils.MbViewUtils
   name: MbViewUtils
   href: api/MBF.Revit.Data.Utils.MbViewUtils.html
@@ -6436,6 +7999,60 @@ references:
   commentId: N:MBFWpfToolkit.Dialogs
   fullName: MBFWpfToolkit.Dialogs
   nameWithType: MBFWpfToolkit.Dialogs
+- uid: MBFWpfToolkit.Dialogs.LoadingControl
+  name: LoadingControl
+  href: api/MBFWpfToolkit.Dialogs.LoadingControl.html
+  commentId: T:MBFWpfToolkit.Dialogs.LoadingControl
+  fullName: MBFWpfToolkit.Dialogs.LoadingControl
+  nameWithType: LoadingControl
+- uid: MBFWpfToolkit.Dialogs.LoadingControl.#ctor
+  name: LoadingControl()
+  href: api/MBFWpfToolkit.Dialogs.LoadingControl.html#MBFWpfToolkit_Dialogs_LoadingControl__ctor
+  commentId: M:MBFWpfToolkit.Dialogs.LoadingControl.#ctor
+  name.vb: New()
+  fullName: MBFWpfToolkit.Dialogs.LoadingControl.LoadingControl()
+  fullName.vb: MBFWpfToolkit.Dialogs.LoadingControl.New()
+  nameWithType: LoadingControl.LoadingControl()
+  nameWithType.vb: LoadingControl.New()
+- uid: MBFWpfToolkit.Dialogs.LoadingControl.#ctor*
+  name: LoadingControl
+  href: api/MBFWpfToolkit.Dialogs.LoadingControl.html#MBFWpfToolkit_Dialogs_LoadingControl__ctor_
+  commentId: Overload:MBFWpfToolkit.Dialogs.LoadingControl.#ctor
+  name.vb: New
+  fullName: MBFWpfToolkit.Dialogs.LoadingControl.LoadingControl
+  fullName.vb: MBFWpfToolkit.Dialogs.LoadingControl.New
+  nameWithType: LoadingControl.LoadingControl
+  nameWithType.vb: LoadingControl.New
+- uid: MBFWpfToolkit.Dialogs.LoadingControl.InitializeComponent
+  name: InitializeComponent()
+  href: api/MBFWpfToolkit.Dialogs.LoadingControl.html#MBFWpfToolkit_Dialogs_LoadingControl_InitializeComponent
+  commentId: M:MBFWpfToolkit.Dialogs.LoadingControl.InitializeComponent
+  fullName: MBFWpfToolkit.Dialogs.LoadingControl.InitializeComponent()
+  nameWithType: LoadingControl.InitializeComponent()
+- uid: MBFWpfToolkit.Dialogs.LoadingControl.InitializeComponent*
+  name: InitializeComponent
+  href: api/MBFWpfToolkit.Dialogs.LoadingControl.html#MBFWpfToolkit_Dialogs_LoadingControl_InitializeComponent_
+  commentId: Overload:MBFWpfToolkit.Dialogs.LoadingControl.InitializeComponent
+  fullName: MBFWpfToolkit.Dialogs.LoadingControl.InitializeComponent
+  nameWithType: LoadingControl.InitializeComponent
+- uid: MBFWpfToolkit.Dialogs.LoadingControl.LoaderText
+  name: LoaderText
+  href: api/MBFWpfToolkit.Dialogs.LoadingControl.html#MBFWpfToolkit_Dialogs_LoadingControl_LoaderText
+  commentId: P:MBFWpfToolkit.Dialogs.LoadingControl.LoaderText
+  fullName: MBFWpfToolkit.Dialogs.LoadingControl.LoaderText
+  nameWithType: LoadingControl.LoaderText
+- uid: MBFWpfToolkit.Dialogs.LoadingControl.LoaderText*
+  name: LoaderText
+  href: api/MBFWpfToolkit.Dialogs.LoadingControl.html#MBFWpfToolkit_Dialogs_LoadingControl_LoaderText_
+  commentId: Overload:MBFWpfToolkit.Dialogs.LoadingControl.LoaderText
+  fullName: MBFWpfToolkit.Dialogs.LoadingControl.LoaderText
+  nameWithType: LoadingControl.LoaderText
+- uid: MBFWpfToolkit.Dialogs.LoadingControl.LoaderTextProperty
+  name: LoaderTextProperty
+  href: api/MBFWpfToolkit.Dialogs.LoadingControl.html#MBFWpfToolkit_Dialogs_LoadingControl_LoaderTextProperty
+  commentId: F:MBFWpfToolkit.Dialogs.LoadingControl.LoaderTextProperty
+  fullName: MBFWpfToolkit.Dialogs.LoadingControl.LoaderTextProperty
+  nameWithType: LoadingControl.LoaderTextProperty
 - uid: MBFWpfToolkit.Dialogs.LoadingDialog
   name: LoadingDialog
   href: api/MBFWpfToolkit.Dialogs.LoadingDialog.html
@@ -6713,6 +8330,101 @@ references:
   commentId: Overload:MBFWpfToolkit.Helpers.MbNotification.ShowWarning
   fullName: MBFWpfToolkit.Helpers.MbNotification.ShowWarning
   nameWithType: MbNotification.ShowWarning
+- uid: MBFWpfToolkit.Helpers.MbObservableCollection`1
+  name: MbObservableCollection<T>
+  href: api/MBFWpfToolkit.Helpers.MbObservableCollection-1.html
+  commentId: T:MBFWpfToolkit.Helpers.MbObservableCollection`1
+  name.vb: MbObservableCollection(Of T)
+  fullName: MBFWpfToolkit.Helpers.MbObservableCollection<T>
+  fullName.vb: MBFWpfToolkit.Helpers.MbObservableCollection(Of T)
+  nameWithType: MbObservableCollection<T>
+  nameWithType.vb: MbObservableCollection(Of T)
+- uid: MBFWpfToolkit.Helpers.MbObservableCollection`1.#ctor
+  name: MbObservableCollection()
+  href: api/MBFWpfToolkit.Helpers.MbObservableCollection-1.html#MBFWpfToolkit_Helpers_MbObservableCollection_1__ctor
+  commentId: M:MBFWpfToolkit.Helpers.MbObservableCollection`1.#ctor
+  name.vb: New()
+  fullName: MBFWpfToolkit.Helpers.MbObservableCollection<T>.MbObservableCollection()
+  fullName.vb: MBFWpfToolkit.Helpers.MbObservableCollection(Of T).New()
+  nameWithType: MbObservableCollection<T>.MbObservableCollection()
+  nameWithType.vb: MbObservableCollection(Of T).New()
+- uid: MBFWpfToolkit.Helpers.MbObservableCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  name: MbObservableCollection(IEnumerable<T>)
+  href: api/MBFWpfToolkit.Helpers.MbObservableCollection-1.html#MBFWpfToolkit_Helpers_MbObservableCollection_1__ctor_System_Collections_Generic_IEnumerable__0__
+  commentId: M:MBFWpfToolkit.Helpers.MbObservableCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  name.vb: New(IEnumerable(Of T))
+  fullName: MBFWpfToolkit.Helpers.MbObservableCollection<T>.MbObservableCollection(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: MBFWpfToolkit.Helpers.MbObservableCollection(Of T).New(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: MbObservableCollection<T>.MbObservableCollection(IEnumerable<T>)
+  nameWithType.vb: MbObservableCollection(Of T).New(IEnumerable(Of T))
+- uid: MBFWpfToolkit.Helpers.MbObservableCollection`1.#ctor(System.Collections.Generic.List{`0})
+  name: MbObservableCollection(List<T>)
+  href: api/MBFWpfToolkit.Helpers.MbObservableCollection-1.html#MBFWpfToolkit_Helpers_MbObservableCollection_1__ctor_System_Collections_Generic_List__0__
+  commentId: M:MBFWpfToolkit.Helpers.MbObservableCollection`1.#ctor(System.Collections.Generic.List{`0})
+  name.vb: New(List(Of T))
+  fullName: MBFWpfToolkit.Helpers.MbObservableCollection<T>.MbObservableCollection(System.Collections.Generic.List<T>)
+  fullName.vb: MBFWpfToolkit.Helpers.MbObservableCollection(Of T).New(System.Collections.Generic.List(Of T))
+  nameWithType: MbObservableCollection<T>.MbObservableCollection(List<T>)
+  nameWithType.vb: MbObservableCollection(Of T).New(List(Of T))
+- uid: MBFWpfToolkit.Helpers.MbObservableCollection`1.#ctor*
+  name: MbObservableCollection
+  href: api/MBFWpfToolkit.Helpers.MbObservableCollection-1.html#MBFWpfToolkit_Helpers_MbObservableCollection_1__ctor_
+  commentId: Overload:MBFWpfToolkit.Helpers.MbObservableCollection`1.#ctor
+  name.vb: New
+  fullName: MBFWpfToolkit.Helpers.MbObservableCollection<T>.MbObservableCollection
+  fullName.vb: MBFWpfToolkit.Helpers.MbObservableCollection(Of T).New
+  nameWithType: MbObservableCollection<T>.MbObservableCollection
+  nameWithType.vb: MbObservableCollection(Of T).New
+- uid: MBFWpfToolkit.Helpers.MbObservableCollection`1.MbAddRange(System.Collections.Generic.IList{`0})
+  name: MbAddRange(IList<T>)
+  href: api/MBFWpfToolkit.Helpers.MbObservableCollection-1.html#MBFWpfToolkit_Helpers_MbObservableCollection_1_MbAddRange_System_Collections_Generic_IList__0__
+  commentId: M:MBFWpfToolkit.Helpers.MbObservableCollection`1.MbAddRange(System.Collections.Generic.IList{`0})
+  name.vb: MbAddRange(IList(Of T))
+  fullName: MBFWpfToolkit.Helpers.MbObservableCollection<T>.MbAddRange(System.Collections.Generic.IList<T>)
+  fullName.vb: MBFWpfToolkit.Helpers.MbObservableCollection(Of T).MbAddRange(System.Collections.Generic.IList(Of T))
+  nameWithType: MbObservableCollection<T>.MbAddRange(IList<T>)
+  nameWithType.vb: MbObservableCollection(Of T).MbAddRange(IList(Of T))
+- uid: MBFWpfToolkit.Helpers.MbObservableCollection`1.MbAddRange*
+  name: MbAddRange
+  href: api/MBFWpfToolkit.Helpers.MbObservableCollection-1.html#MBFWpfToolkit_Helpers_MbObservableCollection_1_MbAddRange_
+  commentId: Overload:MBFWpfToolkit.Helpers.MbObservableCollection`1.MbAddRange
+  fullName: MBFWpfToolkit.Helpers.MbObservableCollection<T>.MbAddRange
+  fullName.vb: MBFWpfToolkit.Helpers.MbObservableCollection(Of T).MbAddRange
+  nameWithType: MbObservableCollection<T>.MbAddRange
+  nameWithType.vb: MbObservableCollection(Of T).MbAddRange
+- uid: MBFWpfToolkit.Helpers.MbObservableCollection`1.MbRemoveRange(System.Collections.Generic.IEnumerable{`0})
+  name: MbRemoveRange(IEnumerable<T>)
+  href: api/MBFWpfToolkit.Helpers.MbObservableCollection-1.html#MBFWpfToolkit_Helpers_MbObservableCollection_1_MbRemoveRange_System_Collections_Generic_IEnumerable__0__
+  commentId: M:MBFWpfToolkit.Helpers.MbObservableCollection`1.MbRemoveRange(System.Collections.Generic.IEnumerable{`0})
+  name.vb: MbRemoveRange(IEnumerable(Of T))
+  fullName: MBFWpfToolkit.Helpers.MbObservableCollection<T>.MbRemoveRange(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: MBFWpfToolkit.Helpers.MbObservableCollection(Of T).MbRemoveRange(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: MbObservableCollection<T>.MbRemoveRange(IEnumerable<T>)
+  nameWithType.vb: MbObservableCollection(Of T).MbRemoveRange(IEnumerable(Of T))
+- uid: MBFWpfToolkit.Helpers.MbObservableCollection`1.MbRemoveRange*
+  name: MbRemoveRange
+  href: api/MBFWpfToolkit.Helpers.MbObservableCollection-1.html#MBFWpfToolkit_Helpers_MbObservableCollection_1_MbRemoveRange_
+  commentId: Overload:MBFWpfToolkit.Helpers.MbObservableCollection`1.MbRemoveRange
+  fullName: MBFWpfToolkit.Helpers.MbObservableCollection<T>.MbRemoveRange
+  fullName.vb: MBFWpfToolkit.Helpers.MbObservableCollection(Of T).MbRemoveRange
+  nameWithType: MbObservableCollection<T>.MbRemoveRange
+  nameWithType.vb: MbObservableCollection(Of T).MbRemoveRange
+- uid: MBFWpfToolkit.Helpers.MbObservableCollection`1.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  name: OnCollectionChanged(NotifyCollectionChangedEventArgs)
+  href: api/MBFWpfToolkit.Helpers.MbObservableCollection-1.html#MBFWpfToolkit_Helpers_MbObservableCollection_1_OnCollectionChanged_System_Collections_Specialized_NotifyCollectionChangedEventArgs_
+  commentId: M:MBFWpfToolkit.Helpers.MbObservableCollection`1.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  fullName: MBFWpfToolkit.Helpers.MbObservableCollection<T>.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  fullName.vb: MBFWpfToolkit.Helpers.MbObservableCollection(Of T).OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  nameWithType: MbObservableCollection<T>.OnCollectionChanged(NotifyCollectionChangedEventArgs)
+  nameWithType.vb: MbObservableCollection(Of T).OnCollectionChanged(NotifyCollectionChangedEventArgs)
+- uid: MBFWpfToolkit.Helpers.MbObservableCollection`1.OnCollectionChanged*
+  name: OnCollectionChanged
+  href: api/MBFWpfToolkit.Helpers.MbObservableCollection-1.html#MBFWpfToolkit_Helpers_MbObservableCollection_1_OnCollectionChanged_
+  commentId: Overload:MBFWpfToolkit.Helpers.MbObservableCollection`1.OnCollectionChanged
+  fullName: MBFWpfToolkit.Helpers.MbObservableCollection<T>.OnCollectionChanged
+  fullName.vb: MBFWpfToolkit.Helpers.MbObservableCollection(Of T).OnCollectionChanged
+  nameWithType: MbObservableCollection<T>.OnCollectionChanged
+  nameWithType.vb: MbObservableCollection(Of T).OnCollectionChanged
 - uid: MBFWpfToolkit.Helpers.MbResourceHelper
   name: MbResourceHelper
   href: api/MBFWpfToolkit.Helpers.MbResourceHelper.html
@@ -6869,6 +8581,60 @@ references:
   commentId: Overload:MBFWpfToolkit.Helpers.PasswordHelper.SetPassword
   fullName: MBFWpfToolkit.Helpers.PasswordHelper.SetPassword
   nameWithType: PasswordHelper.SetPassword
+- uid: MBFWpfToolkit.Helpers.SilentValidator
+  name: SilentValidator
+  href: api/MBFWpfToolkit.Helpers.SilentValidator.html
+  commentId: T:MBFWpfToolkit.Helpers.SilentValidator
+  fullName: MBFWpfToolkit.Helpers.SilentValidator
+  nameWithType: SilentValidator
+- uid: MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties(System.Object)
+  name: ValidateAllProperties(object)
+  href: api/MBFWpfToolkit.Helpers.SilentValidator.html#MBFWpfToolkit_Helpers_SilentValidator_ValidateAllProperties_System_Object_
+  commentId: M:MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties(System.Object)
+  name.vb: ValidateAllProperties(Object)
+  fullName: MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties(object)
+  fullName.vb: MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties(Object)
+  nameWithType: SilentValidator.ValidateAllProperties(object)
+  nameWithType.vb: SilentValidator.ValidateAllProperties(Object)
+- uid: MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties(System.Object,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}@)
+  name: ValidateAllProperties(object, out Dictionary<string, List<string>>)
+  href: api/MBFWpfToolkit.Helpers.SilentValidator.html#MBFWpfToolkit_Helpers_SilentValidator_ValidateAllProperties_System_Object_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String____
+  commentId: M:MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties(System.Object,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}@)
+  name.vb: ValidateAllProperties(Object, Dictionary(Of String, List(Of String)))
+  fullName: MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties(object, out System.Collections.Generic.Dictionary<string, System.Collections.Generic.List<string>>)
+  fullName.vb: MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties(Object, System.Collections.Generic.Dictionary(Of String, System.Collections.Generic.List(Of String)))
+  nameWithType: SilentValidator.ValidateAllProperties(object, out Dictionary<string, List<string>>)
+  nameWithType.vb: SilentValidator.ValidateAllProperties(Object, Dictionary(Of String, List(Of String)))
+- uid: MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties*
+  name: ValidateAllProperties
+  href: api/MBFWpfToolkit.Helpers.SilentValidator.html#MBFWpfToolkit_Helpers_SilentValidator_ValidateAllProperties_
+  commentId: Overload:MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties
+  fullName: MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties
+  nameWithType: SilentValidator.ValidateAllProperties
+- uid: MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty(System.Object,System.String)
+  name: ValidateProperty(object, string)
+  href: api/MBFWpfToolkit.Helpers.SilentValidator.html#MBFWpfToolkit_Helpers_SilentValidator_ValidateProperty_System_Object_System_String_
+  commentId: M:MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty(System.Object,System.String)
+  name.vb: ValidateProperty(Object, String)
+  fullName: MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty(object, string)
+  fullName.vb: MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty(Object, String)
+  nameWithType: SilentValidator.ValidateProperty(object, string)
+  nameWithType.vb: SilentValidator.ValidateProperty(Object, String)
+- uid: MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty(System.Object,System.String,System.Collections.Generic.List{System.String}@)
+  name: ValidateProperty(object, string, out List<string>)
+  href: api/MBFWpfToolkit.Helpers.SilentValidator.html#MBFWpfToolkit_Helpers_SilentValidator_ValidateProperty_System_Object_System_String_System_Collections_Generic_List_System_String___
+  commentId: M:MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty(System.Object,System.String,System.Collections.Generic.List{System.String}@)
+  name.vb: ValidateProperty(Object, String, List(Of String))
+  fullName: MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty(object, string, out System.Collections.Generic.List<string>)
+  fullName.vb: MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty(Object, String, System.Collections.Generic.List(Of String))
+  nameWithType: SilentValidator.ValidateProperty(object, string, out List<string>)
+  nameWithType.vb: SilentValidator.ValidateProperty(Object, String, List(Of String))
+- uid: MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty*
+  name: ValidateProperty
+  href: api/MBFWpfToolkit.Helpers.SilentValidator.html#MBFWpfToolkit_Helpers_SilentValidator_ValidateProperty_
+  commentId: Overload:MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty
+  fullName: MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty
+  nameWithType: SilentValidator.ValidateProperty
 - uid: MBFWpfToolkit.Helpers.WindowController
   name: WindowController
   href: api/MBFWpfToolkit.Helpers.WindowController.html

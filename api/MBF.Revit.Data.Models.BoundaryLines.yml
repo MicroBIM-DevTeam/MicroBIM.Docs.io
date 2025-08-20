@@ -1,0 +1,493 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Data.Models.BoundaryLines
+  commentId: T:MBF.Revit.Data.Models.BoundaryLines
+  id: BoundaryLines
+  parent: MBF.Revit.Data.Models
+  children:
+  - MBF.Revit.Data.Models.BoundaryLines.#ctor(Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line)
+  - MBF.Revit.Data.Models.BoundaryLines.MaxBoundary
+  - MBF.Revit.Data.Models.BoundaryLines.MaxSecondaryBoundary
+  - MBF.Revit.Data.Models.BoundaryLines.MinBoundary
+  - MBF.Revit.Data.Models.BoundaryLines.MinSecondaryBoundary
+  langs:
+  - csharp
+  - vb
+  name: BoundaryLines
+  nameWithType: BoundaryLines
+  fullName: MBF.Revit.Data.Models.BoundaryLines
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/BoundaryLines.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Represents boundary lines for the grid system
+  example: []
+  syntax:
+    content: public class BoundaryLines
+    content.vb: Public Class BoundaryLines
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBF.Revit.Data.Models.BoundaryLines.#ctor(Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line)
+  commentId: M:MBF.Revit.Data.Models.BoundaryLines.#ctor(Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line)
+  id: '#ctor(Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line,Autodesk.Revit.DB.Line)'
+  parent: MBF.Revit.Data.Models.BoundaryLines
+  langs:
+  - csharp
+  - vb
+  name: BoundaryLines(Line, Line, Line, Line)
+  nameWithType: BoundaryLines.BoundaryLines(Line, Line, Line, Line)
+  fullName: MBF.Revit.Data.Models.BoundaryLines.BoundaryLines(Autodesk.Revit.DB.Line, Autodesk.Revit.DB.Line, Autodesk.Revit.DB.Line, Autodesk.Revit.DB.Line)
+  type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/BoundaryLines.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public BoundaryLines(Line maxBoundary, Line minBoundary, Line maxSecondaryBoundary, Line minSecondaryBoundary)
+    parameters:
+    - id: maxBoundary
+      type: Autodesk.Revit.DB.Line
+    - id: minBoundary
+      type: Autodesk.Revit.DB.Line
+    - id: maxSecondaryBoundary
+      type: Autodesk.Revit.DB.Line
+    - id: minSecondaryBoundary
+      type: Autodesk.Revit.DB.Line
+    content.vb: Public Sub New(maxBoundary As Line, minBoundary As Line, maxSecondaryBoundary As Line, minSecondaryBoundary As Line)
+  overload: MBF.Revit.Data.Models.BoundaryLines.#ctor*
+  nameWithType.vb: BoundaryLines.New(Line, Line, Line, Line)
+  fullName.vb: MBF.Revit.Data.Models.BoundaryLines.New(Autodesk.Revit.DB.Line, Autodesk.Revit.DB.Line, Autodesk.Revit.DB.Line, Autodesk.Revit.DB.Line)
+  name.vb: New(Line, Line, Line, Line)
+- uid: MBF.Revit.Data.Models.BoundaryLines.MaxBoundary
+  commentId: P:MBF.Revit.Data.Models.BoundaryLines.MaxBoundary
+  id: MaxBoundary
+  parent: MBF.Revit.Data.Models.BoundaryLines
+  langs:
+  - csharp
+  - vb
+  name: MaxBoundary
+  nameWithType: BoundaryLines.MaxBoundary
+  fullName: MBF.Revit.Data.Models.BoundaryLines.MaxBoundary
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/BoundaryLines.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public Line MaxBoundary { get; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.Line
+    content.vb: Public ReadOnly Property MaxBoundary As Line
+  overload: MBF.Revit.Data.Models.BoundaryLines.MaxBoundary*
+- uid: MBF.Revit.Data.Models.BoundaryLines.MinBoundary
+  commentId: P:MBF.Revit.Data.Models.BoundaryLines.MinBoundary
+  id: MinBoundary
+  parent: MBF.Revit.Data.Models.BoundaryLines
+  langs:
+  - csharp
+  - vb
+  name: MinBoundary
+  nameWithType: BoundaryLines.MinBoundary
+  fullName: MBF.Revit.Data.Models.BoundaryLines.MinBoundary
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/BoundaryLines.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public Line MinBoundary { get; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.Line
+    content.vb: Public ReadOnly Property MinBoundary As Line
+  overload: MBF.Revit.Data.Models.BoundaryLines.MinBoundary*
+- uid: MBF.Revit.Data.Models.BoundaryLines.MaxSecondaryBoundary
+  commentId: P:MBF.Revit.Data.Models.BoundaryLines.MaxSecondaryBoundary
+  id: MaxSecondaryBoundary
+  parent: MBF.Revit.Data.Models.BoundaryLines
+  langs:
+  - csharp
+  - vb
+  name: MaxSecondaryBoundary
+  nameWithType: BoundaryLines.MaxSecondaryBoundary
+  fullName: MBF.Revit.Data.Models.BoundaryLines.MaxSecondaryBoundary
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/BoundaryLines.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public Line MaxSecondaryBoundary { get; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.Line
+    content.vb: Public ReadOnly Property MaxSecondaryBoundary As Line
+  overload: MBF.Revit.Data.Models.BoundaryLines.MaxSecondaryBoundary*
+- uid: MBF.Revit.Data.Models.BoundaryLines.MinSecondaryBoundary
+  commentId: P:MBF.Revit.Data.Models.BoundaryLines.MinSecondaryBoundary
+  id: MinSecondaryBoundary
+  parent: MBF.Revit.Data.Models.BoundaryLines
+  langs:
+  - csharp
+  - vb
+  name: MinSecondaryBoundary
+  nameWithType: BoundaryLines.MinSecondaryBoundary
+  fullName: MBF.Revit.Data.Models.BoundaryLines.MinSecondaryBoundary
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/BoundaryLines.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public Line MinSecondaryBoundary { get; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.Line
+    content.vb: Public ReadOnly Property MinSecondaryBoundary As Line
+  overload: MBF.Revit.Data.Models.BoundaryLines.MinSecondaryBoundary*
+references:
+- uid: MBF.Revit.Data.Models
+  commentId: N:MBF.Revit.Data.Models
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Data.Models
+  nameWithType: MBF.Revit.Data.Models
+  fullName: MBF.Revit.Data.Models
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Data.Models.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Data.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MBF.Revit.Data.Models.BoundaryLines.#ctor*
+  commentId: Overload:MBF.Revit.Data.Models.BoundaryLines.#ctor
+  isExternal: true
+  href: MBF.Revit.Data.Models.BoundaryLines.html#MBF_Revit_Data_Models_BoundaryLines__ctor_Autodesk_Revit_DB_Line_Autodesk_Revit_DB_Line_Autodesk_Revit_DB_Line_Autodesk_Revit_DB_Line_
+  name: BoundaryLines
+  nameWithType: BoundaryLines.BoundaryLines
+  fullName: MBF.Revit.Data.Models.BoundaryLines.BoundaryLines
+  nameWithType.vb: BoundaryLines.New
+  fullName.vb: MBF.Revit.Data.Models.BoundaryLines.New
+  name.vb: New
+- uid: Autodesk.Revit.DB.Line
+  commentId: T:Autodesk.Revit.DB.Line
+  isExternal: true
+  name: Line
+  nameWithType: Line
+  fullName: Autodesk.Revit.DB.Line
+- uid: MBF.Revit.Data.Models.BoundaryLines.MaxBoundary*
+  commentId: Overload:MBF.Revit.Data.Models.BoundaryLines.MaxBoundary
+  isExternal: true
+  href: MBF.Revit.Data.Models.BoundaryLines.html#MBF_Revit_Data_Models_BoundaryLines_MaxBoundary
+  name: MaxBoundary
+  nameWithType: BoundaryLines.MaxBoundary
+  fullName: MBF.Revit.Data.Models.BoundaryLines.MaxBoundary
+- uid: MBF.Revit.Data.Models.BoundaryLines.MinBoundary*
+  commentId: Overload:MBF.Revit.Data.Models.BoundaryLines.MinBoundary
+  isExternal: true
+  href: MBF.Revit.Data.Models.BoundaryLines.html#MBF_Revit_Data_Models_BoundaryLines_MinBoundary
+  name: MinBoundary
+  nameWithType: BoundaryLines.MinBoundary
+  fullName: MBF.Revit.Data.Models.BoundaryLines.MinBoundary
+- uid: MBF.Revit.Data.Models.BoundaryLines.MaxSecondaryBoundary*
+  commentId: Overload:MBF.Revit.Data.Models.BoundaryLines.MaxSecondaryBoundary
+  isExternal: true
+  href: MBF.Revit.Data.Models.BoundaryLines.html#MBF_Revit_Data_Models_BoundaryLines_MaxSecondaryBoundary
+  name: MaxSecondaryBoundary
+  nameWithType: BoundaryLines.MaxSecondaryBoundary
+  fullName: MBF.Revit.Data.Models.BoundaryLines.MaxSecondaryBoundary
+- uid: MBF.Revit.Data.Models.BoundaryLines.MinSecondaryBoundary*
+  commentId: Overload:MBF.Revit.Data.Models.BoundaryLines.MinSecondaryBoundary
+  isExternal: true
+  href: MBF.Revit.Data.Models.BoundaryLines.html#MBF_Revit_Data_Models_BoundaryLines_MinSecondaryBoundary
+  name: MinSecondaryBoundary
+  nameWithType: BoundaryLines.MinSecondaryBoundary
+  fullName: MBF.Revit.Data.Models.BoundaryLines.MinSecondaryBoundary
+shouldSkipMarkup: true

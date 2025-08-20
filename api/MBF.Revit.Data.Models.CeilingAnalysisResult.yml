@@ -1,0 +1,549 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult
+  commentId: T:MBF.Revit.Data.Models.CeilingAnalysisResult
+  id: CeilingAnalysisResult
+  parent: MBF.Revit.Data.Models
+  children:
+  - MBF.Revit.Data.Models.CeilingAnalysisResult.#ctor
+  - MBF.Revit.Data.Models.CeilingAnalysisResult.CeilingType
+  - MBF.Revit.Data.Models.CeilingAnalysisResult.ElevationPoint
+  - MBF.Revit.Data.Models.CeilingAnalysisResult.MajorCeiling
+  - MBF.Revit.Data.Models.CeilingAnalysisResult.MajorFace
+  langs:
+  - csharp
+  - vb
+  name: CeilingAnalysisResult
+  nameWithType: CeilingAnalysisResult
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingAnalysisResult.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Result of ceiling analysis operations
+  example: []
+  syntax:
+    content: public class CeilingAnalysisResult
+    content.vb: Public Class CeilingAnalysisResult
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.#ctor
+  commentId: M:MBF.Revit.Data.Models.CeilingAnalysisResult.#ctor
+  id: '#ctor'
+  parent: MBF.Revit.Data.Models.CeilingAnalysisResult
+  langs:
+  - csharp
+  - vb
+  name: CeilingAnalysisResult()
+  nameWithType: CeilingAnalysisResult.CeilingAnalysisResult()
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.CeilingAnalysisResult()
+  type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingAnalysisResult.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public CeilingAnalysisResult()
+    content.vb: Public Sub New()
+  overload: MBF.Revit.Data.Models.CeilingAnalysisResult.#ctor*
+  nameWithType.vb: CeilingAnalysisResult.New()
+  fullName.vb: MBF.Revit.Data.Models.CeilingAnalysisResult.New()
+  name.vb: New()
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.CeilingType
+  commentId: P:MBF.Revit.Data.Models.CeilingAnalysisResult.CeilingType
+  id: CeilingType
+  parent: MBF.Revit.Data.Models.CeilingAnalysisResult
+  langs:
+  - csharp
+  - vb
+  name: CeilingType
+  nameWithType: CeilingAnalysisResult.CeilingType
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.CeilingType
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingAnalysisResult.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public MbCeilingType CeilingType { get; set; }
+    parameters: []
+    return:
+      type: MBF.Revit.Data.Constants.MbCeilingType
+    content.vb: Public Property CeilingType As MbCeilingType
+  overload: MBF.Revit.Data.Models.CeilingAnalysisResult.CeilingType*
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.MajorCeiling
+  commentId: P:MBF.Revit.Data.Models.CeilingAnalysisResult.MajorCeiling
+  id: MajorCeiling
+  parent: MBF.Revit.Data.Models.CeilingAnalysisResult
+  langs:
+  - csharp
+  - vb
+  name: MajorCeiling
+  nameWithType: CeilingAnalysisResult.MajorCeiling
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.MajorCeiling
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingAnalysisResult.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public Ceiling MajorCeiling { get; set; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.Ceiling
+    content.vb: Public Property MajorCeiling As Ceiling
+  overload: MBF.Revit.Data.Models.CeilingAnalysisResult.MajorCeiling*
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.MajorFace
+  commentId: P:MBF.Revit.Data.Models.CeilingAnalysisResult.MajorFace
+  id: MajorFace
+  parent: MBF.Revit.Data.Models.CeilingAnalysisResult
+  langs:
+  - csharp
+  - vb
+  name: MajorFace
+  nameWithType: CeilingAnalysisResult.MajorFace
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.MajorFace
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingAnalysisResult.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public Face MajorFace { get; set; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.Face
+    content.vb: Public Property MajorFace As Face
+  overload: MBF.Revit.Data.Models.CeilingAnalysisResult.MajorFace*
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.ElevationPoint
+  commentId: P:MBF.Revit.Data.Models.CeilingAnalysisResult.ElevationPoint
+  id: ElevationPoint
+  parent: MBF.Revit.Data.Models.CeilingAnalysisResult
+  langs:
+  - csharp
+  - vb
+  name: ElevationPoint
+  nameWithType: CeilingAnalysisResult.ElevationPoint
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.ElevationPoint
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingAnalysisResult.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public XYZ ElevationPoint { get; set; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.XYZ
+    content.vb: Public Property ElevationPoint As XYZ
+  overload: MBF.Revit.Data.Models.CeilingAnalysisResult.ElevationPoint*
+references:
+- uid: MBF.Revit.Data.Models
+  commentId: N:MBF.Revit.Data.Models
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Data.Models
+  nameWithType: MBF.Revit.Data.Models
+  fullName: MBF.Revit.Data.Models
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Data.Models.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Data.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.#ctor*
+  commentId: Overload:MBF.Revit.Data.Models.CeilingAnalysisResult.#ctor
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingAnalysisResult.html#MBF_Revit_Data_Models_CeilingAnalysisResult__ctor
+  name: CeilingAnalysisResult
+  nameWithType: CeilingAnalysisResult.CeilingAnalysisResult
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.CeilingAnalysisResult
+  nameWithType.vb: CeilingAnalysisResult.New
+  fullName.vb: MBF.Revit.Data.Models.CeilingAnalysisResult.New
+  name.vb: New
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.CeilingType*
+  commentId: Overload:MBF.Revit.Data.Models.CeilingAnalysisResult.CeilingType
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingAnalysisResult.html#MBF_Revit_Data_Models_CeilingAnalysisResult_CeilingType
+  name: CeilingType
+  nameWithType: CeilingAnalysisResult.CeilingType
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.CeilingType
+- uid: MBF.Revit.Data.Constants.MbCeilingType
+  commentId: T:MBF.Revit.Data.Constants.MbCeilingType
+  parent: MBF.Revit.Data.Constants
+  isExternal: true
+  href: MBF.Revit.Data.Constants.MbCeilingType.html
+  name: MbCeilingType
+  nameWithType: MbCeilingType
+  fullName: MBF.Revit.Data.Constants.MbCeilingType
+- uid: MBF.Revit.Data.Constants
+  commentId: N:MBF.Revit.Data.Constants
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Data.Constants
+  nameWithType: MBF.Revit.Data.Constants
+  fullName: MBF.Revit.Data.Constants
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Constants
+    name: Constants
+    isExternal: true
+    href: MBF.Revit.Data.Constants.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Constants
+    name: Constants
+    isExternal: true
+    href: MBF.Revit.Data.Constants.html
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.MajorCeiling*
+  commentId: Overload:MBF.Revit.Data.Models.CeilingAnalysisResult.MajorCeiling
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingAnalysisResult.html#MBF_Revit_Data_Models_CeilingAnalysisResult_MajorCeiling
+  name: MajorCeiling
+  nameWithType: CeilingAnalysisResult.MajorCeiling
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.MajorCeiling
+- uid: Autodesk.Revit.DB.Ceiling
+  isExternal: true
+  name: Ceiling
+  nameWithType: Ceiling
+  fullName: Autodesk.Revit.DB.Ceiling
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.MajorFace*
+  commentId: Overload:MBF.Revit.Data.Models.CeilingAnalysisResult.MajorFace
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingAnalysisResult.html#MBF_Revit_Data_Models_CeilingAnalysisResult_MajorFace
+  name: MajorFace
+  nameWithType: CeilingAnalysisResult.MajorFace
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.MajorFace
+- uid: Autodesk.Revit.DB.Face
+  isExternal: true
+  name: Face
+  nameWithType: Face
+  fullName: Autodesk.Revit.DB.Face
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult.ElevationPoint*
+  commentId: Overload:MBF.Revit.Data.Models.CeilingAnalysisResult.ElevationPoint
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingAnalysisResult.html#MBF_Revit_Data_Models_CeilingAnalysisResult_ElevationPoint
+  name: ElevationPoint
+  nameWithType: CeilingAnalysisResult.ElevationPoint
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult.ElevationPoint
+- uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
+  isExternal: true
+  name: XYZ
+  nameWithType: XYZ
+  fullName: Autodesk.Revit.DB.XYZ
+shouldSkipMarkup: true

@@ -1,0 +1,160 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Data.Constants.MbCeilingType
+  commentId: T:MBF.Revit.Data.Constants.MbCeilingType
+  id: MbCeilingType
+  parent: MBF.Revit.Data.Constants
+  children:
+  - MBF.Revit.Data.Constants.MbCeilingType.Exposed
+  - MBF.Revit.Data.Constants.MbCeilingType.PlasterBoard
+  - MBF.Revit.Data.Constants.MbCeilingType.TiledMajor
+  langs:
+  - csharp
+  - vb
+  name: MbCeilingType
+  nameWithType: MbCeilingType
+  fullName: MBF.Revit.Data.Constants.MbCeilingType
+  type: Enum
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Constants/MbCeilingType.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Constants
+  summary: Represents the type of ceiling used in a building or structure.
+  remarks: >-
+    This enumeration defines common ceiling types, such as tiled major ceilings, plasterboard ceilings, 
+                and exposed ceilings. It can be used to specify or categorize ceiling styles in construction or design
+                contexts.
+  example: []
+  syntax:
+    content: public enum MbCeilingType
+    content.vb: Public Enum MbCeilingType
+- uid: MBF.Revit.Data.Constants.MbCeilingType.TiledMajor
+  commentId: F:MBF.Revit.Data.Constants.MbCeilingType.TiledMajor
+  id: TiledMajor
+  parent: MBF.Revit.Data.Constants.MbCeilingType
+  langs:
+  - csharp
+  - vb
+  name: TiledMajor
+  nameWithType: MbCeilingType.TiledMajor
+  fullName: MBF.Revit.Data.Constants.MbCeilingType.TiledMajor
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Constants/MbCeilingType.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Constants
+  summary: Represents a tiled layout with major elements emphasized.
+  remarks: >-
+    This value is typically used to specify a layout style where major elements are prominently
+                displayed in a tiled arrangement.
+  example: []
+  syntax:
+    content: TiledMajor = 1
+    return:
+      type: MBF.Revit.Data.Constants.MbCeilingType
+- uid: MBF.Revit.Data.Constants.MbCeilingType.PlasterBoard
+  commentId: F:MBF.Revit.Data.Constants.MbCeilingType.PlasterBoard
+  id: PlasterBoard
+  parent: MBF.Revit.Data.Constants.MbCeilingType
+  langs:
+  - csharp
+  - vb
+  name: PlasterBoard
+  nameWithType: MbCeilingType.PlasterBoard
+  fullName: MBF.Revit.Data.Constants.MbCeilingType.PlasterBoard
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Constants/MbCeilingType.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Constants
+  summary: Represents plasterboard material in the enumeration.
+  example: []
+  syntax:
+    content: PlasterBoard = 2
+    return:
+      type: MBF.Revit.Data.Constants.MbCeilingType
+- uid: MBF.Revit.Data.Constants.MbCeilingType.Exposed
+  commentId: F:MBF.Revit.Data.Constants.MbCeilingType.Exposed
+  id: Exposed
+  parent: MBF.Revit.Data.Constants.MbCeilingType
+  langs:
+  - csharp
+  - vb
+  name: Exposed
+  nameWithType: MbCeilingType.Exposed
+  fullName: MBF.Revit.Data.Constants.MbCeilingType.Exposed
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Constants/MbCeilingType.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Constants
+  summary: Represents the exposed state of an object or entity.
+  remarks: >-
+    This value is typically used to indicate that the object or entity is in a publicly visible
+                or accessible state.
+  example: []
+  syntax:
+    content: Exposed = 3
+    return:
+      type: MBF.Revit.Data.Constants.MbCeilingType
+references:
+- uid: MBF.Revit.Data.Constants
+  commentId: N:MBF.Revit.Data.Constants
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Data.Constants
+  nameWithType: MBF.Revit.Data.Constants
+  fullName: MBF.Revit.Data.Constants
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Constants
+    name: Constants
+    isExternal: true
+    href: MBF.Revit.Data.Constants.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Constants
+    name: Constants
+    isExternal: true
+    href: MBF.Revit.Data.Constants.html
+- uid: MBF.Revit.Data.Constants.MbCeilingType
+  commentId: T:MBF.Revit.Data.Constants.MbCeilingType
+  parent: MBF.Revit.Data.Constants
+  isExternal: true
+  href: MBF.Revit.Data.Constants.MbCeilingType.html
+  name: MbCeilingType
+  nameWithType: MbCeilingType
+  fullName: MBF.Revit.Data.Constants.MbCeilingType
+shouldSkipMarkup: true

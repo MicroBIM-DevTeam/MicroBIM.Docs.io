@@ -21,7 +21,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.DocumentExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -73,7 +73,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.DocumentExtensions.GetFamilyTypesByCategoryOrderedByName(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.BuiltInCategory)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -119,7 +119,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.DocumentExtensions.GetLevelsOrderedByProperty<TKey>(Autodesk.Revit.DB.Document, System.Func<Autodesk.Revit.DB.Level, TKey>, bool)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -167,7 +167,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.DocumentExtensions.GetRebarShapes(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -200,7 +200,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.DocumentExtensions.GetRebarBarTypes(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -233,7 +233,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.DocumentExtensions.CreateAndPlaceColumnAtPoint(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.FamilySymbol, Autodesk.Revit.DB.Level, Autodesk.Revit.DB.Level)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -278,7 +278,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.DocumentExtensions.SearchOrCreate3DView(Autodesk.Revit.DB.Document, string, bool)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -323,7 +323,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.DocumentExtensions.GetAllRevitDocuments(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -353,7 +353,7 @@ items:
   fullName: MBF.Revit.Data.Extensions.DocumentExtensions.GetLinkedDocumentsOnly(Autodesk.Revit.DB.Document)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Extensions/DocumentExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Extensions/DocumentExtensions.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Extensions
@@ -372,7 +372,6 @@ items:
   overload: MBF.Revit.Data.Extensions.DocumentExtensions.GetLinkedDocumentsOnly*
 references:
 - uid: Autodesk.Revit.DB.Document
-  commentId: T:Autodesk.Revit.DB.Document
   isExternal: true
   name: Document
   nameWithType: Document
@@ -1048,6 +1047,7 @@ references:
   nameWithType: DocumentExtensions.CreateAndPlaceColumnAtPoint
   fullName: MBF.Revit.Data.Extensions.DocumentExtensions.CreateAndPlaceColumnAtPoint
 - uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
   isExternal: true
   name: XYZ
   nameWithType: XYZ
@@ -1090,6 +1090,9 @@ references:
 - uid: Autodesk.Revit.DB.View3D
   commentId: T:Autodesk.Revit.DB.View3D
   isExternal: true
+  name: View3D
+  nameWithType: View3D
+  fullName: Autodesk.Revit.DB.View3D
 - uid: MBF.Revit.Data.Extensions.DocumentExtensions.SearchOrCreate3DView*
   commentId: Overload:MBF.Revit.Data.Extensions.DocumentExtensions.SearchOrCreate3DView
   isExternal: true

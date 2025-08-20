@@ -16,7 +16,7 @@ items:
   fullName: MB.Common.Utils.Attributes.AttributeUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Utils/Attributes/AttributeUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Utils/Attributes/AttributeUtils.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Attributes
@@ -47,7 +47,7 @@ items:
   fullName: MB.Common.Utils.Attributes.AttributeUtils.GetAttribute<T>(object)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Utils/Attributes/AttributeUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Utils/Attributes/AttributeUtils.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Attributes
@@ -85,7 +85,7 @@ items:
   fullName: MB.Common.Utils.Attributes.AttributeUtils.TryGetAttribute<T>(object, out T)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Utils/Attributes/AttributeUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Utils/Attributes/AttributeUtils.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Attributes
@@ -129,7 +129,7 @@ items:
   fullName: MB.Common.Utils.Attributes.AttributeUtils.GetFieldAttribute<T, TType>(string)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Utils/Attributes/AttributeUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Utils/Attributes/AttributeUtils.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Attributes

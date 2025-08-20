@@ -1,0 +1,632 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Data.Utils.MbSelectionUtils
+  commentId: T:MBF.Revit.Data.Utils.MbSelectionUtils
+  id: MbSelectionUtils
+  parent: MBF.Revit.Data.Utils
+  children:
+  - MBF.Revit.Data.Utils.MbSelectionUtils.#ctor
+  - MBF.Revit.Data.Utils.MbSelectionUtils.GetAllFamiliesByBuiltinCategories(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.BuiltInCategory},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId)
+  langs:
+  - csharp
+  - vb
+  name: MbSelectionUtils
+  nameWithType: MbSelectionUtils
+  fullName: MBF.Revit.Data.Utils.MbSelectionUtils
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbSelectionUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Provides utility methods for working with family instances in Revit documents.
+  remarks: >-
+    This class includes methods for retrieving family instances based on specific criteria, such as
+                visibility in a view and membership in specified built-in categories.
+  example: []
+  syntax:
+    content: public class MbSelectionUtils
+    content.vb: Public Class MbSelectionUtils
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBF.Revit.Data.Utils.MbSelectionUtils.GetAllFamiliesByBuiltinCategories(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.BuiltInCategory},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId)
+  commentId: M:MBF.Revit.Data.Utils.MbSelectionUtils.GetAllFamiliesByBuiltinCategories(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.BuiltInCategory},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId)
+  id: GetAllFamiliesByBuiltinCategories(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.BuiltInCategory},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId)
+  parent: MBF.Revit.Data.Utils.MbSelectionUtils
+  langs:
+  - csharp
+  - vb
+  name: GetAllFamiliesByBuiltinCategories(IEnumerable<BuiltInCategory>, Document, ElementId)
+  nameWithType: MbSelectionUtils.GetAllFamiliesByBuiltinCategories(IEnumerable<BuiltInCategory>, Document, ElementId)
+  fullName: MBF.Revit.Data.Utils.MbSelectionUtils.GetAllFamiliesByBuiltinCategories(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.BuiltInCategory>, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.ElementId)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbSelectionUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Retrieves all family instances of the specified built-in categories that are visible in the given view.
+  example: []
+  syntax:
+    content: public static MbResult<List<FamilyInstance>> GetAllFamiliesByBuiltinCategories(IEnumerable<BuiltInCategory> builtInCategories, Document document, ElementId viewId)
+    parameters:
+    - id: builtInCategories
+      type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.BuiltInCategory}
+      description: The collection of BuiltInCategories to filter.
+    - id: document
+      type: Autodesk.Revit.DB.Document
+      description: The Revit document.
+    - id: viewId
+      type: Autodesk.Revit.DB.ElementId
+      description: The ID of the view to check visibility against.
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.FamilyInstance}}
+      description: An MbResult containing either a list of matching FamilyInstance elements or an error message.
+    content.vb: Public Shared Function GetAllFamiliesByBuiltinCategories(builtInCategories As IEnumerable(Of BuiltInCategory), document As Document, viewId As ElementId) As MbResult(Of List(Of FamilyInstance))
+  overload: MBF.Revit.Data.Utils.MbSelectionUtils.GetAllFamiliesByBuiltinCategories*
+  nameWithType.vb: MbSelectionUtils.GetAllFamiliesByBuiltinCategories(IEnumerable(Of BuiltInCategory), Document, ElementId)
+  fullName.vb: MBF.Revit.Data.Utils.MbSelectionUtils.GetAllFamiliesByBuiltinCategories(System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.BuiltInCategory), Autodesk.Revit.DB.Document, Autodesk.Revit.DB.ElementId)
+  name.vb: GetAllFamiliesByBuiltinCategories(IEnumerable(Of BuiltInCategory), Document, ElementId)
+- uid: MBF.Revit.Data.Utils.MbSelectionUtils.#ctor
+  commentId: M:MBF.Revit.Data.Utils.MbSelectionUtils.#ctor
+  id: '#ctor'
+  parent: MBF.Revit.Data.Utils.MbSelectionUtils
+  langs:
+  - csharp
+  - vb
+  name: MbSelectionUtils()
+  nameWithType: MbSelectionUtils.MbSelectionUtils()
+  fullName: MBF.Revit.Data.Utils.MbSelectionUtils.MbSelectionUtils()
+  type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbSelectionUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  syntax:
+    content: public MbSelectionUtils()
+    content.vb: Public Sub New()
+  overload: MBF.Revit.Data.Utils.MbSelectionUtils.#ctor*
+  nameWithType.vb: MbSelectionUtils.New()
+  fullName.vb: MBF.Revit.Data.Utils.MbSelectionUtils.New()
+  name.vb: New()
+references:
+- uid: MBF.Revit.Data.Utils
+  commentId: N:MBF.Revit.Data.Utils
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Data.Utils
+  nameWithType: MBF.Revit.Data.Utils
+  fullName: MBF.Revit.Data.Utils
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Utils
+    name: Utils
+    isExternal: true
+    href: MBF.Revit.Data.Utils.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Utils
+    name: Utils
+    isExternal: true
+    href: MBF.Revit.Data.Utils.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MBF.Revit.Data.Utils.MbSelectionUtils.GetAllFamiliesByBuiltinCategories*
+  commentId: Overload:MBF.Revit.Data.Utils.MbSelectionUtils.GetAllFamiliesByBuiltinCategories
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbSelectionUtils.html#MBF_Revit_Data_Utils_MbSelectionUtils_GetAllFamiliesByBuiltinCategories_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_BuiltInCategory__Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_
+  name: GetAllFamiliesByBuiltinCategories
+  nameWithType: MbSelectionUtils.GetAllFamiliesByBuiltinCategories
+  fullName: MBF.Revit.Data.Utils.MbSelectionUtils.GetAllFamiliesByBuiltinCategories
+- uid: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.BuiltInCategory}
+  commentId: T:System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.BuiltInCategory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<BuiltInCategory>
+  nameWithType: IEnumerable<BuiltInCategory>
+  fullName: System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.BuiltInCategory>
+  nameWithType.vb: IEnumerable(Of BuiltInCategory)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.BuiltInCategory)
+  name.vb: IEnumerable(Of BuiltInCategory)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Autodesk.Revit.DB.BuiltInCategory
+    name: BuiltInCategory
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.BuiltInCategory
+    name: BuiltInCategory
+    isExternal: true
+  - name: )
+- uid: Autodesk.Revit.DB.Document
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
+- uid: Autodesk.Revit.DB.ElementId
+  isExternal: true
+  name: ElementId
+  nameWithType: ElementId
+  fullName: Autodesk.Revit.DB.ElementId
+- uid: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.FamilyInstance}}
+  commentId: T:MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.FamilyInstance}}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: MbResult<List<FamilyInstance>>
+  nameWithType: MbResult<List<FamilyInstance>>
+  fullName: MB.Common.Utils.Result.MbResult<System.Collections.Generic.List<Autodesk.Revit.DB.FamilyInstance>>
+  nameWithType.vb: MbResult(Of List(Of FamilyInstance))
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of System.Collections.Generic.List(Of Autodesk.Revit.DB.FamilyInstance))
+  name.vb: MbResult(Of List(Of FamilyInstance))
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.FamilyInstance
+    name: FamilyInstance
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.FamilyInstance
+    name: FamilyInstance
+    isExternal: true
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MB.Common.Utils.Result.MbResult`1
+  commentId: T:MB.Common.Utils.Result.MbResult`1
+  parent: MB.Common.Utils.Result
+  isExternal: true
+  href: MB.Common.Utils.Result.MbResult-1.html
+  name: MbResult<T>
+  nameWithType: MbResult<T>
+  fullName: MB.Common.Utils.Result.MbResult<T>
+  nameWithType.vb: MbResult(Of T)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of T)
+  name.vb: MbResult(Of T)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MB.Common.Utils.Result
+  commentId: N:MB.Common.Utils.Result
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Utils.Result
+  nameWithType: MB.Common.Utils.Result
+  fullName: MB.Common.Utils.Result
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+- uid: MBF.Revit.Data.Utils.MbSelectionUtils.#ctor*
+  commentId: Overload:MBF.Revit.Data.Utils.MbSelectionUtils.#ctor
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbSelectionUtils.html#MBF_Revit_Data_Utils_MbSelectionUtils__ctor
+  name: MbSelectionUtils
+  nameWithType: MbSelectionUtils.MbSelectionUtils
+  fullName: MBF.Revit.Data.Utils.MbSelectionUtils.MbSelectionUtils
+  nameWithType.vb: MbSelectionUtils.New
+  fullName.vb: MBF.Revit.Data.Utils.MbSelectionUtils.New
+  name.vb: New
+shouldSkipMarkup: true

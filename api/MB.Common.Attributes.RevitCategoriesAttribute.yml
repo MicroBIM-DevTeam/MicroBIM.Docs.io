@@ -15,7 +15,7 @@ items:
   fullName: MB.Common.Attributes.RevitCategoriesAttribute
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Attributes/RevitCategoriesAttribute.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Attributes/RevitCategoriesAttribute.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes
@@ -100,7 +100,7 @@ items:
   fullName: MB.Common.Attributes.RevitCategoriesAttribute.RevitCategoriesAttribute(params Autodesk.Revit.DB.BuiltInCategory[])
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Attributes/RevitCategoriesAttribute.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Attributes/RevitCategoriesAttribute.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes
@@ -133,7 +133,7 @@ items:
   fullName: MB.Common.Attributes.RevitCategoriesAttribute.Categories
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Attributes/RevitCategoriesAttribute.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Attributes/RevitCategoriesAttribute.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes

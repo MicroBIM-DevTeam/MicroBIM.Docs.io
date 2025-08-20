@@ -19,7 +19,7 @@ items:
   fullName: MBFWpfToolkit.ValidationRules.StringValidationRule
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/ValidationRules/StringValidationRule.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/ValidationRules/StringValidationRule.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.ValidationRules
@@ -55,7 +55,7 @@ items:
   fullName: MBFWpfToolkit.ValidationRules.StringValidationRule.Validate(object, System.Globalization.CultureInfo)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/ValidationRules/StringValidationRule.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/ValidationRules/StringValidationRule.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.ValidationRules
@@ -91,7 +91,7 @@ items:
   fullName: MBFWpfToolkit.ValidationRules.StringValidationRule.StringValidationRule()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/ValidationRules/StringValidationRule.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/ValidationRules/StringValidationRule.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.ValidationRules
@@ -114,7 +114,7 @@ items:
   fullName: MBFWpfToolkit.ValidationRules.StringValidationRule.MinimumLength
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/ValidationRules/StringValidationRule.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/ValidationRules/StringValidationRule.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.ValidationRules
@@ -139,7 +139,7 @@ items:
   fullName: MBFWpfToolkit.ValidationRules.StringValidationRule.MaximumLength
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/ValidationRules/StringValidationRule.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/ValidationRules/StringValidationRule.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.ValidationRules
@@ -164,7 +164,7 @@ items:
   fullName: MBFWpfToolkit.ValidationRules.StringValidationRule.IsRequired
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/ValidationRules/StringValidationRule.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/ValidationRules/StringValidationRule.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.ValidationRules
@@ -189,7 +189,7 @@ items:
   fullName: MBFWpfToolkit.ValidationRules.StringValidationRule.Pattern
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/ValidationRules/StringValidationRule.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/ValidationRules/StringValidationRule.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.ValidationRules

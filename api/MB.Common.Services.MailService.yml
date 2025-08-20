@@ -15,7 +15,7 @@ items:
   fullName: MB.Common.Services.MailService
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Services/MailService.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Services/MailService.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Services
@@ -49,7 +49,7 @@ items:
   fullName: MB.Common.Services.MailService.Send(string, System.Collections.Generic.List<string>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Services/MailService.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Services/MailService.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Services
@@ -94,7 +94,7 @@ items:
   fullName: MB.Common.Services.MailService.SendAsync(string, System.Collections.Generic.List<string>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Services/MailService.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Services/MailService.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Services

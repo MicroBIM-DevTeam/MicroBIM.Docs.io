@@ -15,7 +15,7 @@ items:
   fullName: MB.Common.Utils.Loaders.MbResourceLoader
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Utils/Loaders/MbResourceLoader.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Utils/Loaders/MbResourceLoader.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Loaders
@@ -46,7 +46,7 @@ items:
   fullName: MB.Common.Utils.Loaders.MbResourceLoader.LoadEmbeddedJsonAsync<T>(string, System.Reflection.Assembly)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Utils/Loaders/MbResourceLoader.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Utils/Loaders/MbResourceLoader.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Loaders
@@ -84,7 +84,7 @@ items:
   fullName: MB.Common.Utils.Loaders.MbResourceLoader.EnsureFileFromEmbeddedResource(string, string)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Utils/Loaders/MbResourceLoader.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Utils/Loaders/MbResourceLoader.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Loaders

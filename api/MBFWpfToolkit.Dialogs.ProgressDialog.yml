@@ -16,7 +16,7 @@ items:
   fullName: MBFWpfToolkit.Dialogs.ProgressDialog
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Dialogs/ProgressDialog.xaml
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Dialogs/ProgressDialog.xaml
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Dialogs
@@ -636,7 +636,7 @@ items:
   fullName: MBFWpfToolkit.Dialogs.ProgressDialog.ProgressDialog()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Dialogs/ProgressDialog.xaml.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Dialogs/ProgressDialog.xaml.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Dialogs
@@ -664,7 +664,7 @@ items:
   fullName: MBFWpfToolkit.Dialogs.ProgressDialog.UpdateMessage(string)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Dialogs/ProgressDialog.xaml.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Dialogs/ProgressDialog.xaml.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Dialogs
@@ -698,7 +698,7 @@ items:
   fullName: MBFWpfToolkit.Dialogs.ProgressDialog.InitializeComponent()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Dialogs/ProgressDialog.xaml
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Dialogs/ProgressDialog.xaml
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Dialogs

@@ -4,6 +4,7 @@ items:
   commentId: N:MBF.Revit.Data.Extensions
   id: MBF.Revit.Data.Extensions
   children:
+  - MBF.Revit.Data.Extensions.DirectionExtensions
   - MBF.Revit.Data.Extensions.DocumentExtensions
   - MBF.Revit.Data.Extensions.PipeExtensions
   - MBF.Revit.Data.Extensions.SelectionExtensions
@@ -19,6 +20,13 @@ items:
   assemblies:
   - MBF.Revit.Data
 references:
+- uid: MBF.Revit.Data.Extensions.DirectionExtensions
+  commentId: T:MBF.Revit.Data.Extensions.DirectionExtensions
+  isExternal: true
+  href: MBF.Revit.Data.Extensions.DirectionExtensions.html
+  name: DirectionExtensions
+  nameWithType: DirectionExtensions
+  fullName: MBF.Revit.Data.Extensions.DirectionExtensions
 - uid: MBF.Revit.Data.Extensions.DocumentExtensions
   commentId: T:MBF.Revit.Data.Extensions.DocumentExtensions
   isExternal: true

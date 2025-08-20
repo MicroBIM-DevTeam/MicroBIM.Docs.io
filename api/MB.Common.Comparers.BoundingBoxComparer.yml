@@ -16,7 +16,7 @@ items:
   fullName: MB.Common.Comparers.BoundingBoxComparer
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Comparers/BoundingBoxComparer.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Comparers/BoundingBoxComparer.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Comparers
@@ -47,7 +47,7 @@ items:
   fullName: MB.Common.Comparers.BoundingBoxComparer.BoundingBoxComparer()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Comparers/BoundingBoxComparer.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Comparers/BoundingBoxComparer.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Comparers
@@ -75,7 +75,7 @@ items:
   fullName: MB.Common.Comparers.BoundingBoxComparer.Compare(Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Comparers/BoundingBoxComparer.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Comparers/BoundingBoxComparer.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Comparers
@@ -101,7 +101,7 @@ items:
   fullName: MB.Common.Comparers.BoundingBoxComparer.Resolve()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Comparers/BoundingBoxComparer.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Comparers/BoundingBoxComparer.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Comparers
@@ -417,6 +417,7 @@ references:
   nameWithType: BoundingBoxComparer.Compare
   fullName: MB.Common.Comparers.BoundingBoxComparer.Compare
 - uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
   isExternal: true
   name: XYZ
   nameWithType: XYZ

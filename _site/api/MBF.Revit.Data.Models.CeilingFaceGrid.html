@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CeilingFaceGrid | MIcroBIM Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CeilingFaceGrid | MIcroBIM Docs ">
+      
+      <meta name="description" content="Represents a grid system for placing sprinklers on ceiling faces">
+      <link rel="icon" href="../images/logo.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/MicroBimLogo.png" alt="MicroBIM">
+            MicroBIM
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MBF.Revit.Data.Models.CeilingFaceGrid">
+
+
+
+  <h1 id="MBF_Revit_Data_Models_CeilingFaceGrid" data-uid="MBF.Revit.Data.Models.CeilingFaceGrid" class="text-break">
+Class CeilingFaceGrid  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingFaceGrid.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MBF.html">MBF</a>.<a class="xref" href="MBF.Revit.html">Revit</a>.<a class="xref" href="MBF.Revit.Data.html">Data</a>.<a class="xref" href="MBF.Revit.Data.Models.html">Models</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MBF.Revit.Data.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary">Represents a grid system for placing sprinklers on ceiling faces</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CeilingFaceGrid</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CeilingFaceGrid</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MBF_Revit_Data_Models_CeilingFaceGrid_MaxDimensionLines_" data-uid="MBF.Revit.Data.Models.CeilingFaceGrid.MaxDimensionLines*"></a>
+
+  <h3 id="MBF_Revit_Data_Models_CeilingFaceGrid_MaxDimensionLines" data-uid="MBF.Revit.Data.Models.CeilingFaceGrid.MaxDimensionLines">
+  MaxDimensionLines
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingFaceGrid.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Gets a read-only collection of grid lines representing the maximum dimensions of the grid.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;GridLine&gt; MaxDimensionLines { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="MBF.Revit.Data.Models.GridLine.html">GridLine</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Models_CeilingFaceGrid_MaxDimensionLines_remarks">Remarks</h4>
+  <div class="markdown level1 remarks">The returned collection is immutable and reflects the maximum dimension lines as
+            defined by the grid's configuration.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Models_CeilingFaceGrid_MinDimensionLines_" data-uid="MBF.Revit.Data.Models.CeilingFaceGrid.MinDimensionLines*"></a>
+
+  <h3 id="MBF_Revit_Data_Models_CeilingFaceGrid_MinDimensionLines" data-uid="MBF.Revit.Data.Models.CeilingFaceGrid.MinDimensionLines">
+  MinDimensionLines
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingFaceGrid.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Gets a read-only list of grid lines representing the minimum dimensions of the grid.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;GridLine&gt; MinDimensionLines { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="MBF.Revit.Data.Models.GridLine.html">GridLine</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MBF_Revit_Data_Models_CeilingFaceGrid_Create_" data-uid="MBF.Revit.Data.Models.CeilingFaceGrid.Create*"></a>
+
+  <h3 id="MBF_Revit_Data_Models_CeilingFaceGrid_Create_Autodesk_Revit_DB_Ceiling_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_Mechanical_Space_CeilingFaceGridParameters_System_Double_System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__System_Double_" data-uid="MBF.Revit.Data.Models.CeilingFaceGrid.Create(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Mechanical.Space,CeilingFaceGridParameters,System.Double,System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},System.Double)">
+  Create(Ceiling, Document, RevitLinkInstance, Space, CeilingFaceGridParameters, double, List&lt;XYZ&gt;, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingFaceGrid.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Creates a new instance of <a class="xref" href="MBF.Revit.Data.Models.CeilingFaceGrid.html">CeilingFaceGrid</a> based on the specified ceiling, space, and
+parameters.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbResult&lt;CeilingFaceGrid&gt; Create(Ceiling ceiling, Document document, RevitLinkInstance architecturalLink, Space space, CeilingFaceGridParameters parameters, double ceilingHeight, List&lt;XYZ&gt; spacePolygonCorners, double regularOffsetFeet)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ceiling</code> <span class="xref">Ceiling</span></dt>
+    <dd>The ceiling element for which the grid is being created. Cannot be null.</dd>
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd>The Revit document containing the ceiling and related elements. Cannot be null.</dd>
+    <dt><code>architecturalLink</code> <span class="xref">RevitLinkInstance</span></dt>
+    <dd>The Revit link instance representing the architectural model. Cannot be null.</dd>
+    <dt><code>space</code> <span class="xref">Space</span></dt>
+    <dd>The space in which the ceiling resides. Cannot be null.</dd>
+    <dt><code>parameters</code> <a class="xref" href="CeilingFaceGridParameters.html">CeilingFaceGridParameters</a></dt>
+    <dd>The parameters that define the grid's configuration. Cannot be null.</dd>
+    <dt><code>ceilingHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd>The height of the ceiling in feet. Must be a positive value.</dd>
+    <dt><code>spacePolygonCorners</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">XYZ</span>&gt;</dt>
+    <dd>The list of corner points defining the polygonal boundary of the space. Cannot be null or empty.</dd>
+    <dt><code>regularOffsetFeet</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd>The regular offset, in feet, used for grid generation. Must be a positive value.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="MBF.Revit.Data.Models.CeilingFaceGrid.html">CeilingFaceGrid</a>&gt;</dt>
+    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing the created <a class="xref" href="MBF.Revit.Data.Models.CeilingFaceGrid.html">CeilingFaceGrid</a> if the operation succeeds;
+            otherwise, an error message describing the failure.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Models_CeilingFaceGrid_Create_Autodesk_Revit_DB_Ceiling_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_Mechanical_Space_CeilingFaceGridParameters_System_Double_System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method validates the input parameters, configures the grid based on the ceiling
+            and space, and generates the grid using the specified offset. If any step in the process fails, the method
+            returns a failure result with an appropriate error message.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Models_CeilingFaceGrid_GetGridPoint_" data-uid="MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPoint*"></a>
+
+  <h3 id="MBF_Revit_Data_Models_CeilingFaceGrid_GetGridPoint_System_Int32_System_Int32_" data-uid="MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPoint(System.Int32,System.Int32)">
+  GetGridPoint(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingFaceGrid.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves a grid point from the collection based on the specified indices.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MbResult&lt;XYZ&gt; GetGridPoint(int maxIndex, int minIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd>The maximum index of the grid point to retrieve. Must be a valid index within the grid.</dd>
+    <dt><code>minIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd>The minimum index of the grid point to retrieve. Must be a valid index within the grid.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<span class="xref">XYZ</span>&gt;</dt>
+    <dd>A <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing the grid point as an <span class="xref">Autodesk.Revit.DB.XYZ</span> object if the operation is
+            successful; otherwise, a failure result with an error message.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Models_CeilingFaceGrid_GetGridPoint_System_Int32_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method validates the indices and checks whether the grid point is initialized
+            and valid. If the indices are invalid or the grid point is not initialized, the method returns a failure
+            result.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Models_CeilingFaceGrid_GetGridPointDescription_" data-uid="MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPointDescription*"></a>
+
+  <h3 id="MBF_Revit_Data_Models_CeilingFaceGrid_GetGridPointDescription_System_Int32_System_Int32_" data-uid="MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPointDescription(System.Int32,System.Int32)">
+  GetGridPointDescription(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingFaceGrid.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves the description of a grid point based on the specified indices.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MbResult&lt;string&gt; GetGridPointDescription(int maxIndex, int minIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd>The maximum index of the grid point. Must be a valid index within the grid's bounds.</dd>
+    <dt><code>minIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd>The minimum index of the grid point. Must be a valid index within the grid's bounds.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing the description of the grid point if the indices are valid and the grid
+            is initialized; otherwise, a failure result with an appropriate error message.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Models_CeilingFaceGrid_GetGridPointDescription_System_Int32_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks">If the grid point description is null, an empty string is returned as the
+            description.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Models_CeilingFaceGrid_GetValidGridPoints_" data-uid="MBF.Revit.Data.Models.CeilingFaceGrid.GetValidGridPoints*"></a>
+
+  <h3 id="MBF_Revit_Data_Models_CeilingFaceGrid_GetValidGridPoints" data-uid="MBF.Revit.Data.Models.CeilingFaceGrid.GetValidGridPoints">
+  GetValidGridPoints()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingFaceGrid.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Retrieves a list of valid grid points from the current grid.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MbResult&lt;List&lt;GridPointInfo&gt;&gt; GetValidGridPoints()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MBF.Revit.Data.Models.GridPointInfo.html">GridPointInfo</a>&gt;&gt;</dt>
+    <dd>A <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing a list of <a class="xref" href="MBF.Revit.Data.Models.GridPointInfo.html">GridPointInfo</a> objects representing the valid
+            grid points. If the grid is not initialized, the result is a failure with an appropriate error message.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Models_CeilingFaceGrid_GetValidGridPoints_remarks">Remarks</h4>
+  <div class="markdown level1 remarks">A grid point is considered valid if its Z-coordinate does not match the invalid
+            Z-coordinate value specified in the grid parameters. If the grid is not initialized, the method returns a
+            failure result.</div>
+
+
+
+
+  <a id="MBF_Revit_Data_Models_CeilingFaceGrid_ValidateGrid_" data-uid="MBF.Revit.Data.Models.CeilingFaceGrid.ValidateGrid*"></a>
+
+  <h3 id="MBF_Revit_Data_Models_CeilingFaceGrid_ValidateGrid" data-uid="MBF.Revit.Data.Models.CeilingFaceGrid.ValidateGrid">
+  ValidateGrid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingFaceGrid.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Validates the current grid and returns a detailed validation result.</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MbResult&lt;GridValidationResult&gt; ValidateGrid()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult</a>&lt;<a class="xref" href="MBF.Revit.Data.Models.GridValidationResult.html">GridValidationResult</a>&gt;</dt>
+    <dd>An <a class="xref" href="MB.Common.Utils.Result.MbResult-1.html">MbResult&lt;T&gt;</a> containing a <a class="xref" href="MBF.Revit.Data.Models.GridValidationResult.html">GridValidationResult</a> object that provides details about
+            the validation, including the total number of points, valid points, invalid points, the percentage of valid
+            points, and any error or warning messages.</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MBF_Revit_Data_Models_CeilingFaceGrid_ValidateGrid_remarks">Remarks</h4>
+  <div class="markdown level1 remarks">This method evaluates the grid's validity based on its initialization state, the number of
+            valid grid points, and the percentage of valid points relative to the total points. If the grid is not
+            initialized or contains no valid points, the validation will fail. A warning is included if the percentage of
+            valid points falls below a predefined threshold.</div>
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2025 MicroBIM. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

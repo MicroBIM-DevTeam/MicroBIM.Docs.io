@@ -89,7 +89,7 @@
 
 
   <h1 id="MBF_Revit_Data_Utils_MbUnitUtils" data-uid="MBF.Revit.Data.Utils.MbUnitUtils" class="text-break">
-Class MbUnitUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbUnitUtils.cs"><i class="bi bi-code-slash"></i></a>
+Class MbUnitUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbUnitUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -160,7 +160,7 @@ representations.</div>
 
   <h3 id="MBF_Revit_Data_Utils_MbUnitUtils_GetLengthUnitSymbol" data-uid="MBF.Revit.Data.Utils.MbUnitUtils.GetLengthUnitSymbol">
   GetLengthUnitSymbol()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbUnitUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbUnitUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Retrieves the unit symbol used for length in the active Revit document.</div>
@@ -192,7 +192,7 @@ If the unit type cannot be identified, returns <code>"Unknown"</code>.</dd>
 
   <h3 id="MBF_Revit_Data_Utils_MbUnitUtils_GetStandardUnitSymbol_System_Object_" data-uid="MBF.Revit.Data.Utils.MbUnitUtils.GetStandardUnitSymbol(System.Object)">
   GetStandardUnitSymbol(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbUnitUtils.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbUnitUtils.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">Maps Revit unit types to standardized short symbols.</div>
@@ -215,6 +215,42 @@ version.</dd>
     <dd>A short string symbol representing the unit (e.g., "mm", "cm", "ft-in").
 Returns a user-readable label from Revit's <span class="xref">Autodesk.Revit.DB.LabelUtils</span> as a fallback.
 Returns "Unknown" if mapping cannot be resolved.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MBF_Revit_Data_Utils_MbUnitUtils_ToInternalUnits_" data-uid="MBF.Revit.Data.Utils.MbUnitUtils.ToInternalUnits*"></a>
+
+  <h3 id="MBF_Revit_Data_Utils_MbUnitUtils_ToInternalUnits_System_Double_" data-uid="MBF.Revit.Data.Utils.MbUnitUtils.ToInternalUnits(System.Double)">
+  ToInternalUnits(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbUnitUtils.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">Converts millimeters to Revit internal units (feet)</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ToInternalUnits(this double millimeters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>millimeters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd>Value in millimeters</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd>Value in Revit internal units</dd>
   </dl>
 
 

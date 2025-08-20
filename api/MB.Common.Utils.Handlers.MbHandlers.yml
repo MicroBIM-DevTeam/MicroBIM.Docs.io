@@ -16,7 +16,7 @@ items:
   fullName: MB.Common.Utils.Handlers.MbHandlers
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Utils/Handlers/MbHandlers.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Utils/Handlers/MbHandlers.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Handlers
@@ -51,7 +51,7 @@ items:
   fullName: MB.Common.Utils.Handlers.MbHandlers.RegisterHandlers()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Utils/Handlers/MbHandlers.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Utils/Handlers/MbHandlers.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Handlers
@@ -76,18 +76,18 @@ items:
   fullName: MB.Common.Utils.Handlers.MbHandlers.ExternalEventHandler
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Utils/Handlers/MbHandlers.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Utils/Handlers/MbHandlers.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Handlers
   summary: Gets or sets the synchronous external event handler for executing Revit commands.
   example: []
   syntax:
-    content: public static ActionEventHandler ExternalEventHandler { get; set; }
+    content: public static ActionEventHandler ExternalEventHandler { get; }
     parameters: []
     return:
       type: Nice3point.Revit.Toolkit.External.Handlers.ActionEventHandler
-    content.vb: Public Shared Property ExternalEventHandler As ActionEventHandler
+    content.vb: Public Shared ReadOnly Property ExternalEventHandler As ActionEventHandler
   overload: MB.Common.Utils.Handlers.MbHandlers.ExternalEventHandler*
 - uid: MB.Common.Utils.Handlers.MbHandlers.AsyncExternalEventHandler
   commentId: P:MB.Common.Utils.Handlers.MbHandlers.AsyncExternalEventHandler
@@ -101,18 +101,18 @@ items:
   fullName: MB.Common.Utils.Handlers.MbHandlers.AsyncExternalEventHandler
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Utils/Handlers/MbHandlers.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Utils/Handlers/MbHandlers.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Utils.Handlers
   summary: Gets or sets the asynchronous external event handler for executing asynchronous Revit commands.
   example: []
   syntax:
-    content: public static AsyncEventHandler AsyncExternalEventHandler { get; set; }
+    content: public static AsyncEventHandler AsyncExternalEventHandler { get; }
     parameters: []
     return:
       type: Nice3point.Revit.Toolkit.External.Handlers.AsyncEventHandler
-    content.vb: Public Shared Property AsyncExternalEventHandler As AsyncEventHandler
+    content.vb: Public Shared ReadOnly Property AsyncExternalEventHandler As AsyncEventHandler
   overload: MB.Common.Utils.Handlers.MbHandlers.AsyncExternalEventHandler*
 references:
 - uid: Nice3point.Revit.Toolkit.External.Handlers.ActionEventHandler

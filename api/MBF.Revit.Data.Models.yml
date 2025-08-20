@@ -4,6 +4,17 @@ items:
   commentId: N:MBF.Revit.Data.Models
   id: MBF.Revit.Data.Models
   children:
+  - MBF.Revit.Data.Models.BeamProcessingResult
+  - MBF.Revit.Data.Models.BoundaryLines
+  - MBF.Revit.Data.Models.CeilingAnalysisResult
+  - MBF.Revit.Data.Models.CeilingData
+  - MBF.Revit.Data.Models.CeilingFaceGrid
+  - MBF.Revit.Data.Models.CeilingPattern
+  - MBF.Revit.Data.Models.CeilingPatternExtractor
+  - MBF.Revit.Data.Models.GridLine
+  - MBF.Revit.Data.Models.GridLineGenerator
+  - MBF.Revit.Data.Models.GridPointInfo
+  - MBF.Revit.Data.Models.GridValidationResult
   - MBF.Revit.Data.Models.MbDocument
   langs:
   - csharp
@@ -15,6 +26,84 @@ items:
   assemblies:
   - MBF.Revit.Data
 references:
+- uid: MBF.Revit.Data.Models.BeamProcessingResult
+  commentId: T:MBF.Revit.Data.Models.BeamProcessingResult
+  isExternal: true
+  href: MBF.Revit.Data.Models.BeamProcessingResult.html
+  name: BeamProcessingResult
+  nameWithType: BeamProcessingResult
+  fullName: MBF.Revit.Data.Models.BeamProcessingResult
+- uid: MBF.Revit.Data.Models.BoundaryLines
+  commentId: T:MBF.Revit.Data.Models.BoundaryLines
+  isExternal: true
+  href: MBF.Revit.Data.Models.BoundaryLines.html
+  name: BoundaryLines
+  nameWithType: BoundaryLines
+  fullName: MBF.Revit.Data.Models.BoundaryLines
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult
+  commentId: T:MBF.Revit.Data.Models.CeilingAnalysisResult
+  parent: MBF.Revit.Data.Models
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingAnalysisResult.html
+  name: CeilingAnalysisResult
+  nameWithType: CeilingAnalysisResult
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult
+- uid: MBF.Revit.Data.Models.CeilingData
+  commentId: T:MBF.Revit.Data.Models.CeilingData
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingData.html
+  name: CeilingData
+  nameWithType: CeilingData
+  fullName: MBF.Revit.Data.Models.CeilingData
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid
+  commentId: T:MBF.Revit.Data.Models.CeilingFaceGrid
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingFaceGrid.html
+  name: CeilingFaceGrid
+  nameWithType: CeilingFaceGrid
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid
+- uid: MBF.Revit.Data.Models.CeilingPattern
+  commentId: T:MBF.Revit.Data.Models.CeilingPattern
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingPattern.html
+  name: CeilingPattern
+  nameWithType: CeilingPattern
+  fullName: MBF.Revit.Data.Models.CeilingPattern
+- uid: MBF.Revit.Data.Models.CeilingPatternExtractor
+  commentId: T:MBF.Revit.Data.Models.CeilingPatternExtractor
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingPatternExtractor.html
+  name: CeilingPatternExtractor
+  nameWithType: CeilingPatternExtractor
+  fullName: MBF.Revit.Data.Models.CeilingPatternExtractor
+- uid: MBF.Revit.Data.Models.GridLine
+  commentId: T:MBF.Revit.Data.Models.GridLine
+  isExternal: true
+  href: MBF.Revit.Data.Models.GridLine.html
+  name: GridLine
+  nameWithType: GridLine
+  fullName: MBF.Revit.Data.Models.GridLine
+- uid: MBF.Revit.Data.Models.GridLineGenerator
+  commentId: T:MBF.Revit.Data.Models.GridLineGenerator
+  isExternal: true
+  href: MBF.Revit.Data.Models.GridLineGenerator.html
+  name: GridLineGenerator
+  nameWithType: GridLineGenerator
+  fullName: MBF.Revit.Data.Models.GridLineGenerator
+- uid: MBF.Revit.Data.Models.GridPointInfo
+  commentId: T:MBF.Revit.Data.Models.GridPointInfo
+  isExternal: true
+  href: MBF.Revit.Data.Models.GridPointInfo.html
+  name: GridPointInfo
+  nameWithType: GridPointInfo
+  fullName: MBF.Revit.Data.Models.GridPointInfo
+- uid: MBF.Revit.Data.Models.GridValidationResult
+  commentId: T:MBF.Revit.Data.Models.GridValidationResult
+  isExternal: true
+  href: MBF.Revit.Data.Models.GridValidationResult.html
+  name: GridValidationResult
+  nameWithType: GridValidationResult
+  fullName: MBF.Revit.Data.Models.GridValidationResult
 - uid: MBF.Revit.Data.Models.MbDocument
   commentId: T:MBF.Revit.Data.Models.MbDocument
   isExternal: true
@@ -22,4 +111,51 @@ references:
   name: MbDocument
   nameWithType: MbDocument
   fullName: MBF.Revit.Data.Models.MbDocument
+- uid: MBF.Revit.Data.Models
+  commentId: N:MBF.Revit.Data.Models
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Data.Models
+  nameWithType: MBF.Revit.Data.Models
+  fullName: MBF.Revit.Data.Models
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Data.Models.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Data.Models.html
 shouldSkipMarkup: true

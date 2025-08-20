@@ -17,7 +17,7 @@ items:
   fullName: MB.Common.Settings.ParameterData
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ParameterData.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Settings/ParameterData.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings
@@ -68,7 +68,7 @@ items:
   fullName: MB.Common.Settings.ParameterData.ParameterData(string, string, bool)
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ParameterData.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Settings/ParameterData.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings
@@ -103,7 +103,7 @@ items:
   fullName: MB.Common.Settings.ParameterData.DisplayName
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/obj/Debug%20R23/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MB.Common.Settings.ParameterData.g.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/obj/Debug%20R23/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MB.Common.Settings.ParameterData.g.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings
@@ -127,7 +127,7 @@ items:
   fullName: MB.Common.Settings.ParameterData.IsSelected
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/obj/Debug%20R23/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MB.Common.Settings.ParameterData.g.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/obj/Debug%20R23/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MB.Common.Settings.ParameterData.g.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings
@@ -151,7 +151,7 @@ items:
   fullName: MB.Common.Settings.ParameterData.Name
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/obj/Debug%20R23/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MB.Common.Settings.ParameterData.g.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/obj/Debug%20R23/net48/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MB.Common.Settings.ParameterData.g.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings

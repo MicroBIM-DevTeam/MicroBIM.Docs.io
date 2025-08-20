@@ -15,7 +15,7 @@ items:
   fullName: MB.Common.Attributes.RequiredSharedParametersAttribute
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Attributes/RequiredSharedParametersAttribute.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Attributes/RequiredSharedParametersAttribute.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes
@@ -100,7 +100,7 @@ items:
   fullName: MB.Common.Attributes.RequiredSharedParametersAttribute.RequiredSharedParametersAttribute(params MB.Common.SharedParameters.ToolsSharedParameter[])
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Attributes/RequiredSharedParametersAttribute.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Attributes/RequiredSharedParametersAttribute.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes
@@ -136,7 +136,7 @@ items:
   fullName: MB.Common.Attributes.RequiredSharedParametersAttribute.SharedParameters
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Attributes/RequiredSharedParametersAttribute.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Attributes/RequiredSharedParametersAttribute.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Attributes

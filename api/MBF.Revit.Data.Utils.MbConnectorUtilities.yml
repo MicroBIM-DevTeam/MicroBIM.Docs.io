@@ -20,7 +20,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbConnectorUtilities
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbConnectorUtilities.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -54,14 +54,14 @@ items:
   fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectedElementsFromFitting(Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbConnectorUtilities.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
   summary: Retrieves a list of elements that are directly or indirectly connected to the specified fitting.
   remarks: >-
     The method first attempts to find elements directly connected to the fitting's connectors. If
-                a connector is not directly connected to an element, the method searches for the nearest unconnected connector
+                a connector is not directly connected to an element, the method searches for the nearest unconnectTOed connector
                 in the document.
   example: []
   syntax:
@@ -92,7 +92,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.GetRoundConnectorsFromFitting(Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbConnectorUtilities.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -126,7 +126,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.GetDirectlyConnectedElement(Autodesk.Revit.DB.Connector)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbConnectorUtilities.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -155,7 +155,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.BypassNonConnectorFittings(Autodesk.Revit.DB.FamilyInstance, System.Collections.Generic.List<Autodesk.Revit.DB.ElementId>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbConnectorUtilities.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -198,7 +198,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.IsMEPCategory(Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbConnectorUtilities.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -227,7 +227,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFamilyInstance(Autodesk.Revit.DB.FamilyInstance)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbConnectorUtilities.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils
@@ -256,7 +256,7 @@ items:
   fullName: MBF.Revit.Data.Utils.MbConnectorUtilities.GetConnectorsFromFlexPipe(Autodesk.Revit.DB.Plumbing.FlexPipe)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/4a4e0975ded0e7a98ad0e9bfffe5b78cd2e3d6c1/Utils/MbConnectorUtilities.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbConnectorUtilities.cs
   assemblies:
   - MBF.Revit.Data
   namespace: MBF.Revit.Data.Utils

@@ -14,7 +14,7 @@ items:
   fullName: MB.Common.Errors.MbErrorExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Errors/MbErrorExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Errors/MbErrorExtensions.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Errors
@@ -46,7 +46,7 @@ items:
   fullName: MB.Common.Errors.MbErrorExtensions.GetErrorMessage(MB.Common.Errors.MbError)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Errors/MbErrorExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Errors/MbErrorExtensions.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Errors

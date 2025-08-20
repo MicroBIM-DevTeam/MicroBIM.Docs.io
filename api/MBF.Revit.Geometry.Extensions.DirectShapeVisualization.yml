@@ -14,7 +14,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.DirectShapeVisualization
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/DirectShapeVisualization.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Extensions/DirectShapeVisualization.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -51,7 +51,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.DirectShapeVisualization.CreateSphere(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.XYZ, double)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/DirectShapeVisualization.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Extensions/DirectShapeVisualization.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -376,12 +376,12 @@ references:
   nameWithType: DirectShapeVisualization.CreateSphere
   fullName: MBF.Revit.Geometry.Extensions.DirectShapeVisualization.CreateSphere
 - uid: Autodesk.Revit.DB.Document
-  commentId: T:Autodesk.Revit.DB.Document
   isExternal: true
   name: Document
   nameWithType: Document
   fullName: Autodesk.Revit.DB.Document
 - uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
   isExternal: true
   name: XYZ
   nameWithType: XYZ

@@ -1,0 +1,779 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBFWpfToolkit.Helpers.SilentValidator
+  commentId: T:MBFWpfToolkit.Helpers.SilentValidator
+  id: SilentValidator
+  parent: MBFWpfToolkit.Helpers
+  children:
+  - MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties(System.Object)
+  - MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties(System.Object,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}@)
+  - MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty(System.Object,System.String)
+  - MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty(System.Object,System.String,System.Collections.Generic.List{System.String}@)
+  langs:
+  - csharp
+  - vb
+  name: SilentValidator
+  nameWithType: SilentValidator
+  fullName: MBFWpfToolkit.Helpers.SilentValidator
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Helpers/SilentValidator.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Helpers
+  summary: ''
+  example: []
+  syntax:
+    content: public static class SilentValidator
+    content.vb: Public Module SilentValidator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties(System.Object)
+  commentId: M:MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties(System.Object)
+  id: ValidateAllProperties(System.Object)
+  parent: MBFWpfToolkit.Helpers.SilentValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateAllProperties(object)
+  nameWithType: SilentValidator.ValidateAllProperties(object)
+  fullName: MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties(object)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Helpers/SilentValidator.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Helpers
+  summary: Validates all properties of the specified object instance based on data annotation attributes.
+  remarks: >-
+    This method uses data annotation attributes applied to the object's properties to perform
+                validation. If any property fails validation, the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.  Note that this method
+                does not provide detailed validation results; it only indicates overall validity.
+  example: []
+  syntax:
+    content: public static bool ValidateAllProperties(object instance)
+    parameters:
+    - id: instance
+      type: System.Object
+      description: The object instance to validate. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if all properties of the object are valid; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Shared Function ValidateAllProperties(instance As Object) As Boolean
+  overload: MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties*
+  nameWithType.vb: SilentValidator.ValidateAllProperties(Object)
+  fullName.vb: MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties(Object)
+  name.vb: ValidateAllProperties(Object)
+- uid: MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties(System.Object,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}@)
+  commentId: M:MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties(System.Object,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}@)
+  id: ValidateAllProperties(System.Object,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}@)
+  parent: MBFWpfToolkit.Helpers.SilentValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateAllProperties(object, out Dictionary<string, List<string>>)
+  nameWithType: SilentValidator.ValidateAllProperties(object, out Dictionary<string, List<string>>)
+  fullName: MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties(object, out System.Collections.Generic.Dictionary<string, System.Collections.Generic.List<string>>)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Helpers/SilentValidator.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Helpers
+  summary: Validates all properties of the specified object instance using data annotations.
+  remarks: >-
+    This method uses the <xref href="System.ComponentModel.DataAnnotations.Validator" data-throw-if-not-resolved="false"></xref> class to
+                perform validation. It validates all properties of the object, including those marked with validation attributes
+                such as <xref href="System.ComponentModel.DataAnnotations.RequiredAttribute" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static bool ValidateAllProperties(object instance, out Dictionary<string, List<string>> errors)
+    parameters:
+    - id: instance
+      type: System.Object
+      description: The object instance to validate. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    - id: errors
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+      description: >-
+        When this method returns, contains a dictionary of validation errors, where the keys are property names and the
+                    values are lists of error messages for each property. If the object is valid, this will be an empty dictionary.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the object is valid and all properties pass validation; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Shared Function ValidateAllProperties(instance As Object, errors As Dictionary(Of String, List(Of String))) As Boolean
+  overload: MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties*
+  nameWithType.vb: SilentValidator.ValidateAllProperties(Object, Dictionary(Of String, List(Of String)))
+  fullName.vb: MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties(Object, System.Collections.Generic.Dictionary(Of String, System.Collections.Generic.List(Of String)))
+  name.vb: ValidateAllProperties(Object, Dictionary(Of String, List(Of String)))
+- uid: MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty(System.Object,System.String)
+  commentId: M:MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty(System.Object,System.String)
+  id: ValidateProperty(System.Object,System.String)
+  parent: MBFWpfToolkit.Helpers.SilentValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateProperty(object, string)
+  nameWithType: SilentValidator.ValidateProperty(object, string)
+  fullName: MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty(object, string)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Helpers/SilentValidator.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Helpers
+  summary: Validates the specified property of an object instance against its data annotations.
+  remarks: >-
+    This method uses the <xref href="System.ComponentModel.DataAnnotations.Validator.TryValidateProperty(System.Object%2cSystem.ComponentModel.DataAnnotations.ValidationContext%2cSystem.Collections.Generic.ICollection%7bSystem.ComponentModel.DataAnnotations.ValidationResult%7d)" data-throw-if-not-resolved="false"></xref> method to validate the
+                property value against the data annotations defined on the property. If the property does not exist or is not
+                accessible, an exception will be thrown.
+  example: []
+  syntax:
+    content: public static bool ValidateProperty(object instance, string propertyName)
+    parameters:
+    - id: instance
+      type: System.Object
+      description: The object instance containing the property to validate. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    - id: propertyName
+      type: System.String
+      description: The name of the property to validate. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the property value is valid according to its data annotations; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Shared Function ValidateProperty(instance As Object, propertyName As String) As Boolean
+  overload: MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty*
+  nameWithType.vb: SilentValidator.ValidateProperty(Object, String)
+  fullName.vb: MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty(Object, String)
+  name.vb: ValidateProperty(Object, String)
+- uid: MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty(System.Object,System.String,System.Collections.Generic.List{System.String}@)
+  commentId: M:MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty(System.Object,System.String,System.Collections.Generic.List{System.String}@)
+  id: ValidateProperty(System.Object,System.String,System.Collections.Generic.List{System.String}@)
+  parent: MBFWpfToolkit.Helpers.SilentValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateProperty(object, string, out List<string>)
+  nameWithType: SilentValidator.ValidateProperty(object, string, out List<string>)
+  fullName: MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty(object, string, out System.Collections.Generic.List<string>)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Helpers/SilentValidator.cs
+  assemblies:
+  - MBFWpfToolkit
+  namespace: MBFWpfToolkit.Helpers
+  summary: Validates the specified property of an object instance against its data annotations.
+  remarks: >-
+    This method uses the <xref href="System.ComponentModel.DataAnnotations.Validator" data-throw-if-not-resolved="false"></xref> class to
+                validate the property. The validation is performed based on the data annotations applied to the
+                property.
+  example: []
+  syntax:
+    content: public static bool ValidateProperty(object instance, string propertyName, out List<string> errors)
+    parameters:
+    - id: instance
+      type: System.Object
+      description: The object instance containing the property to validate. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    - id: propertyName
+      type: System.String
+      description: The name of the property to validate. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
+    - id: errors
+      type: System.Collections.Generic.List{System.String}
+      description: >-
+        When the method returns, contains a list of validation error messages if the property is invalid; otherwise, an
+                    empty list. This parameter is passed uninitialized.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the property is valid according to its data annotations; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Shared Function ValidateProperty(instance As Object, propertyName As String, errors As List(Of String)) As Boolean
+  overload: MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty*
+  nameWithType.vb: SilentValidator.ValidateProperty(Object, String, List(Of String))
+  fullName.vb: MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty(Object, String, System.Collections.Generic.List(Of String))
+  name.vb: ValidateProperty(Object, String, List(Of String))
+references:
+- uid: MBFWpfToolkit.Helpers
+  commentId: N:MBFWpfToolkit.Helpers
+  isExternal: true
+  href: MBFWpfToolkit.html
+  name: MBFWpfToolkit.Helpers
+  nameWithType: MBFWpfToolkit.Helpers
+  fullName: MBFWpfToolkit.Helpers
+  spec.csharp:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Helpers
+    name: Helpers
+    isExternal: true
+    href: MBFWpfToolkit.Helpers.html
+  spec.vb:
+  - uid: MBFWpfToolkit
+    name: MBFWpfToolkit
+    isExternal: true
+    href: MBFWpfToolkit.html
+  - name: .
+  - uid: MBFWpfToolkit.Helpers
+    name: Helpers
+    isExternal: true
+    href: MBFWpfToolkit.Helpers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties*
+  commentId: Overload:MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties
+  isExternal: true
+  href: MBFWpfToolkit.Helpers.SilentValidator.html#MBFWpfToolkit_Helpers_SilentValidator_ValidateAllProperties_System_Object_
+  name: ValidateAllProperties
+  nameWithType: SilentValidator.ValidateAllProperties
+  fullName: MBFWpfToolkit.Helpers.SilentValidator.ValidateAllProperties
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.ComponentModel.DataAnnotations.Validator
+  commentId: T:System.ComponentModel.DataAnnotations.Validator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.validator
+  name: Validator
+  nameWithType: Validator
+  fullName: System.ComponentModel.DataAnnotations.Validator
+- uid: System.ComponentModel.DataAnnotations.RequiredAttribute
+  commentId: T:System.ComponentModel.DataAnnotations.RequiredAttribute
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.requiredattribute
+  name: RequiredAttribute
+  nameWithType: RequiredAttribute
+  fullName: System.ComponentModel.DataAnnotations.RequiredAttribute
+- uid: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, List<string>>
+  nameWithType: Dictionary<string, List<string>>
+  fullName: System.Collections.Generic.Dictionary<string, System.Collections.Generic.List<string>>
+  nameWithType.vb: Dictionary(Of String, List(Of String))
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, System.Collections.Generic.List(Of String))
+  name.vb: Dictionary(Of String, List(Of String))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.ComponentModel.DataAnnotations.Validator.TryValidateProperty(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult})
+  commentId: M:System.ComponentModel.DataAnnotations.Validator.TryValidateProperty(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.validator.tryvalidateproperty
+  name: TryValidateProperty(object, ValidationContext, ICollection<ValidationResult>)
+  nameWithType: Validator.TryValidateProperty(object, ValidationContext, ICollection<ValidationResult>)
+  fullName: System.ComponentModel.DataAnnotations.Validator.TryValidateProperty(object, System.ComponentModel.DataAnnotations.ValidationContext, System.Collections.Generic.ICollection<System.ComponentModel.DataAnnotations.ValidationResult>)
+  nameWithType.vb: Validator.TryValidateProperty(Object, ValidationContext, ICollection(Of ValidationResult))
+  fullName.vb: System.ComponentModel.DataAnnotations.Validator.TryValidateProperty(Object, System.ComponentModel.DataAnnotations.ValidationContext, System.Collections.Generic.ICollection(Of System.ComponentModel.DataAnnotations.ValidationResult))
+  name.vb: TryValidateProperty(Object, ValidationContext, ICollection(Of ValidationResult))
+  spec.csharp:
+  - uid: System.ComponentModel.DataAnnotations.Validator.TryValidateProperty(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult})
+    name: TryValidateProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.validator.tryvalidateproperty
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.ComponentModel.DataAnnotations.ValidationContext
+    name: ValidationContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.validationcontext
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: System.ComponentModel.DataAnnotations.ValidationResult
+    name: ValidationResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.validationresult
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.ComponentModel.DataAnnotations.Validator.TryValidateProperty(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult})
+    name: TryValidateProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.validator.tryvalidateproperty
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.ComponentModel.DataAnnotations.ValidationContext
+    name: ValidationContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.validationcontext
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.ComponentModel.DataAnnotations.ValidationResult
+    name: ValidationResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.validationresult
+  - name: )
+  - name: )
+- uid: MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty*
+  commentId: Overload:MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty
+  isExternal: true
+  href: MBFWpfToolkit.Helpers.SilentValidator.html#MBFWpfToolkit_Helpers_SilentValidator_ValidateProperty_System_Object_System_String_
+  name: ValidateProperty
+  nameWithType: SilentValidator.ValidateProperty
+  fullName: MBFWpfToolkit.Helpers.SilentValidator.ValidateProperty
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+shouldSkipMarkup: true

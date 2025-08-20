@@ -16,7 +16,7 @@ items:
   fullName: MB.Common.Settings.ListingSettings.ValueToStandardTypeDto
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/ValueToStandardTypeDto.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Settings/ListingSettings/ValueToStandardTypeDto.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -47,7 +47,7 @@ items:
   fullName: MB.Common.Settings.ListingSettings.ValueToStandardTypeDto.ValueToStandardTypeDto()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/ValueToStandardTypeDto.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Settings/ListingSettings/ValueToStandardTypeDto.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -70,7 +70,7 @@ items:
   fullName: MB.Common.Settings.ListingSettings.ValueToStandardTypeDto.Value
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/ValueToStandardTypeDto.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Settings/ListingSettings/ValueToStandardTypeDto.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings
@@ -95,7 +95,7 @@ items:
   fullName: MB.Common.Settings.ListingSettings.ValueToStandardTypeDto.SuggestedType
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Settings/ListingSettings/ValueToStandardTypeDto.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Settings/ListingSettings/ValueToStandardTypeDto.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Settings.ListingSettings

@@ -1,0 +1,1625 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  commentId: T:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  id: MbRevitSpaceOldRepoUtils
+  parent: MBF.Revit.Data.Utils
+  children:
+  - MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.AnalyzeCeilings(System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.RevitLinkInstance)
+  - MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CalculatePolygonArea(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ})
+  - MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CheckPointClashWithServices(Autodesk.Revit.DB.XYZ,System.Collections.Generic.List{Autodesk.Revit.DB.Element},Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)
+  - MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom(Autodesk.Revit.DB.Architecture.Room,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)
+  - MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.DetermineCeilingHeight(Autodesk.Revit.DB.Mechanical.Space,MBF.Revit.Data.Models.CeilingAnalysisResult,System.Double,System.Double)
+  - MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetCeilingData(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.Document)
+  - MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints(Autodesk.Revit.DB.Mechanical.Space)
+  - MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments(Autodesk.Revit.DB.Mechanical.Space)
+  - MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint(Autodesk.Revit.DB.Mechanical.Space)
+  - MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInPolygon(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ)
+  - MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInSpace(Autodesk.Revit.DB.Mechanical.Space,Autodesk.Revit.DB.XYZ)
+  - MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ProcessStructuralBeams(System.Collections.Generic.List{System.Tuple{Autodesk.Revit.DB.Line,System.Double,System.Double}},System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},System.Double)
+  - MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ServiceCategories
+  - MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.UpdateSpaceHeight(Autodesk.Revit.DB.Mechanical.Space,System.Double,Autodesk.Revit.DB.Document)
+  langs:
+  - csharp
+  - vb
+  name: MbRevitSpaceOldRepoUtils
+  nameWithType: MbRevitSpaceOldRepoUtils
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Utility class for space operations and calculations using only Revit Space objects
+  example: []
+  syntax:
+    content: public static class MbRevitSpaceOldRepoUtils
+    content.vb: Public Module MbRevitSpaceOldRepoUtils
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ServiceCategories
+  commentId: F:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ServiceCategories
+  id: ServiceCategories
+  parent: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  langs:
+  - csharp
+  - vb
+  name: ServiceCategories
+  nameWithType: MbRevitSpaceOldRepoUtils.ServiceCategories
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ServiceCategories
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  syntax:
+    content: public static readonly List<BuiltInCategory> ServiceCategories
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory}
+    content.vb: Public Shared ReadOnly ServiceCategories As List(Of BuiltInCategory)
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom(Autodesk.Revit.DB.Architecture.Room,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom(Autodesk.Revit.DB.Architecture.Room,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)
+  id: CreateSpaceFromRoom(Autodesk.Revit.DB.Architecture.Room,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)
+  parent: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  langs:
+  - csharp
+  - vb
+  name: CreateSpaceFromRoom(Room, RevitLinkInstance, Document)
+  nameWithType: MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom(Room, RevitLinkInstance, Document)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom(Autodesk.Revit.DB.Architecture.Room, Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Document)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Creates a space from a room with proper coordinate transformation
+  example: []
+  syntax:
+    content: public static MbResult<Space> CreateSpaceFromRoom(Room room, RevitLinkInstance linkInstance, Document document)
+    parameters:
+    - id: room
+      type: Autodesk.Revit.DB.Architecture.Room
+    - id: linkInstance
+      type: Autodesk.Revit.DB.RevitLinkInstance
+    - id: document
+      type: Autodesk.Revit.DB.Document
+    return:
+      type: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Mechanical.Space}
+    content.vb: Public Shared Function CreateSpaceFromRoom(room As Room, linkInstance As RevitLinkInstance, document As Document) As MbResult(Of Space)
+  overload: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom*
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint(Autodesk.Revit.DB.Mechanical.Space)
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint(Autodesk.Revit.DB.Mechanical.Space)
+  id: GetSpaceCenterPoint(Autodesk.Revit.DB.Mechanical.Space)
+  parent: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  langs:
+  - csharp
+  - vb
+  name: GetSpaceCenterPoint(Space)
+  nameWithType: MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint(Space)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint(Autodesk.Revit.DB.Mechanical.Space)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Gets the center point of a space
+  example: []
+  syntax:
+    content: public static MbResult<XYZ> GetSpaceCenterPoint(Space space)
+    parameters:
+    - id: space
+      type: Autodesk.Revit.DB.Mechanical.Space
+    return:
+      type: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.XYZ}
+    content.vb: Public Shared Function GetSpaceCenterPoint(space As Space) As MbResult(Of XYZ)
+  overload: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint*
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.UpdateSpaceHeight(Autodesk.Revit.DB.Mechanical.Space,System.Double,Autodesk.Revit.DB.Document)
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.UpdateSpaceHeight(Autodesk.Revit.DB.Mechanical.Space,System.Double,Autodesk.Revit.DB.Document)
+  id: UpdateSpaceHeight(Autodesk.Revit.DB.Mechanical.Space,System.Double,Autodesk.Revit.DB.Document)
+  parent: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  langs:
+  - csharp
+  - vb
+  name: UpdateSpaceHeight(Space, double, Document)
+  nameWithType: MbRevitSpaceOldRepoUtils.UpdateSpaceHeight(Space, double, Document)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.UpdateSpaceHeight(Autodesk.Revit.DB.Mechanical.Space, double, Autodesk.Revit.DB.Document)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Updates space height based on detected slab elevation
+  example: []
+  syntax:
+    content: public static MbResult<bool> UpdateSpaceHeight(Space space, double aboveFloorElevation, Document document)
+    parameters:
+    - id: space
+      type: Autodesk.Revit.DB.Mechanical.Space
+    - id: aboveFloorElevation
+      type: System.Double
+    - id: document
+      type: Autodesk.Revit.DB.Document
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.Boolean}
+    content.vb: Public Shared Function UpdateSpaceHeight(space As Space, aboveFloorElevation As Double, document As Document) As MbResult(Of Boolean)
+  overload: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.UpdateSpaceHeight*
+  nameWithType.vb: MbRevitSpaceOldRepoUtils.UpdateSpaceHeight(Space, Double, Document)
+  fullName.vb: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.UpdateSpaceHeight(Autodesk.Revit.DB.Mechanical.Space, Double, Autodesk.Revit.DB.Document)
+  name.vb: UpdateSpaceHeight(Space, Double, Document)
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments(Autodesk.Revit.DB.Mechanical.Space)
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments(Autodesk.Revit.DB.Mechanical.Space)
+  id: GetSpaceBoundarySegments(Autodesk.Revit.DB.Mechanical.Space)
+  parent: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  langs:
+  - csharp
+  - vb
+  name: GetSpaceBoundarySegments(Space)
+  nameWithType: MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments(Space)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments(Autodesk.Revit.DB.Mechanical.Space)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Gets boundary segments from a space with proper error handling
+  example: []
+  syntax:
+    content: public static MbResult<List<List<Curve>>> GetSpaceBoundarySegments(Space space)
+    parameters:
+    - id: space
+      type: Autodesk.Revit.DB.Mechanical.Space
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{System.Collections.Generic.List{Autodesk.Revit.DB.Curve}}}
+    content.vb: Public Shared Function GetSpaceBoundarySegments(space As Space) As MbResult(Of List(Of List(Of Curve)))
+  overload: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments*
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints(Autodesk.Revit.DB.Mechanical.Space)
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints(Autodesk.Revit.DB.Mechanical.Space)
+  id: GetSpaceBoundaryPoints(Autodesk.Revit.DB.Mechanical.Space)
+  parent: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  langs:
+  - csharp
+  - vb
+  name: GetSpaceBoundaryPoints(Space)
+  nameWithType: MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints(Space)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints(Autodesk.Revit.DB.Mechanical.Space)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Extracts boundary points from space boundary segments
+  example: []
+  syntax:
+    content: public static MbResult<List<XYZ>> GetSpaceBoundaryPoints(Space space)
+    parameters:
+    - id: space
+      type: Autodesk.Revit.DB.Mechanical.Space
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.XYZ}}
+    content.vb: Public Shared Function GetSpaceBoundaryPoints(space As Space) As MbResult(Of List(Of XYZ))
+  overload: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints*
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CalculatePolygonArea(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ})
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CalculatePolygonArea(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ})
+  id: CalculatePolygonArea(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ})
+  parent: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  langs:
+  - csharp
+  - vb
+  name: CalculatePolygonArea(List<XYZ>)
+  nameWithType: MbRevitSpaceOldRepoUtils.CalculatePolygonArea(List<XYZ>)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CalculatePolygonArea(System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Calculates the area enclosed by a set of points using the shoelace formula
+  example: []
+  syntax:
+    content: public static MbResult<double> CalculatePolygonArea(List<XYZ> boundaryPoints)
+    parameters:
+    - id: boundaryPoints
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.XYZ}
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.Double}
+    content.vb: Public Shared Function CalculatePolygonArea(boundaryPoints As List(Of XYZ)) As MbResult(Of Double)
+  overload: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CalculatePolygonArea*
+  nameWithType.vb: MbRevitSpaceOldRepoUtils.CalculatePolygonArea(List(Of XYZ))
+  fullName.vb: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CalculatePolygonArea(System.Collections.Generic.List(Of Autodesk.Revit.DB.XYZ))
+  name.vb: CalculatePolygonArea(List(Of XYZ))
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInSpace(Autodesk.Revit.DB.Mechanical.Space,Autodesk.Revit.DB.XYZ)
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInSpace(Autodesk.Revit.DB.Mechanical.Space,Autodesk.Revit.DB.XYZ)
+  id: IsPointInSpace(Autodesk.Revit.DB.Mechanical.Space,Autodesk.Revit.DB.XYZ)
+  parent: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  langs:
+  - csharp
+  - vb
+  name: IsPointInSpace(Space, XYZ)
+  nameWithType: MbRevitSpaceOldRepoUtils.IsPointInSpace(Space, XYZ)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInSpace(Autodesk.Revit.DB.Mechanical.Space, Autodesk.Revit.DB.XYZ)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Checks if a point is inside a space using polygon containment
+  example: []
+  syntax:
+    content: public static MbResult<bool> IsPointInSpace(Space space, XYZ testPoint)
+    parameters:
+    - id: space
+      type: Autodesk.Revit.DB.Mechanical.Space
+    - id: testPoint
+      type: Autodesk.Revit.DB.XYZ
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.Boolean}
+    content.vb: Public Shared Function IsPointInSpace(space As Space, testPoint As XYZ) As MbResult(Of Boolean)
+  overload: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInSpace*
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInPolygon(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ)
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInPolygon(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ)
+  id: IsPointInPolygon(System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},Autodesk.Revit.DB.XYZ)
+  parent: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  langs:
+  - csharp
+  - vb
+  name: IsPointInPolygon(List<XYZ>, XYZ)
+  nameWithType: MbRevitSpaceOldRepoUtils.IsPointInPolygon(List<XYZ>, XYZ)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInPolygon(System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>, Autodesk.Revit.DB.XYZ)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Checks if a point is inside a polygon using ray casting algorithm
+  example: []
+  syntax:
+    content: public static MbResult<bool> IsPointInPolygon(List<XYZ> polygonPoints, XYZ testPoint)
+    parameters:
+    - id: polygonPoints
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.XYZ}
+    - id: testPoint
+      type: Autodesk.Revit.DB.XYZ
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.Boolean}
+    content.vb: Public Shared Function IsPointInPolygon(polygonPoints As List(Of XYZ), testPoint As XYZ) As MbResult(Of Boolean)
+  overload: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInPolygon*
+  nameWithType.vb: MbRevitSpaceOldRepoUtils.IsPointInPolygon(List(Of XYZ), XYZ)
+  fullName.vb: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInPolygon(System.Collections.Generic.List(Of Autodesk.Revit.DB.XYZ), Autodesk.Revit.DB.XYZ)
+  name.vb: IsPointInPolygon(List(Of XYZ), XYZ)
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.AnalyzeCeilings(System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.RevitLinkInstance)
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.AnalyzeCeilings(System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.RevitLinkInstance)
+  id: AnalyzeCeilings(System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling},Autodesk.Revit.DB.RevitLinkInstance)
+  parent: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  langs:
+  - csharp
+  - vb
+  name: AnalyzeCeilings(List<Ceiling>, RevitLinkInstance)
+  nameWithType: MbRevitSpaceOldRepoUtils.AnalyzeCeilings(List<Ceiling>, RevitLinkInstance)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.AnalyzeCeilings(System.Collections.Generic.List<Autodesk.Revit.DB.Ceiling>, Autodesk.Revit.DB.RevitLinkInstance)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Determines the ceiling type for a space based on available ceilings
+  example: []
+  syntax:
+    content: public static MbResult<CeilingAnalysisResult> AnalyzeCeilings(List<Ceiling> ceilings, RevitLinkInstance linkInstance)
+    parameters:
+    - id: ceilings
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling}
+    - id: linkInstance
+      type: Autodesk.Revit.DB.RevitLinkInstance
+    return:
+      type: MB.Common.Utils.Result.MbResult{MBF.Revit.Data.Models.CeilingAnalysisResult}
+    content.vb: Public Shared Function AnalyzeCeilings(ceilings As List(Of Ceiling), linkInstance As RevitLinkInstance) As MbResult(Of CeilingAnalysisResult)
+  overload: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.AnalyzeCeilings*
+  nameWithType.vb: MbRevitSpaceOldRepoUtils.AnalyzeCeilings(List(Of Ceiling), RevitLinkInstance)
+  fullName.vb: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.AnalyzeCeilings(System.Collections.Generic.List(Of Autodesk.Revit.DB.Ceiling), Autodesk.Revit.DB.RevitLinkInstance)
+  name.vb: AnalyzeCeilings(List(Of Ceiling), RevitLinkInstance)
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetCeilingData(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.Document)
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetCeilingData(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.Document)
+  id: GetCeilingData(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.Document)
+  parent: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  langs:
+  - csharp
+  - vb
+  name: GetCeilingData(Ceiling, Document)
+  nameWithType: MbRevitSpaceOldRepoUtils.GetCeilingData(Ceiling, Document)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetCeilingData(Autodesk.Revit.DB.Ceiling, Autodesk.Revit.DB.Document)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Gets ceiling data including type and face information
+  example: []
+  syntax:
+    content: public static MbResult<CeilingData> GetCeilingData(Ceiling ceiling, Document linkDocument)
+    parameters:
+    - id: ceiling
+      type: Autodesk.Revit.DB.Ceiling
+    - id: linkDocument
+      type: Autodesk.Revit.DB.Document
+    return:
+      type: MB.Common.Utils.Result.MbResult{MBF.Revit.Data.Models.CeilingData}
+    content.vb: Public Shared Function GetCeilingData(ceiling As Ceiling, linkDocument As Document) As MbResult(Of CeilingData)
+  overload: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetCeilingData*
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.DetermineCeilingHeight(Autodesk.Revit.DB.Mechanical.Space,MBF.Revit.Data.Models.CeilingAnalysisResult,System.Double,System.Double)
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.DetermineCeilingHeight(Autodesk.Revit.DB.Mechanical.Space,MBF.Revit.Data.Models.CeilingAnalysisResult,System.Double,System.Double)
+  id: DetermineCeilingHeight(Autodesk.Revit.DB.Mechanical.Space,MBF.Revit.Data.Models.CeilingAnalysisResult,System.Double,System.Double)
+  parent: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  langs:
+  - csharp
+  - vb
+  name: DetermineCeilingHeight(Space, CeilingAnalysisResult, double, double)
+  nameWithType: MbRevitSpaceOldRepoUtils.DetermineCeilingHeight(Space, CeilingAnalysisResult, double, double)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.DetermineCeilingHeight(Autodesk.Revit.DB.Mechanical.Space, MBF.Revit.Data.Models.CeilingAnalysisResult, double, double)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Determines ceiling height for a space based on ceiling analysis
+  example: []
+  syntax:
+    content: public static MbResult<double> DetermineCeilingHeight(Space space, CeilingAnalysisResult ceilingAnalysis, double minAboveFloorElevation = 0, double exposedSprinklerOffset = 0)
+    parameters:
+    - id: space
+      type: Autodesk.Revit.DB.Mechanical.Space
+    - id: ceilingAnalysis
+      type: MBF.Revit.Data.Models.CeilingAnalysisResult
+    - id: minAboveFloorElevation
+      type: System.Double
+    - id: exposedSprinklerOffset
+      type: System.Double
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.Double}
+    content.vb: Public Shared Function DetermineCeilingHeight(space As Space, ceilingAnalysis As CeilingAnalysisResult, minAboveFloorElevation As Double = 0, exposedSprinklerOffset As Double = 0) As MbResult(Of Double)
+  overload: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.DetermineCeilingHeight*
+  nameWithType.vb: MbRevitSpaceOldRepoUtils.DetermineCeilingHeight(Space, CeilingAnalysisResult, Double, Double)
+  fullName.vb: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.DetermineCeilingHeight(Autodesk.Revit.DB.Mechanical.Space, MBF.Revit.Data.Models.CeilingAnalysisResult, Double, Double)
+  name.vb: DetermineCeilingHeight(Space, CeilingAnalysisResult, Double, Double)
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ProcessStructuralBeams(System.Collections.Generic.List{System.Tuple{Autodesk.Revit.DB.Line,System.Double,System.Double}},System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},System.Double)
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ProcessStructuralBeams(System.Collections.Generic.List{System.Tuple{Autodesk.Revit.DB.Line,System.Double,System.Double}},System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},System.Double)
+  id: ProcessStructuralBeams(System.Collections.Generic.List{System.Tuple{Autodesk.Revit.DB.Line,System.Double,System.Double}},System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},System.Double)
+  parent: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  langs:
+  - csharp
+  - vb
+  name: ProcessStructuralBeams(List<Tuple<Line, double, double>>, List<XYZ>, double)
+  nameWithType: MbRevitSpaceOldRepoUtils.ProcessStructuralBeams(List<Tuple<Line, double, double>>, List<XYZ>, double)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ProcessStructuralBeams(System.Collections.Generic.List<System.Tuple<Autodesk.Revit.DB.Line, double, double>>, System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>, double)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Processes and filters structural beams for grid calculations
+  example: []
+  syntax:
+    content: public static MbResult<BeamProcessingResult> ProcessStructuralBeams(List<Tuple<Line, double, double>> beamCenterLines, List<XYZ> spaceBoundaryPoints, double ceilingHeight)
+    parameters:
+    - id: beamCenterLines
+      type: System.Collections.Generic.List{System.Tuple{Autodesk.Revit.DB.Line,System.Double,System.Double}}
+    - id: spaceBoundaryPoints
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.XYZ}
+    - id: ceilingHeight
+      type: System.Double
+    return:
+      type: MB.Common.Utils.Result.MbResult{MBF.Revit.Data.Models.BeamProcessingResult}
+    content.vb: Public Shared Function ProcessStructuralBeams(beamCenterLines As List(Of Tuple(Of Line, Double, Double)), spaceBoundaryPoints As List(Of XYZ), ceilingHeight As Double) As MbResult(Of BeamProcessingResult)
+  overload: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ProcessStructuralBeams*
+  nameWithType.vb: MbRevitSpaceOldRepoUtils.ProcessStructuralBeams(List(Of Tuple(Of Line, Double, Double)), List(Of XYZ), Double)
+  fullName.vb: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ProcessStructuralBeams(System.Collections.Generic.List(Of System.Tuple(Of Autodesk.Revit.DB.Line, Double, Double)), System.Collections.Generic.List(Of Autodesk.Revit.DB.XYZ), Double)
+  name.vb: ProcessStructuralBeams(List(Of Tuple(Of Line, Double, Double)), List(Of XYZ), Double)
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CheckPointClashWithServices(Autodesk.Revit.DB.XYZ,System.Collections.Generic.List{Autodesk.Revit.DB.Element},Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)
+  commentId: M:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CheckPointClashWithServices(Autodesk.Revit.DB.XYZ,System.Collections.Generic.List{Autodesk.Revit.DB.Element},Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)
+  id: CheckPointClashWithServices(Autodesk.Revit.DB.XYZ,System.Collections.Generic.List{Autodesk.Revit.DB.Element},Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Document)
+  parent: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils
+  langs:
+  - csharp
+  - vb
+  name: CheckPointClashWithServices(XYZ, List<Element>, RevitLinkInstance, Document)
+  nameWithType: MbRevitSpaceOldRepoUtils.CheckPointClashWithServices(XYZ, List<Element>, RevitLinkInstance, Document)
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CheckPointClashWithServices(Autodesk.Revit.DB.XYZ, System.Collections.Generic.List<Autodesk.Revit.DB.Element>, Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Document)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Utils/MbRevitSpaceOldRepoUtils.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Utils
+  summary: Checks for clashes between a point and service elements
+  example: []
+  syntax:
+    content: public static MbResult<bool> CheckPointClashWithServices(XYZ gridPoint, List<Element> serviceElements, RevitLinkInstance linkInstance, Document document)
+    parameters:
+    - id: gridPoint
+      type: Autodesk.Revit.DB.XYZ
+    - id: serviceElements
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Element}
+    - id: linkInstance
+      type: Autodesk.Revit.DB.RevitLinkInstance
+    - id: document
+      type: Autodesk.Revit.DB.Document
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.Boolean}
+    content.vb: Public Shared Function CheckPointClashWithServices(gridPoint As XYZ, serviceElements As List(Of Element), linkInstance As RevitLinkInstance, document As Document) As MbResult(Of Boolean)
+  overload: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CheckPointClashWithServices*
+  nameWithType.vb: MbRevitSpaceOldRepoUtils.CheckPointClashWithServices(XYZ, List(Of Element), RevitLinkInstance, Document)
+  fullName.vb: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CheckPointClashWithServices(Autodesk.Revit.DB.XYZ, System.Collections.Generic.List(Of Autodesk.Revit.DB.Element), Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Document)
+  name.vb: CheckPointClashWithServices(XYZ, List(Of Element), RevitLinkInstance, Document)
+references:
+- uid: MBF.Revit.Data.Utils
+  commentId: N:MBF.Revit.Data.Utils
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Data.Utils
+  nameWithType: MBF.Revit.Data.Utils
+  fullName: MBF.Revit.Data.Utils
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Utils
+    name: Utils
+    isExternal: true
+    href: MBF.Revit.Data.Utils.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Utils
+    name: Utils
+    isExternal: true
+    href: MBF.Revit.Data.Utils.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.BuiltInCategory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<BuiltInCategory>
+  nameWithType: List<BuiltInCategory>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.BuiltInCategory>
+  nameWithType.vb: List(Of BuiltInCategory)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.BuiltInCategory)
+  name.vb: List(Of BuiltInCategory)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.BuiltInCategory
+    name: BuiltInCategory
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.BuiltInCategory
+    name: BuiltInCategory
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom*
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_CreateSpaceFromRoom_Autodesk_Revit_DB_Architecture_Room_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_Document_
+  name: CreateSpaceFromRoom
+  nameWithType: MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CreateSpaceFromRoom
+- uid: Autodesk.Revit.DB.Architecture.Room
+  commentId: '!:Autodesk.Revit.DB.Architecture.Room'
+  isExternal: true
+  name: Room
+  nameWithType: Room
+  fullName: Autodesk.Revit.DB.Architecture.Room
+- uid: Autodesk.Revit.DB.RevitLinkInstance
+  commentId: T:Autodesk.Revit.DB.RevitLinkInstance
+  isExternal: true
+  name: RevitLinkInstance
+  nameWithType: RevitLinkInstance
+  fullName: Autodesk.Revit.DB.RevitLinkInstance
+- uid: Autodesk.Revit.DB.Document
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
+- uid: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Mechanical.Space}
+  commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.Mechanical.Space}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  name: MbResult<Space>
+  nameWithType: MbResult<Space>
+  fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.Mechanical.Space>
+  nameWithType.vb: MbResult(Of Space)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of Autodesk.Revit.DB.Mechanical.Space)
+  name.vb: MbResult(Of Space)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: Autodesk.Revit.DB.Mechanical.Space
+    name: Space
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Mechanical.Space
+    name: Space
+    isExternal: true
+  - name: )
+- uid: MB.Common.Utils.Result.MbResult`1
+  commentId: T:MB.Common.Utils.Result.MbResult`1
+  parent: MB.Common.Utils.Result
+  isExternal: true
+  href: MB.Common.Utils.Result.MbResult-1.html
+  name: MbResult<T>
+  nameWithType: MbResult<T>
+  fullName: MB.Common.Utils.Result.MbResult<T>
+  nameWithType.vb: MbResult(Of T)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of T)
+  name.vb: MbResult(Of T)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MB.Common.Utils.Result
+  commentId: N:MB.Common.Utils.Result
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Utils.Result
+  nameWithType: MB.Common.Utils.Result
+  fullName: MB.Common.Utils.Result
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint*
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetSpaceCenterPoint_Autodesk_Revit_DB_Mechanical_Space_
+  name: GetSpaceCenterPoint
+  nameWithType: MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceCenterPoint
+- uid: Autodesk.Revit.DB.Mechanical.Space
+  commentId: T:Autodesk.Revit.DB.Mechanical.Space
+  isExternal: true
+  name: Space
+  nameWithType: Space
+  fullName: Autodesk.Revit.DB.Mechanical.Space
+- uid: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.XYZ}
+  commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.XYZ}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  name: MbResult<XYZ>
+  nameWithType: MbResult<XYZ>
+  fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.XYZ>
+  nameWithType.vb: MbResult(Of XYZ)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of Autodesk.Revit.DB.XYZ)
+  name.vb: MbResult(Of XYZ)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: )
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.UpdateSpaceHeight*
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.UpdateSpaceHeight
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_UpdateSpaceHeight_Autodesk_Revit_DB_Mechanical_Space_System_Double_Autodesk_Revit_DB_Document_
+  name: UpdateSpaceHeight
+  nameWithType: MbRevitSpaceOldRepoUtils.UpdateSpaceHeight
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.UpdateSpaceHeight
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MB.Common.Utils.Result.MbResult{System.Boolean}
+  commentId: T:MB.Common.Utils.Result.MbResult{System.Boolean}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: MB.Common.Utils.Result.MbResult-1.html
+  name: MbResult<bool>
+  nameWithType: MbResult<bool>
+  fullName: MB.Common.Utils.Result.MbResult<bool>
+  nameWithType.vb: MbResult(Of Boolean)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of Boolean)
+  name.vb: MbResult(Of Boolean)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments*
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetSpaceBoundarySegments_Autodesk_Revit_DB_Mechanical_Space_
+  name: GetSpaceBoundarySegments
+  nameWithType: MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundarySegments
+- uid: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{System.Collections.Generic.List{Autodesk.Revit.DB.Curve}}}
+  commentId: T:MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{System.Collections.Generic.List{Autodesk.Revit.DB.Curve}}}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: MbResult<List<List<Curve>>>
+  nameWithType: MbResult<List<List<Curve>>>
+  fullName: MB.Common.Utils.Result.MbResult<System.Collections.Generic.List<System.Collections.Generic.List<Autodesk.Revit.DB.Curve>>>
+  nameWithType.vb: MbResult(Of List(Of List(Of Curve)))
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of System.Collections.Generic.List(Of System.Collections.Generic.List(Of Autodesk.Revit.DB.Curve)))
+  name.vb: MbResult(Of List(Of List(Of Curve)))
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Curve
+    name: Curve
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Curve
+    name: Curve
+    isExternal: true
+  - name: )
+  - name: )
+  - name: )
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints*
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetSpaceBoundaryPoints_Autodesk_Revit_DB_Mechanical_Space_
+  name: GetSpaceBoundaryPoints
+  nameWithType: MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetSpaceBoundaryPoints
+- uid: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.XYZ}}
+  commentId: T:MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{Autodesk.Revit.DB.XYZ}}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: MbResult<List<XYZ>>
+  nameWithType: MbResult<List<XYZ>>
+  fullName: MB.Common.Utils.Result.MbResult<System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>>
+  nameWithType.vb: MbResult(Of List(Of XYZ))
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of System.Collections.Generic.List(Of Autodesk.Revit.DB.XYZ))
+  name.vb: MbResult(Of List(Of XYZ))
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: )
+  - name: )
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CalculatePolygonArea*
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CalculatePolygonArea
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_CalculatePolygonArea_System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__
+  name: CalculatePolygonArea
+  nameWithType: MbRevitSpaceOldRepoUtils.CalculatePolygonArea
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CalculatePolygonArea
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.XYZ}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.XYZ}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<XYZ>
+  nameWithType: List<XYZ>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>
+  nameWithType.vb: List(Of XYZ)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.XYZ)
+  name.vb: List(Of XYZ)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: )
+- uid: MB.Common.Utils.Result.MbResult{System.Double}
+  commentId: T:MB.Common.Utils.Result.MbResult{System.Double}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: MbResult<double>
+  nameWithType: MbResult<double>
+  fullName: MB.Common.Utils.Result.MbResult<double>
+  nameWithType.vb: MbResult(Of Double)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of Double)
+  name.vb: MbResult(Of Double)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInSpace*
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInSpace
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_IsPointInSpace_Autodesk_Revit_DB_Mechanical_Space_Autodesk_Revit_DB_XYZ_
+  name: IsPointInSpace
+  nameWithType: MbRevitSpaceOldRepoUtils.IsPointInSpace
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInSpace
+- uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
+  isExternal: true
+  name: XYZ
+  nameWithType: XYZ
+  fullName: Autodesk.Revit.DB.XYZ
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInPolygon*
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInPolygon
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_IsPointInPolygon_System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__Autodesk_Revit_DB_XYZ_
+  name: IsPointInPolygon
+  nameWithType: MbRevitSpaceOldRepoUtils.IsPointInPolygon
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.IsPointInPolygon
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.AnalyzeCeilings*
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.AnalyzeCeilings
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_AnalyzeCeilings_System_Collections_Generic_List_Autodesk_Revit_DB_Ceiling__Autodesk_Revit_DB_RevitLinkInstance_
+  name: AnalyzeCeilings
+  nameWithType: MbRevitSpaceOldRepoUtils.AnalyzeCeilings
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.AnalyzeCeilings
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.Ceiling}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Ceiling>
+  nameWithType: List<Ceiling>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.Ceiling>
+  nameWithType.vb: List(Of Ceiling)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.Ceiling)
+  name.vb: List(Of Ceiling)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Ceiling
+    name: Ceiling
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Ceiling
+    name: Ceiling
+    isExternal: true
+  - name: )
+- uid: MB.Common.Utils.Result.MbResult{MBF.Revit.Data.Models.CeilingAnalysisResult}
+  commentId: T:MB.Common.Utils.Result.MbResult{MBF.Revit.Data.Models.CeilingAnalysisResult}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: MBF.Revit.Data.Models.CeilingAnalysisResult.html
+  name: MbResult<CeilingAnalysisResult>
+  nameWithType: MbResult<CeilingAnalysisResult>
+  fullName: MB.Common.Utils.Result.MbResult<MBF.Revit.Data.Models.CeilingAnalysisResult>
+  nameWithType.vb: MbResult(Of CeilingAnalysisResult)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of MBF.Revit.Data.Models.CeilingAnalysisResult)
+  name.vb: MbResult(Of CeilingAnalysisResult)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: MBF.Revit.Data.Models.CeilingAnalysisResult
+    name: CeilingAnalysisResult
+    isExternal: true
+    href: MBF.Revit.Data.Models.CeilingAnalysisResult.html
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MBF.Revit.Data.Models.CeilingAnalysisResult
+    name: CeilingAnalysisResult
+    isExternal: true
+    href: MBF.Revit.Data.Models.CeilingAnalysisResult.html
+  - name: )
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetCeilingData*
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetCeilingData
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_GetCeilingData_Autodesk_Revit_DB_Ceiling_Autodesk_Revit_DB_Document_
+  name: GetCeilingData
+  nameWithType: MbRevitSpaceOldRepoUtils.GetCeilingData
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.GetCeilingData
+- uid: Autodesk.Revit.DB.Ceiling
+  isExternal: true
+  name: Ceiling
+  nameWithType: Ceiling
+  fullName: Autodesk.Revit.DB.Ceiling
+- uid: MB.Common.Utils.Result.MbResult{MBF.Revit.Data.Models.CeilingData}
+  commentId: T:MB.Common.Utils.Result.MbResult{MBF.Revit.Data.Models.CeilingData}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: MBF.Revit.Data.Models.CeilingData.html
+  name: MbResult<CeilingData>
+  nameWithType: MbResult<CeilingData>
+  fullName: MB.Common.Utils.Result.MbResult<MBF.Revit.Data.Models.CeilingData>
+  nameWithType.vb: MbResult(Of CeilingData)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of MBF.Revit.Data.Models.CeilingData)
+  name.vb: MbResult(Of CeilingData)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: MBF.Revit.Data.Models.CeilingData
+    name: CeilingData
+    isExternal: true
+    href: MBF.Revit.Data.Models.CeilingData.html
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MBF.Revit.Data.Models.CeilingData
+    name: CeilingData
+    isExternal: true
+    href: MBF.Revit.Data.Models.CeilingData.html
+  - name: )
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.DetermineCeilingHeight*
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.DetermineCeilingHeight
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_DetermineCeilingHeight_Autodesk_Revit_DB_Mechanical_Space_MBF_Revit_Data_Models_CeilingAnalysisResult_System_Double_System_Double_
+  name: DetermineCeilingHeight
+  nameWithType: MbRevitSpaceOldRepoUtils.DetermineCeilingHeight
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.DetermineCeilingHeight
+- uid: MBF.Revit.Data.Models.CeilingAnalysisResult
+  commentId: T:MBF.Revit.Data.Models.CeilingAnalysisResult
+  parent: MBF.Revit.Data.Models
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingAnalysisResult.html
+  name: CeilingAnalysisResult
+  nameWithType: CeilingAnalysisResult
+  fullName: MBF.Revit.Data.Models.CeilingAnalysisResult
+- uid: MBF.Revit.Data.Models
+  commentId: N:MBF.Revit.Data.Models
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Data.Models
+  nameWithType: MBF.Revit.Data.Models
+  fullName: MBF.Revit.Data.Models
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Data.Models.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Data.Models.html
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ProcessStructuralBeams*
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ProcessStructuralBeams
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_ProcessStructuralBeams_System_Collections_Generic_List_System_Tuple_Autodesk_Revit_DB_Line_System_Double_System_Double___System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__System_Double_
+  name: ProcessStructuralBeams
+  nameWithType: MbRevitSpaceOldRepoUtils.ProcessStructuralBeams
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.ProcessStructuralBeams
+- uid: System.Collections.Generic.List{System.Tuple{Autodesk.Revit.DB.Line,System.Double,System.Double}}
+  commentId: T:System.Collections.Generic.List{System.Tuple{Autodesk.Revit.DB.Line,System.Double,System.Double}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Tuple<Line, double, double>>
+  nameWithType: List<Tuple<Line, double, double>>
+  fullName: System.Collections.Generic.List<System.Tuple<Autodesk.Revit.DB.Line, double, double>>
+  nameWithType.vb: List(Of Tuple(Of Line, Double, Double))
+  fullName.vb: System.Collections.Generic.List(Of System.Tuple(Of Autodesk.Revit.DB.Line, Double, Double))
+  name.vb: List(Of Tuple(Of Line, Double, Double))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Tuple`3
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-3
+  - name: <
+  - uid: Autodesk.Revit.DB.Line
+    name: Line
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Tuple`3
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Line
+    name: Line
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  - name: )
+- uid: MB.Common.Utils.Result.MbResult{MBF.Revit.Data.Models.BeamProcessingResult}
+  commentId: T:MB.Common.Utils.Result.MbResult{MBF.Revit.Data.Models.BeamProcessingResult}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: MBF.Revit.Data.Models.BeamProcessingResult.html
+  name: MbResult<BeamProcessingResult>
+  nameWithType: MbResult<BeamProcessingResult>
+  fullName: MB.Common.Utils.Result.MbResult<MBF.Revit.Data.Models.BeamProcessingResult>
+  nameWithType.vb: MbResult(Of BeamProcessingResult)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of MBF.Revit.Data.Models.BeamProcessingResult)
+  name.vb: MbResult(Of BeamProcessingResult)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: MBF.Revit.Data.Models.BeamProcessingResult
+    name: BeamProcessingResult
+    isExternal: true
+    href: MBF.Revit.Data.Models.BeamProcessingResult.html
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MBF.Revit.Data.Models.BeamProcessingResult
+    name: BeamProcessingResult
+    isExternal: true
+    href: MBF.Revit.Data.Models.BeamProcessingResult.html
+  - name: )
+- uid: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CheckPointClashWithServices*
+  commentId: Overload:MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CheckPointClashWithServices
+  isExternal: true
+  href: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.html#MBF_Revit_Data_Utils_MbRevitSpaceOldRepoUtils_CheckPointClashWithServices_Autodesk_Revit_DB_XYZ_System_Collections_Generic_List_Autodesk_Revit_DB_Element__Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_Document_
+  name: CheckPointClashWithServices
+  nameWithType: MbRevitSpaceOldRepoUtils.CheckPointClashWithServices
+  fullName: MBF.Revit.Data.Utils.MbRevitSpaceOldRepoUtils.CheckPointClashWithServices
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.Element}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.Element}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Element>
+  nameWithType: List<Element>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.Element>
+  nameWithType.vb: List(Of Element)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.Element)
+  name.vb: List(Of Element)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: )
+shouldSkipMarkup: true

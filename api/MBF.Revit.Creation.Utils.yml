@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Creation.Utils
+  commentId: N:MBF.Revit.Creation.Utils
+  id: MBF.Revit.Creation.Utils
+  children:
+  - MBF.Revit.Creation.Utils.MbDimensionUtils
+  langs:
+  - csharp
+  - vb
+  name: MBF.Revit.Creation.Utils
+  nameWithType: MBF.Revit.Creation.Utils
+  fullName: MBF.Revit.Creation.Utils
+  type: Namespace
+  assemblies:
+  - MBF.Revit.Creation
+references:
+- uid: MBF.Revit.Creation.Utils.MbDimensionUtils
+  commentId: T:MBF.Revit.Creation.Utils.MbDimensionUtils
+  isExternal: true
+  href: MBF.Revit.Creation.Utils.MbDimensionUtils.html
+  name: MbDimensionUtils
+  nameWithType: MbDimensionUtils
+  fullName: MBF.Revit.Creation.Utils.MbDimensionUtils
+shouldSkipMarkup: true

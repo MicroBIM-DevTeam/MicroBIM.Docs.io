@@ -1,0 +1,1127 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid
+  commentId: T:MBF.Revit.Data.Models.CeilingFaceGrid
+  id: CeilingFaceGrid
+  parent: MBF.Revit.Data.Models
+  children:
+  - MBF.Revit.Data.Models.CeilingFaceGrid.Create(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Mechanical.Space,CeilingFaceGridParameters,System.Double,System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},System.Double)
+  - MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPoint(System.Int32,System.Int32)
+  - MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPointDescription(System.Int32,System.Int32)
+  - MBF.Revit.Data.Models.CeilingFaceGrid.GetValidGridPoints
+  - MBF.Revit.Data.Models.CeilingFaceGrid.MaxDimensionLines
+  - MBF.Revit.Data.Models.CeilingFaceGrid.MinDimensionLines
+  - MBF.Revit.Data.Models.CeilingFaceGrid.ValidateGrid
+  langs:
+  - csharp
+  - vb
+  name: CeilingFaceGrid
+  nameWithType: CeilingFaceGrid
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingFaceGrid.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Represents a grid system for placing sprinklers on ceiling faces
+  example: []
+  syntax:
+    content: public class CeilingFaceGrid
+    content.vb: Public Class CeilingFaceGrid
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.Create(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Mechanical.Space,CeilingFaceGridParameters,System.Double,System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},System.Double)
+  commentId: M:MBF.Revit.Data.Models.CeilingFaceGrid.Create(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Mechanical.Space,CeilingFaceGridParameters,System.Double,System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},System.Double)
+  id: Create(Autodesk.Revit.DB.Ceiling,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.RevitLinkInstance,Autodesk.Revit.DB.Mechanical.Space,CeilingFaceGridParameters,System.Double,System.Collections.Generic.List{Autodesk.Revit.DB.XYZ},System.Double)
+  parent: MBF.Revit.Data.Models.CeilingFaceGrid
+  langs:
+  - csharp
+  - vb
+  name: Create(Ceiling, Document, RevitLinkInstance, Space, CeilingFaceGridParameters, double, List<XYZ>, double)
+  nameWithType: CeilingFaceGrid.Create(Ceiling, Document, RevitLinkInstance, Space, CeilingFaceGridParameters, double, List<XYZ>, double)
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.Create(Autodesk.Revit.DB.Ceiling, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Mechanical.Space, CeilingFaceGridParameters, double, System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>, double)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingFaceGrid.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: >-
+    Creates a new instance of <xref href="MBF.Revit.Data.Models.CeilingFaceGrid" data-throw-if-not-resolved="false"></xref> based on the specified ceiling, space, and
+
+    parameters.
+  remarks: >-
+    This method validates the input parameters, configures the grid based on the ceiling
+                and space, and generates the grid using the specified offset. If any step in the process fails, the method
+                returns a failure result with an appropriate error message.
+  example: []
+  syntax:
+    content: public static MbResult<CeilingFaceGrid> Create(Ceiling ceiling, Document document, RevitLinkInstance architecturalLink, Space space, CeilingFaceGridParameters parameters, double ceilingHeight, List<XYZ> spacePolygonCorners, double regularOffsetFeet)
+    parameters:
+    - id: ceiling
+      type: Autodesk.Revit.DB.Ceiling
+      description: The ceiling element for which the grid is being created. Cannot be null.
+    - id: document
+      type: Autodesk.Revit.DB.Document
+      description: The Revit document containing the ceiling and related elements. Cannot be null.
+    - id: architecturalLink
+      type: Autodesk.Revit.DB.RevitLinkInstance
+      description: The Revit link instance representing the architectural model. Cannot be null.
+    - id: space
+      type: Autodesk.Revit.DB.Mechanical.Space
+      description: The space in which the ceiling resides. Cannot be null.
+    - id: parameters
+      type: CeilingFaceGridParameters
+      description: The parameters that define the grid's configuration. Cannot be null.
+    - id: ceilingHeight
+      type: System.Double
+      description: The height of the ceiling in feet. Must be a positive value.
+    - id: spacePolygonCorners
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.XYZ}
+      description: The list of corner points defining the polygonal boundary of the space. Cannot be null or empty.
+    - id: regularOffsetFeet
+      type: System.Double
+      description: The regular offset, in feet, used for grid generation. Must be a positive value.
+    return:
+      type: MB.Common.Utils.Result.MbResult{MBF.Revit.Data.Models.CeilingFaceGrid}
+      description: >-
+        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing the created <xref href="MBF.Revit.Data.Models.CeilingFaceGrid" data-throw-if-not-resolved="false"></xref> if the operation succeeds;
+                    otherwise, an error message describing the failure.
+    content.vb: Public Shared Function Create(ceiling As Ceiling, document As Document, architecturalLink As RevitLinkInstance, space As Space, parameters As CeilingFaceGridParameters, ceilingHeight As Double, spacePolygonCorners As List(Of XYZ), regularOffsetFeet As Double) As MbResult(Of CeilingFaceGrid)
+  overload: MBF.Revit.Data.Models.CeilingFaceGrid.Create*
+  nameWithType.vb: CeilingFaceGrid.Create(Ceiling, Document, RevitLinkInstance, Space, CeilingFaceGridParameters, Double, List(Of XYZ), Double)
+  fullName.vb: MBF.Revit.Data.Models.CeilingFaceGrid.Create(Autodesk.Revit.DB.Ceiling, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.RevitLinkInstance, Autodesk.Revit.DB.Mechanical.Space, CeilingFaceGridParameters, Double, System.Collections.Generic.List(Of Autodesk.Revit.DB.XYZ), Double)
+  name.vb: Create(Ceiling, Document, RevitLinkInstance, Space, CeilingFaceGridParameters, Double, List(Of XYZ), Double)
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPoint(System.Int32,System.Int32)
+  commentId: M:MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPoint(System.Int32,System.Int32)
+  id: GetGridPoint(System.Int32,System.Int32)
+  parent: MBF.Revit.Data.Models.CeilingFaceGrid
+  langs:
+  - csharp
+  - vb
+  name: GetGridPoint(int, int)
+  nameWithType: CeilingFaceGrid.GetGridPoint(int, int)
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPoint(int, int)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingFaceGrid.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Retrieves a grid point from the collection based on the specified indices.
+  remarks: >-
+    This method validates the indices and checks whether the grid point is initialized
+                and valid. If the indices are invalid or the grid point is not initialized, the method returns a failure
+                result.
+  example: []
+  syntax:
+    content: public MbResult<XYZ> GetGridPoint(int maxIndex, int minIndex)
+    parameters:
+    - id: maxIndex
+      type: System.Int32
+      description: The maximum index of the grid point to retrieve. Must be a valid index within the grid.
+    - id: minIndex
+      type: System.Int32
+      description: The minimum index of the grid point to retrieve. Must be a valid index within the grid.
+    return:
+      type: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.XYZ}
+      description: >-
+        A <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing the grid point as an <xref href="Autodesk.Revit.DB.XYZ" data-throw-if-not-resolved="false"></xref> object if the operation is
+                    successful; otherwise, a failure result with an error message.
+    content.vb: Public Function GetGridPoint(maxIndex As Integer, minIndex As Integer) As MbResult(Of XYZ)
+  overload: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPoint*
+  nameWithType.vb: CeilingFaceGrid.GetGridPoint(Integer, Integer)
+  fullName.vb: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPoint(Integer, Integer)
+  name.vb: GetGridPoint(Integer, Integer)
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPointDescription(System.Int32,System.Int32)
+  commentId: M:MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPointDescription(System.Int32,System.Int32)
+  id: GetGridPointDescription(System.Int32,System.Int32)
+  parent: MBF.Revit.Data.Models.CeilingFaceGrid
+  langs:
+  - csharp
+  - vb
+  name: GetGridPointDescription(int, int)
+  nameWithType: CeilingFaceGrid.GetGridPointDescription(int, int)
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPointDescription(int, int)
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingFaceGrid.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Retrieves the description of a grid point based on the specified indices.
+  remarks: >-
+    If the grid point description is null, an empty string is returned as the
+                description.
+  example: []
+  syntax:
+    content: public MbResult<string> GetGridPointDescription(int maxIndex, int minIndex)
+    parameters:
+    - id: maxIndex
+      type: System.Int32
+      description: The maximum index of the grid point. Must be a valid index within the grid's bounds.
+    - id: minIndex
+      type: System.Int32
+      description: The minimum index of the grid point. Must be a valid index within the grid's bounds.
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.String}
+      description: >-
+        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing the description of the grid point if the indices are valid and the grid
+                    is initialized; otherwise, a failure result with an appropriate error message.
+    content.vb: Public Function GetGridPointDescription(maxIndex As Integer, minIndex As Integer) As MbResult(Of String)
+  overload: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPointDescription*
+  nameWithType.vb: CeilingFaceGrid.GetGridPointDescription(Integer, Integer)
+  fullName.vb: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPointDescription(Integer, Integer)
+  name.vb: GetGridPointDescription(Integer, Integer)
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.GetValidGridPoints
+  commentId: M:MBF.Revit.Data.Models.CeilingFaceGrid.GetValidGridPoints
+  id: GetValidGridPoints
+  parent: MBF.Revit.Data.Models.CeilingFaceGrid
+  langs:
+  - csharp
+  - vb
+  name: GetValidGridPoints()
+  nameWithType: CeilingFaceGrid.GetValidGridPoints()
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.GetValidGridPoints()
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingFaceGrid.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Retrieves a list of valid grid points from the current grid.
+  remarks: >-
+    A grid point is considered valid if its Z-coordinate does not match the invalid
+                Z-coordinate value specified in the grid parameters. If the grid is not initialized, the method returns a
+                failure result.
+  example: []
+  syntax:
+    content: public MbResult<List<GridPointInfo>> GetValidGridPoints()
+    return:
+      type: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{MBF.Revit.Data.Models.GridPointInfo}}
+      description: >-
+        A <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing a list of <xref href="MBF.Revit.Data.Models.GridPointInfo" data-throw-if-not-resolved="false"></xref> objects representing the valid
+                    grid points. If the grid is not initialized, the result is a failure with an appropriate error message.
+    content.vb: Public Function GetValidGridPoints() As MbResult(Of List(Of GridPointInfo))
+  overload: MBF.Revit.Data.Models.CeilingFaceGrid.GetValidGridPoints*
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.ValidateGrid
+  commentId: M:MBF.Revit.Data.Models.CeilingFaceGrid.ValidateGrid
+  id: ValidateGrid
+  parent: MBF.Revit.Data.Models.CeilingFaceGrid
+  langs:
+  - csharp
+  - vb
+  name: ValidateGrid()
+  nameWithType: CeilingFaceGrid.ValidateGrid()
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.ValidateGrid()
+  type: Method
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingFaceGrid.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Validates the current grid and returns a detailed validation result.
+  remarks: >-
+    This method evaluates the grid's validity based on its initialization state, the number of
+                valid grid points, and the percentage of valid points relative to the total points. If the grid is not
+                initialized or contains no valid points, the validation will fail. A warning is included if the percentage of
+                valid points falls below a predefined threshold.
+  example: []
+  syntax:
+    content: public MbResult<GridValidationResult> ValidateGrid()
+    return:
+      type: MB.Common.Utils.Result.MbResult{MBF.Revit.Data.Models.GridValidationResult}
+      description: >-
+        An <xref href="MB.Common.Utils.Result.MbResult%601" data-throw-if-not-resolved="false"></xref> containing a <xref href="MBF.Revit.Data.Models.GridValidationResult" data-throw-if-not-resolved="false"></xref> object that provides details about
+                    the validation, including the total number of points, valid points, invalid points, the percentage of valid
+                    points, and any error or warning messages.
+    content.vb: Public Function ValidateGrid() As MbResult(Of GridValidationResult)
+  overload: MBF.Revit.Data.Models.CeilingFaceGrid.ValidateGrid*
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.MaxDimensionLines
+  commentId: P:MBF.Revit.Data.Models.CeilingFaceGrid.MaxDimensionLines
+  id: MaxDimensionLines
+  parent: MBF.Revit.Data.Models.CeilingFaceGrid
+  langs:
+  - csharp
+  - vb
+  name: MaxDimensionLines
+  nameWithType: CeilingFaceGrid.MaxDimensionLines
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.MaxDimensionLines
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingFaceGrid.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Gets a read-only collection of grid lines representing the maximum dimensions of the grid.
+  remarks: >-
+    The returned collection is immutable and reflects the maximum dimension lines as
+                defined by the grid's configuration.
+  example: []
+  syntax:
+    content: public IReadOnlyList<GridLine> MaxDimensionLines { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{MBF.Revit.Data.Models.GridLine}
+    content.vb: Public ReadOnly Property MaxDimensionLines As IReadOnlyList(Of GridLine)
+  overload: MBF.Revit.Data.Models.CeilingFaceGrid.MaxDimensionLines*
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.MinDimensionLines
+  commentId: P:MBF.Revit.Data.Models.CeilingFaceGrid.MinDimensionLines
+  id: MinDimensionLines
+  parent: MBF.Revit.Data.Models.CeilingFaceGrid
+  langs:
+  - csharp
+  - vb
+  name: MinDimensionLines
+  nameWithType: CeilingFaceGrid.MinDimensionLines
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.MinDimensionLines
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/CeilingFaceGrid.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Gets a read-only list of grid lines representing the minimum dimensions of the grid.
+  example: []
+  syntax:
+    content: public IReadOnlyList<GridLine> MinDimensionLines { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{MBF.Revit.Data.Models.GridLine}
+    content.vb: Public ReadOnly Property MinDimensionLines As IReadOnlyList(Of GridLine)
+  overload: MBF.Revit.Data.Models.CeilingFaceGrid.MinDimensionLines*
+references:
+- uid: MBF.Revit.Data.Models
+  commentId: N:MBF.Revit.Data.Models
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Data.Models
+  nameWithType: MBF.Revit.Data.Models
+  fullName: MBF.Revit.Data.Models
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Data.Models.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Data.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid
+  commentId: T:MBF.Revit.Data.Models.CeilingFaceGrid
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingFaceGrid.html
+  name: CeilingFaceGrid
+  nameWithType: CeilingFaceGrid
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid
+- uid: MB.Common.Utils.Result.MbResult`1
+  commentId: T:MB.Common.Utils.Result.MbResult`1
+  parent: MB.Common.Utils.Result
+  isExternal: true
+  href: MB.Common.Utils.Result.MbResult-1.html
+  name: MbResult<T>
+  nameWithType: MbResult<T>
+  fullName: MB.Common.Utils.Result.MbResult<T>
+  nameWithType.vb: MbResult(Of T)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of T)
+  name.vb: MbResult(Of T)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+    href: MB.Common.Utils.Result.MbResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.Create*
+  commentId: Overload:MBF.Revit.Data.Models.CeilingFaceGrid.Create
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_Create_Autodesk_Revit_DB_Ceiling_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_RevitLinkInstance_Autodesk_Revit_DB_Mechanical_Space_CeilingFaceGridParameters_System_Double_System_Collections_Generic_List_Autodesk_Revit_DB_XYZ__System_Double_
+  name: Create
+  nameWithType: CeilingFaceGrid.Create
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.Create
+- uid: Autodesk.Revit.DB.Ceiling
+  isExternal: true
+  name: Ceiling
+  nameWithType: Ceiling
+  fullName: Autodesk.Revit.DB.Ceiling
+- uid: Autodesk.Revit.DB.Document
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
+- uid: Autodesk.Revit.DB.RevitLinkInstance
+  commentId: T:Autodesk.Revit.DB.RevitLinkInstance
+  isExternal: true
+  name: RevitLinkInstance
+  nameWithType: RevitLinkInstance
+  fullName: Autodesk.Revit.DB.RevitLinkInstance
+- uid: Autodesk.Revit.DB.Mechanical.Space
+  commentId: T:Autodesk.Revit.DB.Mechanical.Space
+  isExternal: true
+  name: Space
+  nameWithType: Space
+  fullName: Autodesk.Revit.DB.Mechanical.Space
+- uid: CeilingFaceGridParameters
+  commentId: T:CeilingFaceGridParameters
+  isExternal: true
+  href: CeilingFaceGridParameters.html
+  name: CeilingFaceGridParameters
+  nameWithType: CeilingFaceGridParameters
+  fullName: CeilingFaceGridParameters
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.XYZ}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.XYZ}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<XYZ>
+  nameWithType: List<XYZ>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>
+  nameWithType.vb: List(Of XYZ)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.XYZ)
+  name.vb: List(Of XYZ)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: )
+- uid: MB.Common.Utils.Result.MbResult{MBF.Revit.Data.Models.CeilingFaceGrid}
+  commentId: T:MB.Common.Utils.Result.MbResult{MBF.Revit.Data.Models.CeilingFaceGrid}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: MBF.Revit.Data.Models.CeilingFaceGrid.html
+  name: MbResult<CeilingFaceGrid>
+  nameWithType: MbResult<CeilingFaceGrid>
+  fullName: MB.Common.Utils.Result.MbResult<MBF.Revit.Data.Models.CeilingFaceGrid>
+  nameWithType.vb: MbResult(Of CeilingFaceGrid)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of MBF.Revit.Data.Models.CeilingFaceGrid)
+  name.vb: MbResult(Of CeilingFaceGrid)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: MBF.Revit.Data.Models.CeilingFaceGrid
+    name: CeilingFaceGrid
+    isExternal: true
+    href: MBF.Revit.Data.Models.CeilingFaceGrid.html
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MBF.Revit.Data.Models.CeilingFaceGrid
+    name: CeilingFaceGrid
+    isExternal: true
+    href: MBF.Revit.Data.Models.CeilingFaceGrid.html
+  - name: )
+- uid: MB.Common.Utils.Result
+  commentId: N:MB.Common.Utils.Result
+  isExternal: true
+  href: MB.html
+  name: MB.Common.Utils.Result
+  nameWithType: MB.Common.Utils.Result
+  fullName: MB.Common.Utils.Result
+  spec.csharp:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+  spec.vb:
+  - uid: MB
+    name: MB
+    isExternal: true
+    href: MB.html
+  - name: .
+  - uid: MB.Common
+    name: Common
+    isExternal: true
+    href: MB.Common.html
+  - name: .
+  - uid: MB.Common.Utils
+    name: Utils
+    isExternal: true
+    href: MB.Common.Utils.html
+  - name: .
+  - uid: MB.Common.Utils.Result
+    name: Result
+    isExternal: true
+    href: MB.Common.Utils.Result.html
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
+  isExternal: true
+  name: XYZ
+  nameWithType: XYZ
+  fullName: Autodesk.Revit.DB.XYZ
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPoint*
+  commentId: Overload:MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPoint
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_GetGridPoint_System_Int32_System_Int32_
+  name: GetGridPoint
+  nameWithType: CeilingFaceGrid.GetGridPoint
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPoint
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.XYZ}
+  commentId: T:MB.Common.Utils.Result.MbResult{Autodesk.Revit.DB.XYZ}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  name: MbResult<XYZ>
+  nameWithType: MbResult<XYZ>
+  fullName: MB.Common.Utils.Result.MbResult<Autodesk.Revit.DB.XYZ>
+  nameWithType.vb: MbResult(Of XYZ)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of Autodesk.Revit.DB.XYZ)
+  name.vb: MbResult(Of XYZ)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: )
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPointDescription*
+  commentId: Overload:MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPointDescription
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_GetGridPointDescription_System_Int32_System_Int32_
+  name: GetGridPointDescription
+  nameWithType: CeilingFaceGrid.GetGridPointDescription
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.GetGridPointDescription
+- uid: MB.Common.Utils.Result.MbResult{System.String}
+  commentId: T:MB.Common.Utils.Result.MbResult{System.String}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: MbResult<string>
+  nameWithType: MbResult<string>
+  fullName: MB.Common.Utils.Result.MbResult<string>
+  nameWithType.vb: MbResult(Of String)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of String)
+  name.vb: MbResult(Of String)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: MBF.Revit.Data.Models.GridPointInfo
+  commentId: T:MBF.Revit.Data.Models.GridPointInfo
+  isExternal: true
+  href: MBF.Revit.Data.Models.GridPointInfo.html
+  name: GridPointInfo
+  nameWithType: GridPointInfo
+  fullName: MBF.Revit.Data.Models.GridPointInfo
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.GetValidGridPoints*
+  commentId: Overload:MBF.Revit.Data.Models.CeilingFaceGrid.GetValidGridPoints
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_GetValidGridPoints
+  name: GetValidGridPoints
+  nameWithType: CeilingFaceGrid.GetValidGridPoints
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.GetValidGridPoints
+- uid: MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{MBF.Revit.Data.Models.GridPointInfo}}
+  commentId: T:MB.Common.Utils.Result.MbResult{System.Collections.Generic.List{MBF.Revit.Data.Models.GridPointInfo}}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: MbResult<List<GridPointInfo>>
+  nameWithType: MbResult<List<GridPointInfo>>
+  fullName: MB.Common.Utils.Result.MbResult<System.Collections.Generic.List<MBF.Revit.Data.Models.GridPointInfo>>
+  nameWithType.vb: MbResult(Of List(Of GridPointInfo))
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of System.Collections.Generic.List(Of MBF.Revit.Data.Models.GridPointInfo))
+  name.vb: MbResult(Of List(Of GridPointInfo))
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MBF.Revit.Data.Models.GridPointInfo
+    name: GridPointInfo
+    isExternal: true
+    href: MBF.Revit.Data.Models.GridPointInfo.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MBF.Revit.Data.Models.GridPointInfo
+    name: GridPointInfo
+    isExternal: true
+    href: MBF.Revit.Data.Models.GridPointInfo.html
+  - name: )
+  - name: )
+- uid: MBF.Revit.Data.Models.GridValidationResult
+  commentId: T:MBF.Revit.Data.Models.GridValidationResult
+  isExternal: true
+  href: MBF.Revit.Data.Models.GridValidationResult.html
+  name: GridValidationResult
+  nameWithType: GridValidationResult
+  fullName: MBF.Revit.Data.Models.GridValidationResult
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.ValidateGrid*
+  commentId: Overload:MBF.Revit.Data.Models.CeilingFaceGrid.ValidateGrid
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_ValidateGrid
+  name: ValidateGrid
+  nameWithType: CeilingFaceGrid.ValidateGrid
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.ValidateGrid
+- uid: MB.Common.Utils.Result.MbResult{MBF.Revit.Data.Models.GridValidationResult}
+  commentId: T:MB.Common.Utils.Result.MbResult{MBF.Revit.Data.Models.GridValidationResult}
+  parent: MB.Common.Utils.Result
+  definition: MB.Common.Utils.Result.MbResult`1
+  href: MBF.Revit.Data.Models.GridValidationResult.html
+  name: MbResult<GridValidationResult>
+  nameWithType: MbResult<GridValidationResult>
+  fullName: MB.Common.Utils.Result.MbResult<MBF.Revit.Data.Models.GridValidationResult>
+  nameWithType.vb: MbResult(Of GridValidationResult)
+  fullName.vb: MB.Common.Utils.Result.MbResult(Of MBF.Revit.Data.Models.GridValidationResult)
+  name.vb: MbResult(Of GridValidationResult)
+  spec.csharp:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: <
+  - uid: MBF.Revit.Data.Models.GridValidationResult
+    name: GridValidationResult
+    isExternal: true
+    href: MBF.Revit.Data.Models.GridValidationResult.html
+  - name: '>'
+  spec.vb:
+  - uid: MB.Common.Utils.Result.MbResult`1
+    name: MbResult
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MBF.Revit.Data.Models.GridValidationResult
+    name: GridValidationResult
+    isExternal: true
+    href: MBF.Revit.Data.Models.GridValidationResult.html
+  - name: )
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.MaxDimensionLines*
+  commentId: Overload:MBF.Revit.Data.Models.CeilingFaceGrid.MaxDimensionLines
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_MaxDimensionLines
+  name: MaxDimensionLines
+  nameWithType: CeilingFaceGrid.MaxDimensionLines
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.MaxDimensionLines
+- uid: System.Collections.Generic.IReadOnlyList{MBF.Revit.Data.Models.GridLine}
+  commentId: T:System.Collections.Generic.IReadOnlyList{MBF.Revit.Data.Models.GridLine}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<GridLine>
+  nameWithType: IReadOnlyList<GridLine>
+  fullName: System.Collections.Generic.IReadOnlyList<MBF.Revit.Data.Models.GridLine>
+  nameWithType.vb: IReadOnlyList(Of GridLine)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of MBF.Revit.Data.Models.GridLine)
+  name.vb: IReadOnlyList(Of GridLine)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: MBF.Revit.Data.Models.GridLine
+    name: GridLine
+    isExternal: true
+    href: MBF.Revit.Data.Models.GridLine.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MBF.Revit.Data.Models.GridLine
+    name: GridLine
+    isExternal: true
+    href: MBF.Revit.Data.Models.GridLine.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MBF.Revit.Data.Models.CeilingFaceGrid.MinDimensionLines*
+  commentId: Overload:MBF.Revit.Data.Models.CeilingFaceGrid.MinDimensionLines
+  isExternal: true
+  href: MBF.Revit.Data.Models.CeilingFaceGrid.html#MBF_Revit_Data_Models_CeilingFaceGrid_MinDimensionLines
+  name: MinDimensionLines
+  nameWithType: CeilingFaceGrid.MinDimensionLines
+  fullName: MBF.Revit.Data.Models.CeilingFaceGrid.MinDimensionLines
+shouldSkipMarkup: true

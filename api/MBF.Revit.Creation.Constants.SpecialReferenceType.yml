@@ -1,0 +1,623 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType
+  commentId: T:MBF.Revit.Creation.Constants.SpecialReferenceType
+  id: SpecialReferenceType
+  parent: MBF.Revit.Creation.Constants
+  children:
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.Back
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.Bottom
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.CenterElevation
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.CenterLeftOrRight
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.CentreFrontOrBack
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.ConnectorPoint
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.Front
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.HorizontalTop
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.Inclined
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.Left
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef1
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef2
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef3
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef4
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef5
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef6
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.Right
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.Top
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack1
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack3
+  - MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack4
+  langs:
+  - csharp
+  - vb
+  name: SpecialReferenceType
+  nameWithType: SpecialReferenceType
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType
+  type: Enum
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Defines a set of reference types that represent various alignment, directional, positional, and layout options.
+  remarks: >-
+    This enumeration provides a comprehensive list of constants that can be used to specify alignment,
+                direction,  layout configurations, or other contextual references in applications. Each value represents a specific 
+                concept, such as alignment (e.g., <xref href="MBF.Revit.Creation.Constants.SpecialReferenceType.Left" data-throw-if-not-resolved="false"></xref>, <xref href="MBF.Revit.Creation.Constants.SpecialReferenceType.Right" data-throw-if-not-resolved="false"></xref>), layout configurations  (e.g., <xref href="MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack1" data-throw-if-not-resolved="false"></xref>, <xref href="MBF.Revit.Creation.Constants.SpecialReferenceType.HorizontalTop" data-throw-if-not-resolved="false"></xref>), or predefined constants  (e.g., <xref href="MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef1" data-throw-if-not-resolved="false"></xref>, <xref href="MBF.Revit.Creation.Constants.SpecialReferenceType.ConnectorPoint" data-throw-if-not-resolved="false"></xref>).
+  example: []
+  syntax:
+    content: public enum SpecialReferenceType
+    content.vb: Public Enum SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.Left
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.Left
+  id: Left
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: SpecialReferenceType.Left
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.Left
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents the left alignment or direction in a layout or operation.
+  example: []
+  syntax:
+    content: Left = 0
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.CenterLeftOrRight
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.CenterLeftOrRight
+  id: CenterLeftOrRight
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: CenterLeftOrRight
+  nameWithType: SpecialReferenceType.CenterLeftOrRight
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.CenterLeftOrRight
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents an alignment option where content is centered horizontally.
+  example: []
+  syntax:
+    content: CenterLeftOrRight = 1
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.Right
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.Right
+  id: Right
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: SpecialReferenceType.Right
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.Right
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents the right direction in a directional enumeration.
+  example: []
+  syntax:
+    content: Right = 2
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.Front
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.Front
+  id: Front
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: Front
+  nameWithType: SpecialReferenceType.Front
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.Front
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents the front side of an object or entity.
+  example: []
+  syntax:
+    content: Front = 3
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.CentreFrontOrBack
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.CentreFrontOrBack
+  id: CentreFrontOrBack
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: CentreFrontOrBack
+  nameWithType: SpecialReferenceType.CentreFrontOrBack
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.CentreFrontOrBack
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents the center fullback position in a sports team lineup.
+  example: []
+  syntax:
+    content: CentreFrontOrBack = 4
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.Back
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.Back
+  id: Back
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: Back
+  nameWithType: SpecialReferenceType.Back
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.Back
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents the "Back" direction in an enumeration of possible directions.
+  example: []
+  syntax:
+    content: Back = 5
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.Bottom
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.Bottom
+  id: Bottom
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: Bottom
+  nameWithType: SpecialReferenceType.Bottom
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.Bottom
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents the bottom alignment option in a layout or positioning context.
+  example: []
+  syntax:
+    content: Bottom = 6
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.CenterElevation
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.CenterElevation
+  id: CenterElevation
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: CenterElevation
+  nameWithType: SpecialReferenceType.CenterElevation
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.CenterElevation
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents the elevation of the center point in a specific context.
+  example: []
+  syntax:
+    content: CenterElevation = 7
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.Top
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.Top
+  id: Top
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: Top
+  nameWithType: SpecialReferenceType.Top
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.Top
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents the top alignment option in a layout or positioning context.
+  example: []
+  syntax:
+    content: Top = 8
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.Inclined
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.Inclined
+  id: Inclined
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: Inclined
+  nameWithType: SpecialReferenceType.Inclined
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.Inclined
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents an inclined orientation with a specific value of 43.
+  example: []
+  syntax:
+    content: Inclined = 43
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef1
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef1
+  id: NewRef1
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: NewRef1
+  nameWithType: SpecialReferenceType.NewRef1
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef1
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents a constant value used for a specific purpose in the application.
+  remarks: >-
+    This value is set to 10 and is intended to be used as a reference or default value in
+                scenarios where such a constant is required. Ensure that its usage aligns with the intended context.
+  example: []
+  syntax:
+    content: NewRef1 = 10
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef2
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef2
+  id: NewRef2
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: NewRef2
+  nameWithType: SpecialReferenceType.NewRef2
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef2
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents a constant value of 11.
+  example: []
+  syntax:
+    content: NewRef2 = 11
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef3
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef3
+  id: NewRef3
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: NewRef3
+  nameWithType: SpecialReferenceType.NewRef3
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef3
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents a constant value used for a specific purpose in the application.
+  remarks: >-
+    The value of <code>newref3</code> is set to 12. Ensure that this constant is used in contexts where
+                this specific value is required.
+  example: []
+  syntax:
+    content: NewRef3 = 12
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef4
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef4
+  id: NewRef4
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: NewRef4
+  nameWithType: SpecialReferenceType.NewRef4
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef4
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents a constant value of 13.
+  example: []
+  syntax:
+    content: NewRef4 = 13
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef5
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef5
+  id: NewRef5
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: NewRef5
+  nameWithType: SpecialReferenceType.NewRef5
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef5
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents a constant value of 14.
+  example: []
+  syntax:
+    content: NewRef5 = 14
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef6
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef6
+  id: NewRef6
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: NewRef6
+  nameWithType: SpecialReferenceType.NewRef6
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef6
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents a constant value of 15.
+  example: []
+  syntax:
+    content: NewRef6 = 15
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack1
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack1
+  id: VerticalStack1
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: VerticalStack1
+  nameWithType: SpecialReferenceType.VerticalStack1
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack1
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents a vertical stack layout with a predefined configuration.
+  example: []
+  syntax:
+    content: VerticalStack1 = 39
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack3
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack3
+  id: VerticalStack3
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: VerticalStack3
+  nameWithType: SpecialReferenceType.VerticalStack3
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack3
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents a vertical stack layout with three elements, identified by the value 40.
+  remarks: >-
+    This value can be used to specify a predefined layout configuration for UI
+                components.
+  example: []
+  syntax:
+    content: VerticalStack3 = 40
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack4
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack4
+  id: VerticalStack4
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: VerticalStack4
+  nameWithType: SpecialReferenceType.VerticalStack4
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack4
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents a vertical stack layout with four elements.
+  example: []
+  syntax:
+    content: VerticalStack4 = 41
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.HorizontalTop
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.HorizontalTop
+  id: HorizontalTop
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: HorizontalTop
+  nameWithType: SpecialReferenceType.HorizontalTop
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.HorizontalTop
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents a horizontal alignment positioned at the top.
+  example: []
+  syntax:
+    content: HorizontalTop = 42
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.ConnectorPoint
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.ConnectorPoint
+  id: ConnectorPoint
+  parent: MBF.Revit.Creation.Constants.SpecialReferenceType
+  langs:
+  - csharp
+  - vb
+  name: ConnectorPoint
+  nameWithType: SpecialReferenceType.ConnectorPoint
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.ConnectorPoint
+  type: Field
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Creation/blob/03cf239ef8c5ac32b66fa3145f672df0f8fe43e2/Constants/SpecialReferenceType.cs
+  assemblies:
+  - MBF.Revit.Creation
+  namespace: MBF.Revit.Creation.Constants
+  summary: Represents the identifier for a connector point in a graphical or diagramming context.
+  remarks: >-
+    This value is typically used to identify and differentiate connector points within a system.
+                It can be used in scenarios such as diagramming tools, graphical editors, or other applications that involve
+                connecting elements.
+  example: []
+  syntax:
+    content: ConnectorPoint = 3001
+    return:
+      type: MBF.Revit.Creation.Constants.SpecialReferenceType
+references:
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.Left
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.Left
+  isExternal: true
+  href: MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_Left
+  name: Left
+  nameWithType: SpecialReferenceType.Left
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.Left
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.Right
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.Right
+  isExternal: true
+  href: MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_Right
+  name: Right
+  nameWithType: SpecialReferenceType.Right
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.Right
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack1
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack1
+  isExternal: true
+  href: MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_VerticalStack1
+  name: VerticalStack1
+  nameWithType: SpecialReferenceType.VerticalStack1
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.VerticalStack1
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.HorizontalTop
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.HorizontalTop
+  isExternal: true
+  href: MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_HorizontalTop
+  name: HorizontalTop
+  nameWithType: SpecialReferenceType.HorizontalTop
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.HorizontalTop
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef1
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef1
+  isExternal: true
+  href: MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_NewRef1
+  name: NewRef1
+  nameWithType: SpecialReferenceType.NewRef1
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.NewRef1
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType.ConnectorPoint
+  commentId: F:MBF.Revit.Creation.Constants.SpecialReferenceType.ConnectorPoint
+  isExternal: true
+  href: MBF.Revit.Creation.Constants.SpecialReferenceType.html#MBF_Revit_Creation_Constants_SpecialReferenceType_ConnectorPoint
+  name: ConnectorPoint
+  nameWithType: SpecialReferenceType.ConnectorPoint
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType.ConnectorPoint
+- uid: MBF.Revit.Creation.Constants
+  commentId: N:MBF.Revit.Creation.Constants
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Creation.Constants
+  nameWithType: MBF.Revit.Creation.Constants
+  fullName: MBF.Revit.Creation.Constants
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Creation
+    name: Creation
+    isExternal: true
+    href: MBF.Revit.Creation.html
+  - name: .
+  - uid: MBF.Revit.Creation.Constants
+    name: Constants
+    isExternal: true
+    href: MBF.Revit.Creation.Constants.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Creation
+    name: Creation
+    isExternal: true
+    href: MBF.Revit.Creation.html
+  - name: .
+  - uid: MBF.Revit.Creation.Constants
+    name: Constants
+    isExternal: true
+    href: MBF.Revit.Creation.Constants.html
+- uid: MBF.Revit.Creation.Constants.SpecialReferenceType
+  commentId: T:MBF.Revit.Creation.Constants.SpecialReferenceType
+  parent: MBF.Revit.Creation.Constants
+  isExternal: true
+  href: MBF.Revit.Creation.Constants.SpecialReferenceType.html
+  name: SpecialReferenceType
+  nameWithType: SpecialReferenceType
+  fullName: MBF.Revit.Creation.Constants.SpecialReferenceType
+shouldSkipMarkup: true

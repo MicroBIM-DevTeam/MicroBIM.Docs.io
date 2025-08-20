@@ -16,7 +16,7 @@ items:
   fullName: MBFWpfToolkit.Converters.BooleanErrorGroupToEnabledConverter
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Converters/BooleanErrorGroupToEnabledConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Converters/BooleanErrorGroupToEnabledConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
@@ -52,7 +52,7 @@ items:
   fullName: MBFWpfToolkit.Converters.BooleanErrorGroupToEnabledConverter.Convert(object[], System.Type, object, System.Globalization.CultureInfo)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Converters/BooleanErrorGroupToEnabledConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Converters/BooleanErrorGroupToEnabledConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
@@ -98,7 +98,7 @@ items:
   fullName: MBFWpfToolkit.Converters.BooleanErrorGroupToEnabledConverter.ConvertBack(object, System.Type[], object, System.Globalization.CultureInfo)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Converters/BooleanErrorGroupToEnabledConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Converters/BooleanErrorGroupToEnabledConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters
@@ -136,7 +136,7 @@ items:
   fullName: MBFWpfToolkit.Converters.BooleanErrorGroupToEnabledConverter.BooleanErrorGroupToEnabledConverter()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Converters/BooleanErrorGroupToEnabledConverter.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Converters/BooleanErrorGroupToEnabledConverter.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Converters

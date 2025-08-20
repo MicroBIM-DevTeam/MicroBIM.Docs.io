@@ -16,7 +16,7 @@ items:
   fullName: MB.Common.Parameters.RevitParameterManager
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Parameters/RevitParameterManager.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Parameters/RevitParameterManager.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Parameters
@@ -47,7 +47,7 @@ items:
   fullName: MB.Common.Parameters.RevitParameterManager.EnsureParameters(Autodesk.Revit.DB.Document, MB.Common.Tools.MbfTool)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Parameters/RevitParameterManager.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Parameters/RevitParameterManager.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Parameters
@@ -76,7 +76,7 @@ items:
   fullName: MB.Common.Parameters.RevitParameterManager.EnsureParameters(Autodesk.Revit.DB.Document, MB.Common.SharedParameters.ToolsSharedParameter[])
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Parameters/RevitParameterManager.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Parameters/RevitParameterManager.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Parameters
@@ -114,7 +114,7 @@ items:
   fullName: MB.Common.Parameters.RevitParameterManager.RevitParameterManager()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Parameters/RevitParameterManager.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Parameters/RevitParameterManager.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Parameters
@@ -408,7 +408,6 @@ references:
   nameWithType: RevitParameterManager.EnsureParameters
   fullName: MB.Common.Parameters.RevitParameterManager.EnsureParameters
 - uid: Autodesk.Revit.DB.Document
-  commentId: T:Autodesk.Revit.DB.Document
   isExternal: true
   name: Document
   nameWithType: Document

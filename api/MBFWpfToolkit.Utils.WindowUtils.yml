@@ -14,7 +14,7 @@ items:
   fullName: MBFWpfToolkit.Utils.WindowUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Utils/WindowUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Utils/WindowUtils.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Utils
@@ -45,7 +45,7 @@ items:
   fullName: MBFWpfToolkit.Utils.WindowUtils.OpenLink(object)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Utils/WindowUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Utils/WindowUtils.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Utils

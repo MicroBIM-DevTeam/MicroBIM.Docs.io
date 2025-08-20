@@ -24,7 +24,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.HelpAssistant
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/AttachedProperties/HelpAssistant.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/AttachedProperties/HelpAssistant.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -58,7 +58,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.HelpAssistant.StepNumberProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/AttachedProperties/HelpAssistant.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/AttachedProperties/HelpAssistant.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -84,7 +84,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.HelpAssistant.StepTextProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/AttachedProperties/HelpAssistant.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/AttachedProperties/HelpAssistant.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -110,7 +110,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.HelpAssistant.AutoRegisterProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/AttachedProperties/HelpAssistant.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/AttachedProperties/HelpAssistant.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -136,7 +136,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.HelpAssistant.GetStepNumber(System.Windows.DependencyObject)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/AttachedProperties/HelpAssistant.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/AttachedProperties/HelpAssistant.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -163,7 +163,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.HelpAssistant.SetStepNumber(System.Windows.DependencyObject, int)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/AttachedProperties/HelpAssistant.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/AttachedProperties/HelpAssistant.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -193,7 +193,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.HelpAssistant.GetStepText(System.Windows.DependencyObject)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/AttachedProperties/HelpAssistant.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/AttachedProperties/HelpAssistant.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -220,7 +220,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.HelpAssistant.SetStepText(System.Windows.DependencyObject, string)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/AttachedProperties/HelpAssistant.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/AttachedProperties/HelpAssistant.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -250,7 +250,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.HelpAssistant.GetAutoRegister(System.Windows.DependencyObject)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/AttachedProperties/HelpAssistant.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/AttachedProperties/HelpAssistant.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -277,7 +277,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.HelpAssistant.SetAutoRegister(System.Windows.DependencyObject, bool)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/AttachedProperties/HelpAssistant.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/AttachedProperties/HelpAssistant.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -307,7 +307,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.HelpAssistant.GetOrderedSteps()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/AttachedProperties/HelpAssistant.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/AttachedProperties/HelpAssistant.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties
@@ -332,7 +332,7 @@ items:
   fullName: MBFWpfToolkit.AttachedProperties.HelpAssistant.HelpAssistant()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/AttachedProperties/HelpAssistant.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/AttachedProperties/HelpAssistant.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.AttachedProperties

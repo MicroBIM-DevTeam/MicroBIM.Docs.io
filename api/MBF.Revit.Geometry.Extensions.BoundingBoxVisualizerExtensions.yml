@@ -15,7 +15,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/BoundingBoxVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Extensions/BoundingBoxVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -53,7 +53,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D(Autodesk.Revit.DB.BoundingBoxXYZ, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/BoundingBoxVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Extensions/BoundingBoxVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -95,7 +95,7 @@ items:
   fullName: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBoxes2D(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.BoundingBoxXYZ>, Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Color)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Extensions/BoundingBoxVisualizerExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Extensions/BoundingBoxVisualizerExtensions.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Extensions
@@ -430,7 +430,6 @@ references:
   nameWithType: BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D
   fullName: MBF.Revit.Geometry.Extensions.BoundingBoxVisualizerExtensions.VisualizeBoundingBox2D
 - uid: Autodesk.Revit.DB.Document
-  commentId: T:Autodesk.Revit.DB.Document
   isExternal: true
   name: Document
   nameWithType: Document

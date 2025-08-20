@@ -1,0 +1,515 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Data.Models.GridPointInfo
+  commentId: T:MBF.Revit.Data.Models.GridPointInfo
+  id: GridPointInfo
+  parent: MBF.Revit.Data.Models
+  children:
+  - MBF.Revit.Data.Models.GridPointInfo.#ctor(System.Int32,System.Int32,Autodesk.Revit.DB.XYZ,System.String)
+  - MBF.Revit.Data.Models.GridPointInfo.Description
+  - MBF.Revit.Data.Models.GridPointInfo.MaxIndex
+  - MBF.Revit.Data.Models.GridPointInfo.MinIndex
+  - MBF.Revit.Data.Models.GridPointInfo.Point
+  langs:
+  - csharp
+  - vb
+  name: GridPointInfo
+  nameWithType: GridPointInfo
+  fullName: MBF.Revit.Data.Models.GridPointInfo
+  type: Class
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/GridPointInfo.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  summary: Represents information about a grid point
+  example: []
+  syntax:
+    content: public class GridPointInfo
+    content.vb: Public Class GridPointInfo
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: MBF.Revit.Data.Models.GridPointInfo.#ctor(System.Int32,System.Int32,Autodesk.Revit.DB.XYZ,System.String)
+  commentId: M:MBF.Revit.Data.Models.GridPointInfo.#ctor(System.Int32,System.Int32,Autodesk.Revit.DB.XYZ,System.String)
+  id: '#ctor(System.Int32,System.Int32,Autodesk.Revit.DB.XYZ,System.String)'
+  parent: MBF.Revit.Data.Models.GridPointInfo
+  langs:
+  - csharp
+  - vb
+  name: GridPointInfo(int, int, XYZ, string)
+  nameWithType: GridPointInfo.GridPointInfo(int, int, XYZ, string)
+  fullName: MBF.Revit.Data.Models.GridPointInfo.GridPointInfo(int, int, Autodesk.Revit.DB.XYZ, string)
+  type: Constructor
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/GridPointInfo.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public GridPointInfo(int maxIndex, int minIndex, XYZ point, string description)
+    parameters:
+    - id: maxIndex
+      type: System.Int32
+    - id: minIndex
+      type: System.Int32
+    - id: point
+      type: Autodesk.Revit.DB.XYZ
+    - id: description
+      type: System.String
+    content.vb: Public Sub New(maxIndex As Integer, minIndex As Integer, point As XYZ, description As String)
+  overload: MBF.Revit.Data.Models.GridPointInfo.#ctor*
+  nameWithType.vb: GridPointInfo.New(Integer, Integer, XYZ, String)
+  fullName.vb: MBF.Revit.Data.Models.GridPointInfo.New(Integer, Integer, Autodesk.Revit.DB.XYZ, String)
+  name.vb: New(Integer, Integer, XYZ, String)
+- uid: MBF.Revit.Data.Models.GridPointInfo.MaxIndex
+  commentId: P:MBF.Revit.Data.Models.GridPointInfo.MaxIndex
+  id: MaxIndex
+  parent: MBF.Revit.Data.Models.GridPointInfo
+  langs:
+  - csharp
+  - vb
+  name: MaxIndex
+  nameWithType: GridPointInfo.MaxIndex
+  fullName: MBF.Revit.Data.Models.GridPointInfo.MaxIndex
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/GridPointInfo.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public int MaxIndex { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MaxIndex As Integer
+  overload: MBF.Revit.Data.Models.GridPointInfo.MaxIndex*
+- uid: MBF.Revit.Data.Models.GridPointInfo.MinIndex
+  commentId: P:MBF.Revit.Data.Models.GridPointInfo.MinIndex
+  id: MinIndex
+  parent: MBF.Revit.Data.Models.GridPointInfo
+  langs:
+  - csharp
+  - vb
+  name: MinIndex
+  nameWithType: GridPointInfo.MinIndex
+  fullName: MBF.Revit.Data.Models.GridPointInfo.MinIndex
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/GridPointInfo.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public int MinIndex { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MinIndex As Integer
+  overload: MBF.Revit.Data.Models.GridPointInfo.MinIndex*
+- uid: MBF.Revit.Data.Models.GridPointInfo.Point
+  commentId: P:MBF.Revit.Data.Models.GridPointInfo.Point
+  id: Point
+  parent: MBF.Revit.Data.Models.GridPointInfo
+  langs:
+  - csharp
+  - vb
+  name: Point
+  nameWithType: GridPointInfo.Point
+  fullName: MBF.Revit.Data.Models.GridPointInfo.Point
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/GridPointInfo.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public XYZ Point { get; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.XYZ
+    content.vb: Public ReadOnly Property Point As XYZ
+  overload: MBF.Revit.Data.Models.GridPointInfo.Point*
+- uid: MBF.Revit.Data.Models.GridPointInfo.Description
+  commentId: P:MBF.Revit.Data.Models.GridPointInfo.Description
+  id: Description
+  parent: MBF.Revit.Data.Models.GridPointInfo
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: GridPointInfo.Description
+  fullName: MBF.Revit.Data.Models.GridPointInfo.Description
+  type: Property
+  source:
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Data/blob/253b5d8129b6e5c10d98b6c3ed591eb52b009297/Models/GridPointInfo.cs
+  assemblies:
+  - MBF.Revit.Data
+  namespace: MBF.Revit.Data.Models
+  syntax:
+    content: public string Description { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Description As String
+  overload: MBF.Revit.Data.Models.GridPointInfo.Description*
+references:
+- uid: MBF.Revit.Data.Models
+  commentId: N:MBF.Revit.Data.Models
+  isExternal: true
+  href: MBF.html
+  name: MBF.Revit.Data.Models
+  nameWithType: MBF.Revit.Data.Models
+  fullName: MBF.Revit.Data.Models
+  spec.csharp:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Data.Models.html
+  spec.vb:
+  - uid: MBF
+    name: MBF
+    isExternal: true
+    href: MBF.html
+  - name: .
+  - uid: MBF.Revit
+    name: Revit
+    isExternal: true
+    href: MBF.Revit.html
+  - name: .
+  - uid: MBF.Revit.Data
+    name: Data
+    isExternal: true
+    href: MBF.Revit.Data.html
+  - name: .
+  - uid: MBF.Revit.Data.Models
+    name: Models
+    isExternal: true
+    href: MBF.Revit.Data.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MBF.Revit.Data.Models.GridPointInfo.#ctor*
+  commentId: Overload:MBF.Revit.Data.Models.GridPointInfo.#ctor
+  isExternal: true
+  href: MBF.Revit.Data.Models.GridPointInfo.html#MBF_Revit_Data_Models_GridPointInfo__ctor_System_Int32_System_Int32_Autodesk_Revit_DB_XYZ_System_String_
+  name: GridPointInfo
+  nameWithType: GridPointInfo.GridPointInfo
+  fullName: MBF.Revit.Data.Models.GridPointInfo.GridPointInfo
+  nameWithType.vb: GridPointInfo.New
+  fullName.vb: MBF.Revit.Data.Models.GridPointInfo.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
+  isExternal: true
+  name: XYZ
+  nameWithType: XYZ
+  fullName: Autodesk.Revit.DB.XYZ
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MBF.Revit.Data.Models.GridPointInfo.MaxIndex*
+  commentId: Overload:MBF.Revit.Data.Models.GridPointInfo.MaxIndex
+  isExternal: true
+  href: MBF.Revit.Data.Models.GridPointInfo.html#MBF_Revit_Data_Models_GridPointInfo_MaxIndex
+  name: MaxIndex
+  nameWithType: GridPointInfo.MaxIndex
+  fullName: MBF.Revit.Data.Models.GridPointInfo.MaxIndex
+- uid: MBF.Revit.Data.Models.GridPointInfo.MinIndex*
+  commentId: Overload:MBF.Revit.Data.Models.GridPointInfo.MinIndex
+  isExternal: true
+  href: MBF.Revit.Data.Models.GridPointInfo.html#MBF_Revit_Data_Models_GridPointInfo_MinIndex
+  name: MinIndex
+  nameWithType: GridPointInfo.MinIndex
+  fullName: MBF.Revit.Data.Models.GridPointInfo.MinIndex
+- uid: MBF.Revit.Data.Models.GridPointInfo.Point*
+  commentId: Overload:MBF.Revit.Data.Models.GridPointInfo.Point
+  isExternal: true
+  href: MBF.Revit.Data.Models.GridPointInfo.html#MBF_Revit_Data_Models_GridPointInfo_Point
+  name: Point
+  nameWithType: GridPointInfo.Point
+  fullName: MBF.Revit.Data.Models.GridPointInfo.Point
+- uid: MBF.Revit.Data.Models.GridPointInfo.Description*
+  commentId: Overload:MBF.Revit.Data.Models.GridPointInfo.Description
+  isExternal: true
+  href: MBF.Revit.Data.Models.GridPointInfo.html#MBF_Revit_Data_Models_GridPointInfo_Description
+  name: Description
+  nameWithType: GridPointInfo.Description
+  fullName: MBF.Revit.Data.Models.GridPointInfo.Description
+shouldSkipMarkup: true

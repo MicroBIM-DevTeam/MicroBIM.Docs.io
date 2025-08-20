@@ -1,24 +1,24 @@
 ### YamlMime:ManagedReference
 items:
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior
-  commentId: T:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior
-  id: TextBoxUnitLenghtConversionBehavior
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior
+  commentId: T:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior
+  id: TextBoxUnitLengthConversionBehavior
   parent: MB.Common.Units.Behaviours
   children:
-  - MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.#ctor
-  - MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion
-  - MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversionProperty
-  - MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnAttached
-  - MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnDetaching
+  - MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.#ctor
+  - MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion
+  - MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversionProperty
+  - MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnAttached
+  - MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnDetaching
   langs:
   - csharp
   - vb
-  name: TextBoxUnitLenghtConversionBehavior
-  nameWithType: TextBoxUnitLenghtConversionBehavior
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior
+  name: TextBoxUnitLengthConversionBehavior
+  nameWithType: TextBoxUnitLengthConversionBehavior
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Units/Behaviours/TextBoxUnitLenghtConversionBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Units/Behaviours/TextBoxUnitLenghtConversionBehavior.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Units.Behaviours
@@ -28,12 +28,12 @@ items:
     functionality when a specific key is pressed.
   remarks: >-
     This behavior listens for key events on the associated <xref href="MicroBIM.UI.Controls.TextBox" data-throw-if-not-resolved="false"></xref> and applies a group size
-                conversion when the Enter key is pressed, provided that the <xref href="MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion" data-throw-if-not-resolved="false"></xref> property is set
+                conversion when the Enter key is pressed, provided that the <xref href="MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion" data-throw-if-not-resolved="false"></xref> property is set
                 to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.
   example: []
   syntax:
-    content: 'public class TextBoxUnitLenghtConversionBehavior : Behavior<TextBox>, IAnimatable, IAttachedObject'
-    content.vb: Public Class TextBoxUnitLenghtConversionBehavior Inherits Behavior(Of TextBox) Implements IAnimatable, IAttachedObject
+    content: 'public class TextBoxUnitLengthConversionBehavior : Behavior<TextBox>, IAnimatable, IAttachedObject'
+    content.vb: Public Class TextBoxUnitLengthConversionBehavior Inherits Behavior(Of TextBox) Implements IAnimatable, IAttachedObject
   inheritance:
   - System.Object
   - System.Windows.Threading.DispatcherObject
@@ -100,118 +100,118 @@ items:
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.MemberwiseClone
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversionProperty
-  commentId: F:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversionProperty
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversionProperty
+  commentId: F:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversionProperty
   id: EnableGroupSizeConversionProperty
-  parent: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior
+  parent: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior
   langs:
   - csharp
   - vb
   name: EnableGroupSizeConversionProperty
-  nameWithType: TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversionProperty
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversionProperty
+  nameWithType: TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversionProperty
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversionProperty
   type: Field
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Units/Behaviours/TextBoxUnitLenghtConversionBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Units/Behaviours/TextBoxUnitLenghtConversionBehavior.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Units.Behaviours
-  summary: Identifies the <xref href="MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion" data-throw-if-not-resolved="false"></xref> dependency property.
+  summary: Identifies the <xref href="MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion" data-throw-if-not-resolved="false"></xref> dependency property.
   remarks: >-
     This property determines whether the group size conversion feature is enabled for the
-                associated <xref href="MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior" data-throw-if-not-resolved="false"></xref>. The default value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+                associated TextBoxUnitLenghtConversionBehavior. The default value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
   example: []
   syntax:
     content: public static readonly DependencyProperty EnableGroupSizeConversionProperty
     return:
       type: System.Windows.DependencyProperty
     content.vb: Public Shared ReadOnly EnableGroupSizeConversionProperty As DependencyProperty
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnAttached
-  commentId: M:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnAttached
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnAttached
+  commentId: M:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnAttached
   id: OnAttached
-  parent: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior
+  parent: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior
   langs:
   - csharp
   - vb
   name: OnAttached()
-  nameWithType: TextBoxUnitLenghtConversionBehavior.OnAttached()
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnAttached()
+  nameWithType: TextBoxUnitLengthConversionBehavior.OnAttached()
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnAttached()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Units/Behaviours/TextBoxUnitLenghtConversionBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Units/Behaviours/TextBoxUnitLenghtConversionBehavior.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Units.Behaviours
   summary: Attaches event handlers and initializes behavior when the behavior is attached to an object.
-  remarks: If <xref href="MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion" data-throw-if-not-resolved="false"></xref> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, subscribes to the  <xref href="System.Windows.UIElement.KeyDown" data-throw-if-not-resolved="false"></xref> event of the associated object to handle key press events.
+  remarks: If <xref href="MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion" data-throw-if-not-resolved="false"></xref> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, subscribes to the  <xref href="System.Windows.UIElement.KeyDown" data-throw-if-not-resolved="false"></xref> event of the associated object to handle key press events.
   example: []
   syntax:
     content: protected override void OnAttached()
     content.vb: Protected Overrides Sub OnAttached()
   overridden: MicroBIM.UI.Interactivity.Behavior.OnAttached
-  overload: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnAttached*
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnDetaching
-  commentId: M:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnDetaching
+  overload: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnAttached*
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnDetaching
+  commentId: M:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnDetaching
   id: OnDetaching
-  parent: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior
+  parent: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior
   langs:
   - csharp
   - vb
   name: OnDetaching()
-  nameWithType: TextBoxUnitLenghtConversionBehavior.OnDetaching()
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnDetaching()
+  nameWithType: TextBoxUnitLengthConversionBehavior.OnDetaching()
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnDetaching()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Units/Behaviours/TextBoxUnitLenghtConversionBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Units/Behaviours/TextBoxUnitLenghtConversionBehavior.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Units.Behaviours
   summary: Detaches the behavior from the associated object, removing any event handlers.
   remarks: >-
     This method is called when the behavior is being detached from its associated object. It
-                removes the <xref href="MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnKeyDown(System.Object%2cSystem.Windows.Input.KeyEventArgs)" data-throw-if-not-resolved="false"></xref> event handler from the AssociatedObject.
+                removes the <xref href="MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnKeyDown(System.Object%2cSystem.Windows.Input.KeyEventArgs)" data-throw-if-not-resolved="false"></xref> event handler from the AssociatedObject.
   example: []
   syntax:
     content: protected override void OnDetaching()
     content.vb: Protected Overrides Sub OnDetaching()
   overridden: MicroBIM.UI.Interactivity.Behavior.OnDetaching
-  overload: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnDetaching*
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.#ctor
-  commentId: M:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.#ctor
+  overload: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnDetaching*
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.#ctor
+  commentId: M:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.#ctor
   id: '#ctor'
-  parent: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior
+  parent: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior
   langs:
   - csharp
   - vb
-  name: TextBoxUnitLenghtConversionBehavior()
-  nameWithType: TextBoxUnitLenghtConversionBehavior.TextBoxUnitLenghtConversionBehavior()
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.TextBoxUnitLenghtConversionBehavior()
+  name: TextBoxUnitLengthConversionBehavior()
+  nameWithType: TextBoxUnitLengthConversionBehavior.TextBoxUnitLengthConversionBehavior()
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.TextBoxUnitLengthConversionBehavior()
   type: Constructor
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Units/Behaviours/TextBoxUnitLenghtConversionBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Units/Behaviours/TextBoxUnitLenghtConversionBehavior.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Units.Behaviours
   syntax:
-    content: public TextBoxUnitLenghtConversionBehavior()
+    content: public TextBoxUnitLengthConversionBehavior()
     content.vb: Public Sub New()
-  overload: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.#ctor*
-  nameWithType.vb: TextBoxUnitLenghtConversionBehavior.New()
-  fullName.vb: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.New()
+  overload: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.#ctor*
+  nameWithType.vb: TextBoxUnitLengthConversionBehavior.New()
+  fullName.vb: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.New()
   name.vb: New()
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion
-  commentId: P:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion
+  commentId: P:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion
   id: EnableGroupSizeConversion
-  parent: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior
+  parent: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior
   langs:
   - csharp
   - vb
   name: EnableGroupSizeConversion
-  nameWithType: TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion
+  nameWithType: TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion
   type: Property
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Units/Behaviours/TextBoxUnitLenghtConversionBehavior.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Units/Behaviours/TextBoxUnitLenghtConversionBehavior.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Units.Behaviours
@@ -223,7 +223,7 @@ items:
     return:
       type: System.Boolean
     content.vb: Public Property EnableGroupSizeConversion As Boolean
-  overload: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion*
+  overload: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion*
 references:
 - uid: MicroBIM.UI.Controls.TextBox
   commentId: T:MicroBIM.UI.Controls.TextBox
@@ -232,13 +232,13 @@ references:
   name: TextBox
   nameWithType: TextBox
   fullName: MicroBIM.UI.Controls.TextBox
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion
-  commentId: P:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion
+  commentId: P:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion
   isExternal: true
-  href: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLenghtConversionBehavior_EnableGroupSizeConversion
+  href: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_EnableGroupSizeConversion
   name: EnableGroupSizeConversion
-  nameWithType: TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion
+  nameWithType: TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion
 - uid: MB.Common.Units.Behaviours
   commentId: N:MB.Common.Units.Behaviours
   isExternal: true
@@ -2080,13 +2080,6 @@ references:
   fullName: MicroBIM.UI.Interactivity.Behavior<T>.AssociatedObject
   nameWithType.vb: Behavior(Of T).AssociatedObject
   fullName.vb: MicroBIM.UI.Interactivity.Behavior(Of T).AssociatedObject
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior
-  commentId: T:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior
-  isExternal: true
-  href: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.html
-  name: TextBoxUnitLenghtConversionBehavior
-  nameWithType: TextBoxUnitLenghtConversionBehavior
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior
 - uid: System.Windows.DependencyProperty
   commentId: T:System.Windows.DependencyProperty
   parent: System.Windows
@@ -2122,13 +2115,13 @@ references:
     isExternal: true
   - name: (
   - name: )
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnAttached*
-  commentId: Overload:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnAttached
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnAttached*
+  commentId: Overload:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnAttached
   isExternal: true
-  href: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLenghtConversionBehavior_OnAttached
+  href: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_OnAttached
   name: OnAttached
-  nameWithType: TextBoxUnitLenghtConversionBehavior.OnAttached
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnAttached
+  nameWithType: TextBoxUnitLengthConversionBehavior.OnAttached
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnAttached
 - uid: System.Windows.UIElement
   commentId: T:System.Windows.UIElement
   parent: System.Windows
@@ -2137,8 +2130,8 @@ references:
   name: UIElement
   nameWithType: UIElement
   fullName: System.Windows.UIElement
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnKeyDown(System.Object,System.Windows.Input.KeyEventArgs)
-  commentId: M:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnKeyDown(System.Object,System.Windows.Input.KeyEventArgs)
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnKeyDown(System.Object,System.Windows.Input.KeyEventArgs)
+  commentId: M:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnKeyDown(System.Object,System.Windows.Input.KeyEventArgs)
   isExternal: true
 - uid: MicroBIM.UI.Interactivity.Behavior.OnDetaching
   commentId: M:MicroBIM.UI.Interactivity.Behavior.OnDetaching
@@ -2159,30 +2152,30 @@ references:
     isExternal: true
   - name: (
   - name: )
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnDetaching*
-  commentId: Overload:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnDetaching
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnDetaching*
+  commentId: Overload:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnDetaching
   isExternal: true
-  href: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLenghtConversionBehavior_OnDetaching
+  href: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_OnDetaching
   name: OnDetaching
-  nameWithType: TextBoxUnitLenghtConversionBehavior.OnDetaching
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.OnDetaching
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.#ctor*
-  commentId: Overload:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.#ctor
+  nameWithType: TextBoxUnitLengthConversionBehavior.OnDetaching
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.OnDetaching
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.#ctor*
+  commentId: Overload:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.#ctor
   isExternal: true
-  href: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLenghtConversionBehavior__ctor
-  name: TextBoxUnitLenghtConversionBehavior
-  nameWithType: TextBoxUnitLenghtConversionBehavior.TextBoxUnitLenghtConversionBehavior
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.TextBoxUnitLenghtConversionBehavior
-  nameWithType.vb: TextBoxUnitLenghtConversionBehavior.New
-  fullName.vb: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.New
+  href: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior__ctor
+  name: TextBoxUnitLengthConversionBehavior
+  nameWithType: TextBoxUnitLengthConversionBehavior.TextBoxUnitLengthConversionBehavior
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.TextBoxUnitLengthConversionBehavior
+  nameWithType.vb: TextBoxUnitLengthConversionBehavior.New
+  fullName.vb: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.New
   name.vb: New
-- uid: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion*
-  commentId: Overload:MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion
+- uid: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion*
+  commentId: Overload:MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion
   isExternal: true
-  href: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLenghtConversionBehavior_EnableGroupSizeConversion
+  href: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.html#MB_Common_Units_Behaviours_TextBoxUnitLengthConversionBehavior_EnableGroupSizeConversion
   name: EnableGroupSizeConversion
-  nameWithType: TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion
-  fullName: MB.Common.Units.Behaviours.TextBoxUnitLenghtConversionBehavior.EnableGroupSizeConversion
+  nameWithType: TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion
+  fullName: MB.Common.Units.Behaviours.TextBoxUnitLengthConversionBehavior.EnableGroupSizeConversion
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System

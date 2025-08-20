@@ -16,7 +16,7 @@ items:
   fullName: MBFWpfToolkit.Services.IDialogService
   type: Interface
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Services/IDialogService.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Services/IDialogService.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Services
@@ -41,7 +41,7 @@ items:
   fullName: MBFWpfToolkit.Services.IDialogService.Show<T>(T)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Services/IDialogService.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Services/IDialogService.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Services
@@ -73,7 +73,7 @@ items:
   fullName: MBFWpfToolkit.Services.IDialogService.UpdateMessage(string)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Services/IDialogService.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Services/IDialogService.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Services
@@ -105,7 +105,7 @@ items:
   fullName: MBFWpfToolkit.Services.IDialogService.Close()
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/c2045a66a1362d1bde382e1d01e2f31c7f56689f/Services/IDialogService.cs
+    href: https://github.com/MicroBIM-DevTeam/MBFWpfToolkit/blob/17914ba6724206c6757c3a2fff319217e9162479/Services/IDialogService.cs
   assemblies:
   - MBFWpfToolkit
   namespace: MBFWpfToolkit.Services

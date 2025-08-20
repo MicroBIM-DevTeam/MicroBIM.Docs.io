@@ -17,7 +17,7 @@ items:
   fullName: MBF.Revit.Geometry.Utils.MbXyzUtils
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Utils/MbXyzUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Utils/MbXyzUtils.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Utils
@@ -56,7 +56,7 @@ items:
   fullName: MBF.Revit.Geometry.Utils.MbXyzUtils.HasSelfIntersections(System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Utils/MbXyzUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Utils/MbXyzUtils.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Utils
@@ -95,7 +95,7 @@ items:
   fullName: MBF.Revit.Geometry.Utils.MbXyzUtils.DoLinesIntersect2D(Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.XYZ)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Utils/MbXyzUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Utils/MbXyzUtils.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Utils
@@ -137,7 +137,7 @@ items:
   fullName: MBF.Revit.Geometry.Utils.MbXyzUtils.DoLinesIntersect2D(Autodesk.Revit.DB.Line, Autodesk.Revit.DB.Line)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Utils/MbXyzUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Utils/MbXyzUtils.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Utils
@@ -169,7 +169,7 @@ items:
   fullName: MBF.Revit.Geometry.Utils.MbXyzUtils.SortPointsClockwise(System.Collections.Generic.List<Autodesk.Revit.DB.XYZ>)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/1d89ecb96f8568939985702f7334afcc99808078/Utils/MbXyzUtils.cs
+    href: https://github.com/MicroBIM-DevTeam/MBF.Revit.Geometry/blob/ba9da8ca36d9f205de61e8216f71bf3e649ae63d/Utils/MbXyzUtils.cs
   assemblies:
   - MBF.Revit.Geometry
   namespace: MBF.Revit.Geometry.Utils
@@ -191,6 +191,7 @@ items:
   name.vb: SortPointsClockwise(List(Of XYZ))
 references:
 - uid: Autodesk.Revit.DB.XYZ
+  commentId: T:Autodesk.Revit.DB.XYZ
   isExternal: true
   name: XYZ
   nameWithType: XYZ

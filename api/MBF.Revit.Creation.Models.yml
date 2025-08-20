@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: MBF.Revit.Creation.Models
+  commentId: N:MBF.Revit.Creation.Models
+  id: MBF.Revit.Creation.Models
+  children:
+  - MBF.Revit.Creation.Models.CategorizedReferences
+  langs:
+  - csharp
+  - vb
+  name: MBF.Revit.Creation.Models
+  nameWithType: MBF.Revit.Creation.Models
+  fullName: MBF.Revit.Creation.Models
+  type: Namespace
+  assemblies:
+  - MBF.Revit.Creation
+references:
+- uid: MBF.Revit.Creation.Models.CategorizedReferences
+  commentId: T:MBF.Revit.Creation.Models.CategorizedReferences
+  isExternal: true
+  href: MBF.Revit.Creation.Models.CategorizedReferences.html
+  name: CategorizedReferences
+  nameWithType: CategorizedReferences
+  fullName: MBF.Revit.Creation.Models.CategorizedReferences
+shouldSkipMarkup: true

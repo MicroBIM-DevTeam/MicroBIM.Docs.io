@@ -14,7 +14,7 @@ items:
   fullName: MB.Common.Tools.MbfToolExtensions
   type: Class
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Tools/MbfToolExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Tools/MbfToolExtensions.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Tools
@@ -46,7 +46,7 @@ items:
   fullName: MB.Common.Tools.MbfToolExtensions.GetRequiredSharedParameters(MB.Common.Tools.MbfTool)
   type: Method
   source:
-    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/e96416988c50e96546e863e028aa754ec5e183ac/Tools/MbfToolExtensions.cs
+    href: https://github.com/MicroBIM-DevTeam/MB.Common/blob/03427dd60ca1ecd255dc2b7bcbc47cd343703f2f/Tools/MbfToolExtensions.cs
   assemblies:
   - MB.Common
   namespace: MB.Common.Tools
